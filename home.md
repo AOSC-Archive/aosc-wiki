@@ -5,4 +5,22 @@
 
 *Temporary Placeholder*
 
-#
+# Developers
+
+*Temporary Placeholder*
+
+# Users
+
+*Temporary Placeholder*
+
+# Errata
+
+*Temporary Placeholder*
+
+# Knowledge Base
+
+*Temporary Placeholder*
+
+# AOSA?
+
+*Temporary Placeholder*
