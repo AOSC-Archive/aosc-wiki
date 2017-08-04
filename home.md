@@ -29,10 +29,7 @@ The wiki is split into multiple big sections, targeting different audiences. Do 
     </div>
     <div style="display: inline-block;">
         <h2>Bad</h2>
-        <pre><code class="language-c">int foo (void) {
-    int i;
-}
-</code></pre>
+				<p>This section contains AOSC developers.</p>
     </div>
 </div>
 # Errata
