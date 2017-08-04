@@ -17,7 +17,7 @@ As currently planned, our Community Wiki is arranged across 5 sections:
 
 Thus, do consider in advance where your page should go - when in doubt, ask in our IRC channel #aosc.
 
-# Writing pages
+# Writing Pages
 
 ## Section-Specific Requirements
 
@@ -65,3 +65,7 @@ As any good security advisory - those useful to system administrators - should c
 - Detail section containing a... longer... version of the security vulnerability, you should be able to find it from their original `oss-security` mailing list post. If not, write your own.
 - CVE listing section, if available.
 - PoC section, if available. Note that AOSAs should only be posted *after* security fixes were made available to users, nothing to worry here.
+
+## Making Changes
+
+As we do not provide a box for you to fill in what's changed (yet), do note that you have the most freedom with editing existing pages. However, do note that you should not expect bad contents or bad edits to endure on this site - remember, the Lion's watching and he shall not be happy when that happens.
