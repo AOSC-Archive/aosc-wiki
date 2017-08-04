@@ -10,29 +10,30 @@ This is where all documentations, information, and guides will gather for users 
 The wiki is split into multiple big sections, targeting different audiences. Do use the search bar if lost though, it could come in handy.
 
 
-<div style="-webkit-column-count: 2; -moz-column-count: 2; column-count: 2; -webkit-column-rule: 1px dotted #e0e0e0; -moz-column-rule: 1px dotted #e0e0e0; column-rule: 1px dotted #e0e0e0;">
-    <div style="display: inline-block;">
-        <h2>Developers</h2>
-				<h4>This section contains AOSC developers.</h4>
-    </div>
-    <div style="display: inline-block;">
-        <h2>Users</h2>
-        <p>This section contains guidebooks for AOSC developers, as well as more technically-inclined content for developers using AOSC OS.</p>
-    </div>
-</div>
+# Developers
+This section contains guidebooks for AOSC developers, as well as more technically-inclined content for developers using AOSC OS.
+
+[Go](#)
+
+# Users
+This section contains information useful for AOSC OS users with pages arranged by topics.
+
+[Go](#)
 
 # Errata
 
-*Temporary Placeholder*
+This section contains known *unresolved* issues found in AOSC OS for developers' and users' reference.
+
+[Go](#)
 
 # Knowledge Base
 
-*Temporary Placeholder*
+This section contains pages describing resolved issues and commonly asked questions in AOSC OS.
 
-# AOSA?
+[Go](#)
 
-*Temporary Placeholder*
+# AOSA
 
-# Rule 1
-Description for rule 1.
+This section lists all current and historic AOSC OS Security Advisories.
 
+[Go](#)
