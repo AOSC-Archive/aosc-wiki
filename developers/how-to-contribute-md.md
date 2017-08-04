@@ -17,6 +17,8 @@ As currently planned, our Community Wiki is arranged across 5 sections:
 
 Thus, do consider in advance where your page should go - when in doubt, ask in our IRC channel #aosc.
 
+# Writing pages
+
 ## Section-Specific Requirements
 
 Here are some requirements and expectations specific to each of the sections defined above.
