@@ -13,11 +13,11 @@ The wiki is split into multiple big sections, targeting different audiences. Do 
 <div style="-webkit-column-count: 2; -moz-column-count: 2; column-count: 2; -webkit-column-rule: 1px dotted #e0e0e0; -moz-column-rule: 1px dotted #e0e0e0; column-rule: 1px dotted #e0e0e0;">
     <div style="display: inline-block;">
         <h1>Developers</h1>
-				<p>This section contains guidebooks for AOSC developers.</p>
+				<pre><p>This section contains guidebooks for AOSC developers.</p></pre>
     </div>
     <div style="display: inline-block;">
         <h1>Users</h1>
-        <p>This section contains guidebooks for AOSC developers, as well as more technically-inclined content for developers using AOSC OS.</p>
+        <pre><p>This section contains guidebooks for AOSC developers, as well as more technically-inclined content for developers using AOSC OS.</p></pre>
     </div>
 </div>
 
