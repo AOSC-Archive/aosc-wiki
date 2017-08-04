@@ -13,7 +13,7 @@ The wiki is split into multiple big sections, targeting different audiences. Do 
 <div style="-webkit-column-count: 2; -moz-column-count: 2; column-count: 2; -webkit-column-rule: 1px dotted #e0e0e0; -moz-column-rule: 1px dotted #e0e0e0; column-rule: 1px dotted #e0e0e0;">
     <div style="display: inline-block;">
         <h2>Developers</h2>
-				<span>This section contains AOSC developers.</span>
+				<h4>This section contains AOSC developers.</h4>
     </div>
     <div style="display: inline-block;">
         <h2>Users</h2>
@@ -21,17 +21,6 @@ The wiki is split into multiple big sections, targeting different audiences. Do 
     </div>
 </div>
 
-
-<div style="-webkit-column-count: 2; -moz-column-count: 2; column-count: 2; -webkit-column-rule: 1px dotted #e0e0e0; -moz-column-rule: 1px dotted #e0e0e0; column-rule: 1px dotted #e0e0e0;">
-    <div style="display: inline-block;">
-        <h2>Good</h2>
-				<p>This section contains AOSC developers.</p>
-    </div>
-    <div style="display: inline-block;">
-        <h2>Bad</h2>
-				<p>This section contains AOSC developers.</p>
-    </div>
-</div>
 # Errata
 
 *Temporary Placeholder*
