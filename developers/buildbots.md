@@ -32,6 +32,8 @@ NOTE:
 - `port_numer - 1` is occupied by that machine. See information above.
 - A machine that marked as **{Daily}** means this machine is also used daily by the owner (that means many programs unrelated to development, e.g. X11, will be running on this machine). Please make sure that you do not make OOM on those machine!
 
+---
+
 - **AMD64** (2001 - 3000)
 	- **Yhi64**, owned by _Junde Yhi_, on **2048**
 	- **W541**, owned by _Jeff Bai_, on **2346**
