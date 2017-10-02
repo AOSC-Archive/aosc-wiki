@@ -1,8 +1,6 @@
 <!-- TITLE: Buildbots -->
 <!-- SUBTITLE: Buildbots that can be used by AOSC developers -->
 
-# Buildbots
-
 This page contains information about AOSC Buildbots.
 
 AOSC buildbots are all connected to our central relay node (relay.aosc.io), and are allocated fixed port numbers. To be specific, ports are allocated as per the buildbot's architecture:
@@ -25,7 +23,7 @@ If you are willing to contribute your machine to AOSC, please make sure your mac
 - The port number you want to expose on the relay server
 - The Pre-Shared Key of Popub
 
-## List of Buildbots
+# List of Buildbots
 
 NOTE: 
 
