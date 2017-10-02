@@ -1,7 +1,7 @@
 <!-- TITLE: Buildbots -->
 <!-- SUBTITLE: Buildbots that can be used by AOSC developers -->
 
-# Buildbots
+# General Information
 
 This page contains information about AOSC Buildbots.
 
