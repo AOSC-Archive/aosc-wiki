@@ -27,8 +27,21 @@ If you are willing to contribute your machine to AOSC, please make sure your mac
 
 ## List of Buildbots
 
+NOTE: 
+
+- `port_numer - 1` is occupied by that machine. See information above.
+- A machine that marked as **{Daily}** means this machine is also used daily by the owner (that means many programs unrelated to development, e.g. X11, will be running on this machine). Please make sure that you do not make OOM on those machine!
+
 - **AMD64** (2001 - 3000)
+	- **Yhi64**, owned by _Junde Yhi_, on **2048**
+	- **W541**, owned by _Jeff Bai_, on **2346**
+	- **EPSON-AOSC**, owned by _Zamir Sun_, on **2718 (e)**
+	- **TS140**, owned by _Staph_, on **2729**
 - **MIPS** (3001-4000)
+	- **Gobson**, owned by _Jeff Bai_ (currently _Xiaoxing Ye_), on **3072**
+	- **Godson**, owned by _Junde Yhi_, on **3141 (pi)**
 - **ARM** (4001-5000)
+	- **Tegra**, owned by _Jeff Bai_, on **4096**
+	- **p64**, owned by _Icenowy Zheng_, on **4064**
 - **PowerPC** (5001-6000)
 - **RISC-V** (6001-7000)
