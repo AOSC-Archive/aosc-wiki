@@ -24,7 +24,7 @@ You may also initialize the mirror by doing rsync from any one of the mirrors pr
 After you have finished the initialization, please tell us by sending an email to our mailing list: mirrors@lists.aosc.io, including your name (which will be listed on sponsors) and mirror URL.
 
 ## Sponsors
-The Main Repo is kindly sponsored by (OSSPlanet)[http://ossplanet.net/].
+The Main Repo is kindly sponsored by [OSSPlanet](http://ossplanet.net/).
 
 For other sponsors, please refer to https://aosc.io/mirror-status (list of mirrors) and https://aosc.io/about (all general sponsors).
 
