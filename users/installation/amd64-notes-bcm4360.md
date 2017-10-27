@@ -16,7 +16,7 @@ If you have an USB wireless card, try it. Another good idea is to connect your A
 
 If you managed to obtain internet access in this way, proceed to [regular installation guide](/users/installation/amd64). Go for the hard way otherwise.
 
-__After__ AOSC OS installation is correctly working on your computer (except for the builtin wireless card), get ready to [deploy buildkit](#Deploy-buildkit) and [build broadcom driver for system](#build-driver-for-system).
+__After__ AOSC OS installation is correctly working on your computer (except for the builtin wireless card), get ready to [deploy buildkit](#deploy-buildkit) and [build broadcom driver for system](#build-driver-for-system).
 
 ## The hard way: everything before hand
 
@@ -85,11 +85,11 @@ Reboot your computer, wireless card should be working now.
 
 ### When installing completed driver package my system says broken dependencies.
 
-Check if you installed the dependency packages you [downloaded](#Dependency-packages-for-offline-compilation) is installed __outside__ buildkit environment.
+Check if you installed the dependency packages you [downloaded](#dependency-packages-for-offline-compilation) is installed __outside__ buildkit environment.
 
 ### When building the driver package my system says broken dependencies.
 
-Check if you installed the dependency packages you [downloaded](#Dependency-packages-for-offline-compilation) is installed __inside__ buildkit environment.
+Check if you installed the dependency packages you [downloaded](#dependency-packages-for-offline-compilation) is installed __inside__ buildkit environment.
 
 ### Other problems?
 
