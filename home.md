@@ -19,7 +19,7 @@ This section contains guidebooks for AOSC developers, as well as more technicall
 # Users
 This section contains information useful for AOSC OS users with pages arranged by topics.
 
-## AOSC OS Installation
+## System Installation
 
 This topic provides information on installation of AOSC OS, and considerations suggested when choosing different editions of AOSC OS.
 
