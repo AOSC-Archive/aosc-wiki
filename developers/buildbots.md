@@ -35,7 +35,7 @@ NOTE:
 ---
 
 - **AMD64** (2001 - 3000)
-	- **Yhi64 {Daily}**, owned by _Junde Yhi_, on **2048**
+	- **Yhi64**, owned by _Junde Yhi_, on **2048**
 	- **EPSON-AOSC**, owned by _Zamir Sun_, on **2718 (e)**
 	- **TS140**, owned by _Staph_, on **2729**
 - **MIPS** (3001-4000)
