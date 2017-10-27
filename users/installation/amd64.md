@@ -11,6 +11,11 @@ Installation of AOSC OS on x86_64 systems/environments are generally universal f
 - [Notes for software RAID](/users/installation/amd64-notes-softraid)
 - [Notes for BCM4360 users](/users/installation/amd64-notes-bcm4360)
 
+Forenotes
+--------
+
+Any commands listed below starting with a `# ` means that the commands are run as the `root` user.
+
 Choosing a Tarball
 ------------------
 
@@ -250,7 +255,7 @@ LANG=zh_CN.UTF-8
 Or via the `localectl` command:
 
 ```
-localectl set-locale "LANG=zh_CN.UTF-8"
+# localectl set-locale "LANG=zh_CN.UTF-8"
 ```
 
 ### Setting System Hostname
@@ -258,5 +263,5 @@ localectl set-locale "LANG=zh_CN.UTF-8"
 To set a hostname for the system:
 
 ```
-hostnamectl set-hostname yourhostname
+# hostnamectl set-hostname yourhostname
 ```
