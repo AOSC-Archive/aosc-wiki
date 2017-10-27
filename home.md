@@ -45,13 +45,14 @@ This topic provides information on AOSC OS's system specifications, naming schem
 
 This section contains known *unresolved* issues found in AOSC OS for developers' and users' reference.
 
-[Go](#)
+// TODO
 
 # Knowledge Base
 
 This section contains pages describing resolved issues and commonly asked questions in AOSC OS.
 
-[Go](#)
+- [KB-SYS-00001](/kb/sys/apt-gen-list)
+- [KB-SYS-00002](/kb/sys/imchooser)
 
 # AOSA
 
