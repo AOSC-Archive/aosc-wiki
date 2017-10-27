@@ -51,8 +51,8 @@ This section contains known *unresolved* issues found in AOSC OS for developers'
 
 This section contains pages describing resolved issues and commonly asked questions in AOSC OS.
 
-- [KB-SYS-00001: Configuration of APT Repositories](/kb/sys/apt-gen-list)
-- [KB-SYS-00002: Configuration of Input Methods](/kb/sys/imchooser)
+- [KB-SYS-00001: Configuration of APT Repositories](/kb/sys/00001-apt-gen-list)
+- [KB-SYS-00002: Configuration of Input Methods](/kb/sys/00002-imchooser)
 
 # AOSA
 
