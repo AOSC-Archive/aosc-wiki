@@ -19,7 +19,7 @@ AOSC OS is provided with the following installable and bootable variants, each w
 And provided with the following variants:
 
 - [Base](#base)
-- [KDE/Plasma Desktop](#kdeplasma-desktop)
+- [KDE/Plasma Desktop](#kde-plasma-desktop)
 - [GNOME](#gnome)
 - [MATE](#mate)
 - [XFCE](#xfce)
