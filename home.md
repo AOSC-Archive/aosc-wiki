@@ -19,7 +19,27 @@ This section contains guidebooks for AOSC developers, as well as more technicall
 # Users
 This section contains information useful for AOSC OS users with pages arranged by topics.
 
+## AOSC OS Installation
+
+This topic provides information on installation of AOSC OS, and considerations suggested when choosing different editions of AOSC OS.
+
 - [How to Install AOSC OS](/users/installation/index)
+	- [AMD64/x86_64 Systems](/users/installation/amd64)
+	- [ARMv7/AArch64 Devices](/users/installation/arm)
+	- [PowerPC/PPC64-based Macintosh](/users/installation/powermac)
+	- *MIPS 32/64-Bit Systems*
+- System Requirements
+	- [AMD64/x86_64 Systems](/users/installation/amd64-notes-sysreq)
+	- [ARMv7/AArch64 Devices](/users/installation/arm-notes-sysreq)
+	- [PowerPC/PPC64-based Macintosh](/users/installation/powermac-notes-sysreq)
+	- *MIPS 32/64-bit Systems*
+
+## System Information and Specifications
+
+This topic provides information on AOSC OS's system specifications, naming schemes, etc.
+
+- [Architecture Namings and Specifications](/users/information/arch-specs)
+- [Filesystem Hierarchy](/users/information/fs-hierarchy)
 
 # Errata
 
