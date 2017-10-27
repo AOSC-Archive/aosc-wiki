@@ -6,26 +6,23 @@ Notes for Broadcom BCM4360 wireless
 
 Uh-oh. You've reached where __excessive manual intervention__ is required. Most linux does not support BCM4360 out-of-the-box, which means you will not be able to access internet once you entered linux environment if Broadcom's (notoriously) restricted copyrighted drivers. But to compile the driver, you need network access in the first place.
 
-First time setup
--------------
+## The easy way: bootstrap state of mind
 
-### The easy way: bootstrap state of mind
-
-#### Find another handy wireless card
+### Find another handy wireless card
 
 If you have an USB wireless card, try it. Another good idea is to connect your Android Phone to a wifi network and enable USB tethering.
 
-#### Installation
+### Installation
 
 If you managed to obtain internet access in this way, proceed to [regular installation guide](/users/installation/amd64). Go for the hard way otherwise.
 
 __After__ AOSC OS installation is correctly working on your computer (except for the builtin wireless card), get ready to [deploy buildkit](#Deploy-buildkit) and [build broadcom driver for system](#build-driver-for-system).
 
-### The hard way: everything before hand
+## The hard way: everything before hand
 
 Before starting [regular installation guide](/users/installation/amd64). Please download the following beforehand to a handy USB drive:
 
-#### Tarballs:
+### Tarballs:
 
 1. the __system__ tarball of your choice
 2. the __buildkit__ tarball
@@ -35,7 +32,7 @@ Follow [regular installation guide](/users/installation/amd64) with the __system
 
 __After__ AOSC OS installation is correctly working on your computer  (except for the builtin wireless card)...
 
-#### Dependency packages for offline compilation
+### Dependency packages for offline compilation
 
 Use your old OS (which has internet access), search in [Software repository](https://repo.aosc.io/os-amd64/os3-dpkg/) for the following packages. The package is stored in the folder named after the starting characters of package name and is a file named `<package name>_<version number>_amd64.deb`. For example to download `gcc`, look in folder `g` and download `gcc_6.3.0-0_amd64.deb`.
 
@@ -50,11 +47,11 @@ __This wiki might not reflect actual file name on the repository, since the vers
 
 After obtaining these packages, copy them on to a disk drive. Get ready to [deploy buildkit](#Deploy-buildkit), [manually install required packages](#Install-dependencies) and [build broadcom driver](#build-driver-for-system).
 
-#### Deploy buildkit
+### Deploy buildkit
 
 Refers to [AOSC Cadet training](https://github.com/AOSC-Dev/aosc-os-abbs/wiki/Preparing-Getting-BuildKit) on how to setup buildkit on your local environment. Skip all the steps that require network access.
 
-#### Install dependencies
+### Install dependencies
 
 Copy all the packages you've downloaded to the drive to both your home directory in __system__ and a folder inside __buildkit__ environment.
 
@@ -67,7 +64,7 @@ cd /path/to/packages
 dpkg -i *.deb
 ```
 
-#### Build driver for system
+### Build driver for system
 
 Say if you stored buildkit in `/path/to/buildkit` and extracted the snapshot of cth451's acbs tree to `/path/to/buildkit/path/to/cth451-tree`, proceed as root.
 
@@ -84,8 +81,7 @@ Then execute `acbs-build -t btta broadcom-wl`, expect an error on fail to load m
 
 Reboot your computer, wireless card should be working now.
 
-Troubleshooting
-------------
+## Troubleshooting
 
 ### When installing completed driver package my system says broken dependencies.
 
