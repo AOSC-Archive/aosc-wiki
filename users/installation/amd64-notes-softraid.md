@@ -6,6 +6,11 @@ Notes for Software RAID
 
 Installing AOSC OS on software-RAID configuration may require extra steps after installing using the [regular installation guide](/users/installation/amd64).
 
+Forenotes
+--------
+
+- Any commands listed below starting with a `# ` means that the commands are run as the `root` user.
+
 Extra Initialization RAM Disk Configuration
 -------------------------------------------
 
