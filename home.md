@@ -19,7 +19,7 @@ This section contains guidebooks for AOSC developers, as well as more technicall
 # Users
 This section contains information useful for AOSC OS users with pages arranged by topics.
 
-- [How to Install AOSC OS](https://wiki.aosc.io/users/installation/index)
+- [How to Install AOSC OS](/users/installation/index)
 
 # Errata
 
