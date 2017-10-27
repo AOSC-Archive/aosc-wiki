@@ -45,7 +45,7 @@ __This wiki might not reflect actual file name on the repository, since the vers
 5. `isl`
 6. `mpfr`
 
-After obtaining these packages, copy them on to a disk drive. Get ready to [deploy buildkit](#Deploy-buildkit), [manually install required packages](#Install-dependencies) and [build broadcom driver](#build-driver-for-system).
+After obtaining these packages, copy them on to a disk drive. Get ready to [deploy buildkit](#deploy-buildkit), [manually install required packages](#install-dependencies) and [build broadcom driver](#build-driver-for-system).
 
 ### Deploy buildkit
 
