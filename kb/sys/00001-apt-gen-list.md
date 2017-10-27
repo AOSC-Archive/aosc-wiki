@@ -1,4 +1,4 @@
-<!-- TITLE: KB-SYS-00001: Configuration of APT RepositoriesApt Gen List -->
+<!-- TITLE: KB-SYS-00001: Configuration of APT Repositories -->
 <!-- SUBTITLE: Information on Enabling or Disabling APT Repositories on AOSC OS -->
 
 APT Configuration
