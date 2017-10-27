@@ -58,7 +58,7 @@ This section contains pages describing resolved issues and commonly asked questi
 
 This section lists all current and historic AOSC OS Security Advisories.
 
-[Go](#)
+// TODO
 
 # Mirrors
 
