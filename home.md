@@ -13,13 +13,13 @@ The wiki is split into multiple big sections, targeting different audiences. Do 
 # Developers
 This section contains guidebooks for AOSC developers, as well as more technically-inclined content for developers using AOSC OS.
 
-- [How To Contribute to This Wiki](developers/how-to-contribute-md)
+- [How to Contribute to This Wiki](developers/how-to-contribute-md)
 - [AOSC Buildbot Information](developers/buildbots)
 
 # Users
 This section contains information useful for AOSC OS users with pages arranged by topics.
 
-[Go](#)
+- [How to Install AOSC OS](https://wiki.aosc.io/users/installation/index)
 
 # Errata
 
