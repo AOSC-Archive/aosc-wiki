@@ -1,4 +1,4 @@
-<!-- TITLE: Installation/_Index -->
+<!-- TITLE: Installation/Index -->
 <!-- SUBTITLE: A General Index for all AOSC OSInstallation Guides -->
 
 Installation
