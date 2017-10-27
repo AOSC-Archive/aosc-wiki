@@ -11,7 +11,7 @@ First time setup
 
 ### The easy way: bootstrap state of mind
 
-#### Find another handy wireless card
+### Find another handy wireless card
 
 If you have an USB wireless card, try it. Another good idea is to connect your Android Phone to a wifi network and enable USB tethering.
 
@@ -21,11 +21,11 @@ If you managed to obtain internet access in this way, proceed to [regular instal
 
 __After__ AOSC OS installation is correctly working on your computer (except for the builtin wireless card), get ready to [deploy buildkit](#Deploy-buildkit) and [build broadcom driver for system](#build-driver-for-system).
 
-#### The hard way: everything before hand
+### The hard way: everything before hand
 
 Before starting [regular installation guide](/users/installation/amd64). Please download the following beforehand to a handy USB drive:
 
-##### Tarballs:
+#### Tarballs:
 
 1. the __system__ tarball of your choice
 2. the __buildkit__ tarball
@@ -35,7 +35,7 @@ Follow [regular installation guide](/users/installation/amd64) with the __system
 
 __After__ AOSC OS installation is correctly working on your computer  (except for the builtin wireless card)...
 
-##### Dependency packages for offline compilation
+#### Dependency packages for offline compilation
 
 Use your old OS (which has internet access), search in [Software repository](https://repo.aosc.io/os-amd64/os3-dpkg/) for the following packages. The package is stored in the folder named after the starting characters of package name and is a file named `<package name>_<version number>_amd64.deb`. For example to download `gcc`, look in folder `g` and download `gcc_6.3.0-0_amd64.deb`.
 
