@@ -1,8 +1,8 @@
-<!-- TITLE: How To Mirror AOSC's Repo -->
-<!-- SUBTITLE: A quick summary of how to make a fresh mirror of AOSC's Repo -->
+<!-- TITLE: How To Mirror the Community Repository -->
+<!-- SUBTITLE: A Quick Summary of How to Create a Mirror of AOSC's Repo -->
 
 # Welcome Message
-Thanks for your interest in mirroring AOSC's Repo.
+Thank you for your interest in mirroring AOSC's Repo.
 
 Believe it or not, AOSC has been around for quite some time now, we do want more people to know about us, and those who we are grateful to. AOSC will never take its shape today without the support from our lovely community and our generous sponsors.
 
