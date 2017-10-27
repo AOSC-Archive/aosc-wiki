@@ -11,7 +11,7 @@ First time setup
 
 ### The easy way: bootstrap state of mind
 
-### Find another handy wireless card
+#### Find another handy wireless card
 
 If you have an USB wireless card, try it. Another good idea is to connect your Android Phone to a wifi network and enable USB tethering.
 
