@@ -38,3 +38,9 @@ This section contains pages describing resolved issues and commonly asked questi
 This section lists all current and historic AOSC OS Security Advisories.
 
 [Go](#)
+
+# Mirrors
+
+This section contains information and guides regarding AOSC's Community Repository.
+
+- [How To Mirror the Community Repository](/mirrors/how-to)
