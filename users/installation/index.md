@@ -1,5 +1,5 @@
-<!-- TITLE: How to Install AOSC OS -->
-<!-- SUBTITLE: A General Index for all Installation Guides -->
+<!-- TITLE: Installation/Index -->
+<!-- SUBTITLE: A General Index for all AOSC OSInstallation Guides -->
 
 Installation
 ============
@@ -9,4 +9,4 @@ Currently, AOSC OS is installed with a tarball (more specifically, a .tar.xz arc
 - [AMD64/x86_64 Systems](/users/installation/amd64)
 - [ARMv7/AArch64 Devices](/users/installation/arm)
 - [PowerPC 32/64-bit Macintosh](/users/installation/powermac)
-- [MIPS32/64 Systems](/users/installation/mips) (WIP, specifications incomplete)
+- *MIPS32/64 Systems (WIP, specifications incomplete)*
