@@ -14,7 +14,7 @@ Installation of AOSC OS on x86_64 systems/environments are generally universal f
 Forenotes
 --------
 
-Any commands listed below starting with a `# ` means that the commands are run as the `root` user.
+- Any commands listed below starting with a `# ` means that the commands are run as the `root` user.
 
 Choosing a Tarball
 ------------------
