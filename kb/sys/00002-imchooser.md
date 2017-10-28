@@ -1,4 +1,4 @@
-<!-- TITLE: Configuration of Input Methods -->
+<!-- TITLE: KB-SYS-00002: Configuration of Input Methods -->
 <!-- SUBTITLE: Configuring Input Methods in AOSC OS Desktop Environments -->
 
 Input Method Configuration
