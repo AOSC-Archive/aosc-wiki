@@ -41,11 +41,14 @@ The list below is a **concrete and specific** list of packages which could be co
 | Lantern | `lantern` | 3 |
 | OBFS Proxy | `obfsproxy` | 3 |
 | OBFS4 Proxy | `obfs4proxy` | 3 |
+| OpenSwan | `openswan` | 3 |
+| OpenVPN | `openvpn` | 3 |
 | PCAP-DNSProxy | `pcap-dnsproxy` | 3 |
 | Shadowsocks | `shadowsocks` | 3 |
 | Shadowsocks-LibEv | `shadowsocks-libev` | 3 |
 | Shadowsocks-Qt5 | `shadowsocks-qt5` | 3 |
 | Simple-OBFS | `simple-obfs` | 3 |
+| StrongSwan | `strongswan` | 3 |
 | Tor | `tor` | 3 |
 | V2Ray | `v2ray` | 3 |
 | WireGuard | `wireguard` | 3 |
