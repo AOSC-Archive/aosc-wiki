@@ -1,4 +1,4 @@
-<!-- TITLE: JACK Configuration -->
+<!-- TITLE: KB-SYS-00003: JACK Configuration -->
 <!-- SUBTITLE: JACK Configuration on AOSC OS -->
 
 # JACK Audio Connection Kit
