@@ -45,6 +45,7 @@ The list below is a **concrete and specific** list of packages which could be co
 | Shadowsocks-LibEv | `shadowsocks-libev` | 3 |
 | Shadowsocks-Qt5 | `shadowsocks-qt5` | 3 |
 | Simple-OBFS | `simple-obfs` | 3 |
+| Tor | `tor` | 3 |
 | V2Ray | `v2ray` | 3 |
 | WireGuard | `wireguard` | 3 |
 | Linux Kernel (Mainline) | `linux-kernel*`, `linux+kernel` | 4 |
