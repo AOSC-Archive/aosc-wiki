@@ -37,6 +37,7 @@ The list below is a **concrete and specific** list of packages which could be co
 | You-Get | `you-get` | 2 |
 | Youtube-DL | `youtube-dl` | 2 |
 | Gost | `gost` | 3 |
+| KCPTUN | `kcptun` | 3 |
 | Lantern | `lantern` | 3 |
 | OBFS Proxy | `obfsproxy` | 3 |
 | OBFS4 Proxy | `obfs4proxy` | 3 |
