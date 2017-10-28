@@ -50,5 +50,5 @@ The list below is a **concrete and specific** list of packages which could be co
 
 Extra Notes
 ============
-- Ask: Should non-security updates to packages found in the exception list should be updated. e.g. Firefox 56.0.2?
+- *Ask: Should non-security updates to packages found in the exception list should be updated. e.g. Firefox 56.0.2?*
 	- Re.: No, only if it fits within the four categories discussed above - however, it could be a valid argument that for example, if it prevents a user from accessing a certain website or it leads to crashes - in that case, an update to Firefox should be committed to the [bugfix](https://github.com/AOSC-Dev/aosc-os-abbs/tree/bugfix) branch and made available after internal testing. So that said, if the bugfix is minor and unlikely to be triggered, the update should still be limited to the [staging](https://github.com/AOSC-Dev/aosc-os-abbs/tree/staging) branch, and made availabe by the end of a monthly cycle.
