@@ -36,6 +36,7 @@ The list below is a **concrete and specific** list of packages which could be co
 | Time Zone Data | `tzdata` | 2 |
 | You-Get | `you-get` | 2 |
 | Youtube-DL | `youtube-dl` | 2 |
+| Gost | `gost` | 3 |
 | Lantern | `lantern` | 3 |
 | OBFS Proxy | `obfsproxy` | 3 |
 | OBFS4 Proxy | `obfs4proxy` | 3 |
@@ -45,6 +46,7 @@ The list below is a **concrete and specific** list of packages which could be co
 | Shadowsocks-Qt5 | `shadowsocks-qt5` | 3 |
 | Simple-OBFS | `simple-obfs` | 3 |
 | V2Ray | `v2ray` | 3 |
+| WireGuard | `wireguard` | 3 |
 | Linux Kernel (Mainline) | `linux-kernel*`, `linux+kernel` | 4 |
 | Linux Kernel (Libre) | `linux-kernel-libre-*`, `linux+kernel+libre` | 4 |
 | Linux Kernel (LTS) | `linux-kernel-lts-*`, `linux+kernel+lts` | 4 |
