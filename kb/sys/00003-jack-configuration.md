@@ -3,7 +3,7 @@
 
 # JACK Audio Connection Kit
 
-JACK is a super low latency sound toolkit. It provides builtin DSP, sound server and sound routing to suit your daily usage and pro-audio production needs.
+JACK is a super low latency sound toolkit. It provides builtin DSP, sound server and sound routing to suit your daily usage and pro-audio production needs. However, given the nature of this kit of software, it is not possible for us to provide an out-of-the-box configuartion that works to suite your needs.
 
 # Installation & Configuration
 
@@ -36,7 +36,7 @@ To make JACK at run, you would need to:
   * Possible Cause 3: If JACK is running correctly (no misconfiguration, no error messages, no xruns) and the sound device settings are correct, check if the sound routing is correct. If you have `cadence` installed, you can see the sound routing map at `Tools -> Catia`, check if your application playback port is connected to system plackback, if not, draw the connections between them.
   * Possible Cause 4: If your applications use ALSA or PulseAudio, check if the JACK bridges are enabled and check the bridge logs to see if they are having difficulties routing the signals. Please note if PulseAudio is used, please make sure the `JACK Bridges -> PulseAudio` is in running state, and there's a `...` button below the `Stop` button, make sure to click it and select `Playback mode only`, after that, click `Stop` once, you'll see it automatically restart bridge.
 ## JACK is running but I got scattered or distorted sound
-  * Problem: Your buffer size is too small and your device is not powerful enough to process the signals in time.
+  * Cause: Your buffer size is too small and your device is not powerful enough to process the signals in time.
   * Solution: Increase the buffer size and the delay or upgrade your device hardware.
 
 # Known Issues
