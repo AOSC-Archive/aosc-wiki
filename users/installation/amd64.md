@@ -209,10 +209,12 @@ The default password for `aosc` is `anthon`.
 To rename the `aosc` account:
 
 ```
-# usermod -d /home/username -l username -m aosc
+# usermod -d /home/<username> -l <username> -m aosc
 ```
 
-Where `username` is the new name you would want to have for `aosc`.
+Where `<username>` is the new name you would want to have for `aosc`.
+
+Note: Generally, Linux restrict charaters used by user name: *A valid username takes **lower-case letters and numbers;** it must **start with letters.***
 
 ### Resetting Password
 
@@ -252,7 +254,7 @@ To set default language for all users, edit `/etc/locale.conf`. For example, to 
 LANG=zh_CN.UTF-8
 ```
 
-Or via the `localectl` command:
+Tips: After you rebooted the computer into the new system, you may the `localectl` command to do this:
 
 ```
 # localectl set-locale "LANG=zh_CN.UTF-8"
@@ -260,7 +262,12 @@ Or via the `localectl` command:
 
 ### Setting System Hostname
 
-To set a hostname for the system:
+To set a hostname for the system, edit `/etc/hostname`. For example, to set the hostname to be *MyNewComputer*:
+```
+MyNewComputer
+```
+
+Tips: After you rebooted the computer into the new system, you may the `hostnamectl` command to do this:
 
 ```
 # hostnamectl set-hostname yourhostname
