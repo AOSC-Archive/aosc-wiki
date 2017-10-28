@@ -24,6 +24,7 @@ The list below is a **concrete and specific** list of packages which could be co
 | Chromium | `chromium` | 1 |
 | Google Chrome | `google-chrome` | 1 |
 | Mozilla Firefox  | `firefox` | 1 |
+| OpenJDK | `openjdk` | 1 |
 | Opera | `opera` | 1 |
 | Pale Moon | `palemoon` | 1 |
 | SeaMonkey | `seamonkey` | 1 |
