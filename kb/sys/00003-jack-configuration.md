@@ -16,8 +16,8 @@ And if you think that's it, then you are mentally not ready for JACK.
 To make JACK at least runs, you need to:
 
 1. Add yourself to `audio` group by issuing the command `sudo usermod -aG audio <your username>`
-2. [Optional] To enhance your experience, you are recommended to install `cadence`, which is a GUI application to configure various settings of JACK
-3. Logout and login to make your settings effective
+2. **Optional** To enhance your experience, you are recommended to install `cadence`, which is a GUI application to configure various settings of JACK
+3. Re-login to activate new settings
 4. Start JACK server by issuing `jack_control start`, if you have `cadence` installed, just fire up `cadence` and hit that `Start` button on the right
 5. Start your application that requires jack
 
