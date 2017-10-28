@@ -11,6 +11,7 @@ However, given the bugfix/security update may rely - and limited to - on backpor
 - **Category 2:** Heavily relied on frequent updates to remain functional. This category is most well represented by tools which reads online APIs/page contents for its basic functionality, for example, youtube-dl.
 - **Category 3:** Essential to basic Internet access in certain regions. This category is most well represented by network utilities which have to work around new blockades and constraints, for example, shadowsocks.
 - **Category 4:** Non-major Kernel updates. For example, going from 4.13.1 to 4.13.n, n>1 should be permitted as a bugfix update and made available in the stable repository upon internal testing; while going from 4.13.1 to 4.x.y, x>13 will require that the new Kernel packages to go through the full monthly cyclce.
+- **Category 5:** AOSC OS distribution-specific development toolkits, which should be the newest at all times.
 
 Exception List
 ========
@@ -47,8 +48,11 @@ The list below is a **concrete and specific** list of packages which could be co
 | Linux Kernel (Mainline) | `linux-kernel*`, `linux+kernel` | 4 |
 | Linux Kernel (Libre) | `linux-kernel-libre-*`, `linux+kernel+libre` | 4 |
 | Linux Kernel (LTS) | `linux-kernel-lts-*`, `linux+kernel+lts` | 4 |
+| Autobuild3 | `autobuild3` | 5 |
+| ACBS | `acbs` | 5 |
+| Ciel | `ciel` | 5 |
 
 Extra Notes
 ============
 - *Ask: Should non-security updates to packages found in the exception list be committed to the bugfix branch. e.g. Firefox 56.0.2?*
-	- Re.: No, only if it fits within the four categories discussed above - however, it could be a valid argument that for example, if it prevents a user from accessing a certain website or it leads to crashes - in that case, an update to Firefox should be committed to the [bugfix](https://github.com/AOSC-Dev/aosc-os-abbs/tree/bugfix) branch and made available after internal testing. So that said, if the bugfix is minor and unlikely to be triggered, the update should still be limited to the [staging](https://github.com/AOSC-Dev/aosc-os-abbs/tree/staging) branch, and made available by the end of a monthly cycle.
+	- Re.: No, only if it fits within the five categories discussed above - however, it could be a valid argument that for example, if it prevents a user from accessing a certain website or it leads to crashes - in that case, an update to Firefox should be committed to the [bugfix](https://github.com/AOSC-Dev/aosc-os-abbs/tree/bugfix) branch and made available after internal testing. So that said, if the bugfix is minor and unlikely to be triggered, the update should still be limited to the [staging](https://github.com/AOSC-Dev/aosc-os-abbs/tree/staging) branch, and made available by the end of a monthly cycle.
