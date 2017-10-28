@@ -53,7 +53,7 @@ This section contains pages describing resolved issues and commonly asked questi
 
 - [KB-SYS-00001: Configuration of APT Repositories](/kb/sys/00001-apt-gen-list)
 - [KB-SYS-00002: Configuration of Input Methods](/kb/sys/00002-imchooser)
-- [KB-SYS-00003: JACK Configuration](/kb/sys/00003-jack-configuration)
+- [KB-SYS-00003: Configuration of JACK](/kb/sys/00003-jack-configuration)
 
 # AOSA
 
