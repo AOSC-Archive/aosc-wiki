@@ -9,7 +9,7 @@ However, given the bugfix/security update may rely - and limited to - on backpor
 
 - **Category 1:** Hard (or impossible in case of binary packages) to backport security/bugfix patches to, and frequently updated in mixture of feature and security updates. This category is most well represented by (larger) Web browsers, for example, Firefox and Chromium.
 - **Category 2:** Heavily relied on frequent updates to remain functional. This category is most well represented by tools which reads online APIs/page contents for its basic functionality, for example, youtube-dl.
-- **Category 3:** Essential to basic Internet access. This category is most well represented by network utilities which have to work around new blockades and constraints, for example, shadowsocks.
+- **Category 3:** Essential to basic Internet access in certain regions. This category is most well represented by network utilities which have to work around new blockades and constraints, for example, shadowsocks.
 
 Exception List
 ========
@@ -22,9 +22,22 @@ The list below is a **concrete and specific** list of packages which could be co
 | Chromium | `chromium` | 1 |
 | Google Chrome | `google-chrome` | 1 |
 | Mozilla Firefox  | `firefox` | 1 |
-| Opera | `opera` | 1|
+| Opera | `opera` | 1 |
 | Pale Moon | `palemoon` | 1 |
+| SeaMonkey | `seamonkey` | 1 |
 | Thunderbird | `thunderbird` | 1 |
 | Vivaldi | `vivaldi` | 1 |
 | Flash Player PepperAPI Plugin | `flashplayer-ppapi` | 1 |
-| 
+| Baidu Cloud Client | `bcloud` | 2 |
+| BiliDan | `bilidan` | 2 |
+| You-Get | `you-get` | 2 |
+| Youtube-DL | `youtube-dl` | 2 |
+| Lantern | `lantern` | 3 |
+| OBFS Proxy | `obfsproxy` | 3 |
+| OBFS4 Proxy | `obfs4proxy` | 3 |
+| PCAP-DNSProxy | `pcap-dnsproxy` | 3 |
+| Shadowsocks | `shadowsocks` | 3 |
+| Shadowsocks-LibEv | `shadowsocks-libev` | 3 |
+| Shadowsocks-Qt5 | `shadowsocks-qt5` | 3 |
+| Simple-OBFS | `simple-obfs` | 3 |
+| V2Ray | `v2ray` | 3 |
