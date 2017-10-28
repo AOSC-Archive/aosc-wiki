@@ -7,7 +7,7 @@ Since the monthly update cycle was introduced to AOSC OS in July of 2017, packag
 
 However, given the bugfix/security update may rely - and limited to - on backporting of patches, there are some other packages which could be...
 
-- Hard (or impossible in case of binary packages) to backport security/bugfix patches to, and frequently updated in mixture of feature and security updates. This category is most well represented by Web browsers, for example, Firefox and Chromium. Category 1.
+- Hard (or impossible in case of binary packages) to backport security/bugfix patches to, and frequently updated in mixture of feature and security updates. This category is most well represented by (larger) Web browsers, for example, Firefox and Chromium. Category 1.
 - Heavily relied on frequent updates to remain functional. This category is most well represented by tools which reads online APIs/page contents for its basic functionality, for example, youtube-dl. Category 2.
 - Essential to basic Internet access. This category is most well represented by network utilities which have to work around new blockades and constraints, for example, shadowsocks. Category 3.
 
@@ -23,3 +23,8 @@ The list below is a **concrete and specific** list of packages which could be co
 | Google Chrome | `google-chrome` | 1 |
 | Mozilla Firefox  | `firefox` | 1 |
 | Opera | `opera` | 1|
+| Pale Moon | `palemoon` | 1 |
+| Thunderbird | `thunderbird` | 1 |
+| Vivaldi | `vivaldi` | 1 |
+| Flash Player PepperAPI Plugin | `flashplayer-ppapi` | 1 |
+| 
