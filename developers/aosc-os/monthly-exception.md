@@ -31,6 +31,7 @@ The list below is a **concrete and specific** list of packages which could be co
 | Flash Player PepperAPI Plugin | `flashplayer-ppapi` | 1 |
 | Baidu Cloud Client | `bcloud` | 2 |
 | BiliDan | `bilidan` | 2 |
+| PyTZ | `pytz` | 2 |
 | Time Zone Data | `tzdata` | 2 |
 | You-Get | `you-get` | 2 |
 | Youtube-DL | `youtube-dl` | 2 |
