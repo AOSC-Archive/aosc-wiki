@@ -31,6 +31,7 @@ The list below is a **concrete and specific** list of packages which could be co
 | Thunderbird | `thunderbird` | 1 |
 | Vivaldi | `vivaldi` | 1 |
 | Flash Player PepperAPI Plugin | `flashplayer-ppapi` | 1 |
+| AOSC OS AppStream Data | `aosc-appstream-data` | 2 |
 | Baidu Cloud Client | `bcloud` | 2 |
 | BiliDan | `bilidan` | 2 |
 | PyTZ | `pytz` | 2 |
