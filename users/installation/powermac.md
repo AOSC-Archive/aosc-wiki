@@ -61,6 +61,8 @@ You may either boot Lubuntu from a USB flash disk, or from a CD/DVD disc - use t
 
 ### Booting from USB Flash Disk
 
+Try holding Option key right after pressing the power button. If a blue screen with your flash drive show up, you are lucky as you just need to wait until the watch cursor changes back to the normal pointer, click on the Lubuntu image, then on the right arrow to boot. If it did not work that way, please keep reading to make an attempt on manual booting with Open Firmware.
+
 To boot from a USB flash disk, you will need to enter Open Firmware command line when booting up your Macintosh. Enter the Open Firmware command line with the following key combination:
 
 ```
