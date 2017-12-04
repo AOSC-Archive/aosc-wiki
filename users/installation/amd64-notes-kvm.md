@@ -25,7 +25,7 @@ Create an empty hard disk image called `aosc.img` with the size of `20GiB`, you 
 Partition the `aosc.img` file.
 
 ```
-$ fdisk aosc.img
+# fdisk aosc.img
 
 Welcome to fdisk (util-linux 2.28.2).
 Changes will remain in memory only, until you decide to write them.
