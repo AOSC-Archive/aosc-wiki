@@ -89,7 +89,7 @@ Un-tar!
 The shell code below shows how it is been done:
 
 ```
-# cd /mnt
+$ cd /mnt
 # tar pxvf /path/to/tarball.tar.xz
 ```
 
