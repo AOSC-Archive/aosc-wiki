@@ -9,17 +9,18 @@ This page contains information of all architectures supported by AOSC OS, and th
 Currently Supported
 -------------------
 
-### amd64
+### x86_64 (amd64)
 
 For systems with 64-bit x86 processors.
 
 - Triplet: `x86_64-aosc-linux-gnu`
 
-### arm64
+#### x86
 
-For systems with 64-bit little endian ARMv8-A+ processors (AArch64).
+For systems with 32-bit x86 processors.
 
-- Triplet: `aarch64-aosc-linux-gnu`
+- Triplet: `i686-aosc-linux-gnu`
+- Note: Requires Pentium Pro (i686) or higher.
 
 ### armel
 
@@ -28,12 +29,18 @@ For systems with 32-bit little endian ARMv7-A+ processors.
 - Triplet: `armv7a-aosc-linux-gnueabihf`
 - Note: Requires NEON FPU support; Hard Float ABI.
 
-### i386
+### arm64
 
-For systems with 32-bit x86 processors.
+For systems with 64-bit little endian ARMv8-A+ processors (AArch64).
 
-- Triplet: `i686-aosc-linux-gnu`
-- Note: Requires Pentium Pro (i686) or higher.
+- Triplet: `aarch64-aosc-linux-gnu`
+
+### mipsel
+
+For systems with 32-bit little endian MIPS processors, O32 ABI.
+
+- Triplet: `mipsel-aosc-linux-gnu`
+- Note: Requires MIPS-II ISA or higher.
 
 ### mips64el
 
