@@ -49,13 +49,6 @@ For systems with 64-bit little endian MIPS processors, N64 ABI.
 - Triplet: `mips64el-aosc-linux-gnu`
 - Note: Requires MIPS64r2 ISA or higher, optimized for Loongson 3A.
 
-### mipsel
-
-For systems with 32-bit little endian MIPS processors, O32 ABI.
-
-- Triplet: `mipsel-aosc-linux-gnu`
-- Note: Requires MIPS-II ISA or higher.
-
 ### powerpc
 
 For systems with 32-bit big endian PowerPC processors.
