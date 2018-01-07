@@ -45,7 +45,7 @@ This topic provides information on AOSC OS's system specifications, naming schem
 
 This section contains known *unresolved* issues found in AOSC OS for developers' and users' reference.
 
-// TODO
+- [ERR-SYS-00001: Disappearing Windows with KDE/Plasma Desktop using Intel DDX](/err/x11/00001-kde-window-intel-ddx)
 
 # Knowledge Base
 
