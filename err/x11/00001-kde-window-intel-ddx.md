@@ -22,4 +22,28 @@ None. However, a workaround has been identified - and this issue should only hap
 Create a Custom X11 Configuration
 ------------------------------
 
+Using your favourite editor (assuming `nano` here), create a custom X11 configuration file:
 
+`sudo nano /etc/X11/xorg.conf.d/20-modesettings.conf`
+
+Input in the following content:
+
+```
+Section "Device"
+    Identifier  "Intel Graphics"
+    Driver      "modesetting"
+    Option      "AccelMethod"    "glamor"
+    Option      "DRI"            "3"
+EndSection
+```
+
+And finally, `Ctrl-X` then `Y` to save the file.
+
+Restart Your X11 Session
+---------------------
+
+Using the following command:
+
+`sudo systemctl restart display-manager`.
+
+And you should be switched to the "Modesetting" driver, and that windows should be displaying correctly.
