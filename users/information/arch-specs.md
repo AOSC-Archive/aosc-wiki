@@ -17,7 +17,7 @@ For systems with 64-bit x86 processors.
 
 #### x86
 
-For systems with 32-bit x86 processors.
+For systems with 32-bit x86 processors. 32-Bit x86 architecture support is implemented as **32Subsystem**. <!-- Ref! -->
 
 - Triplet: `i686-aosc-linux-gnu`
 - Note: Requires Pentium Pro (i686) or higher.
