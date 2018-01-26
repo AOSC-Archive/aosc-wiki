@@ -19,7 +19,15 @@ Not yet identified.
 Fixed Version
 ===========
 
-None. However, a workaround has been identified - and this issue should only happen on a computer using Intel graphics (GMA, HD, UHD, etc.). To workaround this issue, you should switch to the "Modesetting" X11/XFree86 driver. To switch to this driver, simply add and apply the following configuration file with the instructions below:
+System Releases
+--------------
+
+Tarball system releases dated 20180126 or later will no longer include the Intel DDX (`xf86-video-intel`), as we removed `xf86-video-intel` as part of the `x11-base` metapackage. If your system still has this package installed, upon system update, you should be prompted that `xf86-video-intel` is no longer needed - follow the instruction on screen to remove this package automatically.
+
+Workaround
+-----------
+
+A workaround has been identified - and this issue should only happen on a computer using Intel graphics (GMA, HD, UHD, etc.). To workaround this issue, you should switch to the "Modesetting" X11/XFree86 driver. To switch to this driver, simply add and apply the following configuration file with the instructions below:
 
 Create a Custom X11 Configuration
 ------------------------------
