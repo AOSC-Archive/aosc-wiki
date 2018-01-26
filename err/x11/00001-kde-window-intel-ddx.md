@@ -1,4 +1,4 @@
-<!-- TITLE: ERR-SYS-00001: Disappearing Windows with KDE/Plasma Desktop using Intel DDX -->
+<!-- TITLE: ERR-SYS-00001: Disappearing Windows and Menus with KDE/Plasma Desktop using Intel DDX -->
 <!-- SUBTITLE: Intel X11/XFree86 Driver Issue and an Workaround -->
 
 Summary
@@ -8,6 +8,8 @@ When using Plasma 5.11.5 and KDE Frameworks 5.41.0 (and earlier) with a Intel X1
 
 - Tilix
 - GNOME Terminal
+
+It is also discovered that the list of word candidates for Fcitx could become invisible.
 
 Possible Cause
 ===========
