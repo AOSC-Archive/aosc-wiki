@@ -189,7 +189,7 @@ Installation and configuration of GRUB is straight forward on BIOS systems, only
 
 ## User, and Post-installation Configuration
 
-The tarballs doesn't come with a default user and `root` user is disabled, you would have to create your own account before you reboot into AOSC OS - while leaving the password empty for the `root` user - you can always use `sudo` for your superuser needs.
+All tarballs do not come with a default user and `root` user is disabled, you would have to create your own account before you reboot into AOSC OS - while leaving the password empty for the `root` user - you can always use `sudo` for your superuser needs.
 
 ### Add a user
 
