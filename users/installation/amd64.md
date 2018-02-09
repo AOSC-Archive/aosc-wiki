@@ -1,8 +1,7 @@
 <!-- TITLE: Installation/AMD64 -->
 <!-- SUBTITLE: Installing AOSC OS on AMD64/x86_64 Devices -->
 
-AMD64/x86_64 Installation
-=========================
+# AMD64/x86_64 Installation
 
 Installation of AOSC OS on x86_64 systems/environments are generally universal for all systems of this architectures. But for some specific device configurations and virtualized environments, here below are some extra notes:
 
@@ -11,13 +10,11 @@ Installation of AOSC OS on x86_64 systems/environments are generally universal f
 - [Notes for software RAID](/users/installation/amd64-notes-softraid)
 - [Notes for BCM4360 users](/users/installation/amd64-notes-bcm4360)
 
-Forenotes
---------
+## Forenotes
 
 - Any commands listed below starting with a `# ` means that the commands are run as the `root` user.
 
-Choosing a Tarball
-------------------
+## Choosing a Tarball
 
 All AMD64/x86_64 tarballs are generic (universal for all supported devices), the only thing you would have to do here is choosing your favourite one - appropriate for your taste and your use case.
 
@@ -40,8 +37,7 @@ Another consideration is whether your device is capable for a specific variant, 
 
 We are not going to discuss the deployment of Container and BuildKit in this guide, please check for the guide in [AOSC Cadet Training](/developers/aosc-os/index).
 
-Preparing an Installation Environment
--------------------------------------
+## Preparing an Installation Environment
 
 It is impossible to install AOSC OS without a working Live environment or an installed copy of Linux distribution on your local storage. Live disc images are not yet available for AOSC OS.
 
@@ -60,8 +56,7 @@ Where:
 
 After you are done, boot to GParted Live.
 
-Preparing partitions
---------------------
+## Preparing partitions
 
 On AMD64/x86_64, AOSC OS supports GUID (EFI) or MBR (traditional BIOS) partition tables - if you plan on multi-booting AOSC OS with other Linux distributions, Microsoft Windows, or Apple macOS, they generally uses GUID on newer machines, and MBR on older ones.
 
@@ -72,8 +67,7 @@ It is relatively easy to use GParted, provided with GParted Live to configure yo
 - If you plan on installing AOSC OS across multiple partitions, please make sure you created a `/etc/fstab` file before you reboot to AOSC OS - details discussed later.
 - If you plan on using the ESP (EFI System Partition) as your `/boot` partition, extra actions may be needed when updating the Linux Kernel - details discussed later.
 
-Un-tar!
--------
+## Un-tar!
 
 With partitions configured, you are now ready to unpack the AOSC OS system tarball you have downloaded. Before you start un-tar-ing your tarball, mount your system partition(s) first. Say, if you wanted to install AOSC OS on partition `/dev/sda2`:
 
@@ -103,8 +97,7 @@ For a more exciting experience, add verbosity:
 # tar pxvf /path/to/tarball/tarball.tar.xz
 ```
 
-Initial Configuration
----------------------
+## Initial Configuration
 
 Here below are some extra steps before you configure your bootloader - strongly recommended to avoid potential issues later.
 
@@ -155,8 +148,7 @@ Use the following command to create initialization RAM disk for AOSC OS.
 # sh /var/ab/triggered/dracut
 ```
 
-Bootloader Configuration
--------------------------
+## Bootloader Configuration
 
 Now you should be able to configure your bootloader, we will use GRUB for the purpose of this installation guide. Installation of GRUB differs for EFI and BIOS systems, and thus they will be separated to two sections.
 
@@ -195,36 +187,25 @@ Installation and configuration of GRUB is straight forward on BIOS systems, only
 # grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
-User, and Post-installation Configuration
------------------------------------------
+## User, and Post-installation Configuration
 
-AOSC OS tarball releases comes with a default `aosc` user, and the `root` user disabled. We recommend that you change the name and password of the default user before you reboot into AOSC OS - while leaving the password empty for the `root` user - you can always use `sudo` for your superuser needs.
+The tarballs doesn't come with a default user and `root` user is disabled, you would have to create your own account before you reboot into AOSC OS - while leaving the password empty for the `root` user - you can always use `sudo` for your superuser needs.
 
-The default password for `aosc` is `anthon`.
+### Add a user
 
-**All commands below are run from within chroot.**
-
-### Renaming Mr. aosc
-
-To rename the `aosc` account:
+To add a new user `aosc`, use the `useradd` command: 
 
 ```
-# usermod -d /home/<username> -l <username> -m aosc
+# useradd -m -G wheel -s /bin/bash aosc
 ```
 
-Where `<username>` is the new name you would want to have for `aosc`.
+### Setting password
 
-Note: Generally, Linux restricts charaters used by user name: *A valid username takes **lower-case letters and numbers;** it must **start with letters.***
-
-### Resetting Password
-
-To reset the password for your renamed `aosc` user:
+Although it is not required to protect the newly created user `aosc` with a password, it is highly recommend to do so: 
 
 ```
-# passwd username
+# passwd aosc
 ```
-
-Where `username` is your new user name.
 
 ### Enabling Root
 
