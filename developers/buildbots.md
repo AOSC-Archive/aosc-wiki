@@ -49,8 +49,12 @@ NOTE:
 |**Gobson**|3072|||_Xiaoxing Ye_|Originally owned by _Mingcong Bai_|
 |**Godson**|3141|||_Junde Yhi_||
 
-- **ARM** (4001-5000)
-	- **Tegra**, owned by _Mingcong Bai_, on **4096**
-	- **p64**, owned by _Icenowy Zheng_, on **4064**
-- **PowerPC** (5001-6000)
-- **RISC-V** (6001-7000)
+## **ARM** (4001-5000)
+
+|Name|Port|CPU|Memory|Maintainer|Note|
+|---|---|---|---|---|---|
+|**Tegra**|4096|||_Mingcong Bai_||
+|**p64**|4064|||_Icenowy Zheng_||
+
+## **PowerPC** (5001-6000)
+## **RISC-V** (6001-7000)
