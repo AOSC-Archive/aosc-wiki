@@ -47,7 +47,7 @@ NOTE:
 |Name|Port|CPU|Memory|Maintainer|Note|
 |---|---|---|---|---|---|
 |**Gobson**|3072|||_Xiaoxing Ye_|Originally owned by _Mingcong Bai_|
-|**Godson**|3141|||_Junde Yhi_||
+|**Godson**|3141(pi)|||_Junde Yhi_||
 
 ## **ARM** (4001-5000)
 
