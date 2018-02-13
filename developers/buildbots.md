@@ -34,7 +34,7 @@ NOTE:
 
 ---
 
-- **AMD64** (2001 - 3000)
+## **AMD64** (2001 - 3000)
 
 |Name|Port|CPU|Memory|Maintainer|Note|
 |---|---|---|---|---|---|
@@ -42,7 +42,7 @@ NOTE:
 |**Yhi64**|2048|||_Junde Yhi_|**Daily**|
 |**EPSON-AOSC**|2718(e)|||_Zamir Sun_||
 
-- **MIPS** (3001-4000)
+## **MIPS** (3001-4000)
 
 |Name|Port|CPU|Memory|Maintainer|Note|
 |---|---|---|---|---|---|
