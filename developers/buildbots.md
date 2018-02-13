@@ -30,21 +30,25 @@ If you are willing to contribute your machine to AOSC, please make sure your mac
 NOTE: 
 
 - `port_number - 1` is occupied by that machine. See information above.
-- A machine that marked as **{Daily}** means this machine is also used daily by the owner (that means many programs unrelated to development, e.g. X11, will be running on this machine). Please make sure that you do not make OOM on those machine!
+- A machine that marked as **Daily** means this machine is also used daily by the owner (that means many programs unrelated to development, e.g. X11, will be running on this machine). Please make sure that you do not make OOM on those machine!
 
 ---
 
 - **AMD64** (2001 - 3000)
-- 
+
 |Name|Port|CPU|Memory|Maintainer|Note|
 |---|---|---|---|---|---|
 |**SITS**|2729(2SAT)|Intel(R) Xeon(R) CPU E3-1225 v3 @ 3.20GHz|16GiB|_S. aureus_||
-|**Yhi64**|2048|||_Junde Yhi_|{Daily}|
+|**Yhi64**|2048|||_Junde Yhi_|**Daily**|
 |**EPSON-AOSC**|2718(e)|||_Zamir Sun_||
 
 - **MIPS** (3001-4000)
-	- **Gobson**, owned by _Mingcong Bai_ (currently _Xiaoxing Ye_), on **3072**
-	- **Godson**, owned by _Junde Yhi_, on **3141 (pi)**
+
+|Name|Port|CPU|Memory|Maintainer|Note|
+|---|---|---|---|---|---|
+|**Gobson**|3072|||_Xiaoxing Ye_|Originally owned by _Mingcong Bai_|
+|**Godson**|3141|||_Junde Yhi_||
+
 - **ARM** (4001-5000)
 	- **Tegra**, owned by _Mingcong Bai_, on **4096**
 	- **p64**, owned by _Icenowy Zheng_, on **4064**
