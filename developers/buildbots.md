@@ -39,7 +39,7 @@ NOTE:
 |Name|Port|CPU|Memory|Maintainer|Note|
 |---|---|---|---|---|---|
 |**SITS**|2729(2SAT)|Intel Xeon CPU E3-1225 v3 @ 3.20GHz|16GiB|_S. aureus_||
-|**Yhi64**|2048|||_Junde Yhi_|**Personal Computer**|
+|**Yhi64**|2048|||_Junde Yhi_|**Daily**|
 |**Ry1800X**|2333|AMD Ryzen 7 1800X @ 3.60GHz|32GiB|_Mingcong Bai_||
 |**EPSON-AOSC**|2718(e)|||_Zamir Sun_||
 
