@@ -15,11 +15,11 @@ AOSC buildbots are all connected to our central relay node (`relay.aosc.io`), an
 
 Between the relay and the buildbots, [Popub](https://github.com/m13253/popub) is used to forward your SSH port to our relay server. For usage of Popub, please read their README.
 
-Each buildbot is allocated 2 contiguous ports under the range; the smaller one is for connection between your machine and the relay, and the larger one is for outside connections to the relay. For example, the AMD64 buildbot _W541_ is using 2345 and 2346, where _W541_ forwards its SSH port using `popub-local` to 2345 on the relay, and the relay exposes this port to the outside on port 2346.
+Each buildbot is allocated 2 contiguous ports under the range; the smaller one is for connection between your machine and the relay, and the larger one is for outside connections to the relay. For example, the AMD64 buildbot _Ry1800X_ is using 2332 and 2333, where _Ry1800X_ forwards its SSH port using `popub-local` to 2332 on the relay, and the relay exposes this port to the outside on port 2333.
 
 You can log into these buildbots over SSH (by using `ssh -p <port_number> <username>@relay.aosc.io`). For usernames, passwords, and SSH public key exchange, you may contact the owners of buildbots first.
 
-If you are willing to contribute your machine to AOSC, please make sure your machine have an usable AOSC Buildkit, and contact Junde Yhi \<lmy441900 at aosc dot xyz\>, providing:
+If you are willing to contribute your machine to AOSC, please make sure your machine have an usable AOSC Buildkit or a Ciel configuration, and contact Junde Yhi \<lmy441900 at aosc dot xyz\>, providing:
 
 - A name for your machine (optional, just for fun).
 - The port number you want to expose on the relay server.
