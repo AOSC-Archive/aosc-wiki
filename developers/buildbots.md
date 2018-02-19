@@ -21,9 +21,9 @@ You can log into these buildbots over SSH (by using `ssh -p <port_number> <usern
 
 If you are willing to contribute your machine to AOSC, please make sure your machine have an usable AOSC Buildkit, and contact Junde Yhi \<lmy441900 at aosc dot xyz\>, providing:
 
-- A name for your machine (optional, just for fun)
-- The port number you want to expose on the relay server
-- The Pre-Shared Key of Popub
+- A name for your machine (optional, just for fun).
+- The port number you want to expose on the relay server.
+- The Pre-Shared Key of Popub.
 
 # List of Buildbots
 
