@@ -5,7 +5,7 @@
 
 This page contains information about AOSC Buildbots.
 
-AOSC buildbots are all connected to our central relay node (relay.aosc.io), and are allocated fixed port numbers. To be specific, ports are allocated as per the buildbot's architecture:
+AOSC buildbots are all connected to our central relay node (_relay.aosc.io_), and are allocated fixed port numbers. To be specific, ports are allocated as per the buildbot's architecture:
 
 - **AMD64**: 2001 - 3000
 - **MIPS**: 3001-4000
