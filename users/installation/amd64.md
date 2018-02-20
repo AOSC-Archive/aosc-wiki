@@ -1,8 +1,6 @@
 <!-- TITLE: Installation/AMD64 -->
 <!-- SUBTITLE: Installing AOSC OS on AMD64/x86_64 Devices -->
 
-# AMD64/x86_64 Installation
-
 Installation of AOSC OS on x86_64 systems/environments are generally universal for all systems of this architectures. But for some specific device configurations and virtualized environments, here below are some extra notes:
 
 - [Notes for KVM](/users/installation/amd64-notes-kvm)
@@ -10,17 +8,17 @@ Installation of AOSC OS on x86_64 systems/environments are generally universal f
 - [Notes for software RAID](/users/installation/amd64-notes-softraid)
 - [Notes for BCM4360 users](/users/installation/amd64-notes-bcm4360)
 
-## Forenotes
+# Forenotes
 
 - Any commands listed below starting with a `# ` means that the commands are run as the `root` user.
 
-## Choosing a Tarball
+# Choosing a Tarball
 
 All AMD64/x86_64 tarballs are generic (universal for all supported devices), the only thing you would have to do here is choosing your favourite one - appropriate for your taste and your use case.
 
 Another consideration is whether your device is capable for a specific variant, please consult the [AMD64/x86_64 system requirements](/users/installation/amd64-notes-sysreq) page for more information.
 
-### Bootable
+## Bootable
 
 - Base
 - KDE/Plasma
@@ -30,14 +28,14 @@ Another consideration is whether your device is capable for a specific variant, 
 - LXDE
 - i3 Window Manager
 
-### Non-bootable
+## Non-bootable
 
 - Container
 - BuildKit
 
 We are not going to discuss the deployment of Container and BuildKit in this guide, please check for the guide in [AOSC Cadet Training](/developers/aosc-os/index).
 
-## Preparing an Installation Environment
+# Preparing an Installation Environment
 
 It is impossible to install AOSC OS without a working Live environment or an installed copy of Linux distribution on your local storage. Live disc images are not yet available for AOSC OS.
 
@@ -56,18 +54,18 @@ Where:
 
 After you are done, boot to GParted Live.
 
-## Preparing partitions
+# Preparing partitions
 
 On AMD64/x86_64, AOSC OS supports GUID (EFI) or MBR (traditional BIOS) partition tables - if you plan on multi-booting AOSC OS with other Linux distributions, Microsoft Windows, or Apple macOS, they generally uses GUID on newer machines, and MBR on older ones.
 
 It is relatively easy to use GParted, provided with GParted Live to configure your partitions. For more details on how to configure your partition with GParted, please refer to the [GParted Manual](http://gparted.org/display-doc.php?name=help-manual).
 
-### Extra Notes
+## Extra Notes
 
 - If you plan on installing AOSC OS across multiple partitions, please make sure you created a `/etc/fstab` file before you reboot to AOSC OS - details discussed later.
 - If you plan on using the ESP (EFI System Partition) as your `/boot` partition, extra actions may be needed when updating the Linux Kernel - details discussed later.
 
-## Un-tar!
+# Un-tar!
 
 With partitions configured, you are now ready to unpack the AOSC OS system tarball you have downloaded. Before you start un-tar-ing your tarball, mount your system partition(s) first. Say, if you wanted to install AOSC OS on partition `/dev/sda2`:
 
@@ -97,17 +95,17 @@ For a more exciting experience, add verbosity:
 # tar pxvf /path/to/tarball/tarball.tar.xz
 ```
 
-## Initial Configuration
+# Initial Configuration
 
 Here below are some extra steps before you configure your bootloader - strongly recommended to avoid potential issues later.
 
-### Bind mount system/pseudo directories
+## Bind mount system/pseudo directories
 
 ```
 # for i in dev proc sys; do mount --rbind /$i /mnt/$i; done
 ```
 
-### /etc/fstab Generation
+## /etc/fstab Generation
 
 If you have chosen to use multi-partition layout for your AOSC OS installation, you will need to configure your `/etc/fstab` file, one fast way to achieve this is by installing the `genfstab` package:
 
@@ -131,7 +129,7 @@ But first of all, enter AOSC OS chroot environment:
 
 If you failed to enter chroot, you have probably not downloaded the amd64 version (gosh, we got it in bold as well...).
 
-### Update, Your, System!
+## Update, Your, System!
 
 New tarball releases comes out roughly each season (or longer depending on developers' availability), and it is generally a wise choice to update your system first - just to get rid of some old bugs since the tarball's release:
 
@@ -140,7 +138,7 @@ New tarball releases comes out roughly each season (or longer depending on devel
 # apt full-upgrade
 ```
 
-### Initialization RAM Disk
+## Initialization RAM Disk
 
 Use the following command to create initialization RAM disk for AOSC OS.
 
@@ -148,7 +146,7 @@ Use the following command to create initialization RAM disk for AOSC OS.
 # sh /var/ab/triggered/dracut
 ```
 
-## Bootloader Configuration
+# Bootloader Configuration
 
 Now you should be able to configure your bootloader, we will use GRUB for the purpose of this installation guide. Installation of GRUB differs for EFI and BIOS systems, and thus they will be separated to two sections.
 
@@ -156,7 +154,7 @@ Note: You would need GRUB 2.02 (`grub` version `2:2.0.2`) to support NVMe-based 
 
 **All commands below are run from within chroot.**
 
-### EFI Systems
+## EFI Systems
 
 To install GRUB for EFI systems, mount your ESP partition, generally `/dev/sda1` to `/efi` (change device name if appropriate):
 
@@ -178,7 +176,7 @@ For some Bay Trail devices, you might need to install for `i386-efi` target inst
 # grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
-### BIOS Systems
+## BIOS Systems
 
 Installation and configuration of GRUB is straight forward on BIOS systems, only thing to look out for is where the MBR for your hard drive(s) are. In our example, we assume that your MBR is located on `/dev/sda`, but it may vary, but in most cases, MBR is located on the *hard drive*, but not on *a partition*.
 
@@ -187,11 +185,11 @@ Installation and configuration of GRUB is straight forward on BIOS systems, only
 # grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
-## User, and Post-installation Configuration
+# User, and Post-installation Configuration
 
 All tarballs do not come with a default user and `root` user is disabled, you would have to create your own account before you reboot into AOSC OS - while leaving the password empty for the `root` user - you can always use `sudo` for your superuser needs.
 
-### Add a user
+## Add a user
 
 To add a new user `aosc`, use the `useradd` command: 
 
@@ -199,7 +197,7 @@ To add a new user `aosc`, use the `useradd` command:
 # useradd -m -G wheel -s /bin/bash aosc
 ```
 
-### Setting password
+## Setting password
 
 Although it is not required to protect the newly created user `aosc` with a password, it is highly recommend to do so: 
 
@@ -207,7 +205,7 @@ Although it is not required to protect the newly created user `aosc` with a pass
 # passwd aosc
 ```
 
-### Enabling Root
+## Enabling Root
 
 Although strongly discouraged, you can enable the `root` user by setting a password for `root`:
 
@@ -217,7 +215,7 @@ Although strongly discouraged, you can enable the `root` user by setting a passw
 
 *Decent Linux users need not the root user.*
 
-### Setting System Timezone
+## Setting System Timezone
 
 Timezone info are stored in `/usr/share/zoneinfo/<region>/<city>`.
 
@@ -225,7 +223,7 @@ Timezone info are stored in `/usr/share/zoneinfo/<region>/<city>`.
 # ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 ```
 
-### Setting System Language
+## Setting System Language
 
 AOSC OS enables all languages with UTF-8 encoding by default. In rare cases where you (really) want to disable some languages or enable non UTF-8 encodings, edit `/etc/locale.gen` as needed and execute `locale-gen` as root (which might take a long time).
 
@@ -241,7 +239,7 @@ Tips: After you rebooted the computer into the new system, you may use the `loca
 # localectl set-locale "LANG=zh_CN.UTF-8"
 ```
 
-### Setting System Hostname
+## Setting System Hostname
 
 To set a hostname for the system, edit `/etc/hostname`. For example, to set the hostname to be *MyNewComputer*:
 ```
