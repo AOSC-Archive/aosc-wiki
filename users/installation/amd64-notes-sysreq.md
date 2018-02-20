@@ -1,15 +1,13 @@
 <!-- TITLE: Installation/AMD64/SysReq -->
 <!-- SUBTITLE: AOSC OS System Requirements for AMD64/x86_64 Devices -->
 
-AMD64/x86_64 System Requirements
-==========================
+# AMD64/x86_64 System Requirements
 
 This page provides some general information and suggestions, in hope that it may aid in your choice from various AOSC OS variants provided for x86_64-based systems. Only processor, memory, display, GPU, and storage requirements are provided below.
 
 Moreover, development, and container variants not intended for installation are not discussed here.
 
-Variants
---------
+## Variants
 
 AOSC OS is provided with the following installable and bootable variants, each with their own features and implications on their system requirements. System requirements may vary greatly between different variants, but processor requirements are known for each architecture (although suggestions will be provided for each variant for ideal experience): 
 
@@ -96,8 +94,7 @@ i3 Window Manager variant of AOSC OS comes with Conky and i3block for system inf
 - Display: SVGA, XGA or higher recommended.
 - GPU: Recommended, but framebuffer device support will do.
 
-Extra Notes
--------------
+## Extra Notes
 
 - Web Browsers, especially mainstream choices like Chromium (Google Chrome), and Firefox may require significantly more memeory capacity and processing power. It will be very difficult to browse any webpage smoothly with an older processor like Intel Pentium 4/D's or AMD Athlon64's with less than 2GB (arguably 4GB) of RAM. As of this note, this Wiki page is edited on a Lenovo ThinkPad T61, with an Intel Core 2 T9300 processor and 8GB of RAM, running Chromium 62.
 - If you would like to use DKMS-based Linux Kernel addons, it is required for your system to compile these addon modules, which could require a significant amount of processing power - but not necessarily RAM.
