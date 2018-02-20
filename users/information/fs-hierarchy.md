@@ -1,15 +1,13 @@
 <!-- TITLE: Information/FsHierarchy -->
 <!-- SUBTITLE: AOSC OS Filesystem Hierarchy Specifications -->
 
-AOSC-style Filesystem Hierarchy
-===============================
+# AOSC-style Filesystem Hierarchy
 
 The filesystem hierarchy used by AOSC OS is based on FHS (Filesystem Hierarchy Standard), version 2.3 - with extra changes made or suggested by Systemd and AOSC OS developers. Only those differentiated from the standard FHS 2.3 specifications will be discussed below.
 
 For the original FHS 2.3 specifications in HTML, please refer to [here](http://www.pathname.com/fhs/pub/fhs-2.3.html).
 
-Symbolic Links
---------------
+## Symbolic Links
 
 In AOSC-style filesystem hierarchy, the `/usr/lib` and `/usr/bin` directories serves *all* libraries and executable binaries available:
 
