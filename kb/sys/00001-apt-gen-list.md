@@ -1,8 +1,7 @@
 <!-- TITLE: KB-SYS-00001: Configuration of APT Repositories -->
 <!-- SUBTITLE: Information on Enabling or Disabling APT Repositories on AOSC OS -->
 
-APT Configuration
-=================
+# APT Configuration
 
 This page describes the `apt-gen-list` utility pre-installed with AOSC OS. This utility is used to configure (enable or disable) mirrors used for APT software repositories, and to generate `/etc/apt/sources.list` for APT to use. This could be handy, with knowledge of fastest repository mirrors at your location.
 
