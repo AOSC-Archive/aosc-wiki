@@ -60,7 +60,7 @@ This section contains pages describing resolved issues and commonly asked questi
 
 This section lists all current and historic AOSC OS Security Advisories.
 
-- [What is AOSA?]
+- *What is AOSA?*
 - [List of Announced AOSAs (2017)](/aosa/archive/2017)
 - [List of Announced AOSAs (2018)](/aosa/archive/2018)
 
