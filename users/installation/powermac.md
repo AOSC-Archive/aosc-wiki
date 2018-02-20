@@ -1,23 +1,21 @@
 <!-- TITLE: Installation/PowerMac -->
 <!-- SUBTITLE: Installing AOSC OS on PowerPC/PPC64-based Macintosh Computers -->
 
-# PowerPC/PPC64-based Macintosh Installation
-
 **Note: Due to limited device availability, PowerPC 32-bit (`powerpc`) port of AOSC OS is only tested on G3/G4-based, [NewWorld](https://en.wikipedia.org/wiki/New_World_ROM) Apple Macintosh computers; PowerPC 64-bit (`ppc64`, Big Endian) port of AOSC OS is only tested on G5-based Apple Macintosh computers. So yes, these ports are Macintosh-specific as it stands now.**
 
 As stated above, this guide is specific to installing AOSC OS on PowerPC-based (old!) Apple Macintosh computers, using the Yaboot bootloader. Installation is aided with a copy of Debian or Ubuntu Live CD/DVD. Manual installation of AOSC OS on these computers may be quite complex, and each step is crucial for a successful installation - please do not skip any steps!
 
-## Forenotes
+# Forenotes
 
 - Any commands listed below starting with a `# ` means that the commands are run as the `root` user.
 
-## Choosing a Tarball
+# Choosing a Tarball
 
 All PowerPC 32/64-bit tarballs are generic (universal for all supported devices), the only thing you would have to do here is choosing your favourite one - appropriate for your taste and your use case.
 
 Another consideration is whether your device is capable for a specific variant, please consult the [PowerPC system requirements](/users/installation/powermac-notes-sysreq) page for more information.
 
-### Bootable
+## Bootable
 
 - Base
 - MATE
@@ -25,13 +23,13 @@ Another consideration is whether your device is capable for a specific variant, 
 - LXDE
 - i3 Window Manager
 
-### Non-bootable
+## Non-bootable
 - Container
 - BuildKit
 
 We are not going to discuss the deployment of Container and BuildKit in this guide, please check for the guide in [AOSC Cadet Training](https://github.com/AOSC-Dev/aosc-os-abbs/wiki).
 
-## Getting Lubuntu Live
+# Getting Lubuntu Live
 
 For the purpose of this guide, we recommend that you use a copy of Lubuntu 16.04 LTS, from one of the variants below:
 
@@ -50,11 +48,11 @@ Where:
 - `nameofimage.iso` is the filename of your downloaded Lubuntu ISO file.
 - `/dev/sdX` is the device file for your USB flash disk.
 
-## Booting Lubuntu Live
+# Booting Lubuntu Live
 
 You may either boot Lubuntu from a USB flash disk, or from a CD/DVD disc - use the latter only if you can't boot from USB, or if you are using a USB 1.1-based G3 system (burning ISOs should be very easy, not really worth covering here).
 
-### Booting from USB Flash Disk
+## Booting from USB Flash Disk
 
 Try holding Option key right after pressing the power button. If a blue screen with your flash drive show up, you are lucky as you just need to wait until the watch cursor changes back to the normal pointer, click on the Lubuntu image, then on the right arrow to boot. If it did not work that way, please keep reading to make an attempt on manual booting with Open Firmware.
 
@@ -75,14 +73,14 @@ You should be greeted with a boot menu:
 - If you are using G3/G4, please enter `linux32` and press Enter.
 - If you are using G5, please enter `linux64` and press Enter.
 
-### Booting from CD/DVD
+## Booting from CD/DVD
 
 Hold `c` while powering on your PowerPC Macintosh to boot from CD/DVD, you should be greeted with a boot menu:
 
 - If you are using G3/G4, please enter `linux32` and press Enter.
 - If you are using G5, please enter `linux64` and press Enter.
 
-### Configuring Partitions
+## Configuring Partitions
 
 PowerPC Macintoshs uses the so-called [Apple Partition Map](https://en.wikipedia.org/wiki/Apple_Partition_Map), which could sound very abstract to many modern (PC) system users. Special tools are also needed to properly partition a hard drive for installation. In a nutshell:
 
@@ -111,7 +109,7 @@ Format the "Bootstrap" partition:
 # mkfs.hfs /dev/sda2
 ```
 
-## Un-tar!
+# Un-tar!
 
 First of all, mount your system partition (not the "Bootstrap" partition), for this guide, mount it at `/mnt` - assuming that the partition is `/dev/sda3`, as the first two will be taken by the "Map" and "Bootstrap" partitions:
 
@@ -140,17 +138,17 @@ For a more "excited" experience, add verbosity:
 # tar pxvf /path/to/tarball/tarball.tar.xz
 ```
 
-## Initial Configuration
+# Initial Configuration
 
 Here below are some extra steps before you configure your bootloader - strongly recommended to avoid potential issues later.
 
-### Bind mount system/pseudo directories
+## Bind mount system/pseudo directories
 
 ```
 # for i in dev proc sys; do mount --rbind /$i /mnt/$i; done
 ```
 
-### /etc/fstab Generation
+## /etc/fstab Generation
 
 If you have chosen to use multi-partition layout for your AOSC OS installation, you will need to configure your `/etc/fstab` file, one fast way to achieve this is by installing the `genfstab` package:
 
@@ -180,7 +178,7 @@ For G5-based systems, you may not be able to enter chroot, as the Lubuntu Live p
 # apt install libc6:ppc64
 ```
 
-### Update, Your, System!
+## Update, Your, System!
 
 New tarball releases comes out roughly each season, and it is generally a wise choice to update your system first - just to get rid of some old bugs since the tarball's release:
 
@@ -189,7 +187,7 @@ New tarball releases comes out roughly each season, and it is generally a wise c
 # apt full-upgrade
 ```
 
-### Initialization RAM Disk
+## Initialization RAM Disk
 
 Use the following command to create initialization RAM disk for AOSC OS.
 
@@ -197,7 +195,7 @@ Use the following command to create initialization RAM disk for AOSC OS.
 # sh /var/ab/triggered/dracut
 ```
 
-## Bootloader Configuration
+# Bootloader Configuration
 
 **All commands below are run from within chroot.**
 
@@ -215,7 +213,7 @@ If you have installed AOSC OS on `/dev/sda3`, there is no need to make extra cha
 
 And edit `/etc/yaboot.conf` according to the comments provided.
 
-## User, and Post-installation Configuration
+# User, and Post-installation Configuration
 
 AOSC OS tarball releases comes with a default `aosc` user, and the `root` user disabled. We recommend that you change the name and password of the default user before you reboot into AOSC OS - while leaving the password empty for the `root` user - you can always use `sudo` for your superuser needs.
 
@@ -223,7 +221,7 @@ The default password for `aosc` is `anthon`.
 
 **All commands below are run from within chroot.**
 
-### Renaming Mr. aosc
+## Renaming Mr. aosc
 
 To rename the `aosc` account:
 
@@ -233,7 +231,7 @@ To rename the `aosc` account:
 
 Where `username` is the new name you would want to have for `aosc`.
 
-### Resetting Password
+## Resetting Password
 
 To reset the password for your renamed `aosc` user:
 
@@ -243,7 +241,7 @@ To reset the password for your renamed `aosc` user:
 
 Where `username` is your new user name.
 
-### Enabling Root
+## Enabling Root
 
 Although strongly discouraged, you can enable the `root` user by setting a password for `root`:
 
@@ -253,7 +251,7 @@ Although strongly discouraged, you can enable the `root` user by setting a passw
 
 *Decent Linux users need not the root user.*
 
-### Setting System Timezone
+## Setting System Timezone
 
 Timezone info are stored in `/usr/share/zoneinfo/<region>/<city>`.
 
@@ -261,7 +259,7 @@ Timezone info are stored in `/usr/share/zoneinfo/<region>/<city>`.
 # ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 ```
 
-### Setting System Language
+## Setting System Language
 
 AOSC OS enables all languages with UTF-8 encoding by default. In rare cases where you (really) want to disable some languages or enable non UTF-8 encodings, edit `/etc/locale.gen` as needed and execute `locale-gen` as root (which might take a long time).
 
@@ -277,7 +275,7 @@ Or via the `localectl` command:
 localectl set-locale "LANG=zh_CN.UTF-8"
 ```
 
-### Setting System Hostname
+## Setting System Hostname
 
 To set a hostname for the system:
 
@@ -285,17 +283,17 @@ To set a hostname for the system:
 hostnamectl set-hostname yourhostname
 ```
 
-## Extra Notes
+# Extra Notes
 
 This section contains extra information regarding specific devices, and changes needed to fix some known issues found within the ports.
 
-### Uniprocessor or SMP?
+## Uniprocessor or SMP?
 
 By design, we needed to provide two versions of Linux Kernel for PowerPC 32-bit systems, one for uniprocessor (or single processor) systems (any iMac G3/G4/G5, iBook G3/G4, and PowerBook G3/G4), and another for SMP-enabled multi-processor systems (some PowerMac G3/G4/G5).
 
 At Yaboot prompt, pressing Enter will boot the `aoscuni`, or the Kernel for uniprocessor systems (it will work on SMP systems, but showing only one processor core); type in `aoscsmp` and press Enter will boot the Kernel for SMP systems (do not use this on uni-processor systems, as the Kernel will lock up at the first instance).
 
-### ATI Systems
+## ATI Systems
 
 Some PowerPC Macintosh models comes with ATI graphics, and this can be problematic, as the system may lock up randomly when running X11. We will have to disable 3D acceleration to get these systems usable (albeit slower OpenGL performance throughput).
 
@@ -307,7 +305,7 @@ Mount the "Bootstrap" partition:
 
 And edit `/etc/yaboot.conf`, to add `radeon.agpmode=-1` to each `append=` lines.
 
-### Wild Colors with OpenGL
+## Wild Colors with OpenGL
 
 Arrrrrghhh! Stop shouting about this, we can't do anything about this until the Kernel DRM and Mesa developers have big endian systems on their hands.
 
