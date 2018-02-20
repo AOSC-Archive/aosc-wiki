@@ -1,13 +1,11 @@
 <!-- TITLE: Information/ArchSpecs -->
 <!-- SUBTITLE: AOSC OS Architecture Naming Schemes and Specifications -->
 
-Architecture Specifications
-===========================
+# Architecture Specifications
 
 This page contains information of all architectures supported by AOSC OS, and their architecture-specific requirements, notes, and toolchain triplets. The architectures listed below are in AOSC-style short names.
 
-Currently Supported
--------------------
+## Currently Supported
 
 ### x86_64 (amd64)
 
@@ -62,8 +60,7 @@ For systems with 64-bit big endian PowerPC processors.
 - Triplet: `powerpc64-aosc-linux-gnu`
 - Note: Requires AltiVec support.
 
-Hypothesized Architectures
---------------------------
+## Hypothesized Architectures
 
 ### rv32i
 
