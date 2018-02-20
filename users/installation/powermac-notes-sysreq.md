@@ -1,15 +1,13 @@
 <!-- TITLE: Installation/PowerMac/SysReq -->
 <!-- SUBTITLE: AOSC OS System Requirements for PowerPC/PPC64-based Macintosh Computers -->
 
-PowerPC System Requirements
-===========================
+# PowerPC System Requirements
 
 This page provides some general information and suggestions, in hope that it may aid in your choice from various AOSC OS variants provided for PowerPC 32/64-bit systems. Only processor, memory, display, GPU, and storage requirements are provided below.
 
 Moreover, development, and container variants not intended for installation are not discussed here.
 
-Variants
---------
+## Variants
 
 AOSC OS is provided with the following installable and bootable variants, each with their own features and implications on their system requirements. System requirements may vary greatly between different variants, but processor requirements are known for each architecture (although suggestions will be provided for each variant for ideal experience):
 
@@ -76,8 +74,7 @@ i3 Window Manager variant of AOSC OS comes with Conky and i3block for system inf
 - Display: SVGA, XGA or higher recommended.
 - GPU: Recommended, but framebuffer device support will do.
 
-Extra Notes
--------------
+## Extra Notes
 
 - Web Browsers, especially mainstream choices like Pale Moon and Firefox (for PowerPC/PPC64 at least) may require significantly more memeory capacity and processing power. It will be very difficult to browse any webpage smoothly with a single core G4 with less than 2GB (arguably 4GB) of RAM. As of this note, this Wiki page is edited on a PowerMac G5 Quad (2005) with 8GB of RAM, running Pale Moon 27.
 - If you would like to use DKMS-based Linux Kernel addons, it is required for your system to compile these addon modules, which could require a significant amount of processing power - but not necessarily RAM.
