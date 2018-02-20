@@ -1,20 +1,17 @@
 <!-- TITLE: Installation/PowerMac -->
 <!-- SUBTITLE: Installing AOSC OS on PowerPC/PPC64-based Macintosh Computers -->
 
-PowerPC/PPC64-based Macintosh Installation
-====================================
+# PowerPC/PPC64-based Macintosh Installation
 
 **Note: Due to limited device availability, PowerPC 32-bit (`powerpc`) port of AOSC OS is only tested on G3/G4-based, [NewWorld](https://en.wikipedia.org/wiki/New_World_ROM) Apple Macintosh computers; PowerPC 64-bit (`ppc64`, Big Endian) port of AOSC OS is only tested on G5-based Apple Macintosh computers. So yes, these ports are Macintosh-specific as it stands now.**
 
 As stated above, this guide is specific to installing AOSC OS on PowerPC-based (old!) Apple Macintosh computers, using the Yaboot bootloader. Installation is aided with a copy of Debian or Ubuntu Live CD/DVD. Manual installation of AOSC OS on these computers may be quite complex, and each step is crucial for a successful installation - please do not skip any steps!
 
-Forenotes
---------
+## Forenotes
 
 - Any commands listed below starting with a `# ` means that the commands are run as the `root` user.
 
-Choosing a Tarball
-------------------
+## Choosing a Tarball
 
 All PowerPC 32/64-bit tarballs are generic (universal for all supported devices), the only thing you would have to do here is choosing your favourite one - appropriate for your taste and your use case.
 
@@ -34,13 +31,12 @@ Another consideration is whether your device is capable for a specific variant, 
 
 We are not going to discuss the deployment of Container and BuildKit in this guide, please check for the guide in [AOSC Cadet Training](https://github.com/AOSC-Dev/aosc-os-abbs/wiki).
 
-Getting Lubuntu Live
---------------------
+## Getting Lubuntu Live
 
-For the purpose of this guide, we recommend that you use a copy of Lubuntu 14.04 LTS, from one of the variants below:
+For the purpose of this guide, we recommend that you use a copy of Lubuntu 16.04 LTS, from one of the variants below:
 
-- CD image, [download](http://cdimage.ubuntu.com/lubuntu/releases/trusty/release/lubuntu-14.04.5-desktop-powerpc.iso).
-- DVD image, [download](http://cdimage.ubuntu.com/lubuntu/releases/trusty/release/lubuntu-14.04-desktop-powerpc.iso).
+- Desktop image, [download](http://cdimage.ubuntu.com/lubuntu/releases/16.04/release/lubuntu-16.04-desktop-powerpc.iso).
+- Alternate image, [download](http://cdimage.ubuntu.com/lubuntu/releases/16.04/release/lubuntu-16.04-alternate-powerpc.iso).
 
 Now, dump the image(s) to your USB flash drive - most NewWorld PowerPC Macintosh supports booting from USB devices.
 
@@ -54,8 +50,7 @@ Where:
 - `nameofimage.iso` is the filename of your downloaded Lubuntu ISO file.
 - `/dev/sdX` is the device file for your USB flash disk.
 
-Booting Lubuntu Live
---------------------
+## Booting Lubuntu Live
 
 You may either boot Lubuntu from a USB flash disk, or from a CD/DVD disc - use the latter only if you can't boot from USB, or if you are using a USB 1.1-based G3 system (burning ISOs should be very easy, not really worth covering here).
 
@@ -116,8 +111,7 @@ Format the "Bootstrap" partition:
 # mkfs.hfs /dev/sda2
 ```
 
-Un-tar!
--------
+## Un-tar!
 
 First of all, mount your system partition (not the "Bootstrap" partition), for this guide, mount it at `/mnt` - assuming that the partition is `/dev/sda3`, as the first two will be taken by the "Map" and "Bootstrap" partitions:
 
@@ -146,8 +140,7 @@ For a more "excited" experience, add verbosity:
 # tar pxvf /path/to/tarball/tarball.tar.xz
 ```
 
-Initial Configuration
----------------------
+## Initial Configuration
 
 Here below are some extra steps before you configure your bootloader - strongly recommended to avoid potential issues later.
 
@@ -204,8 +197,7 @@ Use the following command to create initialization RAM disk for AOSC OS.
 # sh /var/ab/triggered/dracut
 ```
 
-Bootloader Configuration
-------------------------
+## Bootloader Configuration
 
 **All commands below are run from within chroot.**
 
@@ -223,8 +215,7 @@ If you have installed AOSC OS on `/dev/sda3`, there is no need to make extra cha
 
 And edit `/etc/yaboot.conf` according to the comments provided.
 
-User, and Post-installation Configuration
------------------------------------------
+## User, and Post-installation Configuration
 
 AOSC OS tarball releases comes with a default `aosc` user, and the `root` user disabled. We recommend that you change the name and password of the default user before you reboot into AOSC OS - while leaving the password empty for the `root` user - you can always use `sudo` for your superuser needs.
 
@@ -294,8 +285,7 @@ To set a hostname for the system:
 hostnamectl set-hostname yourhostname
 ```
 
-Extra Notes
------------
+## Extra Notes
 
 This section contains extra information regarding specific devices, and changes needed to fix some known issues found within the ports.
 
