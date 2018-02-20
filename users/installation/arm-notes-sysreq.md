@@ -1,15 +1,13 @@
 <!-- TITLE: Installation/ARM*/SysReq -->
 <!-- SUBTITLE: AOSC OS System Requirements for ARMv7/AArch64 Devices -->
 
-ARMv7/AArch64 System Requirements
-=======================
+# ARMv7/AArch64 System Requirements
 
 This page provides some general information and suggestions, in hope that it may aid in your choice from various AOSC OS variants provided for ARMv7 and AArch64 systems. Device-specific support will *not* be discussed here, only processor, memory, display, GPU, and storage requirements are provided below.
 
 Moreover, development, and container variants not intended for installation are not discussed here.
 
-Variants
---------
+## Variants
 
 AOSC OS is provided with the following installable and bootable variants, each with their own features and implications on their system requirements. System requirements may vary greatly between different variants, but processor requirements are known for each architecture (although suggestions will be provided for each variant for ideal experience):
 
