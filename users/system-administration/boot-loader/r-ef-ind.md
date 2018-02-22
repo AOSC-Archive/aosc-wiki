@@ -18,12 +18,15 @@ rEFInd has read-only drivers for ReiserFS, Ext2, Ext4, Btrfs, ISO-9660, HFS+, an
 > Note: Your kernel and initramfs need to reside on a file system which rEFInd can read.
 
 To find additional drivers see The rEFInd Boot Manager: Using EFI Drivers: Finding Additional EFI Drivers.
-Scripted installation
+
+## Scripted installation
 
 The rEFInd package includes the refind-install script to simplify the process of setting rEFInd as your default EFI boot entry. The script has several options for handling differing setups and UEFI implementations. See refind-install(8). For many systems it should be sufficient to simply run:
+
 ```
 # refind-install
 ```
+
 This will attempt to find and mount your ESP, copy rEFInd files to esp/EFI/refind/, and use efibootmgr to make rEFInd the default EFI boot application.
 
 Alternatively you can install rEFInd to the default/fallback boot path esp/EFI/BOOT/bootx64.efi. This is helpful for bootable USB flash drives or on systems that have issues with the NVRAM changes made by efibootmgr:
@@ -31,6 +34,7 @@ Alternatively you can install rEFInd to the default/fallback boot path esp/EFI/B
 ```
 # refind-install --usedefault /dev/sdXY
 ```
+
 Where /dev/sdXY is the partition of your ESP.
 
 You can read the comments in the install script for explanations of the various installation options.
