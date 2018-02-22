@@ -17,8 +17,6 @@ rEFInd has read-only drivers for ReiserFS, Ext2, Ext4, Btrfs, ISO-9660, HFS+, an
 
 > Note: Your kernel and initramfs need to reside on a file system which rEFInd can read.
 
-To find additional drivers see The rEFInd Boot Manager: Using EFI Drivers: Finding Additional EFI Drivers.
-
 ## Scripted installation
 
 The rEFInd package includes the refind-install script to simplify the process of setting rEFInd as your default EFI boot entry. The script has several options for handling differing setups and UEFI implementations. See refind-install(8). For many systems it should be sufficient to simply run:
@@ -39,15 +37,54 @@ Where /dev/sdXY is the partition of your ESP.
 
 You can read the comments in the install script for explanations of the various installation options.
 
-By default refind-install installs only the driver for the file system on which kernel resides. Additional file systems need to be installed manually or you can install all drivers with the --alldrivers option. This is useful for bootable USB flash drives e.g.:
+By default refind-install installs only the driver for the file system on which kernel resides. Additional file systems need to be installed manually or you can install all drivers with the `--alldrivers` option. This is useful for bootable USB flash drives e.g.:
+
 ```
 # refind-install --usedefault /dev/sdXY --alldrivers
 ```
 
-After installing rEFInd's files to the ESP, verify that rEFInd has created refind_linux.conf containing the required kernel parameters (e.g. root=) in the same directory as your kernel. If it has not created this file, you will need to set up passing kernel parameters manually or you will most likely get a kernel panic on your next boot.
+After installing rEFInd's files to the ESP, verify that rEFInd has created refind_linux.conf containing the required kernel parameters (e.g. `root=`) in the same directory as your kernel. If it has not created this file, you will need to set up passing kernel parameters manually or you will most likely get a kernel panic on your next boot.
 
 By default, rEFInd will scan all of your drives (that it has drivers for) and add a boot entry for each EFI bootloader it finds, which should include your kernel (since Arch enables EFISTUB by default). So you may have a bootable system at this point.
 
 > Tip: It is always a good idea to edit the default config `esp/EFI/refind/refind.conf` to ensure that the default options work for you.
 
 >Warning: When refind-install is run in chroot (e.g. in live system when installing Arch Linux) `/boot/refind_linux.conf` is populated with kernel options from the live system not the one on which it is installed. You need to adjust kernel options in `/boot/refind_linux.conf` manually.
+
+# Passing kernel parameters
+
+There are two methods for setting the kernel parameters that rEFInd will pass to the kernel.
+
+If rEFInd automatically detects your kernel, you can place a refind_linux.conf file containing the kernel parameters in the same directory as your kernel. You can use /usr/share/refind/refind_linux.conf-sample as a starting point. The first uncommented line of refind_linux.conf will be the default parameters for the kernel. Subsequent lines will create entries in a submenu accessible using +, F2, or Insert.
+
+```
+/boot/refind_linux.conf
+```
+```
+"Boot using default options"     "root=PARTUUID=XXXXXXXX rw add_efi_memmap"
+"Boot using fallback initramfs"  "root=PARTUUID=XXXXXXXX rw add_efi_memmap initrd=/boot/initramfs-linux-fallback.img"
+"Boot to terminal"               "root=PARTUUID=XXXXXXXX rw add_efi_memmap systemd.unit=multi-user.target"
+```
+
+Alternatively, try running:
+
+```
+# mkrlconf
+```
+
+Which will attempt to find your kernel in /boot and automatically generate refind_linux.conf. The script will only set up the most basic kernel parameters, so be sure to check the file it created for correctness.
+
+If you do not specify an `initrd=` parameter, rEFInd will automatically add it by searching for common RAM disk filenames in the same directory as the kernel. If you need multiple `initrd=` parameters, you must specify them manually in `refind_linux.conf`. For example, a Microcode passed before the initramfs: `... initrd=/boot/intel-ucode.img initrd=/boot/initramfs-linux.img`.
+
+> Warning: initrd path is relative to the root of the file system on which the kernel resides. This could be `initrd=/boot/initramfs-linux.img` or, if ESP is mounted to `/boot`, `initrd=/initramfs-linux.img`.
+
+For rEFInd to properly match multiple kernels with their respective initramfs you must uncomment and edit `extra_kernel_version_strings` option in `refind.conf`. E.g.:
+
+```
+esp/EFI/refind/refind.conf
+```
+```
+...
+extra_kernel_version_strings linux-hardened,linux-zen,linux-lts,linux
+...
+```
