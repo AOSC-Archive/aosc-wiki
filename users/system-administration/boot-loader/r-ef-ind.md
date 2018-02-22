@@ -4,8 +4,10 @@
 ---
 
 [^_^]:
-    commentted-out contents
-    should be shift to right by four spaces (`>>`).
+    Remove this if:
+		1 You are one of the maintainers of AOSC OS.
+		2 You have checked this passage carefully and have already made all necessary changes.
+		This passage is migration from ArchWiki by Bobby Rong <rjl931189261@126.com>
 
 **WARNING: This passage is written by a user and it is NOT checked by the AOSC maintainers yet. DO NOT TRY TO TEST THE COMMANDS BELOW UNLESS YOU KNOW WHAT YOU ARE DOING!**
 
