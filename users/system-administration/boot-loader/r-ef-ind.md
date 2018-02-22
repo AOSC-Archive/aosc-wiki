@@ -30,7 +30,6 @@ The rEFInd package includes the refind-install script to simplify the process of
 This will attempt to find and mount your ESP, copy rEFInd files to esp/EFI/refind/, and use efibootmgr to make rEFInd the default EFI boot application.
 
 Alternatively you can install rEFInd to the default/fallback boot path esp/EFI/BOOT/bootx64.efi. This is helpful for bootable USB flash drives or on systems that have issues with the NVRAM changes made by efibootmgr:
-
 ```
 # refind-install --usedefault /dev/sdXY
 ```
