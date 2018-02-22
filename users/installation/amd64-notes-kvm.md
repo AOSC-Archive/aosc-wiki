@@ -1,20 +1,15 @@
 <!-- TITLE: Installation/AMD64/KVM -->
 <!-- SUBTITLE: Notes for AOSC OS Installation on KVM -->
 
-Notes for KVM/Qemu
-===========================
-
 AOSC OS installation on Qemu/KVM is the same as installing on a regular AMD64/x86_64 system, this section is intended to aid you with configuring the virtual machine, and un-tar-ing the tarballs from outside of the virtual machine.
 
 These two steps below replaces the "Preparing an Installation Environment", "Preparing partitions", and "Un-tar!" sections in the [regular installation guide](/users/installation/amd64).
 
-Forenotes
---------
+# Forenotes
 
 - Any commands listed below starting with a `# ` means that the commands are run as the `root` user.
 
-Prepare the VM hard disk image
-------------------------------
+# Prepare the VM hard disk image
 
 Create an empty hard disk image called `aosc.img` with the size of `20GiB`, you will need at least 8GB to use AOSC OS for any practical functions.
 
@@ -83,8 +78,7 @@ Mount the loop device. For example, under `/mnt`:
 # mount /dev/loop0 /mnt
 ```
 
-Un-tar!
--------
+# Un-tar!
 
 The shell code below shows how it is been done:
 
@@ -100,8 +94,7 @@ Now you can umount your image:
 # losetup -d /dev/loop0
 ```
 
-Bootloader!
------------
+# Bootloader!
 
 Here comes the most interesting part. Boot configuration is needed for the un-tar-ed system to boot and initialize.
 
