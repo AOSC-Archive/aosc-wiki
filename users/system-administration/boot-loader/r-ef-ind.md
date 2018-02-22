@@ -42,4 +42,4 @@ After installing rEFInd's files to the ESP, verify that rEFInd has created refin
 By default, rEFInd will scan all of your drives (that it has drivers for) and add a boot entry for each EFI bootloader it finds, which should include your kernel (since Arch enables EFISTUB by default). So you may have a bootable system at this point.
 > Tip: It is always a good idea to edit the default config esp/EFI/refind/refind.conf to ensure that the default options work for you.
 
->>Warning: When refind-install is run in chroot (e.g. in live system when installing Arch Linux) /boot/refind_linux.conf is populated with kernel options from the live system not the one on which it is installed. You need to adjust kernel options in /boot/refind_linux.conf manually.
+>Warning: When refind-install is run in chroot (e.g. in live system when installing Arch Linux) /boot/refind_linux.conf is populated with kernel options from the live system not the one on which it is installed. You need to adjust kernel options in /boot/refind_linux.conf manually.
