@@ -19,7 +19,7 @@ __After__ AOSC OS installation is correctly working on your computer (except for
 
 Before starting [regular installation guide](/users/installation/amd64). Please download the following beforehand to a handy USB drive:
 
-## Tarballs:
+## Tarballs
 
 1. the __system__ tarball of your choice
 2. the __buildkit__ tarball
