@@ -1,7 +1,7 @@
 <!-- TITLE: Installation/AMD64 -->
 <!-- SUBTITLE: Installing AOSC OS on AMD64/x86_64 Devices -->
 
-> Available languages | [English](/users/installation/amd64) | [简体中文](/users/installation/amd64/zh-cn)
+> Available languages | [English](/users/installation/amd64) | [简体中文](/users/installation/amd-64/zh-cn)
 
 Installation of AOSC OS on x86_64 systems/environments are generally universal for all systems of this architectures. But for some specific device configurations and virtualized environments, here below are some extra notes:
 
