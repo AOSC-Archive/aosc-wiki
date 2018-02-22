@@ -16,7 +16,7 @@ Installation of AOSC OS on x86_64 systems/environments are generally universal f
 
 All AMD64/x86_64 tarballs are generic (universal for all supported devices), the only thing you would have to do here is choosing your favourite one - appropriate for your taste and your use case.
 
-Another consideration is whether your device is capable for a specific variant, please consult the [AMD64/x86_64 system requirements](/users/installation/amd64-notes-sysreq) page for more information.
+> Note: Another consideration is whether your device is capable for a specific variant, please consult the [AMD64/x86_64 system requirements](/users/installation/amd64-notes-sysreq) page for more information.
 
 ## Bootable
 
@@ -39,9 +39,11 @@ We are not going to discuss the deployment of Container and BuildKit in this gui
 
 It is impossible to install AOSC OS without a working Live environment or an installed copy of Linux distribution on your local storage. Live disc images are not yet available for AOSC OS.
 
-For installing AOSC OS, we recommend that you use [GParted Live](https://sourceforge.net/projects/gparted/files/gparted-live-stable/), dumped to your USB flash drive - and our guide will assume that you are using GParted Live. **Be sure that you downloaded the amd64 version, or else you won't be able to enter AOSC OS chroot environment!**
+For installing AOSC OS, we recommend that you use [GParted Live](https://sourceforge.net/projects/gparted/files/gparted-live-stable/), dumped to your USB flash drive - and our guide will assume that you are using GParted Live.
 
-**Note: You may not be able to connect to network when using VMware.**
+> **Warning: Be sure that you downloaded the amd64 version, or else you won't be able to enter AOSC OS chroot environment!**
+
+> Note: You may not be able to connect to network when using VMware.
 
 ```
 # dd if=nameofimage.iso of=/dev/sdX bs=4M
@@ -119,15 +121,17 @@ And generate a `/etc/fstab` file:
 # /mnt/usr/bin/genfstab -U -p /mnt >> /mnt/etc/fstab
 ```
 
-**Commands in all sections below are executed from chroot.**
+## Chroot
 
-But first of all, enter AOSC OS chroot environment:
+Enter AOSC OS chroot environment:
 
 ```
 # chroot /mnt /bin/bash
 ```
 
 If you failed to enter chroot, you have probably not downloaded the amd64 version (gosh, we got it in bold as well...).
+
+> Note: Commands in all sections below are executed from chroot.
 
 ## Update, Your, System!
 
@@ -150,9 +154,9 @@ Use the following command to create initialization RAM disk for AOSC OS.
 
 Now you should be able to configure your bootloader, we will use GRUB for the purpose of this installation guide. Installation of GRUB differs for EFI and BIOS systems, and thus they will be separated to two sections.
 
-Note: You would need GRUB 2.02 (`grub` version `2:2.0.2`) to support NVMe-based storage devices as boot drives.
+> Note: You would need GRUB 2.02 (`grub` version `2:2.0.2`) to support NVMe-based storage devices as boot drives.
 
-**All commands below are run from within chroot.**
+> Note: All commands below are run from within chroot.
 
 ## EFI Systems
 
@@ -213,7 +217,7 @@ Although strongly discouraged, you can enable the `root` user by setting a passw
 # passwd root
 ```
 
-*Decent Linux users need not the root user.*
+> Notes: Decent Linux users need not the root user.
 
 ## Setting System Timezone
 
@@ -233,7 +237,7 @@ To set default language for all users, edit `/etc/locale.conf`. For example, to 
 LANG=zh_CN.UTF-8
 ```
 
-Tips: After you rebooted the computer into the new system, you may use the `localectl` command to do this:
+> Notes: After you rebooted the computer into the new system, you may use the `localectl` command to do this:
 
 ```
 # localectl set-locale "LANG=zh_CN.UTF-8"
@@ -242,11 +246,12 @@ Tips: After you rebooted the computer into the new system, you may use the `loca
 ## Setting System Hostname
 
 To set a hostname for the system, edit `/etc/hostname`. For example, to set the hostname to be *MyNewComputer*:
+
 ```
 MyNewComputer
 ```
 
-Tips: After you rebooted the computer into the new system, you may use the `hostnamectl` command to do this:
+> Notes: After you rebooted the computer into the new system, you may use the `hostnamectl` command to do this:
 
 ```
 # hostnamectl set-hostname yourhostname
