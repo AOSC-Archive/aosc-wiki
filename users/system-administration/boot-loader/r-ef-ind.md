@@ -17,9 +17,9 @@ rEFInd has read-only drivers for ReiserFS, Ext2, Ext4, Btrfs, ISO-9660, HFS+, an
 
 > Note: Your kernel and initramfs need to reside on a file system which rEFInd can read.
 
-## Scripted installation
+# Configuration
 
-The rEFInd package includes the refind-install script to simplify the process of setting rEFInd as your default EFI boot entry. The script has several options for handling differing setups and UEFI implementations. See refind-install(8). For many systems it should be sufficient to simply run:
+The rEFInd package includes the refind-install script to simplify the process of setting rEFInd as your default EFI boot entry. The script has several options for handling differing setups and UEFI implementations. See `refind-install(8)`. For many systems it should be sufficient to simply run:
 
 ```
 # refind-install
