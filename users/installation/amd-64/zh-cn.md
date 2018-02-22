@@ -1,6 +1,10 @@
 <!-- TITLE: Installation/AMD64 (简体中文) -->
 <!-- SUBTITLE: 在 AMD64/x86_64 设备安装 AOSC OS -->
 
+
+| Available languages | [English](/users/installation/amd64) | [简体中文](/users/installation/amd-64/zh-cn) |
+| ------ | ------ | ------ |
+
 本针对于 x86_64 架构或系统的安装指南可以应用于大部分通用环境。但针对部分特殊平台，这里有一些附加提示：
 
 - [针对 KVM 的注释](/users/installation/amd64-notes-kvm)
