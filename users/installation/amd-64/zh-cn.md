@@ -9,7 +9,7 @@
 - [针对 KVM 的注释](/users/installation/amd64-notes-kvm)
 - [针对 Bay Trail/Cherry Trail 的注释](/users/installation/amd64-notes-trails)
 - [针对 software RAID 的注释](/users/installation/amd64-notes-softraid)
-- [针对 BCM4360 users 的注释](/users/installation/amd64-notes-bcm4360)
+- [针对 BCM4360 的注释](/users/installation/amd64-notes-bcm4360)
 
 # 注意
 
