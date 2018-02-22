@@ -1,6 +1,12 @@
 <!-- TITLE: rEFInd -->
 <!-- SUBTITLE: rEFInd as AOSC OS Bootloader -->
 
+---
+
+[^_^]:
+    commentted-out contents
+    should be shift to right by four spaces (`>>`).
+
 **WARNING: This passage is written by a user and it is NOT checked by the AOSC maintainers yet. DO NOT TRY TO TEST THE COMMANDS BELOW UNLESS YOU KNOW WHAT YOU ARE DOING!**
 
 ---
