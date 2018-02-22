@@ -4,12 +4,15 @@
 ---
 
 [^_^]:
-    Remove this if:
+    Remove this only if:
 		1 You are one of the maintainers of AOSC OS.
 		2 You have checked this passage carefully and have already made all necessary changes.
 		This passage is migration from ArchWiki by Bobby Rong <rjl931189261@126.com>.
 
-**WARNING: This passage is written by a user and it is NOT checked by the AOSC maintainers yet. DO NOT TRY TO TEST THE COMMANDS BELOW UNLESS YOU KNOW WHAT YOU ARE DOING!**
+**WARNING: **This passage is written by a user **which doesn't use rEFInd** and **it is NOT checked by the AOSC maintainers yet**. **DO NOT TRY TO TEST THE COMMANDS BELOW UNLESS YOU KNOW WHAT YOU ARE DOING**!
+**警告：本文由一个从未使用过 rEFInd 的用户编写，也未经过 AOSC 成员的确认。如果你不知道运行下面的命令后会发生什么，请勿尝试运行这些命令！**
+
+**Contributions are welcomed. 欢迎修改本文。**
 
 ---
 
