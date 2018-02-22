@@ -7,7 +7,11 @@ rEFInd is a UEFI boot manager capable of launching EFISTUB kernels. It is a fork
 
 # Installation
 
-Install the `refind` package.
+Follow the installation guide and do all the steps before the chapter [Bootloader Configuration](/users/installation/amd64#bootloader-configuration). Now install the `refind` package:
+
+```
+# apt install refind
+```
 
 rEFInd has read-only drivers for ReiserFS, Ext2, Ext4, Btrfs, ISO-9660, HFS+, and NTFS. Additionally rEFInd can use drivers from the UEFI firmware i.e. FAT (or HFS+ on Macs or ISO-9660 on some systems).
 
