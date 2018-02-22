@@ -1,6 +1,8 @@
 <!-- TITLE: rEFInd -->
 <!-- SUBTITLE: rEFInd as AOSC OS Bootloader -->
 
+> **WARNING:** This passage is written by a user and it is NOT checked by the AOSC maintainers yet. DO NOT TRY TO TEST THE COMMANDS BELOW UNLESS YOU KNOW WHAT YOU ARE DOING!
+
 rEFInd is a UEFI boot manager capable of launching EFISTUB kernels. It is a fork of the no-longer-maintained rEFIt and fixes many issues with respect to non-Mac UEFI booting. It is designed to be platform-neutral and to simplify booting multiple OSes.
 
 > Note: In the entire article esp denotes the mountpoint of the EFI System Partition aka ESP.
