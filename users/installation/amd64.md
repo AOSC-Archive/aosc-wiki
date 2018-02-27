@@ -114,6 +114,7 @@ Here below are some extra steps before you configure your bootloader - strongly 
 If you have chosen to use multi-partition layout for your AOSC OS installation, you will need to configure your `/etc/fstab` file, one fast way to achieve this is by installing the `genfstab` package:
 
 ```
+# chroot /mnt apt update
 # chroot /mnt apt install genfstab
 ```
 
