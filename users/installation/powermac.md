@@ -153,6 +153,7 @@ Here below are some extra steps before you configure your bootloader - strongly 
 If you have chosen to use multi-partition layout for your AOSC OS installation, you will need to configure your `/etc/fstab` file, one fast way to achieve this is by installing the `genfstab` package:
 
 ```
+# chroot /mnt apt update
 # chroot /mnt apt install genfstab
 ```
 
@@ -269,19 +270,26 @@ To set default language for all users, edit `/etc/locale.conf`. For example, to 
 LANG=zh_CN.UTF-8
 ```
 
-Or via the `localectl` command:
+> Notes: After you rebooted the computer into the new system, you may use the `localectl` command to do this:
 
 ```
-localectl set-locale "LANG=zh_CN.UTF-8"
+# localectl set-locale "LANG=zh_CN.UTF-8"
 ```
 
 ## Setting System Hostname
 
-To set a hostname for the system:
+To set a hostname for the system, edit `/etc/hostname`. For example, to set the hostname to be *MyNewComputer*:
 
 ```
-hostnamectl set-hostname yourhostname
+MyNewComputer
 ```
+
+> Notes: After you rebooted the computer into the new system, you may use the `hostnamectl` command to do this:
+
+```
+# hostnamectl set-hostname yourhostname
+```
+
 
 # Extra Notes
 
