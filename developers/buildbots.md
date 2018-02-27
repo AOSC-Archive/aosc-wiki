@@ -48,7 +48,7 @@ NOTE:
 
 | Name | Port | CPU | Memory | Maintainer | Note |
 |-----------|-----------|-----------|-----------|-----------|-----------|
-| **Gobson** | 3072 | Loongson 3B-1500G | 8 GiB | _Xiaoxing Ye_ | Owned by _Mingcong Bai_ |
+| **Gobson** | 3072 | Loongson 3B-1500G | 8GiB | _Xiaoxing Ye_ | Owned by _Mingcong Bai_ |
 | **Godson** | 3141(pi) | Loongson 3A-2000C (R2) @ 1GHz (A1602) | 8GiB | _Junde Yhi_ | |
 
 ## **ARM** (4001-5000)
