@@ -31,17 +31,18 @@ NOTE:
 
 - `port_number - 1` is occupied by that machine. See information above.
 - A machine that marked as **Daily** means this machine is also used daily by the owner (that means many programs unrelated to development, e.g. X11, will be running on this machine). Please make sure that you do not make OOM on those machine!
+- The parameter speed is defined as the total execution time for `make`, after `../configure --prefix=/usr` in a directory inside an unzipped [glibc](https://ftp.gnu.org/gnu/libc/) directory.
 
 ---
 
 ## **AMD64** (2001 - 3000)
 
-| Name | Port | CPU | Memory | Maintainer | Note |
+| Name | Port | CPU | Memory | Speed | Maintainer | Note |
 |-----------|-----------|-----------|-----------|-----------|-----------|
-| **SITS** | 2729(2SAT) | Intel Xeon CPU E3-1225 v3 @ 3.20GHz | 16GiB | _S. aureus_ | |
-| **Yhi64**| 2048 | | | _Junde Yhi_ | **Daily** |
-| **Ry1800X** | 2333 | AMD Ryzen 7 1800X @ 3.60 - 4.10GHz | 32GiB | _Mingcong Bai_ | |
-| **EPSON-AOSC** | 2718(e) | Intel Core 2 Duo T8100 @ 2.10GHz | 4GiB | _Zamir Sun_ | Available time: 8:00 - 21:30 UTC+8 |
+| **Yhi64**| 2048 | | || _Junde Yhi_ | **Daily** |
+| **Ry1800X** | 2333 | AMD Ryzen 7 1800X @ 3.60 - 4.10GHz | 32GiB | | _Mingcong Bai_ | |
+| **EPSON-AOSC** | 2718(e) | Intel Core 2 Duo T8100 @ 2.10GHz | 4GiB | | _Zamir Sun_ | Available time: 8:00 - 21:30 UTC+8 |
+| **SITS** | 2729(2SAT) | Intel Xeon CPU E3-1225 v3 @ 3.20GHz | 16GiB |395s (`-j5`, 2.27)| _S. aureus_ | |
 
 ## **MIPS** (3001-4000)
 
