@@ -39,7 +39,7 @@ NOTE:
 
 | Name | Port | CPU | Memory | Speed | Maintainer | Note |
 |-----------|-----------|-----------|-----------|-----------|---------|-----------|
-| **Yhi64**| 2048 | | | | _Junde Yhi_ | **Daily** |
+| **Yhi64**| 2048 | Intel Core i5-3230M @ 2.60GHz | 8GiB | | _Junde Yhi_ | **Daily** |
 | **Ry1800X** | 2333 | AMD Ryzen 7 1800X @ 3.60 - 4.10GHz | 32GiB | | _Mingcong Bai_ | |
 | **EPSON-AOSC** | 2718(e) | Intel Core 2 Duo T8100 @ 2.10GHz | 4GiB | | _Zamir Sun_ | Available time: 8:00 - 21:30 UTC+8 |
 | **SITS** | 2729 | Intel Xeon CPU E3-1225 v3 @ 3.20GHz | 16GiB |395s (`-j5`, v2.27)| _S. aureus_ | |
@@ -48,7 +48,7 @@ NOTE:
 
 | Name | Port | CPU | Memory | Maintainer | Note |
 |-----------|-----------|-----------|-----------|-----------|-----------|
-| **Gobson** | 3072 | | | _Xiaoxing Ye_ | Owned by _Mingcong Bai_ |
+| **Gobson** | 3072 | Loongson 3B-1500G | 8 GiB | _Xiaoxing Ye_ | Owned by _Mingcong Bai_ |
 | **Godson** | 3141(pi) | Loongson 3A-2000C (R2) @ 1GHz (A1602) | 8GiB | _Junde Yhi_ | |
 
 ## **ARM** (4001-5000)
