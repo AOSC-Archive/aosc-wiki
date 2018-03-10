@@ -106,7 +106,8 @@ Here below are some extra steps before you configure your bootloader - strongly 
 ## Bind mount system/pseudo directories
 
 ```
-# for i in dev proc sys; do mount --rbind /$i /mnt/$i; done
+# mkdir /mnt/run/udev
+# for i in dev proc sys run/udev; do mount --rbind /$i /mnt/$i; done
 ```
 
 ## /etc/fstab Generation
