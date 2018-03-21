@@ -77,11 +77,10 @@ With partitions configured, you are now ready to unpack the AOSC OS system tarba
 # mount -v /dev/sda2 /mnt
 ```
 
-Additionally, say, if you have `/dev/sda1` for `/boot`, and `/dev/sda3` for `/home`:
+Additionally, say, if you have `/dev/sda3` for `/home`:
 
 ```
-# mkdir -v /mnt/{home,boot}
-# mount -v /dev/sda1 /mnt/boot
+# mkdir -v /mnt/home
 # mount -b /dev/sda3 /mnt/home
 ```
 
