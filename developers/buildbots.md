@@ -46,15 +46,15 @@ NOTE:
 
 ## **MIPS** (3001-4000)
 
-| Name | Port | CPU | Memory | Maintainer | Note |
-|-----------|-----------|-----------|-----------|-----------|-----------|
+| Name | Port | CPU | Memory | Speed |Maintainer | Note |
+|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
 | **Gobson** | 3072 | Loongson 3B-1500G | 8GiB | _Xiaoxing Ye_ | Owned by _Mingcong Bai_ |
 | **Godson** | 3141(pi) | Loongson 3A-2000C (R2) @ 1GHz (A1602) | 8GiB | _Junde Yhi_ | |
 
 ## **ARM** (4001-5000)
 
-| Name | Port | CPU | Memory | Maintainer | Note |
-|-----------|-----------|-----------|-----------|-----------|-----------|
+| Name | Port | CPU | Memory | Speed |Maintainer | Note |
+|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
 | **p64** | 4064 | Quad Core ARM Cortex-A53 @ 1.2GHz (Allwinner A64, Pine64 Plus) | 2GiB| _Icenowy Zheng_| |
 | **Tegra** |4096| NVIDIA Tegra X1 @ 1.74GHz (NVIDIA Jetson TX1 Development Kit) | 4GiB| _Mingcong Bai_| |
 | **Pine64** |4399| Quad Core ARM Cortex-A53 @ 1.2GHz (Allwinner A64, Pine64 Plus) | 2GiB | _Mingcong Bai_| |
@@ -62,8 +62,10 @@ NOTE:
 
 ## **PowerPC** (5001-6000)
 
-| Name | Port | CPU | Memory | Maintainer | Note |
-|-----------|-----------|-----------|-----------|-----------|-----------|
+| Name | Port | CPU | Memory | Speed | Maintainer | Note |
+|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
 | **G5-AOSC** | 5120 | IBM PowerPC 970MP @ 2.5GHz (PowerMac G5, Quad, 2005) | 8GiB | _Mingcong Bai_ | Please avoid usage after 2 A.M. at America/Chicago |
 
 ## **RISC-V** (6001-7000)
+
+One can dream.
