@@ -94,14 +94,14 @@ GParted Live 环境里的 GParted 使用起来非常简单。如果对如何使�
 
 ```
 # cd /mnt
-# tar pxf /path/to/tarball/tarball.tar.xz
+# tar --numeric-owner pxf /path/to/tarball/tarball.tar.xz
 ```
 
 如果要让解压的过程更加刺激点，请加入 `verbose` 的选项：
 
 ```
 # cd /mnt
-# tar pxvf /path/to/tarball/tarball.tar.xz
+# tar --numeric-owner pxvf /path/to/tarball/tarball.tar.xz
 ```
 
 # 安装后配置
