@@ -56,7 +56,7 @@ NOTE:
 | Name | Port | CPU | Memory | Speed |Maintainer | Note |
 |-----------|-----------|-----------|-----------|-----------|-----------|-----------|
 | **p64** | 4064 | Quad Core ARM Cortex-A53 @ 1.2GHz (Allwinner A64, Pine64 Plus) | 2GiB| | _Icenowy Zheng_| |
-| **Tegra** |4096| NVIDIA Tegra X1 @ 1.74GHz (NVIDIA Jetson TX1 Development Kit) | 4GiB| | _Mingcong Bai_|Please limit file activities within `/buildroots`|
+| **Tegra** |4096| NVIDIA Tegra X1 @ 1.74GHz (NVIDIA Jetson TX1 Development Kit) | 4GiB| 446s (`-j5`) | _Mingcong Bai_|Please limit file activities within `/buildroots`|
 | **Pine64** |4399| Quad Core ARM Cortex-A53 @ 1.2GHz (Allwinner A64, Pine64 Plus) | 2GiB | 1351s (`-j5`) | _Mingcong Bai_|Please limit file activities within `/buildroots`.|
 | **YetAnotherPine64** |4514| Quad Core ARM Cortex-A53 @ 1.2GHz (Allwinner A64, Pine64 Plus) | 2GiB | 1365s (`-j5`) | _Salted Fish_|Local mirror located at /dev/sda4|
 
