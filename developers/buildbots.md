@@ -64,7 +64,7 @@ NOTE:
 
 | Name | Port | CPU | Memory | Speed | Maintainer | Note |
 |-----------|-----------|-----------|-----------|-----------|-----------|-----------|
-| **G5-AOSC** | 5120 | IBM PowerPC 970MP @ 2.5GHz (PowerMac G5, Quad, 2005) | 8GiB | | _Mingcong Bai_ | Please avoid usage after 2 A.M. at America/Chicago; Please limit file activities within `/buildroots` |
+| **G5-AOSC** | 5120 | IBM PowerPC 970MP @ 2.5GHz (PowerMac G5, Quad, 2005) | 8GiB | 566s (`-j5`) | _Mingcong Bai_ | Please avoid usage after 2 A.M. at America/Chicago; Please limit file activities within `/buildroots` |
 
 ## **RISC-V** (6001-7000)
 
