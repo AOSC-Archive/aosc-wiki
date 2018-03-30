@@ -7,8 +7,14 @@ Some Hewlett-Packard (HP) printers may require using the drivers provided with t
 
 # Possible Cause
 
+When the `hplip` package is updated, the proprietary plugins are not update automatically, resulting in a version mismatch which causes the issue described above.
 
+# Solution
 
-# Workaround
+To resolve this issue, simply run the following command...
 
-Unfortunately, this issue is impossible to address via future package updates - as system updates will not alter user-defined configurations. To resolve this issue, you will need to use appropriate configuration utilities to specify the "correct" font name - "Noto Sans Mono" counterparts of the former "Noto Mono" family.
+```
+$ sudo hp-plugin
+```
+
+And follow the on-screen instructions.
