@@ -54,6 +54,7 @@ The list below is a **concrete and specific** list of packages which could be co
 | Tor | `tor` | 3 |
 | V2Ray | `v2ray` | 3 |
 | WireGuard | `wireguard` | 3 |
+| CA Certificates | `ca-certs` | 3 |
 | Linux Kernel (Mainline) | `linux-kernel*`, `linux+kernel` | 4 |
 | Linux Kernel (Libre) | `linux-kernel-libre-*`, `linux+kernel+libre` | 4 |
 | Linux Kernel (LTS) | `linux-kernel-lts-*`, `linux+kernel+lts` | 4 |
