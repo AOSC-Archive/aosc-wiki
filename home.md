@@ -50,6 +50,7 @@ This section contains known unresolved and resolved issues found in AOSC OS - fo
 - [ERR-SYS-00002: Noto Mono Fonts Displayed as Sans Serif with Recent Font Package Update](/err/x11/00002-noto-mono-font-name-change)
 - [ERR-SYS-00003: Errors when Running the "sensors" Command on a HP MicroServer Gen8](/err/x11/00003-sensors-dmesg-error-microserver-gen8)
 - [ERR-SYS-00004: NetEase Cloud Music < 1.1.0 Fails to Launch](/err/x11/00004-netease-cloud-music-sandbox-error)
+- [ERR-SYS-00005: X11 Graphical Interface Fails to Start on Systems with Dedicated NVIDIA Graphics](/err/x11/00005-nvidia-x-failure-without-nouveau-blacklist)
 
 # Knowledge Base
 
