@@ -5,10 +5,11 @@
 
 With the recent `noto-font` package update, version `1:20180324` and above, the "Noto Mono" (monospace) font family has now gotten a new name "Noto Sans Mono":
 
-- Noto Mono Blk → Noto Sans Mono Blk
-- Noto Mono Bold → Noto Sans Mono Bold
-- Noto Sans Mono CJK JP Bold
-- Noto Sans Mono CJK JP Regular
+| Old Font Name | New Font Name |
+| Noto Mono Blk | Noto Sans Mono Blk |
+| Noto Mono Bold | Noto Sans Mono Bold |
+| Noto Mono CJK JP Bold | Noto Sans Mono CJK JP Bold |
+| Noto Sans Mono CJK JP Regular | Noto Mono CJK JP Regular |
 - Noto Sans Mono CJK KR Bold
 - Noto Sans Mono CJK KR Regular
 - Noto Sans Mono CJK SC Bold
