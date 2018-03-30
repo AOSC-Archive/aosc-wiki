@@ -48,6 +48,7 @@ This section contains known unresolved and resolved issues found in AOSC OS - fo
 
 - [ERR-SYS-00001: Disappearing Windows with KDE/Plasma Desktop using Intel DDX](/err/x11/00001-kde-window-intel-ddx)
 - [ERR-SYS-00002: Noto Mono Fonts Displayed as Sans Serif with Recent Font Package Update](/err/x11/00002-noto-mono-font-name-change)
+- [ERR-SYS-00003: Errors when Running the "sensors" Command on a HP MicroServer Gen8](https://wiki.aosc.io/err/x11/00003-sensors-dmesg-error-microserver-gen8)
 
 # Knowledge Base
 
