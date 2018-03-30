@@ -6,47 +6,11 @@
 With the recent `noto-font` package update, version `1:20180324` and above, the "Noto Mono" (monospace) font family has now gotten a new name "Noto Sans Mono":
 
 | Old Font Name | New Font Name |
-| Noto Mono Blk | Noto Sans Mono Blk |
+|-------------------------|--------------------------|
 | Noto Mono Bold | Noto Sans Mono Bold |
 | Noto Mono CJK JP Bold | Noto Sans Mono CJK JP Bold |
-| Noto Sans Mono CJK JP Regular | Noto Mono CJK JP Regular |
-- Noto Sans Mono CJK KR Bold
-- Noto Sans Mono CJK KR Regular
-- Noto Sans Mono CJK SC Bold
-- Noto Sans Mono CJK SC Regular
-- Noto Sans Mono CJK TC Bold
-- Noto Sans Mono CJK TC Regular
-- Noto Sans Mono Cond
-- Noto Sans Mono Cond Blk
-- Noto Sans Mono Cond ExtBd
-- Noto Sans Mono Cond ExtLt
-- Noto Sans Mono Cond Light
-- Noto Sans Mono Cond Med
-- Noto Sans Mono Cond SemBd
-- Noto Sans Mono Cond Thin
-- Noto Sans Mono ExtBd
-- Noto Sans Mono ExtCond
-- Noto Sans Mono ExtCond Blk
-- Noto Sans Mono ExtCond ExtBd
-- Noto Sans Mono ExtCond ExtLt
-- Noto Sans Mono ExtCond Light
-- Noto Sans Mono ExtCond Med
-- Noto Sans Mono ExtCond SemBd
-- Noto Sans Mono ExtCond Thin
-- Noto Sans Mono ExtLt
-- Noto Sans Mono Light
-- Noto Sans Mono Med
-- Noto Sans Mono Regular
-- Noto Sans Mono SemBd
-- Noto Sans Mono SemCond
-- Noto Sans Mono SemCond Blk
-- Noto Sans Mono SemCond ExtBd
-- Noto Sans Mono SemCond ExtLt
-- Noto Sans Mono SemCond Light
-- Noto Sans Mono SemCond Med
-- Noto Sans Mono SemCond SemBd
-- Noto Sans Mono SemCond Thin
-- Noto Sans Mono Thin
+| Noto Mono CJK JP Regular | Noto Sans Mono CJK JP Regular |
+| Noto Mono ... |Noto Sans Mono ... |
 
 # Possible Cause
 
