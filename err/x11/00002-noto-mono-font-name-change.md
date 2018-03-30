@@ -12,6 +12,16 @@ With the recent `noto-font` package update, version `1:20180324` and above, the 
 | Noto Mono CJK JP Regular | Noto Sans Mono CJK JP Regular |
 | Noto Mono ... |Noto Sans Mono ... |
 
+However, if one have specified one of the fonts from the former "Noto Mono" family within a desktop environment's configuration, or within a custom Fontconfig XML file - take this example from a KDE configuration:
+
+```ini
+[General]
+ColorScheme=Breeze
+...
+fixed=Noto Mono,9,-1,5,50,0,0,0,0,0,Regular
+...
+```
+
 # Possible Cause
 
 Not yet identified.
