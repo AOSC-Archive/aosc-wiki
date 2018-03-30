@@ -1,7 +1,15 @@
-<!-- TITLE: ERR-SYS-00001: Noto Mono Font Name Changes with Recent Font Package Update -->
+<!-- TITLE: ERR-SYS-00001: Noto Mono Fonts Displayed as Sans Serif with Recent Font Package Update -->
 <!-- SUBTITLE: Noto Mono Font Name Changes and Possible Impacts -->
 
 # Summary
+
+With the recent `noto-font` package update, version `1:20180324` and above, the "Noto Mono" (monospace) font family has now gotten a new name "Noto Sans Mono" - and with this, if "Noto Mono" has been specified as the default fixed-width or monospace font ("Adobe Source Code Pro" is the default monospace font), one may experience the following issues (listed below are the ones we were able to identify so far):
+
+- Text in terminal emulators could be overlapped, and the cursor may not align with text input.
+- Text editors utilising monospace fonts may display in non-monospace fonts, altering text display appearance.
+- When sending "code block" messages in Telegram Desktop may display in non-monospace fonts, making it difficult to identify normal messages from these "code block" messages.
+
+# Possible Cause
 
 With the recent `noto-font` package update, version `1:20180324` and above, the "Noto Mono" (monospace) font family has now gotten a new name "Noto Sans Mono":
 
@@ -22,43 +30,8 @@ fixed=Noto Mono,9,-1,5,50,0,0,0,0,0,Regular
 ...
 ```
 
-# Possible Cause
+With the recent `noto-fonts` update, the application(s) relying on a configuration like the one demonstrated above will fail to find the new "Noto Sans Mono" fonts, resulting in the issue where these supposed monospace/fixed-width fonts are displayed as variable-width Sans Serif fonts, or the default "Noto Sans Regular" font - resulting in the issues described above.
 
-Not yet identified.
+# Workaround
 
-# Fixed Version
-
-## System Releases
-
-Tarball system releases dated 20180126 or later will no longer include the Intel DDX (`xf86-video-intel`), as we removed `xf86-video-intel` as part of the `x11-base` metapackage. If your system still has this package installed, upon system update, you should be prompted that `xf86-video-intel` is no longer needed - follow the instruction on screen to remove this package automatically.
-
-## Workaround
-
-A workaround has been identified - and this issue should only happen on a computer using Intel graphics (GMA, HD, UHD, etc.). To workaround this issue, you should switch to the "Modesetting" X11/XFree86 driver. To switch to this driver, simply add and apply the following configuration file with the instructions below:
-
-## Create a Custom X11 Configuration
-
-Using your favourite editor (assuming `nano` here), create a custom X11 configuration file:
-
-`sudo nano /etc/X11/xorg.conf.d/20-modesettings.conf`
-
-Input in the following content:
-
-```
-Section "Device"
-    Identifier  "Intel Graphics"
-    Driver      "modesetting"
-    Option      "AccelMethod"    "glamor"
-    Option      "DRI"            "3"
-EndSection
-```
-
-And finally, `Ctrl-X` then `Y` to save the file.
-
-## Restart Your X11 Session
-
-Using the following command:
-
-`sudo systemctl restart display-manager`.
-
-And you should be switched to the "Modesetting" driver, and that windows should be displaying correctly.
+Unfortunately, this issue is impossible to address via future package updates - as system updates will not alter user-defined configurations. To resolve this issue, you will need to use appropriate configuration utilities to specify the "correct" font name - "Noto Sans Mono" counterparts of the former "Noto Mono" family.
