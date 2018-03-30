@@ -44,13 +44,14 @@ This topic provides information on AOSC OS's system specifications, naming schem
 
 # Errata
 
-This section contains known *unresolved* issues found in AOSC OS for developers' and users' reference.
+This section contains known unresolved and resolved issues found in AOSC OS - for developers' and users' reference.
 
 - [ERR-SYS-00001: Disappearing Windows with KDE/Plasma Desktop using Intel DDX](/err/x11/00001-kde-window-intel-ddx)
+- [ERR-SYS-00002: Noto Mono Fonts Displayed as Sans Serif with Recent Font Package Update](/err/x11/00002-noto-mono-font-name-change)
 
 # Knowledge Base
 
-This section contains pages describing resolved issues and commonly asked questions in AOSC OS.
+This section contains pages describing common questions, tips, and directions when using AOSC OS.
 
 - [KB-SYS-00001: Configuration of APT Repositories](/kb/sys/00001-apt-gen-list)
 - [KB-SYS-00002: Configuration of Input Methods](/kb/sys/00002-imchooser)
