@@ -1,4 +1,4 @@
-<!-- TITLE: ERR-SYS-00001: Noto Mono Fonts Displayed as Sans Serif with Recent Font Package Update -->
+<!-- TITLE: ERR-SYS-00002: Noto Mono Fonts Displayed as Sans Serif with Recent Font Package Update -->
 <!-- SUBTITLE: Noto Mono Font Name Changes and Possible Impacts -->
 
 # Summary
