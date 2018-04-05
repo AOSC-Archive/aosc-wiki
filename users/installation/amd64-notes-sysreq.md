@@ -1,7 +1,7 @@
 <!-- TITLE: Installation/AMD64/SysReq -->
 <!-- SUBTITLE: AOSC OS System Requirements for AMD64/x86-64 Devices -->
 
-This page provides some general information and suggestions, in hope that it may aid in your choice from various AOSC OS variants provided for x86_64-based systems. Only processor, memory, display, GPU, and storage requirements are provided below.
+This page provides some general information and suggestions, in hope that it may aid in your choice from various AOSC OS variants provided for x86-64-based systems. Only processor, memory, display, GPU, and storage requirements are provided below.
 
 Moreover, development, and container variants not intended for installation are not discussed here.
 
@@ -9,7 +9,7 @@ Moreover, development, and container variants not intended for installation are 
 
 AOSC OS is provided with the following installable and bootable variants, each with their own features and implications on their system requirements. System requirements may vary greatly between different variants, but processor requirements are known for each architecture (although suggestions will be provided for each variant for ideal experience): 
 
-- Any EMT64/AMD64 compatible x86_64 processors.
+- Any EMT64/AMD64 compatible x86-64 processors.
 - SSE3 support required (will not work on some early AMD Opteron/Athlon64 processors).
 
 And provided with the following variants:
@@ -44,7 +44,7 @@ KDE, or Plasma Desktop is a complete desktop interface and application suite. Th
 
 ## GNOME
 
-GNOME, with its GNOME Shell interface, is a fully featured desktop environment with relatively high demand on processor, memory, and GPU. Many x86_64 laptop, desktop of ~8 years of age should run GNOME just fine. A faster GPU may help with desktop performance.
+GNOME, with its GNOME Shell interface, is a fully featured desktop environment with relatively high demand on processor, memory, and GPU. Many x86-64 laptop, desktop of ~8 years of age should run GNOME just fine. A faster GPU may help with desktop performance.
 
 - Processor: Any processor supported, Intel Sandy Bridge recommended.
 - Memory: 2GB, 4GB or more recommended.
@@ -54,7 +54,7 @@ GNOME, with its GNOME Shell interface, is a fully featured desktop environment w
 
 ## MATE
 
-A fork of GNOME 2, therefore less taxing on graphic card (GPU), this is *not* a lightweight desktop environment, however. Any x86_64-based system should be able to run MATE just fine. MATE Desktop is built against GTK+ 3, a working GPU with 2D acceleration may boost desktop performance dramatically.
+A fork of GNOME 2, therefore less taxing on graphic card (GPU), this is *not* a lightweight desktop environment, however. Any x86-64-based system should be able to run MATE just fine. MATE Desktop is built against GTK+ 3, a working GPU with 2D acceleration may boost desktop performance dramatically.
 
 - Processor: Any processor supported, Core 2 Duo recommended.
 - Memory: 512MB, 1GB or more recommended for multitasking.
@@ -74,7 +74,7 @@ XFCE is a relatively lightweight, and fully modular desktop environment. XFCE ha
 
 ## LXDE
 
-LXDE is lighter (yet) than XFCE, also fully modular, and based on GTK+ 3. Recommended for older x86_64-based systems, say, those equipped with a Pentium 4 Prescott (EMT64 supported).
+LXDE is lighter (yet) than XFCE, also fully modular, and based on GTK+ 3. Recommended for older x86-64-based systems, say, those equipped with a Pentium 4 Prescott (EMT64 supported).
 
 - Processor: Any processor supported.
 - Memory: 256MB, 512MB or more recommended for multitasking.
