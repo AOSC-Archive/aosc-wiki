@@ -1,9 +1,9 @@
 <!-- TITLE: Installation/AMD64 -->
-<!-- SUBTITLE: Installing AOSC OS on AMD64/x86_64 Devices -->
+<!-- SUBTITLE: Installing AOSC OS on AMD64/x86-64 Devices -->
 
 > Available languages | [English](/users/installation/amd64) | [简体中文](/users/installation/amd-64/zh-cn)
 
-Installation of AOSC OS on x86_64 systems/environments are generally universal for all systems of this architectures. But for some specific device configurations and virtualized environments, here below are some extra notes:
+Installation of AOSC OS on x86-64 systems/environments are generally universal for all systems of this architectures. But for some specific device configurations and virtualized environments, here below are some extra notes:
 
 - [Notes for KVM](/users/installation/amd64-notes-kvm)
 - [Notes for Bay Trail/Cherry Trail](/users/installation/amd64-notes-trails)
@@ -16,9 +16,9 @@ Installation of AOSC OS on x86_64 systems/environments are generally universal f
 
 # Choosing a Tarball
 
-All AMD64/x86_64 tarballs are generic (universal for all supported devices), the only thing you would have to do here is choosing your favourite one - appropriate for your taste and your use case.
+All AMD64/x86-64 tarballs are generic (universal for all supported devices), the only thing you would have to do here is choosing your favourite one - appropriate for your taste and your use case.
 
-> Note: Another consideration is whether your device is capable for a specific variant, please consult the [AMD64/x86_64 system requirements](/users/installation/amd64-notes-sysreq) page for more information.
+> Note: Another consideration is whether your device is capable for a specific variant, please consult the [AMD64/x86-64 system requirements](/users/installation/amd64-notes-sysreq) page for more information.
 
 ## Bootable
 
@@ -60,7 +60,7 @@ After you are done, boot to GParted Live.
 
 # Preparing partitions
 
-On AMD64/x86_64, AOSC OS supports GUID (EFI) or MBR (traditional BIOS) partition tables - if you plan on multi-booting AOSC OS with other Linux distributions, Microsoft Windows, or Apple macOS, they generally uses GUID on newer machines, and MBR on older ones.
+On AMD64/x86-64, AOSC OS supports GUID (EFI) or MBR (traditional BIOS) partition tables - if you plan on multi-booting AOSC OS with other Linux distributions, Microsoft Windows, or Apple macOS, they generally uses GUID on newer machines, and MBR on older ones.
 
 It is relatively easy to use GParted, provided with GParted Live to configure your partitions. For more details on how to configure your partition with GParted, please refer to the [GParted Manual](http://gparted.org/display-doc.php?name=help-manual).
 
