@@ -24,13 +24,13 @@ This section contains information useful for AOSC OS users with pages arranged b
 This topic provides information on installation of AOSC OS, and considerations suggested when choosing different editions of AOSC OS.
 
 - How-to/Guides
-	- [AMD64/x86_64 Systems](/users/installation/amd64)
+	- [AMD64/x86-64 Systems](/users/installation/amd64)
 	- [ARMv7/AArch64 Devices](/users/installation/arm)
 	- [PowerPC/PPC64-based Macintosh](/users/installation/powermac)
 	- *MIPS 32/64-Bit Systems*
 	- [ZFS Root](/users/installation/zfs-root)
 - System Requirements
-	- [AMD64/x86_64 Systems](/users/installation/amd64-notes-sysreq)
+	- [AMD64/x86-64 Systems](/users/installation/amd64-notes-sysreq)
 	- [ARMv7/AArch64 Devices](/users/installation/arm-notes-sysreq)
 	- [PowerPC/PPC64-based Macintosh](/users/installation/powermac-notes-sysreq)
 	- *MIPS 32/64-bit Systems*
