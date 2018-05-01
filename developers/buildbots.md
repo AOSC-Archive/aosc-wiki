@@ -31,7 +31,7 @@ NOTE:
 
 - `port_number - 1` is occupied by that machine. See information above.
 - A machine that marked as **Daily** means this machine is also used daily by the owner (that means many programs unrelated to development, e.g. X11, will be running on this machine). Please make sure that you do not make OOM on those machine!
-- The parameter speed is defined as the total execution time for `make`, after `../configure --prefix=/usr` within the unzipped source tree of GNU C Library (version 2.27)  - this will be the command `time make`, collect the `Real` time, and round up to a second. This test is to be conducted on the main storage/scratch disk/build partition/...
+- The parameter speed is defined as the total execution time for `make`, after `mkdir build && cd build && ../configure --prefix=/usr` within the unzipped source tree of GNU C Library (version 2.27)  - this will be the command `time make`, collect the `Real` time, and round up to a second. This test is to be conducted on the main storage/scratch disk/build partition/...
 
 ---
 
