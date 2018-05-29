@@ -7,11 +7,11 @@ This page contains information about AOSC Buildbots.
 
 AOSC buildbots are all connected to our central relay node (`relay.aosc.io`), and are allocated fixed port numbers. To be specific, ports are allocated as per the buildbot's architecture:
 
-- **AMD64**: 2001 - 3000
-- **MIPS**: 3001-4000
-- **ARM**: 4001-5000
-- **PowerPC**: 5001-6000
-- **RISC-V**: 6001-7000
+- **AMD64**: 22001 - 23000
+- **MIPS**: 23001-24000
+- **ARM**: 24001-25000
+- **PowerPC**: 25001-26000
+- **RISC-V**: 26001-27000
 
 Between the relay and the buildbots, [Popub](https://github.com/m13253/popub) is used to forward your SSH port to our relay server. For usage of Popub, please read their README.
 
@@ -29,7 +29,7 @@ If you are willing to contribute your machine to AOSC, please make sure your mac
 
 NOTE: 
 
-- `port_number - 1` is occupied by that machine. See information above.
+- `port_number - 10000` is occupied by that machine. See information above.
 - A machine that marked as **Daily** means this machine is also used daily by the owner (that means many programs unrelated to development, e.g. X11, will be running on this machine). Please make sure that you do not make OOM on those machine!
 - The parameter speed is defined as the total execution time for `make`, after `mkdir build && cd build && ../configure --prefix=/usr` within the unzipped source tree of GNU C Library (version 2.27)  - this will be the command `time make`, collect the `Real` time, and round up to a second. This test is to be conducted on the main storage/scratch disk/build partition/...
 
