@@ -15,7 +15,7 @@ AOSC buildbots are all connected to our central relay node (`relay.aosc.io`), an
 
 Between the relay and the buildbots, [Popub](https://github.com/m13253/popub) is used to forward your SSH port to our relay server. For usage of Popub, please read their README.
 
-Each buildbot is allocated 2 contiguous ports under the range; the smaller one is for connection between your machine and the relay, and the larger one is for outside connections to the relay. For example, the AMD64 buildbot _Ry1800X_ is using 2332 and 2333, where _Ry1800X_ forwards its SSH port using `popub-local` to 2332 on the relay, and the relay exposes this port to the outside on port 2333.
+Each buildbot is allocated 2 contiguous ports under the range; the smaller one is for connection between your machine and the relay, and the larger one is for outside connections to the relay. For example, the AMD64 buildbot _Ry1800X_ is using 12333 and 22333, where _Ry1800X_ forwards its SSH port using `popub-local` to 12333 on the relay, and the relay exposes this port to the outside on port 22333.
 
 You can log into these buildbots over SSH (by using `ssh -p <port_number> <username>@relay.aosc.io`). For usernames, passwords, and SSH public key exchange, you may contact the owners of buildbots first.
 
@@ -35,37 +35,37 @@ NOTE:
 
 ---
 
-## **AMD64** (2001 - 3000)
+## **AMD64** (22001 - 23000)
 
 | Name | Port | CPU | Memory | Speed | Maintainer | Note |
 |-----------|-----------|-----------|-----------|-----------|---------|-----------|
-| **Yhi64**| 2048 | Intel Core i5-3230M @ 2.60GHz | 8GiB | | _Junde Yhi_ | **Daily** |
-| **Ry1800X** | 2333 | AMD Ryzen 7 1800X @ 3.60 - 4.10GHz | 32GiB |73s (`-j16`)| _Mingcong Bai_ |Please limit file activities within `/buildroots` |
-| **EPSON-PC** | 2718(e) | Intel Core 2 Duo T8100 @ 2.10GHz | 4GiB |588s (`-j2`) | _Zamir Sun_ | Available time: 8:00 - 21:30 UTC+8 |
-| **SITS** | 2729 | Intel Xeon CPU E3-1225 v3 @ 3.20GHz | 16GiB |395s (`-j5`)| _S. aureus_ | |
+| **Yhi64**| 22048 | Intel Core i5-3230M @ 2.60GHz | 8GiB | | _Junde Yhi_ | **Daily** |
+| **Ry1800X** | 22333 | AMD Ryzen 7 1800X @ 3.60 - 4.10GHz | 32GiB |73s (`-j16`)| _Mingcong Bai_ |Please limit file activities within `/buildroots` |
+| **EPSON-PC** | 22718 | Intel Core 2 Duo T8100 @ 2.10GHz | 4GiB |588s (`-j2`) | _Zamir Sun_ | Available time: 8:00 - 21:30 UTC+8 |
+| **SITS** | 22729 | Intel Xeon CPU E3-1225 v3 @ 3.20GHz | 16GiB |395s (`-j5`)| _S. aureus_ | |
 
-## **MIPS** (3001-4000)
-
-| Name | Port | CPU | Memory | Speed |Maintainer | Note |
-|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
-| **Gobson** | 3072 | Loongson 3B-1500G | 8GiB | | _Xiaoxing Ye_ | Owned by _Mingcong Bai_ |
-| **Godson** | 3141(pi) | Loongson 3A-2000C (R2) @ 1GHz (A1602) | 8GiB | | _Junde Yhi_ | |
-
-## **ARM** (4001-5000)
+## **MIPS** (23001-24000)
 
 | Name | Port | CPU | Memory | Speed |Maintainer | Note |
 |-----------|-----------|-----------|-----------|-----------|-----------|-----------|
-| **p64** | 4064 | Quad Core ARM Cortex-A53 @ 1.2GHz (Allwinner A64, Pine64 Plus) | 2GiB| | _Icenowy Zheng_| |
-| **Tegra** |4096| NVIDIA Tegra X1 @ 1.74GHz (NVIDIA Jetson TX1 Development Kit) | 4GiB| 446s (`-j5`) | _Mingcong Bai_|Please limit file activities within `/buildroots`|
-| **Pine64** |4399| Quad Core ARM Cortex-A53 @ 1.2GHz (Allwinner A64, Pine64 Plus) | 2GiB | 1351s (`-j5`) | _Mingcong Bai_|Please limit file activities within `/buildroots`.|
-| **YetAnotherPine64** |4514| Quad Core ARM Cortex-A53 @ 1.2GHz (Allwinner A64, Pine64 Plus) | 2GiB | 1365s (`-j5`) | _Salted Fish_|Local mirror located at /dev/sda4|
+| **Gobson** | 23072 | Loongson 3B-1500G | 8GiB | | _Xiaoxing Ye_ | Owned by _Mingcong Bai_ |
+| **Godson** | 23141 | Loongson 3A-2000C (R2) @ 1GHz (A1602) | 8GiB | | _Junde Yhi_ | |
 
-## **PowerPC** (5001-6000)
+## **ARM** (24001-25000)
+
+| Name | Port | CPU | Memory | Speed |Maintainer | Note |
+|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
+| **p64** | 24064 | Quad Core ARM Cortex-A53 @ 1.2GHz (Allwinner A64, Pine64 Plus) | 2GiB| | _Icenowy Zheng_| |
+| **Tegra** |24096| NVIDIA Tegra X1 @ 1.74GHz (NVIDIA Jetson TX1 Development Kit) | 4GiB| 446s (`-j5`) | _Mingcong Bai_|Please limit file activities within `/buildroots`|
+| **Pine64** |24399| Quad Core ARM Cortex-A53 @ 1.2GHz (Allwinner A64, Pine64 Plus) | 2GiB | 1351s (`-j5`) | _Mingcong Bai_|Please limit file activities within `/buildroots`.|
+| **YetAnotherPine64** |24514| Quad Core ARM Cortex-A53 @ 1.2GHz (Allwinner A64, Pine64 Plus) | 2GiB | 1365s (`-j5`) | _Salted Fish_|Local mirror located at /dev/sda4|
+
+## **PowerPC** (25001-26000)
 
 | Name | Port | CPU | Memory | Speed | Maintainer | Note |
 |-----------|-----------|-----------|-----------|-----------|-----------|-----------|
-| **G5-AOSC** | 5120 | IBM PowerPC 970MP @ 2.5GHz (PowerMac G5, Quad, 2005) | 8GiB | 566s (`-j5`) | _Mingcong Bai_ | Please avoid usage after 2 A.M. at America/Chicago; Please limit file activities within `/buildroots` |
+| **G5-AOSC** | 25120 | IBM PowerPC 970MP @ 2.5GHz (PowerMac G5, Quad, 2005) | 8GiB | 566s (`-j5`) | _Mingcong Bai_ | Please avoid usage after 2 A.M. at America/Chicago; Please limit file activities within `/buildroots` |
 
-## **RISC-V** (6001-7000)
+## **RISC-V** (26001-27000)
 
 *One can dream...*
