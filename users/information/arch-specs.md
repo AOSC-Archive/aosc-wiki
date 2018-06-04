@@ -61,6 +61,6 @@ For systems with 64-bit big endian PowerPC processors.
 
 ## rv64g
 
-For systems with 64-bit RISC-V processors, `gc` variant.
+For systems with 64-bit RISC-V processors, `RV64GC` variant.
 
 - Triplet: `riscv64-aosc-linux-gnu`
