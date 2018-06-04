@@ -58,16 +58,9 @@ For systems with 64-bit big endian PowerPC processors.
 - Triplet: `powerpc64-aosc-linux-gnu`
 - Note: Requires AltiVec support.
 
-# Hypothesized Architectures
-
-## rv32i
-
-For systems with 32-bit RISC-V processors, `i` variant(?).
-
-- Triplet: `riscv32-unknown-elf`
 
 ## rv64g
 
-For systems with 64-bit RISC-V processors, `g` variant(?).
+For systems with 64-bit RISC-V processors, `gc` variant.
 
-- Triplet: `riscv64-unknown-elf`
+- Triplet: `riscv64-aosc-linux-gnu`
