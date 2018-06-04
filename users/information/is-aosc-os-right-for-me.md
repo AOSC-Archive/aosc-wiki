@@ -81,6 +81,6 @@ Now that you have read through all those boring marketing material, time to make
 - You have never installed Linux before or do not know basic Linux/\*nix commands, or really, you can't be bothered to read the documentation and follow the steps.
 - You are expecting a light-weight and modular Linux distribution, this is **not** why AOSC OS is here.
 - You either hate frequent system updates, or are impatient for cutting-edge features.
-- You expect the system to work out-of-the-box 100% of the time and your use case could not in anyway allow for instability and breakage - we are sorry but it happens with AOSC OS, at least for now.
+- You expect the system to work out-of-the-box 100% of the time and your use case could not in any way allow for instability and breakage - we are sorry but it happens with AOSC OS, at least for now.
 - You find the principles of using free software necessary, and could not allow any non-free software to be installed on your computer.
 - You want to make it known that you are using AOSC OS, or make the distribution remind you of the fact - thanks for loving our logo by the way!
