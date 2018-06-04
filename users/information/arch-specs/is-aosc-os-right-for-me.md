@@ -24,13 +24,10 @@ Through the years following we have discovered that AOSC OS has been built upon 
 - There is no point providing an update if it breaks the user experience - specifically, when it renders basic functionalities unusable. However, software updates should be provided as soon as possible.
 - AOSC OS should provide similar (but reasonably reduced or added) functionalities across various architectural ports, while regarding them as personal devices capable of desktop and/or server usage.
 
-## How Does AOSC OS Compare?
+## How is AOSC OS Like?
 
-Agreeing to these goals and philosophies, AOSC OS is manifested very similarly to many semi-rolling distributions, but with our own features, here's a table to compare several known distributions against ourselves:
+With all these philosophies above, AOSC OS has been built by large in accordance to them. To avoid long paragraphs, this discussion will be organised into a pro's-and-con's listing.
 
-|    | AOSC OS | Arch Linux | Fedora | Debian |
-|----|---------|------------|--------|--------|
-| Always Splits Packages | No | No | Yes | Yes |
-| Update Model | Semi-Rolling | Rolling | Releases | Releases |
-| Supports non-x86 Architectures | Yes | No | Yes | Yes |
-| Provides non-free Software Officially | Yes | Yes | No | Yes |
+### AOSC OS - Pros
+
+- It's relatively simple, when it comes to software installation and removal.
