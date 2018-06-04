@@ -33,4 +33,6 @@ With all these philosophies above, AOSC OS has been built by large in accordance
 - It's relatively simple, when it comes to software installation and removal.
 - All "language packs" along with appropriate fonts are pre-installed, and a simple command or GUI (GNOME and Plasma Desktop) allows for quick language switching.
 	- Some AOSC developers have been participating in L10n (localisation, or simply translation) works on the upstream, mainly for zh_CN (Simplified Chinese), upstreams like WineHQ, FreeDesktop.org, GNOME, MATE, and LMMS, etc. benefits from our contribution, and these improvements benefit users of other Linux distributions or these specific applications on other operating systems.
-- 
+- Proprietary software, like the closed-source NVIDIA Unix driver packages, Google Chrome, and Netease Cloud Music can be easily obtained via our main repository.
+- Adequate support for 32-bit x86 applications (natively on AMD64, and via Qemu user emulation on other architectures) and Windows applications via Wine, with adequate testing and adapation for CJK languages.
+- You'd barely feel the existence of AOSC OS, no logo, no branding, no in-your-face banners.
