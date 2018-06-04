@@ -39,7 +39,7 @@ With all these philosophies above, AOSC OS has been built by large in accordance
 - Proprietary software, like the closed-source NVIDIA Unix driver packages, Google Chrome, Opera, and device firmwares (`firmware-nonfree` necessary for many wireless cards and graphics cards) can be easily obtained via our main repository.
 - A relatively strong software collection built upon user suggestions and active work of our developers.
 	- Software addition and updates could be easily requested on our community IRC and Telegram groups via the `/pakreq` and `/updreq` bot commands; additionally, any optimisation suggestions could be similarly made via the `/optreq` command. Developers are easily reached most of the time.
-- According to user feedbacks, AOSC OS has satisfatory out-of-the-box energy conservation policies, and it runs relatively cool on laptop computers.
+- According to user feedback, AOSC OS has satisfactory out-of-the-box energy conservation policies, and it runs relatively cool on laptop computers.
 - AOSC OS optimised its binary according to a "maximised set" of instructions and SIMDs available to particular architectures.
 - You'd barely feel the existence of AOSC OS, no logo, no branding, no in-your-face banners.
 
