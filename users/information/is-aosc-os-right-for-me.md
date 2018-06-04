@@ -8,7 +8,7 @@ Good question, we have been exploring this question for a long time now. But thr
 
 AOSC OS, in its recent years (since 2014), is an independently built and maintained distribution, meaning that in contrast to distributions like Ubuntu, which is built upon packages from Debian - AOSC OS developers source software provided in the distribution independently and build them with configurations maintained by the same developers. Not that it is an overtly noticeable feature, but it allows for our own, say, "creative freedom" when it comes to making the distribution into what we really wanted it to be - according to our philosophies and the suggestions from our community.
 
-That said, AOSC OS is only one of the several thousand Linux distributions out there, it builds upon the powerful Linux Kernel and the applications made by many around the world. We understand that it could be difficult to determine a Linux distribution to go with - whether it be the first time, or the 100th time - the goal of this Wiki page is to offer a multi-aspectual description of AOSC OS to help you in the decision process.
+That said, AOSC OS is only one of the several thousand Linux distributions out there, it builds upon the powerful Linux Kernel and applications made by many around the world. We understand that it could be difficult to determine a Linux distribution to go with - whether it be the first time, or the 100th time - the goal of this Wiki page is to offer a multi-aspectual description of AOSC OS to help you in the decision process.
 
 ## What Are We Trying to Achieve?
 
