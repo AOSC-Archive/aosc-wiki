@@ -19,6 +19,8 @@ This section contains guidebooks for AOSC developers, as well as more technicall
 # Users
 This section contains information useful for AOSC OS users with pages arranged by topics.
 
+- [Is AOSC OS Right for Me?](/users/information/is-aosc-os-right-for-me)
+
 ## System Installation
 
 This topic provides information on installation of AOSC OS, and considerations suggested when choosing different editions of AOSC OS.
