@@ -70,9 +70,9 @@ Now that you have read through all those boring marketing material, time to make
 - You don't particularly like configuring your system and expects a functional system without much tweaking.
 - You are a speaker of the CJK languages.
 - You expect to find software that you use daily, and are ready to ask for them otherwise.
-- You are ready to wait for certain updates and does not expect software updates to come on Day One.
-- You are security conscious and expects quick security updates.
-- You are energy conscious (say, you go out a lot with your laptop) and hates excess heat when running Linux.
+- You are ready to wait for certain updates and do not expect software updates to come on Day One.
+- You are security conscious and expect quick security updates.
+- You are energy conscious (say, you go out a lot with your laptop) and hate excess heat when running Linux.
 - You don't care much for distribution branding.
 - You would like to get into AOSC OS development or to know about its internals and details, as it is dead simple to find a developer willing to guide you in the process.
 
