@@ -1,5 +1,5 @@
 <!-- TITLE: Is AOSC OS Right for Me? -->
-<!-- SUBTITLE:  -->
+<!-- SUBTITLE: Some important and not so important notes... -->
 
 
 ## What is AOSC OS, anyways?
