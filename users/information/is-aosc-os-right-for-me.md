@@ -21,7 +21,7 @@ Through the years following we have discovered that AOSC OS has been built upon 
 - There should be little variation between users of different languages, with particular attention to CJK (Chinese, Japanese, and Korean) users - specifically, in font rendering and application display/layouts.
 - While open source and free software makes up the majority of the software repository, proprietary and commercial software should not be omitted unless their licensing suggests otherwise.
 - The distribution should attain minimal branding or distribution specific information, regarding the distribution itself as a tool designed according to the users' needs, not to their "brand recognition".
-- There is no point providing an update if it breaks the user experience - specifically, when it renders basic functionalities unusable. However, software updates should be provided as soon as possible.
+- There is no point in providing an update if it breaks the user experience - specifically, when it renders basic functionalities unusable. However, software updates should be provided as soon as possible.
 - AOSC OS should provide similar (but reasonably reduced or added) functionalities across various architectural ports, while regarding them as personal devices capable of desktop and/or server usage.
 
 ## How Is AOSC OS Like?
