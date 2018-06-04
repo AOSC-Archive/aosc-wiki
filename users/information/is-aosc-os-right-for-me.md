@@ -66,8 +66,8 @@ Now that you have read through all those boring marketing material, time to make
 
 - You have a computer of the [AMD64](https://wiki.aosc.io/users/installation/amd64-notes-sysreq), [ARMv7](https://wiki.aosc.io/users/installation/arm-notes-sysreq), [AArch64](https://wiki.aosc.io/users/installation/arm-notes-sysreq), [Big-Endian PowerPC 32-bit 64-bit Macintosh](https://wiki.aosc.io/users/installation/powermac-notes-sysreq) architectures.
 	- And they come with adequate storage availability for the present and the future, by your judgement.
-	- Stable Internet connection for updates and security advisories.
-- You don't particularly like configuring your system and expects a functional system without much tweaking.
+	- Stable Internet connection for updates and security advisories (subscription optional at [security@lists.aosc.io](mailto:security@lists.aosc.io).
+- You don't particularly like configuring your system and expect a functional system without much tweaking.
 - You are a speaker of the CJK languages.
 - You expect to find software that you use daily, and are ready to ask for them otherwise.
 - You are ready to wait for certain updates and do not expect software updates to come on Day One.
