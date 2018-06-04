@@ -2,7 +2,7 @@
 <!-- SUBTITLE: Some important and not so important notes... -->
 
 
-## What is AOSC OS, anyways?
+## What Is AOSC OS, Anyways?
 
 Good question, we have been exploring this question for a long time now. But through the seven years of its development, it has become increasingly clear that we are building this Linux distribution with several subtle features that we find essential. Though first, let's return to the basics...
 
@@ -24,7 +24,7 @@ Through the years following we have discovered that AOSC OS has been built upon 
 - There is no point providing an update if it breaks the user experience - specifically, when it renders basic functionalities unusable. However, software updates should be provided as soon as possible.
 - AOSC OS should provide similar (but reasonably reduced or added) functionalities across various architectural ports, while regarding them as personal devices capable of desktop and/or server usage.
 
-## How is AOSC OS Like?
+## How Is AOSC OS Like?
 
 With all these philosophies above, AOSC OS has been built by large in accordance to them. To avoid long paragraphs, this discussion will be organised into a pro's-and-con's listing.
 
