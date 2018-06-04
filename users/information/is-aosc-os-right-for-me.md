@@ -12,7 +12,7 @@ That said, AOSC OS is only one of the several thousand Linux distributions out t
 
 ## What Are We Trying to Achieve?
 
-AOSC OS is built in a multi-year effort by a collective of volunteers, who possess certain degrees of knowledge about the making of a Linux distribution. AOSC OS started its life as an independent distribution not since its first day of existence, but after three years of experimentation with AnthonOS as derivative distributions built on openSUSE and Debian. In 2014, we have determined to build AOSC OS independently to gain full control on the design and maintaining of packages and their updates.
+AOSC OS is built in a multi-year effort by a collective of volunteers, who possess certain degrees of knowledge about the making of a Linux distribution. AOSC OS started its life as an independent distribution not since its first day of existence, but after three years of experimentation with AnthonOS as derivative distributions built on openSUSE and Debian. In 2014, we have determined to build AOSC OS independently to gain full control on the design and maintenance of packages and their updates.
 
 Through the years following we have discovered that AOSC OS has been built upon the following goals and philosophies:
 
