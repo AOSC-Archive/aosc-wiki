@@ -10,7 +10,7 @@ AOSC OS in its recent years (since 2014), is an independently built and maintain
 
 That said, AOSC OS is only one of the several thousand Linux distributions out there, it builds upon the powerful Linux Kernel and the applications made by many around the world. We understand that it could be difficult to determine a Linux distribution to go with - whether it be the first time, or the 100th time - the goal of this Wiki page is to offer a multi-aspectual description of AOSC OS to help you in the decision process.
 
-## Philosophies of AOSC OS
+## What Are We Trying to Achieve?
 
 AOSC OS is built in a multi-year effort by a collective of volunteers, who possess certain degrees of knowledge about the making of a Linux distribution. AOSC OS started its life as an independent distribution not since its first day of existence, but after three years of experimentations with AnthonOS as derivative distributions built on openSUSE and Debian. In 2014, we have determined to build AOSC OS independently to gain full control on the design and maintaining of packages and their updates.
 
@@ -18,7 +18,7 @@ Through the years following we have discovered that AOSC OS has been built upon 
 
 - There should be no package splitting (like `libsndfile` splitting into a runtime package `libsndfile` and a development package `libsndfile-devel`) unless absolutely necessary or reasonably justified.
 - There should be minimal changes to the packages themselves unless its a bug-fix unmerged at the upstream, or a necessary change to make it work properly in AOSC OS.
-- There should be little variation between users of different languages, with particular attention to CJK users - specifically, in font rendering and application display/layouts.
+- There should be little variation between users of different languages, with particular attention to CJK (Chinese, Japanese, and Korean) users - specifically, in font rendering and application display/layouts.
 - While open source and free software makes up the majority of the software repository, proprietary and commercial software should not be omitted unless their licensing suggests otherwise.
 - The distribution should attain minimal branding or distribution specific information, regarding the distribution itself as a tool designed according to the users' needs, not to their "brand recognition".
 - There is no point providing an update if it breaks the user experience - specifically, when it renders basic functionalities unusable. However, software updates should be provided as soon as possible.
@@ -46,11 +46,36 @@ With all these philosophies above, AOSC OS has been built by large in accordance
 
 ### Cons
 
-- As it currently stands, AOSC OS does not provide an automatic (or even better, graphical) installation wizard, and requires manual input to install - which would most likely be daunting for first-timers. It also lacks a Live medium for user try-outs
+- As it currently stands, AOSC OS does not provide an automatic (or even better, graphical) installation wizard, and requires manual input to install - which would most likely be daunting for first-timers. It also lacks a Live medium for user try-outs.
 - It's **heavy**, as packages and software are installed on a larger unit, it requires more available storage than most Linux distributions with similar amount of applications installed.
 	- This issue is further exacerbated with pre-installed language data and fonts, especially CJK fonts, which could take up to a gigabyte of space in most default configurations.
+	- AOSC OS's modularity is noticeably hampered by this feature.
 - No `multilib` or `multiarch`, making cross-architecture development more difficult than "universal" distributions like Fedora and Debian - heavy reliance on Qemu user emulation.
 - AOSC OS will not make the Free Software Foundation's [List of Free GNU/Linux Distributions](https://www.gnu.org/distros/free-distros.en.html) in the forseeable future, for it provides non-free software, and is (probably?) illegal to re-distribute in countries like the United States.
 - Compared to more mature Linux distributions, AOSC OS should still grow its software repository.
 - Limited human resource, which means package updates and additions (actively or requested) could be delayed.
 - You'd barely feel the existence of AOSC OS, or for others to realise what you are running - no show-off for you, by default.
+	- Also, let's face it, we are not particularly well-known.
+
+## Should I Try AOSC OS?
+
+Now that you have read through all those boring marketing material, time to make your call. So, here's a subjective but justified (?) guide to your decision making...
+
+### Give it a shot, if...
+
+- You have a computer of the [AMD64](https://wiki.aosc.io/users/installation/amd64-notes-sysreq), [ARMv7](https://wiki.aosc.io/users/installation/arm-notes-sysreq), [AArch64](https://wiki.aosc.io/users/installation/arm-notes-sysreq), [Big-Endian PowerPC 32-bit 64-bit Macintosh](https://wiki.aosc.io/users/installation/powermac-notes-sysreq) architectures.
+	- And they come with adequate storage availability for the present and the future, by your judgement.
+	- Stable Internet connection for updates and security advisories.
+- You don't particularly like configuring your system and expects a functional system without much tweaking.
+- You are a speaker of the CJK languages.
+- You expect to find software that you use daily, and are ready to ask for them otherwise.
+- You are ready to wait for certain updates and does not expect software updates to come on Day One.
+- You are security conscious and expects quick security updates.
+- You are energy conscious (say, you go out a lot with your laptop) and hates excess heat when running Linux.
+
+### Ask us for advice or leave it, if...
+
+- You have never installed Linux before or does not know basic Linux/\*nix commands
+- You are expecting a light-weight and modular Linux distribution, this is **not** why AOSC OS is here.
+- You either hate frequent system updates, or are impatient for cutting-edge features.
+- 
