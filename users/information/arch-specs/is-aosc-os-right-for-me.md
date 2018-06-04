@@ -31,3 +31,6 @@ Agreeing to these goals and philosophies, AOSC OS is manifested very similarly t
 |    | AOSC OS | Arch Linux | Fedora | Debian |
 |----|---------|------------|--------|--------|
 | Always Splits Packages | No | No | Yes | Yes |
+| Update Model | Semi-Rolling | Rolling | Releases | Releases |
+| Supports non-x86 Architectures | Yes | No | Yes | Yes |
+| Provides non-free Software Officially | Yes | Yes | No | Yes |
