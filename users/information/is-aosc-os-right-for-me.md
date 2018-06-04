@@ -17,7 +17,7 @@ AOSC OS is built in a multi-year effort by a collective of volunteers, who posse
 Through the years following we have discovered that AOSC OS has been built upon the following goals and philosophies:
 
 - There should be no package splitting (like `libsndfile` splitting into a runtime package `libsndfile` and a development package `libsndfile-devel`) unless absolutely necessary or reasonably justified.
-- There should be minimal changes to the packages themselves unless its a bug-fix unmerged at the upstream, or a necessary change to make it work properly in AOSC OS.
+- There should be minimal changes to the packages themselves unless it's a bug-fix unmerged at the upstream, or a necessary change to make it work properly in AOSC OS.
 - There should be little variation between users of different languages, with particular attention to CJK (Chinese, Japanese, and Korean) users - specifically, in font rendering and application display/layouts.
 - While open source and free software makes up the majority of the software repository, proprietary and commercial software should not be omitted unless their licensing suggests otherwise.
 - The distribution should attain minimal branding or distribution specific information, regarding the distribution itself as a tool designed according to the users' needs, not to their "brand recognition".
