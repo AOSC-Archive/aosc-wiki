@@ -54,6 +54,7 @@ With all these philosophies above, AOSC OS has been built by large in accordance
 - AOSC OS will not make the Free Software Foundation's [List of Free GNU/Linux Distributions](https://www.gnu.org/distros/free-distros.en.html) in the forseeable future, for it provides non-free software, and is (probably?) illegal to re-distribute in countries like the United States.
 - Compared to more mature Linux distributions, AOSC OS should still grow its software repository.
 - Limited human resource, which means package updates and additions (actively or requested) could be delayed.
+	- Bugs may exist and come unnoticed, and they can also take time to be fixed.
 - You'd barely feel the existence of AOSC OS, or for others to realise what you are running - no show-off for you, by default.
 	- Also, let's face it, we are not particularly well-known.
 
@@ -72,10 +73,14 @@ Now that you have read through all those boring marketing material, time to make
 - You are ready to wait for certain updates and does not expect software updates to come on Day One.
 - You are security conscious and expects quick security updates.
 - You are energy conscious (say, you go out a lot with your laptop) and hates excess heat when running Linux.
+- You don't care much for distribution branding.
+- You would like to get into AOSC OS development or to know about its internals and details, as it is dead simple to find a developer willing to guide you in the process.
 
 ### Ask us for advice or leave it, if...
 
-- You have never installed Linux before or does not know basic Linux/\*nix commands
+- You have never installed Linux before or does not know basic Linux/\*nix commands, or really, you can't be bothered to read the documentation and follow the steps.
 - You are expecting a light-weight and modular Linux distribution, this is **not** why AOSC OS is here.
 - You either hate frequent system updates, or are impatient for cutting-edge features.
-- 
+- You expect the system to work out-of-the-box 100% of the time and your use case could not in anyway allow for instability and breakage - we are sorry but it happens with AOSC OS, at least for now.
+- You find the principles of using free software necessary, and could not allow any non-free software to be installed on your computer.
+- You want to make it known that you are using AOSC OS, or make the distribution remind you of the fact - thanks for loving our logo by the way!
