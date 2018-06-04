@@ -28,11 +28,29 @@ Through the years following we have discovered that AOSC OS has been built upon 
 
 With all these philosophies above, AOSC OS has been built by large in accordance to them. To avoid long paragraphs, this discussion will be organised into a pro's-and-con's listing.
 
-### AOSC OS - Pros
+### Pros
 
+- AOSC OS installs quickly, works out of the box, and comes with most tools necessary to begin working from the 0th minute, including utilities necessary for Internet connection in restrictive countries and regions.
 - It's relatively simple, when it comes to software installation and removal.
 - All "language packs" along with appropriate fonts are pre-installed, and a simple command or GUI (GNOME and Plasma Desktop) allows for quick language switching.
 	- Some AOSC developers have been participating in L10n (localisation, or simply translation) works on the upstream, mainly for zh_CN (Simplified Chinese), upstreams like WineHQ, FreeDesktop.org, GNOME, MATE, and LMMS, etc. benefits from our contribution, and these improvements benefit users of other Linux distributions or these specific applications on other operating systems.
-- Proprietary software, like the closed-source NVIDIA Unix driver packages, Google Chrome, and Netease Cloud Music can be easily obtained via our main repository.
 - Adequate support for 32-bit x86 applications (natively on AMD64, and via Qemu user emulation on other architectures) and Windows applications via Wine, with adequate testing and adapation for CJK languages.
+- Apart from the installation process, you should feel no difference in appearance and usage with AOSC OS across our [supported architectures](https://wiki.aosc.io/users/information/arch-specs) - of course, depending on the performance of your devices, your mileage may vary.
+- Proprietary software, like the closed-source NVIDIA Unix driver packages, Google Chrome, Opera, and device firmwares (`firmware-nonfree` necessary for many wireless cards and graphics cards) can be easily obtained via our main repository.
+- A relatively strong software collection built upon user suggestions and active work of our developers.
+	- Software addition and updates could be easily requested on our community IRC and Telegram groups via the `/pakreq` and `/updreq` bot commands; additionally, any optimisation suggestions could be similarly made via the `/optreq` command. Developers are easily reached most of the time.
+- According to user feedbacks, AOSC OS has satisfatory out-of-the-box energy conservation policies, and it runs relatively cool on laptop computers.
+- AOSC OS optimised its binary according to a "maximised set" of instructions and SIMDs available to particular architectures.
 - You'd barely feel the existence of AOSC OS, no logo, no branding, no in-your-face banners.
+
+
+### Cons
+
+- As it currently stands, AOSC OS does not provide an automatic (or even better, graphical) installation wizard, and requires manual input to install - which would most likely be daunting for first-timers. It also lacks a Live medium for user try-outs
+- It's **heavy**, as packages and software are installed on a larger unit, it requires more available storage than most Linux distributions with similar amount of applications installed.
+	- This issue is further exacerbated with pre-installed language data and fonts, especially CJK fonts, which could take up to a gigabyte of space in most default configurations.
+- No `multilib` or `multiarch`, making cross-architecture development more difficult than "universal" distributions like Fedora and Debian - heavy reliance on Qemu user emulation.
+- AOSC OS will not make the Free Software Foundation's [List of Free GNU/Linux Distributions](https://www.gnu.org/distros/free-distros.en.html) in the forseeable future, for it provides non-free software, and is (probably?) illegal to re-distribute in countries like the United States.
+- Compared to more mature Linux distributions, AOSC OS should still grow its software repository.
+- Limited human resource, which means package updates and additions (actively or requested) could be delayed.
+- You'd barely feel the existence of AOSC OS, or for others to realise what you are running - no show-off for you, by default.
