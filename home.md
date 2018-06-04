@@ -1,5 +1,5 @@
 <!-- TITLE: AOSC Wiki -->
-<!-- SUBTITLE: Temporary Progress on Wiki -->
+<!-- SUBTITLE: Where people come to know... Oh wait, sorry MSFN :D -->
 
 # Welcome
 
