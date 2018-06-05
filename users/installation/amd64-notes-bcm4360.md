@@ -37,7 +37,7 @@ __This wiki might not reflect actual file name on the repository, since the vers
 
 1. `dkms`
 2. `gcc`
-3. `binutil`
+3. `binutils`
 4. `mpc`
 5. `isl`
 6. `mpfr`
