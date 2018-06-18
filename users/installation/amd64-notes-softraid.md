@@ -11,7 +11,7 @@ Installing AOSC OS on software-RAID configuration may require extra steps after 
 
 A initrd/initramfs is required for a system on an array to boot successfully. Moreover, changes to the `dracut` configuration file is also required for the generated initrd/initramfs to detect your software RAID setup.
 
-Using your preferred text editor, edit `/etc/dracut`, and add the following lines to the file:
+Using your preferred text editor, edit `/etc/dracut.conf`, and add the following lines to the file:
 
 ```bash
 # For MD-RAID support modules
