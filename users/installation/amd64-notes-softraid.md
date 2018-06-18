@@ -20,6 +20,13 @@ add_dracutmodules+=" mdraid "
 mdadmconf="yes"
 ```
 
+
+And now invoke generation of new initrd(s).
+
+```
+# sh /var/ab/triggered/dracut
+```
+
 # Extra Kernel Parameters
 
 Open `/etc/default/grub` with your preferred text editor. On the line starting with `GRUB_CMDLINE_LINUX_DEFAULT`, add `rd.auto rd.auto=1` inside the quotation marks, save the file on exit - and regenerate GRUB configuration.
