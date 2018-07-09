@@ -52,6 +52,7 @@ The list below is a **concrete and specific** list of packages which could be co
 | Simple-OBFS | `simple-obfs` | 3 |
 | StrongSwan | `strongswan` | 3 |
 | Tor | `tor` | 3 |
+| Trojan | `trojan` | 3 |
 | V2Ray | `v2ray` | 3 |
 | WireGuard | `wireguard` | 3 |
 | CA Certificates | `ca-certs` | 3 |
