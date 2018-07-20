@@ -11,7 +11,7 @@ Up to now, we have many mirrors (mainly in China), and we do need more mirrors i
 What is included in the repo? Generally everything about AOSC, and most are of AOSC OS (packages, system images). Some documentations, like *Free Software Localization Guide for Chinese (China) *, are also saved here.
 
 # Repo Size
-Up to now (March, 2018), the repo is taking ~480GB of disk. You may expect that the repo will grow to around 600GB or more.
+Up to now (July, 2018), the repo is taking ~400GB of disk. You may expect that the repo will grow to around 600GB or more.
 
 # How to Mirror
 If you have enough hard disk space, please do rsync from our main repo: rsync://repo.aosc.io/anthon/ . 
