@@ -20,7 +20,7 @@ The website is served in `main.py`. We use [Bottle](https://bottlepy.org/) frame
 ## Deploying
 The recommended resource requirement is at least 1GiB of free space (current usage: 450MiB), at least 512MiB of total RAM (actually won't exceed 100M). Software requirement is Python 3.5+ or PyPy3.5, recent SQLite3 with FTS5 support, Fossil 2.6+, bash, Git.
 We currently use uWSGI and nginx to host the website. See https://github.com/AOSC-Dev/packages-site#deploy for simple instructions. Set up systemd timers for update.sh and piss.
-## Using
+## Usage
 ### Human
 - "Latest Source Updates" are most recent updates in git.
 - In "Repositories and Trees", "repositories" are DPKG sources and "trees" are abbs repos. "Ghost" means the packages exist in the DPKG source but not in the abbs repo. "Lagging" means there is no binary package of the updated version in abbs repo. "Missing" means the packages exist in the abbs repo but not in the DPKG source. The links in "Source Tree" column point to GitHub pages. "Outdated" means the packages have updated upstream versions. Click on the numbers and you will get the respective list.
