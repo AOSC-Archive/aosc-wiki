@@ -15,6 +15,7 @@ This section contains guidebooks for AOSC developers, as well as more technicall
 
 - [How to Contribute to This Wiki](developers/how-to-contribute-md)
 - [AOSC Buildbot Information](developers/buildbots)
+- [Packages Site](developers/packages-site)
 
 # Users
 This section contains information useful for AOSC OS users with pages arranged by topics.
