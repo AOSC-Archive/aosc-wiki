@@ -21,13 +21,16 @@ LiveKit is a live environment for installing and maintaining AOSC OS or other Li
 - Fonts inclusion as specified in SMALL_ARCH
 - Utilities
 	- System admin
-		- dash, bash, bash-completion
+		- dash, bash, bash-completion, less
 		- bc, units (calculators)
 		- screen, tmux, byobu
 		- pv, progress
 		- busybox
 		- util-linux
 		- genfstab
+		- ipcalc
+		- haveged
+		- john
 		- fbterm
 	- Automation
 		- grep, sed, awk
@@ -37,9 +40,10 @@ LiveKit is a live environment for installing and maintaining AOSC OS or other Li
 		- expect
 	- Connectivity
 		- ssh, mosh
-		- wget, curl, aria2, ftp
+		- wget, curl, aria2
 		- privoxy, shadowsocks
 		- darkhttpd
+		- iperf3
 	- File format
 		- bsdtar, zip, cpio, xz, lbzip2, pigz, zstd, lzo, lz4
 		- sqlite
@@ -50,12 +54,13 @@ LiveKit is a live environment for installing and maintaining AOSC OS or other Li
 		- ed
 		- nano, vim
 	- Monitor
-		- htop, iotop, dstat
-		- bmon, nethogs
+		- htop, iotop, dstat, lsof
+		- bmon, nethogs, iftop
 	- File System
-		- e2fsprogs, xfsprogs, btrfs-progs, ntfs-3g, f2fs-tools
+		- e2fsprogs, xfsprogs, btrfs-progs, hfsprogs, ntfs-3g, f2fs-tools
 		- cryptsetup, lvm2
 		- fuse, fuse-exfat
+		- (libguestfs)
 		- fatattr
 		- convmv
 		- duff
@@ -64,6 +69,7 @@ LiveKit is a live environment for installing and maintaining AOSC OS or other Li
 		- rsync
 		- unison
 	- Hardware
-		- dmidecode
-		- crazydiskinfo
+		- dmidecode, hardinfo, hwdata
+		- crazydiskinfo, hddtemp, hdparm
 		- f3
+		- ipmitool
