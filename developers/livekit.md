@@ -14,6 +14,7 @@ LiveKit is a live environment for installing and maintaining AOSC OS or other Li
 - Data recovery
 	- ddrescue, ddrescueview
 	- testdisk
+	- gparted
 - Default wallpaper with reduced quality
 - Remove all documentation from /usr/share/doc
 - Accessibility (Orca + Onboard)
@@ -26,26 +27,43 @@ LiveKit is a live environment for installing and maintaining AOSC OS or other Li
 		- pv, progress
 		- busybox
 		- util-linux
+		- genfstab
+		- fbterm
 	- Automation
 		- grep, sed, awk
 		- python(2,3), perl, tcl
 		- parallel
 		- diffutils, patch
+		- expect
 	- Connectivity
 		- ssh, mosh
-		- rsync
 		- wget, curl, aria2, ftp
 		- privoxy, shadowsocks
+		- darkhttpd
 	- File format
-		- bsdtar, zip, xz, lbzip2, pigz, zstd, lzo, lz4
+		- bsdtar, zip, cpio, xz, lbzip2, pigz, zstd, lzo, lz4
 		- sqlite
-		- file, chardet
+		- file, chardet, dos2unix
+		- gnupg
+		- dmg2img
 	- Editor
+		- ed
 		- nano, vim
 	- Monitor
-		- htop, iotop
+		- htop, iotop, dstat
 		- bmon, nethogs
 	- File System
-		- e2fsprogs, xfsprogs, btrfs-progs, ntfs-3g
+		- e2fsprogs, xfsprogs, btrfs-progs, ntfs-3g, f2fs-tools
+		- cryptsetup, lvm2
 		- fuse, fuse-exfat
 		- fatattr
+		- convmv
+		- duff
+		- parted, gptfdisk
+	- Backup
+		- rsync
+		- unison
+	- Hardware
+		- dmidecode
+		- crazydiskinfo
+		- f3
