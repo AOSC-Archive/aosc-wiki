@@ -68,6 +68,12 @@ After you are greeted with `OK` and a Open Firmware command line (should be whit
 boot ud:2,\\yaboot
 ```
 
+Note, boot command might differ, on an Early-2005 12-inch PowerBook G4 (1.5GHz G4), the command should be as follows (if using the command above, you will see a gray background with a "forbidden" symbol):
+
+```
+boot usb1/disk@1:,\\yaboot
+```
+
 You should be greeted with a boot menu:
 
 - If you are using G3/G4, please enter `linux32` and press Enter.
