@@ -134,14 +134,14 @@ And now, un-tar the tarball:
 
 ```
 # cd /mnt
-# tar pxf /path/to/tarball/tarball.tar.xz
+# tar --numeric-owner -pxf /path/to/tarball/tarball.tar.xz
 ```
 
-For a more "excited" experience, add verbosity:
+For a more exciting experience, add verbosity:
 
 ```
 # cd /mnt
-# tar pxvf /path/to/tarball/tarball.tar.xz
+# tar --numeric-owner -pxvf /path/to/tarball/tarball.tar.xz
 ```
 
 # Initial Configuration
