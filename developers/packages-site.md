@@ -32,6 +32,12 @@ We currently use uWSGI and nginx to host the website. See https://github.com/AOS
 - All package list: https://packages.aosc.io/list.json
 - SQLite3 database download: https://packages.aosc.io/data/abbs.db, and `piss.db`.
 - List of deb packages that can be removed: https://packages.aosc.io/cleanmirror/(repo), where (repo) is such as "amd64", "amd64/testing".
+## Plans
+- Add file lists.
+- Add so dep/provides.
+- Search file lists.
+- Show the newer version of (staging, bugfix). (waiting for branch change)
+- Add package "issues" page.
 # FAQ
 ## Q: The site is down
 A: Please first check https://aoscpkgs.gumble.pw/, which is the mirror site. Then please report back which site is useable to site admin @gumblex in the Telegram groups.
@@ -44,3 +50,6 @@ A: Assuming the site is correctly syncing (see above), your updated packages may
 
 ## Q: Upstream version is wrong
 A: PISS uses a lot of heuristics, and resorts to Anitya if we can't figure out. Therefore, there are two sources of errors. If the error is on our side, we can improve the heuristics, or give it more information. Currently the only information we can use is package name, current version, url, source type (tarball/git/hg).
+
+## Q: Why no (reverse) dependency graph
+A: Too big to draw. There are also many cyclic dependencies.
