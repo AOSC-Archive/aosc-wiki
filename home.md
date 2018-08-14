@@ -35,7 +35,7 @@ This sub-section contains information on APIs and technical details from our com
 
 This sub-section provides guidebooks and developer information for AOSC OS developers.
 
-- [Exceptions to the Update Cycles](/developers/aosc-os/monthly-exceptions)
+- [Exceptions to the Update Cycles](/developers/aosc-os/cycle-exceptions)
 
 # Users
 This section contains information useful for AOSC OS users with pages arranged by topics.
