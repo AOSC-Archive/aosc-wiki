@@ -1,9 +1,9 @@
-<!-- TITLE: Exceptions to the Monthly Update Cycle -->
+<!-- TITLE: Exceptions to the Update Cycles -->
 <!-- SUBTITLE: A Suggested List of Packages to be Updated Immediately and Made Available in Stable Repositories -->
 
 # Rationale and Definition
 
-Since the monthly update cycle was introduced to AOSC OS in July of 2017, packages which represents feature, and non-bugfix/security updates should first have their build configurations pushed to the [staging](https://github.com/AOSC-Dev/aosc-os-abbs/tree/staging) of the [ABBS Tree](https://github.com/AOSC-Dev/aosc-os-abbs), uploaded to the [testing] repositories - and made available in the stable repository at the end of each monthly cycle after testing.
+Since the monthly update cycle was introduced to AOSC OS in July of 2017 (and later, seasonal update cycles introduced in July 2018), packages which represents feature, and non-bugfix/security updates should first have their build configurations pushed to the [staging](https://github.com/AOSC-Dev/aosc-os-abbs/tree/staging) of the [ABBS Tree](https://github.com/AOSC-Dev/aosc-os-abbs), uploaded to the [testing] repositories - and made available in the stable repository at the end of each monthly cycle after testing.
 
 However, given the bugfix/security update may rely - and limited to - on backporting of patches, there are some other packages which could be...
 
