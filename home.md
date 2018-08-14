@@ -13,9 +13,29 @@ The wiki is split into multiple big sections, targeting different audiences. Do 
 # Developers
 This section contains guidebooks for AOSC developers, as well as more technically-inclined content for developers using AOSC OS.
 
+## Wiki and Contribution
+
+This sub-section provides basic information for contributions to this Wiki.
+
 - [How to Contribute to This Wiki](developers/how-to-contribute-md)
+
+## Public Developer Resources
+
+This sub-section contains general information about public servers and resources made available to AOSC developers.
+
 - [AOSC Buildbot Information](developers/buildbots)
+
+## Infrastructure
+
+This sub-section contains information on APIs and technical details from our community infrastructure.
+
 - [Packages Site](developers/packages-site)
+
+## AOSC OS
+
+This sub-section provides guidebooks and developer information for AOSC OS developers.
+
+- [Exceptions to the Update Cycles](/developers/aosc-os/monthly-exceptions)
 
 # Users
 This section contains information useful for AOSC OS users with pages arranged by topics.
