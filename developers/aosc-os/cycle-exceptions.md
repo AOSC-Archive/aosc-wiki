@@ -60,6 +60,7 @@ The list below is a **concrete and specific** list of packages which could be co
 | Linux Kernel (Mainline) | `linux-kernel*`, `linux+kernel` | 4 |
 | Linux Kernel (Libre) | `linux-kernel-libre-*`, `linux+kernel+libre` | 4 |
 | Linux Kernel (LTS) | `linux-kernel-lts-*`, `linux+kernel+lts` | 4 |
+| Linux Kernel (BSP) | `linux-kernel-powermac*`, `linux-kernel-sunxi*`, `linux+kernel+sunxi*` | 4 |
 | Autobuild3 | `autobuild3` | 5 |
 | ACBS | `acbs` | 5 |
 | Ciel | `ciel` | 5 |
