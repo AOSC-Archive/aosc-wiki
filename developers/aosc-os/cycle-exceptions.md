@@ -3,14 +3,14 @@
 
 # Rationale and Definition
 
-Since the monthly update cycle was introduced to AOSC OS in July of 2017 (and later, seasonal update cycles introduced in July 2018), packages which represents feature, and non-bugfix/security updates should first have their build configurations pushed to the [staging](https://github.com/AOSC-Dev/aosc-os-abbs/tree/staging) of the [ABBS Tree](https://github.com/AOSC-Dev/aosc-os-abbs), uploaded to the [testing] repositories - and made available in the stable repository at the end of each monthly cycle after testing.
+Since the monthly update cycle was introduced to AOSC OS in July of 2017 (and later, seasonal update cycles introduced in July 2018), packages which represents feature, and non-bugfix/security updates should first have their build configurations pushed to the [staging](https://github.com/AOSC-Dev/aosc-os-abbs/tree/staging) of the [ABBS Tree](https://github.com/AOSC-Dev/aosc-os-abbs), uploaded to the [testing] repositories - and made available in the stable repository at the end of each seasonal cycle after testing.
 
 However, given the bugfix/security update may rely - and limited to - on backporting of patches, there are some other packages which could be...
 
 - **Category 1:** Hard (or impossible in case of binary packages) to backport security/bugfix patches to, and frequently updated in mixture of feature and security updates. This category is most well represented by (larger) Web browsers, for example, Firefox and Chromium.
 - **Category 2:** Heavily relied on frequent updates to remain functional. This category is most well represented by tools which reads online APIs/page contents for its basic functionality, for example, youtube-dl.
 - **Category 3:** Essential to basic Internet access in certain regions. This category is most well represented by network utilities which have to work around new blockades and constraints, for example, shadowsocks.
-- **Category 4:** Non-major Kernel updates. For example, going from 4.13.1 to 4.13.n, n>1 should be permitted as a bugfix update and made available in the stable repository upon internal testing; while going from 4.13.1 to 4.x.y, x>13 will require that the new Kernel packages to go through the full monthly cyclce.
+- **Category 4:** Non-major Kernel updates. For example, going from 4.13.1 to 4.13.n, n>1 should be permitted as a bugfix update and made available in the stable repository upon internal testing; while going from 4.13.1 to 4.x.y, x>13 will require that the new Kernel packages to go through the full seasonal cyclce.
 - **Category 5:** AOSC OS distribution-specific development toolkits, which should be the newest at all times.
 
 # Exception List
