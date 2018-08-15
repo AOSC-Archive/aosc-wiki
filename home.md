@@ -86,11 +86,12 @@ This section contains pages describing common questions, tips, and directions wh
 - [KB-SYS-00002: Configuration of Input Methods](/kb/sys/00002-imchooser)
 - [KB-SYS-00003: Configuration of JACK](/kb/sys/00003-jack-configuration)
 
-# AOSA
+# AOSC OS Security Advisories
+
+- [What is an AOSA?](/aosa/what-is-an-aosa)
 
 This section lists all current and historic AOSC OS Security Advisories.
 
-- [What is an AOSA?](/aosa/what-is-an-aosa)
 - [List of Announced AOSAs (2017)](/aosa/archive/2017)
 - [List of Announced AOSAs (2018)](/aosa/archive/2018)
 
