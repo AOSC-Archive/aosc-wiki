@@ -90,7 +90,7 @@ This section contains pages describing common questions, tips, and directions wh
 
 This section lists all current and historic AOSC OS Security Advisories.
 
-- *What is AOSA?*
+- *What is an AOSA?*
 - [List of Announced AOSAs (2017)](/aosa/archive/2017)
 - [List of Announced AOSAs (2018)](/aosa/archive/2018)
 
