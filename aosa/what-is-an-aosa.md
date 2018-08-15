@@ -11,5 +11,5 @@ AOSAs follow a very simple (but organised) format with an aim to provide the imm
 
 ```
  AOSA-2018-0008: Update WildMIDI to 0.4.2
-|----|----|----|-------------------------|
+|- A -|- B -|- C -|-------------------------|
 ```
