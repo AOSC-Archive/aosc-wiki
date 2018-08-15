@@ -64,6 +64,7 @@ This topic provides information on AOSC OS's system specifications, naming schem
 
 - [Architecture Namings and Specifications](/users/information/arch-specs)
 - [Filesystem Hierarchy](/users/information/fs-hierarchy)
+- *Optimisation Overlays*
 
 # Errata
 
