@@ -88,6 +88,8 @@ This section contains pages describing common questions, tips, and directions wh
 
 # AOSC OS Security Advisories
 
+A brief introduction to the definition, format, and workflow of AOSC OS Security Advisories can be read in the article below.
+
 - [What is an AOSA?](/aosa/what-is-an-aosa)
 
 This section lists all current and historic AOSC OS Security Advisories.
