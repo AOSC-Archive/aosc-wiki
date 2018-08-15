@@ -11,5 +11,10 @@ AOSAs follow a very simple (but organised) format with an aim to provide the imm
 
 ```
  AOSA-2018-0008: Update WildMIDI to 0.4.2
-|- A -|- B -|- C -|-------------------------|
+|----|----|----|-------------------------|
 ```
+
+- `AOSA-`, just to show that it's our advisory, as in contrary to `DSA-` from Debian, `ASA-` from Arch Linux, etc.
+- `2018-`, to indicate the year in which the advisory was published.
+- `0008`, a simple number counter to show how many advisories have been published before this particular one.
+- `Update WildMIDI to 0.4.2`, suggestion to the user.
