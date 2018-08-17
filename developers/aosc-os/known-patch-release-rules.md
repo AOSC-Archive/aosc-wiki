@@ -11,4 +11,7 @@ Presented below is a table that defines all known patch release rules for upstre
 
 | Project or Package Name | Rule Description |
 | -------------------------------------------- | ----------------------------- |
-| GNOME Desktop and Components | If projects have versions, say, `x.y.z`  or even at times `x.y.z.n`, then any updates to `z` or `n` could be deemed as patch-level releases. `y` must be even numbers. [Source](https://developer.gnome.org/programming-guidelines/stable/versioning.html.en#stable-unstable-versions).
+| GNOME Desktop and Components | If projects have versions, say, `x.y.z`  or even at times `x.y.z.n`, then any updates to `z` or `n` could be deemed as patch-level releases. `y` must be even numbers. [Source](https://developer.gnome.org/programming-guidelines/stable/versioning.html.en#stable-unstable-versions). |
+| KDE Frameworks | If projects have versions, say, `x.y.z`  or even at times `x.y.z.n`, then any updates to `z` or `n` could be deemed as patch-level releases. `y` may be even or odd numbers. [Source](https://community.kde.org/Guidelines_and_HOWTOs/Application_Versioning). |
+| Plasma Desktop and Components | If projects have versions, say, `x.y.z`  or even at times `x.y.z.n`, then any updates to `z` or `n` could be deemed as patch-level releases. `y` may be even or odd numbers. [Source](https://community.kde.org/Guidelines_and_HOWTOs/Application_Versioning). |
+| KDE Applications | If projects have versions, say, `x.y.z`  or even at times `x.y.z.n`, then any updates to `z` or `n` could be deemed as patch-level releases. `y` may be even or odd numbers. [Source](https://community.kde.org/Guidelines_and_HOWTOs/Application_Versioning). |
