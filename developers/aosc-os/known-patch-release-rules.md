@@ -29,3 +29,4 @@ The packages and projects found below should never be updated via the Stable cha
 | Project or Package Name | Note |
 | -------------------------------------------- | ----------------------------- |
 | Deepin Desktop Environment and Applications | No predictable release and versioning model - as suggested one Deepin developer. |
+| LibQalculate | From `2.6.1` to `2.6.2`, for instance, .so version changed from 18 to 19, breaking ABI compatibility. This does not comply with [Semantic Versioning](https://semver.org/). |
