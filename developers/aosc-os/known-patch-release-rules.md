@@ -21,3 +21,11 @@ Presented below is a table that defines all known patch release rules for upstre
 | OpenSSL | Versions usually formatted as `x.y.z(n)`, where `(n)` is usually a Latin letter indicates the patch-level version. Updates, say, from `1.0.2o` to `1.0.2p` is acceptable as a patch-level update. [Source](https://wiki.openssl.org/index.php/Versioning) |
 | Bind | Versions usually formatted as `x.y.z-P(n)`, where `(n)` is an integer, which represents the patch-level. Additionally, only when `y` is an even number should the version be considered as stable. [Source](https://www.isc.org/downloads/software-support-policy/). |
 | Semantic Versioning, in general | If projects have versions, say, `x.y.z`  or even at times `x.y.z.n`, then any updates to `z` or `n` could be regarded as patch-level releases. may be even or odd numbers, unless otherwise specified, like in the example of GNOME. [Source](https://semver.org/). |
+
+# Table of Known Unpredictable Update Rules
+
+The packages and projects found below should never be updated via the Stable channel.
+
+| Project or Package Name | Note |
+| -------------------------------------------- | ----------------------------- |
+| Deepin Desktop Environment and Applications | No predictable release and versioning model - as suggested one Deepin developer. |
