@@ -23,6 +23,7 @@ The list below is a **concrete and specific** list of packages which could be co
 | Brave Browser | `brave-browser` | 1 |
 | Chromium | `chromium` | 1 |
 | Google Chrome | `google-chrome` | 1 |
+| Intel Processor Microcode Data File | `intel-ucode` | 1 |
 | Mozilla Firefox  | `firefox` | 1 |
 | OpenJDK | `openjdk` | 1 |
 | Opera | `opera` | 1 |
