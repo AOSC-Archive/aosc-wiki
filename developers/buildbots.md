@@ -39,7 +39,6 @@ NOTE:
 
 | Name | Port | CPU | Memory | Speed | Maintainer | Note |
 |-----------|-----------|-----------|-----------|-----------|---------|-----------|
-| **Yhi64**| 22048 | Intel Core i7-3632QM @ 2.60GHz | 8GiB | | _Junde Yhi_ | **Daily** |
 | **Ry1800X** | 22333 | AMD Ryzen 7 1800X @ 3.60 - 4.10GHz | 32GiB |73s (`-j16`)| _Mingcong Bai_ | |
 | **EPSON-PC** | 22718 | Intel Core 2 Duo T8100 @ 2.10GHz | 4GiB |588s (`-j2`) | _Zamir Sun_ | Available time: 8:00 - 21:30 UTC+8 |
 | **SITS** | 22729 | Intel Xeon CPU E3-1225 v3 @ 3.20GHz | 16GiB |395s (`-j5`)| _S. aureus_ | |
