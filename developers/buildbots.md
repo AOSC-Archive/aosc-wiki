@@ -64,7 +64,7 @@ NOTE:
 | Name | Port | CPU | Memory | Speed | Maintainer | Note |
 |-----------|-----------|-----------|-----------|-----------|-----------|-----------|
 | **G5-PPC64BE** | 25120 | IBM PowerPC 970MP @ 2.5GHz (PowerMac G5, Quad, 2005) | 8GiB | 566s (`-j5`) | _Mingcong Bai_ | |
-| **G5-PPC32BE** | 25120 | IBM PowerPC 970MP @ 2.5GHz (PowerMac G5, Quad, 2005) | 17GiB | 553s (`-j5`) | _Mingcong Bai_ |  |
+| **G5-PPC32BE** | 25121 | IBM PowerPC 970MP @ 2.5GHz (PowerMac G5, Quad, 2005) | 16GiB | 553s (`-j5`) | _Mingcong Bai_ |  |
 
 ## **RISC-V** (26001-27000)
 
