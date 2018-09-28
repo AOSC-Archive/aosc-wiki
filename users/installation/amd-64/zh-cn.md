@@ -17,9 +17,9 @@
 
 # 选择一个 Tarball
 
-所有的 AMD64/x86_64 的 Tarball 都是通用的。你要做的就是按你的喜好和需求选择他们。
+所有的 AMD64/x86_64 的 .tar 压缩包都是通用的。你要做的就是按你的喜好和需求选择他们。
 
-> 注意：你在选择 Tarball 的时候还要考虑你的设备是否支持，关于这部分的信息请参考 [AMD64/x86_64 system requirements](/users/installation/amd64-notes-sysreq)。
+> 注意：你在选择 .tar 压缩包的时候还要考虑你的设备是否支持，关于这部分的信息请参考 [AMD64/x86_64 system requirements](/users/installation/amd64-notes-sysreq)。
 
 ## 可引导
 
@@ -82,11 +82,10 @@ GParted Live 环境里的 GParted 使用起来非常简单。如果对如何使�
 # mount -v /dev/sda2 /mnt
 ```
 
-如果你需要把 `/dev/sda1` 作为 `/boot`，把 `/dev/sda3` 作为 `/home`：
+如果你需要把把 `/dev/sda3` 作为 `/home`：
 
 ```
-# mkdir -v /mnt/{home,boot}
-# mount -v /dev/sda1 /mnt/boot
+# mkdir -v /mnt/home
 # mount -b /dev/sda3 /mnt/home
 ```
 
@@ -94,14 +93,14 @@ GParted Live 环境里的 GParted 使用起来非常简单。如果对如何使�
 
 ```
 # cd /mnt
-# tar --numeric-owner pxf /path/to/tarball/tarball.tar.xz
+# tar --numeric-owner -pxf /path/to/tarball/tarball.tar.xz
 ```
 
-如果要让解压的过程更加刺激点，请加入 `verbose` 的选项：
+如果要让解压的过程看起来更加刺激点，可以加上 `v` 选项：
 
 ```
 # cd /mnt
-# tar --numeric-owner pxvf /path/to/tarball/tarball.tar.xz
+# tar --numeric-owner -pxvf /path/to/tarball/tarball.tar.xz
 ```
 
 # 安装后配置
@@ -111,7 +110,8 @@ GParted Live 环境里的 GParted 使用起来非常简单。如果对如何使�
 ## 绑定设备和系统路径
 
 ```
-# for i in dev proc sys; do mount --rbind /$i /mnt/$i; done
+# mkdir /mnt/run/udev
+# for i in dev proc sys run/udev; do mount --rbind /$i /mnt/$i; done
 ```
 
 ## 生成 /etc/fstab
@@ -119,6 +119,7 @@ GParted Live 环境里的 GParted 使用起来非常简单。如果对如何使�
 如果你在多个分区下安装 AOSC OS， 你需要配置正确的 `/etc/fstab`。你可以安装 `genfstab` 这个工具：
 
 ```
+# chroot /mnt apt update
 # chroot /mnt apt install genfstab
 ```
 
