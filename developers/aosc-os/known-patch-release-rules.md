@@ -24,7 +24,7 @@ Presented below is a table that defines all known patch release rules for upstre
 | Telegram Desktop | Version usually formatted `x.y.z`, updates to `z` could be regarded as patch-level releases, but only if this particular release is not marked as "Pre-release". [Source](https://github.com/telegramdesktop/tdesktop/releases). |
 | Semantic Versioning, in general | If projects have versions, say, `x.y.z`  or even at times `x.y.z.n`, then any updates to `z` or `n` could be regarded as patch-level releases. may be even or odd numbers, unless otherwise specified, like in the example of GNOME. [Source](https://semver.org/). |
 
-# Table of Known Unpredictable Update Rules
+# Table of Known Unreliable Update Rules
 
 The packages and projects found below should never be updated via the Stable channel.
 
@@ -33,3 +33,4 @@ The packages and projects found below should never be updated via the Stable cha
 | Deepin Desktop Environment and Applications | No predictable release and versioning model - as suggested one Deepin developer. |
 | LibQalculate | From `2.6.1` to `2.6.2`, for instance, .so version changed from 18 to 19, breaking ABI compatibility. This does not comply with [Semantic Versioning](https://semver.org/). |
 | Trinity Desktop Environment and Applications | An apparently patch-level release, say, from `R14.0.4` to `R14.0.5` may introduce changes to build system and mix in a large amount of feature updates. |
+| HDF5 (Hierarchical Data Format) | Patch release update changes `sover`, for example, `1.10.1` contains `libhdf5.so.101`, and `1.10.3`, which should have been a patch release update, contains `libhdf5.so.103`, breaking binary compatibility. | 
