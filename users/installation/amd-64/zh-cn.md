@@ -254,7 +254,7 @@ localectl set-locale "LANG=zh_CN.UTF-8"
 
 ## 设置主机名
 
-可以通过编辑 `/etc/hostname` 来设置主机名。比如把 `MyNewComputer` 设置为默认语言：
+可以通过编辑 `/etc/hostname` 来设置主机名。比如把 `MyNewComputer` 设置为默认主机名：
 
 ```
 MyNewComputer
