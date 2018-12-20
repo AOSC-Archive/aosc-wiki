@@ -12,15 +12,15 @@ For mirror maintainers, you don't need to do anything if you are using the domai
 For packagers, please refer to the following content to know what and when you need to take action.
 
 ## About the new server
-The new server has a 1 Gbps port and much better hardware. The new IP would be 142.147.91.106 and 2604:e8c0:4::2 (yes, really a short IP).
+The new server has a 1 Gbps network and much better hardware. The new IP would be 142.147.91.106 and 2604:e8c0:4::2 (yes, really a short IP).
 
 ## Timeline
 - To Be Discussed: Stop uploading new packages to both old and new server.
 - +1 Day: Fully sync content from old to new server.
-- Same day: Change DNS.
+- Same day: Update DNS and point to new repository server.
 
 ## Packagers
-You need to seek for a new AOSC Account. If you haven't done so, please reach @xiaoxing at Telegram.
+Instead of a single `upload` account for everyone, new repository server now requires each packager has their own account on LDAP service (which will in the future serves as a unified login mechanism for all AOSC platform and services). If you currently don't have LDAP account , please contact @xiaoxing at Telegram.
 
 ## Sponsor
 The new server is kindly sponsored by xTom (https://xtom.com/), a professional hosting solution.
