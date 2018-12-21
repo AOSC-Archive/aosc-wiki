@@ -17,7 +17,7 @@ The new server has a 1 Gbps network and much better hardware. The new IP would b
 ## Timeline
 - To Be Discussed: Stop uploading new packages to both old and new server.
 - +1 Day: Fully sync content from old to new server.
-- Same day: Update DNS and point to new repository server.
+   - Same day: Update DNS and point to new repository server.
 
 ## Packagers
 Instead of a single `upload` account for everyone, new repository server now requires each packager has their own account on LDAP service (which will in the future serves as a unified login mechanism for all AOSC platform and services). If you currently don't have LDAP account , please contact @xiaoxing at Telegram.
