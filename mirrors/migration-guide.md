@@ -15,8 +15,8 @@ For packagers, please refer to the following content to know what and when you n
 The new server has a 1 Gbps network and much better hardware. The new IP would be 142.147.91.106 and 2604:e8c0:4::2 (yes, really a short IP).
 
 ## Timeline
-- To Be Discussed: Stop uploading new packages to both old and new server.
-- +1 Day: Fully sync content from old to new server.
+- Dec 29, 2018: Stop uploading new packages to both old and new server.
+- Dec 30, 2018: Fully sync content from old to new server.
    - Same day: Update DNS and point to new repository server.
 
 ## Packagers
