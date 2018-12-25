@@ -17,7 +17,7 @@ The new server has a 1 Gbps network and much better hardware. The new IP would b
 ## Timeline
 - Dec 29, 2018: Stop uploading new packages to both old and new server.
 - Dec 30, 2018: Fully sync content from old to new server.
-   - Same day: Update DNS and point to new repository server.
+   - Same day at 0:00 UTC +8: Update DNS and point to new repository server.
 - Jan 2, 2019: Check old repo rsync log to see if any server is still connecting. 
 
 
