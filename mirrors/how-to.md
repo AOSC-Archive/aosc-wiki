@@ -7,6 +7,8 @@ Believe it or not, AOSC has been around for quite some time now. We do want more
 
 Up to now, we have many mirrors (mainly in China), and we do need more mirrors in other areas (especially in U.S.). If you are interested and able to help us, please read the following information.
 
+**Note**: AOSC is planning to migrate the repo server on Dec 29, 2018. Please refer to https://wiki.aosc.io/mirrors/migration-guide for more information.
+
 # Repo Contents
 What is included in the repo? Generally everything about AOSC, and most are of AOSC OS (packages, system images). Some documentations, like *Free Software Localization Guide for Chinese (China) *, are also saved here.
 
@@ -16,7 +18,9 @@ Up to now (July, 2018), the repo is taking ~400GB of disk. You may expect that t
 # How to Mirror
 If you have enough hard disk space, please do rsync from our main repo: rsync://repo.aosc.io/anthon/ . 
 
-If you have trouble resolving the DNS, please use the IP addresses: 163.22.17.40 (IPv4), 2001:e10:6840:17::40 (IPv6).
+~~If you have trouble resolving the DNS, please use the IP addresses: 163.22.17.40 (IPv4), 2001:e10:6840:17::40 (IPv6).~~
+
+You are not recommended to use IP anymore.
 
 Please be noted that the repo is located in Taiwan, China, and the network connection could be VERY slow if you are in Mainland, China.
 
