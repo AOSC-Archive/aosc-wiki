@@ -2,7 +2,8 @@
 <!-- SUBTITLE: A quick summary of repo migration -->
 
 # Repo Migration Guide
-This guide is still under discussion.
+The Migration was done.
+
 
 ## TL;DR
 We recently received a sponsorship from xTom, that includes a new repo server located in U.S. We are planning to migrate the old repo soon.
