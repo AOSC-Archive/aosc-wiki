@@ -55,7 +55,7 @@ This topic provides information on installation of AOSC OS, and considerations s
 	- [ZFS Root](/users/installation/zfs-root)
 - System Requirements
 	- [AMD64/x86-64 Systems](/users/installation/amd64-notes-sysreq)
-	- [ARMv7/AArch64 Devices](/users/installation/arm-notes-sysreq)
+	- ARMv7/AArch64 Devices
 	- [PowerPC/PPC64-based Macintosh](/users/installation/powermac-notes-sysreq)
 	- *MIPS 32/64-bit Systems*
 
