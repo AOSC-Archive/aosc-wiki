@@ -30,7 +30,6 @@ If you are willing to contribute your machine to AOSC, please make sure your mac
 NOTE: 
 
 - `port_number - 10000` is occupied by that machine. See information above.
-- A machine that marked as **Daily** means this machine is also used daily by the owner (that means many programs unrelated to development, e.g. X11, will be running on this machine). Please make sure that you do not make OOM on those machine!
 - The parameter speed is defined as the total execution time for `make`, after `mkdir build && cd build && ../configure --prefix=/usr` within the unzipped source tree of GNU C Library (version 2.27)  - this will be the command `time make`, collect the `Real` time, and round up to a second. This test is to be conducted on the main storage/scratch disk/build partition/...
 
 ---
@@ -49,6 +48,7 @@ NOTE:
 |-----------|-----------|-----------|-----------|-----------|-----------|-----------|
 | **Gobson** | 23072 | Loongson 3B-1500G | 8GiB | | _Xiaoxing Ye_ | Owned by _Mingcong Bai_ |
 | **Godson** | 23141 | Loongson 3A-2000C (R2) @ 1GHz (A1602) | 8GiB | | _Junde Yhi_ | |
+| **Yayloong** | 23210 | Loongson 2F (STLS2F02-1) @ 1GHz (Lemote Yeeloong 8089D) | 1GiB | | _Junde Yhi_ | For testing purposes only, not 24x7 online (slow, hot and noisy) |
 
 ## **ARM** (24001-25000)
 
