@@ -47,8 +47,8 @@ NOTE:
 | Name | Port | CPU | Memory | Speed |Maintainer | Note |
 |-----------|-----------|-----------|-----------|-----------|-----------|-----------|
 | **Gobson** | 23072 | Loongson 3B-1500G | 8GiB | | _Xiaoxing Ye_ | Owned by _Mingcong Bai_ |
-| **Godson** | 23141 | Loongson 3A-2000C (R2) @ 1GHz (A1602) | 8GiB | | _Junde Yhi_ | |
-| **Yayloong** | 23210 | Loongson 2F (STLS2F02-1) @ 1GHz (Lemote Yeeloong 8089D) | 1GiB | | _Junde Yhi_ | For testing purposes only, not 24x7 online (slow, hot and noisy) |
+| **Godson** | 23141 | Loongson 3A-2000C (R2) @ 1GHz (A1602) | 8GiB | 801s (`-j5`) | _Junde Yhi_ | |
+| **Yayloong** | 23210 | Loongson 2F (STLS2F02-1) @ 1GHz (Lemote Yeeloong 8089D) | 1GiB | 9077s (`-j1`) | _Junde Yhi_ | For testing purposes only, not 24x7 online (slow, hot and noisy) |
 
 ## **ARM** (24001-25000)
 
