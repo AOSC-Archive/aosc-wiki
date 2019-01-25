@@ -70,4 +70,4 @@ NOTE:
 
 | Name | Port | CPU | Memory | Speed | Maintainer | Note |
 |-----------|-----------|-----------|-----------|-----------|-----------|-----------|
-| **ice-hfu** | 26001 | SiFive FU540 @ 1.5GHz (SiFive HiFive Unleashed) | 8GiB | | _Icenowy Zheng_ | On demand |
+| **ice-hfu** | 26001 | SiFive FU540 @ 1.5GHz (SiFive HiFive Unleashed) | 8GiB | 2000s (`-j5`) | _Icenowy Zheng_ | On demand |
