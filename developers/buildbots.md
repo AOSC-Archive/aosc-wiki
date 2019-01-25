@@ -54,7 +54,7 @@ NOTE:
 
 | Name | Port | CPU | Memory | Speed |Maintainer | Note |
 |-----------|-----------|-----------|-----------|-----------|-----------|-----------|
-| **p64** | 24064 | Quad Core ARM Cortex-A53 @ 1.2GHz (Allwinner A64, Pine64 Plus) | 2GiB | | _Icenowy Zheng_ | |
+| **ice-pine64** | 24064 | Quad Core ARM Cortex-A53 @ 1.2GHz (Allwinner A64, Pine64 Plus) | 2GiB | | _Icenowy Zheng_ | On demand |
 | **Tegra** |24096| NVIDIA Tegra X1 @ 1.74GHz (NVIDIA Jetson TX1 Development Kit) | 4GiB | 446s (`-j5`) | _Mingcong Bai_| |
 | **Pine64** |24399| Quad Core ARM Cortex-A53 @ 1.2GHz (Allwinner A64, Pine64 Plus) | 2GiB | 1351s (`-j5`) | _Mingcong Bai_| |
 | **YetAnotherPine64** |24514| Quad Core ARM Cortex-A53 @ 1.2GHz (Allwinner A64, Pine64 Plus) | 2GiB | 1365s (`-j5`) | _Salted Fish_|(Down) Local mirror located at `/dev/sda4`|
@@ -70,4 +70,4 @@ NOTE:
 
 | Name | Port | CPU | Memory | Speed | Maintainer | Note |
 |-----------|-----------|-----------|-----------|-----------|-----------|-----------|
-| **ice-hfu** | 26001 | SiFive FU540 @ 1.5GHz (SiFive HiFive Unleashed) | 8GiB | | _Icenowy Zheng_ | |
+| **ice-hfu** | 26001 | SiFive FU540 @ 1.5GHz (SiFive HiFive Unleashed) | 8GiB | | _Icenowy Zheng_ | On demand |
