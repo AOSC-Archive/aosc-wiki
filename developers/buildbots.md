@@ -47,7 +47,7 @@ NOTE:
 | Name | Port | CPU | Memory | Speed |Maintainer | Note |
 |-----------|-----------|-----------|-----------|-----------|-----------|-----------|
 | **Gobson** | 23072 | Loongson 3B-1500G (R2, Hexa) @ 1.2GHz (A1511) | 8GiB | 1333s (`-j7`) | _Junde Yhi_ | Hosted by the Network Coding Lab at [CUHK(SZ)](http://www.cuhk.edu.cn/) sponsored by _Xiaoxing Ye_; owned by _Mingcong Bai_ |
-| **Godson** | 23141 | Loongson 3A-2000C (R2) @ 1GHz (A1602) | 8GiB | 801s (`-j5`) | _Junde Yhi_ | |
+| **Godson** | 23141 | Loongson 3A-2000C (R2) @ 1GHz (A1601) | 8GiB | 801s (`-j5`) | _Junde Yhi_ | |
 | **Yayloong** | 23210 | Loongson 2F (STLS2F02-1) @ 1GHz (Lemote Yeeloong 8089D) | 1GiB | 9077s (`-j1`) <!-- 10038s (`-j2`) --> | _Junde Yhi_ | For testing purposes only, not 24x7 online (slow, hot and noisy); owned by _Mingcong Bai_ |
 
 ## **ARM** (24001-25000)
@@ -68,4 +68,6 @@ NOTE:
 
 ## **RISC-V** (26001-27000)
 
-*One can dream...*
+| Name | Port | CPU | Memory | Speed | Maintainer | Note |
+|-----------|-----------|-----------|-----------|-----------|-----------|-----------|
+| **ice-hfu** | 26001 | SiFive FU540 @ 1.5GHz (SiFive HiFive Unleashed) | 8GiB | | _Icenowy Zheng_ | |
