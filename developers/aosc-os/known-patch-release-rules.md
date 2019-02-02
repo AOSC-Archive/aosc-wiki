@@ -23,6 +23,7 @@ Presented below is a table that defines all known patch release rules for upstre
 | Nginx | If projects have versions, say, `x.y.z`  or even at times `x.y.z.n`, then any updates to `z` or `n` could be regarded as patch-level releases. `y` must be even numbers. [Source](https://www.nginx.com/blog/nginx-1-12-1-13-released/). |
 | Telegram Desktop | Version usually formatted `x.y.z`, updates to `z` could be regarded as patch-level releases, but only if this particular release is not marked as "Pre-release". [Source](https://github.com/telegramdesktop/tdesktop/releases). |
 | Semantic Versioning, in general | If projects have versions, say, `x.y.z`  or even at times `x.y.z.n`, then any updates to `z` or `n` could be regarded as patch-level releases. may be even or odd numbers, unless otherwise specified, like in the example of GNOME. [Source](https://semver.org/). |
+| Darktable | If projects have versions, say, `x.y.z`  or even at times `x.y.z.n`, then any updates to `z` or `n` could be regarded as patch-level releases. `y` must be even numbers. |
 
 # Table of Known Unreliable Update Rules
 
