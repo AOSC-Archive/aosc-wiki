@@ -41,25 +41,27 @@ We currently use uWSGI and nginx to host the website. See https://github.com/AOS
 # Package Issues
 For identifying various kind of package issues, we categorize the issues into the following lists, and set a code for each one:
 
-
-
 1. Metadata
     * E101 `spec` syntax error
     * E102 `defines` syntax error
-    * W103 Package may not up to date
-    * W104 `SRCTBL` uses HTTP
+    * W111 Package may not up to date
+    * W112 `SRCTBL` uses HTTP
 2. Dpkg Package
     * E(W)201 deb file too small
     * E202 deb file in wrong path
+    * E203 deb filename is wrong
     * E211 Maintainer is not valid
     * E221 File in unexpected paths
-    * E(W)222 File owner is wrong
-    * E(W)223 File permission is wrong
-    * 
+    * E222 File size is zero
+    * E(W)223 File owner is wrong
+    * E(W)224 File group is wrong
+    * E(W)225 File permission is wrong
+    * E231 File collision (check Conflicts)
 3. Dependency
     * E301 PKGDEP unmet
     * E302 BUILDDEP unmet
-    * E303
+    * E311 Dpkg Depends unmet
+    * E321 Library version (sover) dependency unmet
 # FAQ
 ## Q: The site is down
 A: Please first check https://aoscpkgs.gumble.pw/, which is the mirror site. Then please report back which site is useable to site admin @gumblex in the Telegram groups.
