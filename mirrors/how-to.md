@@ -16,11 +16,7 @@ What is included in the repo? Generally everything about AOSC, and most are of A
 Up to now (July, 2018), the repo is taking ~400GB of disk. You may expect that the repo will grow to around 600GB or more.
 
 # How to Mirror
-If you have enough hard disk space, please do rsync from our main repo: rsync://repo.aosc.io/anthon/ . 
-
-~~If you have trouble resolving the DNS, please use the IP addresses: 163.22.17.40 (IPv4), 2001:e10:6840:17::40 (IPv6).~~
-
-You are not recommended to use IP anymore.
+If you have enough hard disk space, please do rsync from our main repo: rsync://repo.aosc.io/anthon/. You are not recommended to use IP anymore.
 
 Please be noted that the repo is located in Taiwan, China, and the network connection could be VERY slow if you are in Mainland, China.
 
@@ -31,7 +27,7 @@ After you have finished the initialization, please tell us by sending an email t
 When providing public HTTP service, we highly encourage you to use HTTPS.
 
 # Sponsors
-The Main Repo is kindly sponsored by [OSSPlanet](http://ossplanet.net/).
+The main repository is kindly sponsored by [xTom](https://xtom.com); the secondary repository is sponsored by [OSSPlanet](http://ossplanet.net/).
 
 For other sponsors, please refer to https://aosc.io/mirror-status (list of mirrors) and https://aosc.io/about (all general sponsors).
 
