@@ -15,6 +15,17 @@ What is included in the repo? Generally everything about AOSC, and most are of A
 # Repo Size
 Up to now (July, 2018), the repo is taking ~400GB of disk. You may expect that the repo will grow to around 600GB or more.
 
+
+# Modules
+Currently the rsync server of AOSC OS Repo has 4 modules:
+
+- anthon: Full content of repo. Include packages and releases.
+- anthonos: The same as anthon.
+- packages: all content excluding tarball releases
+- releases: AOSC OS releases only (same as https://releases.aosc.io/)
+
+You are recommended to sync from `anthon` or `anthonos` since they are the full sync. If you are short in storage, you may consider to use `packages`.
+
 # How to Mirror
 If you have enough hard disk space, please do rsync from our main repo: rsync://repo.aosc.io/anthon/. You are not recommended to use IP anymore.
 
