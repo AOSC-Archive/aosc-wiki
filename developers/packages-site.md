@@ -46,22 +46,32 @@ For identifying various kind of package issues, we categorize the issues into th
     * E102 `defines` syntax error
     * W111 Package may not up to date
     * W112 `SRCTBL` uses HTTP
-2. Dpkg Package
-    * E(W)201 deb file too small
-    * E202 deb file in wrong path
-    * E203 deb filename is wrong
-    * E211 Maintainer is not valid
-    * E221 File in unexpected paths
-    * E222 File size is zero
-    * E(W)223 File owner is wrong
-    * E(W)224 File group is wrong
-    * E(W)225 File permission is wrong
-    * E231 File collision (check Conflicts)
-3. Dependency
-    * E301 PKGDEP unmet
-    * E302 BUILDDEP unmet
-    * E311 Dpkg Depends unmet
-    * E321 Library version (sover) dependency unmet
+    * W121 Commit message is formatted badly (last commit)
+    * W122 Multiple packages per commit (last commit)
+    * W123 Force-pushed recently (last N commit)
+2. Build process
+    * E201 Failed to get source
+    * E202 Failed to get dependencies
+    * E211 Failed to build from sources
+    * E221 Failed to launch
+    * W222 Some features don't work / unittest failed
+3. Dpkg package
+    * E(W)301 deb file too small
+    * E302 deb file in wrong path
+    * E303 deb filename is wrong
+    * E311 Maintainer is not valid
+    * E321 File in unexpected paths
+    * E322 File size is zero
+    * E(W)323 File owner is wrong
+    * E(W)324 File group is wrong
+    * E(W)325 File permission is wrong
+4. Dependency
+    * E401 BUILDDEP unmet
+    * E402 Duplicate package in tree
+    * E411 Dpkg Depends unmet
+    * E412 Duplicate package in repo
+    * E421 File collision (check Conflicts)
+    * E431 Library version (sover) dependency unmet
 # FAQ
 ## Q: The site is down
 A: Please first check https://aoscpkgs.gumble.pw/, which is the mirror site. Then please report back which site is useable to site admin @gumblex in the Telegram groups.
