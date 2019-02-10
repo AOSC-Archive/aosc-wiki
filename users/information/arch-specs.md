@@ -31,6 +31,12 @@ For systems with 64-bit little endian ARMv8-A+ processors (AArch64).
 
 - Triplet: `aarch64-aosc-linux-gnu`
 
+## i586
+
+For systems with i586 or newer/compatible processors (except Winchip C6 and Winchip 2 processors).
+
+- Triplet: `i586-aosc-linux-gnu`
+
 ## mipsel
 
 For systems with 32-bit little endian MIPS processors, O32 ABI.
