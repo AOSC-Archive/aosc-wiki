@@ -33,7 +33,7 @@ For systems with 64-bit little endian ARMv8-A+ processors (AArch64).
 
 ## i586
 
-For systems with i586 or newer/compatible processors (except Winchip C6 and Winchip 2 processors).
+For systems with i586 or newer/compatible processors (excluding Winchip C6 and Winchip 2 processors).
 
 - Triplet: `i586-aosc-linux-gnu`
 
