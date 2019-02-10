@@ -2,8 +2,19 @@
 <!-- SUBTITLE: The description of the packages site and the FAQ -->
 
 # The Packages Site
-The [packages site](https://packages.aosc.io/) is introduced in last year, to show various information about packages in AOSC OS. It's based on previous work in [paklist](https://github.com/AOSC-Dev/paklist).
-
+The [packages site](https://packages.aosc.io/) is introduced in 2017, to show various information about packages in AOSC OS. It's based on previous work in [paklist](https://github.com/AOSC-Dev/paklist).
+## Usage
+### Human
+- "Latest Source Updates" are most recent updates in git.
+- In "Repositories and Trees", "repositories" are DPKG sources and "trees" are abbs repos. "Ghost" means the packages exist in the DPKG source but not in the abbs repo. "Lagging" means there is no binary package of the updated version in abbs repo. "Missing" means the packages exist in the abbs repo but not in the DPKG source. The links in "Source Tree" column point to GitHub pages. "Outdated" means the packages have updated upstream versions. Click on the numbers and you will get the respective list.
+- The Changelog in the package page is generated with git commits.
+- Enter your raw SQL query here: https://packages.aosc.io/query/. This is read-only and have some limits. Useful for generating custom reports.
+### Machine
+- Add `?type=json` to (almost) every endpoints, or send the `X-Requested-With: XMLHttpRequest` HTTP header, then you will get an json response. Use `page=?` for each page (see the "page" object), or `page=all` to avoid paging.
+- API version: https://packages.aosc.io/api_version
+- All package list: https://packages.aosc.io/list.json
+- SQLite3 database download: https://packages.aosc.io/data/abbs.db, and `piss.db`.
+- List of deb packages that can be removed: https://packages.aosc.io/cleanmirror/(repo), where (repo) is such as "amd64", "amd64/testing".
 ## Project framework
 This website is composed of several projects mainly written in Python. Some of them can be used independently for different purposes.
 ### abbs-meta
@@ -20,18 +31,6 @@ The website is served in `main.py`. We use [Bottle](https://bottlepy.org/) frame
 ## Deploying
 The recommended resource requirement is at least 1GiB of free space (current usage: 450MiB), at least 512MiB of total RAM (actually won't exceed 100M). Software requirement is Python 3.5+ or PyPy3.5, recent SQLite3 with FTS5 support, Fossil 2.6+, bash, Git.
 We currently use uWSGI and nginx to host the website. See https://github.com/AOSC-Dev/packages-site#deploy for simple instructions. Set up systemd timers for update.sh and piss.
-## Usage
-### Human
-- "Latest Source Updates" are most recent updates in git.
-- In "Repositories and Trees", "repositories" are DPKG sources and "trees" are abbs repos. "Ghost" means the packages exist in the DPKG source but not in the abbs repo. "Lagging" means there is no binary package of the updated version in abbs repo. "Missing" means the packages exist in the abbs repo but not in the DPKG source. The links in "Source Tree" column point to GitHub pages. "Outdated" means the packages have updated upstream versions. Click on the numbers and you will get the respective list.
-- The Changelog in the package page is generated with git commits.
-- Enter your raw SQL query here: https://packages.aosc.io/query/. This is read-only and have some limits. Useful for generating custom reports.
-### Machine
-- Add `?type=json` to (almost) every endpoints, or send the `X-Requested-With: XMLHttpRequest` HTTP header, then you will get an json response. Use `page=?` for each page (see the "page" object), or `page=all` to avoid paging.
-- API version: https://packages.aosc.io/api_version
-- All package list: https://packages.aosc.io/list.json
-- SQLite3 database download: https://packages.aosc.io/data/abbs.db, and `piss.db`.
-- List of deb packages that can be removed: https://packages.aosc.io/cleanmirror/(repo), where (repo) is such as "amd64", "amd64/testing".
 ## Plans
 - Add file lists.
 - Add so dep/provides.
