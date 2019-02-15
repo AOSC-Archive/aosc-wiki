@@ -24,6 +24,7 @@ Presented below is a table that defines all known patch release rules for upstre
 | Telegram Desktop | Version usually formatted `x.y.z`, updates to `z` could be regarded as patch-level releases, but only if this particular release is not marked as "Pre-release". [Source](https://github.com/telegramdesktop/tdesktop/releases). |
 | Semantic Versioning, in general | If projects have versions, say, `x.y.z`  or even at times `x.y.z.n`, then any updates to `z` or `n` could be regarded as patch-level releases. may be even or odd numbers, unless otherwise specified, like in the example of GNOME. [Source](https://semver.org/). |
 | Darktable | If projects have versions, say, `x.y.z`  or even at times `x.y.z.n`, then any updates to `z` or `n` could be regarded as patch-level releases. `y` must be even numbers. |
+| Vile | Versions usually formatted as `x.y(n)`, where `(n)` is usually a Latin letter indicates the patch-level version. Updates, say, from `9.8s` to `9.8t` is acceptable as a patch-level update. |
 
 # Table of Known Unreliable Update Rules
 
