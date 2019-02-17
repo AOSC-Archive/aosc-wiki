@@ -34,6 +34,7 @@ The list below is a **concrete and specific** list of packages which could be co
 | AOSC OS AppStream Data | `aosc-appstream-data` | 2 |
 | Baidu Cloud Client | `bcloud` | 2 |
 | BiliDan | `bilidan` | 2 |
+| Hardware ID Data | `hwdata` | 2 |
 | PyTZ | `pytz` | 2 |
 | Time Zone Data | `tzdata` | 2 |
 | AOSC U-Boot Utilities | `u-boot-aosc-utils` | 2 |
