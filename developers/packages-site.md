@@ -55,9 +55,9 @@ For identifying various kind of package issues, we categorize the issues into th
     * E221 Failed to launch
     * W222 Some features don't work / unittest failed
 3. Dpkg package
-    * E(W)301 deb file too small
-    * E302 deb file in wrong path
-    * E303 deb filename is wrong
+    * E301 deb file is bad
+    * E(W)302 deb file too small
+    * E303 deb filename is wrong or in wrong path
     * E311 Maintainer is not valid
     * E321 File in unexpected paths
     * E322 File size is zero
