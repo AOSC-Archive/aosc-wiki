@@ -61,9 +61,8 @@ For identifying various kind of package issues, we categorize the issues into th
     * E311 Maintainer is not valid
     * E321 File in unexpected paths
     * E(W)322 File size is zero
-    * E(W)323 File owner is wrong
-    * E(W)324 File group is wrong
-    * E(W)325 File permission is wrong
+    * E(W)323 File owner/group is wrong
+    * E(W)324 File permission is wrong
 4. Dependency
     * E401 BUILDDEP unmet
     * E402 Duplicate package in tree
