@@ -60,7 +60,7 @@ For identifying various kind of package issues, we categorize the issues into th
     * E303 deb filename is wrong or in wrong path
     * E311 Maintainer is not valid
     * E321 File in unexpected paths
-    * E322 File size is zero
+    * E(W)322 File size is zero
     * E(W)323 File owner is wrong
     * E(W)324 File group is wrong
     * E(W)325 File permission is wrong
