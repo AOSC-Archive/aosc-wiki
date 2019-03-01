@@ -37,39 +37,6 @@ We currently use uWSGI and nginx to host the website. See https://github.com/AOS
 - Search file lists.
 - Show the newer version of (staging, bugfix). (waiting for branch change)
 - Add package "issues" page.
-# Package Issues
-For identifying various kind of package issues, we categorize the issues into the following lists, and set a code for each one:
-
-1. Metadata
-    * E101 `spec` syntax error
-    * E102 `defines` syntax error
-    * W111 Package may not up to date
-    * W112 `SRCTBL` uses HTTP
-    * W121 Commit message is formatted badly (last commit)
-    * W122 Multiple packages per commit (last commit)
-    * W123 Force-pushed recently (last N commit)
-2. Build process
-    * E201 Failed to get source
-    * E202 Failed to get dependencies
-    * E211 Failed to build from sources
-    * E221 Failed to launch
-    * W222 Some features don't work / unittest failed
-3. Dpkg package
-    * E301 deb file is bad
-    * E(W)302 deb file too small
-    * E303 deb filename is wrong or in wrong path
-    * E311 Maintainer is not valid
-    * E321 File in unexpected paths
-    * E(W)322 File size is zero
-    * E(W)323 File owner/group is wrong
-    * E(W)324 File permission is wrong
-4. Dependency
-    * E401 BUILDDEP unmet
-    * E402 Duplicate package in tree
-    * E411 Dpkg Depends unmet
-    * E412 Duplicate package in repo
-    * E421 File collision (check Conflicts)
-    * E431 Library version (sover) dependency unmet
 # FAQ
 ## Q: The site is down
 A: Please first check https://aoscpkgs.gumble.pw/, which is the mirror site. Then please report back which site is useable to site admin @gumblex in the Telegram groups.
