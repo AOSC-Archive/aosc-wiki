@@ -37,7 +37,7 @@ To help identifying various kind of package issues, listed below are four classe
 | E(W)302 | .deb file too small |
 | E303 | Bad .deb filename or storage path |
 | E311 | Bad .deb Maintainer metadata |
-| E321 | .deb file stored in unexpected path(s) |
+| E321 | File(s) stored in unexpected path(s) in .deb |
 | E(W)322 | Zero-byte file(s) found in .deb |
 | E(W)323 | File(s) with bad owner/group found in .deb |
 | E(W)324 | File(s) with bad permission found in .deb |
