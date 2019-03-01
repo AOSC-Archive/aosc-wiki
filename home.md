@@ -30,6 +30,7 @@ This sub-section contains general information about public servers and resources
 This sub-section contains information on APIs and technical details from our community infrastructure.
 
 - [Packages Site](developers/packages-site)
+- [List of Package Issue Codes](/developers/list-of-package-issue-codes)
 
 ## AOSC OS
 
