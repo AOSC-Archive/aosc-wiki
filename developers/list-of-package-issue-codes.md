@@ -38,9 +38,9 @@ To help identifying various kind of package issues, listed below are four classe
 | E303 | Bad .deb filename or storage path |
 | E311 | Bad .deb Maintainer metadata |
 | E321 | .deb file stored in unexpected path(s) |
-| E(W)322 | .deb file size is zero |
-| E(W)323 | Bad .deb file owner/group |
-| E(W)324 | Bad .deb file permission |
+| E(W)322 | Zero-byte file(s) found in .deb |
+| E(W)323 | File(s) with bad owner/group found in .deb |
+| E(W)324 | File(s) with bad permission found in .deb |
 
 ## Class 4: Dependencies
 
