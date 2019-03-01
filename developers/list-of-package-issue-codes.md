@@ -26,7 +26,7 @@ To help identifying various kind of package issues, listed below are four classe
 | E201 | Failed to get source |
 | E202 | Failed to get dependencies |
 | E211 | Failed to build from source (FTBFS) |
-| E221 | Failed to launch |
+| E221 | Failed to launch packaged executable(s) |
 | W222 | Feature(s) non-functional, or unit test(s) failed |
 
 ## Class 3: Payload (.deb Package)
