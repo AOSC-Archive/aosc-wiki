@@ -13,6 +13,7 @@ To help identifying various kind of package issues, listed below are four classe
 |-----------|----------------------|
 | E101 | Syntax error(s) in `spec` |
 | E102 | Syntax error(s) in `defines` |
+| E103 | Package name is not valid |
 | W111 | Package may be out-dated |
 | W112 | `SRCTBL` uses HTTP |
 | W121 | The last commit message was badly formatted |
