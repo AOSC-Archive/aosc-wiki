@@ -51,6 +51,6 @@ To help identifying various kind of package issues, listed below are four classe
 | E402 | Duplicate package in tree |
 | E411 | `PKGDEP` unmet |
 | E412 | Duplicate package in repository |
-| E421 | File collision(s) (check `PKGCONFL`) |
+| E421 | File collision(s) |
 | E431 | Library version (sover) dependency unmet |
 | E432 | Library dependency without `PKGDEP` |
