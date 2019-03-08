@@ -42,6 +42,7 @@ To help identifying various kind of package issues, listed below are four classe
 | E(W)322 | Zero-byte file(s) found in .deb |
 | E(W)323 | File(s) with bad owner/group found in .deb |
 | E(W)324 | File(s) with bad permission found in .deb |
+| E325 | File(s) not found in .deb |
 | W331 | Package(s) older than a year (unmaintained?) |
 
 ## Class 4: Dependencies
