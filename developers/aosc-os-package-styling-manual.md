@@ -35,6 +35,10 @@ The `VER=`, or `$VER` variable defines the main version of the resulting package
 | Versions with release stage notation(s) ("alpha", "beta", "rc", etc.) | Lower-case all notations, "Beta" to "beta", etc. Replace "alpha" with "a", "beta" with "b", retain "rc". Remove all symbols surrounding the notation(s) | Golden Dict 1.5.0-RC2 -> `VER=1.5.0rc2` |
 | Git or other date-based snapshots | Simply write the date (dot not include `git`, or `svn`, etc. notation(s), but ensure consistent source(s) can be downloaded, see `GITCO`, etc. | Shadowsocks 5ff694b2c2978b432918dea6ac104706b25cbf48 -> `VER=20181219` |
 
+### REL=
+
+The `REL=`, or `$REL` variable defines the revision level of the resulting package. This variable should only hold a single positive integer as its value.
+
 # Dependencies
 
 # Scripting
