@@ -112,6 +112,10 @@ By the quality assurance standard, defined in code [E432](https://wiki.aosc.io/d
 
 As of March 16th, 2019, 42.4% (1592/3705) of all packages provided in the Stable channel for `amd64` has the issue of insufficient ELF dependencies.
 
+### Additional Notes
+
+- When a package has a sole dependency on the GCC Runtime (`gcc-runtime`) or the GNU C Library (`glibc`), these dependencies should be included in `$PKGDEP`.
+
 # Scripting
 
 # Package Structure
