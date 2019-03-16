@@ -16,6 +16,17 @@ Without a comprehensive guildeline for packaging work in the future, these issue
 
 # Metadata
 
+In the current implementation of [ACBS](https://github.com/AOSC-Dev/acbs) (AOSC CI Build Service), three categories of variables are defined in a file named `spec` - these variables will be discussed below.
+
+## Versioning Variables
+
+Versioning variable define the package's version and revision levels. 
+
+### VER=
+
+The `VER=`, or `$VER` variable defines the main version of the resulting package. When packaging for AOSC OS, packagers should take note of the following requirements:
+
+- 
 
 # Dependencies
 
