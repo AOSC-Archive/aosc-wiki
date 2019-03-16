@@ -24,7 +24,7 @@ Versioning variable define the package's version and revision levels.
 
 ### VER=
 
-The `VER=`, or `$VER` variable defines the main version of the resulting package. When packaging for AOSC OS, packagers should take note of the following requirements. These requirements are presented below in a table.
+The `VER=`, or `$VER` variable defines the main version of the resulting package. When packaging for AOSC OS, packagers should take note of the following requirements. These requirements are presented in the table below.
 
 | Situations | Appropriate Actions | Examples |
 |-------------------|-------------------------------------|-------------------|
@@ -38,6 +38,21 @@ The `VER=`, or `$VER` variable defines the main version of the resulting package
 ### REL=
 
 The `REL=`, or `$REL` variable defines the revision level of the resulting package. This variable should only hold a single positive integer as its value.
+
+## Source Variables
+
+Source variables define the package's source(s), and in the case of a VCS (version control system) based source, define in addition a specific source snapshot.
+
+### SRCTBL=
+
+The `SRCTBL=`, or `$SRCTBL` variable is used when a package's source is released in the form of a single compressed archive. Requirements and recommendations are presented in the table below.
+
+| Criteria | Required/Recommended | Appropriate Actions |
+|-------------|----------------------------------------|---------------------------------|
+| URI schemes | Recommended | Use Hypertext Transfer Protocol Secure (HTTPS, https://) where possible. Avoid non-secure connections (http://) and plain FTP (File Transfer Protocol, ftp://). |
+| Source format | Recommended | Use XZ-compressed Tar-Archives (.tar.xz) where possible, other formats are considered appropriate. Avoid the inefficient BZip2-compressed Tar-Archives (.tar.bz2) where possible. |
+| Version substitutions | Required | Source links must replace all versions with substitutions from the `$VER` variable (see above). `SRCTBL=` must not be defined with hard-coded version(s). |
+| Versioned tarballs | Required | Source archives (tarballs) must be versioned in order to ensure consistency. |
 
 # Dependencies
 
