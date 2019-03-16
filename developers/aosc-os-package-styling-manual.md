@@ -31,6 +31,7 @@ The `VER=`, or `$VER` variable defines the main version of the resulting package
 | "Normal" versioning, with only "dot" separators | Retain version, as defined by the upstream | GNOME Clocks 3.32.1 -> `VER=3.32.1` |
 | Versioning with letter notation(s) | Lower-case all letter(s), and remove symbols surrounding the letter(s) | Bind 9.12.3-P4 -> `VER=9.12.3p4` |
 | Versioning with dash(es) ("-") | Replace the dash with a plus ("+") sign | ImageMagick 6.9.10-23 -> `VER=6.9.10+23` |
+| Git or other date-based snapshots | Simply write the date (dot not include `git`, or `svn`, etc. notation(s), but ensure consistent source(s) can be downloaded, see `GITCO`, etc. | Shadowsocks 5ff694b2c2978b432918dea6ac104706b25cbf48 -> `VER=20181219` |
 
 # Dependencies
 
