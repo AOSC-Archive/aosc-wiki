@@ -24,9 +24,13 @@ Versioning variable define the package's version and revision levels.
 
 ### VER=
 
-The `VER=`, or `$VER` variable defines the main version of the resulting package. When packaging for AOSC OS, packagers should take note of the following requirements:
+The `VER=`, or `$VER` variable defines the main version of the resulting package. When packaging for AOSC OS, packagers should take note of the following requirements. These requirements are presented below in a table.
 
-- 
+| Situations | Appropriate Actions | Examples |
+|-------------------|-------------------------------------|-------------------|
+| "Normal" versioning, with only "dot" separators | Retain version, as defined by the upstream | GNOME Clocks 3.32.1 -> `VER=3.32.1` |
+| Versioning with letter notation(s) | Lower-case all letter(s), and remove symbols surrounding the letter(s) | Bind 9.12.3-P4 -> `VER=9.12.3p4` |
+| Versioning with dash(es) ("-") | Replace the dash with a plus ("+") sign | ImageMagick 6.9.10-23 -> `VER=6.9.10+23` |
 
 # Dependencies
 
