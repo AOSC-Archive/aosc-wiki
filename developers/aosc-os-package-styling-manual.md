@@ -54,6 +54,15 @@ The `SRCTBL=`, or `$SRCTBL` variable is used when a package's source is released
 | Version substitutions | Required | Source links must replace all versions with substitutions from the `$VER` variable (see above). `SRCTBL=` must not be defined with hard-coded version(s). |
 | Versioned tarballs | Required | Source archives (tarballs) must be versioned in order to ensure consistency. |
 
+### VCS Variables
+
+VCS (Version Control System) based sources may use any one of the each combinations.
+
+| VCS | Required Variables | Additional Notes |
+|--------|-------------------------------|---------------------------|
+| Git | `GITSRC=`, or `$GITSRC`, which defines the Git repository; `GITCO=`, or `$GITCO`, which defines the specific GIt "checkout(s)" (a commit, or a tag) | Use Git over Hypertext Transfer Protocol Secure (HTTPS, https://) where possible. |
+| Subversion (SVN) | `SVNSRC=`, or `$SVNSRC`, which defines the SVN repository; `SVNCO=`,  or `$SVNCO`, which defines the specific SVN checkout(s) (revision) | |
+
 # Dependencies
 
 # Scripting
