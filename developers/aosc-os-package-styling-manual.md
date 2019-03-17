@@ -220,5 +220,20 @@ When committing (or contributing, if you like) to the [AOSC OS ABBS Tree](https:
 | Security fixes without version update, utilising upstream patch(es) | `$PKGNAME: (upstream patch[es]) #NNN` | `audacious: (upstream patches) #1919`, where `#1919` is a reference to the original security report (GitHub issue) |
 | Updating a package | `$PKGNAME: update to $PKGVER` | `mate-desktop: update to 1.22.0` |
 | Work-in-progress with a fail-to-build package | `$PKGNAME: ... (FTBFS)` | `chromeos-desktop: update to 99.0.9999 (FTBFS)`, note that "FTBFS" stands for "Failed To Build From Source", this term is used loosely |
+| Working with a package | `$PKGNAME: ...` | `kde-workspace: add qt-5 dependency`, just say what you did in present tense |
+| Working with a package, multiple actions | `$PKGNAME: ...; ...` | `gnome-shell: add at-spi2-core dependency; update to 3.32.0` |
 | Working with an architecturally-exclusive package | `$PKGNAME: ... ($ARCH)` | `google-chrome: new, 100.0.9999.999 (amd64)` |
 | Working with an architecturally-independent package | `$PKGNAME: ... (noarch)` | `mate-common: update to 1.22.0 (noarch)` |
+
+## Long Messages
+
+When more than one of the actions were committed, and that the short message goes beyond 50 characters (including space and punctuation marks), you should utilise a "long Git commit message", for example:
+
+```
+firefox: update to 64.0.2; #1536
+    
+    - Enable PGO on AMD64, patches from Fedora and upstream.
+    - Clean up defines.
+    - Remove deprecated --enable-pie option.
+    - More vendor-specific preferences to further limit Pocket integration and telemetry.
+```
