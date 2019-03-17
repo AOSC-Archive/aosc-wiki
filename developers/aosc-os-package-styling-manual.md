@@ -14,6 +14,40 @@ The [AOSC OS ABBS Tree](https://github.com/AOSC-Dev/aosc-os-abbs/) is now home t
 
 Without a comprehensive guildeline for packaging work in the future, these issues will not go away - rather, the list will grow longer and further degrade package qualities in our distribution. This Styling Manual seeks to provide sectioned and targetted sets of guidelines for fixing existing and new packages.
 
+# Packager, Package Names, and Descriptions
+
+This section contains the three most basic descriptors for an AOSC OS package.
+
+## Packager Information
+
+Packager, or "Maintainer", as referenced in Debian Packages (`.deb`), should have its value formatted as follows:
+
+```
+Executed Packager <suffering@pakreq.work>
+```
+
+## Package Names
+
+Package names (`PKGNAME=`, or `$PKGNAME`) should be *lower-cased*, and otherwise comply with the choice of package manager.
+
+## Descriptions
+
+Package descriptions (`PKGDES=`, or `$PKGDES`) are to be composed with the following guidelines:
+
+- Start with a upper-case letter.
+- With no period point or any punctuation mark at the end.
+
+However, it is worth noting that package descriptions found with AOSC OS packages should be descriptive, but not definitive. For example, an acceptable package description should look something like...
+
+    "Library with common API for various MATE modules"
+		
+Or less descriptive, like...
+
+    "MATE Desktop Library"
+
+Or too definitive, like...
+
+    "Library with concise and convenient API for various MATE modules"
 # Package Specs
 
 In the current implementation of [ACBS](https://github.com/AOSC-Dev/acbs) (AOSC CI Build Service), three categories of variables are defined in a file named `spec` - these variables will be discussed below.
