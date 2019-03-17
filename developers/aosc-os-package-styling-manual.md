@@ -50,7 +50,7 @@ Or too definitive, like...
     "Library with concise and convenient API for various MATE modules"
 # Package Specs
 
-In the current implementation of [ACBS](https://github.com/AOSC-Dev/acbs) (AOSC CI Build Service), three categories of variables are defined in a file named `spec` - these variables will be discussed below.
+In the current implementation of [ACBS](https://github.com/AOSC-Dev/acbs) (Autobuild CI Build Service), three categories of variables are defined in a file named `spec` - these variables will be discussed below.
 
 ## Versioning Variables
 
