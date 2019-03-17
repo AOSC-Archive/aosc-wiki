@@ -75,10 +75,10 @@ VCS (Version Control System) based sources may use any one of the each combinati
 
 | VCS | Required Variables | Additional Notes |
 |--------|-------------------------------|---------------------------|
-| Bazaar (BZR) | `BZRSRC=`, or `$BZRSRC`, which defines the Bazaar repository; `BZRCO=`, or `$BZRCO`, which defines the specific Bazaar revision | |
-| Git | `GITSRC=`, or `$GITSRC`, which defines the Git repository; `GITCO=`, or `$GITCO`, which defines the specific Git "checkout(s)" (a commit, or a tag) | Use Git over Hypertext Transfer Protocol Secure (HTTPS, https://) where possible |
-| Mercurial (HG) | `HGSRC=`, or `$HGSRC`, which defines the Meruciral repository. | Avoid using Mecurial source(s) where possible, as support for checking out a specific revision is not yet implemented |
-| Subversion (SVN) | `SVNSRC=`, or `$SVNSRC`, which defines the SVN repository; `SVNCO=`,  or `$SVNCO`, which defines the specific SVN checkout(s) (revision) | |
+| Bazaar (BZR) | `BZRSRC=`, or `$BZRSRC`, which defines the Bazaar repository; `BZRCO=`, or `$BZRCO`, which defines the specific Bazaar revision. | |
+| Git | `GITSRC=`, or `$GITSRC`, which defines the Git repository; `GITCO=`, or `$GITCO`, which defines the specific Git "checkout(s)" (a commit, or a tag) | Use Git over Hypertext Transfer Protocol Secure (HTTPS, https://) where possible. |
+| Mercurial (HG) | `HGSRC=`, or `$HGSRC`, which defines the Meruciral repository. | Avoid using Mecurial source(s) where possible, as support for checking out a specific revision is not yet implemented. |
+| Subversion (SVN) | `SVNSRC=`, or `$SVNSRC`, which defines the SVN repository; `SVNCO=`,  or `$SVNCO`, which defines the specific SVN checkout(s) (revision). | |
 
 ### DUMMYSRC=
 
@@ -131,11 +131,11 @@ A general rule of thumb is to write such scripts secure (quoted) variables, suff
 
 | Criteria | Required/Recommended | Explanations |
 |-------------|----------------------------------------|----------------------|
-| Error control | Required | Build errors should be captured and handled appropriately. By default, errors are handled automatically by Autobuild3 and will result in aborted build, however, `autobuild/build` is not yet covered due to a bug in Autobuild3 |
-| Progression report | Requried | Progress should be reported by appropriately employing `abinfo` and `abwarn` wrappers, this is required for packages utilising the `autobuild/build`, or `ABTYPE=self` |
+| Error control | Required | Build errors should be captured and handled appropriately. By default, errors are handled automatically by Autobuild3 and will result in aborted build, however, `autobuild/build` is not yet covered due to a bug in Autobuild3. |
+| Progression report | Requried | Progress should be reported by appropriately employing `abinfo` and `abwarn` wrappers, this is required for packages utilising the `autobuild/build`, or `ABTYPE=self`. |
 | References | Required | When adapting/copying build scripts from other distributions, packager must include a comment indicating the source(s) of the build script(s) |
-| Secure variables | Required | Variables should be quoted, for example, all `"$SRCDIR"` and `"$PKGDIR"` |
-| Architectural considerations | Recommended | While it is convenient to write build scripts adapted to the `amd64` port, it is important to note that AOSC OS builds packages for more than five other architectures using the same scripts |
-| Comments | Recommended | Good scripts tend to be well commented. However, comments can be replaced with progression report clauses, see "Progression report" |
+| Secure variables | Required | Variables should be quoted, for example, all `"$SRCDIR"` and `"$PKGDIR"`. |
+| Architectural considerations | Recommended | While it is convenient to write build scripts adapted to the `amd64` port, it is important to note that AOSC OS builds packages for more than five other architectures using the same scripts. |
+| Comments | Recommended | Good scripts tend to be well commented. However, comments can be replaced with progression report clauses, see "Progression report". |
 
 # Package Structure
