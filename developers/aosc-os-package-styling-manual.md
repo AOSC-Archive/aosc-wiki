@@ -207,3 +207,12 @@ Electron, Chromium, and other Chromium-based packages should be packaged with th
 ## Binary Packaging (Binpack)
 
 Binary packages should not be installed to `/opt`, unless the package's licence prohibits such file movement. With adjustments and other modifications, these packages should be installed to the `/usr` prefix - if packager find it impossible, they should consider rejecting such packages.
+
+# Git Commit Messages
+
+When committing (or contributing, if you like) to the [AOSC OS ABBS Tree](https://github.com/AOSC-Dev/aosc-os-abbs/), please observe the commit message standards, shown in the table below.
+
+| Action | Message Formatting | Sample Commit Message |
+|-----------|-----------------------------------|-----------------------------------------|
+| Updating a package | `$PKGNAME: update to $PKGVER` | `mate-desktop: update to 1.22.0` |
+| Updating an architecturally-independent package | `$PKGNAME: update to $PKGVER (noarch)` | `mate-common: update to 1.22.0 (noarch)` |
