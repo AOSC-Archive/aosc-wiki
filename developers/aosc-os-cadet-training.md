@@ -8,7 +8,7 @@ manner.
 
 ## Introduction
 
-- [Preparing a build environment](/developers/aosc-os-cadet-training/Preparing)
+- [Preparing a build environment](/developers/aosc-os-cadet-training/preparing-a-build-environment)
 	- [What is BuildKit?](/developers/aosc-os-cadet-training/Preparing-What-is-BuildKit)
 	- [Getting BuildKit](/developers/aosc-os-cadet-training/Preparing-Getting-BuildKit)
 	- [Deploying BuildKit](/developers/aosc-os-cadet-training/Preparing-Getting-BuildKit#deploying)
