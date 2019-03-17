@@ -1,7 +1,7 @@
 <!-- TITLE: Preparing A Build Environment -->
 <!-- SUBTITLE: Getting BuildKit, or Go Ciel -->
 
-# Preparing a build environment
+# Packaging Environments
 
 You will need a clean environment for your packaging work. Packaging in a unclean, or even personally-used system environment demonstrates a lack of responsibility, and can result in packages with unrecorded dependencies, or other issues that could render a package unusable. A clean environment with *minimal* amount of libraries installed is the *key* to reproducible builds.
 
