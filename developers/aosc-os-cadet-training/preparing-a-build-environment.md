@@ -17,4 +17,4 @@ Traditionally, packages are built in BuildKit, a base-installation of AOSC OS th
 
 This method of packaging is now being phased out, and you are encouraged (and eventually required) to use Ciel instead.
 
-- [Getting Started with BuildKit](https://github.com/AOSC-Dev/aosc-os-abbs/wiki/Preparing-Getting-BuildKit).
+- [Getting Started with BuildKit](/developers/aosc-os-cadet-training/getting-started-with-buildkit)
