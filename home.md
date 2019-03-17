@@ -36,9 +36,9 @@ This sub-section contains information on APIs and technical details from our com
 
 This sub-section provides guidebooks and developer information for AOSC OS developers.
 
-- [AOSC OS Package Styling Manual](/developers/aosc-os-package-styling-manual)
 - [Exceptions to the Update Cycles](/developers/aosc-os/cycle-exceptions)
 - [Known Patch Release Rules](/developers/aosc-os/known-patch-release-rules)
+- [Package Styling Manual](/developers/aosc-os-package-styling-manual)
 
 # Users
 This section contains information useful for AOSC OS users with pages arranged by topics.
