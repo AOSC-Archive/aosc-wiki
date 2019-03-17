@@ -103,6 +103,8 @@ Where...
 
 For descriptions of different cryptographic hash algorithms, and for identification of insecure (and therefore unacceptable) algorithms, refer to this [Wikipedia chapter](https://en.wikipedia.org/wiki/Cryptographic_hash_function#Cryptographic_hash_algorithms) under "Cryptographic Hash Function".
 
+`$CHKSUM` will become a required value in the near future.
+
 ### VCS Variables
 
 VCS (Version Control System) based sources may use any one of the each combinations.
@@ -186,6 +188,53 @@ A general rule of thumb is to write such scripts secure (quoted) variables, suff
 | Comments | Recommended | Good scripts tend to be well commented. However, comments can be replaced with progression report clauses, see "Progression report". |
 
 As many packagers tend to reference or copy build scripts from Arch Linux, please reference the [TODO: AOSC OS-Arch Rosetta Stone](#) for a comprehensive guide on translating PKGBUILD (Arch Linux) into Autobuild3 manifests (AOSC OS).
+
+# Patch Naming
+
+Patches should follow a (mostly) uniform file naming for clear arrangement and sorting, before they are included in `autobuild/patches/`.
+
+## Git-based Sources
+
+When dealing with Git-based sources, it is possible to create numbered patches from the following command:
+
+```
+git format-patch -n $HASH
+```
+
+
+Where `n` defines the amount of commits from the specific commit `$HASH`, including the specified commit. Alternatively, you can omit the `$HASH`...
+
+```
+git format-patch -n
+```
+
+To create a series of patches from `n` commits to the branch `HEAD`.
+
+These commands generate a series patches like the following...
+
+```
+0001-contrib-autobuild-aoscarchive-one-more-syntax-fix.patch
+0002-common_switches-add-sanitizer-support.patch
+0003-contrib-autobuild-aoscarchive-fix-overlay-subdir-che.patch
+0004-arch-_common_switches-fix-syntax.patch
+0005-autobuild-aoscarchive-adapt-to-new-workflow.patch
+```
+
+## Other Sources
+
+Without an automatic mean to generate patches, patches should be named in the following format.
+
+```
+NNNN-$CATEGORY-$CONTENT.patch
+```
+
+Where:
+
+- `NNNN`, like the sample patch file names, is a "serial" number for sorting patches. 
+- `$CATEGORY` defines the category of a patch, for instance, `bugfix`, `feature`, etc.
+- `$CONTENT` defines "what is to be done" when a patch is applied, for instance, `fix-build-with-openssl-1.1`.
+
+Likewise, when including patch(es) from other distributions, they should also be renamed in accordance to the guidelines above.
 
 # File Placements
 
