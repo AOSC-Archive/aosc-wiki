@@ -141,9 +141,9 @@ A general rule of thumb is to write such scripts secure (quoted) variables, suff
 
 As many packagers tend to reference or copy build scripts from Arch Linux, please reference the [TODO: AOSC OS-Arch Rosetta Stone](#) for a comprehensive guide on translating PKGBUILD (Arch Linux) into Autobuild3 manifests (AOSC OS).
 
-# Package Structure
+# File Placements
 
-AOSC OS, like many other Linux Distributions, expect packaged files to be located in appropriate directories. Please reference the table below for our standard of file placements.
+AOSC OS, like many other Linux Distributions, expect packaged files to be located in appropriate directories. Please reference the *non-comprehensive* table below for our standard of file placements.
 
 | Types of Files | Appropriate Placements |
 |-----------------------|---------------------------------------|
@@ -155,9 +155,21 @@ AOSC OS, like many other Linux Distributions, expect packaged files to be locate
 | Headers (includes) | `/usr/include` |
 | Java components (commons, etc.) | `/usr/share/java` |
 | Libraries (shared and static) | `/usr/lib` |
+| Licences | `/usr/share/doc/$PKGNAME` |
+| Manpages | `/usr/share/man` |
+| Non-manpage documentations | `/usr/share/doc/$PKGNAME` |
 | Private libraries | `/usr/lib/$COMPONENTNAME`, where an appropriate`$COMPONENTNAME` is decided in practice, for instance, `/usr/lib/R` |
 
-## Electron and Chromium-like Packages
+## Electron and Chromium-based Packages
 
-## Binary Packaging (Binpack) and Exceptions
+Electron, Chromium, and other Chromium-based packages should be packaged with the following structure.
 
+| Components | Appropriate Placements |
+|---------------------|----------------------------------------|
+| Binary executables | `/usr/bin`, where the executable is a symbolic link to its target in `/usr/lib/$PKGNAME` |
+| Desktop, AppStream, and other data files | `/usr/share` |
+| Main program data | `/usr/lib/$PKGNAME` |
+
+## Binary Packaging (Binpack)
+
+Binary packages should not be installed to `/opt`, unless the package's licence prohibits such file movement. With adjustments and other modifications, these packages should be installed to the `/usr` prefix - if packager find it impossible, they should consider rejecting such packages.
