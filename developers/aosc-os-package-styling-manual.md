@@ -142,7 +142,7 @@ Run-time dependencies should be written in such a way that, not only does the pa
 
 Which, through explicit and implicit dependencies, allows for a system environment that contains sufficient runtime for the program `/usr/bin/ario` to function.
 
-By the quality assurance standard, defined in code [E432](https://wiki.aosc.io/developers/list-of-package-issue-codes#class-4-dependencies), all direct dependencies on the ELF level should also be included in `$PKGDEP`, and thus the addition of `dbus` to `$PKGDEP` is necessary.
+By the quality assurance standard, defined in code [E432](/developers/list-of-package-issue-codes#class-4-dependencies), all direct dependencies on the ELF level should also be included in `$PKGDEP`, and thus the addition of `dbus` to `$PKGDEP` is necessary.
 
 As of March 16th, 2019, 42.4% (1592/3705) of all packages provided in the Stable channel for `amd64` has the issue of insufficient ELF dependencies.
 
@@ -156,6 +156,18 @@ Build-time dependencies should written in such a way that the package will compi
 
 - CMake (`cmake`) is required for building `extra-devel/extra-cmake-modules`, however, `cmake` is an integral part of BuildKit. Therefore, packagers are not required to include `cmake` in `$BUILDDEP`.
 - Bazel (`bazel`) is required fo building `extra-scientific/tensorflow`. In this case, `bazel` must be included in `$BUILDDEP`, as `bazel` is not installed in BuildKit as standard.
+
+# Package Features
+
+When packaging for AOSC OS, please work in accordance to our [distribution feature guide](/users/information/is-aosc-os-right-for-me). The table below digests some of the common considerations when building packages for AOSC OS.
+
+| Considerations | Appropriate Actions |
+|-------------------------|---------------------------------|
+| Features | Enable all features, unless a feature is unmaintained, or violates any of the other considerations in this table. |
+| Language packs (dictionaries, locale data, etc.) | Language packs must be included in the same package as the main executables, etc. | 
+| Splitting packages | Packages are to be remained intact, unless package comes in multiple flavours, or otherwise agreed upon by the developer majority. |
+| Telemetry | All telemetry functionality must be stripped or disabled by default (opt-in), packages that do not function without such feature should only be accepted on a case-by-case basis (rejected by default). |
+| Update checking | All update checking (notification, downloading, etc.) packages that do not function without such feature should only be accepted on a case-by-case basis (rejected by default). |
 
 # Scripting
 
@@ -222,7 +234,7 @@ When committing (or contributing, if you like) to the [AOSC OS ABBS Tree](https:
 | Work-in-progress with a fail-to-build package | `$PKGNAME: ... (FTBFS)` | `chromeos-desktop: update to 99.0.9999 (FTBFS)`, note that "FTBFS" stands for "Failed To Build From Source", this term is used loosely |
 | Working with a package | `$PKGNAME: ...` | `kde-workspace: add qt-5 dependency`, just say what you did in present tense |
 | Working with a package, multiple actions | `$PKGNAME: ...; ...` | `gnome-shell: add at-spi2-core dependency; update to 3.32.0` |
-| Working with a QA issue | `$PKGNAME: ... ($ISSUECODE)` | `psiconv: rebuild for imagemagick (E431)`, for a list of QA issue codes, refer to this [list](https://wiki.aosc.io/developers/list-of-package-issue-codes) |
+| Working with a QA issue | `$PKGNAME: ... ($ISSUECODE)` | `psiconv: rebuild for imagemagick (E431)`, for a list of QA issue codes, refer to this [list](/developers/list-of-package-issue-codes) |
 | Working with an architecturally-exclusive package | `$PKGNAME: ... ($ARCH)` | `google-chrome: new, 100.0.9999.999 (amd64)` |
 | Working with an architecturally-independent package | `$PKGNAME: ... (noarch)` | `mate-common: update to 1.22.0 (noarch)` |
 
