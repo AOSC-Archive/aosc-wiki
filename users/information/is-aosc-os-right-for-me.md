@@ -2,7 +2,7 @@
 <!-- SUBTITLE: Some important and not so important notes... -->
 
 
-## What Is AOSC OS, Anyways?
+# What Is AOSC OS, Anyways?
 
 Good question, we have been exploring this question for a long time now. But through the seven years of its development, it has become increasingly clear that we are building this Linux distribution with several subtle features that we find essential. Though first, let's return to the basics...
 
@@ -10,7 +10,7 @@ AOSC OS, in its recent years (since 2014), is an independently built and maintai
 
 That said, AOSC OS is only one of the several thousand Linux distributions out there, it builds upon the powerful Linux Kernel and applications made by many around the world. We understand that it could be difficult to determine a Linux distribution to go with - whether it be the first time, or the 100th time - the goal of this Wiki page is to offer a multi-aspectual description of AOSC OS to help you in the decision process.
 
-## What Are We Trying to Achieve?
+# What Are We Trying to Achieve?
 
 AOSC OS is built in a multi-year effort by a collective of volunteers, who possess certain degrees of knowledge about the making of a Linux distribution. AOSC OS started its life as an independent distribution not since its first day of existence, but after three years of experimentation with AnthonOS as derivative distributions built on openSUSE and Debian. In 2014, we have determined to build AOSC OS independently to gain full control on the design and maintenance of packages and their updates.
 
@@ -24,11 +24,11 @@ Through the years following we have discovered that AOSC OS has been built upon 
 - There is no point in providing an update if it breaks the user experience - specifically, when it renders basic functionalities unusable. However, software updates should be provided as soon as possible.
 - AOSC OS should provide similar (but reasonably reduced or added) functionalities across various architectural ports, while regarding them as personal devices capable of desktop and/or server usage.
 
-## How Is AOSC OS Like?
+# How Is AOSC OS Like?
 
 With all these philosophies above, AOSC OS has been built by large in accordance to them. To avoid long paragraphs, this discussion will be organised into a pro's-and-con's listing.
 
-### Pros
+## Pros
 
 - AOSC OS installs quickly, works out of the box, and comes with most tools necessary to begin working from the 0th minute, including utilities necessary for Internet connection in restrictive countries and regions.
 - It's relatively simple, when it comes to software installation and removal.
@@ -44,7 +44,7 @@ With all these philosophies above, AOSC OS has been built by large in accordance
 - You'd barely feel the existence of AOSC OS, no logo, no branding, no in-your-face banners.
 
 
-### Cons
+## Cons
 
 - As it currently stands, AOSC OS does not provide an automatic (or even better, graphical) installation wizard, and requires manual input to install - which would most likely be daunting for first-timers. It also lacks a Live medium for user try-outs.
 - It's **heavy**, as packages and software are installed on a larger unit, it requires more available storage than most Linux distributions with similar amount of applications installed.
@@ -58,11 +58,11 @@ With all these philosophies above, AOSC OS has been built by large in accordance
 - You'd barely feel the existence of AOSC OS, or for others to realise what you are running - no show-off for you, by default.
 	- Also, let's face it, we are not particularly well-known.
 
-## Should I Try AOSC OS?
+# Should I Try AOSC OS?
 
 Now that you have read through all those boring marketing material, time to make your call. So, here's a subjective but justified (?) guide to your decision making...
 
-### Give it a shot, if...
+## Give it a shot, if...
 
 - You have a computer of the [AMD64](/users/installation/amd64-notes-sysreq), [ARMv7](/users/installation/arm-notes-sysreq), [AArch64](/users/installation/arm-notes-sysreq), [Big-Endian PowerPC 32-bit 64-bit Macintosh](/users/installation/powermac-notes-sysreq) architectures.
 	- And they come with adequate storage availability for the present and the future, by your judgement.
@@ -76,7 +76,7 @@ Now that you have read through all those boring marketing material, time to make
 - You don't care much for distribution branding.
 - You would like to get into AOSC OS development or to know about its internals and details, as it is dead simple to find a developer willing to guide you in the process.
 
-### Ask us for advice or leave it, if...
+## Ask us for advice or leave it, if...
 
 - You have never installed Linux before or do not know basic Linux/\*nix commands, or really, you can't be bothered to read the documentation and follow the steps.
 - You are expecting a light-weight and modular Linux distribution, this is **not** why AOSC OS is here.
