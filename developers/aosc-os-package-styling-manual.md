@@ -166,8 +166,8 @@ When packaging for AOSC OS, please work in accordance to our [distribution featu
 | Features | Enable all features, unless a feature is unmaintained, or violates any of the other considerations in this table. |
 | Language packs (dictionaries, locale data, etc.) | Language packs must be included in the same package as the main executables, etc. | 
 | Splitting packages | Packages are to be remained intact, unless package comes in multiple flavours, or otherwise agreed upon by the developer majority. |
-| Telemetry | All telemetry functionality must be stripped or disabled by default (opt-in), packages that do not function without such feature should only be accepted on a case-by-case basis (rejected by default). |
-| Update checking | All update checking (notification, downloading, etc.) packages that do not function without such feature should only be accepted on a case-by-case basis (rejected by default). |
+| Telemetry | All telemetry functionalities must be stripped or disabled by default (opt-in), packages that do not function without such feature should only be accepted on a case-by-case basis (rejected by default). |
+| Update checking | All update checking (notification, downloading, etc.) functionalities must be stripped, packages that do not function without such feature should only be accepted on a case-by-case basis (rejected by default). |
 
 # Scripting
 
