@@ -16,6 +16,7 @@ To help identifying various kind of package issues, listed below are four classe
 | E103 | Package name is not valid |
 | W111 | Package may be out-dated |
 | W112 | `SRCTBL` uses HTTP |
+| W113 | `SRCTBL` does not have `CHKSUM` |
 | W121 | The last commit message was badly formatted |
 | W122 | Multiple packages changed in the last commit |
 | W123 | Force-pushed recently (last *N* commit - TBD) |
