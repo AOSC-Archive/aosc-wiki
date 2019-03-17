@@ -147,10 +147,13 @@ AOSC OS, like many other Linux Distributions, expect packaged files to be locate
 
 | Types of Files | Required/Recommended | Appropriate Placements |
 |-----------------------|----------------------------------------|---------------------------------------|
+| Binary or script executables | Required | `/usr/bin` |
+| Binaries run by other programs | Required | `/usr/libexec`, unless hard-coded by other packages/components (GNOME, \*ahem\*) |
 | Data files (no ELF, or architecturally-dependent scripts) | Required | `/usr/share` |
-| Daemon user home | Required | `/var/lib/$COMPONENTNAME`, where `$COMPONENTNAME` is the appropriate naming (in practice), for instance, `/var/lib/lightdm` |
-| Executables | Required | `/usr/bin` |
+| Daemon user home | Required | `/var/lib/$COMPONENTNAME`, where an appropriate`$COMPONENTNAME` is decided in practice, for instance, `/var/lib/lightdm` |
+| Headers (includes) | `/usr/include` |
 | Libraries (shared and static) | Required | `/usr/lib` |
+| Private libraries | Required | `/usr/lib/$COMPONENTNAME` |
 
 ## Binary Packaging (Binpack) and Exceptions
 
