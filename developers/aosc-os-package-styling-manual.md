@@ -214,5 +214,9 @@ When committing (or contributing, if you like) to the [AOSC OS ABBS Tree](https:
 
 | Action | Message Formatting | Sample Commit Message |
 |-----------|-----------------------------------|-----------------------------------------|
+| Security fixes with version update | `$PKGNAME: update to $PKGVER; #NNN` | `bash: update to 5.2; #114514`, where `#114514` is a reference to the original security report (GitHub issue) |
+| Security fixes without version update, utilising distribution patch(es) | `$PKGNAME: ($DISTNAME patch[es], $CHANNEL) #NNN` | `gnome-shell: (Ubuntu patches, 18.10) #2333`, where `#2333` is a reference to the original security report (GitHub issue) |
+| Security fixes without version update, utilising upstream patch(es) | `$PKGNAME: (upstream patch[es]) #NNN` | `audacious: (upstream patches) #1919`, where `#1919` is a reference to the original security report (GitHub issue) |
 | Updating a package | `$PKGNAME: update to $PKGVER` | `mate-desktop: update to 1.22.0` |
+| Updating an architecturally-exclusive package | `$PKGNAME: update to $PKGVER ($ARCH)` | `google-chrome: update to 100.0.9999.999 (amd64)` |
 | Updating an architecturally-independent package | `$PKGNAME: update to $PKGVER (noarch)` | `mate-common: update to 1.22.0 (noarch)` |
