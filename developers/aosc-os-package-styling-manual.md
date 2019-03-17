@@ -145,15 +145,19 @@ As many packagers tend to reference or copy build scripts from Arch Linux, pleas
 
 AOSC OS, like many other Linux Distributions, expect packaged files to be located in appropriate directories. Please reference the table below for our standard of file placements.
 
-| Types of Files | Required/Recommended | Appropriate Placements |
-|-----------------------|----------------------------------------|---------------------------------------|
-| Binary or script executables | Required | `/usr/bin` |
-| Binaries run by other programs | Required | `/usr/libexec`, unless hard-coded by other packages/components (GNOME, \*ahem\*) |
-| Data files (no ELF, or architecturally-dependent scripts) | Required | `/usr/share` |
-| Daemon user home | Required | `/var/lib/$COMPONENTNAME`, where an appropriate`$COMPONENTNAME` is decided in practice, for instance, `/var/lib/lightdm` |
+| Types of Files | Appropriate Placements |
+|-----------------------|---------------------------------------|
+| Binary or script executables | `/usr/bin` |
+| Binaries run by other programs | `/usr/libexec`, unless hard-coded by other packages/components (GNOME, \*ahem\*) |
+| Data files (no ELF, or architecturally-dependent scripts) | `/usr/share` |
+| Daemon user home | `/var/lib/$COMPONENTNAME`, where an appropriate`$COMPONENTNAME` is decided in practice, for instance, `/var/lib/lightdm` |
+| Go components and shared data | `/usr/share/gocode` |
 | Headers (includes) | `/usr/include` |
-| Libraries (shared and static) | Required | `/usr/lib` |
-| Private libraries | Required | `/usr/lib/$COMPONENTNAME` |
+| Java components (commons, etc.) | `/usr/share/java` |
+| Libraries (shared and static) | `/usr/lib` |
+| Private libraries | `/usr/lib/$COMPONENTNAME`, where an appropriate`$COMPONENTNAME` is decided in practice, for instance, `/usr/lib/R` |
+
+## Electron and Chromium-like Packages
 
 ## Binary Packaging (Binpack) and Exceptions
 
