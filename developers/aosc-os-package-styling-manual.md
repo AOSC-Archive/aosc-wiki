@@ -142,3 +142,15 @@ A general rule of thumb is to write such scripts secure (quoted) variables, suff
 As many packagers tend to reference or copy build scripts from Arch Linux, please reference the [TODO: AOSC OS-Arch Rosetta Stone](#) for a comprehensive guide on translating PKGBUILD (Arch Linux) into Autobuild3 manifests (AOSC OS).
 
 # Package Structure
+
+AOSC OS, like many other Linux Distributions, expect packaged files to be located in appropriate directories. Please reference the table below for our standard of file placements.
+
+| Types of Files | Required/Recommended | Appropriate Placements |
+|-----------------------|----------------------------------------|---------------------------------------|
+| Data files (no ELF, or architecturally-dependent scripts) | Required | `/usr/share` |
+| Daemon user home | Required | `/var/lib/$COMPONENTNAME`, where `$COMPONENTNAME` is the appropriate naming (in practice), for instance, `/var/lib/lightdm` |
+| Executables | Required | `/usr/bin` |
+| Libraries (shared and static) | Required | `/usr/lib` |
+
+## Binary Packaging (Binpack) and Exceptions
+
