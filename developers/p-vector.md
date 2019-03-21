@@ -142,14 +142,6 @@ These views show more information about packages and their relationships, but ar
 	* relop: version relationship
 	* depver: version requirement
 	* depvercomp: version requirement for comparison
-* v_file_conflict: file conflict between packages, which excludes Conflicts listed in deb package
-	* package1
-	* version1
-	* repo1
-	* package2
-	* version2
-	* repo2
-	* filename
 * v_so_breaks: when updating `package`, which `dep_package`s will be broken?
 	* package: the package that is depended on
 	* repo
@@ -159,3 +151,25 @@ These views show more information about packages and their relationships, but ar
 	* dep_package: the reverse dependency
 	* dep_repo
 	* dep_version
+
+# Analyze
+Here we list the acture implementation of issue detection.
+
+* 101: find entries in table repo_package_basherr where package name is null
+* 102: find entries in table repo_package_basherr where package name is not null (package name is defined in `defines`)
+* 103: regex `^[a-z0-9][a-z0-9+.-]*$`. The debian policy specifies that package name should be at least 2 characters, but we set an exception here for `r`.
+* 301: debtime is null. If we can't open the deb file, we won't be able to get mtime of `control`.
+* 302: size < 10M and size < one third of median package size
+* 303: pool/(lib)\<initial letter\>/\<package name\>\_\<version\>\_\<architecture\>.deb
+* 311: regex `^.+ <.+@.+>$`
+* 321: packages doesn't contain files in /usr/local or `^(bin|boot|etc|lib|opt|run|sbin|srv|usr|var)/?.*`
+* 322: executable zero-size files, whose names are not NEWS, ChangeLog, INSTALL, TODO, COPYING, AUTHORS, README, README.md, README.txt, empty, placeholder, placeholder.txt, .\*, \_\_init\_\_.p\*
+* 323: uid>999 OR gid>999
+* 324: non-executable file in /bin, /sbin, /usr/bin; or non-executable directory
+* 402: find entries in table package_duplicate
+* 412: find entries in table pv_package_duplicate
+* 421: find packages p1 and p2, where p1 and p2 have same regular files, p1 != p2, p1.arch=p2.arch or p2.arch=all, p1.repo_component=p2.repo_component, p1.testing <= p2.testing; also excludes Breaks, Replaces, Conflicts listed in deb package
+* 431: find package p2 that provides the library that package p1 needs. If no version matches, then find the same so-name, such that p2 is the most popular provider. Return fuzzy matches and empty matches.
+* 432: recursively find package p2 that provides the library that package p1 needs. Return library providers that not found in PKGDEP. Don't report missing dependencies in aosc-os-core. If p1 dep p2 dep p3 and p1 sodep p3, but p1 doesn't declare PKGDEP on p3, this situation is NOT reported. If p1 dep/sodep p2 dep p3, and p1 sodep p3, but p1 doesn't declare PKGDEP on p3, this situation is reported.
+
+
