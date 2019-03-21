@@ -14,7 +14,7 @@ P-vector manages AOSC OS's deb repository, generates index files and analyzes pr
 * `reset`: drop tables.
 
 # Database
-p-vector uses a PostgreSQL database. We recommend using the latest version, even though 9.6 is still usable.
+p-vector uses a PostgreSQL database. We recommend using the latest version, even though 9.6 is still usable. Specify the connection string in `db_pgconn` in the config file.
 
 ## Tables
 ### p-vector native tables
@@ -58,7 +58,7 @@ These tables contain information necessary to generate indices for apt and to an
 	* depends: 0 provides, 1 depends
 	* name: libfoo.so
 	* ver: .1.2.3
-* pv_package_files
+* pv_package_files: files in deb packages
 	* package
 	* version
 	* repo
@@ -71,9 +71,28 @@ These tables contain information necessary to generate indices for apt and to an
 	* gid
 	* uname
 	* gname
-* pv_package_issues
-* pv_issues_stats
-* pv_dbsync
+* pv_package_issues: current package issues
+	* id\*
+	* package
+	* version
+	* repo
+	* errno: [issue code](/developers/list-of-package-issue-codes)
+	* level: -1 critical, 0 error, 1 warning
+	* filename
+	* ctime: creation time
+	* mtime: modification time (same package and file, different detail)
+	* atime: verification time
+	* detail: json field
+* pv_issues_stats: package issue statistics log
+	* repo
+	* errno
+	* cnt: issue count
+	* total: package count
+	* updated
+* pv_dbsync: packages site database sync status
+	* name: database filename
+	* etag
+	* updated
 
 ### tables from packages site
 These tables are copied from the packages site.
@@ -104,15 +123,39 @@ These tables are copied from the packages site.
 ## Views
 These views come from abbs.db of the packages site.
 
-* v_package_upstream
-* v_packages
+* v_packages: latest packages in source trees
+* v_package_upstream: package upstream version and url
 
 ## Materialized Views
 These views show more information about packages and their relationships, but are expensive to compute.
 
-* v_dpkg_dependencies
-* v_file_conflict
-* v_package_issues
-* v_packages_new
-* v_so_breaks
-* v_sodep_links
+* v_packages_new: packages with the largest versions
+	* (same as pv_packages)
+* v_dpkg_dependencies: parsed dpkg dependencies
+	* package
+	* version
+	* repo
+	* relationship
+	* nr: number of dependency. If dependency specified contains | (or), then nr is same
+	* deppkg: depended package
+	* deparch: archtecture of depended package
+	* relop: version relationship
+	* depver: version requirement
+	* depvercomp: version requirement for comparison
+* v_file_conflict: file conflict between packages, which excludes Conflicts listed in deb package
+	* package1
+	* version1
+	* repo1
+	* package2
+	* version2
+	* repo2
+	* filename
+* v_so_breaks: when updating `package`, which `dep_package`s will be broken?
+	* package: the package that is depended on
+	* repo
+	* soname
+	* sover
+	* sodepver: the sover that other packages require
+	* dep_package: the reverse dependency
+	* dep_repo
+	* dep_version
