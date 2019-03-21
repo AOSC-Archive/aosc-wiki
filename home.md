@@ -31,6 +31,7 @@ This sub-section contains information on APIs and technical details from our com
 
 - [Packages Site](developers/packages-site)
 - [List of Package Issue Codes](/developers/list-of-package-issue-codes)
+- [p-vector](/developers/p-vector)
 
 ## AOSC OS
 
