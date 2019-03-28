@@ -1,5 +1,5 @@
 <!-- TITLE: .NET Lifecycle Policy -->
-<!-- SUBTITLE: AOSC OS includes several .NET packages, like dotnet-{sdk,runtime} and mono, which are maintained by Microsoft and the .NET community1,2. This issue exists to clarify our lifecycle policy on them. -->
+<!-- SUBTITLE: AOSC OS includes several .NET packages, like `dotnet-{sdk,runtime}` and `mono`, which are maintained by Microsoft and the .NET community<sup>[1][1],[2][2]</sup>. This issue exists to clarify our lifecycle policy on them. -->
 
 # .NET Core `dotnet-{sdk,runtime}`
 
@@ -38,3 +38,6 @@ NuGet has many [distribution versions available](https://www.nuget.org/downloads
 `stable`: Latest recommended release
 
 <!--More packages policy expected-->
+
+[1]: https://docs.microsoft.com/en-us/dotnet/core/
+[2]: https://www.mono-project.com/
