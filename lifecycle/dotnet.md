@@ -1,5 +1,4 @@
 <!-- TITLE: .NET Lifecycle Policy -->
-<!-- SUBTITLE: -->
 AOSC OS includes several .NET packages, like `dotnet-{sdk,runtime}` and `mono`, which are maintained by Microsoft and the .NET community<sup>[1][1],[2][2]</sup>. This issue exists to clarify our lifecycle policy on them.
 # .NET Core `dotnet-{sdk,runtime}`
 
