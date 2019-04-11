@@ -28,7 +28,7 @@ F# + Mono is published from [F# Software Foundation's repo](https://github.com/f
 
 `stable`: Latest release
 
-<-- # MSBuild + Mono `msbuild`
+<!-- # MSBuild + Mono `msbuild`
 
 TODO... -->
 
