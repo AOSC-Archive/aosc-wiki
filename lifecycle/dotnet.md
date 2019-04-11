@@ -30,8 +30,8 @@ F# + Mono is published from [F# Software Foundation's repo](https://github.com/f
 
 <-- # MSBuild + Mono `msbuild`
 
-TODO...
--->
+TODO... -->
+
 # NuGet + Mono `nuget`
 
 NuGet has many [distribution versions](https://www.nuget.org/downloads) available.
