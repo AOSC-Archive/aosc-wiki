@@ -1,6 +1,8 @@
 <!-- TITLE: .NET Lifecycle Policy -->
-This policy covers .NET packages in AOSC OS, like `dotnet-{sdk,runtime}` and `mono`, which are maintained by Microsoft and the .NET community<sup>[1][1],[2][2]</sup>.
-# .NET Core `dotnet-{sdk,runtime}`
+
+This policy covers .NET packages in AOSC OS, like `dotnet-*` and `mono`, which are maintained by Microsoft and the .NET community<sup>[1][1],[2][2]</sup>.
+
+# .NET Core `dotnet-*`
 
 .NET Core has 2 [release types](https://dotnet.microsoft.com/platform/support/policy/dotnet-core).
 
@@ -26,10 +28,10 @@ F# + Mono is published from [F# Software Foundation's repo](https://github.com/f
 
 `stable`: Latest release
 
-<!-- # MSBuild + Mono `msbuild`
+<-- # MSBuild + Mono `msbuild`
 
-TODO -->
-
+TODO...
+-->
 # NuGet + Mono `nuget`
 
 NuGet has many [distribution versions](https://www.nuget.org/downloads) available.
