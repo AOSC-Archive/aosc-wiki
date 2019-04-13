@@ -153,7 +153,7 @@ These views show more information about packages and their relationships, but ar
 	* dep_version
 
 # Analyze
-Here we list the acture implementation of issue detection.
+Here we list the actual implementation of issue detection.
 
 * 101: find entries in table repo_package_basherr where package name is null
 * 102: find entries in table repo_package_basherr where package name is not null (package name is defined in `defines`)
@@ -166,7 +166,9 @@ Here we list the acture implementation of issue detection.
 * 322: executable zero-size files, whose names are not NEWS, ChangeLog, INSTALL, TODO, COPYING, AUTHORS, README, README.md, README.txt, empty, placeholder, placeholder.txt, .\*, \_\_init\_\_.p\*
 * 323: uid>999 OR gid>999
 * 324: non-executable file in /bin, /sbin, /usr/bin; or non-executable directory
+* 401: find packages whose build dependencies are not found in source
 * 402: find entries in table package_duplicate
+* 411: find packages whose dependencies (Depends, Pre-Depends, Recommends, Suggests) not found in related deb repos
 * 412: find entries in table pv_package_duplicate
 * 421: find packages p1 and p2, where p1 and p2 have same regular files, p1 != p2, p1.arch=p2.arch or p2.arch=all, p1.repo_component=p2.repo_component, p1.testing <= p2.testing; also excludes Breaks, Replaces, Conflicts listed in deb package
 * 431: find package p2 that provides the library that package p1 needs. If no version matches, then find the same so-name, such that p2 is the most popular provider. Return fuzzy matches and empty matches.
