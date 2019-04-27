@@ -56,7 +56,7 @@ NOTE:
 |-----------|-----------|-----------|-----------|-----------|-----------|-----------|
 | **ice-pine64** | 24064 | Quad Core ARM Cortex-A53 @ 1.2GHz (Allwinner A64, Pine64 Plus) | 2GiB | | _Icenowy Zheng_ | On demand |
 | **Tegra** | 24096 | Quad Core ARM Cortex-A57 @ 1.74GHz (NVIDIA Jetson TX1 Developer Kit) | 4GiB | 446s (`-j5`) | _Mingcong Bai_| |
-| **Pine64** | 24399 | Quad Core ARM Cortex-A53 @ 1.2GHz (Allwinner A64, Pine64 Plus) | 2GiB | 1351s (`-j5`) | (Down)  _Mingcong Bai_| |
+| **Pine64** | 24399 | Quad Core ARM Cortex-A53 @ 1.2GHz (Allwinner A64, Pine64 Plus) | 2GiB | 1351s (`-j5`) |  _Mingcong Bai_| (Down) |
 | **JellyXavier** | 24444 | Octa Core NVIDIA "Carmel" @ 2.26GHz (NVIDIA Jetson AGX Xavier Developer Kit) | 16GiB | 227s (`-j9`) | _Mingcong Bai_ | |
 | **YetAnotherPine64** |24514| Quad Core ARM Cortex-A53 @ 1.2GHz (Allwinner A64, Pine64 Plus) | 2GiB | 1365s (`-j5`) | _Salted Fish_|(Down) Local mirror located at `/dev/sda4`|
 
