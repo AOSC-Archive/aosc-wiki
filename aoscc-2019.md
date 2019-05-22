@@ -10,7 +10,7 @@
 
 # 住房指南（进行中）
 
-Main Article: [[https://wiki.aosc.io/AOSCC-2019/Hotel]]
+Main Article: https://wiki.aosc.io/AOSCC-2019/Hotel
 
 - 第 1 阶段（05/21-05/24）：提名住宿酒店拼团选项
 - 第 2 阶段（05/25-06/01）：展开讨论，促进共识形成
