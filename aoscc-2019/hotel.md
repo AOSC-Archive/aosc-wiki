@@ -11,4 +11,4 @@
 
 | 名称 | 平均每晚价格 | 含早餐 | 前往会场交通耗时 | 前往合肥站交通耗时 | 前往合肥南站交通耗时 | 参考链接 | 提名者 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 合肥中心智选假日酒店 | 264 | True | 28 / 13 | ？ | ？ | [link](https://www.ihg.com.cn/holidayinnexpress/hotels/cn/zh/hefei/hfeex/hoteldetail) | @neruthes |
+| 合肥中心智选假日酒店 | 264 | True | 28 / 13 | 30 / 12 | 34 / 16 | [link](https://www.ihg.com.cn/holidayinnexpress/hotels/cn/zh/hefei/hfeex/hoteldetail) | @neruthes |
