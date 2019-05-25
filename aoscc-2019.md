@@ -9,7 +9,7 @@
 	- 3 * PowerBook G4 12''
 
 # 住房指南（进行中）
-## 决定流程
+## 公投流程
 
 Main Article: [AOSCC-2019/Hotel](/AOSCC-2019/Hotel)
 
@@ -26,16 +26,11 @@ Main Article: [AOSCC-2019/Hotel](/AOSCC-2019/Hotel)
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 合肥中心智选假日酒店 | 264 | True | 28 / 13 | 30 / 12 | 34 / 16 | [link](https://www.ihg.com.cn/holidayinnexpress/hotels/cn/zh/hefei/hfeex/hoteldetail) |
 
-AOSCC 2019 提供统一于「合肥中心智选假日酒店」的住宿，如希望参与统一安排请于 5 月内完成登记：
-
-- 地理位置介于会场和火车站之间方便交通。
-- 价格比较便宜，每晚 264 元，拼房人均 132 元每晚，含早餐。
-
-如选择合肥中心智选假日，请加入表格来提交住宿需求，以便灵活安排合理搭配：http://bit.ly/aoscc-2019-lodging-signup 。
+AOSCC 2019 提供统一于「合肥中心智选假日酒店」的住宿。如希望参与统一安排请于 5 月内完成登记。加入表格来提交住宿需求，以便灵活安排合理搭配：http://bit.ly/aoscc-2019-lodging-signup 。
 
 合肥中心智选假日的住宿事宜由 @neruthes 操办。
 
-亦可另行安排住宿，但住宿点总数量少为宜。
+亦可另行安排住宿，但住宿点总数越少越好。
 
 # 请假申请
 
