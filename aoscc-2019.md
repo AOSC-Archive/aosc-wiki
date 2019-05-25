@@ -9,6 +9,7 @@
 	- 3 * PowerBook G4 12''
 
 # 住房指南（进行中）
+## 决定流程
 
 Main Article: [AOSCC-2019/Hotel](/AOSCC-2019/Hotel)
 
@@ -19,7 +20,11 @@ Main Article: [AOSCC-2019/Hotel](/AOSCC-2019/Hotel)
 
 注：如无特殊说明，均以 UTC+8 为准。日期区间均为 00:00:00 开始、23:59:59 结束。
 
-# 住房指南（现已临时冻结）
+## 公投结果
+
+| 名称 | 平均每晚价格 | 含早餐 | 前往会场交通耗时 | 前往合肥站交通耗时 | 前往合肥南站交通耗时 | 参考链接 |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| 合肥中心智选假日酒店 | 264 | True | 28 / 13 | 30 / 12 | 34 / 16 | [link](https://www.ihg.com.cn/holidayinnexpress/hotels/cn/zh/hefei/hfeex/hoteldetail) |
 
 AOSCC 2019 提供统一于「合肥中心智选假日酒店」的住宿，如希望参与统一安排请于 5 月内完成登记：
 
