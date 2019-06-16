@@ -28,7 +28,7 @@ AOSCC 2019 长度为三天，每日上午 10 时至下午 5 时结束。和之�
 | ~ | 投票：Core 7 代号 | 11:45 - 12:00 | ACT |
 | 黎民雍 | 在 ThinkPad X200 上配置多 Payload 的 LibreBoot 自由固件 | 13:30 - 14:00 | LEC |
 | TL Lim | Pine64 相关（待定）| 14:15 - 15:00 | LEC |
-| Staph Zhang | AOSC Bazaar Round 2 | 15:15 - 16:00 | LEC |
+| Staph Zhang | AOSC Bazaar: Round 2 | 15:15 - 16:00 | LEC |
 | ~ | 社区未完事项讨论（AOSC Bazaar/Overlay/... 及日程内未完讨论）| 16:15 - 17:00 | DIS |
 | ~ | 抽奖：iBook G3 "Clamshell", Tangerine；装有 AOSC OS 及 Mac OS X 10.5 | 16:45 - 17:00 | ACT |
 
