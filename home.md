@@ -72,6 +72,10 @@ This topic provides information on AOSC OS's system specifications, naming schem
 - [Filesystem Hierarchy](/users/information/fs-hierarchy)
 - *Optimisation Overlays*
 
+## Conferencce
+
+- [AOSCC 2019](/aoscc-2019)
+
 # Errata
 
 This section contains known unresolved and resolved issues found in AOSC OS - for developers' and users' reference.
