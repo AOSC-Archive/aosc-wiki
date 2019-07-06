@@ -15,14 +15,14 @@
 	- AOSC 各种 Logo 徽章
 - 抽奖内容：
 	- 1 * iBook G3 "Clamshell" (300MHz, 2000).
-	- 5 - 10 * PineBook/PineTab.
+	- 5 * PineBook.
 
 # 日程
 AOSCC 2019 长度为三天，每日上午 10 时至下午 5 时结束。和之前的 AOSCC 不同，本次聚会将在每天分散地安排不同议程以方便与会者安排在现场的时间；除此之外，和之前一样，所有议程都会顺序进行，不存在多场地设定。以下：
 
 - 日程一律使用 24 小时格式表示时间。
 - 形式：
-	- ACT: Action（行动） 
+	- ACT: Action（活动） 
 	- DIS: Discussion（讨论）
 	- LEC: Lecture（讲演）
 	- SEM: Seminar（研讨）
@@ -34,7 +34,7 @@ AOSCC 2019 长度为三天，每日上午 10 时至下午 5 时结束。和之�
 | 白铭骢 | 开场：AOSC 过去一年的成就和教训，以及关于 Core 周期延后一年的计划 | 10:00 - 11:30 | LEC |
 | ~ | 投票：Core 7 代号 | 11:45 - 12:00 | ACT |
 | 黎民雍（以俊德） | 在 ThinkPad X200 上配置多 Payload 的 LibreBoot 自由固件 | 13:30 - 14:00 | LEC |
-| TL Lim | Pine64 相关（待定）| 14:15 - 15:00 | LEC |
+| TL Lim | Pine64, Its History, and Mainlining Efforts（待定）| 14:15 - 15:00 | LEC |
 | Staph Zhang | AOSC Bazaar: Round 2 | 15:15 - 16:00 | LEC |
 | ~ | 社区未完事项讨论（AOSC Bazaar/Overlay/... 及日程内未完讨论）| 16:15 - 17:00 | DIS |
 | ~ | 抽奖：iBook G3 "Clamshell", Tangerine；装有 AOSC OS 及 Mac OS X 10.5 | 16:45 - 17:00 | ACT |
@@ -42,7 +42,7 @@ AOSCC 2019 长度为三天，每日上午 10 时至下午 5 时结束。和之�
 ## Day 2
 | 讲者 | 标题 | 时间 | 形式 |
 |--------|--------|-------|----------|
-| Jactry Zeng | 关于 Wine 的应用性调试技能（待定）| 10:00 - 10:45 | LEC |
+| Jactry Zeng | Wine 应用使用问题现场调试 | 10:00 - 10:45 | LEC |
 | Gumblex | 关于 AOSC OS 软件包的质量检测和保障 | 11:00 - 12:00 | LEC |
 | Zero King | AOSC OS 安全更新流程及目前工作流设计成果 | 13:30 - 14:00 | LEC |
 | ~ | 社区未完事项讨论（AOSC Bazaar/Overlay/... 及日程内未完讨论）| 14:15 - 15:00 | DIS |
@@ -57,8 +57,7 @@ AOSCC 2019 长度为三天，每日上午 10 时至下午 5 时结束。和之�
 | Kexy Biscuit | 计划、跟踪、讨论：以敏捷流程优化社区工作的尝试 | 10:00 - 10:45 | LEC |
 | 黎民雍（以俊德） | DeployKit：下一代™ AOSC OS  安装程序 | 11:00 - 12:00 | LEC |
 | 白铭骢 | AOSC OS/Retro：用（包工的）生命关爱你的老旧设备，兼讨论调整一部分移植的维护方式 | 13:30 - 14:30 | SEM |
-| USTC 代表（待定）|（待定）| 14:45 - 15:45 | LEC |
-| ~ | 未完事项讨论（AOSC Bazaar/Overlay/... 及日程内未完讨论）| 16:00 - 16:30 | DIS |
+| ~ | 未完事项讨论（AOSC Bazaar/Overlay/... 及日程内未完讨论）| 14:45 - 16:30 | DIS |
 | ~ | 结尾：展望 AOSC 及 AOSCC 的 2020，意见收集 | 16:30 - 17:00 | DIS |
 
 ## 自由活动/消磨时间
@@ -80,8 +79,3 @@ AOSCC 2019 提供统一于「合肥中心智选假日酒店」的住宿。具体
 
 - 简体中文： http://bit.ly/aoscc-2019-attendance-request-zh-cn
 - 英文： http://bit.ly/aoscc-2019-attendance-request-en
-
-# 目前待定/办事项
-
-- 贴纸 → 绘图及排版需要帮助
-- 抽奖内容 → 目前正在联系 Pine64 方面
