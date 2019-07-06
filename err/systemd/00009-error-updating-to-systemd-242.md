@@ -1,7 +1,7 @@
 <!-- TITLE: ERR-SYS-00009: Error Updating to Systemd 242 -->
 <!-- SUBTITLE: Obsolete systemd services in memory cause problems -->
 
-## Symptoms
+# Symptoms
 
 AOSC has identified an issue with a systemd update. While installing update packages including `systemd` 242 or later versions, you may get an error message stating:
 
@@ -18,21 +18,21 @@ Errors were encountered while processing:
 E: Sub-process /usr/bin/dpkg returned an error code (1)
 ```
 
-## Affected platforms
+# Affected platforms
 
 - AOSC OS Core 5 and previous versions
 
-## Cause
+# Cause
 
 After updating `systemd`, some packages updated later still calls the obsolete systemd services in memory, causing unrecoverable problems.
 
-## Workaround
+# Workaround
 
 To resolve this problem, follow these steps:
 
 1. `apt full-upgrade systemd=1:241 ppp=2.4.7-3`
 2. `apt full-upgrade`
 
-## Next steps
+# Next steps
 
 We are working on a resolution and will provide an update in an upcoming release.
