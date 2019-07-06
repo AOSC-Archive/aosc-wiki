@@ -22,7 +22,7 @@ E: Sub-process /usr/bin/dpkg returned an error code (1)
 
 After updating `systemd` to `1:242` or newer, some packages updated later still calls the obsolete systemd protocol functions in memory, causing unrecoverable problems. 
 
-- This issues is introduced by [this commit](https://github.com/systemd/systemd/commit/3f10c66270b74530339b3f466c43874bb40c210f).
+- This issue is introduced by [this commit](https://github.com/systemd/systemd/commit/3f10c66270b74530339b3f466c43874bb40c210f).
 
 # Workaround
 If the error already occurred, doing a power cycle before continuing the system update should fix all the problems.
