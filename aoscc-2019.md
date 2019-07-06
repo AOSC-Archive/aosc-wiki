@@ -37,7 +37,7 @@ AOSCC 2019 长度为三天，每日上午 10 时至下午 5 时结束。和之�
 | TL Lim | Pine64, Its History, and Mainlining Efforts（待定）| 14:15 - 15:00 | LEC |
 | Staph Zhang | AOSC Bazaar: Round 2 | 15:15 - 16:00 | LEC |
 | ~ | 社区未完事项讨论（AOSC Bazaar/Overlay/... 及日程内未完讨论）| 16:15 - 17:00 | DIS |
-| ~ | 抽奖：iBook G3 "Clamshell", Tangerine；装有 AOSC OS 及 Mac OS X 10.5 | 16:45 - 17:00 | ACT |
+| ~ | 抽奖：PowerBook G4 \* 3；装有 AOSC OS 及 Mac OS X 10.5 | 16:45 - 17:00 | ACT |
 
 ## Day 2
 | 讲者 | 标题 | 时间 | 形式 |
@@ -48,7 +48,7 @@ AOSCC 2019 长度为三天，每日上午 10 时至下午 5 时结束。和之�
 | ~ | 社区未完事项讨论（AOSC Bazaar/Overlay/... 及日程内未完讨论）| 14:15 - 15:00 | DIS |
 | Zamir SUN | 开源社区的软件质量保障 | 15:00 - 15:45 | SEM |
 | ~ | 二手设备及物件交换活动 | 16:00 - 16:30 | ACT |
-| ~ | 抽奖：Pine64 提供设备；装有 AOSC OS | 16:30 - 17:00 | ACT |
+| ~ | 抽奖：PineBook \* 5；装有 AOSC OS | 16:30 - 17:00 | ACT |
 
 ## Day 3
 
