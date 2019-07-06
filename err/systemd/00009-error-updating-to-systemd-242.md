@@ -1,7 +1,5 @@
-<!-- TITLE: ERR-SYS-00009: Error Updating To Systemd 242 -->
+<!-- TITLE: ERR-SYS-00009: Error Updating to Systemd 242 -->
 <!-- SUBTITLE: Obsolete systemd services in memory cause problems -->
-
-# Error updating to `systemd` 242
 
 ## Symptoms
 
