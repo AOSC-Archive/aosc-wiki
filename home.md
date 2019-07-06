@@ -88,6 +88,7 @@ This section contains known unresolved and resolved issues found in AOSC OS - fo
 - [ERR-SYS-00006: VLC 3.0 and Above May Fail to Start in GNOME](/err/x11/00006-vlc-fails-to-launch-in-gnome)
 - [ERR-SYS-00007: Performance Issues with Fontconfig <= 2.12.92](/err/x11/00007-fc-cache-performance-issues)
 - [ERR-SYS-00008: CUPS "Filter Failed" with Printers Using the HPLIP Driver](/err/x11/00008-hplip-proprietary-plugins-version-mismatch)
+- [ERR-SYS-00009: Error Updating to Systemd 242](/err/systemd/00009-error-updating-to-systemd-242)
 
 # Knowledge Base
 
