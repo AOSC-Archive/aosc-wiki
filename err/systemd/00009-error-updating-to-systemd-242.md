@@ -25,8 +25,9 @@ After updating `systemd` to `1:242` or newer, some packages updated later still 
 - This issues is introduced by [this commit](https://github.com/systemd/systemd/commit/3f10c66270b74530339b3f466c43874bb40c210f).
 
 # Workaround
+If the error already occurred, doing a power cycle before continuing the system update should fix all problems.
 
-To resolve this problem, follow these steps:
+To fully resolve this problem, follow these steps to update the system:
 
 1. `apt full-upgrade systemd=1:241 ppp=2.4.7-3`
 2. `apt full-upgrade`
