@@ -3,7 +3,7 @@
 
 # Symptoms
 
-AOSC has identified an issue with a systemd update. While installing update packages including `systemd` `1:242` or later versions, you may get an error message stating:
+AOSC has identified an issue with a systemd update. While installing `systemd` `1:242` or later versions, you may get an error message stating:
 
 ```shell
 (Reading database ... 89562 files and directories currently installed.)
