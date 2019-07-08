@@ -27,7 +27,9 @@ After updating `systemd` to `1:242` or newer, some packages updated later still 
 # Workaround
 If the error already occurred, doing a power cycle before continuing the system update, or, follow these steps:
 
-1. `kill 1`
+```shell
+kill -1
+```
 
 # Next steps
 
