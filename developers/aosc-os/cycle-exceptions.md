@@ -36,7 +36,9 @@ The list below is a **concrete and specific** list of packages which could be co
 | BiliDan | `bilidan` | 2 |
 | ClamAV | `clamav` | 2 |
 | Hardware ID Data | `hwdata` | 2 |
+| Linux Kernels | `linux-kernel`, `linux-kernel-lts` | 2 |
 | PyTZ | `pytz` | 2 |
+| Telegram Desktop | `telegram-desktop` | 2 |
 | Time Zone Data | `tzdata` | 2 |
 | AOSC U-Boot Utilities | `u-boot-aosc-utils` | 2 |
 | You-Get | `you-get` | 2 |
