@@ -34,7 +34,7 @@ AOSCC 2019 长度为三天，每日上午 10 时至下午 5 时结束。和之�
 | 白铭骢 | 开场：AOSC 过去一年的成就和教训，以及关于 Core 周期延后一年的计划 | 10:00 - 11:30 | LEC |
 | ~ | 投票：Core 7 代号 | 11:45 - 12:00 | ACT |
 | 黎民雍（以俊德） | 在 ThinkPad X200 上配置多 Payload 的 LibreBoot 自由固件 | 13:30 - 14:00 | LEC |
-| TL Lim | Pine64, Its History, and Mainlining Efforts（待定）| 14:15 - 15:00 | LEC |
+| TL Lim | Pine64, Its History, and Mainlining Efforts | 14:15 - 15:00 | LEC |
 | Staph Zhang | AOSC Bazaar: Round 2 | 15:15 - 16:00 | LEC |
 | ~ | 社区未完事项讨论（AOSC Bazaar/Overlay/... 及日程内未完讨论）| 16:15 - 17:00 | DIS |
 | ~ | 抽奖：PowerBook G4 \* 3；装有 AOSC OS 及 Mac OS X 10.5 | 16:45 - 17:00 | ACT |
@@ -56,7 +56,7 @@ AOSCC 2019 长度为三天，每日上午 10 时至下午 5 时结束。和之�
 |--------|--------|-------|----------|
 | Kexy Biscuit | 提速降费：加速新版本应用软件引入的提案 | 10:00 - 10:45 | LEC |
 | 黎民雍（以俊德） | DeployKit：下一代™ AOSC OS  安装程序 | 11:00 - 12:00 | LEC |
-| 白铭骢 | AOSC OS/Retro：用（包工的）生命关爱你的老旧设备，兼讨论调整一部分移植的维护方式 | 13:30 - 14:30 | SEM |
+| 白铭骢 | AOSC OS/Retro: 浅谈针对老、旧、怪设备的维护工作及对主线开发的影响 | 13:30 - 14:30 | SEM |
 | 付佳伟 | USTC 镜像站的过去、现在和未来 | 14:45 - 15:30 | LEC |
 | ~ | 未完事项讨论（AOSC Bazaar/Overlay/... 及日程内未完讨论）| 15:45 - 16:30 | DIS |
 | ~ | 结尾：展望 AOSC 及 AOSCC 的 2020，意见收集 | 16:30 - 17:00 | DIS |
