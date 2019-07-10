@@ -36,8 +36,8 @@ AOSCC 2019 长度为三天，每日上午 10 时至下午 5 时结束。和之�
 | 黎民雍（以俊德） | 在 ThinkPad X200 上配置多 Payload 的 LibreBoot 自由固件 | 13:30 - 14:00 | LEC |
 | TL Lim | Pine64, Its History, and Mainlining Efforts | 14:15 - 15:00 | LEC |
 | Staph Zhang | AOSC Bazaar: Round 2 | 15:15 - 16:00 | LEC |
-| ~ | 社区未完事项讨论（AOSC Bazaar/Overlay/... 及日程内未完讨论）| 16:15 - 17:00 | DIS |
-| ~ | 抽奖：PowerBook G4 \* 3；装有 AOSC OS 及 Mac OS X 10.5 | 16:45 - 17:00 | ACT |
+| ~ | 社区未完事项讨论（AOSC Bazaar/Overlay/... 及日程内未完讨论）| 16:00 - 16:30 | DIS |
+| ~ | 抽奖：PineBook \* 5；装有 AOSC OS | 16:30 - 17:00 | ACT |
 
 ## Day 2
 | 讲者 | 标题 | 时间 | 形式 |
@@ -48,7 +48,7 @@ AOSCC 2019 长度为三天，每日上午 10 时至下午 5 时结束。和之�
 | Jactry Zeng | Wine 应用使用问题现场调试 | 14:15 - 15:00 | SEM |
 | Kexy Biscuit | 计划、跟踪、讨论：以敏捷流程优化社区工作的尝试 | 15:15 - 16:00 | LEC |
 | ~ | 二手设备及物件交换活动 | 16:00 - 16:30 | ACT |
-| ~ | 抽奖：PineBook \* 5；装有 AOSC OS | 16:30 - 17:00 | ACT |
+| ~ | 抽奖：PowerBook G4 \* 3；装有 AOSC OS 及 Mac OS X 10.5 | 16:45 - 17:00 | ACT |
 
 ## Day 3
 
