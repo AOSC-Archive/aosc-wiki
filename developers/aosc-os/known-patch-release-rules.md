@@ -26,6 +26,7 @@ Presented below is a table that defines all known patch release rules for upstre
 | Vile | Versions usually formatted as `x.y(n)`, where `(n)` is usually a Latin letter that indicates the patch-level version. Updates, say, from `9.8s` to `9.8t` is acceptable as a patch-level update. |
 | Nauty | Versions usually formatted as `x.y*r*(n)`, where `(n)` is an integer that indicates the patch-level version. Updates, say, from `2.6r10` to `2.6r11` is acceptable as a patch-level update. |
 | PCRE (8.x) | This series of PCRE is now under bugfix-only maintenance, and therefore any updates in the 8.x channel should be considered patch-level. [Source](https://www.pcre.org/original/changelog.txt) |
+| Tmux | Versions usually formatted as `x.y(n)`, where `(n)` is usually a Latin letter that indicates the patch-level version. Updates, say, from `2.3` to `2.3a` is acceptable as a patch-level update. |
 | Semantic Versioning, in general | If projects have versions, say, `x.y.z`  or even at times `x.y.z.n`, then any updates to `z` or `n` could be regarded as patch-level releases. may be even or odd numbers, unless otherwise specified, like in the example of GNOME. [Source](https://semver.org/). |
 
 # Table of Known Unreliable Update Rules
