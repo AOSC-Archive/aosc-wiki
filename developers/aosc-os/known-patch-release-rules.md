@@ -28,6 +28,7 @@ Presented below is a table that defines all known patch release rules for upstre
 | PCRE (8.x) | This series of PCRE is now under bugfix-only maintenance, and therefore any updates in the 8.x channel should be considered patch-level. [Source](https://www.pcre.org/original/changelog.txt) |
 | Tmux | Versions usually formatted as `x.y(n)`, where `(n)` is usually a Latin letter that indicates the patch-level version. Updates, say, from `2.3` to `2.3a` is acceptable as a patch-level update. |
 | Ceph | Versions usually formatted as  `x.y.z` , then any updates to `z` could be regarded as patch-level releases. `x` must be even numbers. |
+| Intel Threading Building Blocks | Versions usually formatted as `YYYY_U(n)`, where `(n)` is an integer, which represents the patch-level. |
 | Semantic Versioning, in general | If projects have versions, say, `x.y.z`  or even at times `x.y.z.n`, then any updates to `z` or `n` could be regarded as patch-level releases. may be even or odd numbers, unless otherwise specified, like in the example of GNOME. [Source](https://semver.org/). |
 
 # Table of Known Unreliable Update Rules
