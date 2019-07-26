@@ -1,4 +1,4 @@
-<!-- TITLE: AOSC Inter-Personal Guidelines -->
+<!-- TITLE: AOSC Inter-Personal Guidelines [Long Term RFC] -->
 <!-- SUBTITLE: A Guide of References for Your Happy Stay -->
 
 # Welcome to AOSC!
