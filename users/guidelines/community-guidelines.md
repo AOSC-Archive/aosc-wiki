@@ -19,31 +19,82 @@ Given this, it is necessary to explain our community's values and common underst
 
 # The Guidelines
 
-As most of our community activities are organised and communicated across multiple Telegram groups, the guidelines below will be organised into "community-wide" and "group-specific," and are specified in the scope of all AOSC Telegram groups.
+As most of our community activities are organised and communicated across multiple Telegram groups, the guidelines below will be organised into "community-wide" and "scenario-specific" chapters. *We do not, and have no right to limit, regulate, or manage individual member's behaviour outside of the community scope: all AOSC Telegram Groups, the [GitHub Organisation](https://github.com/AOSC-Dev/), and the [Community Portal](https://aosc.io/).*
+
+The guidelines are further grouped into "Hard Rules" and "Soft Rules":
+
+- Hard Rules are specified that *all* members of the community must comply, and failure to comply will result in penalties (specified under each categories).
+	- Admins who fails to comply will be stripped of their title immediately, and (at the same time) penalised with the same severity.
+- Soft Rules are specified as guidelines, and are only *suggestions* with the hope to maintain civilised, productive, and fun conversations. Failured to adhere to these Soft Rules will only make you increasingly unwelcomed, so keep that in mind.
 
 ## Community Wide
 
-### Hard Rules
+The rules specified below applies to all AOSC Telegram Groups, the [GitHub Organisation](https://github.com/AOSC-Dev/), and the [Community Portal](https://aosc.io/).
 
-Hard rules, or simply "rules," are those that we ask you to comply to *at all times*. Failure to comply will result in various penalties.
+### Hard Rules
 
 1. Political discussions are banned community-wide with one exception - the [Tuosai (托腮)](https://t.me/joinchat/BMnG9zvfjCgZUTIAoycKkg) channel.
 	- Offenders (including those participating in the topic) will be asked to stop. Repeated offenses will result in a one-time community-wide ban (you may re-enter immediately, but take the hint and stop).
-2. Suicidal topic, discussion of its methods, "live coverage" of your own or others suicide attempts are banned community-wide *with no exception*.
+2. Suicidal topics, discussion of its methods, "live coverage" of your own or others suicide attempts are banned community-wide *with no exception*.
 	- Offenders (including those participating in the topic) will be *immediately* subjected to a one-time community-wide ban (you may re-enter immediately, but take the hint and stop).
 3. Aggrevated verbal abuse and humiliation of the members or their implied relatives are banned community-wide *with no exception*.
+	- This does not include occasionally used profanities, or those used jokingly or to strengthen the tone - however, if anyone were to be annoyed, stop.
 	- Offenders (including those participating in the topic) will be asked to stop. Repeated offenses will result in a one-time community-wide ban (you may re-enter immediately, but take the hint and stop).
-4. Overly long messages that should have been posted to the [AOSC Pastebin](https://pastebin.aosc.io/) or alternatives are banned community-wide *with no exception*.
+4. Humiliation and discrimination of any person, religion, ideology, location, ... are banned community-wide *with no exception*.
 	- Offenders (including those participating in the topic) will be asked to stop. Repeated offenses will result in a one-time community-wide ban (you may re-enter immediately, but take the hint and stop).
+5. Overly long messages that should have been posted to the [AOSC Pastebin](https://pastebin.aosc.io/) or alternatives are banned community-wide *with no exception*.
+	- Offenders (including those participating in the topic) will be asked to stop. Repeated offenses will result in a one-time community-wide ban (you may re-enter immediately, but take the hint and stop).
+6. Bot spamming are banned community-wide *with no exception*.
+	- Offenders will be *immediately* subjected to a one-time community-wide ban (you may re-enter immediately, but take the hint and stop).
 
 ### Soft Rules
 
-1. Freedom of expression is generally guaranteed in our community.
-	- Arguments happen, don't hope for chatting group admins to break it up - just use your intelligence to help work it out (and some who are really good at working out arguments are admins in the first place). Respect is the only way against 
+1. Respect freedom of expression.
+	- Arguments happen, don't hope for channel admins to break it up - just use your intelligence to help work it out (and some who are really good at working out arguments are admins in the first place). Respect is the only way against 
 	- Call people whatever you like, as long as they are happy with that and it doesn't confuse the people involved.
 	- Not one can avoid disagreements over their opinions, resorting to verbal abuse can only harm your argument.
 	- Profanities are by no means banned, but do ponder if it helps with expressing your argument - and be aware that it *really fucking* annoys people if used excessively.
 	- Use whatever language you may like, but be aware of others' language proficiency. Quick tip: most members speak and write Chinese and English, so translations may help when needed (and they are generally grateful).
+2. Be humourous, as we love memes.
+	- Our [AOSCC Sticker Packs](https://github.com/AOSC-Dev/aoscc/tree/master/2019/stickers) are made from our own jokes - all from our conversations!
+3. Understand that you are unique, but not special.
+	- People listen to you because they are interested, and they do not have to do as you say - so stop asking.
+4. Coordinate topic changes, and avoid concurrent discussion.
+	- Concurrent discussions in a single channel are confusing and unproductive.
+	- Control the length of your discussion, even if your discussion have a huge following, do not last it for a whole day - it's just not nice.
+5. Stick to the topic - if you are in the Retro Computing channel, don't discuss your brand new MacBook there.
+
+
+## Main Group, and AOSC Workgroups
+
+The "Main Group (AOSC 社区频道; or referred to as 主群组)" is dedicated for AOSC project-related, and other relevant technological topics - this is the main location for development discussion. There are also other channels strictly used for AOSC-related work, as listed below:
+
+- AOSC Pak Squad
+- AOSC infra-wg
+
+Please adhere to all Community Wide rules specified above, and all additional rules specified below:
+
+### Hard Rules
+
+1. The use of Telegram Stickers and GIFs are banned.
+	- You may use emoji instead.
+	- Pictures and videos relevant to technical discussions are allowed.
+	- Offenders (including those participating in the topic) will be asked to stop. Repeated offenses will result in a one-time community-wide ban (you may re-enter immediately, but take the hint and stop).
+
+### Soft Rules
+
+1. Limit meme-ing and jokes - have fun, but not party.
+
+## The Tuosai (托腮) Channel, and Interest Groups
+
+Name in Chinese "AOSC 托腮群及招待点". Please note all "Community Wide" rules specified above.
+
+Other "Interest Groups" include:
+
+- AOSC Memes (AOSC 梗)
+- AOSC Moe-ification
+- AOSC Retro Computing
+- AOSCC Sticker Squad
 
 # Contributor Covenant Code of Conduct?
 
