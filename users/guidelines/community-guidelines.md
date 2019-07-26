@@ -9,7 +9,7 @@ Hi there, welcome to the Anthon Open Source Community - our community since late
 
 — Community (n.), definition from the *[Cambridge English Dictionary](https://dictionary.cambridge.org/dictionary/english/community)*
 
-At AOSC, we consider our common interest in the discovery of fun in computing - in particular, we focus on the advancement of open source software and their localisation in our day-to-day computing. Over the years, AOSC has focused most of its development effort on the [AOSC OS](/users/information/is-aosc-os-right-for-me) project, with various other projects spinned out in its interest. For instance, in early 2019, we have created the AOSC Retro Computing group, where vintage computing enthusiasts find their common topics in finding and buying them, restoring and playing with them, and porting a specially configured AOSC OS distribution on them.
+At AOSC, we consider our common interest in the discovery of fun in computing - in particular, we focus on the advancement of open source software and their localisation in our day-to-day computing. Over the years, AOSC has focused most of its development effort on the [AOSC OS](/users/information/is-aosc-os-right-for-me) project, with various other projects spun out from community interests. For instance, in early 2019, we have created the AOSC Retro Computing group, where vintage computing enthusiasts find their common topics in finding and buying them, restoring and playing with them, and porting a specially configured AOSC OS distribution on them.
 
 # Rationale: Why a Guideline?
 
@@ -35,7 +35,7 @@ The guidelines are further grouped into "Hard Rules" and "Soft Rules":
 
 - Hard Rules are specified that *all* members of the community must comply, and failure to comply will result in penalties (specified under each categories).
 	- Admins who fails to comply will be stripped of their title immediately, and (at the same time) penalised with the same severity.
-- Soft Rules are specified as guidelines, and are only *suggestions* with the hope to maintain civilised, productive, and fun conversations. Failured to adhere to these Soft Rules will only make you increasingly unwelcomed, so keep that in mind.
+- Soft Rules are specified as guidelines, and are only *suggestions* with the hope to maintain civilised, productive, and fun conversations. Failure to adhere to these Soft Rules will only make you increasingly unwelcomed, so keep that in mind.
 
 ## Community Wide
 
@@ -114,7 +114,7 @@ Please note all "Community Wide" rules specified above.
 
 Our community is built upon the given sense of community, and fulfilled by our said interests in computing - maintained (or discontinued) and managed upon the will of its members. While good in its intention, the *[Contributor Covenant Code of Conduct](https://www.contributor-covenant.org/version/1/4/code-of-conduct)* is unsuitable and unproductive for our community functions.
 
-We believe that our community members should grow from years of their own work and contribution, and find their recognition through technical understandings and their own characters. The static set of so-called personal "standards," as defined in C.C.C.o.C., deminishes the emphasis on human understanding and attempts to codify them as though they are already found to be universal.
+We believe that our community members should grow from years of their own work and contribution, and find their recognition through technical understandings and their own characters. The static set of so-called personal "standards," as defined in C.C.C.o.C., diminishes the emphasis on human understanding and attempts to codify them as though they are already found to be universal.
 
 In its "Our Responsibilities" chapter:
 
