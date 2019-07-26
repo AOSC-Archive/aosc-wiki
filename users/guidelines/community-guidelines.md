@@ -19,18 +19,31 @@ Given this, it is necessary to explain our community's values and common underst
 
 # The Guidelines
 
-As most of our community activities are organised and communicated across multiple Telegram groups, the guidelines below will be organised into "community-wide" and "group-specific." Again, with an empasis that these guidelines are:
-
-*Not in interest of limiting or implying penalty upon any actions not in accordance to these values and understandings.*
+As most of our community activities are organised and communicated across multiple Telegram groups, the guidelines below will be organised into "community-wide" and "group-specific," and are specified in the scope of all AOSC Telegram groups.
 
 ## Community Wide
 
-1. The freedom of expression is generally guaranteed in our community, but keep in mind that not all would be happy with what you are saying or implying. Consider this point common sense, and skip ahead if confident.
-	a. Arguments happen, don't hope for chatting group admins to break it up - just use your intelligence to help work it out (and some who are really good at working out arguments are admins in the first place). Respect is the only way against 
+### Hard Rules
+
+Hard rules, or simply "rules," are those that we ask you to comply to *at all times*. Failure to comply will result in various penalties.
+
+1. Political discussions are banned community-wide with one exception - the [Tuosai (托腮)](https://t.me/joinchat/BMnG9zvfjCgZUTIAoycKkg) channel.
+	- Offenders (including those participating in the topic) will be asked to stop. Repeated offenses will result in a one-time community-wide ban (you may re-enter immediately, but take the hint and stop).
+2. Suicidal topic, discussion of its methods, "live coverage" of your own or others suicide attempts are banned community-wide *with no exception*.
+	- Offenders (including those participating in the topic) will be *immediately* subjected to a one-time community-wide ban (you may re-enter immediately, but take the hint and stop).
+3. Aggrevated verbal abuse and humiliation of the members or their implied relatives are banned community-wide *with no exception*.
+	- Offenders (including those participating in the topic) will be asked to stop. Repeated offenses will result in a one-time community-wide ban (you may re-enter immediately, but take the hint and stop).
+4. Overly long messages that should have been posted to the [AOSC Pastebin](https://pastebin.aosc.io/) or alternatives are banned community-wide *with no exception*.
+	- Offenders (including those participating in the topic) will be asked to stop. Repeated offenses will result in a one-time community-wide ban (you may re-enter immediately, but take the hint and stop).
+
+### Soft Rules
+
+1. Freedom of expression is generally guaranteed in our community.
+	- Arguments happen, don't hope for chatting group admins to break it up - just use your intelligence to help work it out (and some who are really good at working out arguments are admins in the first place). Respect is the only way against 
 	- Call people whatever you like, as long as they are happy with that and it doesn't confuse the people involved.
-	- Profanities are by no means banned, but consider if it helps with expressing your argument - and that it *really fucking* annoys people if used excessively.
+	- Not one can avoid disagreements over their opinions, resorting to verbal abuse can only harm your argument.
+	- Profanities are by no means banned, but do ponder if it helps with expressing your argument - and be aware that it *really fucking* annoys people if used excessively.
 	- Use whatever language you may like, but be aware of others' language proficiency. Quick tip: most members speak and write Chinese and English, so translations may help when needed (and they are generally grateful).
-2. 
 
 # Contributor Covenant Code of Conduct?
 
