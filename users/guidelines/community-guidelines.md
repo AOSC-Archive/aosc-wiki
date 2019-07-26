@@ -25,8 +25,12 @@ As most of our community activities are organised and communicated across multip
 
 ## Community Wide
 
-1. The freedom of expression is generally guaranteed in our community, but keep in mind that not all would be happy with what you are saying or implying.
-	- Arguments will break out, and they will come to an end.
+1. The freedom of expression is generally guaranteed in our community, but keep in mind that not all would be happy with what you are saying or implying. Consider this point common sense, and skip ahead if confident.
+	1. Arguments happen, don't hope for chatting group admins to break it up - just use your intelligence to help work it out (and some who are really good at working out arguments are admins in the first place). Respect is the only way against 
+	- Call people whatever you like, as long as they are happy with that and it doesn't confuse the people involved.
+	- Profanities are by no means banned, but consider if it helps with expressing your argument - and that it *really fucking* annoys people if used excessively.
+	- Use whatever language you may like, but be aware of others' language proficiency. Quick tip: most members speak and write Chinese and English, so translations may help when needed (and they are generally grateful).
+2. 
 
 # Contributor Covenant Code of Conduct?
 
