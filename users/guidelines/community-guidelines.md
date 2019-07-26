@@ -1,4 +1,4 @@
-<!-- TITLE: AOSC Inter-Personal Guidelines (RFC) -->
+<!-- TITLE: AOSC Inter-Personal Guidelines -->
 <!-- SUBTITLE: A Guide of References for Your Happy Stay -->
 
 # Welcome to AOSC!
