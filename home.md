@@ -9,6 +9,7 @@ This is where all documentations, information, and guides will gather for users 
 
 The wiki is split into multiple big sections, targeting different audiences. Do use the search bar if lost though, it could come in handy.
 
+Be sure to note our [AOSC Inter-Personal Guidelines \[Long Term RFC\]](/users/guidelines/community-guidelines).
 
 # Developers
 This section contains guidebooks for AOSC developers, as well as more technically-inclined content for developers using AOSC OS.
