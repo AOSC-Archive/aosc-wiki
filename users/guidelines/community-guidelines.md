@@ -77,7 +77,7 @@ Please adhere to all Community Wide rules specified above, and all additional ru
 ### Hard Rules
 
 1. The use of Telegram Stickers and GIFs are banned.
-	- You may use emoji instead.
+	- You may use emoji, emoticon (kaomoji), and character-based expressions instead.
 	- Pictures and videos relevant to technical discussions are allowed.
 	- Offenders (including those participating in the topic) will be asked to stop. Repeated offenses will result in a one-time community-wide ban (you may re-enter immediately, but take the hint and stop).
 
