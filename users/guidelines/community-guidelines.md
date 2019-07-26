@@ -19,7 +19,7 @@ Given this, it is necessary to explain our community's values and common underst
 
 # The Guidelines
 
-As most of our community activities are organised and communicated across multiple Telegram groups, the guidelines below will be organised into "community-wide" and "scenario-specific" chapters. *We do not, and have no right to limit, regulate, or manage individual member's behaviour outside of the community scope: all AOSC Telegram Groups, the [GitHub Organisation](https://github.com/AOSC-Dev/), and the [Community Portal](https://aosc.io/).*
+As most of our community activities are organised and communicated across multiple Telegram groups, the guidelines below will be organised into "community-wide" and "scenario-specific" chapters. *We do not, and have no right to limit, regulate, or manage individual member's behaviour outside of the community scope: all AOSC Telegram Groups, the [GitHub Organisation](https://github.com/AOSC-Dev/), the [AOSC Wiki](https://wiki.aosc.io/), and the [Community Portal](https://aosc.io/).*
 
 The guidelines are further grouped into "Hard Rules" and "Soft Rules":
 
@@ -29,7 +29,7 @@ The guidelines are further grouped into "Hard Rules" and "Soft Rules":
 
 ## Community Wide
 
-The rules specified below applies to all AOSC Telegram Groups, the [GitHub Organisation](https://github.com/AOSC-Dev/), and the [Community Portal](https://aosc.io/).
+The rules specified below applies to all AOSC Telegram Groups, the [GitHub Organisation](https://github.com/AOSC-Dev/), the [AOSC Wiki](https://wiki.aosc.io/), and the [Community Portal](https://aosc.io/).
 
 ### Hard Rules
 
