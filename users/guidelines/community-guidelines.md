@@ -58,7 +58,7 @@ The rules specified below applies to all AOSC Telegram Groups, the [GitHub Organ
 2. Be humourous, as we love memes.
 	- Our [AOSCC Sticker Packs](https://github.com/AOSC-Dev/aoscc/tree/master/2019/stickers) are made from our own jokes - all from our conversations!
 3. Understand that you are unique, but not special.
-	- People listen to you because they are interested, and they do not have to do as you say - so stop asking.
+	- People listen to you because they are interested, and they do not have to do as you say.
 4. Coordinate topic changes, and avoid concurrent discussion.
 	- Concurrent discussions in a single channel are confusing and unproductive.
 	- Control the length of your discussion, even if your discussion have a huge following, do not last it for a whole day - it's just not nice.
