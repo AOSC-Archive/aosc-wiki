@@ -15,13 +15,13 @@ At AOSC, we consider our common interest in the discovery of fun in computing - 
 
 As suggested by its dictionary meaning, AOSC is a community of people, and its functions are carried out through years of inter-personal interactions. These inter-personal interactions, successful or not, has defined our sense of community, "a feeling that members have of belonging, a feeling that members matter to one another and to the group, and a shared faith that members' needs will be met through their commitment to be together." (*McMillan & Chavis, 1986*).
 
-Given this, it is necessary to explain our community's values and common understandings. Before we list all the specific guidelines, the "Principles" lists *unquestionable* rules that applies to all community members - and those failing to comply will be openly criticised.
+Given this, it is necessary to explain our community's values and common understandings. Before we list all the specific guidelines, the "Principles" lists *unquestionable* rules that applies to all community members.
 
 *In general, however, we are not in interest of limiting or implying penalty upon any actions not in accordance to these values and understandings.*
 
 # The Principles
 
-This section describes *unquestionable* rules that *all members of the community* must comply, those failing to do so will be openly criticised.
+This section describes *unquestionable* rules on which our community is built upon.
 
 - AOSC will remain as an *independent community of hobbists and enthusiasts*.
 - AOSC will *not* reward any contributors with *monetary or material goods*.
