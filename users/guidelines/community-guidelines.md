@@ -21,7 +21,7 @@ Given this, it is necessary to explain our community's values and common underst
 
 # The Principles
 
-This section describes *unquestionable* rules on which our community is built upon.
+This section describes *unquestionable* foundational principles on which our community is built.
 
 - AOSC will remain as an *independent community of hobbists and enthusiasts*.
 - AOSC will *not* reward any contributors with *monetary or material goods*.
