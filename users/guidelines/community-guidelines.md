@@ -112,7 +112,7 @@ Please note all "Community Wide" rules specified above.
 
 # Contributor Covenant Code of Conduct?
 
-Our community is built upon the given sense of community, and fulfilled by our said interests in computing - maintained (or discontinued) and managed upon the will of its members. While good in its intention, the *[Contributor Covenant Code of Conduct](https://www.contributor-covenant.org/version/1/4/code-of-conduct)* is unsuitable and unproductive for our functions.
+Our community is built upon the given sense of community, and fulfilled by our said interests in computing - maintained (or discontinued) and managed upon the will of its members. While good in its intention, the *[Contributor Covenant Code of Conduct](https://www.contributor-covenant.org/version/1/4/code-of-conduct)* is unsuitable and unproductive for our community functions.
 
 We believe that our community members should grow from years of their own work and contribution, and find their recognition through technical understandings and their own characters. The static set of so-called personal "standards," as defined in C.C.C.o.C., deminishes the emphasis on human understanding and attempts to codify them as though they are already found to be universal.
 
