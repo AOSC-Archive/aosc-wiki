@@ -33,7 +33,7 @@ The rules specified below applies to all AOSC Telegram Groups, the [GitHub Organ
 
 ### Hard Rules
 
-1. Political discussions are banned community-wide with one exception - the [Tuosai (托腮)](https://t.me/joinchat/BMnG9zvfjCgZUTIAoycKkg) channel.
+1. Discussions of politics, violence, religion, sex, and crime are banned community-wide with one exception - the [Tuosai (托腮)](https://t.me/joinchat/BMnG9zvfjCgZUTIAoycKkg) channel.
 	- Offenders (including those participating in the topic) will be asked to stop. Repeated offenses will result in a one-time community-wide ban (you may re-enter immediately, but take the hint and stop).
 2. Suicidal topics, discussion of its methods, "live coverage" of your own or others suicide attempts are banned community-wide *with no exception*.
 	- Offenders (including those participating in the topic) will be *immediately* subjected to a one-time community-wide ban (you may re-enter immediately, but take the hint and stop).
@@ -85,16 +85,20 @@ Please adhere to all Community Wide rules specified above, and all additional ru
 
 1. Limit meme-ing and jokes - have fun, but not party.
 
-## The Tuosai (托腮) Channel, and Interest Groups
+## The Tuosai (托腮) Channel
 
-Name in Chinese "AOSC 托腮群及招待点". Please note all "Community Wide" rules specified above.
+Name in Chinese "AOSC 托腮群及招待点". Please note all "Community Wide" rules specified above, and the exception(s) given to this particular channel.
 
-Other "Interest Groups" include:
+## Interest Groups
+
+AOSC's "Interest Groups" include:
 
 - AOSC Memes (AOSC 梗)
 - AOSC Moe-ification
 - AOSC Retro Computing
 - AOSCC Sticker Squad
+
+Please note all "Community Wide" rules specified above.
 
 # Contributor Covenant Code of Conduct?
 
