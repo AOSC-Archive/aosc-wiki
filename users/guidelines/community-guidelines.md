@@ -50,7 +50,7 @@ The rules specified below applies to all AOSC Telegram Groups, the [GitHub Organ
 ### Soft Rules
 
 1. Respect freedom of expression.
-	- Arguments happen, don't hope for channel admins to break it up - just use your intelligence to help work it out (and some who are really good at working out arguments are admins in the first place). Respect is the only way against 
+	- Arguments happen, don't hope for channel admins to break it up - just use your intelligence to help work it out (and some who are really good at working out arguments are admins in the first place). Mutual respect is the only effective mean to prevent personal attack.
 	- Call people whatever you like, as long as they are happy with that and it doesn't confuse the people involved.
 	- Not one can avoid disagreements over their opinions, resorting to verbal abuse can only harm your argument.
 	- Profanities are by no means banned, but do ponder if it helps with expressing your argument - and be aware that it *really fucking* annoys people if used excessively.
