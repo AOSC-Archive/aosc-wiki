@@ -40,6 +40,28 @@ AOSC OS is available for many different microprocessor architectures (and thus m
 	- All packages should be built for these architectures unless non-applicable or unbuildable.
 	- These architectures do not track the `explosive` branch.
 - Big Endian PowerPC 32/64-bit (`powerpc` and `ppc64`, respectively), and i586 (`i586`).
-	- These architectures are considered part of the "AOSC OS/Retro" project, and do not follow all the rules specified so far. (DOCUMENTATION PENDING).
+	- These architectures are considered part of the "AOSC OS/Retro" project, and do not follow all the rules specified so far.
 	- These architectures only track the `stable` branch, with a limited selection of packages deemed usable on older hardware.
 
+# In Practice
+
+This section describes the detailed procedures, which AOSC OS maintainers should adhere to.
+
+## The Tools
+
+The standard set of tools should be used by all maintainers. While we are unable to track the tools you've used (yet), these set of tools are known to generate the cleanest and most reproducible packages so far.
+
+- [Autobuild3](https://github.com/AOSC-Dev/autobuild3), the package generation tool which abstracts building procedures and package metadata into Autobuild3 manifests.
+- [ACBS](https://github.com/AOSC-Dev/acbs), organises and manages multiple Autobuild3 manifests in a tree-like fashion, see [aosc-os-abbs](https://github.com/AOSC-Dev/aosc-os-abbs).
+- [Ciel](https://github.com/AOSC-Dev/ciel), manages `systemd-nspawn` containers where packaging work are done, with tools for Autobuild3/ACBS configuration, basic containerised environment management (updates and some configuration), and environment rollbacks.
+- [pushpkg](https://github.com/AOSC-Dev/scriptlets/tree/master/pushpkg), a simple wrapper script for uploading packages to the [Community Repository](https://repo.aosc.io).
+
+You will also need a LDAP identity to upload packages and to gain access to our relay servers, or [Buildbots](https://wiki.aosc.io/developers/buildbots).
+
+For the detailed packaging procedures, please refer to the [AOSC OS Cadet Training (Work In Progress)](#) and the [AOSC OS Package Styling Manual](https://wiki.aosc.io/developers/aosc-os-package-styling-manual).
+
+## The Buildbots
+
+While you are welcome to use your own devices for packaging (given that you are using the tools above), there are fast machines provided by community members, and made available for maintainers.
+
+For more details on gaining access and the various protocols, please refer to the [AOSC Buildbot Information](https://wiki.aosc.io/developers/buildbots).
