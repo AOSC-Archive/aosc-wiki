@@ -42,7 +42,7 @@ This sub-section provides guidebooks and developer information for AOSC OS devel
 - [Known Patch Release Rules](/developers/aosc-os/known-patch-release-rules)
 - Resources for Packagers
 	- [AOSC OS Cadet Training (Under Construction)](/developers/aosc-os-cadet-training)
-	- [AOSC OS Maintenance Guildelines](/developers/aosc-os-maintenance-guidelines)
+	- [AOSC OS Maintenance Guildelines (RFC)](/developers/aosc-os-maintenance-guidelines)
 	- [AOSC OS Package Styling Manual](/developers/aosc-os-package-styling-manual)
 
 # Users
