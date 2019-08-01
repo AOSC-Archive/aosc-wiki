@@ -22,12 +22,13 @@ AOSC OS is maintained *concurrently* across four branches:
 
 AOSC OS is maintained on an seasonal cycle, and thus revolves around a three-month schedule:
 
-- The first two months:
+- The first two months - or the development period:
 	- Iteration Plans (e.g. the *[Iteration Plan for Summer 2019](https://github.com/AOSC-Dev/aosc-os-abbs/issues/1896)*)are drafted and published on GitHub as a milestone issue, and updated frequently by maintainers as new updates are made available and built.
 	- Updates are built on all branches and for all ports when applicable.
 - The last month - or the freezing period:
 	- The `stable`, `stable-proposed`, and `explosive` branches continues to receive updates as usual.
 	- The `testing` branch will no longer accept updates unless they are intended for security or bug fixes.
+	- `testing` branch updates will be tested in preparation to become the new basis of `stable`.
 
 ## The Ports
 
@@ -65,3 +66,45 @@ For the detailed packaging procedures, please refer to the [AOSC OS Cadet Traini
 While you are welcome to use your own devices for packaging (given that you are using the tools above), there are fast machines provided by community members, and made available for maintainers.
 
 For more details on gaining access and the various protocols, please refer to the [AOSC Buildbot Information](/developers/buildbots).
+
+## Package Introduction and Maintenance
+
+In principle, AOSC OS accepts and maintains all packages, unless one of the following applies:
+
+- The vendor or upstream does not permit redistribution, or file manipulation (if required or mandated by the [Styling Manual](/developers/aosc-os-package-styling-manual)).
+- The vendor or upstream refuses or failed to provide fixes for security vulnerability(ies).
+- The package is deprecated by the vendor or upstream.
+- The maintainers have voted against the introduction or continued maintenance of a specific (set of) package(s).
+
+## The Builds
+
+While building packages, the build environments *must* be controlled and minimal, where packages are only installed as required by the build-and-run-time dependencies.
+
+## Branch Merging
+
+In the AOSC OS maintenance procedures, branch mergings are bi-directional.
+
+### Merging
+
+With the branch and cycle descriptions specified above - as branch merging serves as the main mean of update introduction for the non-Proposal branches, there are certain limitations applied to the merging procedures.
+
+- During the two-month development periods, the branch merging follows the direction of: `explosive` → `testing` → `stable-proposed` → `stable`.
+- During the one-month freezing periods: the `stable-proposed` → `stable` merges are permitted, while all other mergings are *not permitted*.
+
+### Reversed Merging
+
+Reversed merges, or `stable` → `stable-proposed` → `testing` → `explosive` merges should be done periodically regardless of the cycle periods. However, during major merges, notifications will be made to prevent inconsistent merging.
+
+## Stable Update Testing
+
+Updates for the `stable` branch, unless known to be involved with one or more 0-day security vulnerability(ies) or already broken in `stable`, are committed, built, and tested through the `stable-proposed` branches. `stable-proposed` updates are merged in the following procedure/schedule:
+
+- Every Saturday at midnight, UTC: An issue is generated with a *comprehensive* list of updates committed and bulit on the `stable-proposed` branch.
+	- Package names, version deltas (e.g. 1.0.2 → 1.0.3), and changelogs (linked to specific [AOSC OS Packages](https://packages.aosc.io) pages).
+	- Checkboxes by each entry.
+- Testing procedures are defined case-by-case.
+	- TODO: Autobuild3/ACBS automatic quality assurance and reports.
+	- Basic functionalities (Launches? Comes with necessary files? Documentation readable and complete?).
+	- Styling checked against the [Styling Manual](/developers/aosc-os-package-styling-manual).
+- Packages, when tested, will have their respective entry(s) ticked, and packages moved on the repository from the `stable-proposed` pool to the `stable` pool on the package unit (one package "ticked", one moved).
+- The weekly issues will remain open for tracking testing work, and closed upon *full completion* (all checkboxes ticked).
