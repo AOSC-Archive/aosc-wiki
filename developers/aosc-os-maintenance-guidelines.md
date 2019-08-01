@@ -13,7 +13,7 @@ The concepts of branches, cycles, and ports are three main aspects that maintena
 
 AOSC OS is maintained *concurrently* across four branches:
 
-- Stable (`stable`): The main maintenance branch which most users should be using, updates include security updates, bug fixes, [exceptional updates](https://wiki.aosc.io/developers/aosc-os/cycle-exceptions) and [patch-level updates](https://wiki.aosc.io/developers/aosc-os/known-patch-release-rules).
+- Stable (`stable`): The main maintenance branch which most users should be using, updates include security updates, bug fixes, [exceptional updates](/developers/aosc-os/cycle-exceptions) and [patch-level updates](/developers/aosc-os/known-patch-release-rules).
 	- Stable, Proposed Updates (`stable-proposed`): The branch that feeds said updates into `stable`, unless the current `stable` already requires bug fixes (for instance, a currently available `stable` package has broken dependency).
 - Testing (`testing`): The main feature branch which users with particular interest in following the latest development and changes should be using, security updates, feature/major updates, and new packages are introduced from the `explosive` branch and tested *minimally* before shipping. Updates made available through this branch will be available for `stable` by the end of each update cycle.
 	- Testing, Proposed Updates (`explosive`): The branch that feeds said updates into `testing`, packages are introduced and *build-time tested*. No one should be using this branch, no matter what.
@@ -56,12 +56,12 @@ The standard set of tools should be used by all maintainers. While we are unable
 - [Ciel](https://github.com/AOSC-Dev/ciel), manages `systemd-nspawn` containers where packaging work are done, with tools for Autobuild3/ACBS configuration, basic containerised environment management (updates and some configuration), and environment rollbacks.
 - [pushpkg](https://github.com/AOSC-Dev/scriptlets/tree/master/pushpkg), a simple wrapper script for uploading packages to the [Community Repository](https://repo.aosc.io).
 
-You will also need a LDAP identity to upload packages and to gain access to our relay servers, or [Buildbots](https://wiki.aosc.io/developers/buildbots).
+You will also need a LDAP identity to upload packages and to gain access to our relay servers, or [Buildbots](/developers/buildbots).
 
-For the detailed packaging procedures, please refer to the [AOSC OS Cadet Training (Work In Progress)](#) and the [AOSC OS Package Styling Manual](https://wiki.aosc.io/developers/aosc-os-package-styling-manual).
+For the detailed packaging procedures, please refer to the [AOSC OS Cadet Training (Work In Progress)](#) and the [AOSC OS Package Styling Manual](/developers/aosc-os-package-styling-manual).
 
 ## The Buildbots
 
 While you are welcome to use your own devices for packaging (given that you are using the tools above), there are fast machines provided by community members, and made available for maintainers.
 
-For more details on gaining access and the various protocols, please refer to the [AOSC Buildbot Information](https://wiki.aosc.io/developers/buildbots).
+For more details on gaining access and the various protocols, please refer to the [AOSC Buildbot Information](/developers/buildbots).
