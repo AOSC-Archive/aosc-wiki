@@ -25,7 +25,7 @@ This section describes *unquestionable* foundational principles on which our com
 
 - AOSC will remain as an *independent community of hobbists and enthusiasts*.
 - AOSC will *not* reward any contributors with *monetary or material goods*.
-- AOSC will *not* tolerate any form of plagiarism.
+- AOSC will *not* tolerate any form of plagarism.
 
 # The Guidelines
 
@@ -53,7 +53,7 @@ The rules specified below applies to all AOSC Telegram Groups, the [GitHub Organ
 4. Humiliation and discrimination of any person, religion, ideology, location, ... are banned community-wide *with no exception*.
 	- Offenders (including those participating in the topic) will be asked to stop. Repeated offenses will result in a one-time community-wide ban (you may re-enter immediately, but take the hint and stop).
 5. Overly long messages that should have been posted to the [AOSC Pastebin](https://pastebin.aosc.io/) or alternatives are banned community-wide *with no exception*.
-	- Offenders (including those participating in the topic) will be asked to stop. Repeated offenses will result in a one-time community-wide ban (you may re-enter immediately, but take the hint and stop).
+	- Offenders will be asked to stop. Repeated offenses will result in a one-time community-wide ban (you may re-enter immediately, but take the hint and stop).
 6. Bot spamming are banned community-wide *with no exception*.
 	- Offenders will be *immediately* subjected to a one-time community-wide ban (you may re-enter immediately, but take the hint and stop).
 
