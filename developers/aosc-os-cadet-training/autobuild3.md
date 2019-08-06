@@ -39,3 +39,15 @@ A collection of variables are pre-defined by Autobuild3 and used as build-time d
 
 # Running and Utilising Autobuild3
 
+To build a package using Autobuild3, simply go to a directory containing both the pre-processed (or extracted) source files, the `autobuild/` directory, and execute:
+
+```
+# autobuild
+```
+
+However, with the introduction of [ACBS](/developers/aosc-os-cadet-training/acbs) (originally known as [ABBS](https://github.com/AOSC-Dev/abbs) and later [Ciel](/developers/aosc-os-cadet-training/ciel), Autobuild3 is now rarely used as a standalone tool. In particular, with the requirements specified in the [AOSC OS Maintenance Guidelines](https://wiki.aosc.io/developers/aosc-os-maintenance-guidelines), Ciel is now *required* as a standard frontend for AOSC OS packaging.
+
+Please refer to the following pages for details:
+
+- [AOSC OS Cadet Training/Ciel](/developers/aosc-os-cadet-training/ciel)
+- [AOSC OS Cadet Training/ACBS](/developers/aosc-os-cadet-training/acbs)
