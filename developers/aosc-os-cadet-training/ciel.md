@@ -139,3 +139,43 @@ To delete a particular instance:
 ```
 # ciel del $INSTANCE_NAME
 ```
+
+## Building and Rolling Back
+
+As mentioned above, Ciel's advantage lies in the fact that it allows for containerised build environments that can be easily rolled back to their "clean" state (or the "base" layer without overlayed changes). As specified in the [AOSC OS Maintenance Guildelines](https://wiki.aosc.io/developers/aosc-os-maintenance-guidelines#the-builds):
+
+*While building packages, the build environments must be controlled, updated, and minimal, where packages are only installed as required by the build-and-run-time dependencies.*
+
+Ciel can help you achieve just that. In a standard packaging routine, maintainer will first ensure that their Ciel workspace is up-to-date:
+
+```
+# ciel update-os
+```
+
+Then, a package is built from the ABBS tree, for instance, `extra-editors/vim`:
+
+```
+# ciel build -i $INSTANCE_NAME extra-editors/vim
+```
+
+Or in a short form:
+
+```
+# ciel build -i $INSTANCE_NAME vim
+```
+
+Vim would be built successfully, hopefully - and the maintainer will see the resulting package(s) in `OUTPUT/`. The maintainer then must rollback the instance before re-using it for the next package:
+
+```
+# ciel rollback -i $INSTANCE_NAME
+```
+
+### The Lazy-n-Dirty Way
+
+Ciel also allows for building a series of packages in the same instance. This is useful for larger package groups, like the `groups/kde-applications` sequence, containing 200+ packages. Ciel does not yet support generating a local repository, so for now, sequentially built packages cannot be built in a clean environment. While this is by no means encouraged, this is unfortunately still a necessity in a manual package routine.
+
+To build a series of packages in one session:
+
+```
+# ciel build -i $INSTANCE_NAME nano vim emacs
+```
