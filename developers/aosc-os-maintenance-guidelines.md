@@ -78,7 +78,7 @@ In principle, AOSC OS accepts and maintains all packages, unless one of the foll
 
 ## The Builds
 
-While building packages, the build environments *must* be controlled and minimal, where packages are only installed as required by the build-and-run-time dependencies.
+While building packages, the build environments *must* be controlled, updated, and minimal, where packages are only installed as required by the build-and-run-time dependencies.
 
 ## Branch Merging
 
