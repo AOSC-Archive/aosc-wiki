@@ -192,3 +192,22 @@ In this case, you may wait for a minute or two and retry. However, executing `ci
 
 ## Failed .scope for Instance(s)
 
+Sometimes, when attempting to launch an instance (and this happens sometimes after repeated use), you may see an error message similar to the one below:
+
+```
+2018/07/06 01:12:27 build.go:107: cancelled: Failed to register machine: Unit machine-amd64_40001.scope already exists.
+```
+
+Or simply:
+
+```
+instances.go:184: session was accidentally terminated
+```
+
+In this case, refer to the `.scope` name above, and execute the following command:
+
+```
+# systemctl reset-failed machine-amd64_40001.scope
+```
+
+Executing `ciel doctor` may help you investigate the current state of the instance(s), and [report it to us](https://github.com/AOSC-Dev/ciel/issues/new).
