@@ -48,6 +48,21 @@ By default, Ciel downloads and extracts the newest BuildKit tarball found in the
 
 *You may also choose to download any other system tarballs from the [system release site](https://releases.aosc.io/), or any other system tarballs that uses the systemd init system (for the purpose of systemd-nspawn).*
 
+## Deploying an ABBS Tree
+
+By default, Ciel clones the `aosc-os-abbs` tree on the `testing` branch - simply execute the command below:
+
+```
+# ciel load-tree
+```
+
+Otherwise, you may clone your own tree to the `TREE` directory at your Ciel workspace directory:
+
+```
+$ cd /path/to/your/future/workspace
+# git clone https://git/random-repository.git TREE
+```
+
 ## Global Configuration
 
 The following step configures the "base" layer of the Ciel environment, or the "global configuration":
@@ -64,7 +79,7 @@ And follow the instructions on your console:
                  set tree path OK
 
                            === Maintainer Info of UNDERLYING OS ===
-                           >>> (Foo Bar <myname@example.com>): Mingcong Bai <jeffbai@aosc.io>
+                           >>> (Foo Bar <myname@example.com>): Dear Maintainer <maintainer@aosc.io>
 
                 set maintainer OK
 
@@ -74,5 +89,10 @@ And follow the instructions on your console:
                 disable DNSSEC OK
 
                            === Would you like to edit sources.list of UNDERLYING OS? ===
-                           >>> (yes/no): no
+                           >>> (yes/no): yes
 ```
+
+Inputting `yes` at the last question will launch GNU nano for you to edit `/etc/apt/sources.list` (the APT repository configuration file) in the container.
+
+## Creating an Instance
+
