@@ -94,5 +94,18 @@ And follow the instructions on your console:
 
 Inputting `yes` at the last question will launch GNU nano for you to edit `/etc/apt/sources.list` (the APT repository configuration file) in the container.
 
-## Creating an Instance
+## Managing Instances
 
+To create a Ciel instance:
+
+```
+# ciel add $INSTANCE_NAME
+```
+
+And configure the instance that you've just created:
+
+```
+# ciel config -i $INSTANCE_NAME
+```
+
+The instructions will be much of the same when you
