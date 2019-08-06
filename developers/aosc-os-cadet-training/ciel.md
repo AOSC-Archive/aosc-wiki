@@ -60,18 +60,18 @@ And follow the instructions on your console:
 
 ```
              detect autobuild3 OK
-                           detect acbs OK
-                      set tree path OK
+                   detect acbs OK
+                 set tree path OK
 
                            === Maintainer Info of UNDERLYING OS ===
                            >>> (Foo Bar <myname@example.com>): Mingcong Bai <jeffbai@aosc.io>
 
-                    set maintainer OK
+                set maintainer OK
 
                            === Would you like to disable DNSSEC feature of UNDERLYING OS? ===
                            >>> (yes/no): yes
 
-                    disable DNSSEC OK
+                disable DNSSEC OK
 
                            === Would you like to edit sources.list of UNDERLYING OS? ===
                            >>> (yes/no): no
