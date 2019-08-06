@@ -25,17 +25,17 @@ The `autobuild/defines` *defines* most aspects of a package's build-time and ins
 - Package Description
 - Build Parametres
 
-[Detailed Description of the `autobuild/defines` File](/developers/aosc-os-cadet-training/autobuild3/defines)
+[Detailed Description: `autobuild/defines` File](/developers/aosc-os-cadet-training/autobuild3/defines)
 
 # Pre-defined Variables
 
 A collection of variables are pre-defined by Autobuild3 and used as build-time defaults.
 
-[Detailed Description of the Autobuild3 Pre-defined Variables](/developers/aosc-os-cadet-training/autobuild3/pre-defined-variables)
+[Detailed Description: Autobuild3 Pre-defined Variables](/developers/aosc-os-cadet-training/autobuild3/pre-defined-variables)
 
 # Build Scripts, Scriptlets, and Extra Files
 
-[Detailed Description of the Autobuild3 Build Scripts, Scriptlets, and Extra Files](/developers/aosc-os-cadet-training/autobuild3/scripts-and-extra-files)
+[Detailed Description: Autobuild3 Build Scripts, Scriptlets, and Extra Files](/developers/aosc-os-cadet-training/autobuild3/scripts-and-extra-files)
 
 # Running and Utilising Autobuild3
 
