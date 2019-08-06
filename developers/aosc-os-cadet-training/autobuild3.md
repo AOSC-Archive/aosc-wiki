@@ -9,10 +9,13 @@ Autobuild3 manifests constitutes a powerful set of files that takes care of pack
 
 In the interest of readability, this guidebook will be divided into several sections:
 
-- The `autobuild/defines` file.
-- Pre-defined variables.
-- Build scripts, scriptlets, and extra files.
-- Running and Utilising Autobuild3.
+- How Does Autobuild3 Work?
+- The `autobuild/defines` File
+- Pre-Defined Variables
+- Build Scripts, Scriptlets, and Extra Files
+- Running and Utilising Autobuild3
+
+# How Does Autobuild3 Work?
 
 # The `autobuild/defines` File
 
@@ -27,7 +30,7 @@ In the interest of readability, this guidebook will be divided into several sect
 
 [Detailed Description: `autobuild/defines` File](/developers/aosc-os-cadet-training/autobuild3/defines)
 
-# Pre-defined Variables
+# Pre-Defined Variables
 
 A collection of variables are pre-defined by Autobuild3 and used as build-time defaults.
 
