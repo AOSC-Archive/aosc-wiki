@@ -108,4 +108,34 @@ And configure the instance that you've just created:
 # ciel config -i $INSTANCE_NAME
 ```
 
-The instructions will be much of the same when you
+The instructions on the console will be the same when you perform a [global configuration](/developers/aosc-os-cadet-training/ciel#global-configuration), just note that any configuration that deviates from its global counterpart will be *overridden*. This step also registers the ABBS tree with the instance.
+
+To list the statuses all instances found in the workspace, simply execute:
+
+```
+# ciel
+```
+
+To execute a shell in a particular instance:
+
+```
+# ciel shell -i $INSTANCE_NAME
+```
+
+To shutdown a particular instance:
+
+```
+# ciel down -i $INSTANCE_NAME
+```
+
+To shutdown *all* instances:
+
+```
+# ciel down
+```
+
+To delete a particular instance:
+
+```
+# ciel del $INSTANCE_NAME
+```
