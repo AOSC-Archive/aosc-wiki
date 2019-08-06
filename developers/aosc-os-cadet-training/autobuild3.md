@@ -16,7 +16,7 @@ In the interest of readability, this guidebook will be divided into several sect
 
 # The `autobuild/defines` File
 
-The `autobuild/defines` *defines* most aspects of a package's build-time and install-time:
+`autobuild/defines` *defines* most aspects of a package's build-time and install-time:
 
 - Package Name
 - Package Version/Revision
