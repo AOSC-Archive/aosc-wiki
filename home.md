@@ -110,7 +110,7 @@ This section lists all current and historic AOSC OS Security Advisories.
 
 - [List of Announced AOSAs (2017)](/aosa/archive/2017)
 - [List of Announced AOSAs (2018)](/aosa/archive/2018)
-- [List of announced AOSAs (2019)](/aosa/archive/2019)
+- [List of Announced AOSAs (2019)](/aosa/archive/2019)
 
 # Mirrors
 
