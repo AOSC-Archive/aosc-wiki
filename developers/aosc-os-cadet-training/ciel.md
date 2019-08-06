@@ -170,7 +170,7 @@ Vim would be built successfully, hopefully - and the maintainer will see the res
 # ciel rollback -i $INSTANCE_NAME
 ```
 
-### The Lazy-n-Dirty Way
+## The Lazy-n-Dirty Way
 
 Ciel also allows for building a series of packages in the same instance. This is useful for larger package groups, like the `groups/kde-applications` sequence, containing 200+ packages. Ciel does not yet support generating a local repository, so for now, sequentially built packages cannot be built in a clean environment. While this is by no means encouraged, this is unfortunately still a necessity in a manual package routine.
 
@@ -179,3 +179,16 @@ To build a series of packages in one session:
 ```
 # ciel build -i $INSTANCE_NAME nano vim emacs
 ```
+
+# Known Issues and Workarounds
+
+Ciel's own implementation, as well as `systemd-nspawn`'s container management routines are by no means perfect, and sometimes issue may arise. Here are a list of issue-and-solutions that we have found during our maintenance workflow.
+
+## Instances Takes a Long Time to Shutdown
+
+Sometimes when `ciel down` was executed, the instance(s) may take 90 seconds (or any amount specified by the systemd configuration) to shutdown - or fail to shut down at all (while Ciel shows an "OK" regardless).
+
+In this case, you may wait for a minute or two and retry. However, executing `ciel doctor` may help you investigate the current state of the instance(s), and [report it to us](https://github.com/AOSC-Dev/ciel/issues/new).
+
+## Failed .scope for Instance(s)
+
