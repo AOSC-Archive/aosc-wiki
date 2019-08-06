@@ -50,3 +50,29 @@ By default, Ciel downloads and extracts the newest BuildKit tarball found in the
 
 ## Global Configuration
 
+The following step configures the "base" layer of the Ciel environment, or the "global configuration":
+
+```
+# ciel config -g
+```
+
+And follow the instructions on your console:
+
+```
+             detect autobuild3 OK
+                           detect acbs OK
+                      set tree path OK
+
+                           === Maintainer Info of UNDERLYING OS ===
+                           >>> (Foo Bar <myname@example.com>): Mingcong Bai <jeffbai@aosc.io>
+
+                    set maintainer OK
+
+                           === Would you like to disable DNSSEC feature of UNDERLYING OS? ===
+                           >>> (yes/no): yes
+
+                    disable DNSSEC OK
+
+                           === Would you like to edit sources.list of UNDERLYING OS? ===
+                           >>> (yes/no): no
+```
