@@ -31,3 +31,22 @@ $ make
 # make install
 ```
 
+Finally, find a good place to initialise Ciel:
+
+```
+$ cd /path/to/your/future/workspace
+# ciel init
+```
+
+## Deploying a Container
+
+By default, Ciel downloads and extracts the newest BuildKit tarball found in the repository - simply execute the command below:
+
+```
+# ciel load-os
+```
+
+*You may also choose to download any other system tarballs from the [system release site](https://releases.aosc.io/), or any other system tarballs that uses the systemd init system (for the purpose of systemd-nspawn).*
+
+## Global Configuration
+
