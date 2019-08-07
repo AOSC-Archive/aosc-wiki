@@ -72,7 +72,7 @@ Part of Autobuild3's initial design was to provide a collection of pre-defined b
 |---------------|--------------------|-----------------------------------------|-------------------------------------------|
 | `autotools` |  For sources that utilise the GNU Autotools (Autoconf, Automake, etc.). This routine can generate `./configure` scripts, execute them with default and packager-specified parametres, and execute the subsequent `make` and `make install` commands. | One of `"$SRCDIR"/bootstrap`, `"$SRCDIR"/autogen.sh`, `"$SRCDIR"/configure.ac`, or `"$SRCDIR"/configure` | Yes |
 | `cmake` | For sources that utilise CMake for build script generation, and use GNU Make to execute the build scripts. This routine can generate GNU Make-compatible Makefiles by executing `cmake` with default and packager-specified parametres, and execute the subsequent `make` and `make install` commands. | `"$SRCDIR"/CMakeLists.txt` | Yes |
-| `meson` | For sources that utilise CMake for build script generation, and use Ninja to execute the build scripts. This routine can generate Ninja scripts by executing `meson` with default and packager-specified parametres, and execute the subsequent `ninja` and `ninja install` commands. | `"$SRCDIR"/meson.build` | Yes |
+| `meson` | For sources that utilise Meson for build script generation, and use Ninja to execute the build scripts. This routine can generate Ninja scripts by executing `meson` with default and packager-specified parametres, and execute the subsequent `ninja` and `ninja install` commands. | `"$SRCDIR"/meson.build` | Yes |
 |
 
 ## Build/Toolchain Parametres
