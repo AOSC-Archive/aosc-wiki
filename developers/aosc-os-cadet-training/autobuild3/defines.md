@@ -66,6 +66,12 @@ This section details variables that defines the ways to specify and control the 
 
 ## Build/Toolchain Types
 
+Part of Autobuild3's initial design was to provide a collection of pre-defined build routines to ease manifest writing. This is manifested in the variable `ABTYPE=`. Here below is a table detailing all pre-defined routines currently implemented, and listed from top to bottom by the priority in which Autobuild3 will try when `ABTYPE=` is not explicitly specified:
+
+| ABTYPE | Description |
+|---------------|--------------------|
+|
+
 ## Build/Toolchain Parametres
 
 ## Build-Time Switches
