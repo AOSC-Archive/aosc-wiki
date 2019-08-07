@@ -74,7 +74,7 @@ Part of Autobuild3's initial design was to provide a collection of pre-defined b
 | `cmake` | For sources that utilise CMake for build script generation, and use GNU Make to execute the build scripts. This routine can generate GNU Make-compatible Makefiles by executing `cmake` with default and packager-specified parametres, and execute the subsequent `make` and `make install` commands. | `"$SRCDIR"/CMakeLists.txt` | Yes |
 | `meson` | For sources that utilise Meson for build script generation, and use Ninja to execute the build scripts. This routine can generate Ninja scripts by executing `meson` with default and packager-specified parametres, and execute the subsequent `ninja` and `ninja install` commands. | `"$SRCDIR"/meson.build` | Yes |
 | `waf` | For sources that utilise Waf for build script generation, building, and file installation. This routine uses `waf configure`, `waf build`, and `waf install` commands with default and package-specified parametres. | No |
-| 
+| `cmakeninja` | For sources that utilise CMake for build script generation, and use Ninja to execute the build scripts. This routine can generate Ninja scripts by executing `cmake` with default and packager-specified parametres, and execute the subsequent `ninja` and `ninja install` commands. | `"$SRCDIR"/CMakeLists.txt` | Yes |
 
 ## Build/Toolchain Parametres
 
