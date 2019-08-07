@@ -68,9 +68,10 @@ This section details variables that defines the ways to specify and control the 
 
 Part of Autobuild3's initial design was to provide a collection of pre-defined build routines to ease manifest writing. This is manifested in the variable `ABTYPE=`. Here below is a table detailing all pre-defined routines currently implemented, and listed from top to bottom by the priority in which Autobuild3 will try when `ABTYPE=` is not explicitly specified:
 
-| ABTYPE | Description | Source File Requirement |
-|---------------|--------------------|-----------------------------------------|
-| `autotools` |  For sources that utilises the GNU Autotools (Autoconf, Automake, etc.). This routine can generate `./configure` scripts, execute them with default and packager-specified parametres, and execute the subsequent `make` and `make install` commands. | One of `"$SRCDIR"/bootstrap`, `"$SRCDIR"/autogen.sh`, `"$SRCDIR"/configure.ac`, or `"$SRCDIR"/configure` |
+| ABTYPE | Description | Source File Requirement | Shadow Builds Supported? |
+|---------------|--------------------|-----------------------------------------|-------------------------------------------|
+| `autotools` |  For sources that utilise the GNU Autotools (Autoconf, Automake, etc.). This routine can generate `./configure` scripts, execute them with default and packager-specified parametres, and execute the subsequent `make` and `make install` commands. | One of `"$SRCDIR"/bootstrap`, `"$SRCDIR"/autogen.sh`, `"$SRCDIR"/configure.ac`, or `"$SRCDIR"/configure` | Yes |
+| `cmake` | For sources that utilise CMake for build script generation, and use GNU Make to execute the build scripts. This routine can generate GNU Make-compatible Makefiles by executing `cmake` with default and packager-specified parametres, and execute the subsequent `make` and `make install` commands. | `"$SRCDIR"/CMakeLists.txt` | Yes |
 
 ## Build/Toolchain Parametres
 
