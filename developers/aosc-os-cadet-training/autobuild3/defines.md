@@ -42,7 +42,21 @@ The following sections will discuss what these declarations mean, and how they s
 
 In most cases, Autobuild3 can handle the building of a package with the following variables defined:
 
-- `$PKGNAME`
+| Variable | Value Format | Usage | Essential? |
+|--------------|----------------------|----------------|--------------|
+| `PKGNAME=` | String, No Space | Defines the name of the package (i.e. `plasma-desktop`). | Yes |
+| `PKGVER=` | String, No Space | Defines the version of the package (i.e. `5.16.4`). | Yes ¹ |
+| `PKGREL=` | Integer | Defines the revision level of the package (i.e. the `1` in `5.16.4-1`). | Yes ¹ |
+| `PKGDES=` | String | Defines the package's description (i.e. `Plasma interface for desktop computers`). | Yes |
+| `PKGSEC=` | String, No Space | Defines the section in which the package belongs, using sections from the [pre-defined list of sections](https://github.com/AOSC-Dev/autobuild3/blob/master/sets/section) is recommended. | Yes |
+| `PKGDEP=` | String, Space Separated | Defines the list of dependency(ies) of the package, defaults to `>=` the newest version available from the repository. | No |
+| `BUILDDEP=` | String, Space Separated | Defines the list of build-time dependency(ies) of the package, *not required when end-users install the package*. | No |
+| `PKGRECOM=` | String, Space Separated | Defines the list of "soft dependencies" of the package, these dependencies will be automatically installed when available, but can be removed later by end-users' discretion. | No |
+| `PKGSUG=` | String, Space Separated | Defines the list of "suggested extras" of the package, package listed in this variable will *not* be installed by default, but end-users will be notified by their package manager(s). | No |
+| `PKGBREAK=` | String, Space Separated | Defines the list of package(s) that the current package version "breaks" (ABI, API, user interface, etc.). | No |
+| `PKGCONFL=` | String, Space Separated | Defines the list of package(s) that the current package version conflicts with (i.e. cannot be installed concurrently). | No |
+| `PKGPROV=` | String, Space Separated | Defines the list of package(s) that the package provides or serves the alias to (i.e. `nano` can `PKGPROV` the package `default-editor`). | No |
+| `PKGREP=` | String, Space Separated | Defines the list of package(s) that the package replaces or obseletes (i.e. `gnome-shell` is a new set of technologies that replaces `gnome-desktop2`). | No |
 
 # Build Parametres
 
