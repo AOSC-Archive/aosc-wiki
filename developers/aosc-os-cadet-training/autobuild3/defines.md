@@ -64,7 +64,7 @@ In most cases, Autobuild3 can handle the building of a package with the followin
 
 This section details variables that defines the ways to specify and control the pre-defined build routines implemented by Autobuild3, more nuanced compiler flags, build-time thread count, and post-build behaviours.
 
-## Build/Toolchain Types
+## Routine Types
 
 Part of Autobuild3's initial design was to provide a collection of pre-defined build routines to ease manifest writing. This is manifested in the variable `ABTYPE=`. Here below is a table detailing all pre-defined routines currently implemented, and listed from top to bottom by the priority in which Autobuild3 will try when `ABTYPE=` is not explicitly specified:
 
@@ -82,8 +82,11 @@ Part of Autobuild3's initial design was to provide a collection of pre-defined b
 | `qtproj` | For Qt projects managed by `.pro` files. This routine builds with Qt 5 by default, executes `qmake` with default and packager-specified parametres to generate a GNU Make-compatible Makefile. Finally, this routine executes the subsequent `make` and `make install` commands. | `"$SRCDIR"/*.pro` | No |
 | `ruby` | For standardised Ruby Gem packages. This routine executes `gem` to build and install the said packages. | A file with a recognisable Gem format once renamed with the `.gem` suffix | No |
 | `npm` | For standardised NPM (Node Package Manager) packages. This routine executes `npm install` to build and install the said packages. | A file with a recognisable NPM format once renamed with the `.tgz` suffix | No |
+| `self` [^2] | Simply executes the `autobuild/build` file as a Bash script, see [Build Scripts, Scriptlets, and Extra Files](/developers/aosc-os-cadet-training/autobuild3/scripts-and-extra-files) | N/A | No |
 
-## Build/Toolchain Parametres
+## Routine Parametres
+
+Each of the build 
 
 ## Build-Time Switches
 
