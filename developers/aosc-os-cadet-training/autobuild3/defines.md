@@ -84,7 +84,7 @@ Part of Autobuild3's initial design was to provide a collection of pre-defined b
 | `npm` | For standardised NPM (Node Package Manager) packages. This routine executes `npm install` to build and install the said packages. | A file with a recognisable NPM format once renamed with the `.tgz` suffix | No |
 | `self` [^2] | Simply executes the `autobuild/build` file as a Bash script, see [Build Scripts, Scriptlets, and Extra Files](/developers/aosc-os-cadet-training/autobuild3/scripts-and-extra-files) | N/A | No |
 
-[^2] This build type will not be selected unless `autobuild/build` exists.
+[^2]: This build type will not be selected unless `autobuild/build` exists.
 
 ## Routine Parametres
 
