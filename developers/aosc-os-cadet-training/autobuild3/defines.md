@@ -45,8 +45,8 @@ In most cases, Autobuild3 can handle the building of a package with the followin
 | Variable | Value Format | Usage | Essential? |
 |--------------|----------------------|----------------|--------------|
 | `PKGNAME` | String, No Space | Defines the name of the package (i.e. `plasma-desktop`). | Yes |
-| `PKGVER` | String, No Space | Defines the version of the package (i.e. `5.16.4`). | Yes ¹ |
-| `PKGREL` | Integer | Defines the revision level of the package (i.e. the `1` in `5.16.4-1`). | Yes ¹ |
+| `PKGVER` | String, No Space | Defines the version of the package (i.e. `5.16.4`). | Yes [^1] |
+| `PKGREL` | Integer | Defines the revision level of the package (i.e. the `1` in `5.16.4-1`). | Yes [^1] |
 | `PKGDES` | String | Defines the package's description (i.e. `Plasma interface for desktop computers`). | Yes |
 | `PKGSEC` | String, No Space | Defines the section in which the package belongs, using sections from the [pre-defined list of sections](https://github.com/AOSC-Dev/autobuild3/blob/master/sets/section) is recommended. | Yes |
 | `PKGDEP` | String, Space Separated | Defines the list of dependency(ies) of the package, defaults to `>=` the newest version available from the repository. | No |
@@ -57,6 +57,10 @@ In most cases, Autobuild3 can handle the building of a package with the followin
 | `PKGCONFL` | String, Space Separated | Defines the list of package(s) that the current package version conflicts with (i.e. cannot be installed concurrently). | No |
 | `PKGPROV` | String, Space Separated | Defines the list of package(s) that the package provides or serves the alias to (i.e. `nano` can `PKGPROV` the package `default-editor`). | No |
 | `PKGREP` | String, Space Separated | Defines the list of package(s) that the package replaces or obseletes (i.e. `gnome-shell` is a new set of technologies that replaces `gnome-desktop2`). | No |
+
+----
+
+[^1]: When using [ACBS](/developers/aosc-os-cadet-training/acbs), these variables are instead put in `autobuild/../specs` in a package's tree path, and written as `VER=` and `REL=`. Any `PKGVER=` or `PKGREL=` defined in `autobuild/defines` will be overridden.
 
 # Build Parametres
 
