@@ -77,7 +77,11 @@ Part of Autobuild3's initial design was to provide a collection of pre-defined b
 | `cmakeninja` | For sources that utilise CMake for build script generation, and use Ninja to execute the build scripts. This routine can generate Ninja scripts by executing `cmake` with default and packager-specified parametres, and execute the subsequent `ninja` and `ninja install` commands. | `"$SRCDIR"/CMakeLists.txt` | Yes |
 | `plainmake` | For sources that executes and installs files with a pre-generated, GNU Make-compatible Makefile. This routine executes the `make` and `make install` commands with default and packager-specified parametres. | One of `"$SRCDIR"/Makefile`, or `"$SRCDIR"/makefile` | No |
 | `haskell` | For standardised, Cabal-compatible Haskell sources. This routine executes a sequence of commands to build, install, and register Haskell packages - with default and packager-specified parametres. | One of `"$SRCDIR"/Setup.hs`, or `"$SRCDIR"/Setup.lhs` | No |
-| 
+| `perl` | For standardised CPAN sources. This routine first executes the `Makefile.PL` to generate a GNU Make-compatible Makefile, and executes the subsequent `make` and `make install` commands. | `"$SRCDIR"/Makefile.PL` | No |
+| `python` | For standardised PyPI sources. This routine executes the standardised `setup.py build` and `setup.py install` commands with default and packager-specified parametres. By default, this routine builds both Python 2 and Python 3 modules sequentially. | `"$SRCDIR"/setup.py` | No |
+| `qtproj` | For Qt projects managed by `.pro` files. This routine builds with Qt 5 by default, executes `qmake` with default and packager-specified parametres to generate a GNU Make-compatible Makefile. Finally, this routine executes the subsequent `make` and `make install` commands. | `"$SRCDIR"/*.pro` | No |
+| `ruby` | For standardised Ruby Gem packages. This routine executes `gem` to build and install the said packages. | A file with a recognisable Gem format once renamed with the `.gem` suffix | No |
+| `npm` | For standardised NPM (Node Package Manager) packages. This routine executes `npm install` to build and install the said packages. | A file with a recognisable NPM format once renamed with the `.tgz` suffix | No |
 
 ## Build/Toolchain Parametres
 
