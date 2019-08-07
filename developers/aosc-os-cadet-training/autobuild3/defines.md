@@ -62,10 +62,14 @@ In most cases, Autobuild3 can handle the building of a package with the followin
 
 # Build Parametres
 
-## Build-Time Switches
+This section details variables that defines the ways to specify and control the pre-defined build routines implemented by Autobuild3, more nuanced compiler flags, build-time thread count, and post-build behaviours.
 
 ## Build/Toolchain Types
 
 ## Build/Toolchain Parametres
+
+## Build-Time Switches
+
+
 
 # Enhanced Usage
