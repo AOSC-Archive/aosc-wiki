@@ -58,7 +58,7 @@ In most cases, Autobuild3 can handle the building of a package with the followin
 | `PKGPROV` | String, Space Separated | Defines the list of package(s) that the package provides or serves the alias to (i.e. `nano` can `PKGPROV` the package `default-editor`). | No |
 | `PKGREP` | String, Space Separated | Defines the list of package(s) that the package replaces or obseletes (i.e. `gnome-shell` is a new set of technologies that replaces `gnome-desktop2`). | No |
 
-[^1]: When using [ACBS](/developers/aosc-os-cadet-training/acbs), these variables are instead put in `autobuild/../specs` in a package's tree path, and written as `VER=` and `REL=`. Any `PKGVER=` or `PKGREL=` defined in `autobuild/defines` will be overridden.
+[^1]: When using [ACBS](/developers/aosc-os-cadet-training/acbs), these variables are instead put in `autobuild/../spec` in a package's tree path, and written as `VER=` and `REL=`. Any `PKGVER=` or `PKGREL=` defined in `autobuild/defines` will be overridden.
 
 # Build Parametres
 
