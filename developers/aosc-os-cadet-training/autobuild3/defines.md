@@ -90,6 +90,10 @@ Part of Autobuild3's initial design was to provide a collection of pre-defined b
 
 Each of the build routine can be tweaked by both common and their specific parametres.
 
+### Common Parametres
+
+### Roution-Specific Parametres
+
 ## Build-Time Switches
 
 
