@@ -28,8 +28,6 @@ All AMD64/x86-64 tarballs are generic (universal for all supported devices), the
 - MATE
 - XFCE
 - LXDE
-- i3 Window Manager
-
 ## Non-bootable
 
 - Container
