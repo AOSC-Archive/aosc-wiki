@@ -14,7 +14,7 @@ The concepts of branches, cycles, and ports are three main aspects that maintena
 AOSC OS is maintained *concurrently* across four branches:
 
 - Stable (`stable`): The main maintenance branch which most users should be using, updates include security updates, bug fixes, [exceptional updates](/developers/aosc-os/cycle-exceptions) and [patch-level updates](/developers/aosc-os/known-patch-release-rules).
-	- Stable, Proposed Updates (`stable-proposed`): The branch that feeds said updates into `stable`, unless the current `stable` already requires bug fixes (for instance, a currently available `stable` package has broken dependency).
+	- Stable, Proposed Updates (`stable-proposed`): The branch that feeds said updates into `stable`, unless the current `stable` already requires bug fixes (for instance, a currently available `stable` package has broken dependency). 
 - Testing (`testing`): The main feature branch which users with particular interest in following the latest development and changes should be using, security updates, feature/major updates, and new packages are introduced from the `explosive` branch and tested *minimally* before shipping. Updates made available through this branch will be available for `stable` by the end of each update cycle.
 	- Testing, Proposed Updates (`explosive`): The branch that feeds said updates into `testing`, packages are introduced and *build-time tested*. No one should be using this branch, no matter what.
 
@@ -79,6 +79,9 @@ In principle, AOSC OS accepts and maintains all packages, unless one of the foll
 ## The Builds
 
 While building packages, the build environments *must* be controlled, updated, and minimal, where packages are only installed as required by the build-and-run-time dependencies.
+
+- For instance, when building for `stable`, make sure that *only* the `stable` branch is enabled in your repository configuration; `explosive`, `testing`, `stable` are enabled when building for `explosive`; ...
+- There is an exception when building for `stable-proposed`, *only* the `stable` branch should be enabled.
 
 ## Branch Merging
 
