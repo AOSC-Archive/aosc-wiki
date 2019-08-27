@@ -27,9 +27,11 @@ Currently the rsync server of AOSC OS Repo has 4 modules:
 You are recommended to sync from `anthon` or `anthonos` since they are the full sync. If you are short in storage, you may consider to use `packages`.
 
 # How to Mirror
-If you have enough hard disk space, please do rsync from our main repo: rsync://repo.aosc.io/anthon/. You are not recommended to use IP anymore.
+If you have enough hard disk space, please do rsync from our main repo: rsync://repo.aosc.io/anthon/. 
 
-Please be noted that the repo is located in Taiwan, China, and the network connection could be VERY slow if you are in Mainland, China.
+You are not recommended to use IP anymore, while you might use (v4, v6).repo.aosc.io if you want to enforce IP version.
+
+Please be noted that the repo is located in US, and the network connection could be VERY slow if you are in Mainland, China.
 
 You may also initialize the mirror by doing rsync from any one of the mirrors providing rsync, like [USTCLUG](https://mirrors.ustc.edu.cn/) or [Tuna](https://mirrors.tuna.tsinghua.edu.cn/).
 
