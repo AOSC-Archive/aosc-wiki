@@ -16,7 +16,8 @@ AOSC OS is maintained *concurrently* across four branches:
 - Stable (`stable`): The main maintenance branch which most users should be using, updates include security updates, bug fixes, [exceptional updates](/developers/aosc-os/cycle-exceptions) and [patch-level updates](/developers/aosc-os/known-patch-release-rules).
 	- Stable, Proposed Updates (`stable-proposed`): The branch that feeds said updates into `stable`, unless the current `stable` already requires bug fixes (for instance, a currently available `stable` package has broken dependency). 
 - Testing (`testing`): The main feature branch which users with particular interest in following the latest development and changes should be using, security updates, feature/major updates, and new packages are introduced from the `explosive` branch and tested *minimally* before shipping. Updates made available through this branch will be available for `stable` by the end of each update cycle.
-	- Testing, Proposed Updates (`explosive`): The branch that feeds said updates into `testing`, packages are introduced and *build-time tested*. No one should be using this branch, no matter what.
+	- Testing, Proposed Updates (`testing-proposed`): The branch that feeds said updates into `testing`, packages are introduced and *build-time tested*.
+- Explosive (`explosive`): The branch that accepts *any* new packages and updates *outside of the release cycles*. No one should be using this branch, no matter what.
 
 ## The Cycles
 
