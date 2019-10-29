@@ -96,6 +96,8 @@ For a more exciting experience, add verbosity:
 # tar --numeric-owner -pxvf /path/to/tarball/tarball.tar.xz
 ```
 
+**Notes: When executing un-tar, be sure to use the root user to execute**
+
 # Initial Configuration
 
 Here below are some extra steps before you configure your bootloader - strongly recommended to avoid potential issues later.
