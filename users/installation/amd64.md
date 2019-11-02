@@ -37,7 +37,7 @@ We are not going to discuss the deployment of Container and BuildKit in this gui
 
 # Preparing an Installation Environment
 
-It is impossible to install AOSC OS without a working Live environment or an installed copy of Linux distribution on your local storage. Live disc images are not yet available for AOSC OS.
+It is impossible to install AOSC OS without a working Live environment or an installed copy of Linux distribution on your local storage. Live disc images are not yet available for AOSC OS
 
 For installing AOSC OS, we recommend that you use [GParted Live](https://sourceforge.net/projects/gparted/files/gparted-live-stable/), dumped to your USB flash drive - and our guide will assume that you are using GParted Live.
 
