@@ -24,6 +24,7 @@ The list below is a **concrete and specific** list of packages which could be co
 | Google Chrome | `google-chrome` | 1 |
 | Intel Processor Microcode Data File | `intel-ucode` | 1 |
 | Mozilla Firefox  | `firefox` | 1 |
+| Min Browser | `min` | 1 |
 | OpenJDK | `openjdk` | 1 |
 | Opera | `opera` | 1 |
 | Pale Moon | `palemoon` | 1 |
