@@ -60,7 +60,7 @@ To use this, you need `Python 3` and after switching to the directory `daemon/` 
 
 ## Manually add new posts
 
-Simply add a new file with the file name `YYYY-mm-dd-title.md`.
+Simply add a new file with the file name `YYYY-mm-dd-title.md` in the `_posts` directory.
 
 For "front-matter" (the metadata at the top), here is an example which you may want to copy:
 
