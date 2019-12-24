@@ -78,3 +78,8 @@ Note that the `type` could be one of `news` or `community`.
 ## Using `jekyll-compose` plugin
 
 TODO
+
+
+# Publishing Your Changes
+
+Simply push your commits to `master` branch. The deployment of the website is automated, you can see [the process here](https://dev.azure.com/AOSC-Dev/aosc-portal-kiss.github.io/_build?definitionId=1&_a=summary). If you don't have the permission to do so, you may open a new PR instead.
