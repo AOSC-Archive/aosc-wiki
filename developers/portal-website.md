@@ -1,5 +1,5 @@
-<!-- TITLE: Portal Website -->
-<!-- SUBTITLE: Maintenance Notes for Portal Website -->
+<!-- TITLE: Community Portal -->
+<!-- SUBTITLE: Maintenance Notes for the Community Portal -->
 
 # Basic Directory Structures
 
