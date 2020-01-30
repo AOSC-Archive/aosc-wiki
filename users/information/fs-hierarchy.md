@@ -13,6 +13,10 @@ In AOSC-style filesystem hierarchy, the `/usr/lib` and `/usr/bin` directories se
   - For 64-bit ports: `/lib64 → /usr/lib`, `/usr/lib64 → /usr/lib`.
 - For all ports: `/bin → /usr/bin`, `/sbin → /usr/bin`, `/usr/sbin → /usr/bin`.
 
-Additionally, two directories in `/var` are also served as symbolic links:
+Two directories in `/var` are also served as symbolic links:
 
 - `/var/run → /run`, and `/var/lock → /run/lock`.
+
+Additionally, for 64-bit systems, extra symlinks were made in the:
+
+- `/usr/lib/64 → /usr/lib64` and `/lib/64 → /usr/lib64`.
