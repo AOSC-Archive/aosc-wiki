@@ -31,11 +31,11 @@ For systems with 64-bit little endian ARMv8-A+ processors (AArch64).
 
 - Triplet: `aarch64-aosc-linux-gnu`
 
-## i586
+## i486
 
-For systems with i586 or newer/compatible processors (excluding Winchip C6 and Winchip 2 processors).
+For systems with i486 or newer/compatible processors.
 
-- Triplet: `i586-aosc-linux-gnu`
+- Triplet: `i486-aosc-linux-gnu`
 
 ## mipsel
 
@@ -64,6 +64,12 @@ For systems with 64-bit big endian PowerPC processors.
 - Triplet: `powerpc64-aosc-linux-gnu`
 - Note: Requires AltiVec support.
 
+
+## ppc64el
+
+For systems with IBM POWER8 or newer processors.
+
+- Triplet: `ppc64el-aosc-linux-gnu`
 
 ## rv64g
 
