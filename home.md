@@ -31,6 +31,7 @@ This sub-section contains general information about public servers and resources
 This sub-section contains information on APIs and technical details from our community infrastructure.
 
 - [Packages Site](developers/packages-site)
+- [Maintenance Notes for the Community Portal](developers/community-portal)
 - [List of Package Issue Codes](/developers/list-of-package-issue-codes)
 - [p-vector](/developers/p-vector)
 
