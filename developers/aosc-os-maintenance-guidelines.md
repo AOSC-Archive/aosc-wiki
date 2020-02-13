@@ -13,11 +13,12 @@ The concepts of branches, cycles, and ports are three main aspects that maintena
 
 AOSC OS is maintained *concurrently* across four branches:
 
-- Stable (`stable`): The main maintenance branch which most users should be using, updates include security updates, bug fixes, [exceptional updates](/developers/aosc-os/cycle-exceptions) and [patch-level updates](/developers/aosc-os/known-patch-release-rules).
-	- Stable, Proposed Updates (`stable-proposed`): The branch that feeds said updates into `stable`, unless the current `stable` already requires bug fixes (for instance, a currently available `stable` package has broken dependency). 
-- Testing (`testing`): The main feature branch which users with particular interest in following the latest development and changes should be using, security updates, feature/major updates, and new packages are introduced from the `explosive` branch and tested *minimally* before shipping. Updates made available through this branch will be available for `stable` by the end of each update cycle.
-	- Testing, Proposed Updates (`testing-proposed`): The branch that feeds said updates into `testing`, packages are introduced and *build-time tested*.
-- Explosive (`explosive`): The branch that accepts *any* new packages and updates *outside of the release cycles*. No one should be using this branch, no matter what.
+- Stable (`stable`): Main maintenance branch which most users should be using, updates include security updates, bug fixes, [exceptional updates](/developers/aosc-os/cycle-exceptions) and [patch-level updates](/developers/aosc-os/known-patch-release-rules).
+	- Stable, Proposed Updates (`stable-proposed`): Feeds said updates into `stable`, unless the current `stable` already requires bug fixes (for instance, a currently available `stable` package has broken dependency). 
+- Testing (`testing`): Main feature branch which users with particular interest in following the latest development and changes should be using, security updates, feature/major updates, and new packages are introduced from the `explosive` branch and tested *minimally* before shipping. Updates made available through this branch will be available for `stable` by the end of each update cycle.
+	- Testing, Proposed Updates (`testing-proposed`): Feeds said updates into `testing`, packages are introduced and *build-time tested*.
+- Explosive (`explosive`): Accepts *any* new packages and updates *outside of the release cycles*. No one should be using this branch, no matter what.
+- Release Candidate Kernels and Tools (`rckernel`): Complements `stable-proposed` to ship Linux Kernels currently in RC stage, and feeds into `stable-proposed` as the new mainline kernel branch as the final release is made on the upstream.
 
 ## The Cycles
 
@@ -27,7 +28,7 @@ AOSC OS is maintained on an seasonal cycle, and thus revolves around a three-mon
 	- Iteration Plans (e.g. the *[Iteration Plan for Summer 2019](https://github.com/AOSC-Dev/aosc-os-abbs/issues/1896)*)are drafted and published on GitHub as a milestone issue, and updated frequently by maintainers as new updates are made available and built.
 	- Updates are built on all branches and for all ports when applicable.
 - The last month - or the freezing period:
-	- The `stable`, `stable-proposed`, and `explosive` branches continues to receive updates as usual.
+	- The `stable`, `stable-proposed`, `explosive`, and `rckernel` branches continues to receive updates as usual.
 	- The `testing` branch will no longer accept updates unless they are intended for security or bug fixes.
 	- `testing` branch updates will be tested in preparation to become the new basis of `stable`.
 
@@ -81,8 +82,8 @@ In principle, AOSC OS accepts and maintains all packages, unless one of the foll
 
 While building packages, the build environments *must* be controlled, updated, and minimal, where packages are only installed as required by the build-and-run-time dependencies.
 
-- For instance, when building for `stable`, make sure that *only* the `stable` branch is enabled in your repository configuration; `explosive`, `testing`, `stable` are enabled when building for `explosive`; ...
-- There is an exception when building for `stable-proposed`, *only* the `stable` branch should be enabled.
+- For instance, when building for `stable`, make sure that *only* the `stable` branch is enabled in your repository configuration; `explosive`, `testing-proposed`, `testing`, `stable-proposed`, and `stable` are enabled when building for `explosive`; ...
+- There is an exception when building for `stable-proposed` and `rckernel`, *only* the `stable` branch should be enabled.
 
 ## Branch Merging
 
@@ -92,12 +93,15 @@ In the AOSC OS maintenance procedures, branch mergings are bi-directional.
 
 With the branch and cycle descriptions specified above - as branch merging serves as the main mean of update introduction for the non-Proposal branches, there are certain limitations applied to the merging procedures.
 
-- During the two-month development periods, the branch merging follows the direction of: `explosive` → `testing` → `stable-proposed` → `stable`.
-- During the one-month freezing periods: the `stable-proposed` → `stable` merges are permitted, while all other mergings are *not permitted*.
+- During the active phase of an interation cycle, the branch merging follows the direction of: `explosive`; `testing-proposed` → `testing`; `rckernel` → `stable-proposed` → `stable`.
+- At the end of each iteration cycle, a full merge would be made: `explosive` → `testing-proposed` → `testing` → `stable-proposed` → `stable`.
+- During the one-month freezing periods: the `rckernel` → `stable-proposed` → `stable` merges are permitted, while all other mergings are *not permitted*.
 
 ### Reversed Merging
 
 Reversed merges, or `stable` → `stable-proposed` → `testing` → `explosive` merges should be done periodically regardless of the cycle periods. However, during major merges, notifications will be made to prevent inconsistent merging.
+
+The `rckernel` branch should also receive periodic reverse merging: `stable` → `stable-proposed` → `rckernel`.
 
 ## Stable Update Testing
 
