@@ -14,7 +14,7 @@ Welcome! If you are reading this, you are probably interested in contributing to
 
 ## Advanced Techniques
 - [Advanced Operations in Autobuild3](/developers/intro-to-package-maintenance/advanced-techniques#advanced-operations-in-autobuild-3)
-- [Manually Select Different Build Systems](/developers/intro-to-package-maintenance/advanced-techniques#manually-select-different-build-systems)
+	- [Manually Select Different Build Systems](/developers/intro-to-package-maintenance/advanced-techniques#manually-select-different-build-systems)
 	- [Custom Build System/Compiler Parameters](/developers/intro-to-package-maintenance/advanced-techniques#custom-build-system-compiler-parameters)
 	- [Custom Build System/Compiler Parameters](/developers/intro-to-package-maintenance/advanced-techniques#custom-build-scripts)
 	- [Custom Build Scripts](/developers/intro-to-package-maintenance/advanced-techniques#custom-build-scripts)
