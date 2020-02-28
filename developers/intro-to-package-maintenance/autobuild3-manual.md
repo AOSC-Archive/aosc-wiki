@@ -22,7 +22,7 @@ Autobuild3 is a successor to the original [Autobuild](https://github.com/AOSC-De
 
 Autobuild3 is provided in the `autobuild3` package (AOSC OS), and is provided with BuildKit. However it can be obtained as a Git checkout/snapshot or as a release at the [GitHub repository](https://github.com/AOSC-Dev/autobuild3).
 
-### Deploying
+## Deploying
 
 As a Git checkout or downloaded source, Autobuild3 can be deployed with executing the following command at the source root, as superuser or root.
 
@@ -30,7 +30,7 @@ As a Git checkout or downloaded source, Autobuild3 can be deployed with executin
 
 Autobuild3 is installed at `/usr/lib/autobuild3`, and this directory is known to Autobuild3 (and possibly to you) as `"$AB"`.
 
-### Initial Configurations
+## Initial Configurations
 
 It is necessary to create an initial configuration profile for Autobuild3. Stored as a file at `/etc/autobuild/ab3cfg.sh`. A minimal configuration example is shown below.
 
