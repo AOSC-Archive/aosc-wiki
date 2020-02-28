@@ -18,7 +18,7 @@ Autobuild3 is a successor to the original [Autobuild](https://github.com/AOSC-De
 - RPM, using Autobuild variables to generate .spec files, and invoking `rpmbuild` to build RPM packages.
 - PKGBUILD (coming soon), using Autobuild variables to generate `PKGBUILD` files, using a temporary install root, to provide `makepkg` with a fake binary packaging process.
 
-## Installing and deploying
+# Installing and deploying
 
 Autobuild3 is provided in the `autobuild3` package (AOSC OS), and is provided with BuildKit. However it can be obtained as a Git checkout/snapshot or as a release at the [GitHub repository](https://github.com/AOSC-Dev/autobuild3).
 
@@ -44,15 +44,15 @@ ABINSTALL="dpkg" # Package to be installed after build.
 
 Remove extra or duplicate lines of configuration where appropriate.
 
-## General structure
+# General structure
 
 Autobuild3 needs a `autobuild/` directory placed in the source root, which in most cases, is its working directory. For example, when building wget-1.17, one will unpack its source code, get into the `wget-1.17/` directory, and `autobuild/` should be put in the source root.
 
-### The “defines” file
+## The “defines” file
 
 `autobuild/defines` is the core configurations file used by Autobuild3 to read building definitions (obviously) such as package name, version, category/section, dependencies, descriptions, etc. `defines` is meant to be a powerful configuration file, and hence supports an extensive amount of control variables. And they will be described below (essential variables are marked with an asterisk, “\*” at the end of their descriptions).
 
-#### Package information
+### Package information
 
 Here lists the variables that describes general information of the package.
 
@@ -66,7 +66,7 @@ Here lists the variables that describes general information of the package.
 
 **PKGDES=** expects a string value containing the description of the package, basic writing convention is advised (capitalize the first letter, for example). \*
 
-#### Package dependencies
+### Package dependencies
 
 Here lists the variables that defines several different dependency relationships that will be carried out by the package. It is recommended that you have a good read of the [Debian Policy Manual](https://www.debian.org/doc/debian-policy/index.html) before you start.
 
@@ -84,11 +84,11 @@ Here lists the variables that defines several different dependency relationships
 
 **VER\_NONE** expects a binary value (0/1) that switches an option to enable or disable versioned dependencies.
 
-#### Build-time environment
+### Build-time environment
 
 Here lists variables that serves as options during build-time that may alter build results. Some times they are used to workaround FTBFS (fail to build from source, essential vocabulary, Cadet) situations. Workaround-oriented usage of some of the variables listed below will the discussed in the [Tips and Tricks](https://github.com/AOSC-Dev/aosc-os-abbs/wiki/Autobuild3-Tips-and-Tricks) section.
 
-##### Common/GCC configurations
+#### Common/GCC configurations
 
 **AB\_FLAGS\_O3** expects a binary value (0/1) that switches the default compiler optimization level between `-O2` and `-O3`. This is mainly used for building AOSC OS Core, as most core libraries are performance sensitive (Defaults to 0 or “off”).
 
@@ -104,7 +104,7 @@ Here lists variables that serves as options during build-time that may alter bui
 
 **NOLTO=** expects a binary value (0/1) that switches compiler and linker flags needed to disable/prevent LTO (Link Time Optimization) during build time (Defaults to 0 or “off” on amd64 - enabling LTO by default, and 1 or “off” on all other architectures).
 
-##### Clang specific configurations
+#### Clang specific configurations
 
 **USECLANG=** expects a binary value (0/1) that decides whether to use Clang (part of LLVM) for the build (Defaults to 0 or “off”).
 
@@ -126,17 +126,17 @@ Here lists variables that serves as options during build-time that may alter bui
 
 **MAKE\_AFTER=** expects a string value that defines extra arguments to be passed to `make`.
 
-#### Data packages
+### Data packages
 
 When building data/architecturally neutral packages, you may (should) specify:
 
 **ABHOST=NOARCH** declaring that the package to be built is for “any” architecture (“noarch” in RPM language), therefore can be installed in any given architecture.
 
-#### Additional variables
+### Additional variables
 
 Additional variables can be included inside `autobuild/defines` as well, as this file is basically “sourced” by the Unix Shell (Bash in this case).
 
-## Build Types
+# Build Types
 
 Autobuild has a set of pre-defined build routine called Build Types, or `$ABTYPE` when expressed in the “autobuild/defines” file.
 
@@ -159,11 +159,11 @@ Usually it is not necessary to define `$ABTYPE`, Autobuild can detect this varia
 
 In such cases, define `$ABTYPE` in `autobuild/defines`.
 
-### ABTYPE-specific variables
+## ABTYPE-specific variables
 
 Here below is a list of variables available for different `$ABTYPE`.
 
-#### autotools
+### autotools
 
 Here below is a list of variables available when using the `autotools` build type.
 
@@ -173,7 +173,7 @@ Here below is a list of variables available when using the `autotools` build typ
 
 **AUTOTOOLS\_AFTER=** expects a string value containing all extra arguments to be passed to `configure`, you may override any arguments defined in `$AUTOTOOLS_DEF` using this variable.
 
-#### cmake
+### cmake
 
 Here below is a list of variables available when using the `cmake` build type.
 
@@ -181,7 +181,7 @@ Here below is a list of variables available when using the `cmake` build type.
 
 **CMAKE\_AFTER=** expects a string value containing all extra arguments to be passed to `cmake`, you may override any arguments defined in `$CMAKE_DEF` using this variable.
 
-#### waf
+### waf
 
 Here below is a list of variables available when using the `waf` build type.
 
@@ -189,7 +189,7 @@ Here below is a list of variables available when using the `waf` build type.
 
 **WAF\_AFTER=** expects a string value containing all extra arguments to be passed to `waf`, you may override any arguments defined in `$wAF_DEF` using this variable.
 
-#### python
+### python
 
 Here below is a list of variables available when using the `python` build type.
 
@@ -199,7 +199,7 @@ Here below is a list of variables available when using the `python` build type.
 
 Both variables default to 0 or “no”, meaning modules will be built for both Python 2 and Python 3.
 
-#### qtproj
+### qtproj
 
 Here below is a list of variables available when using the `qtproj` build type.
 
@@ -209,7 +209,7 @@ Here below is a list of variables available when using the `qtproj` build type.
 
 **QTPROJ\_AFTER=** expects a string value containing all extra arguments to be passed to `qmake`, you may override any arguments defined in `$QTPROJ_DEF` using this variable.
 
-### The “prepare” file
+## The “prepare” file
 
 The `autobuild/prepare` file is sourced as a Bash script, containing packager-defined general preparations before the source will be built. An example is shown below:
 
@@ -219,7 +219,7 @@ cp "$SRCDIR"/autobuild/config "$SRCDIR"/.config
 
 The `autobuild/prepare` file may be sourced repeatedly when re-using a source tree.
 
-### The “patches” directory
+## The “patches” directory
 
 The `autobuild/patches/` directory contains all patches to be applied to the source code, with suffixes of `.patch`, or `.diff`. All patches are assumed to be patched with a strip level of 1, or `-p1`. Patches are patched according to the order of filenames.
 
@@ -229,7 +229,7 @@ Any patch files ending with `.patch.$ARCH` or `.diff.$ARCH` will only be applied
 
 A `autobuild/patches/series` file may be used to define a custom order to use the patches. This file should only contain filenames of the patches. When this file is found, Autobuild will patch the source code according to the order defined in this file.
 
-### The “patch” file
+## The “patch” file
 
 The `autobuild/patch` file is sourced as a Bash script. This file is useful when patches are not formatted to use a strip level of 1, say `-p2`; or changes to the source code is not presented as a `.patch` or `.diff` file.
 
@@ -239,15 +239,15 @@ The `autobuild/patch` file will only be sourced once, a `.patch` file is created
 
 Use `autobuild/prepare` if you intend to repeat actions when reusing source trees.
 
-### The “build” file
+## The “build” file
 
 The `autobuild/build` file is sourced as a Bash script. This file is basically used as a build script. When this file is present, `$ABTYPE` will be locked to `self`, unless otherwise specified.
 
-### The “beyond” file
+## The “beyond” file
 
 The `autobuild/beyond` file is sourced as a Bash script, and is only useful when using a pre-defined `$ABTYPE` other than `self`. This file contains all post-build actions needed before the final packaging.
 
-### The “overrides” directory
+## The “overrides” directory
 
 The `autobuild/overrides` directory contains extra files to be shipped with the package, such as `.desktop` files. Files need to be put in their respective directory, like the example below:
 
@@ -255,7 +255,7 @@ The `autobuild/overrides` directory contains extra files to be shipped with the 
 autobuild/overrides/usr/share/foo.desktop
 ```
 
-### The “pax” file
+## The “pax” file
 
 The `autobuild/pax` file specifies post-installation operations to enable certain flags on libraries and executables for compatibility with PaX/Grsecurity kernels.
 
@@ -269,6 +269,6 @@ abpaxctl <flags> <executable, library, or directory>
 
 For more information regarding this configuration file, you might want to read about `paxctl-ng` from the [Gentoo Wiki](https://wiki.gentoo.org/wiki/Hardened/PaX_Quickstart#paxctl-ng).
 
-## Invoking Autobuild3
+# Invoking Autobuild3
 
 To start building a package using Autobuild3, put the `autobuild/` directory containing all the necessary configurations to the source root of the package you would like to build - and simply type in the `autobuild` command at the source root to start building.
