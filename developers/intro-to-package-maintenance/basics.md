@@ -276,4 +276,4 @@ The second task can be done using [pushpkg](https://github.com/AOSC-Dev/scriptle
 
 That's it\! You have learned the basics about creating new packages for AOSC OS from scratch, as well as how to update, build, and uploading them\!
 
-However, as you may see, this article only covers the basics of what you need to know as you continue to prime for further involement in AOSC OS maintenance. When dealing with more complicated build systems, or updating a batch of packages, there's still many skills to learn. Please refer to the [WIP: Way to AOSC OS Maintainer: Senior](##)
+However, as you may see, this article only covers the basics of what you need to know as you continue to prime for further involement in AOSC OS maintenance. When dealing with more complicated build systems, or updating a batch of packages, there's still many skills to learn. Please refer to the [WIP: Way to AOSC OS Maintainence: Advanced Techniques](/developers/intro-to-package-maintenance/advanced-techniques)
