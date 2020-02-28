@@ -21,7 +21,7 @@ Welcome! If you are reading this, you are probably interested in contributing to
 	- [Post-Build Tweaks](/developers/intro-to-package-maintenance/advanced-techniques#post-build-tweaks)
 	- [The autobuild/override Directory](/developers/intro-to-package-maintenance/advanced-techniques#the-autobuild-override-directory)
 	- [Advanced Patch Management](https://wiki.aosc.io/developers/intro-to-package-maintenance/advanced-techniques#advanced-patch-management)
--  [Dealing with Package Groups](/developers/intro-to-package-maintenance/advanced-techniques#dealing-with-package-groups)
+- [Dealing with Package Groups](/developers/intro-to-package-maintenance/advanced-techniques#dealing-with-package-groups)
 
 ## Appendix
 Here are some useful documentations about the tools we use.
