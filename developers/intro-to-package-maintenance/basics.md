@@ -17,7 +17,7 @@ We will need these tools in order to build packages. Don't worry about them for 
   - [pushpkg](https://github.com/AOSC-Dev/scriptlets/tree/master/pushpkg)
       - Pushes built packages to the official repository.
 
-## Release model
+# Release model
 
 AOSC OS is maintained with a semi-rolling release model which cycles every three months (or so). This means that there's no version number attached to a full AOSC OS release (similar to rolling release distros like Arch Linux). However, within the [aosc-os-abbs](https://github.com/AOSC-Dev/aosc-os-abbs) tree, there is a set of packages that constructs the [AOSC OS Core](https://github.com/AOSC-Dev/aosc-os-abbs/blob/testing-proposed/README.CORE.md), which consists of core runtime (the GNU C Library, etc.) and toolchains (GCC, etc.). This set of packages are updated in a versioned fashion (Core 7.0.1, 7.0.2, 7.1.1, etc.). Additionally, all updates to the AOSC OS repository undergo a period of testing in what is called a `*-proposed` repository.
 
