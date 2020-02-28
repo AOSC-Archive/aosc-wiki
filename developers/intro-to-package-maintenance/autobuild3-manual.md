@@ -1,21 +1,22 @@
 <!-- TITLE: Autobuild 3 Manual -->
 <!-- SUBTITLE: Everything you need to know about Autobuild3 -->
 
+
 Autobuild is a distribution packaging toolkit meant to carry out the following functions:
 
-  - Definition, therefore identification of source code
-  - Preparing and patching of source code
-  - Building of source code
-  - Quality control of built binaries
-  - Packaging of built binaries
+- Definition, therefore identification of source code
+- Preparing and patching of source code
+- Building of source code
+- Quality control of built binaries
+- Packaging of built binaries
 
 Autobuild3 is essentially a set of scripts (`autobuild` is the only command script useful for invoking a build process) that works to automatically carry out the function listed above, and to simplify build configuration (build scripts in another word) using various pre-designed build routines, named `ABTYPE` or Autobuild Build Types. More will be discussed below (extensively).
 
 Autobuild3 is a successor to the original [Autobuild](https://github.com/AOSC-Dev/autobuild) used back in 2013 when AOSC OS was initially rebooted as an independent Linux distribution. Unlike Autobuild being a distribution specific and single backend toolkit, Autobuild3 is distribution neutral and supports various backends:
 
-  - DPKG, the most “native” backend of all, using `dpkg-deb` and Autobuild variables to control the generation of DPKG control files, and henceforth building the packages.
-  - RPM, using Autobuild variables to generate .spec files, and invoking `rpmbuild` to build RPM packages.
-  - PKGBUILD (coming soon), using Autobuild variables to generate `PKGBUILD` files, using a temporary install root, to provide `makepkg` with a fake binary packaging process.
+- DPKG, the most “native” backend of all, using `dpkg-deb` and Autobuild variables to control the generation of DPKG control files, and henceforth building the packages.
+- RPM, using Autobuild variables to generate .spec files, and invoking `rpmbuild` to build RPM packages.
+- PKGBUILD (coming soon), using Autobuild variables to generate `PKGBUILD` files, using a temporary install root, to provide `makepkg` with a fake binary packaging process.
 
 ## Installing and deploying
 
@@ -141,16 +142,16 @@ Autobuild has a set of pre-defined build routine called Build Types, or `$ABTYPE
 
 **ABTYPE=** expects a string value that defines which build type to use. Autobuild3 in most cases can detect the right build type to use. Here below is a list of available build types, in detection fallback order:
 
-  - **self:** when a `autobuild/build` file is provided, uses user created `autobuild/build` as build script.
-  - **autotools:** generally used for GNU autotools-based source trees, with an available `configure` script in source root, or defined `$configure` script.
-  - **cmake:** used for CMake-based source tree, Autobuild3 detects for `CMakeList.txt` in the source trees.
-  - waf: used for waf-based source tree, Autobuild3 detects for `waf` file/script in the source trees.
-  - **plainmake:** used for source trees with a written `Makefile`, and therefore is able to be built with `make` command.
-  - **haskell:** used for standard Haskell Cabal/Hackage source trees, comes with a set of scripts that provides Haskell package management functions like registering and unregistering.
-  - **perl:** used for standard CPAN source trees.
-  - **python:** used for standard PyPI source trees.
-  - **qtproj:** used for Qt projects with `.pro` files in the source trees.
-  - **ruby:** used for RubyGems source trees.
+- **self:** when a `autobuild/build` file is provided, uses user created `autobuild/build` as build script.
+- **autotools:** generally used for GNU autotools-based source trees, with an available `configure` script in source root, or defined `$configure` script.
+- **cmake:** used for CMake-based source tree, Autobuild3 detects for `CMakeList.txt` in the source trees.
+- waf: used for waf-based source tree, Autobuild3 detects for `waf` file/script in the source trees.
+- **plainmake:** used for source trees with a written `Makefile`, and therefore is able to be built with `make` command.
+- **haskell:** used for standard Haskell Cabal/Hackage source trees, comes with a set of scripts that provides Haskell package management functions like registering and unregistering.
+- **perl:** used for standard CPAN source trees.
+- **python:** used for standard PyPI source trees.
+- **qtproj:** used for Qt projects with `.pro` files in the source trees.
+- **ruby:** used for RubyGems source trees.
 
 Pre-defined scripts of these build types may be found [here](https://github.com/AOSC-Dev/autobuild3/tree/master/build). You may find that they are all prefixed with numbers - prefixes with smaller numbers are of higher priority when detecting for build types. More explained in the example below.
 
@@ -212,7 +213,9 @@ Here below is a list of variables available when using the `qtproj` build type.
 
 The `autobuild/prepare` file is sourced as a Bash script, containing packager-defined general preparations before the source will be built. An example is shown below:
 
-    cp "$SRCDIR"/autobuild/config "$SRCDIR"/.config
+``` bash
+cp "$SRCDIR"/autobuild/config "$SRCDIR"/.config
+```
 
 The `autobuild/prepare` file may be sourced repeatedly when re-using a source tree.
 
@@ -248,7 +251,9 @@ The `autobuild/beyond` file is sourced as a Bash script, and is only useful when
 
 The `autobuild/overrides` directory contains extra files to be shipped with the package, such as `.desktop` files. Files need to be put in their respective directory, like the example below:
 
-    autobuild/overrides/usr/share/foo.desktop
+``` sh
+autobuild/overrides/usr/share/foo.desktop
+```
 
 ### The “pax” file
 
@@ -256,9 +261,11 @@ The `autobuild/pax` file specifies post-installation operations to enable certai
 
 Syntax is shown as follows:
 
-    abpaxctl <flags> <executable, library, or directory>
-    abpaxctl <flags> <executable, library, or directory>
-    ...
+``` sh
+abpaxctl <flags> <executable, library, or directory>
+abpaxctl <flags> <executable, library, or directory>
+...
+```
 
 For more information regarding this configuration file, you might want to read about `paxctl-ng` from the [Gentoo Wiki](https://wiki.gentoo.org/wiki/Hardened/PaX_Quickstart#paxctl-ng).
 
