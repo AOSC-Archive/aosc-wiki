@@ -33,8 +33,7 @@ As AOSC OS/Retro is *not* a fork but a *branch* of the mainline AOSC OS distribu
 
 - Package Tree: [aosc-os-abbs](https://github.com/AOSC-Dev/aosc-os-abbs), on the [`retro`](https://github.com/AOSC-Dev/aosc-os-abbs/tree/retro) branch.
     - This means that AOSC OS/Retro will also use systemd as the default init system. *Now before you start yelling, systemd runs fine on a Toshiba T4900CT with an Intel Pentium 75MHz processor, 16MiB of RAM, and a 810MiB HDD. We've tested it to be sure.*
-- AOSC OS Core will be shared, but only updates based on what are synced to
-  the `retro` branch. See [Maintenance Schedule](#).
+- AOSC OS Core will be shared, but only updates based on what are synced to the `retro` branch. See [Maintenance Schedule](#).
 - Packaging/Maintenance Tools...
     - [Autobuild3](https://github.com/AOSC-Dev/autobuild3), for automatic
       packaging from Autobuild3 manifests.
