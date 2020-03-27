@@ -1,4 +1,4 @@
-<!-- TITLE: AOSC OS/Retro: An Introduction to Users and Maintainers -->
+<!-- TITLE: AOSC OS/Retro: An Introduction to Users and Maintainers (RFC) -->
 <!-- SUBTITLE: Your Guide to Enjoying AOSC OS with Your Retro Devices -->
 
 RFC: AOSC OS/Retro, An Introduction to Users and Maintainers
