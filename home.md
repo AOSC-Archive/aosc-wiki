@@ -82,7 +82,14 @@ This topic provides information on AOSC OS's system specifications, naming schem
 - [Filesystem Hierarchy](/users/information/fs-hierarchy)
 - *Optimisation Overlays*
 
-## Conference
+## AOSC OS/Retro
+
+This sub-section provides guidebooks and developer information for AOSC OS/Retro maintainers.
+
+- [AOSC OS/Retro: A Rationale (RFC)](/retro/aosc-os-retro-rationale)
+- [AOSC OS/Retro: An Introduction to Users and Maintainers (RFC)](/developers/retro/aosc-os-retro-intro)
+
+## Conferences
 
 - [AOSCC 2019](/aoscc-2019)
 
