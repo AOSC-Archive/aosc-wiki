@@ -80,7 +80,7 @@ One major pasttime shared by many of our community members and developers is pla
 Now, since we are maintaining a Linux distribution, what better way to make the best out of our hobby by making it run on our retro computers?
 
 The Take-Away
--------------
+=====
 
 AOSC OS will need significant amounts of changes and tweaks in order to become a viable choice for legacy devices with various constraints. However, we should make clear that we *do not* intend to achieve this by creating another distribution, adding to our already heavy maintenance workload.
 
