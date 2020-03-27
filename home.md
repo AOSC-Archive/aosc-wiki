@@ -37,7 +37,7 @@ This sub-section contains information on APIs and technical details from our com
 
 ## AOSC OS
 
-This sub-section provides guidebooks and developer information for AOSC OS developers.
+This sub-section provides guidebooks and developer information for AOSC OS maintainers.
 
 - [Exceptions to the Update Cycles](/developers/aosc-os/cycle-exceptions)
 - [Known Patch Release Rules](/developers/aosc-os/known-patch-release-rules)
@@ -45,6 +45,13 @@ This sub-section provides guidebooks and developer information for AOSC OS devel
 	- [Intro To Package Maintenance](/developers/intro-to-package-maintenance)
 	- [AOSC OS Maintenance Guildelines (RFC)](/developers/aosc-os-maintenance-guidelines)
 	- [AOSC OS Package Styling Manual](/developers/aosc-os-package-styling-manual)
+
+## AOSC OS/Retro
+
+This sub-section provides guidebooks and developer information for AOSC OS/Retro maintainers.
+
+- [AOSC OS/Retro: A Rationale (RFC)](/retro/aosc-os-retro-rationale)
+- [AOSC OS/Retro: An Introduction to Users and Maintainers (RFC)](/developers/retro/aosc-os-retro-intro)
 
 # Users
 This section contains information useful for AOSC OS users with pages arranged by topics.
