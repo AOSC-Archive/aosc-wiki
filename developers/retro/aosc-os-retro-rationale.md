@@ -73,7 +73,7 @@ Hoping that the case studies above have provided enough vivid details, for simpl
 Why Bother?
 =====
 
-*Just for fun.* — Linux Benedict Torvalds
+*Just for fun.* — Linus Benedict Torvalds
 
 One major pasttime shared by many of our community members and developers is playing with retro computer hardware and devices. We love them for their simplicity and cool features gradually lost with technical advancements. Do you like waking up to the noise of a seeking floppy disk drive?
 
