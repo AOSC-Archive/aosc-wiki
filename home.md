@@ -111,9 +111,9 @@ This section contains known unresolved and resolved issues found in AOSC OS - fo
 
 This section contains pages describing common questions, tips, and directions when using AOSC OS.
 
-- [KB-SYS-00001: Configuration of APT Repositories](/kb/sys/00001-apt-gen-list)
-- [KB-SYS-00002: Configuration of Input Methods](/kb/sys/00002-imchooser)
-- [KB-SYS-00003: Configuration of JACK](/kb/sys/00003-jack-configuration)
+- [KB-SYS-00001: Configuration of APT Repositories](/kbs/sys/00001-apt-gen-list)
+- [KB-SYS-00002: Configuration of Input Methods](/kbs/sys/00002-imchooser)
+- [KB-SYS-00003: Configuration of JACK](/kbs/sys/00003-jack-configuration)
 
 # AOSC OS Security Advisories
 
