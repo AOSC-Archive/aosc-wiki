@@ -77,6 +77,8 @@ important: false
 ---
 ```
 
+Note that the `categories` could be `news` and/or `community`.
+
 # Add New Personal Pages
 
 ## Using `hugo new` (recommended)
@@ -93,8 +95,6 @@ Run this if writing in HTML format:
 
 1. The posts/personal pages cannot contain raw HTML code, the raw HTML code will be stripped away by Hugo's Markdown renderer as a security precaution. If you want to embed something, check out [Hugo's builtin shortcode explainer](https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes).
 1. The posts/personal pages cannot contain templating syntax like `{{ $something }}`, they will be escaped automatically. If you want to use templating syntax, you probably need to use shortcodes, see the documentation above.
-
-Note that the `categories` could be `news` and/or `community`.
 
 # Publishing Your Changes
 
