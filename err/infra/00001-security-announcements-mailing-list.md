@@ -11,6 +11,6 @@ Since late March, we experienced rejections when attempting to post security adv
 Not yet identified. However it was suspected that a configuration breakage was accidentally introduced at some point during regular system administration.
 
 # Resolution
-A new mailing list, security-announcements@lists.aosc.io was created on April 5th, 2020. After successfully creating the new mailing list, archives and subscribers were manually migrated from the old list. After verifying that the new mailing list was operational with archives and subscribers successfully imported, the old list was deactivated (but data was still saved on the server) using Sympa's deactivation function.
+A new mailing list, security-announcements@lists.aosc.io was created on April 5th, 2020. After successfully creating the new mailing list, archives and subscribers were manually migrated from the old list. After verifying that the new mailing list was operational with archives and subscribers successfully imported, the old list was deactivated (but data was still saved on the server) using Sympa's deactivation function. Inbound spam filtering was also re-activated and confirmed operational after the migration.
 
 From now on, all security-related announcements should go to security-announcements@lists.aosc.io.
