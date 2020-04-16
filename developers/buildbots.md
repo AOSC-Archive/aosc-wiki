@@ -2,7 +2,7 @@
 title: Buildbots
 description: Buildbots that can be used by AOSC developers
 published: true
-date: 2020-04-16T02:19:59.510Z
+date: 2020-04-16T02:22:19.501Z
 tags: 
 ---
 
@@ -44,7 +44,7 @@ NOTE:
 | Name | Port | CPU | Memory | Speed | Maintainer | Note |
 |-----------|-----------|-----------|-----------|-----------|---------|-----------|
 | **Ry3950X** | 22333 | AMD Ryzen 7 3950X @ 3.50 - 4.70GHz | 64GiB | 40s (`-j33`) | _Mingcong Bai_ | Scratch disk at `/buildroots`, create own Ciel workspace |
-| **EPSON-PC** | 22718 | VM on i7-3770, 2vCPU | 4GiB | 502s (`-j2`) | _Zamir Sun_ | Available time: 8:00 - 21:30 UTC+8, use zirouter.tpddns.cn : 22718  for direct connection  |
+| **EPSON-PC** | 22718 | VM on i7-3770, 2vCPU | 4GiB | 502s (`-j2`) | _Zamir Sun_ | Available time: 8:00 - 21:30 UTC+8, use zirouter.tpddns.cn:22718  for direct connection  |
 
 ## **MIPS** (23001-24000)
 
