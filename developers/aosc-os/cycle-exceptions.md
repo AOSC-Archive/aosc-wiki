@@ -1,5 +1,10 @@
-<!-- TITLE: Exceptions to the Update Cycles -->
-<!-- SUBTITLE: A Suggested List of Packages to be Updated Immediately and Made Available in Stable Repositories -->
+---
+title: Exceptions to the Update Cycles
+description: A Suggested List of Packages to be Updated Immediately and Made Available in Stable Repositories
+published: true
+date: 2020-04-17T04:00:02.764Z
+tags: 
+---
 
 # Rationale and Definition
 
@@ -65,6 +70,7 @@ The list below is a **concrete and specific** list of packages which could be co
 | CA Certificates | `ca-certs` | 3 |
 | ACBS | `acbs` | 4 |
 | Ciel | `ciel` | 4 |
+| XMRig | `xmrig` | 2 |
 
 # Extra Notes
 
