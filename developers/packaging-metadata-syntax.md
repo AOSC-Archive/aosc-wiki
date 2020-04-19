@@ -2,7 +2,7 @@
 title: Packaging Metadata Syntax
 description: Reduced Bash syntax for describing packages
 published: true
-date: 2020-04-19T08:30:42.603Z
+date: 2020-04-19T09:04:36.380Z
 tags: 
 ---
 
@@ -25,6 +25,8 @@ MESON_AFTER__AMD64=" \
 
 ## Permitted bash syntax
 
+### Syntax
+
 * [Quoting](https://www.gnu.org/software/bash/manual/bash.html#Quoting)
   * Escape Character: `\newline`, `\"`
   * Single Quotes: `'a'`
@@ -42,6 +44,7 @@ MESON_AFTER__AMD64=" \
     * `${parameter%word}`
     * `${parameter%%word}`
     * `${parameter/pattern/string}`
+    * `${parameter//pattern/string}`
   	* **Not OK**:
       * `${parameter:-word}`
       * `${parameter:=word}`
@@ -57,6 +60,7 @@ MESON_AFTER__AMD64=" \
       * `${parameter,pattern}`
       * `${parameter,,pattern}`
       * `${parameter@operator}`
+      * `${parameter/#pattern/string}`
   * **Not OK**:
   	* Brace Expansion: `a{d,c,b}e`
     * Tilde Expansion: `~/.config`
@@ -64,5 +68,9 @@ MESON_AFTER__AMD64=" \
     * Arithmetic Expansion: `$(( expression ))`
     * Process Substitution: `<(list)` or `>(list)`
     * Filename Expansion
+
+### Patterns
+
+[Pattern Matching](https://www.gnu.org/software/bash/manual/bash.html#Pattern-Matching) is only used in `${parameter/pattern/string}`
 
 
