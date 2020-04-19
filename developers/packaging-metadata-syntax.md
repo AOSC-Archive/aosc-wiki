@@ -2,7 +2,7 @@
 title: Packaging Metadata Syntax
 description: Reduced Bash syntax for describing packages
 published: true
-date: 2020-04-19T09:04:36.380Z
+date: 2020-04-19T09:16:45.389Z
 tags: 
 ---
 
@@ -24,6 +24,10 @@ MESON_AFTER__AMD64=" \
 
 
 ## Permitted bash syntax
+
+### Lines
+
+Only variable definitions are allowed, eg. `a=b`.
 
 ### Syntax
 
@@ -71,6 +75,5 @@ MESON_AFTER__AMD64=" \
 
 ### Patterns
 
-[Pattern Matching](https://www.gnu.org/software/bash/manual/bash.html#Pattern-Matching) is only used in `${parameter/pattern/string}`
-
+[Pattern Matching](https://www.gnu.org/software/bash/manual/bash.html#Pattern-Matching) is only used in `${parameter/pattern/string}`. Only `*` and `?` is supported.
 
