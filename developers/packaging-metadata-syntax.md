@@ -2,7 +2,7 @@
 title: Packaging Metadata Syntax
 description: Reduced Bash syntax for describing packages
 published: true
-date: 2020-04-19T07:55:43.713Z
+date: 2020-04-19T08:30:42.603Z
 tags: 
 ---
 
@@ -23,21 +23,46 @@ MESON_AFTER__AMD64=" \
 ```
 
 
-## Permitted bash syntax                   
+## Permitted bash syntax
 
 * [Quoting](https://www.gnu.org/software/bash/manual/bash.html#Quoting)
-	*	**OK**
-  	* Escape Character: `\newline`, `\"`
-    * Single Quotes: `'a'`
-    * Double Quotes: `"a"`
-  * **Not OK**
+  * Escape Character: `\newline`, `\"`
+  * Single Quotes: `'a'`
+  * Double Quotes: `"a"`
+  * **Not Permitted**:
   	* ANSI-C Quoting: `$'a\nb'`
    	*	Locale-Specific Translation: `$"a"`
 * [Comments](https://www.gnu.org/software/bash/manual/bash.html#Comments): `# comment`
 * [Shell Expansions](https://www.gnu.org/software/bash/manual/bash.html#Shell-Expansions)
-  * **OK**:
-  	* Brace Expansion:
+  * Shell Parameter Expansion:
+  	* `${parameter:offset}`
+    * `${parameter:offset:length}`
+    * `${parameter#word}`
+    * `${parameter##word}`
+    * `${parameter%word}`
+    * `${parameter%%word}`
+    * `${parameter/pattern/string}`
+  	* **Not OK**:
+      * `${parameter:-word}`
+      * `${parameter:=word}`
+      * `${parameter:?word}`
+      * `${parameter:+word}`
+      * `${!prefix*}`
+      * `${!prefix@}`
+      * `${!name[@]}`
+      * `${!name[*]}`
+      * `${#parameter}`
+      * `${parameter^pattern}`
+      * `${parameter^^pattern}`
+      * `${parameter,pattern}`
+      * `${parameter,,pattern}`
+      * `${parameter@operator}`
   * **Not OK**:
-  	* Brace Expansion: `~/.config`
-    * 
+  	* Brace Expansion: `a{d,c,b}e`
+    * Tilde Expansion: `~/.config`
+    * Command Substitution: `$(command)` or \`command\` (zip, x264+32, xl2tpd, chibi-scheme, uemacs, llvm, qt-5)
+    * Arithmetic Expansion: `$(( expression ))`
+    * Process Substitution: `<(list)` or `>(list)`
+    * Filename Expansion
+
 
