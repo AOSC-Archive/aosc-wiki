@@ -2,12 +2,13 @@
 title: Packaging Metadata Syntax
 description: Reduced Bash syntax for describing packages
 published: true
-date: 2020-04-20T01:15:19.592Z
+date: 2020-04-20T01:15:57.710Z
 tags: 
 ---
 
 # Packaging Metadata Syntax
-`spec` and `defines` files currently use Bash syntax to define package metadata, which is not easy to parse strictly according to the [Bash Reference Manual](https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html). Therefore, we propose the use of a reduce set of Bash syntax to reduce parsing and transition cost, as packaging tools will be refactored in languages other than Bash.
+
+The `spec` and `defines` files currently use Bash syntax to define package metadata, which is not easy to parse strictly according to the [Bash Reference Manual](https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html). Therefore, we propose the use of a reduce set of Bash syntax to reduce parsing and transition cost, as packaging tools will be refactored in languages other than Bash.
 
 ## Example
 
