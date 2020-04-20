@@ -2,7 +2,7 @@
 title: Packaging Metadata Syntax
 description: Reduced Bash syntax for describing packages
 published: true
-date: 2020-04-20T01:15:03.882Z
+date: 2020-04-20T01:15:19.592Z
 tags: 
 ---
 
@@ -43,7 +43,7 @@ MESON_AFTER__AMD64=" \
     * `${parameter//pattern/string}`
 
 
-## Non-permitted Bash Syntax
+## Prohibited Bash Syntax
 
 * [Quoting](https://www.gnu.org/software/bash/manual/bash.html#Quoting)
 	* ANSI-C Quoting: `$'a\nb'`
