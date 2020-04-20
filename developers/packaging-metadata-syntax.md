@@ -2,17 +2,17 @@
 title: Packaging Metadata Syntax
 description: Reduced Bash syntax for describing packages
 published: true
-date: 2020-04-19T09:16:45.389Z
+date: 2020-04-20T01:13:20.967Z
 tags: 
 ---
 
 # Packaging Metadata Syntax
-`spec` and `defines` files currently use bash scripts for describing package metadata. The bash script syntax is not easy to parse strictly according to the bash manual. Therefore, we propose a reduced bash syntax for describing package metadata. The goal is to reduce parsing and transition cost.
+`spec` and `defines` files currently use Bash syntax to define package metadata, which is not easy to parse strictly according to the [Bash Reference Manual](https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html). Therefore, we propose the use of a reduce set of Bash syntax to reduce parsing and transition cost, as packaging tools will be refactored in languages other than Bash.
 
 ## Example
 
 ```bash
-VER=8.2
+PKGVER=8.2
 PKGDEP="x11-lib libdrm expat systemd elfutils libvdpau nettle \
         libva wayland s2tc lm-sensors libglvnd llvm-runtime libclc"
 MESON_AFTER="-Ddri-drivers-path=/usr/lib/xorg/modules/dri \
@@ -23,7 +23,7 @@ MESON_AFTER__AMD64=" \
 ```
 
 
-## Permitted bash syntax
+## Permitted Bash Syntax
 
 ### Lines
 
@@ -35,9 +35,6 @@ Only variable definitions are allowed, eg. `a=b`.
   * Escape Character: `\newline`, `\"`
   * Single Quotes: `'a'`
   * Double Quotes: `"a"`
-  * **Not Permitted**:
-  	* ANSI-C Quoting: `$'a\nb'`
-   	*	Locale-Specific Translation: `$"a"`
 * [Comments](https://www.gnu.org/software/bash/manual/bash.html#Comments): `# comment`
 * [Shell Expansions](https://www.gnu.org/software/bash/manual/bash.html#Shell-Expansions)
   * Shell Parameter Expansion:
@@ -49,7 +46,21 @@ Only variable definitions are allowed, eg. `a=b`.
     * `${parameter%%word}`
     * `${parameter/pattern/string}`
     * `${parameter//pattern/string}`
-  	* **Not OK**:
+
+
+## Non-permitted Bash Syntax
+
+* Quoting
+	* ANSI-C Quoting: `$'a\nb'`
+	*	Locale-Specific Translation: `$"a"`
+* Shell Expansions
+   Brace Expansion: `a{d,c,b}e`
+  * Tilde Expansion: `~/.config`
+  * Command Substitution: `$(command)` or \`command\` (zip, x264+32, xl2tpd, chibi-scheme, uemacs, llvm, qt-5)
+  * Arithmetic Expansion: `$(( expression ))`
+  * Process Substitution: `<(list)` or `>(list)`
+  * Filename Expansion
+  * Shell Parameter Expansion:
       * `${parameter:-word}`
       * `${parameter:=word}`
       * `${parameter:?word}`
@@ -65,13 +76,7 @@ Only variable definitions are allowed, eg. `a=b`.
       * `${parameter,,pattern}`
       * `${parameter@operator}`
       * `${parameter/#pattern/string}`
-  * **Not OK**:
-  	* Brace Expansion: `a{d,c,b}e`
-    * Tilde Expansion: `~/.config`
-    * Command Substitution: `$(command)` or \`command\` (zip, x264+32, xl2tpd, chibi-scheme, uemacs, llvm, qt-5)
-    * Arithmetic Expansion: `$(( expression ))`
-    * Process Substitution: `<(list)` or `>(list)`
-    * Filename Expansion
+
 
 ### Patterns
 
