@@ -2,7 +2,7 @@
 title: Packaging Metadata Syntax
 description: Reduced Bash syntax for describing packages
 published: true
-date: 2020-04-20T01:13:20.967Z
+date: 2020-04-20T01:15:03.882Z
 tags: 
 ---
 
@@ -25,17 +25,12 @@ MESON_AFTER__AMD64=" \
 
 ## Permitted Bash Syntax
 
-### Lines
-
-Only variable definitions are allowed, eg. `a=b`.
-
-### Syntax
-
+* Variable declarations are allowed, eg. `a=b`.
+* [Comments](https://www.gnu.org/software/bash/manual/bash.html#Comments): `# comment`
 * [Quoting](https://www.gnu.org/software/bash/manual/bash.html#Quoting)
-  * Escape Character: `\newline`, `\"`
+  * Escape Characters: `\newline`, `\"`
   * Single Quotes: `'a'`
   * Double Quotes: `"a"`
-* [Comments](https://www.gnu.org/software/bash/manual/bash.html#Comments): `# comment`
 * [Shell Expansions](https://www.gnu.org/software/bash/manual/bash.html#Shell-Expansions)
   * Shell Parameter Expansion:
   	* `${parameter:offset}`
@@ -50,10 +45,10 @@ Only variable definitions are allowed, eg. `a=b`.
 
 ## Non-permitted Bash Syntax
 
-* Quoting
+* [Quoting](https://www.gnu.org/software/bash/manual/bash.html#Quoting)
 	* ANSI-C Quoting: `$'a\nb'`
 	*	Locale-Specific Translation: `$"a"`
-* Shell Expansions
+* [Shell Expansions](https://www.gnu.org/software/bash/manual/bash.html#Shell-Expansions)
    Brace Expansion: `a{d,c,b}e`
   * Tilde Expansion: `~/.config`
   * Command Substitution: `$(command)` or \`command\` (zip, x264+32, xl2tpd, chibi-scheme, uemacs, llvm, qt-5)
