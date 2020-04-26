@@ -2,7 +2,7 @@
 title: Buildbots
 description: Buildbots that can be used by AOSC developers
 published: true
-date: 2020-04-26T04:46:11.975Z
+date: 2020-04-26T04:47:35.445Z
 tags: 
 ---
 
@@ -22,7 +22,7 @@ Between the relay and the buildbots, [Popub](https://github.com/m13253/popub) is
 
 Each buildbot is allocated 2 ports; the smaller one is for connection between your machine and the relay, and the larger one is for outside connections to the relay. For example, the AMD64 buildbot _Ry1800X_ is using 12333 and 22333, where _Ry1800X_ forwards its SSH port using `popub-local` to 12333 on the relay, and the relay exposes this port to the outside on port 22333.
 
-You can log into these buildbots over SSH (by using `ssh -p <port_number> <username>@relay.aosc.io`). For usernames, passwords, and SSH public key exchange, you may contact the owners of buildbots first.
+You can log into these buildbots over SSH (by using `ssh -p <port_number> <username>@relay.aosc.io`). Contact buildbot owners for usernames, and submit your public keys for authentication at the [dev-pubkeys](https://github.com/AOSC-Dev/dev-pubkeys) repository.
 
 If you are willing to contribute your machine to AOSC, please make sure your machine have an usable AOSC Buildkit or a Ciel configuration, and contact Junde Yhi \<lmy441900 at aosc dot xyz\>, providing:
 
