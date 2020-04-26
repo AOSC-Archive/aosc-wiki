@@ -2,12 +2,12 @@
 title: AOSC Membership Enrollment Checklist
 description: Way to become AOSC Member
 published: true
-date: 2020-04-26T06:05:55.731Z
+date: 2020-04-26T06:51:22.605Z
 tags: 
 ---
 
 # AOSC Membership Enrollment Checklist
-Every person and animal is welcomed to contribute to AOSC community. Once you have made some contributions, including packaging, providing server resources, and etc, we will regard you as a member of AOSC.
+Every person, animal, AI, and other lifeforms is welcomed to contribute to AOSC community. Once you have made some contributions, including packaging, providing server resources, and etc, we will regard you as a member of AOSC.
 
 You may request an AOSC account if you are a member. To do so, you may directly ask in AOSC telegram groups, or ask any of the admins (@JeffBai for example). You will be asked to provide your preferred login name, first name and last name (to identify you, no need to be legal name). If you are willing to help us package, you need to provide your SSH public key as well.
 
