@@ -2,7 +2,7 @@
 title: Buildbots
 description: Buildbots that can be used by AOSC developers
 published: true
-date: 2020-04-26T04:47:35.445Z
+date: 2020-04-26T04:51:00.353Z
 tags: 
 ---
 
@@ -24,11 +24,11 @@ Each buildbot is allocated 2 ports; the smaller one is for connection between yo
 
 You can log into these buildbots over SSH (by using `ssh -p <port_number> <username>@relay.aosc.io`). Contact buildbot owners for usernames, and submit your public keys for authentication at the [dev-pubkeys](https://github.com/AOSC-Dev/dev-pubkeys) repository.
 
-If you are willing to contribute your machine to AOSC, please make sure your machine have an usable AOSC Buildkit or a Ciel configuration, and contact Junde Yhi \<lmy441900 at aosc dot xyz\>, providing:
+If you would like contribute your device to AOSC, please make sure your device have an usable Ciel installation, and contact Kexy Biscuit [<kexybiscuit@aosc.io>](mailto:kexybiscuit@aosc.io), providing:
 
-- A name for your machine (optional, just for fun).
-- The port number you want to expose on the relay server.
-- The Pre-Shared Key of Popub.
+- Name for your device (optional, just for fun).
+- Port number of your choice, correspondent to the device's architecture.
+- SSH access for Kexy Biscuit for Relay configuration.
 
 # List of Buildbots
 
