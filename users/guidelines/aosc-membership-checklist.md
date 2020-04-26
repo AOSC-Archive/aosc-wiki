@@ -2,7 +2,7 @@
 title: AOSC Membership Enrollment Checklist
 description: Way to become AOSC Member
 published: true
-date: 2020-04-26T07:00:27.798Z
+date: 2020-04-26T07:01:49.367Z
 tags: 
 ---
 
@@ -13,8 +13,8 @@ You may request an AOSC account if you are a member. To do so, you may directly 
 
 Here we provide a checklist for any admin to create a new account.
 
-- [ ] Create a LDAP Account (ask @xiaoxing).
-- [ ] Create a Mail account (@aosc.io/aosc.xyz) (ask @JeffBai).
-- [ ] Create a new people page in GitHub, consult [this guide](https://wiki.aosc.io/en/developers/community-portal#add-new-personal-pages) if you are unsure.
-- [ ] [Enroll the public key in the GitHub repository](https://github.com/AOSC-Dev/dev-pubkeys) if needed.
-- [ ] Enroll the public key on the repo server if needed (ask @xiaoxing).
+- Create a LDAP Account (ask @xiaoxing).
+- Create a Mail account (@aosc.io/aosc.xyz) (ask @JeffBai).
+- Create a new people page in GitHub, consult [this guide](https://wiki.aosc.io/en/developers/community-portal#add-new-personal-pages) if you are unsure.
+- [Enroll the public key in the GitHub repository](https://github.com/AOSC-Dev/dev-pubkeys) if needed.
+- Enroll the public key on the repo server if needed (ask @xiaoxing).
