@@ -2,7 +2,7 @@
 title: AOSC Membership Enrollment Checklist
 description: Way to become AOSC Member
 published: true
-date: 2020-04-26T06:02:46.561Z
+date: 2020-04-26T06:05:55.731Z
 tags: 
 ---
 
