@@ -1,3 +1,11 @@
+---
+title: hotel
+description: 
+published: true
+date: 2020-05-01T10:52:52.611Z
+tags: 
+---
+
 # 如何提名
 
 请在下方《提名列表》章节仿照第一个提案那样创建。
