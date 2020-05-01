@@ -2,7 +2,7 @@
 title: AOSC OS Maintenance Automation: Design RFCs and Progression
 description: Current Design Goals and Progression, Also Serves as an Index for AOINB-related Documentation
 published: true
-date: 2020-05-01T07:28:35.908Z
+date: 2020-05-01T10:23:54.848Z
 tags: 
 ---
 
@@ -177,7 +177,7 @@ Legends: **\!** To-Do, **✓** Completed.
     - **\!** Files downloaded from non-encrypted/secure links (http://, ftp://).
     - **\!** Files downloaded without checksum verification (may introduce a standardised format to carry out this task... if multiple source files are to be supported in ACBS, then this and the one above will be non-issues).
 
-### Tasks Assigned to (or Mentioned by) [Junde Yhi](https://github.com/mingcongbai)
+### Remarks from [Junde Yhi](https://github.com/lmy441900)
 
 - **\!** A complete re-implementation of all the components we are using
     - **\!** "Ciel 3?"
@@ -189,9 +189,6 @@ Legends: **\!** To-Do, **✓** Completed.
         - **\!** `cield`: A central controller node. All information gathering and task scheduling are done on this node.
             - *This is not covered in this document; I haven't had a clear view of it so far.*
         - **\!** `ciel`: When run as a daemon, ciel accepts command from cield and perform building (while keeping information uploaded back to cield).
-
-### Remarks from [Junde Yhi](https://github.com/mingcongbai)
-
 - ![Ciel 3 incomplete mock-up](!AOSC%20Automation%20RFC_Talk_Discussion_html_255b1143aeeaab78.png).
     - ![Alternative version](AOSC%20Automation%20RFC_Talk_Discussion_html_606e0b300d25dd80.png)
     - Explanation:
