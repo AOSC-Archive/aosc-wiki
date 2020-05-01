@@ -2,7 +2,7 @@
 title: AOSC OS Maintenance Automation: Design RFCs and Progression
 description: Current Design Goals and Progression, Also Serves as an Index for AOINB-related Documentation
 published: true
-date: 2020-05-01T06:53:21.768Z
+date: 2020-05-01T06:54:20.216Z
 tags: 
 ---
 
@@ -176,8 +176,8 @@ Build task distribution and collection.
 
 ### Remarks from [Junde Yhi](https://github.com/mingcongbai)
 
-- ![Ciel 3 incomplete mock-up](!AOSC%20Automation%20RFC_Talk_Discussion_html_255b1143aeeaab78.png).
-    - ![Alternative version](AOSC%20Automation%20RFC_Talk_Discussion_html_606e0b300d25dd80.png)
+- [Ciel 3 incomplete mock-up](AOSC%20Automation%20RFC_Talk_Discussion_html_255b1143aeeaab78.png).
+    - [Alternative version](AOSC%20Automation%20RFC_Talk_Discussion_html_606e0b300d25dd80.png).
     - Explanation:
         - The abstracted building process is defined in Ciel 3; Ciel 3 executes all procedures in sequence (from top to bottom).
         - Distribution provider scripts *hook* to different stages of the process, so that when Ciel 3 is executing a stage, they will be instead invoked...
