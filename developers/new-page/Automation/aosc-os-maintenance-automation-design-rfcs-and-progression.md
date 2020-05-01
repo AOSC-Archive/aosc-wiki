@@ -2,7 +2,7 @@
 title: AOSC OS Maintenance Automation: Design RFCs and Progression
 description: Current Design Goals and Progression, Also Serves as an Index for AOINB-related Documentation
 published: true
-date: 2020-05-01T06:35:37.659Z
+date: 2020-05-01T06:39:52.640Z
 tags: 
 ---
 
@@ -23,15 +23,15 @@ Automated updates to the ABBS Git repo.
 ## Current Implementations
   
 - Information sources...
-	- [PISS]([https://github.com/AOSC-Dev/piss](https://github.com/AOSC-Dev/piss)): Uspstream version checker.
-	- [Anitya]([https://release-monitoring.org](https://release-monitoring.org/)): Fedora's upstream version checker.
-	- [Repology]([https://repology.org](https://repology.org/)): Compares package versions between distributions.
+	- [PISS](https://github.com/AOSC-Dev/piss): Uspstream version checker.
+	- [Anitya](https://release-monitoring.org): Fedora's upstream version checker.
+	- [Repology](https://repology.org/): Compares package versions between distributions.
 - Automatic metadata editors...
-	- [Findupd]([https://github.com/AOSC-Dev/scriptlets/blob/master/findupd](https://github.com/AOSC-Dev/scriptlets/blob/master/findupd)): Lists and modifies packages' to the latest version.
-	- [Bump-rel]([https://github.com/AOSC-Dev/scriptlets/tree/master/bump-rel](https://github.com/AOSC-Dev/scriptlets/tree/master/bump-rel)): Bumps revision number.
-  - [Increaserel]([https://github.com/AOSC-Dev/abbs-meta/blob/master/tools/increaserel.py](https://github.com/AOSC-Dev/abbs-meta/blob/master/tools/increaserel.py)): Also bumps revision number.
-  - [Addchksum]([https://github.com/AOSC-Dev/abbs-meta/blob/master/tools/addchksum.sh](https://github.com/AOSC-Dev/abbs-meta/blob/master/tools/addchksum.sh)): Download sources and add checksums to the `spec` files.
-  - [Commit-o-Matic]([https://github.com/AOSC-Dev/scriptlets/tree/master/commit-o-matic](https://github.com/AOSC-Dev/scriptlets/tree/master/commit-o-matic)): Automatically generate Git commits.
+	- [Findupd](https://github.com/AOSC-Dev/scriptlets/blob/master/findupd): Lists and modifies packages' to the latest version.
+	- [Bump-rel](https://github.com/AOSC-Dev/scriptlets/tree/master/bump-rel): Bumps revision number.
+  - [Increaserel](https://github.com/AOSC-Dev/abbs-meta/blob/master/tools/increaserel.py): Also bumps revision number.
+  - [Addchksum](https://github.com/AOSC-Dev/abbs-meta/blob/master/tools/addchksum.sh): Download sources and add checksums to the `spec` files.
+  - [Commit-o-Matic](https://github.com/AOSC-Dev/scriptlets/tree/master/commit-o-matic): Automatically generate Git commits.
 
 ## To-Do List
 
@@ -46,7 +46,7 @@ Automated updates to the ABBS Git repo.
 
 Build task distribution and collection.
 
-## To-Do List
+## Requirements
 
 - Reliable build tools (Autobuild3, ACBS) and dispatchers (AOINB, Ciel).
 - Improvements to current metadata file formats (`autobuild/defines` and `specs`).
