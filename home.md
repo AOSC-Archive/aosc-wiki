@@ -2,7 +2,7 @@
 title: AOSC Wiki
 description: Where people come to know... Oh wait, sorry MSFN :D
 published: true
-date: 2020-05-01T10:54:30.129Z
+date: 2020-05-01T10:58:31.155Z
 tags: 
 ---
 
@@ -104,7 +104,7 @@ This sub-section provides guidebooks and developer information for AOSC OS/Retro
 
 ## Conferences
 
-- [AOSCC 2019](/aoscc/2019/index)
+- [AOSCC 2019](/aoscc/2019)
 
 # Knowledge Base
 
