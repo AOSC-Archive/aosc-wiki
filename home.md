@@ -1,5 +1,10 @@
-<!-- TITLE: AOSC Wiki -->
-<!-- SUBTITLE: Where people come to know... Oh wait, sorry MSFN :D -->
+---
+title: AOSC Wiki
+description: Where people come to know... Oh wait, sorry MSFN :D
+published: true
+date: 2020-05-01T07:10:27.496Z
+tags: 
+---
 
 # Welcome
 
@@ -45,6 +50,12 @@ This sub-section provides guidebooks and developer information for AOSC OS maint
 	- [Intro To Package Maintenance](/developers/intro-to-package-maintenance)
 	- [AOSC OS Maintenance Guildelines (RFC)](/developers/aosc-os-maintenance-guidelines)
 	- [AOSC OS Package Styling Manual](/developers/aosc-os-package-styling-manual)
+  
+### Automation
+
+Developers intersted in AOSC OS maintenance/packaging automation should refer to this meta page.
+
+- [AOSC OS Maintenance Automation: Design RFCs and Progression](/developers/Automation/aosc-os-maintenance-automation-design-rfcs-and-progression)
 
 ## AOSC OS/Retro
 
