@@ -2,7 +2,7 @@
 title: AOSC OS Maintenance Automation: Design RFCs and Progression
 description: Current Design Goals and Progression, Also Serves as an Index for AOINB-related Documentation
 published: true
-date: 2020-05-01T07:03:44.075Z
+date: 2020-05-01T07:28:35.908Z
 tags: 
 ---
 
@@ -83,13 +83,15 @@ Build task distribution and collection.
 
 Legends: **\!** To-Do, **✓** Completed.
 
+### Tasks Assigned to (or Mentioned by) [Gumblex](https://github.com/gumblex)
+
 - **✓** Autobuild3: Reliability issues with build scripts.
 - **\!** Better spec format and downloader.
    - **\!** ACBS/AOINB: Multiple sources.
    - **\!** ACBS/AOINB: Parallel download for many packages (aria2c, multiple wget, etc.).
 - **\!** ACBS/AOINB/Ciel: Proxy support for build tools.
 - **\!** ACBS: Better dependency resolution ([abbs-meta](https://github.com/AOSC-Dev/abbs-meta) integration?).
-- **\!** Autobuild3: De-shell-ification in autobuild/defines.
+- **\!** Autobuild3: Limit Bash syntaxes in autobuild/defines (see [RFC: Packaging Metadata Syntax](https://wiki.aosc.io/en/developers/packaging-metadata-syntax)).
 - **✓** Build result feedback.
    - **✓** Autobuild3/ACBS/AOINB/Ciel: Package builds failed/succeeded (Since Autobuild3 `v20200320` and Ciel `v2.4.4`).
    - **\!** AOINB: Package build time/memory/disk requirement stats.
@@ -117,13 +119,13 @@ Legends: **\!** To-Do, **✓** Completed.
    - **\!** Autobuild3/ACBS/AOINB: Implemented by editing spec/define files accordingly.
 - **\!** Improvements to the `spec` files...
     - **\!** `VERCHECK`: Method to check for updates.
-        - **\!** `github:org/repo` (matching https://github.com/$org/$repo).
-        - **\!** `gitlab:org/repo` (matching https://gitlab.com/$org/$repo).
-        - **\!** `gnu:bash` (matching https://git.savannah.gnu.org/cgit/$PKGNAME).
-        - **\!** `gnu:coreutils` (matching https://ftp.gnu.org/gnu/$PKGNAME).
+        - **\!** `github:org/repo` (matching https://github.com/\$org/\$repo).
+        - **\!** `gitlab:org/repo` (matching https://gitlab.com/\$org/\$repo).
+        - **\!** `gnu:bash` (matching https://git.savannah.gnu.org/cgit/\$PKGNAME).
+        - **\!** `gnu:coreutils` (matching https://ftp.gnu.org/gnu/\$PKGNAME).
         - **\!** `freedesktop:dbus/dbus`.
         - **\!** `freedesktop:libreoffice/core`.
-        - **\!** `dirlist` (matching https://$URL/$PKGNAME/).
+        - **\!** `dirlist` (matching https://\$URL/\$PKGNAME/).
     - **\!** `CHKPARAM`: Other parameters for `VERCHECK`.
     - **\!** `VERFMT`: Package version formats.
         - **\!** Which is major, minor, patch / which break things.
