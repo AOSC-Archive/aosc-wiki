@@ -2,7 +2,7 @@
 title: AOSC Wiki
 description: Where people come to know... Oh wait, sorry MSFN :D
 published: true
-date: 2020-05-01T07:10:27.496Z
+date: 2020-05-01T10:48:54.941Z
 tags: 
 ---
 
@@ -16,7 +16,45 @@ The wiki is split into multiple big sections, targeting different audiences. Do 
 
 Be sure to note our [AOSC Inter-Personal Guidelines \[Long Term RFC\]](/users/guidelines/community-guidelines).
 
+# Users
+
+This section contains information useful for AOSC OS users with pages arranged by topics.
+
+- [Is AOSC OS Right for Me?](/users/information/is-aosc-os-right-for-me)
+
+## System Installation
+
+This topic provides information on installation of AOSC OS, and considerations suggested when choosing different editions of AOSC OS.
+
+- How-to/Guides
+	- [AMD64/x86-64 Systems](/users/installation/amd64)
+	- [ARMv7/AArch64 Devices](/users/installation/arm)
+	- [PowerPC/PPC64-based Macintosh](/users/installation/powermac)
+	- *MIPS 32/64-Bit Systems*
+	- [ZFS Root](/users/installation/zfs-root)
+- System Requirements
+	- [AMD64/x86-64 Systems](/users/installation/amd64-notes-sysreq)
+	- [ARMv7/AArch64 Devices](/users/installation/arm-notes-sysreq)
+	- [PowerPC/PPC64-based Macintosh](/users/installation/powermac-notes-sysreq)
+	- *MIPS 32/64-bit Systems*
+
+## System Information and Specifications
+
+This topic provides information on AOSC OS's system specifications, naming schemes, etc.
+
+- [Architecture Namings and Specifications](/users/information/arch-specs)
+- [Filesystem Hierarchy](/users/information/fs-hierarchy)
+- *Optimisation Overlays*
+
+## AOSC OS/Retro
+
+This sub-section provides guidebooks and developer information for AOSC OS/Retro maintainers.
+
+- [AOSC OS/Retro: A Rationale (RFC)](/developers/retro/aosc-os-retro-rationale)
+- [AOSC OS/Retro: An Introduction to Users and Maintainers (RFC)](/developers/retro/aosc-os-retro-intro)
+
 # Developers
+
 This section contains guidebooks for AOSC developers, as well as more technically-inclined content for developers using AOSC OS.
 
 ## Wiki and Contribution
@@ -64,45 +102,17 @@ This sub-section provides guidebooks and developer information for AOSC OS/Retro
 - [AOSC OS/Retro: A Rationale (RFC)](/developers/retro/aosc-os-retro-rationale)
 - [AOSC OS/Retro: An Introduction to Users and Maintainers (RFC)](/developers/retro/aosc-os-retro-intro)
 
-# Users
-This section contains information useful for AOSC OS users with pages arranged by topics.
-
-- [Is AOSC OS Right for Me?](/users/information/is-aosc-os-right-for-me)
-
-## System Installation
-
-This topic provides information on installation of AOSC OS, and considerations suggested when choosing different editions of AOSC OS.
-
-- How-to/Guides
-	- [AMD64/x86-64 Systems](/users/installation/amd64)
-	- [ARMv7/AArch64 Devices](/users/installation/arm)
-	- [PowerPC/PPC64-based Macintosh](/users/installation/powermac)
-	- *MIPS 32/64-Bit Systems*
-	- [ZFS Root](/users/installation/zfs-root)
-- System Requirements
-	- [AMD64/x86-64 Systems](/users/installation/amd64-notes-sysreq)
-	- [ARMv7/AArch64 Devices](/users/installation/arm-notes-sysreq)
-	- [PowerPC/PPC64-based Macintosh](/users/installation/powermac-notes-sysreq)
-	- *MIPS 32/64-bit Systems*
-
-## System Information and Specifications
-
-This topic provides information on AOSC OS's system specifications, naming schemes, etc.
-
-- [Architecture Namings and Specifications](/users/information/arch-specs)
-- [Filesystem Hierarchy](/users/information/fs-hierarchy)
-- *Optimisation Overlays*
-
-## AOSC OS/Retro
-
-This sub-section provides guidebooks and developer information for AOSC OS/Retro maintainers.
-
-- [AOSC OS/Retro: A Rationale (RFC)](/developers/retro/aosc-os-retro-rationale)
-- [AOSC OS/Retro: An Introduction to Users and Maintainers (RFC)](/developers/retro/aosc-os-retro-intro)
-
 ## Conferences
 
 - [AOSCC 2019](/aoscc-2019)
+
+# Knowledge Base
+
+This section contains pages describing common questions, tips, and directions when using AOSC OS.
+
+- [KB-SYS-00001: Configuration of APT Repositories](/kbs/sys/00001-apt-gen-list)
+- [KB-SYS-00002: Configuration of Input Methods](/kbs/sys/00002-imchooser)
+- [KB-SYS-00003: Configuration of JACK](/kbs/sys/00003-jack-configuration)
 
 # Errata
 
@@ -117,14 +127,6 @@ This section contains known unresolved and resolved issues found in AOSC OS - fo
 - [ERR-SYS-00007: Performance Issues with Fontconfig <= 2.12.92](/err/x11/00007-fc-cache-performance-issues)
 - [ERR-SYS-00008: CUPS "Filter Failed" with Printers Using the HPLIP Driver](/err/x11/00008-hplip-proprietary-plugins-version-mismatch)
 - [ERR-SYS-00009: Error Updating to Systemd 242](/err/systemd/00009-error-updating-to-systemd-242)
-
-# Knowledge Base
-
-This section contains pages describing common questions, tips, and directions when using AOSC OS.
-
-- [KB-SYS-00001: Configuration of APT Repositories](/kbs/sys/00001-apt-gen-list)
-- [KB-SYS-00002: Configuration of Input Methods](/kbs/sys/00002-imchooser)
-- [KB-SYS-00003: Configuration of JACK](/kbs/sys/00003-jack-configuration)
 
 # AOSC OS Security Advisories
 
