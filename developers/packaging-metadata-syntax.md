@@ -2,7 +2,7 @@
 title: Packaging Metadata Syntax
 description: Reduced Bash syntax for describing packages
 published: true
-date: 2020-05-01T07:02:08.008Z
+date: 2020-05-01T07:36:00.558Z
 tags: 
 ---
 
@@ -19,7 +19,7 @@ PKGDEP="x11-lib libdrm expat systemd elfutils libvdpau nettle \
 MESON_AFTER="-Ddri-drivers-path=/usr/lib/xorg/modules/dri \
              -Db_ndebug=true" 
 MESON_AFTER__AMD64=" \
-             ${MESON_AFTER__X86} \
+             ${MESON_AFTER} \
              -Dlibunwind=true"
 ```
 
