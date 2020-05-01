@@ -1,5 +1,10 @@
-<!-- TITLE: Installation/AMD64 -->
-<!-- SUBTITLE: Installing AOSC OS on AMD64/x86-64 Devices -->
+---
+title: Installation/AMD64
+description: Installing AOSC OS on AMD64/x86-64 Devices
+published: true
+date: 2020-05-01T11:51:43.124Z
+tags: 
+---
 
 > Available languages | [English](/users/installation/amd64) | [简体中文](/users/installation/amd-64/zh-cn)
 
@@ -102,26 +107,19 @@ For a more exciting experience, add verbosity:
 
 Here below are some extra steps before you configure your bootloader - strongly recommended to avoid potential issues later.
 
+## /etc/fstab Generation
+
+If you have chosen to use multi-partition layout for your AOSC OS installation, you will need to configure your `/etc/fstab` file, one fast way to achieve this is `genfstab` :
+
+```
+# /mnt/usr/bin/genfstab -U -p /mnt >> /mnt/etc/fstab
+```
+
 ## Bind mount system/pseudo directories
 
 ```
 # mkdir /mnt/run/udev
 # for i in dev proc sys run/udev; do mount --rbind /$i /mnt/$i; done
-```
-
-## /etc/fstab Generation
-
-If you have chosen to use multi-partition layout for your AOSC OS installation, you will need to configure your `/etc/fstab` file, one fast way to achieve this is by installing the `genfstab` package:
-
-```
-# chroot /mnt apt update
-# chroot /mnt apt install genfstab
-```
-
-And generate a `/etc/fstab` file:
-
-```
-# /mnt/usr/bin/genfstab -U -p /mnt >> /mnt/etc/fstab
 ```
 
 ## Chroot
