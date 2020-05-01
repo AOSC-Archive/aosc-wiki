@@ -1,5 +1,10 @@
-<!-- TITLE: Installation/PowerMac -->
-<!-- SUBTITLE: Installing AOSC OS on PowerPC/PPC64-based Macintosh Computers -->
+---
+title: Installation/PowerMac
+description: Installing AOSC OS on PowerPC/PPC64-based Macintosh Computers
+published: true
+date: 2020-05-01T11:56:41.273Z
+tags: 
+---
 
 **Note: Due to limited device availability, PowerPC 32-bit (`powerpc`) port of AOSC OS is only tested on G3/G4-based, [NewWorld](https://en.wikipedia.org/wiki/New_World_ROM) Apple Macintosh computers; PowerPC 64-bit (`ppc64`, Big Endian) port of AOSC OS is only tested on G5-based Apple Macintosh computers. So yes, these ports are Macintosh-specific as it stands now.**
 
@@ -148,25 +153,18 @@ For a more exciting experience, add verbosity:
 
 Here below are some extra steps before you configure your bootloader - strongly recommended to avoid potential issues later.
 
+## /etc/fstab Generation
+
+If you have chosen to use multi-partition layout for your AOSC OS installation, you will need to configure your `/etc/fstab` file, one fast way to achieve this is `genfstab`:
+
+```
+# /mnt/usr/bin/genfstab -U -p /mnt >> /mnt/etc/fstab
+```
+
 ## Bind mount system/pseudo directories
 
 ```
 # for i in dev proc sys; do mount --rbind /$i /mnt/$i; done
-```
-
-## /etc/fstab Generation
-
-If you have chosen to use multi-partition layout for your AOSC OS installation, you will need to configure your `/etc/fstab` file, one fast way to achieve this is by installing the `genfstab` package:
-
-```
-# chroot /mnt apt update
-# chroot /mnt apt install genfstab
-```
-
-And generate a `/etc/fstab` file:
-
-```
-# /mnt/usr/bin/genfstab -U -p /mnt >> /mnt/etc/fstab
 ```
 
 **Commands in all sections below are executed from chroot.**
