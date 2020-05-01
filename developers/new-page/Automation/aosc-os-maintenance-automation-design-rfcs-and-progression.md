@@ -2,9 +2,24 @@
 title: AOSC OS Maintenance Automation: Design RFCs and Progression
 description: Current Design Goals and Progression, Also Serves as an Index for AOINB-related Documentation
 published: true
-date: 2020-05-01T06:58:25.937Z
+date: 2020-05-01T07:03:44.075Z
 tags: 
 ---
+
+# Current Design Documents and RFCs
+
+## In Effect
+
+- [Exceptions to the Update Cycles](/developers/aosc-os/cycle-exceptions)
+- [Known Patch Release Rules](/developers/aosc-os/known-patch-release-rules)
+- [Intro To Package Maintenance](/developers/intro-to-package-maintenance)
+- [AOSC OS Package Styling Manual](/developers/aosc-os-package-styling-manual)
+- [AOSC OS Maintenance Guildelines (RFC)](/developers/aosc-os-maintenance-guidelines)
+
+## In-Progress or Early RFC
+
+- [RFC: AOSC Open Infrastructure forNetwork Building (Graphical Presentation)](https://raw.githubusercontent.com/AOSC-Dev/aoinb/master/docs/aoinb.dot.svg)
+- [RFC: Packaging Metadata Syntax](https://wiki.aosc.io/en/developers/packaging-metadata-syntax)
 
 # Automation for Metadata Updates
 
@@ -100,9 +115,6 @@ Legends: **\!** To-Do, **✓** Completed.
    - **\!** ACBS/AOINB: Rebuild all reverse sodeps on sover/soname changes.
    - **\!** ACBS/AOINB: Rebuild for Python, Perl, ... language packages which also require vendor path changes.
    - **\!** Autobuild3/ACBS/AOINB: Implemented by editing spec/define files accordingly.
-
-### 
-
 - **\!** Improvements to the `spec` files...
     - **\!** `VERCHECK`: Method to check for updates.
         - **\!** `github:org/repo` (matching https://github.com/$org/$repo).
@@ -143,8 +155,6 @@ Legends: **\!** To-Do, **✓** Completed.
         - **✓** Generate apt metadata files.
         - **\!** Manage incoming `.deb` files in a staging are).
         - **\!** Manage `.deb` pools (stacked repositories).
-
-// Graphviz here.
 
 ### Tasks Assigned to (or Mentioned by) [Mingcong Bai](https://github.com/mingcongbai)
 
