@@ -2,7 +2,7 @@
 title: AOSC OS Maintenance Automation: Design RFCs and Progression
 description: Current Design Goals and Progression, Also Serves as an Index for AOINB-related Documentation
 published: true
-date: 2020-05-01T06:51:11.298Z
+date: 2020-05-01T06:53:21.768Z
 tags: 
 ---
 
@@ -37,7 +37,7 @@ Automated updates to the ABBS Git repo.
 
 - [ ] ACBS/AOINB: `spec` should include more information about upstream.
 - [ ] ACBS/AOINB: `spec` should contain enough information about how to get the latest version numbers.
-- [ ] AOSC Packages (site): Current packages.aosc.io JSON does not detect version bumps when its parent link changes (for instance, `https://.../gnome-shell/3.24` versus `https://.../gnome-shell/3.30)`.
+- [ ] AOSC Packages Site: Current packages.aosc.io JSON does not detect version bumps when its parent link changes. For instance, `https://.../gnome-shell/3.24` versus `https://.../gnome-shell/3.30`.
     - [ ] JSON is also unreliable with `foo-n`, where `n` is a number, package names, as it cuts off at the last `-`.
 - [x] Addchksum: needs a wrapper script - so packagers wouldn’t have to write a for loop just to update checksums (automatic patching would also be appreciated).
   - [ ] FTP handling (although these source links are currently being deprecated, some are here to stay).
@@ -85,7 +85,7 @@ Build task distribution and collection.
    - [ ] Autobuild3: Package installation test (may be separated from the building process).
    - [ ] Autobuild3: QA throughout the build process (before and after checks).
    - [ ] Autobuild3: Package relationship checks (4xx issues, dependencies, etc.).
-   - [ ] AOSC OS Packages (site): Unified QA feedback.
+   - [ ] AOSC OS Packages Site: Unified QA feedback.
 - [ ] Build distribution.
    - [ ] AOINB: BOINC-like, out-of-the-box compiling.
    - [ ] AOINB: Distribute tasks based on resources available.
