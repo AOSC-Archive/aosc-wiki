@@ -1,5 +1,10 @@
-<!-- TITLE: AOSCC 2019 -->
-<!-- SUBTITLE: A quick summary of AOSCC 2019 -->
+---
+title: AOSCC 2019
+description: A quick summary of AOSCC 2019
+published: true
+date: 2020-05-01T10:51:15.037Z
+tags: 
+---
 
 # 参会信息
 
