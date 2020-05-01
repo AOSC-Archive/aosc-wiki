@@ -1,6 +1,10 @@
-<!-- TITLE: Installation/AMD64 (简体中文) -->
-<!-- SUBTITLE: 在 AMD64/x86_64 设备安装 AOSC OS -->
-
+---
+title: Installation/AMD64 (简体中文)
+description: 在 AMD64/x86_64 设备安装 AOSC OS
+published: true
+date: 2020-05-01T11:53:28.839Z
+tags: 
+---
 
 > Available languages | [English](/users/installation/amd64) | [简体中文](/users/installation/amd-64/zh-cn)
 
@@ -107,26 +111,19 @@ GParted Live 环境里的 GParted 使用起来非常简单。如果对如何使�
 
 下面是在配置引导器之前，为了避免潜在的问题所需要的步骤。
 
+## 生成 /etc/fstab
+
+如果你在多个分区下安装 AOSC OS， 你需要配置正确的 `/etc/fstab`。可以使用 `genfstab` 这个工具：
+
+```
+# /mnt/usr/bin/genfstab -U -p /mnt >> /mnt/etc/fstab
+```
+
 ## 绑定设备和系统路径
 
 ```
 # mkdir /mnt/run/udev
 # for i in dev proc sys run/udev; do mount --rbind /$i /mnt/$i; done
-```
-
-## 生成 /etc/fstab
-
-如果你在多个分区下安装 AOSC OS， 你需要配置正确的 `/etc/fstab`。你可以安装 `genfstab` 这个工具：
-
-```
-# chroot /mnt apt update
-# chroot /mnt apt install genfstab
-```
-
-然后用它来生成 `/etc/fstab`：
-
-```
-# /mnt/usr/bin/genfstab -U -p /mnt >> /mnt/etc/fstab
 ```
 
 ## 进入新系统
