@@ -2,7 +2,7 @@
 title: AOSCC 2019
 description: A quick summary of AOSCC 2019
 published: true
-date: 2020-05-01T10:55:14.732Z
+date: 2020-05-01T10:57:31.859Z
 tags: 
 ---
 
