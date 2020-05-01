@@ -2,7 +2,7 @@
 title: AOSC Wiki
 description: Where people come to know... Oh wait, sorry MSFN :D
 published: true
-date: 2020-05-01T10:58:31.155Z
+date: 2020-05-01T11:00:47.658Z
 tags: 
 ---
 
@@ -93,7 +93,7 @@ This sub-section provides guidebooks and developer information for AOSC OS maint
 
 Developers intersted in AOSC OS maintenance/packaging automation should refer to this meta page.
 
-- [AOSC OS Maintenance Automation: Design RFCs and Progression](/developers/Automation/aosc-os-maintenance-automation-design-rfcs-and-progression)
+- [AOSC OS Maintenance Automation: Design RFCs and Progression](/developers/automation/aosc-os-maintenance-automation-design-rfcs-and-progression)
 
 ## AOSC OS/Retro
 
