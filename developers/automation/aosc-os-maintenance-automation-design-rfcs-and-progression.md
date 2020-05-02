@@ -2,7 +2,7 @@
 title: AOSC OS Maintenance Automation: Design RFCs and Progression
 description: Current Design Goals and Progression, Also Serves as an Index for AOINB-related Documentation
 published: true
-date: 2020-05-01T10:23:54.848Z
+date: 2020-05-02T03:06:54.866Z
 tags: 
 ---
 
@@ -47,6 +47,14 @@ Automated updates to the ABBS Git repo.
   - [Increaserel](https://github.com/AOSC-Dev/abbs-meta/blob/master/tools/increaserel.py): Also bumps revision number.
   - [Addchksum](https://github.com/AOSC-Dev/abbs-meta/blob/master/tools/addchksum.sh): Download sources and add checksums to the `spec` files.
   - [Commit-o-Matic](https://github.com/AOSC-Dev/scriptlets/tree/master/commit-o-matic): Automatically generate Git commits.
+- Libraries
+  - [Bashvar](https://github.com/AOSC-Dev/abbs-meta/blob/master/bashvar.py): Parse spec/defines.
+- AOINB components
+  - [abbs-meta](https://github.com/AOSC-Dev/abbs-meta): Get package catalog from abbs trees.
+  - [dpkgrepo-meta](https://github.com/AOSC-Dev/dpkgrepo-meta): Get package catalog from dpkg/apt sources.
+	- [Downloader](https://github.com/AOSC-Dev/aoinb/blob/master/worker/downloader.tcl): Download sources.
+  - [abbs-dep](https://github.com/AOSC-Dev/abbs-dep): Resolve dependencies.
+
 
 ## To-Do List
 
@@ -133,10 +141,10 @@ Legends: **\!** To-Do, **✓** Completed.
     - **\!** `WEBSITE`: Upstream homepage (metadata information only).
 - **\!** ACBS/AOINB: Modularized solution. One tool for one function.
     - **✓** Metadata: `abbs-meta`, `packages-site/dpkgrepo.py.`
-    - **\!** Move dpkgrepo.py to abbs-meta?
-    - **✓** Source downloader: `adbs/downloader.py`.
-    - **\!** Dependency resolver and topology sorting: [abbs-dep](https://github.com/AOSC-Dev/abbs-dep).
-        - **\!** Dependency search stops when the same package name and version (`abbs=repository`) exists.
+    - **✓** Move dpkgrepo.py to an independent repo: [dpkgrepo-meta](https://github.com/AOSC-Dev/dpkgrepo-meta)
+    - **✓** Source downloader: `aoinb/worker/downloader.tcl`.
+    - **✓** Dependency resolver and topology sorting: [abbs-dep](https://github.com/AOSC-Dev/abbs-dep).
+        - **✓** Dependency search stops when the same package name and version (`abbs=repository`) exists.
         - **✓** Topology sorting, without checking repository version.
     - **\!** Build environment manager(s).
           - **✓** Container: [Ciel](https://github.com/AOSC-Dev/ciel).
