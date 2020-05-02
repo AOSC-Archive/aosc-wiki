@@ -2,7 +2,7 @@
 title: AOSC OS Maintenance Automation: Design RFCs and Progression
 description: Current Design Goals and Progression, Also Serves as an Index for AOINB-related Documentation
 published: true
-date: 2020-05-02T03:06:54.866Z
+date: 2020-05-02T03:08:27.190Z
 tags: 
 ---
 
@@ -52,7 +52,7 @@ Automated updates to the ABBS Git repo.
 - AOINB components
   - [abbs-meta](https://github.com/AOSC-Dev/abbs-meta): Get package catalog from abbs trees.
   - [dpkgrepo-meta](https://github.com/AOSC-Dev/dpkgrepo-meta): Get package catalog from dpkg/apt sources.
-	- [Downloader](https://github.com/AOSC-Dev/aoinb/blob/master/worker/downloader.tcl): Download sources.
+  - [Downloader](https://github.com/AOSC-Dev/aoinb/blob/master/worker/downloader.tcl): Download sources.
   - [abbs-dep](https://github.com/AOSC-Dev/abbs-dep): Resolve dependencies.
 
 
