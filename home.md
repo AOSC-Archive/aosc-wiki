@@ -2,7 +2,7 @@
 title: AOSC Wiki
 description: Where people come to know... Oh wait, sorry MSFN :D
 published: true
-date: 2020-05-03T08:36:16.569Z
+date: 2020-05-03T08:40:33.215Z
 tags: 
 ---
 
@@ -14,7 +14,7 @@ This is where all documentations, information, and guides will gather for users 
 
 The wiki is split into multiple big sections, targeting different audiences. Do use the search bar if lost though, it could come in handy.
 
-Be sure to note our [AOSC Inter-Personal Guidelines \[Long Term RFC\]](community-guidelines).
+Be sure to note our [AOSC Inter-Personal Guidelines](community-guidelines).
 
 # Users
 
@@ -28,8 +28,8 @@ This topic provides information on installation of AOSC OS, and considerations s
 
 - How-to/Guides
 	- [AMD64/x86-64 Systems](installation-amd64)
-	- [ARMv7/AArch64 Devices](/users/installation/arm)
-	- [PowerPC/PPC64-based Macintosh](/users/installation/powermac)
+	- [ARMv7/AArch64 Devices](installation-arm)
+	- [PowerPC/PPC64-based Macintosh](installation-powermac)
 	- *MIPS 32/64-Bit Systems*
 	- [ZFS Root](/users/installation/zfs-root)
 - System Requirements
