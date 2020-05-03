@@ -1,5 +1,10 @@
-<!-- TITLE: AOSC OS/Retro: A Rationale (RFC) -->
-<!-- SUBTITLE: A Preliminary Survey of AOSC OS, and the World of Modern Computing -->
+---
+title: AOSC OS/Retro: A Rationale (RFC)
+description: A Preliminary Survey of AOSC OS, and the World of Modern Computing
+published: true
+date: 2020-05-03T08:49:47.474Z
+tags: retro
+---
 
 Current State of Matters
 ==========
