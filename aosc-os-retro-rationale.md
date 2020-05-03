@@ -2,8 +2,8 @@
 title: AOSC OS/Retro: A Rationale (RFC)
 description: A Preliminary Survey of AOSC OS, and the World of Modern Computing
 published: true
-date: 2020-05-03T08:50:40.115Z
-tags: aosc os retro
+date: 2020-05-03T08:52:12.615Z
+tags: retro
 ---
 
 Current State of Matters
