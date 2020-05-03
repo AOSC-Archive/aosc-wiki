@@ -2,7 +2,7 @@
 title: How To Contribute to This Wiki
 description: A quick guide on Wiki contribution
 published: true
-date: 2020-05-03T09:43:56.551Z
+date: 2020-05-03T09:56:37.757Z
 tags: 
 ---
 
@@ -29,7 +29,7 @@ Here are some requirements and expectations specific to each of the sections def
 
 ### General
 
-- Each page should be linked to & from its related pages. For example, there is a tool called [apt-gen-list](/apt-gen-list) for configuring the package manager APT. Page [apt](/apt) and [installation](/installation-amd64) should provide a short introduction and also a link to it.
+- Each page should be linked to and from its related pages. For example, there is a tool called [apt-gen-list](/apt-gen-list) for configuring the package manager APT. Page [apt](/apt) and [installation](/installation-amd64) should provide a short introduction and also a link to it.
 - Each page should at least contain the following...
 	- General summary of the topic.
 	- Section generalising related operations/usages.
