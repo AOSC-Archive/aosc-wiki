@@ -2,7 +2,7 @@
 title: AOSC Wiki
 description: Where people come to know... Oh wait, sorry MSFN :D
 published: true
-date: 2020-05-03T19:40:08.669Z
+date: 2020-05-03T19:44:47.173Z
 tags: 
 ---
 
@@ -95,13 +95,6 @@ This sub-section provides guidebooks and developer information for AOSC OS maint
 Developers intersted in AOSC OS maintenance/packaging automation should refer to this meta page.
 
 - [AOSC OS Maintenance Automation: Design RFCs and Progression](/developers/automation/aosc-os-maintenance-automation-design-rfcs-and-progression)
-
-## AOSC OS/Retro
-
-This sub-section provides guidebooks and developer information for AOSC OS/Retro maintainers.
-
-- [AOSC OS/Retro: A Rationale (RFC)](/developers/retro/aosc-os-retro-rationale)
-- [AOSC OS/Retro: An Introduction to Users and Maintainers (RFC)](/developers/retro/aosc-os-retro-intro)
 
 ## Conferences
 
