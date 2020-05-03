@@ -2,7 +2,7 @@
 title: AOSC Wiki
 description: Where people come to know... Oh wait, sorry MSFN :D
 published: true
-date: 2020-05-03T08:46:06.920Z
+date: 2020-05-03T08:48:54.606Z
 tags: 
 ---
 
@@ -51,8 +51,8 @@ This topic provides information on AOSC OS's system specifications, naming schem
 
 This sub-section provides guidebooks and developer information for AOSC OS/Retro maintainers.
 
-- [AOSC OS/Retro: A Rationale (RFC)](/developers/retro/aosc-os-retro-rationale)
-- [AOSC OS/Retro: An Introduction to Users and Maintainers (RFC)](/developers/retro/aosc-os-retro-intro)
+- [AOSC OS/Retro: A Rationale (RFC)](aosc-os-retro-rationale)
+- [AOSC OS/Retro: An Introduction to Users and Maintainers (RFC)](aosc-os-retro-intro)
 
 # Developers
 
