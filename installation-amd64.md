@@ -2,16 +2,16 @@
 title: Installation/AMD64
 description: Installing AOSC OS on AMD64/x86-64 Devices
 published: true
-date: 2020-05-03T09:36:03.525Z
+date: 2020-05-03T09:40:39.463Z
 tags: installation
 ---
 
 Installation of AOSC OS on x86-64 systems/environments are generally universal for all systems of this architectures. But for some specific device configurations and virtualized environments, here below are some extra notes:
 
-- [Notes for KVM](/users/installation/amd64-notes-kvm)
-- [Notes for Bay Trail/Cherry Trail](/users/installation/amd64-notes-trails)
-- [Notes for software RAID](/users/installation/amd64-notes-softraid)
-- [Notes for BCM4360 users](/users/installation/amd64-notes-bcm4360)
+- [Notes for KVM](/installation-amd64-notes-kvm)
+- [Notes for Bay Trail/Cherry Trail](/installation-amd64-notes-trails)
+- [Notes for software RAID](/installation-amd64-notes-softraid)
+- [Notes for BCM4360 users](/installation-amd64-notes-bcm4360)
 
 # Forenotes
 
@@ -21,7 +21,7 @@ Installation of AOSC OS on x86-64 systems/environments are generally universal f
 
 All AMD64/x86-64 tarballs are generic (universal for all supported devices), the only thing you would have to do here is choosing your favourite one - appropriate for your taste and your use case.
 
-> Note: Another consideration is whether your device is capable for a specific variant, please consult the [AMD64/x86-64 system requirements](/users/installation/amd64-notes-sysreq) page for more information.
+> Note: Another consideration is whether your device is capable for a specific variant, please consult the [AMD64/x86-64 system requirements](/installation-amd64-notes-sysreq) page for more information.
 
 ## Bootable
 
