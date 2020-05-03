@@ -2,7 +2,7 @@
 title: Packaging Metadata Syntax
 description: Reduced Bash syntax for describing packages
 published: true
-date: 2020-05-03T03:07:28.655Z
+date: 2020-05-03T03:09:02.099Z
 tags: 
 ---
 
@@ -45,6 +45,8 @@ MESON_AFTER__AMD64=" \
 
 
 ## Prohibited Bash Syntax
+
+All recursion is not allowed.
 
 * [Quoting](https://www.gnu.org/software/bash/manual/bash.html#Quoting)
 	* ANSI-C Quoting: `$'a\nb'`
