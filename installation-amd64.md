@@ -2,8 +2,8 @@
 title: Installation/AMD64
 description: Installing AOSC OS on AMD64/x86-64 Devices
 published: true
-date: 2020-05-01T11:51:43.124Z
-tags: 
+date: 2020-05-03T08:41:41.916Z
+tags: installation
 ---
 
 > Available languages | [English](/users/installation/amd64) | [简体中文](/users/installation/amd-64/zh-cn)
