@@ -2,7 +2,7 @@
 title: AOSC Wiki
 description: Where people come to know... Oh wait, sorry MSFN :D
 published: true
-date: 2020-05-03T09:12:18.535Z
+date: 2020-05-03T09:13:13.371Z
 tags: 
 ---
 
@@ -14,29 +14,29 @@ This is where all documentations, information, and guides will gather for users 
 
 The wiki is split into multiple big sections, targeting different audiences. Do use the search bar if lost though, it could come in handy.
 
-Be sure to note our [AOSC Inter-Personal Guidelines](community-guidelines).
+Be sure to note our [AOSC Inter-Personal Guidelines](/community-guidelines).
 
 # Users
 
 This section contains information useful for AOSC OS users with pages arranged by topics.
 
-- [Is AOSC OS Right for Me?](is-aosc-os-right-for-me)
+- [Is AOSC OS Right for Me?](/is-aosc-os-right-for-me)
 
 ## System Installation
 
 This topic provides information on installation of AOSC OS, and considerations suggested when choosing different editions of AOSC OS.
 
 - How-to/Guides
-	- [AMD64/x86-64 Systems](installation-amd64)
-	- [ARMv7/AArch64 Devices](installation-arm)
-	- [PowerPC/PPC64-based Macintosh](installation-powermac)
+	- [AMD64/x86-64 Systems](/installation-amd64)
+	- [ARMv7/AArch64 Devices](/installation-arm)
+	- [PowerPC/PPC64-based Macintosh](/installation-powermac)
 	- *MIPS 32/64-Bit Systems*
-	- [ZFS Root](installation-zfs-root)
+	- [ZFS Root](/installation-zfs-root)
   - See also: [installation](/t/installation)
 - System Requirements
-	- [AMD64/x86-64 Systems](installation-amd64-notes-sysreq)
-	- [ARMv7/AArch64 Devices](installation-arm-notes-sysreq)
-	- [PowerPC/PPC64-based Macintosh](installation-powermac-notes-sysreq)
+	- [AMD64/x86-64 Systems](/installation-amd64-notes-sysreq)
+	- [ARMv7/AArch64 Devices](/installation-arm-notes-sysreq)
+	- [PowerPC/PPC64-based Macintosh](/installation-powermac-notes-sysreq)
 	- *MIPS 32/64-bit Systems*
 
 ## System Information and Specifications
