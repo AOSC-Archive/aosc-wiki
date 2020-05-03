@@ -1,5 +1,5 @@
 ---
-title: AOSC OS/Retro: An Introduction to Users and Maintainers (RFC)
+title: 'AOSC OS/Retro: An Introduction to Users and Maintainers (RFC)'
 description: Your Guide to Enjoying AOSC OS with Your Retro Devices
 published: true
 date: 2020-05-03T08:51:43.247Z
