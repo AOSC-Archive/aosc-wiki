@@ -1,5 +1,10 @@
-<!-- TITLE: How To Contribute to This Wiki -->
-<!-- SUBTITLE: A quick guide on Wiki contribution -->
+---
+title: How To Contribute to This Wiki
+description: A quick guide on Wiki contribution
+published: true
+date: 2020-05-03T09:31:16.690Z
+tags: 
+---
 
 # Preparing Your Content
 
@@ -9,11 +14,10 @@ Using Wiki.js, the Community Wiki is written in [Markdown](https://github.com/ad
 
 As currently planned, our Community Wiki is arranged across 5 sections:
 
-- Developers: This section contains guidebooks for AOSC developers, as well as more technically-inclined content for developers using AOSC OS.
-- Users: This section contains information useful for AOSC OS users with pages arranged by topics.
-- Errata: This section contains known *unresolved* issues found in AOSC OS for developers' and users' reference.
-- Knowledge Base: This section contains pages describing resolved issues and commonly asked questions in AOSC OS.
-- AOSA: This section lists all current and historic AOSC OS Security Advisories.
+- General(/\*): This section contains information useful for AOSC OS users and guidebooks for AOSC developers with pages arranged by topics.
+- Errata(/Errata/\*): This section contains known *unresolved* issues found in AOSC OS for developers' and users' reference.
+- Knowledge Base(/KB/\*): This section contains pages describing resolved issues and commonly asked questions in AOSC OS.
+- AOSA(/AOSA/\*): This section lists all current and historic AOSC OS Security Advisories.
 
 Thus, do consider in advance where your page should go - when in doubt, ask in our IRC channel #aosc.
 
@@ -29,7 +33,7 @@ No specific requirement yet.
 
 ### Users
 
-- Each page should be arranged specific to its own topic, say, configuration of APT by `apt-gen-list` should be arranged into `/Users/System Administration/APT`, then `apt-gen-list.md`.
+- Each page should be linked to & from its related pages. For example, there is a tool called [apt-gen-list](/apt-gen-list) for configuring the package manager APT. Page [apt](/apt) and [installation](/installation-amd64) should provide a short introduction and also a link to it.
 - Each page should at least contain the following...
 	- General summary of the topic.
 	- Section generalising related operations/usages.
