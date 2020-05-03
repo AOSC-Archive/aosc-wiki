@@ -2,7 +2,7 @@
 title: AOSC Wiki
 description: Where people come to know... Oh wait, sorry MSFN :D
 published: true
-date: 2020-05-03T08:40:33.215Z
+date: 2020-05-03T08:40:47.182Z
 tags: 
 ---
 
@@ -20,7 +20,7 @@ Be sure to note our [AOSC Inter-Personal Guidelines](community-guidelines).
 
 This section contains information useful for AOSC OS users with pages arranged by topics.
 
-- [Is AOSC OS Right for Me?](/users/information/is-aosc-os-right-for-me)
+- [Is AOSC OS Right for Me?](is-aosc-os-right-for-me)
 
 ## System Installation
 
