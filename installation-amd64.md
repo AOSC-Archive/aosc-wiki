@@ -2,11 +2,9 @@
 title: Installation/AMD64
 description: Installing AOSC OS on AMD64/x86-64 Devices
 published: true
-date: 2020-05-03T08:41:41.916Z
+date: 2020-05-03T09:36:03.525Z
 tags: installation
 ---
-
-> Available languages | [English](/users/installation/amd64) | [简体中文](/users/installation/amd-64/zh-cn)
 
 Installation of AOSC OS on x86-64 systems/environments are generally universal for all systems of this architectures. But for some specific device configurations and virtualized environments, here below are some extra notes:
 
