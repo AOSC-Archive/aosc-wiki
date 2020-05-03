@@ -2,7 +2,7 @@
 title: How To Contribute to This Wiki
 description: A quick guide on Wiki contribution
 published: true
-date: 2020-05-03T09:31:16.690Z
+date: 2020-05-03T09:43:56.551Z
 tags: 
 ---
 
@@ -27,11 +27,7 @@ Thus, do consider in advance where your page should go - when in doubt, ask in o
 
 Here are some requirements and expectations specific to each of the sections defined above.
 
-### Developers
-
-No specific requirement yet.
-
-### Users
+### General
 
 - Each page should be linked to & from its related pages. For example, there is a tool called [apt-gen-list](/apt-gen-list) for configuring the package manager APT. Page [apt](/apt) and [installation](/installation-amd64) should provide a short introduction and also a link to it.
 - Each page should at least contain the following...
