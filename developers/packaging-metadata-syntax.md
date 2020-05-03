@@ -2,7 +2,7 @@
 title: Packaging Metadata Syntax
 description: Reduced Bash syntax for describing packages
 published: true
-date: 2020-05-01T07:36:00.558Z
+date: 2020-05-03T03:07:28.655Z
 tags: 
 ---
 
@@ -29,19 +29,19 @@ MESON_AFTER__AMD64=" \
 * Variable declarations are allowed, eg. `a=b`.
 * [Comments](https://www.gnu.org/software/bash/manual/bash.html#Comments): `# comment`
 * [Quoting](https://www.gnu.org/software/bash/manual/bash.html#Quoting)
-  * Escape Characters: `\newline`, `\"`
-  * Single Quotes: `'a'`
-  * Double Quotes: `"a"`
+  * Escape Characters, used in double quotes: `\newline`, `\"`
+  * Single Quotes, no special meaning inside: `'a'`
+  * Double Quotes, containes substitutions: `"a"`
 * [Shell Expansions](https://www.gnu.org/software/bash/manual/bash.html#Shell-Expansions)
   * Shell Parameter Expansion:
-  	* `${parameter:offset}`
-    * `${parameter:offset:length}`
-    * `${parameter#word}`
-    * `${parameter##word}`
-    * `${parameter%word}`
-    * `${parameter%%word}`
-    * `${parameter/pattern/string}`
-    * `${parameter//pattern/string}`
+  	* `${parameter:offset}`: substring
+    * `${parameter:offset:length}`: substring
+    * `${parameter#word}`: match shortest prefix and use
+    * `${parameter##word}`: match longest prefix and use
+    * `${parameter%word}`: match shortest suffix and use
+    * `${parameter%%word}`: match longest suffix and use
+    * `${parameter/pattern/string}`: replace, once
+    * `${parameter//pattern/string}`: replace, all
 
 
 ## Prohibited Bash Syntax
@@ -51,27 +51,27 @@ MESON_AFTER__AMD64=" \
 	*	Locale-Specific Translation: `$"a"`
 * [Shell Expansions](https://www.gnu.org/software/bash/manual/bash.html#Shell-Expansions)
    Brace Expansion: `a{d,c,b}e`
-  * Tilde Expansion: `~/.config`
+  * Tilde Expansion: `~/.config`, for home directory
   * Command Substitution: `$(command)` or \`command\` (zip, x264+32, xl2tpd, chibi-scheme, uemacs, llvm, qt-5)
   * Arithmetic Expansion: `$(( expression ))`
   * Process Substitution: `<(list)` or `>(list)`
-  * Filename Expansion
+  * Filename Expansion: must scan directory
   * Shell Parameter Expansion:
-      * `${parameter:-word}`
-      * `${parameter:=word}`
-      * `${parameter:?word}`
-      * `${parameter:+word}`
+      * `${parameter:-word}`: when unset, use `word`
+      * `${parameter:=word}`: when unset, set `word` to `parameter`, and use `word`
+      * `${parameter:?word}`: when unset, print `word` to stderr
+      * `${parameter:+word}`: when set, use `word`
       * `${!prefix*}`
       * `${!prefix@}`
       * `${!name[@]}`
       * `${!name[*]}`
-      * `${#parameter}`
-      * `${parameter^pattern}`
-      * `${parameter^^pattern}`
-      * `${parameter,pattern}`
-      * `${parameter,,pattern}`
-      * `${parameter@operator}`
-      * `${parameter/#pattern/string}`
+      * `${#parameter}`: get length
+      * `${parameter^pattern}`: UPPER ONCE
+      * `${parameter^^pattern}`: UPPE ALL
+      * `${parameter,pattern}`: lower once
+      * `${parameter,,pattern}`: lower all
+      * `${parameter@operator}`: special operations
+      * `${parameter/#pattern/string}`: replace, only match prefix
 
 
 ### Patterns
