@@ -2,11 +2,9 @@
 title: Installation/AMD64 (简体中文)
 description: 在 AMD64/x86_64 设备安装 AOSC OS
 published: true
-date: 2020-05-01T11:53:28.839Z
+date: 2020-05-03T09:35:49.878Z
 tags: 
 ---
-
-> Available languages | [English](/users/installation/amd64) | [简体中文](/users/installation/amd-64/zh-cn)
 
 本针对于 x86_64 架构或系统的安装指南可以应用于大部分通用环境。但针对部分特殊平台，这里有一些附加提示：
 
