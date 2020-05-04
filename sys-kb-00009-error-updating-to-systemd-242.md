@@ -1,9 +1,9 @@
 ---
-title: ERR-SYS-00009: Error Updating to Systemd 242
+title: SYS-ERR-00009: Error Updating to Systemd 242
 description: Obsolete systemd services in memory cause problems
 published: true
-date: 2020-05-04T03:37:45.450Z
-tags: 
+date: 2020-05-04T05:20:29.770Z
+tags: sys-errata
 ---
 
 # Symptoms
