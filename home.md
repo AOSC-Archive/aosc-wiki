@@ -3,7 +3,7 @@ title: Wiki Home
 description: AOSC Wiki - Where People Go To Know... Oh wait, sorry MSFN! :D
 published: true
 date: 2020-05-03T19:44:47.173Z
-tags: 
+tags:
 ---
 
 # Welcome
@@ -38,7 +38,7 @@ Other topics on AOSC OS's sytem design and specifications could be found under t
 Here you may find Knowledge Base articles and Errata reports are assembled by AOSC OS developers.
 
 - [Knowledge Base *Topic-specific guides and tips.*](/t/sys-kb)
-- [Errata *Known issues, our investigation report, and ways to work around them.*](/t/sys-errata) 
+- [Errata *Known issues, our investigation report, and ways to work around them.*](/t/sys-errata)
 {.links-list}
 
 ## Security Advisories
@@ -53,8 +53,8 @@ Security advisories for AOSC OS are commonly referred to as an AOSA (AOSC OS Sec
 
 AOSC OS/Retro is a special branch derived from the mainline distribution that targets legacy and performance-constrained devices.
 
-- [AOSC OS/Retro: An Introduction to Users and Maintainers (RFC)](/sys-retro-info)
-- [AOSC OS/Retro: A Rationale (RFC)](/sys-retro-info)
+- [AOSC OS/Retro: An Introduction to Users and Maintainers (RFC)](/sys-retro-intro)
+- [AOSC OS/Retro: A Rationale (RFC)](/sys-retro-rationale)
 {.links-list}
 
 Other topics on AOSC OS/Retro's sytem design and specifications could be found under the [sys-info](/t/sys-retro) category.
@@ -78,8 +78,8 @@ Other topics on AOSC OS maintenance could be found under the [dev-sys](/t/dev-sy
 
 This section outlines our ongoing effort to automate AOSC OS maintenance and quality assurance.
 
-- [AOSC OS Maintenance Automation: Design RFCs and Progression](/automation-design-rfcs-and-progression)
-- [Packaging Metadata Syntax](/automation-package-metadata-syntax)
+- [AOSC OS Maintenance Automation: Design RFCs and Progression](/dev-automation-design-rfcs-and-progression)
+- [Packaging Metadata Syntax](/dev-automation-package-metadata-syntax)
 {.links-list}
 
 Other topics on AOSC OS automation could be found under the [dev-automation](/t/dev-automation) category.
@@ -114,5 +114,5 @@ Other infrastructure-related topics could be found under the [infra](/t/infra) c
 Here you may find Knowledge Base articles and Errata reports are assembled by our Infrastructure Work Group (infra-wg).
 
 - [Knowledge Base *Topic-specific guides and tips.*](/t/infra-kb)
-- [Errata *Known issues, our investigation report, and ways to work around them.*](/t/infra-kb) 
+- [Errata *Known issues, our investigation report, and ways to work around them.*](/t/infra-kb)
 {.links-list}
