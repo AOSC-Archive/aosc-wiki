@@ -1,8 +1,8 @@
 ---
-title: Automation-WG Minutes (Apr 19, 2020)
+title: Automation-WG Minutes on 2020-04-19
 description: 
 published: true
-date: 2020-05-04T03:36:32.741Z
+date: 2020-05-04T04:55:32.119Z
 tags: minutes
 ---
 
