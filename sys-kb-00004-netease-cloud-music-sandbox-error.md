@@ -2,7 +2,7 @@
 title: SYS-ERR-00004: NetEase Cloud Music < 1.1.0 Fails to Launch
 description: Older Versions of netease-cloud-music Fails to Launch with Sandbox-related Errors
 published: true
-date: 2020-05-04T05:10:35.953Z
+date: 2020-05-04T05:10:59.874Z
 tags: sys-errata
 ---
 
