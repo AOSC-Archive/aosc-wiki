@@ -2,7 +2,7 @@
 title: AOSC OS Maintenance Guidelines
 description: General Procedural Guidlelines for AOSC OS Package Maintenance
 published: true
-date: 2020-05-04T05:46:41.066Z
+date: 2020-05-04T05:46:59.172Z
 tags: dev-sys
 ---
 
@@ -119,6 +119,6 @@ Updates for the `stable` branch, unless known to be involved with one or more 0-
 - Testing procedures are defined case-by-case.
 	- TODO: Autobuild3/ACBS automatic quality assurance and reports.
 	- Basic functionalities (Launches? Comes with necessary files? Documentation readable and complete?).
-	- Styling checked against the [Styling Manual](/developers/aosc-os-package-styling-manual).
+	- Styling checked against the [Styling Manual](/dev-sys-package-styling-manual).
 - Packages, when tested, will have their respective entry(s) ticked, and packages moved on the repository from the `stable-proposed` pool to the `stable` pool on the package unit (one package "ticked", one moved).
 - The weekly issues will remain open for tracking testing work, and closed upon *full completion* (all checkboxes ticked).
