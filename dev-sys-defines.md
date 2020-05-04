@@ -2,8 +2,8 @@
 title: autobuild/defines
 description: Autobuild3's Core Manifest
 published: true
-date: 2020-05-04T03:35:47.563Z
-tags: dev-sys
+date: 2020-05-04T04:55:29.006Z
+tags: 
 ---
 
 # To Reiterate...

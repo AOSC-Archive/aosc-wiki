@@ -2,8 +2,8 @@
 title: Installation/AMD64/BCM4360
 description: Notes for AOSC OS Installation on Devices with BCM4360-based Wireless Cards
 published: true
-date: 2020-05-04T03:36:54.508Z
-tags: sys-installation
+date: 2020-05-04T04:56:07.158Z
+tags: 
 ---
 
 Uh-oh. You've reached where __excessive manual intervention__ is required. Most linux does not support BCM4360 out-of-the-box, which means you will not be able to access internet once you entered linux environment if Broadcom's (notoriously) restricted copyrighted drivers. But to compile the driver, you need network access in the first place.

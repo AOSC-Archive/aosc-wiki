@@ -3,7 +3,7 @@ title: ERR-INFRA-00001: Security Announcements Mailing List Migration
 description: A quick summary of the recent Security Announcements Mailing List Migration incident
 published: true
 date: 2020-05-04T03:36:17.363Z
-tags: infra-errata
+tags: 
 ---
 
 # Summary

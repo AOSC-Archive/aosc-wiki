@@ -2,8 +2,8 @@
 title: AOSC OS Package Styling Manual
 description: Comprehensive (and updated) Styling Manual for AOSC OS Packagers
 published: true
-date: 2020-05-04T03:35:59.054Z
-tags: dev-sys
+date: 2020-05-04T04:55:38.430Z
+tags: 
 ---
 
 # Introduction and Rationale

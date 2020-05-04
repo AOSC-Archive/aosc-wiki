@@ -2,8 +2,8 @@
 title: p-vector
 description: Information about the deb repo manager p-vector
 published: true
-date: 2020-05-04T03:36:27.714Z
-tags: infra
+date: 2020-05-04T04:55:55.620Z
+tags: 
 ---
 
 # Introduction

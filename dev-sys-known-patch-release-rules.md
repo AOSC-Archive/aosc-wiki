@@ -2,8 +2,8 @@
 title: Known Patch Release Rules
 description: Useful list of release rules that defines packages that could be updated in the Stable channel
 published: true
-date: 2020-05-04T03:35:52.794Z
-tags: dev-sys
+date: 2020-05-04T04:55:32.477Z
+tags: 
 ---
 
 # Description

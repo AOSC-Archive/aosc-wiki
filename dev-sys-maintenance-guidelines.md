@@ -2,8 +2,8 @@
 title: AOSC OS Maintenance Guidelines (RFC)
 description: General Procedural Guidlelines for AOSC OS Package Maintenance
 published: true
-date: 2020-05-04T03:35:55.490Z
-tags: dev-sys
+date: 2020-05-04T04:55:35.575Z
+tags: 
 ---
 
 # Introduction

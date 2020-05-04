@@ -2,8 +2,8 @@
 title: AOSC Inter-Personal Guidelines [Long Term RFC]
 description: A Guide of References for Your Happy Stay
 published: true
-date: 2020-05-04T03:35:14.611Z
-tags: community
+date: 2020-05-04T04:55:10.462Z
+tags: 
 ---
 
 # Welcome to AOSC!

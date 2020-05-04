@@ -2,8 +2,8 @@
 title: Automation-WG Minutes on 2020-04-19
 description: 
 published: true
-date: 2020-05-04T04:55:32.119Z
-tags: minutes
+date: 2020-05-04T04:55:58.940Z
+tags: 
 ---
 
 ## Gumblex

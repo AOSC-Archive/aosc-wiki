@@ -2,8 +2,8 @@
 title: Portal Website
 description: Maintenance Notes for Portal Website
 published: true
-date: 2020-05-04T03:36:14.880Z
-tags: infra
+date: 2020-05-04T04:55:48.854Z
+tags: 
 ---
 
 # Basic Directory Structures

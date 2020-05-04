@@ -2,8 +2,8 @@
 title: Pak Squad Minutes on 2020-05-03
 description: 
 published: true
-date: 2020-05-04T03:36:35.705Z
-tags: minutes
+date: 2020-05-04T04:56:00.604Z
+tags: 
 ---
 
 ## Goals for Spring 2020

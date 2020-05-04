@@ -3,7 +3,7 @@ title: AOSC: Our History
 description: A Brief History of the Anthon Open Source Community
 published: true
 date: 2020-05-04T03:35:17.426Z
-tags: community
+tags: 
 ---
 
 AOSC was originally founded as Anthon.Dev (Anthon Dev. Team) by Mingcong Bai and his two classmates in late 2011. Following a year of mismanagement, the team was disbanded and refactored as the Anthon Open Source Community in late 2012.

@@ -2,8 +2,8 @@
 title: What is an AOSA?
 description: A Quick Pre-face on AOSC OS Security Advisories
 published: true
-date: 2020-05-04T03:35:03.084Z
-tags: aosa
+date: 2020-05-04T04:55:03.835Z
+tags: 
 ---
 
 # AOSA?
