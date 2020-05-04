@@ -17,7 +17,7 @@ This is where all documentations, information, and guides will gather for users 
 Here you will find an introduction to our history and culture as a community, topics on administrative routines, as well as community events.
 
 - [AOSC: Our History](/community-history)
-- [AOSC Inter-Personal Guidelines (Long Term RFC)](/community-guidelines.md)
+- [AOSC Inter-Personal Guidelines (Long Term RFC)](/community-guidelines)
 {.links-list}
 
 Other community-related topics could be found under the [community](/t/community) category.
