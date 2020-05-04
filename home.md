@@ -79,7 +79,7 @@ Other topics on AOSC OS maintenance could be found under the [dev-sys](/t/dev-sy
 This section outlines our ongoing effort to automate AOSC OS maintenance and quality assurance.
 
 - [AOSC OS Maintenance Automation: Design RFCs and Progression](/dev-automation-design-rfcs-and-progression)
-- [Packaging Metadata Syntax](/dev-automation-package-metadata-syntax)
+- [Packaging Metadata Syntax](/dev-automation-packaging-metadata-syntax)
 {.links-list}
 
 Other topics on AOSC OS automation could be found under the [dev-automation](/t/dev-automation) category.
