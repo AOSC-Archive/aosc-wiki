@@ -2,7 +2,7 @@
 title: AOSC OS Maintenance Guidelines
 description: General Procedural Guidlelines for AOSC OS Package Maintenance
 published: true
-date: 2020-05-04T05:46:59.172Z
+date: 2020-05-04T05:53:19.348Z
 tags: dev-sys
 ---
 
@@ -88,7 +88,6 @@ In principle, AOSC OS accepts and maintains all packages, unless one of the foll
 While building packages, the build environments *must* be controlled, updated, and minimal, where packages are only installed as required by the build-and-run-time dependencies.
 
 - For instance, when building for `stable`, make sure that *only* the `stable` branch is enabled in your repository configuration; `explosive`, `testing-proposed`, `testing`, `stable-proposed`, and `stable` are enabled when building for `explosive`; ...
-- However, when building for non-proposed branches, no `-proposed` branch should be enabled. For instance, when building for `testing`, enable only `stable` and `testing`.
 - There is an exception when building for `stable-proposed` and `rckernel`, *only* the `stable` branch should be enabled.
 
 ## Branch Merging
