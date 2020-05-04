@@ -3,7 +3,7 @@ title: How To Contribute to This Wiki
 description: A quick guide on Wiki contribution
 published: true
 date: 2020-05-04T03:36:19.978Z
-tags: 
+tags: infra-kb
 ---
 
 # Preparing Your Content

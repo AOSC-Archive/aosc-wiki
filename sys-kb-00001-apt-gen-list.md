@@ -3,7 +3,7 @@ title: KB-SYS-00001: Configuration of APT Repositories
 description: Information on Enabling or Disabling APT Repositories on AOSC OS
 published: true
 date: 2020-05-04T03:37:25.665Z
-tags: 
+tags: sys-kb
 ---
 
 # APT Configuration

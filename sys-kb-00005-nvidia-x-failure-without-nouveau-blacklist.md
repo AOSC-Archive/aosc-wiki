@@ -3,7 +3,7 @@ title: ERR-SYS-00005: X11 Graphical Interface Fails to Start on Systems with Ded
 description: Incompatibilities between Nouveau DRM/GL/X stack with NVIDIA's GL/X Stack
 published: true
 date: 2020-05-04T03:37:35.681Z
-tags: 
+tags: sys-kb
 ---
 
 # Summary

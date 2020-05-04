@@ -3,7 +3,7 @@ title: ERR-SYS-00003: Errors when Running the "sensors" Command on a HP MicroSer
 description: ACPI-related Dmesg Outputs Triggered by Reading of Power Metre Values
 published: true
 date: 2020-05-04T03:36:43.963Z
-tags: 
+tags: sys-errata
 ---
 
 # Summary

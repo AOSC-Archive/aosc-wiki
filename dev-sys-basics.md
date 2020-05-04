@@ -3,7 +3,7 @@ title: Intro to Package Maintenance: Basics
 description: Introductory Guide to AOSC OS Packaging
 published: true
 date: 2020-05-04T03:35:33.093Z
-tags: 
+tags: dev-sys
 ---
 
 **NOTICE**: This guide assumes you have moderate knowledge about Linux and its CLI (command line interface). Also, you need to have access to a Linux computer with `root` access.

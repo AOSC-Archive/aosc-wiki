@@ -3,7 +3,7 @@ title: Buildbots
 description: Buildbots that can be used by AOSC developers
 published: true
 date: 2020-05-04T03:36:12.302Z
-tags: 
+tags: infra
 ---
 
 # General Information

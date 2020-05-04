@@ -3,7 +3,7 @@ title: Migration Guide
 description: A quick summary of repo migration
 published: true
 date: 2020-05-04T03:36:25.110Z
-tags: 
+tags: infra-kb
 ---
 
 # Repo Migration Guide

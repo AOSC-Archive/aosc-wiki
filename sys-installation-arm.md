@@ -3,7 +3,7 @@ title: Installation/ARM*
 description: Installing AOSC OS on ARMv7/AArch64 Devices
 published: true
 date: 2020-05-04T03:37:12.911Z
-tags: 
+tags: sys-installation
 ---
 
 There really isn't any set way to install AOSC OS on various kinds of ARM devices, this page serves as a index to guide you to various other guides for specific devices.
