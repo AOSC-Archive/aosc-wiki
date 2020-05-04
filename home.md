@@ -2,7 +2,7 @@
 title: Wiki Home
 description: AOSC Wiki - Where People Go To Know... Oh wait, sorry MSFN! :D
 published: true
-date: 2020-05-04T05:01:11.627Z
+date: 2020-05-04T05:32:32.010Z
 tags: 
 ---
 
@@ -46,7 +46,7 @@ Here you may find Knowledge Base articles and Errata reports are assembled by AO
 Security advisories for AOSC OS are commonly referred to as an AOSA (AOSC OS Security Advisory), organised by year and numbered. Here you may find an overview of our security/vulnerability response routines, as well as year-by-year archives of our posted security advisories.
 
 - [What is an AOSA? *AOSC OS Security Advisory*](/aosa-info)
-- [Year-by-Year AOSA Archives](/t/aosa-archive)
+- [Year-by-Year AOSA Archives](/t/aosa)
 {.links-list}
 
 ## AOSC OS/Retro
