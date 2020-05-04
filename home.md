@@ -2,7 +2,7 @@
 title: Wiki Home
 description: AOSC Wiki - Where People Go To Know... Oh wait, sorry MSFN! :D
 published: true
-date: 2020-05-04T03:37:51.770Z
+date: 2020-05-04T05:01:09.825Z
 tags: 
 ---
 
@@ -16,7 +16,7 @@ This is where all documentations, information, and guides will gather for users 
 
 Here you will find an introduction to our history and culture as a community, topics on administrative routines, as well as community events.
 
-- [AOSC: Our History](/community-history)
+- [AOSC: Our History *Our History Since November 2011*](/community-history)
 - [AOSC Inter-Personal Guidelines (Long Term RFC)](/community-guidelines)
 {.links-list}
 
@@ -27,8 +27,8 @@ Other community-related topics could be found under the [community](/t/community
 
 Our main project at the community, a general-purposed Linux Distribution designed with simplicity, localisation, software compatibility, device sustainability, and gradual refinement in mind.
 
-- [Is AOSC OS Right for Me?](/sys-is-aosc-os-right-for-me)
-- [Installation Guides](/t/sys-installation)
+- [Is AOSC OS Right for Me? *Finding Your Best Fit (or Not)*](/sys-is-aosc-os-right-for-me)
+- [Installation Guides *Installing AOSC OS on Your Device*](/t/sys-installation)
 {.links-list}
 
 Other topics on AOSC OS's sytem design and specifications could be found under the [sys-info](/t/sys-info) category.
@@ -37,15 +37,15 @@ Other topics on AOSC OS's sytem design and specifications could be found under t
 
 Here you may find Knowledge Base articles and Errata reports are assembled by AOSC OS developers.
 
-- [Knowledge Base *Topic-specific guides and tips.*](/t/sys-kb)
-- [Errata *Known issues, our investigation report, and ways to work around them.*](/t/sys-errata)
+- [Knowledge Base *Topic-specific Guides and Tips*](/t/sys-kb)
+- [Errata *Known Issues, Our Investigation Report, and Ways to Work Around Them*](/t/sys-errata)
 {.links-list}
 
 ## Security Advisories
 
 Security advisories for AOSC OS are commonly referred to as an AOSA (AOSC OS Security Advisory), organised by year and numbered. Here you may find an overview of our security/vulnerability response routines, as well as year-by-year archives of our posted security advisories.
 
-- [What is an AOSA?](/aosa-info)
+- [What is an AOSA? *AOSC OS Security Advisory*](/aosa-info)
 - [Year-by-Year AOSA Archives](/t/aosa-archive)
 {.links-list}
 
@@ -54,7 +54,7 @@ Security advisories for AOSC OS are commonly referred to as an AOSA (AOSC OS Sec
 AOSC OS/Retro is a special branch derived from the mainline distribution that targets legacy and performance-constrained devices.
 
 - [AOSC OS/Retro: An Introduction to Users and Maintainers (RFC)](/sys-retro-intro)
-- [AOSC OS/Retro: A Rationale (RFC)](/sys-retro-rationale)
+- [AOSC OS/Retro: A Rationale (RFC) *Modernity Could Suck*](/sys-retro-rationale)
 {.links-list}
 
 Other topics on AOSC OS/Retro's sytem design and specifications could be found under the [sys-retro](/t/sys-retro) category.
@@ -67,9 +67,9 @@ This section contains resources, guidebooks, and other general information for A
 
 This section contains information for AOSC OS maintainers.
 
-- [Intro to Package Maintenance](/dev-sys-packaging-intro)
-- [AOSC OS Maintenance Guidelines (RFC)](/dev-sys-maintenance-guidelines)
-- [AOSC OS Package Styling Manual](/dev-sys-package-styling-manual)
+- [Intro to Package Maintenance *AOSC OS Cadet Traning*](/dev-sys-packaging-intro)
+- [AOSC OS Maintenance Guidelines (RFC) *Live Well, Package Good*](/dev-sys-maintenance-guidelines)
+- [AOSC OS Package Styling Manual *Live Well, Package Beautiful*](/dev-sys-package-styling-manual)
 {.links-list}
 
 Other topics on AOSC OS maintenance could be found under the [dev-sys](/t/dev-sys) category.
@@ -101,7 +101,7 @@ AOSC developers organise routine work group meetings, minutes from the meetings 
 
 This section contains resources, guidebooks, and other general information for AOSC infrastructures (websites, repositories, etc.) and public resources.
 
-- [Buildbots](/infra-buildbots)
+- [Buildbots *Public Build Servers for AOSC OS Maintainers*](/infra-buildbots)
 - [How to Mirror the Community Repository](/infra-kb-00002-how-to-mirror)
 - [Maintenance Notes for the AOSC Portal](/infra-community-portal)
 - [The AOSC OS Packages Site](/infra-packages-site)
@@ -113,6 +113,6 @@ Other infrastructure-related topics could be found under the [infra](/t/infra) c
 
 Here you may find Knowledge Base articles and Errata reports are assembled by our Infrastructure Work Group (infra-wg).
 
-- [Knowledge Base *Topic-specific guides and tips.*](/t/infra-kb)
-- [Errata *Known issues, our investigation report, and ways to work around them.*](/t/infra-errata)
+- [Knowledge Base *Topic-specific Guides and Tips*](/t/infra-kb)
+- [Errata *Known Issues, Our Investigation Report, and Ways to Work Around Them*](/t/infra-errata)
 {.links-list}
