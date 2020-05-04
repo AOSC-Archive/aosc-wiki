@@ -1,5 +1,10 @@
-<!-- TITLE: How To Mirror the Community Repository -->
-<!-- SUBTITLE: A Quick Summary of How to Create a Mirror of AOSC's Repo -->
+---
+title: How To Mirror the Community Repository
+description: A Quick Summary of How to Create a Mirror of AOSC's Repo
+published: true
+date: 2020-05-04T03:36:22.538Z
+tags: 
+---
 
 Thank you for your interest in mirroring AOSC's Repo.
 

@@ -1,6 +1,10 @@
-<!-- TITLE: Is AOSC OS Right for Me? -->
-<!-- SUBTITLE: Some important and not so important notes... -->
-
+---
+title: Is AOSC OS Right for Me?
+description: Some important and not so important notes...
+published: true
+date: 2020-05-04T03:37:23.237Z
+tags: 
+---
 
 # What Is AOSC OS, Anyways?
 

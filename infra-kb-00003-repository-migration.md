@@ -1,5 +1,10 @@
-<!-- TITLE: Migration Guide -->
-<!-- SUBTITLE: A quick summary of repo migration -->
+---
+title: Migration Guide
+description: A quick summary of repo migration
+published: true
+date: 2020-05-04T03:36:25.110Z
+tags: 
+---
 
 # Repo Migration Guide
 The Migration was done.

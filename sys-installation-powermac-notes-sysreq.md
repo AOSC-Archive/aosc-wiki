@@ -1,5 +1,10 @@
-<!-- TITLE: Installation/PowerMac/SysReq -->
-<!-- SUBTITLE: AOSC OS System Requirements for PowerPC/PPC64-based Macintosh Computers -->
+---
+title: Installation/PowerMac/SysReq
+description: AOSC OS System Requirements for PowerPC/PPC64-based Macintosh Computers
+published: true
+date: 2020-05-04T03:37:15.410Z
+tags: 
+---
 
 This page provides some general information and suggestions, in hope that it may aid in your choice from various AOSC OS variants provided for PowerPC 32/64-bit systems. Only processor, memory, display, GPU, and storage requirements are provided below.
 

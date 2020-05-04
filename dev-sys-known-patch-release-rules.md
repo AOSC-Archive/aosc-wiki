@@ -1,5 +1,10 @@
-<!-- TITLE: Known Patch Release Rules -->
-<!-- SUBTITLE: Useful list of release rules that defines packages that could be updated in the Stable channel -->
+---
+title: Known Patch Release Rules
+description: Useful list of release rules that defines packages that could be updated in the Stable channel
+published: true
+date: 2020-05-04T03:35:52.794Z
+tags: 
+---
 
 # Description
 

@@ -1,5 +1,10 @@
-<!-- TITLE: ERR-INFRA-00001: Security Announcements Mailing List Migration -->
-<!-- SUBTITLE: A quick summary of the recent Security Announcements Mailing List Migration incident -->
+---
+title: ERR-INFRA-00001: Security Announcements Mailing List Migration
+description: A quick summary of the recent Security Announcements Mailing List Migration incident
+published: true
+date: 2020-05-04T03:36:17.363Z
+tags: 
+---
 
 # Summary
 We experienced unexplained downtime of the original AOSC Security Announcements mainling list (security@lists.aosc.io) and was unable to resolve this issue. During the investigation, we also noticed that our old name, security@lists.aosc.io violated RFC 2142, since "security" was defined as a reserved mailbox that was only meant to be used by the system administrator. Therefore, we decided to create a new list under a RFC-compliant name, security-announcements@lists.aosc.io, and migrate the old subscribers and archives to the new list. This migration was successfully conducted on April 5th, 2020.

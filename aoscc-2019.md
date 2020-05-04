@@ -2,7 +2,7 @@
 title: AOSCC 2019
 description: Location, Agenda, and Other Information for AOSCC 2019
 published: true
-date: 2020-05-01T10:57:31.859Z
+date: 2020-05-04T03:35:09.151Z
 tags: 
 ---
 

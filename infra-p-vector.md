@@ -1,5 +1,10 @@
-<!-- TITLE: p-vector -->
-<!-- SUBTITLE: Information about the deb repo manager p-vector -->
+---
+title: p-vector
+description: Information about the deb repo manager p-vector
+published: true
+date: 2020-05-04T03:36:27.714Z
+tags: 
+---
 
 # Introduction
 P-vector manages AOSC OS's deb repository, generates index files and analyzes problems in packaging.

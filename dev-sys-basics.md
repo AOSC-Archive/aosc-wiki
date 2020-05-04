@@ -1,5 +1,10 @@
-<!-- TITLE: Intro to Package Maintenance: Basics -->
-<!-- SUBTITLE: Introductory Guide to AOSC OS Packaging -->
+---
+title: Intro to Package Maintenance: Basics
+description: Introductory Guide to AOSC OS Packaging
+published: true
+date: 2020-05-04T03:35:33.093Z
+tags: 
+---
 
 **NOTICE**: This guide assumes you have moderate knowledge about Linux and its CLI (command line interface). Also, you need to have access to a Linux computer with `root` access.
 

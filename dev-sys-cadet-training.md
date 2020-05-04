@@ -1,5 +1,10 @@
-<!-- TITLE: AOSC OS Cadet Training -->
-<!-- SUBTITLE: Introductory Guide to AOSC OS Packaging -->
+---
+title: AOSC OS Cadet Training
+description: Introductory Guide to AOSC OS Packaging
+published: true
+date: 2020-05-04T03:35:35.998Z
+tags: 
+---
 
 The *AOSC OS Cadet Training* is a brief introduction to AOSC OS packaging using our [Autobuild3](https://github.com/AOSC-Dev/autobuild3) package manager abstraction toolkit, and [ACBS](https://github.com/AOSC-Dev/acbs), or Autobuild CI Build Service to maintain Autobuild3 build configurations/manifests in a tree-like
 manner.

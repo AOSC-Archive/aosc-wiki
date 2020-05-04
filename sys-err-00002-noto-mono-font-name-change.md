@@ -1,5 +1,10 @@
-<!-- TITLE: ERR-SYS-00002: Noto Mono Fonts Displayed as Sans Serif with Recent Font Package Update -->
-<!-- SUBTITLE: Noto Mono Font Name Changes and Possible Impacts -->
+---
+title: ERR-SYS-00002: Noto Mono Fonts Displayed as Sans Serif with Recent Font Package Update
+description: Noto Mono Font Name Changes and Possible Impacts
+published: true
+date: 2020-05-04T03:36:41.548Z
+tags: 
+---
 
 # Summary
 

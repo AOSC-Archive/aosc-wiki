@@ -1,5 +1,10 @@
-<!-- TITLE: ERR-SYS-00005: X11 Graphical Interface Fails to Start on Systems with Dedicated NVIDIA Graphics -->
-<!-- SUBTITLE: Incompatibilities between Nouveau DRM/GL/X stack with NVIDIA's GL/X Stack -->
+---
+title: ERR-SYS-00005: X11 Graphical Interface Fails to Start on Systems with Dedicated NVIDIA Graphics
+description: Incompatibilities between Nouveau DRM/GL/X stack with NVIDIA's GL/X Stack
+published: true
+date: 2020-05-04T03:37:35.681Z
+tags: 
+---
 
 # Summary
 

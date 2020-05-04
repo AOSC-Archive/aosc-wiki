@@ -1,5 +1,10 @@
-<!-- TITLE: KB-SYS-00002: Configuration of Input Methods -->
-<!-- SUBTITLE: Configuring Input Methods in AOSC OS Desktop Environments -->
+---
+title: KB-SYS-00002: Configuration of Input Methods
+description: Configuring Input Methods in AOSC OS Desktop Environments
+published: true
+date: 2020-05-04T03:37:28.074Z
+tags: 
+---
 
 Several input method engines are available for use with AOSC OS:
 

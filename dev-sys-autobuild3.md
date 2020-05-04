@@ -1,5 +1,10 @@
-<!-- TITLE: Autobuild3 -->
-<!-- SUBTITLE: A Multi-Backend Packaging Toolkit -->
+---
+title: Autobuild3
+description: A Multi-Backend Packaging Toolkit
+published: true
+date: 2020-05-04T03:35:29.657Z
+tags: 
+---
 
 # What is Autobuild3?
 

@@ -1,5 +1,10 @@
-<!-- TITLE: AOSC OS Maintenance Guidelines (RFC) -->
-<!-- SUBTITLE: General Procedural Guidlelines for AOSC OS Package Maintenance -->
+---
+title: AOSC OS Maintenance Guidelines (RFC)
+description: General Procedural Guidlelines for AOSC OS Package Maintenance
+published: true
+date: 2020-05-04T03:35:55.490Z
+tags: 
+---
 
 # Introduction
 

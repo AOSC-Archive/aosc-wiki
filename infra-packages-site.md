@@ -1,5 +1,10 @@
-<!-- TITLE: Packages Site -->
-<!-- SUBTITLE: The description of the packages site and the FAQ -->
+---
+title: Packages Site
+description: The description of the packages site and the FAQ
+published: true
+date: 2020-05-04T03:36:30.272Z
+tags: 
+---
 
 # The Packages Site
 The [packages site](https://packages.aosc.io/) is introduced in 2017, to show various information about packages in AOSC OS. It's based on previous work in [paklist](https://github.com/AOSC-Dev/paklist).

@@ -1,5 +1,10 @@
-<!-- TITLE: List of announced AOSAs (2019) -->
-<!-- SUBTITLE: Security updates for 2019 -->
+---
+title: List of announced AOSAs (2019)
+description: Security updates for 2019
+published: true
+date: 2020-05-04T03:34:59.662Z
+tags: 
+---
 
 # Security updates
 

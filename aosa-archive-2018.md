@@ -1,5 +1,10 @@
-<!-- TITLE: List of Announced AOSAs (2018) -->
-<!-- SUBTITLE: An Archive of Announced AOSC OS Security Advisories (2018) -->
+---
+title: List of Announced AOSAs (2018)
+description: An Archive of Announced AOSC OS Security Advisories (2018)
+published: true
+date: 2020-05-04T03:34:56.476Z
+tags: 
+---
 
 | AOSA | Suggestion(s) | Fixed CVE(s) |
 | ------------ | --------------- | ------------------ |

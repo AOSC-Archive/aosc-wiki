@@ -2,7 +2,7 @@
 title: Packaging Metadata Syntax
 description: Reduced Bash syntax for describing packages
 published: true
-date: 2020-05-03T03:09:02.099Z
+date: 2020-05-04T03:35:20.680Z
 tags: 
 ---
 

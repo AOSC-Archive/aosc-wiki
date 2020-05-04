@@ -1,5 +1,10 @@
-<!-- TITLE: ERR-SYS-00007: Performance Issues with Fontconfig <= 2.12.92 -->
-<!-- SUBTITLE: Fc-Cache Algorithm Issues, Long Font Installation Times, and Unresponsive Desktop -->
+---
+title: ERR-SYS-00007: Performance Issues with Fontconfig <= 2.12.92
+description: Fc-Cache Algorithm Issues, Long Font Installation Times, and Unresponsive Desktop
+published: true
+date: 2020-05-04T03:37:40.574Z
+tags: 
+---
 
 # Summary
 

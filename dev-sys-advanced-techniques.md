@@ -1,5 +1,10 @@
-<!-- TITLE: Intro to Package Maintenance: Advanced Techniques -->
-<!-- SUBTITLE: This article is sponsered by Commit-O-Matic™ -->
+---
+title: Intro to Package Maintenance: Advanced Techniques
+description: This article is sponsered by Commit-O-Matic™
+published: true
+date: 2020-05-04T03:35:24.200Z
+tags: 
+---
 
 > So you want to make a package, you've got the urge to make a package, you've got the nerve to make a package, so go ahead, so go ahead, so go ahead and make a package we can use\!
 

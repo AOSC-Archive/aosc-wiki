@@ -2,7 +2,7 @@
 title: Exceptions to the Update Cycles
 description: A Suggested List of Packages to be Updated Immediately and Made Available in Stable Repositories
 published: true
-date: 2020-04-17T04:00:02.764Z
+date: 2020-05-04T03:35:44.952Z
 tags: 
 ---
 

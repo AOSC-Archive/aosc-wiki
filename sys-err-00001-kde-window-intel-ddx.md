@@ -1,5 +1,10 @@
-<!-- TITLE: ERR-SYS-00001: Disappearing Windows and Menus with KDE/Plasma Desktop using Intel DDX -->
-<!-- SUBTITLE: Intel X11/XFree86 Driver Issue and an Workaround -->
+---
+title: ERR-SYS-00001: Disappearing Windows and Menus with KDE/Plasma Desktop using Intel DDX
+description: Intel X11/XFree86 Driver Issue and an Workaround
+published: true
+date: 2020-05-04T03:36:38.551Z
+tags: 
+---
 
 # Summary
 
