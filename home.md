@@ -20,7 +20,7 @@ Here you will find an introduction to our history and culture as a community, to
 - [AOSC Inter-Personal Guidelines (Long Term RFC)](/community-guidelines.md)
 {.links-list}
 
-Other community-related topics could be foudn under the [community](/t/community) category.
+Other community-related topics could be found under the [community](/t/community) category.
 
 
 # AOSC OS
