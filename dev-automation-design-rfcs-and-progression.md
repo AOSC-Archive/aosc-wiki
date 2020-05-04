@@ -1,5 +1,5 @@
 ---
-title: AOSC OS Maintenance Automation: Design RFCs and Progression
+title: 'AOSC OS Maintenance Automation: Design RFCs and Progression'
 description: Current Design Goals and Progression, Also Serves as an Index for AOINB-related Documentation
 published: true
 date: 2020-05-02T05:17:02.670Z
