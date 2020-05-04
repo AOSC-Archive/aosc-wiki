@@ -1,9 +1,9 @@
 ---
-title: AOSC OS Maintenance Guidelines (RFC)
+title: AOSC OS Maintenance Guidelines
 description: General Procedural Guidlelines for AOSC OS Package Maintenance
 published: true
-date: 2020-05-04T04:55:35.575Z
-tags: 
+date: 2020-05-04T05:46:41.066Z
+tags: dev-sys
 ---
 
 # Introduction
@@ -18,7 +18,7 @@ The concepts of branches, cycles, and ports are three main aspects that maintena
 
 AOSC OS is maintained *concurrently* across four branches:
 
-- Stable (`stable`): Main maintenance branch which most users should be using, updates include security updates, bug fixes, [exceptional updates](/developers/aosc-os/cycle-exceptions) and [patch-level updates](/developers/aosc-os/known-patch-release-rules).
+- Stable (`stable`): Main maintenance branch which most users should be using, updates include security updates, bug fixes, [exceptional updates](/dev-sys-cycle-exceptions) and [patch-level updates](/dev-sys-known-patch-release-rules).
 	- Stable, Proposed Updates (`stable-proposed`): Feeds said updates into `stable`, unless the current `stable` already requires bug fixes (for instance, a currently available `stable` package has broken dependency). 
 - Testing (`testing`): Main feature branch which users with particular interest in following the latest development and changes should be using, security updates, feature/major updates, and new packages are introduced from the `explosive` branch and tested *minimally* before shipping. Updates made available through this branch will be available for `stable` by the end of each update cycle.
 	- Testing, Proposed Updates (`testing-proposed`): Feeds said updates into `testing`, packages are introduced and *build-time tested*.
@@ -64,21 +64,21 @@ The standard set of tools should be used by all maintainers. While we are unable
 - [Ciel](https://github.com/AOSC-Dev/ciel), manages `systemd-nspawn` containers where packaging work are done, with tools for Autobuild3/ACBS configuration, basic containerised environment management (updates and some configuration), and environment rollbacks.
 - [pushpkg](https://github.com/AOSC-Dev/scriptlets/tree/master/pushpkg), a simple wrapper script for uploading packages to the [Community Repository](https://repo.aosc.io).
 
-You will also need a LDAP identity to upload packages and to gain access to our relay servers, or [Buildbots](/developers/buildbots).
+You will also need a LDAP identity to upload packages and to gain access to our relay servers, or [Buildbots](/infra-buildbots).
 
-For the detailed packaging procedures, please refer to the [AOSC OS Cadet Training (Work In Progress)](#) and the [AOSC OS Package Styling Manual](/developers/aosc-os-package-styling-manual).
+For the detailed packaging procedures, please refer to the [AOSC OS Cadet Training (Work In Progress)](#) and the [AOSC OS Package Styling Manual](/dev-sys-package-styling-manual).
 
 ## The Buildbots
 
 While you are welcome to use your own devices for packaging (given that you are using the tools above), there are fast machines provided by community members, and made available for maintainers.
 
-For more details on gaining access and the various protocols, please refer to the [AOSC Buildbot Information](/developers/buildbots).
+For more details on gaining access and the various protocols, please refer to the [AOSC Buildbot Information](/infra-buildbots).
 
 ## Package Introduction and Maintenance
 
 In principle, AOSC OS accepts and maintains all packages, unless one of the following applies:
 
-- The vendor or upstream does not permit redistribution, or file manipulation (if required or mandated by the [Styling Manual](/developers/aosc-os-package-styling-manual)).
+- The vendor or upstream does not permit redistribution, or file manipulation (if required or mandated by the [Styling Manual](/dev-sys-package-styling-manual)).
 - The vendor or upstream refuses or failed to provide fixes for security vulnerability(ies).
 - The package is deprecated by the vendor or upstream.
 - The maintainers have voted against the introduction or continued maintenance of a specific (set of) package(s).
@@ -88,6 +88,7 @@ In principle, AOSC OS accepts and maintains all packages, unless one of the foll
 While building packages, the build environments *must* be controlled, updated, and minimal, where packages are only installed as required by the build-and-run-time dependencies.
 
 - For instance, when building for `stable`, make sure that *only* the `stable` branch is enabled in your repository configuration; `explosive`, `testing-proposed`, `testing`, `stable-proposed`, and `stable` are enabled when building for `explosive`; ...
+- However, when building for non-proposed branches, no `-proposed` branch should be enabled. For instance, when building for `testing`, enable only `stable` and `testing`.
 - There is an exception when building for `stable-proposed` and `rckernel`, *only* the `stable` branch should be enabled.
 
 ## Branch Merging
