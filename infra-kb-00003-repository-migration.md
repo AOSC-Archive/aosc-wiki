@@ -1,14 +1,10 @@
 ---
-title: Migration Guide
+title: INFRA-KB-00003: Community Repository Migration Guide
 description: A quick summary of repo migration
 published: true
-date: 2020-05-04T04:55:53.808Z
-tags: 
+date: 2020-05-04T05:29:58.109Z
+tags: infra-kb
 ---
-
-# Repo Migration Guide
-The Migration was done.
-
 
 ## TL;DR
 We recently received a sponsorship from xTom, that includes a new repo server located in U.S. We are planning to migrate the old repo soon.
