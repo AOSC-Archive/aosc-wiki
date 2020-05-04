@@ -2,12 +2,12 @@
 title: AOSC OS/Retro: A Rationale (RFC)
 description: A Preliminary Survey of AOSC OS, and the World of Modern Computing
 published: true
-date: 2020-05-04T03:37:50.740Z
-tags: 
+date: 2020-05-04T05:31:37.524Z
+tags: sys-retro
 ---
 
 Current State of Matters
-==========
+====
 
 AOSC OS supports plethora of devices - old and new, common and obscure. From your 1999 Apple PowerBook G3 to the latest 64-core workstations, from the business laptops flooding the second hand market to the still elusive PinePhones, AOSC OS will run on them.
 
