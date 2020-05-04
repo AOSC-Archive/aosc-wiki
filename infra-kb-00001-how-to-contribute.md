@@ -1,9 +1,9 @@
 ---
-title: How To Contribute to This Wiki
+title: INFRA-KB-00001: How To Contribute to This Wiki
 description: A quick guide on Wiki contribution
 published: true
-date: 2020-05-04T04:55:50.493Z
-tags: 
+date: 2020-05-04T05:27:31.398Z
+tags: infra-kb
 ---
 
 # Preparing Your Content
