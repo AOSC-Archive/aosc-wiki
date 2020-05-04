@@ -8,7 +8,9 @@ tags:
 
 # Welcome
 
-Welcome to the AOSC Community Wiki! This is where all documentations, information, and guides will gather for users and developers alike. Please refer to the sections and links below for frequently accessed information, and use the search function to locate your specific topics.
+Welcome to the AOSC Community Wiki!
+
+This is where all documentations, information, and guides will gather for users and developers alike. Please refer to the sections and links below for frequently accessed information, and use the search function to locate your specific topics.
 
 # Community
 
@@ -84,8 +86,6 @@ Other topics on AOSC OS automation could be found under the [dev-automation](/t/
 
 # Events and Meetings
 
-## Events
-
 Every year, our community gathers at AOSCC - an off-line (and at times online) gathering for our community members. This is usually a three-day gathering where we get together and discuss community projects, share technical interests, and just have fun with our friends on the Internet.
 
 - [AOSCC 2019 (in Simplified Chinese)](/aoscc-2019)
@@ -101,7 +101,7 @@ AOSC developers organise routine work group meetings, minutes from the meetings 
 
 This section contains resources, guidebooks, and other general information for AOSC infrastructures (websites, repositories, etc.) and public resources.
 
-- [BuildBots for AOSC OS Packaging](/infra-buildbots)
+- [Buildbots](/infra-buildbots)
 - [How to Mirror the Community Repository](/infra-kb-00002-how-to-mirror)
 - [Maintenance Notes for the AOSC Portal](/infra-community-portal)
 - [The AOSC OS Packages Site](/infra-packages-site)
