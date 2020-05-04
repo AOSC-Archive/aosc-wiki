@@ -28,7 +28,7 @@ If completed on time, our iteration will be once again (in forever) aligned with
 Leo:
 
 - 重新写了 `build.sh`，目前还非常简陋
-- ![build.sh](/developers/minutes/build_sh.jpg)
+- ![build.sh](/build_sh.jpg)
 
 Lion:
 
