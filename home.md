@@ -20,18 +20,6 @@ Here you will find an introduction to our history and culture as a community, to
 
 Other community-related topics could be foudn under the [community](/t/community) category.
 
-## Events
-
-Every year, our community organises an off-line (and at times online) gathering for our community members. This is usually a three-day gathering where we sit down and discuss community projects, share technical interests, and just have fun with our friends on the Internet. Offline events are usually held in an university in mainland China.
-
-- [AOSCC 2019 (in Simplified Chinese)](/aoscc-2019)
-{.links-list}
-
-Our developers are occasionally invited to other events. Other event-related topics could be found under the [events](/t/events) category.
-
-## Routine Meetings
-
-AOSC developers organise routine work group meetings, minutes from the meetings could be found under the [minutes](/t/minutes) category.
 
 # AOSC OS
 
@@ -90,10 +78,36 @@ This section outlines our ongoing effort to automate AOSC OS maintenance and qua
 
 - [AOSC OS Maintenance Automation: Design RFCs and Progression](/automation-design-rfcs-and-progression)
 - [Packaging Metadata Syntax](/automation-package-metadata-syntax)
+{.links-list}
 
 Other topics on AOSC OS automation could be found under the [dev-automation](/t/dev-automation) category.
 
+# Events and Meetings
+
+## Events
+
+Every year, our community gathers at AOSCC - an off-line (and at times online) gathering for our community members. This is usually a three-day gathering where we get together and discuss community projects, share technical interests, and just have fun with our friends on the Internet.
+
+- [AOSCC 2019 (in Simplified Chinese)](/aoscc-2019)
+{.links-list}
+
+Other event-related topics could be found under the [events](/t/events) category.
+
+## Routine Meetings
+
+AOSC developers organise routine work group meetings, minutes from the meetings could be found under the [minutes](/t/minutes) category.
+
 # Infrastructure
+
+This section contains resources, guidebooks, and other general information for AOSC infrastructures (websites, repositories, etc.) and public resources.
+
+- [BuildBots for AOSC OS Packaging](/infra-buildbots)
+- [How to Mirror the Community Repository](/infra-kb-00002-how-to-mirror)
+- [Maintenance Notes for the AOSC Portal](/infra-community-portal)
+- [The AOSC OS Packages Site](/infra-packages-site)
+{.links-list}
+
+Other infrastructure-related topics could be found under the [infra](/t/infra) category.
 
 ## Knowledge Base and Errata
 
