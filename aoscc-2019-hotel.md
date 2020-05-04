@@ -1,5 +1,5 @@
 ---
-title: hotel
+title: 'AOSCC 2019: Hotel'
 description: 
 published: true
 date: 2020-05-04T03:35:06.028Z
