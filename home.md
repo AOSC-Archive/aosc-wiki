@@ -57,7 +57,7 @@ AOSC OS/Retro is a special branch derived from the mainline distribution that ta
 - [AOSC OS/Retro: A Rationale (RFC)](/sys-retro-rationale)
 {.links-list}
 
-Other topics on AOSC OS/Retro's sytem design and specifications could be found under the [sys-info](/t/sys-retro) category.
+Other topics on AOSC OS/Retro's sytem design and specifications could be found under the [sys-retro](/t/sys-retro) category.
 
 # Developers
 
@@ -114,5 +114,5 @@ Other infrastructure-related topics could be found under the [infra](/t/infra) c
 Here you may find Knowledge Base articles and Errata reports are assembled by our Infrastructure Work Group (infra-wg).
 
 - [Knowledge Base *Topic-specific guides and tips.*](/t/infra-kb)
-- [Errata *Known issues, our investigation report, and ways to work around them.*](/t/infra-kb)
+- [Errata *Known issues, our investigation report, and ways to work around them.*](/t/infra-errata)
 {.links-list}
