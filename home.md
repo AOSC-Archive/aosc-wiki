@@ -1,6 +1,6 @@
 ---
-title: AOSC Wiki
-description: Where people come to know... Oh wait, sorry MSFN :D
+title: Wiki Home
+description: AOSC Wiki - Where People Go To Know... Oh wait, sorry MSFN! :D
 published: true
 date: 2020-05-03T19:44:47.173Z
 tags: 
@@ -8,134 +8,97 @@ tags:
 
 # Welcome
 
-Welcome to the AOSC Community Wiki!
+Welcome to the AOSC Community Wiki! This is where all documentations, information, and guides will gather for users and developers alike. Please refer to the sections and links below for frequently accessed information, and use the search function to locate your specific topics.
 
-This is where all documentations, information, and guides will gather for users and developers alike. This community wiki is currently a work-in-progress, so do expect constant content changes and movements. Anyone is welcome to make changes to this wiki as a guest, as user management backend is not yet complete on Wiki.js upstream.
+# Community
 
-The wiki is split into multiple big sections, targeting different audiences. Do use the search bar if lost though, it could come in handy.
+Here you will find an introduction to our history and culture as a community, topics on administrative routines, as well as community events.
 
-Be sure to note our [AOSC Inter-Personal Guidelines](/community-guidelines).
+- [AOSC: Our History](/community-history)
+- [AOSC Inter-Personal Guidelines (Long Term RFC)](/community-guidelines.md)
+{.links-list}
 
-# Users
+Other community-related topics could be foudn under the [community](/t/community) category.
 
-This section contains information useful for AOSC OS users with pages arranged by topics.
+## Events
 
-- [Is AOSC OS Right for Me?](/is-aosc-os-right-for-me)
+Every year, our community organises an off-line (and at times online) gathering for our community members. This is usually a three-day gathering where we sit down and discuss community projects, share technical interests, and just have fun with our friends on the Internet. Offline events are usually held in an university in mainland China.
 
-## System Installation
+- [AOSCC 2019 (in Simplified Chinese)](/aoscc-2019)
+{.links-list}
 
-This topic provides information on installation of AOSC OS, and considerations suggested when choosing different editions of AOSC OS.
+Our developers are occasionally invited to other events. Other event-related topics could be found under the [events](/t/events) category.
 
-- How-to/Guides
-	- [AMD64/x86-64 Systems](/installation-amd64)
-	- [ARMv7/AArch64 Devices](/installation-arm)
-	- [PowerPC/PPC64-based Macintosh](/installation-powermac)
-	- *MIPS 32/64-Bit Systems*
-	- [ZFS Root](/installation-zfs-root)
-  - See also: [installation](/t/installation)
-- System Requirements
-	- [AMD64/x86-64 Systems](/installation-amd64-notes-sysreq)
-	- [ARMv7/AArch64 Devices](/installation-arm-notes-sysreq)
-	- [PowerPC/PPC64-based Macintosh](/installation-powermac-notes-sysreq)
-	- *MIPS 32/64-bit Systems*
+## Routine Meetings
 
-## System Information and Specifications
+AOSC developers organise routine work group meetings, minutes from the meetings could be found under the [minutes](/t/minutes) category.
 
-This topic provides information on AOSC OS's system specifications, naming schemes, etc.
+# AOSC OS
 
-- [Architecture Namings and Specifications](/users/information/arch-specs)
-- [Filesystem Hierarchy](/users/information/fs-hierarchy)
-- *Optimisation Overlays*
+Our main project at the community, a general-purposed Linux Distribution designed with simplicity, localisation, software compatibility, device sustainability, and gradual refinement in mind.
+
+- [Is AOSC OS Right for Me?](/sys-is-aosc-os-right-for-me)
+- [Installation Guides](/t/sys-installation)
+{.links-list}
+
+Other topics on AOSC OS's sytem design and specifications could be found under the [sys-info](/t/sys-info) category.
+
+## Knowledge Base and Errata
+
+Here you may find Knowledge Base articles and Errata reports are assembled by AOSC OS developers.
+
+- [Knowledge Base *Topic-specific guides and tips.*](/t/sys-kb)
+- [Errata *Known issues, our investigation report, and ways to work around them.*](/t/sys-errata) 
+{.links-list}
+
+## Security Advisories
+
+Security advisories for AOSC OS are commonly referred to as an AOSA (AOSC OS Security Advisory), organised by year and numbered. Here you may find an overview of our security/vulnerability response routines, as well as year-by-year archives of our posted security advisories.
+
+- [What is an AOSA?](/aosa-info)
+- [Year-by-Year AOSA Archives](/t/aosa-archive)
+{.links-list}
 
 ## AOSC OS/Retro
 
-This sub-section provides guidebooks and developer information for AOSC OS/Retro maintainers.
+AOSC OS/Retro is a special branch derived from the mainline distribution that targets legacy and performance-constrained devices.
 
-- [AOSC OS/Retro: A Rationale (RFC)](/aosc-os-retro-rationale)
-- [AOSC OS/Retro: An Introduction to Users and Maintainers (RFC)](/aosc-os-retro-intro)
+- [AOSC OS/Retro: An Introduction to Users and Maintainers (RFC)](/sys-retro-info)
+- [AOSC OS/Retro: A Rationale (RFC)](/sys-retro-info)
+{.links-list}
+
+Other topics on AOSC OS/Retro's sytem design and specifications could be found under the [sys-info](/t/sys-retro) category.
 
 # Developers
 
-This section contains guidebooks for AOSC developers, as well as more technically-inclined content for developers using AOSC OS.
-
-## Wiki and Contribution
-
-This sub-section provides basic information for contributions to this Wiki.
-
-- [How to Contribute to This Wiki](developers/how-to-contribute-md)
-
-## Public Developer Resources
-
-This sub-section contains general information about public servers and resources made available to AOSC developers.
-
-- [AOSC Buildbot Information](developers/buildbots)
-
-## Infrastructure
-
-This sub-section contains information on APIs and technical details from our community infrastructure.
-
-- [Community Portal](developers/community-portal)
-- [Packages Site](developers/packages-site)
-- [List of Package Issue Codes](/developers/list-of-package-issue-codes)
-- [p-vector](/developers/p-vector)
+This section contains resources, guidebooks, and other general information for AOSC developers.
 
 ## AOSC OS
 
-This sub-section provides guidebooks and developer information for AOSC OS maintainers.
+This section contains information for AOSC OS maintainers.
 
-- [Exceptions to the Update Cycles](/developers/aosc-os/cycle-exceptions)
-- [Known Patch Release Rules](/developers/aosc-os/known-patch-release-rules)
-- Resources for Packagers
-	- [Intro To Package Maintenance](/developers/intro-to-package-maintenance)
-	- [AOSC OS Maintenance Guildelines (RFC)](/developers/aosc-os-maintenance-guidelines)
-	- [AOSC OS Package Styling Manual](/developers/aosc-os-package-styling-manual)
-  
-### Automation
+- [Intro to Package Maintenance](/dev-sys-packaging-intro)
+- [AOSC OS Maintenance Guidelines (RFC)](/dev-sys-maintenance-guidelines)
+- [AOSC OS Package Styling Manual](/dev-sys-package-styling-manual)
+{.links-list}
 
-Developers intersted in AOSC OS maintenance/packaging automation should refer to this meta page.
+Other topics on AOSC OS maintenance could be found under the [dev-sys](/t/dev-sys) category.
 
-- [AOSC OS Maintenance Automation: Design RFCs and Progression](/developers/automation/aosc-os-maintenance-automation-design-rfcs-and-progression)
+## Automation
 
-## Conferences
+This section outlines our ongoing effort to automate AOSC OS maintenance and quality assurance.
 
-- [AOSCC 2019](/aoscc/2019/info)
+- [AOSC OS Maintenance Automation: Design RFCs and Progression](/automation-design-rfcs-and-progression)
+- [Packaging Metadata Syntax](/automation-package-metadata-syntax)
 
-# Knowledge Base
+Other topics on AOSC OS automation could be found under the [dev-automation](/t/dev-automation) category.
 
-This section contains pages describing common questions, tips, and directions when using AOSC OS.
+# Infrastructure
 
-- [KB-SYS-00001: Configuration of APT Repositories](/kbs/sys/00001-apt-gen-list)
-- [KB-SYS-00002: Configuration of Input Methods](/kbs/sys/00002-imchooser)
-- [KB-SYS-00003: Configuration of JACK](/kbs/sys/00003-jack-configuration)
+## Knowledge Base and Errata
 
-# Errata
+Here you may find Knowledge Base articles and Errata reports are assembled by our Infrastructure Work Group (infra-wg).
 
-This section contains known unresolved and resolved issues found in AOSC OS - for developers' and users' reference.
-
-- [ERR-SYS-00001: Disappearing Windows with KDE/Plasma Desktop using Intel DDX](/err/x11/00001-kde-window-intel-ddx)
-- [ERR-SYS-00002: Noto Mono Fonts Displayed as Sans Serif with Recent Font Package Update](/err/x11/00002-noto-mono-font-name-change)
-- [ERR-SYS-00003: Errors when Running the "sensors" Command on a HP MicroServer Gen8](/err/x11/00003-sensors-dmesg-error-microserver-gen8)
-- [ERR-SYS-00004: NetEase Cloud Music < 1.1.0 Fails to Launch](/err/x11/00004-netease-cloud-music-sandbox-error)
-- [ERR-SYS-00005: X11 Graphical Interface Fails to Start on Systems with Dedicated NVIDIA Graphics](/err/x11/00005-nvidia-x-failure-without-nouveau-blacklist)
-- [ERR-SYS-00006: VLC 3.0 and Above May Fail to Start in GNOME](/err/x11/00006-vlc-fails-to-launch-in-gnome)
-- [ERR-SYS-00007: Performance Issues with Fontconfig <= 2.12.92](/err/x11/00007-fc-cache-performance-issues)
-- [ERR-SYS-00008: CUPS "Filter Failed" with Printers Using the HPLIP Driver](/err/x11/00008-hplip-proprietary-plugins-version-mismatch)
-- [ERR-SYS-00009: Error Updating to Systemd 242](/err/systemd/00009-error-updating-to-systemd-242)
-
-# AOSC OS Security Advisories
-
-A brief introduction to the definition, format, and workflow of AOSC OS Security Advisories can be read in the article below.
-
-- [What is an AOSA?](/aosa/what-is-an-aosa)
-
-This section lists all current and historic AOSC OS Security Advisories.
-
-- [List of Announced AOSAs (2017)](/aosa/archive/2017)
-- [List of Announced AOSAs (2018)](/aosa/archive/2018)
-- [List of Announced AOSAs (2019)](/aosa/archive/2019)
-
-# Mirrors
-
-This section contains information and guides regarding AOSC's Community Repository.
-
-- [How To Mirror the Community Repository](/mirrors/how-to)
+- [Knowledge Base *Topic-specific guides and tips.*](/t/infra-kb)
+- [Errata *Known issues, our investigation report, and ways to work around them.*](/t/infra-kb) 
+{.links-list}
