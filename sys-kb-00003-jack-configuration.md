@@ -1,9 +1,9 @@
 ---
-title: KB-SYS-00003: Configuration of JACK
+title: SYS-KB-00003: Configuration of JACK
 description: JACK Audio Connection Kit Configuration on AOSC OS
 published: true
-date: 2020-05-04T03:37:30.557Z
-tags: 
+date: 2020-05-04T05:22:55.538Z
+tags: sys-kb
 ---
 
 # JACK Audio Connection Kit
