@@ -1,9 +1,9 @@
 ---
-title: ERR-SYS-00003: Errors when Running the "sensors" Command on a HP MicroServer Gen8
+title: SYS-ERR-00003: Errors when Running the "sensors" Command on a HP MicroServer Gen8
 description: ACPI-related Dmesg Outputs Triggered by Reading of Power Metre Values
 published: true
-date: 2020-05-04T03:36:43.963Z
-tags: 
+date: 2020-05-04T05:09:51.273Z
+tags: sys-errata
 ---
 
 # Summary
