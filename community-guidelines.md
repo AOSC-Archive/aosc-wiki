@@ -2,8 +2,8 @@
 title: AOSC Inter-Personal Guidelines [Long Term RFC]
 description: A Guide of References for Your Happy Stay
 published: true
-date: 2020-05-04T04:55:10.462Z
-tags: 
+date: 2020-05-05T05:00:18.695Z
+tags: community
 ---
 
 # Welcome to AOSC!
@@ -14,7 +14,7 @@ Hi there, welcome to the Anthon Open Source Community - our community since late
 
 — Community (n.), definition from the *[Cambridge English Dictionary](https://dictionary.cambridge.org/dictionary/english/community)*
 
-At AOSC, we consider our common interest in the discovery of fun in computing - in particular, we focus on the advancement of open source software and their localisation in our day-to-day computing. Over the years, AOSC has focused most of its development effort on the [AOSC OS](/users/information/is-aosc-os-right-for-me) project, with various other projects spun out from community interests. For instance, in early 2019, we have created the AOSC Retro Computing group, where vintage computing enthusiasts find their common topics in finding and buying them, restoring and playing with them, and porting a specially configured AOSC OS distribution on them.
+At AOSC, we consider our common interest in the discovery of fun in computing - in particular, we focus on the advancement of open source software and their localisation in our day-to-day computing. Over the years, AOSC has focused most of its development effort on the [AOSC OS](/sys-is-aosc-os-right-for-me) project, with various other projects spun out from community interests. For instance, in early 2019, we have created the AOSC Retro Computing group, where vintage computing enthusiasts find their common topics in finding and buying them, restoring and playing with them, and porting a specially configured AOSC OS distribution on them.
 
 # Rationale: Why a Guideline?
 
