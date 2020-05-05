@@ -2,7 +2,7 @@
 title: Installation/AMD64 (简体中文)
 description: 在 AMD64/x86_64 设备安装 AOSC OS
 published: true
-date: 2020-05-05T13:43:46.496Z
+date: 2020-05-05T13:53:54.051Z
 tags: sys-installation, 安装指南
 ---
 
@@ -20,7 +20,7 @@ tags: sys-installation, 安装指南
 
 所有的 AMD64/x86_64 的 .tar 压缩包都是通用的。你要做的就是按你的喜好和需求选择他们。
 
-> 注意：你在选择 .tar 压缩包的时候还要考虑你的设备是否支持，关于这部分的信息请参考 [AMD64/x86_64 system requirements](/users/installation/amd64-notes-sysreq)。
+> 注意：你在选择 .tar 压缩包的时候还要考虑你的设备是否支持，关于这部分的信息请参考 [AMD64/x86_64 system requirements](/sys-installation-amd64-notes-sysreq)。
 
 ## 可引导
 
