@@ -1,9 +1,9 @@
 ---
-title: Autobuild 3 Manual
+title: Autobuild3 User and Developer Manual
 description: Everything you need to know about Autobuild3
 published: true
-date: 2020-05-04T04:55:18.079Z
-tags: 
+date: 2020-05-05T05:47:16.176Z
+tags: dev-sys
 ---
 
 Autobuild is a distribution packaging toolkit meant to carry out the following functions:
