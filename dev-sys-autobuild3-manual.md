@@ -2,7 +2,7 @@
 title: Autobuild3 User and Developer Manual
 description: Everything you need to know about Autobuild3
 published: true
-date: 2020-05-05T05:47:16.176Z
+date: 2020-05-05T05:47:22.729Z
 tags: dev-sys
 ---
 
