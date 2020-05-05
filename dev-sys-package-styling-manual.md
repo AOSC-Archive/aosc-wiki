@@ -2,8 +2,8 @@
 title: AOSC OS Package Styling Manual
 description: Comprehensive (and updated) Styling Manual for AOSC OS Packagers
 published: true
-date: 2020-05-04T04:55:38.430Z
-tags: 
+date: 2020-05-05T05:30:40.688Z
+tags: dev-sys
 ---
 
 # Introduction and Rationale
@@ -149,7 +149,7 @@ Run-time dependencies should be written in such a way that, not only does the pa
 
 Which, through explicit and implicit dependencies, allows for a system environment that contains sufficient runtime for the program `/usr/bin/ario` to function.
 
-By the quality assurance standard, defined in code [E432](/developers/list-of-package-issue-codes#class-4-dependencies), all direct dependencies on the ELF level should also be included in `$PKGDEP`, and thus the addition of `dbus` to `$PKGDEP` is necessary.
+By the quality assurance standard, defined in code [E432](/dev-sys-qa-issue-codes#class-4-dependencies), all direct dependencies on the ELF level should also be included in `$PKGDEP`, and thus the addition of `dbus` to `$PKGDEP` is necessary.
 
 As of March 16th, 2019, 42.4% (1592/3705) of all packages provided in the Stable channel for `amd64` has the issue of insufficient ELF dependencies.
 
@@ -166,7 +166,7 @@ Build-time dependencies should written in such a way that the package will compi
 
 # Package Features
 
-When packaging for AOSC OS, please work in accordance to our [distribution feature guide](/users/information/is-aosc-os-right-for-me). The table below digests some of the common considerations when building packages for AOSC OS.
+When packaging for AOSC OS, please work in accordance to our [distribution feature guide](/sys-is-aosc-os-right-for-me). The table below digests some of the common considerations when building packages for AOSC OS.
 
 | Considerations | Appropriate Actions |
 |-------------------------|---------------------------------|
