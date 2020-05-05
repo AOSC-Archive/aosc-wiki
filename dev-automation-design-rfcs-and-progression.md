@@ -2,24 +2,24 @@
 title: AOSC OS Maintenance Automation: Design RFCs and Progression
 description: Current Design Goals and Progression, Also Serves as an Index for AOINB-related Documentation
 published: true
-date: 2020-05-04T04:55:14.480Z
-tags: 
+date: 2020-05-05T05:07:49.546Z
+tags: dev-automation
 ---
 
 # Current Design Documents and RFCs
 
 ## In Effect
 
-- [Exceptions to the Update Cycles](/developers/aosc-os/cycle-exceptions)
-- [Known Patch Release Rules](/developers/aosc-os/known-patch-release-rules)
-- [Intro To Package Maintenance](/developers/intro-to-package-maintenance)
-- [AOSC OS Package Styling Manual](/developers/aosc-os-package-styling-manual)
-- [AOSC OS Maintenance Guildelines (RFC)](/developers/aosc-os-maintenance-guidelines)
+- [Exceptions to the Update Cycles](/dev-sys-cycle-exceptions)
+- [Known Patch Release Rules](/dev-sys-known-patch-release-rules)
+- [Intro To Package Maintenance](/dev-sys-packaging-intro)
+- [AOSC OS Package Styling Manual](/dev-sys-package-styling-manual)
+- [AOSC OS Maintenance Guildelines (RFC)](/dev-sys-maintenance-guidelines)
 
 ## In-Progress or Early RFC
 
 - [RFC: AOSC Open Infrastructure forNetwork Building (Graphical Presentation)](https://raw.githubusercontent.com/AOSC-Dev/aoinb/master/docs/aoinb.dot.svg)
-- [RFC: Packaging Metadata Syntax](https://wiki.aosc.io/en/developers/packaging-metadata-syntax)
+- [RFC: Packaging Metadata Syntax](/dev-automation-packaging-metadata-syntax)
 
 # Automation for Metadata Updates
 
