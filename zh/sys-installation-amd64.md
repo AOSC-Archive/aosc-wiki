@@ -2,7 +2,7 @@
 title: Installation/AMD64 (简体中文)
 description: 在 AMD64/x86_64 设备安装 AOSC OS
 published: true
-date: 2020-05-05T13:43:18.478Z
+date: 2020-05-05T13:43:46.496Z
 tags: sys-installation, 安装指南
 ---
 
@@ -11,7 +11,6 @@ tags: sys-installation, 安装指南
 - [针对 KVM 的注释](/sys-installation-amd64-notes-kvm)
 - [针对 Bay Trail/Cherry Trail 的注释](/sys-installation-amd64-notes-trails)
 - [针对 software RAID 的注释](/sys-installation-amd64-notes-softraid)
-- [针对 BCM4360 的注释](/users/installation/amd64-notes-bcm4360)
 
 # 注意
 
