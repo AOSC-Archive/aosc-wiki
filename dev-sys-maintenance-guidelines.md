@@ -2,7 +2,7 @@
 title: AOSC OS Maintenance Guidelines
 description: General Procedural Guidlelines for AOSC OS Package Maintenance
 published: true
-date: 2020-05-04T05:53:19.348Z
+date: 2020-05-05T05:13:40.866Z
 tags: dev-sys
 ---
 
@@ -23,6 +23,7 @@ AOSC OS is maintained *concurrently* across four branches:
 - Testing (`testing`): Main feature branch which users with particular interest in following the latest development and changes should be using, security updates, feature/major updates, and new packages are introduced from the `explosive` branch and tested *minimally* before shipping. Updates made available through this branch will be available for `stable` by the end of each update cycle.
 	- Testing, Proposed Updates (`testing-proposed`): Feeds said updates into `testing`, packages are introduced and *build-time tested*.
 - Explosive (`explosive`): Accepts *any* new packages and updates *outside of the release cycles*. No one should be using this branch, no matter what.
+  - This branch is also used for major updates that requires a large amount of rebuilds and/or fixes (e.g. Python 3.7 => 3.8). This is done so that if said update won't fit within the timeframe of a single cycle, and since Explosive is never frozen, it will not affect cycle merging.
 - Release Candidate Kernels and Tools (`rckernel`): Complements `stable-proposed` to ship Linux Kernels currently in RC stage, and feeds into `stable-proposed` as the new mainline kernel branch as the final release is made on the upstream.
 
 ## The Cycles
