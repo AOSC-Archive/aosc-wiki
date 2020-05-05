@@ -2,7 +2,7 @@
 title: 维基主页
 description: 安同开源社区维基
 published: true
-date: 2020-05-05T14:54:32.219Z
+date: 2020-05-05T14:58:32.045Z
 tags: 
 ---
 
@@ -105,8 +105,8 @@ AOSC 成员召开例行工作组会议，会议记录可以在 [议事录](/t/�
 
 本章节包括 AOSC 基础设施 (网站、软件包仓库等) 的资源、指南和其他信息 以及公开资源。
 
-- [Buildbots *Public Build Servers for AOSC OS Maintainers*](/infra-buildbots)
-- [How to Mirror the Community Repository](/infra-kb-00002-how-to-mirror)
-- [Maintenance Notes for the AOSC Portal](/infra-community-portal)
-- [The AOSC OS Packages Site](/infra-packages-site)
+- [打包机 *面向 AOSC OS 维护者公用打包服务器*](/infra-buildbots)
+- [如何镜像 AOSC OS 软件包仓库](/infra-kb-00002-how-to-mirror)
+- [AOSC 门户网站的维护说明](/infra-community-portal)
+- [AOSC OS 软件包站](/infra-packages-site)
 {.links-list}
