@@ -2,7 +2,7 @@
 title: 维基主页
 description: 安同开源社区维基
 published: true
-date: 2020-05-05T13:37:14.334Z
+date: 2020-05-05T13:38:05.085Z
 tags: 
 ---
 
@@ -20,7 +20,7 @@ tags:
 {.links-list}
 
 关于AOSC的行政程序和社区事件：
-- [AOSC人际关系准则（长期征求意见稿）](/t/community-guidelines)
+- [AOSC人际关系准则（长期征求意见稿）](/community-guidelines)
 {.links-list}
 
 其余社区相关话题可以在 [社区](/t/社区) 目录中访问。
