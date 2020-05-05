@@ -2,13 +2,13 @@
 title: Exceptions to the Update Cycles
 description: A Suggested List of Packages to be Updated Immediately and Made Available in Stable Repositories
 published: true
-date: 2020-05-04T04:55:27.255Z
-tags: 
+date: 2020-05-05T05:58:33.109Z
+tags: dev-sys
 ---
 
 # Rationale and Definition
 
-Since the monthly update cycle was introduced to AOSC OS in July of 2017 (and later, seasonal update cycles introduced in July 2018), packages which represents feature, and non-bugfix/security updates should first have their build configurations pushed to the [staging](https://github.com/AOSC-Dev/aosc-os-abbs/tree/staging) of the [ABBS Tree](https://github.com/AOSC-Dev/aosc-os-abbs), uploaded to the [testing] repositories - and made available in the stable repository at the end of each seasonal cycle after testing.
+Since the monthly update cycle was introduced to AOSC OS in July of 2017 (and later, seasonal update cycles introduced since July 2018), packages which represents feature, and non-bugfix/security updates should first have their build configurations pushed to the [testing-proposed](https://github.com/AOSC-Dev/aosc-os-abbs/tree/staging) of the [ABBS Tree](https://github.com/AOSC-Dev/aosc-os-abbs), uploaded to the [testing-proposed](https://repo.aosc.io/debs/pool/testing-proposed/) repositories - and made available in the stable repository at the end of each seasonal cycle after testing.
 
 However, given the bugfix/security update may rely - and limited to - on backporting of patches, there are some other packages which could be...
 
@@ -17,9 +17,11 @@ However, given the bugfix/security update may rely - and limited to - on backpor
 - **Category 3:** Essential to basic Internet access in certain regions. This category is most well represented by network utilities which have to work around new blockades and constraints, for example, shadowsocks.
 - **Category 4:** AOSC OS distribution-specific development toolkits, which should be the newest at all times.
 
+A list of packages exempt from branch rules are shown below.
+
 # Exception List
 
-The list below is a **concrete and specific** list of packages which could be considered as a part of the exception list - meaning that these packages' build configurations could be pushed to the [bugfix](https://github.com/AOSC-Dev/aosc-os-abbs/tree/bugfix) branch, as a part of the effort to fix "bugs" (non-functional) or "security issues", and made available in the stable repositories after internal testing - regardless of the version changes, and whether new features are to be introduced.
+The list below is a **comprehensive** list of packages which could be considered as a part of the exception list - meaning that these packages' build configurations could be pushed to the [stable-proposed](https://github.com/AOSC-Dev/aosc-os-abbs/tree/stable-proposed) branch, as a part of the effort to address bugs, usability issues, and security vulnerabilities. These updates are then made available in the [stable](https://repo.aosc.io/debs/pool/stable) repositories after testing - regardless of the version changes, and whether new features are to be introduced.
 
 
 | Project Name | Package Name | Category |
@@ -71,8 +73,3 @@ The list below is a **concrete and specific** list of packages which could be co
 | ACBS | `acbs` | 4 |
 | Ciel | `ciel` | 4 |
 | XMRig | `xmrig` | 2 |
-
-# Extra Notes
-
-- *Ask: Should non-security updates to packages found in the exception list be committed to the bugfix branch. e.g. Firefox 56.0.2?*
-	- Re.: No, only if it fits within the five categories discussed above - however, it could be a valid argument that for example, if it prevents a user from accessing a certain website or it leads to crashes - in that case, an update to Firefox should be committed to the [bugfix](https://github.com/AOSC-Dev/aosc-os-abbs/tree/bugfix) branch and made available after internal testing. So that said, if the bugfix is minor and unlikely to be triggered, the update should still be limited to the [staging](https://github.com/AOSC-Dev/aosc-os-abbs/tree/staging) branch, and made available by the end of a monthly cycle.
