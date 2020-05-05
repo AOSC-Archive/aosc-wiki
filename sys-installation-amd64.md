@@ -2,16 +2,16 @@
 title: Installation/AMD64
 description: Installing AOSC OS on AMD64/x86-64 Devices
 published: true
-date: 2020-05-04T04:56:15.602Z
-tags: 
+date: 2020-05-05T06:23:28.075Z
+tags: sys-installation
 ---
 
 Installation of AOSC OS on x86-64 systems/environments are generally universal for all systems of this architectures. But for some specific device configurations and virtualized environments, here below are some extra notes:
 
-- [Notes for KVM](/installation-amd64-notes-kvm)
-- [Notes for Bay Trail/Cherry Trail](/installation-amd64-notes-trails)
-- [Notes for software RAID](/installation-amd64-notes-softraid)
-- [Notes for BCM4360 users](/installation-amd64-notes-bcm4360)
+- [Notes for KVM](/sys-installation-amd64-notes-kvm)
+- [Notes for Bay Trail/Cherry Trail](/sys-installation-amd64-notes-trails)
+- [Notes for software RAID](/sys-installation-amd64-notes-softraid)
+- [Notes for BCM4360 users](/sys-installation-amd64-notes-bcm4360)
 
 # Forenotes
 
@@ -21,22 +21,22 @@ Installation of AOSC OS on x86-64 systems/environments are generally universal f
 
 All AMD64/x86-64 tarballs are generic (universal for all supported devices), the only thing you would have to do here is choosing your favourite one - appropriate for your taste and your use case.
 
-> Note: Another consideration is whether your device is capable for a specific variant, please consult the [AMD64/x86-64 system requirements](/installation-amd64-notes-sysreq) page for more information.
+> Note: Another consideration is whether your device is capable for a specific variant, please consult the [AMD64/x86-64 system requirements](/sys-installation-amd64-notes-sysreq) page for more information.
 
 ## Bootable
 
 - Base
-- KDE/Plasma
+- Cinnamon
 - GNOME
+- KDE Plasma
 - MATE
-- XFCE
 - LXDE
+- XFCE
+
 ## Non-bootable
 
 - Container
 - BuildKit
-
-We are not going to discuss the deployment of Container and BuildKit in this guide, please check for the guide in [AOSC Cadet Training](/developers/aosc-os/index).
 
 # Preparing an Installation Environment
 
