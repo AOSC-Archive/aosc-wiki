@@ -2,8 +2,8 @@
 title: Autobuild3
 description: A Multi-Backend Packaging Toolkit
 published: true
-date: 2020-05-04T04:55:19.783Z
-tags: 
+date: 2020-05-05T05:43:20.840Z
+tags: dev-sys
 ---
 
 # What is Autobuild3?
@@ -33,17 +33,17 @@ In the interest of readability, this guidebook will be divided into several sect
 - Package Description
 - Build Parametres
 
-[Detailed Description: `autobuild/defines` File](/developers/aosc-os-cadet-training/autobuild3/defines)
+[Detailed Description: `autobuild/defines` File](/dev-sys-defines)
 
 # Pre-Defined Variables
 
 A collection of variables are pre-defined by Autobuild3 and used as build-time defaults.
 
-[Detailed Description: Autobuild3 Pre-defined Variables](/developers/aosc-os-cadet-training/autobuild3/pre-defined-variables)
+[Detailed Description: Autobuild3 Pre-defined Variables](/dev-sys-autobuild3-manual#general-structure)
 
 # Build Scripts, Scriptlets, and Extra Files
 
-[Detailed Description: Autobuild3 Build Scripts, Scriptlets, and Extra Files](/developers/aosc-os-cadet-training/autobuild3/scripts-and-extra-files)
+[Detailed Description: Autobuild3 Build Scripts, Scriptlets, and Extra Files](/dev-sys-autobuild3-build-scripts-scriptlets-and-extra-files)
 
 # Running and Utilising Autobuild3
 
@@ -57,5 +57,5 @@ However, with the introduction of [ACBS](/developers/aosc-os-cadet-training/acbs
 
 Please refer to the following pages for details:
 
-- [AOSC OS Cadet Training/Ciel](/developers/aosc-os-cadet-training/ciel)
-- [AOSC OS Cadet Training/ACBS](/developers/aosc-os-cadet-training/acbs)
+- [AOSC OS Cadet Training/Ciel](/dev-sys-ciel)
+- [AOSC OS Cadet Training/ACBS](/dev-sys-acbs)
