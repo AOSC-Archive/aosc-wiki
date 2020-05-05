@@ -2,7 +2,7 @@
 title: 维基主页
 description: 安同开源社区维基
 published: true
-date: 2020-05-05T13:38:05.085Z
+date: 2020-05-05T13:38:50.135Z
 tags: 
 ---
 
@@ -30,5 +30,5 @@ tags:
 AOSC OS是AOSC的核心项目。它是一个遵从简单、本土化、软/硬件兼容性的设计准则的通用Linux发行版。
 
 - [AOSC OS 是否适合你](/sys-is-aosc-os-right-for-me)
-- [安装指南 *在你的设备上安装 AOSC OS*](/t/sys-installation)
+- [安装指南 *在你的设备上安装 AOSC OS*](/t/安装指南)
 {.links-list}
