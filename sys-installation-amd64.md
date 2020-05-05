@@ -2,7 +2,7 @@
 title: Installation/AMD64
 description: Installing AOSC OS on AMD64/x86-64 Devices
 published: true
-date: 2020-05-05T06:23:28.075Z
+date: 2020-05-05T06:43:08.555Z
 tags: sys-installation
 ---
 
@@ -11,7 +11,6 @@ Installation of AOSC OS on x86-64 systems/environments are generally universal f
 - [Notes for KVM](/sys-installation-amd64-notes-kvm)
 - [Notes for Bay Trail/Cherry Trail](/sys-installation-amd64-notes-trails)
 - [Notes for software RAID](/sys-installation-amd64-notes-softraid)
-- [Notes for BCM4360 users](/sys-installation-amd64-notes-bcm4360)
 
 # Forenotes
 
