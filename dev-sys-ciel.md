@@ -1,8 +1,8 @@
 ---
-title: Ciel
+title: Using Ciel for AOSC OS Packaging
 description: Using standardised and containerised environments for AOSC OS packaging.
 published: true
-date: 2020-05-05T05:49:55.070Z
+date: 2020-05-05T05:51:42.348Z
 tags: dev-sys
 ---
 
