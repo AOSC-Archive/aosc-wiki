@@ -2,14 +2,14 @@
 title: 维基主页
 description: 安同开源社区维基
 published: true
-date: 2020-05-05T13:59:26.512Z
+date: 2020-05-05T14:36:43.930Z
 tags: 
 ---
 
 # 欢迎
 欢迎来到AOSC社区 *(安同开源社区)* 维基!
 
-这里是面向用户与开发者的所有文档、信息和指引的汇总。
+这里是面向用户与开发者的所有文档、信息和指南的汇总。
 请根据以下的章节和链接访问最常用的信息，并善用搜索功能。
 
 # 社区
@@ -20,7 +20,7 @@ tags:
 {.links-list}
 
 关于AOSC的行政程序和社区事件：
-- [AOSC人际关系准则（长期征求意见稿）](/community-guidelines)
+- [AOSC人际关系准则 (长期征求意见稿)](/community-guidelines)
 {.links-list}
 
 其余社区相关内容可以在 [社区](/t/社区) 目录中访问。
@@ -39,6 +39,51 @@ AOSC OS是AOSC的核心项目。它是一个遵从简单、本土化、软/硬�
 
 关于 AOSC OS 的知识库与勘误报告：
 
-- [Knowledge Base *Topic-specific Guides and Tips*](/t/sys-kb)
-- [Errata *Known Issues, Our Investigation Report, and Ways to Work Around Them*](/t/sys-errata)
+- [知识库 *特定主题的指南和贴士*](/t/系统知识库)
+- [勘误 *已知问题,调查报告与绕过方法*](/t/系统勘误)
 {.links-list}
+
+## 安全公告
+
+AOSC OS 的安全公告通常称为 AOSA (AOSC OS Security Advisory)。AOSA 按年份统计并编号。
+
+关于安全/漏洞响应程序的概述：
+- [AOSA是什么? *AOSC OS 安全公告*](/aosa-info)
+{.links-list}
+
+AOSA的逐年存档：
+- [AOSA的逐年存档](/t/aosa)
+{.links-list}
+
+## AOSC OS/Retro
+
+AOSC OS/Retro 是一个致力于旧式设备和低性能设备的特殊的主线发行版派生分支。
+
+- [AOSC OS/Retro: 面向用户与维护者的介绍 (征求意见稿)](/sys-retro-intro)
+- [AOSC OS/Retro: 基本理念 (征求意见稿) *“现代科技都是纸老虎?”*](/sys-retro-rationale)
+{.links-list}
+
+其余 AOSC OS/Retro 相关内容可以在 [考古系列](/t/考古系列) 目录访问
+
+# 开发者
+
+本章节包括了面向开发者的资源、指南和其他信息。
+
+## AOSC OS
+
+本章节包括面向 AOSC OS 维护者的信息。
+- [软件包维护的介绍 *AOSC OS 维护者入门指南*](/dev-sys-packaging-intro)
+- [AOSC OS 维护指南 (征求意见稿) *Live Well, Package Good*](/dev-sys-maintenance-guidelines)
+- [AOSC OS 软件包风格手册 *Live Well, Package Beautiful*](/dev-sys-package-styling-manual)
+{.links-list}
+
+## 自动化
+
+本章节概述了我们正在推进的AOSC OS自动化维护工作和质量保证。
+
+- [AOSC OS 自动化维护: 设计意见征求稿和进度](/dev-automation-design-rfcs-and-progression)
+- [软件包元数据句法](/dev-automation-packaging-metadata-syntax)
+{.links-list}
+
+其余 AOSC OS 自动化相关内容可以在 [自动化](/t/自动化)
+
