@@ -2,7 +2,7 @@
 title: 维基主页
 description: 安同开源社区维基
 published: true
-date: 2020-05-05T14:36:43.930Z
+date: 2020-05-05T14:44:47.591Z
 tags: 
 ---
 
@@ -63,7 +63,7 @@ AOSC OS/Retro 是一个致力于旧式设备和低性能设备的特殊的主线
 - [AOSC OS/Retro: 基本理念 (征求意见稿) *“现代科技都是纸老虎?”*](/sys-retro-rationale)
 {.links-list}
 
-其余 AOSC OS/Retro 相关内容可以在 [考古系列](/t/考古系列) 目录访问
+其余 AOSC OS/Retro 相关内容可以在 [考古系列](/t/考古系列) 目录访问。
 
 # 开发者
 
@@ -85,5 +85,12 @@ AOSC OS/Retro 是一个致力于旧式设备和低性能设备的特殊的主线
 - [软件包元数据句法](/dev-automation-packaging-metadata-syntax)
 {.links-list}
 
-其余 AOSC OS 自动化相关内容可以在 [自动化](/t/自动化)
+其余 AOSC OS 自动化相关内容可以在 [自动化流程](/t/自动化流程) 目录访问，
 
+# AOSC 事件与会议
+
+AOSC 成员每年会在 AOSCC 聚首。
+AOSCC 通常是一次线下会议，一般持续3天。在这三天里，社区成员讨论社区计划，分享技术爱好以及面基。
+
+- [AOSCC 2019](/aoscc-2019)
+{.links-list}
