@@ -2,8 +2,8 @@
 title: AOSC Membership Enrollment Checklist
 description: Way to become AOSC Member
 published: true
-date: 2020-05-04T04:55:08.710Z
-tags: 
+date: 2020-05-05T05:04:55.821Z
+tags: community
 ---
 
 # AOSC Contributor Enrollment 
@@ -16,6 +16,6 @@ Here we provide a checklist describing the procedures to contributor enrollment:
 
 - Create a LDAP Account (Xiaoxing Ye <<xiaoxing@aosc.io>>).
 - Create a Mail account (Mingcong Bai <<jeffbai@aosc.io>>).
-- Create a new people page in GitHub, consult [this guide](https://wiki.aosc.io/en/developers/community-portal#add-new-personal-pages) for procedures.
+- Create a new people page in GitHub, consult [this guide](/infra-community-portal#add-new-personal-pages) for procedures.
 - [Enroll the public key in the GitHub repository](https://github.com/AOSC-Dev/dev-pubkeys) as needed.
 - Enroll the public key on the repository server as needed (Xiaoxing ye <<xiaoxing@aosc.io>>).
