@@ -2,7 +2,7 @@
 title: Ciel
 description: Using standardised and containerised environments for AOSC OS packaging.
 published: true
-date: 2020-05-05T05:48:57.223Z
+date: 2020-05-05T05:49:55.070Z
 tags: dev-sys
 ---
 
@@ -113,7 +113,7 @@ And configure the instance that you've just created:
 # ciel config -i $INSTANCE_NAME
 ```
 
-The instructions on the console will be the same when you perform a [global configuration](/developers/aosc-os-cadet-training/ciel#global-configuration), just note that any configuration that deviates from its global counterpart will be *overridden*. This step also registers the ABBS tree with the instance.
+The instructions on the console will be the same when you perform a [global configuration](#global-configuration), just note that any configuration that deviates from its global counterpart will be *overridden*. This step also registers the ABBS tree with the instance.
 
 To list the statuses all instances found in the workspace, simply execute:
 
@@ -147,7 +147,7 @@ To delete a particular instance:
 
 ## Building and Rolling Back
 
-As mentioned above, Ciel's advantage lies in the fact that it allows for containerised build environments that can be easily rolled back to their "clean" state (or the "base" layer without overlayed changes). As specified in the [AOSC OS Maintenance Guildelines](https://wiki.aosc.io/developers/aosc-os-maintenance-guidelines#the-builds):
+As mentioned above, Ciel's advantage lies in the fact that it allows for containerised build environments that can be easily rolled back to their "clean" state (or the "base" layer without overlayed changes). As specified in the [AOSC OS Maintenance Guildelines](/dev-sys-maintenance-guidelines#the-builds):
 
 *While building packages, the build environments must be controlled, updated, and minimal, where packages are only installed as required by the build-and-run-time dependencies.*
 
