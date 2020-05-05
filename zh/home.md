@@ -2,7 +2,7 @@
 title: 维基主页
 description: 安同开源社区维基
 published: true
-date: 2020-05-05T13:40:26.625Z
+date: 2020-05-05T13:59:26.512Z
 tags: 
 ---
 
@@ -23,7 +23,7 @@ tags:
 - [AOSC人际关系准则（长期征求意见稿）](/community-guidelines)
 {.links-list}
 
-其余社区相关话题可以在 [社区](/t/社区) 目录中访问。
+其余社区相关内容可以在 [社区](/t/社区) 目录中访问。
 
 # AOSC OS
 
@@ -31,4 +31,14 @@ AOSC OS是AOSC的核心项目。它是一个遵从简单、本土化、软/硬�
 
 - [AOSC OS 是否适合你](/sys-is-aosc-os-right-for-me)
 - [安装指南 *在你的设备上安装 AOSC OS*](/t/安装指南)
+{.links-list}
+
+其余 AOSC OS 系统设计与规格相关内容可以在 [系统信息](/t/系统信息) 目录中访问。
+
+## 知识库与勘误
+
+关于 AOSC OS 的知识库与勘误报告：
+
+- [Knowledge Base *Topic-specific Guides and Tips*](/t/sys-kb)
+- [Errata *Known Issues, Our Investigation Report, and Ways to Work Around Them*](/t/sys-errata)
 {.links-list}
