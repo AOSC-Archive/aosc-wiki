@@ -2,7 +2,7 @@
 title: 维基主页
 description: 安同开源社区维基
 published: true
-date: 2020-05-05T14:58:32.045Z
+date: 2020-05-05T15:01:45.988Z
 tags: 
 ---
 
@@ -109,4 +109,12 @@ AOSC 成员召开例行工作组会议，会议记录可以在 [议事录](/t/�
 - [如何镜像 AOSC OS 软件包仓库](/infra-kb-00002-how-to-mirror)
 - [AOSC 门户网站的维护说明](/infra-community-portal)
 - [AOSC OS 软件包站](/infra-packages-site)
+{.links-list}
+
+其余 AOSC 基础设施的相关内容可以在 [基础设施](/t/基础设施) 目录访问。
+
+## 关于 AOSC OS 的知识库与勘误报告：
+
+- [知识库 *特定主题的指南和贴士*](/t/基础设施知识库)
+- [勘误 *已知问题,调查报告与绕过方法*](/t/基础设施勘误)
 {.links-list}
