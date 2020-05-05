@@ -2,7 +2,7 @@
 title: Autobuild3
 description: A Multi-Backend Packaging Toolkit
 published: true
-date: 2020-05-05T05:43:20.840Z
+date: 2020-05-05T05:44:24.468Z
 tags: dev-sys
 ---
 
@@ -53,7 +53,7 @@ To build a package using Autobuild3, simply go to a directory containing both th
 # autobuild
 ```
 
-However, with the introduction of [ACBS](/developers/aosc-os-cadet-training/acbs) (originally known as [ABBS](https://github.com/AOSC-Dev/abbs) and later [Ciel](/developers/aosc-os-cadet-training/ciel), Autobuild3 is now rarely used as a standalone tool. In particular, with the requirements specified in the [AOSC OS Maintenance Guidelines](https://wiki.aosc.io/developers/aosc-os-maintenance-guidelines), Ciel is now *required* as a standard frontend for AOSC OS packaging.
+However, with the introduction of [ACBS](/dev-sys-acbs) (originally known as [ABBS](/dev-sys-abbs) and later [Ciel](/dev-sys-ciel), Autobuild3 is now rarely used as a standalone tool. In particular, with the requirements specified in the [AOSC OS Maintenance Guidelines](dev-sys-maintenance-guidelines), Ciel is now *required* as a standard frontend for AOSC OS packaging.
 
 Please refer to the following pages for details:
 
