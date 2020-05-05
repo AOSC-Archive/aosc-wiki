@@ -2,8 +2,8 @@
 title: Pak Squad Minutes on 2020-05-03
 description: 
 published: true
-date: 2020-05-04T04:56:00.604Z
-tags: 
+date: 2020-05-05T04:17:53.369Z
+tags: minutes
 ---
 
 ## Goals for Spring 2020
@@ -19,9 +19,17 @@ Apart from these focuses, no other updates will be addressed. Desktop environmen
 
 If completed on time, our iteration will be once again (in forever) aligned with seasons on Earth.
 
-## Changes Requested for the Packages Site
+Changes Requested for the Packages Site
+---------------------------------------
 
 - Error 431 (library version \[sover\] dependency not met) should be marked red if n > 0.
+- Consider only the newest version for most QA reports, ignore older versions.
+- Remove opt-*, powerpc, ppc64, riscv64, bsp-*-armel from Packages site, since they are currently suspended or will become Retro ports in the near future.
+
+Changes Requested for the Pakreq Site
+---------------------------------------
+
+- Track rejected packages and reasons for rejection.
 
 ## Automation
 
