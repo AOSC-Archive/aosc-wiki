@@ -2,7 +2,7 @@
 title: Installation/ARM*
 description: Installing AOSC OS on ARMv7/AArch64 Devices
 published: true
-date: 2020-05-05T06:16:10.011Z
+date: 2020-05-05T06:16:42.598Z
 tags: sys-installation
 ---
 
@@ -18,7 +18,7 @@ Device-specific RAW images for MicroSD cards and eMMC storage could be found in 
 
 # Variants and System Requirements
 
-Currently, the following variants of AOSC OS are available for ARMv7/AArch64 devices/systems. Additional consideration is needed for whether your device is capable for a specific variant, please consult the [ARM system requirements](/sys-info-arm-notes-sysreq) page for more information:
+Currently, the following variants of AOSC OS are available for ARMv7/AArch64 devices/systems. Additional consideration is needed for whether your device is capable for a specific variant, please consult the [ARM system requirements](/sys-installation-arm-notes-sysreq) page for more information:
 
 ## Bootable
 
