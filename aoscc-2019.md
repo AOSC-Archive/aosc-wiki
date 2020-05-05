@@ -2,8 +2,8 @@
 title: AOSCC 2019
 description: Location, Agenda, and Other Information for AOSCC 2019
 published: true
-date: 2020-05-04T04:55:07.158Z
-tags: 
+date: 2020-05-05T04:58:38.470Z
+tags: events
 ---
 
 # 参会信息
@@ -77,7 +77,7 @@ AOSCC 2019 长度为三天，每日上午 10 时至下午 5 时结束。和之�
 *注：在其他议程进行时请控制交谈音量。*
 # 住房指南
 
-AOSCC 2019 提供统一于「合肥中心智选假日酒店」的住宿。具体事宜请参阅[此处](/aoscc/2019/hotel)。
+AOSCC 2019 提供统一于「合肥中心智选假日酒店」的住宿。具体事宜请参阅[此处](/aoscc-2019-hotel)。
 
 # 请假申请
 
