@@ -2,7 +2,7 @@
 title: Exceptions to the Update Cycles
 description: A Suggested List of Packages to be Updated Immediately and Made Available in Stable Repositories
 published: true
-date: 2020-05-05T05:58:33.109Z
+date: 2020-05-06T22:19:03.414Z
 tags: dev-sys
 ---
 
@@ -47,6 +47,7 @@ The list below is a **comprehensive** list of packages which could be considered
 | Linux Kernels | `linux-kernel`, `linux-kernel-lts` | 2 |
 | NVIDIA Proprietary Unix Drivers | `nvidia`, `nvidia+340`, `nvidia+390` | 2 |
 | PyTZ | `pytz` | 2 |
+| Rime Data | `rime-data` | 2 |
 | Telegram Desktop | `telegram-desktop` | 2 |
 | Time Zone Data | `tzdata` | 2 |
 | AOSC U-Boot Utilities | `u-boot-aosc-utils` | 2 |
