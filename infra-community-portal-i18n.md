@@ -2,7 +2,7 @@
 title: Community Portal Translation Guide
 description: 
 published: true
-date: 2020-05-07T03:57:04.326Z
+date: 2020-05-07T03:57:51.567Z
 tags: 
 ---
 
@@ -107,7 +107,7 @@ After translation:
 > This part is kind of difficult to translate. If you are having issues following the instructions below, please ask us in the Telegram channel.
 {.is-info}
 
-1. Copy all the files listed in [Files Need to be Translated]() section to have the format `<original filename without extension>.<language code>.html`. For example copy `content/about/_index.html` to `content/about/_index.ru.html` if you are working with Russian translations
+1. Copy all the files listed in [Files Need to be Translated](#files-need-to-be-translated) section to have the format `<original filename without extension>.<language code>.html`. For example copy `content/about/_index.html` to `content/about/_index.ru.html` if you are working with Russian translations
 2. Edit the files you have copied in your favorite editor. Keep in mind if you encountered texts begin with `{{` and ends with `}}` (for example `{{< aosc-os-downloads >}}`) then please do not translate them, they have a special effect on the website.
 
 # Preview Your Changes
