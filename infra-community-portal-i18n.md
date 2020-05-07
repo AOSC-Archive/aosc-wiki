@@ -2,7 +2,7 @@
 title: Community Portal Translation Guide
 description: 
 published: true
-date: 2020-05-07T03:57:51.567Z
+date: 2020-05-07T04:01:10.092Z
 tags: 
 ---
 
@@ -13,7 +13,7 @@ First, thanks for your interests in translating our website. You will find the i
 > This wiki article assumes you have read [the maintenance guide](https://wiki.aosc.io/en/infra-community-portal), please read it first if you haven't.
 {.is-warning}
 
-# Files Need to be Translated
+# Files to be Translated
 
 There are two kinds of files need to be translated:
 
@@ -48,7 +48,7 @@ Files **not** present on the list **should not be** translated
 
 # How to Translate
 
-## Enable the support of your language
+## Enabling the support of your language
 
 First, you need to determine the language code for your language. You can find the ISO 639-1 language code here: https://www.loc.gov/standards/iso639-2/php/code_list.php.
 
@@ -70,13 +70,13 @@ For example, if you are doing the Russian translation, you will write something 
     weight = 3
 ```
 
-## Translate the overall framework
+## Translating the overall framework
 
 1. Copy `i18n/en.toml` to `i18n/<language code you obtained>.toml`. For example, if your language has the language code `ja` then it will be `i18n/ja.toml`.
 
 1. Now you can open this file in your favorite editor and translate the texts in it. Keep in mind if you encountered texts begin with `{{` and ends with `}}` (for example `{{ $.copyrightYear }}`) then please do not translate them, they have a special effect on the website.
 
-## Translate the navigation bar
+## Translating the navigation bar
 
 1. Copy `data/navigation.en.yml` to `data/navigation.<language code you obtained>.yml`
 
@@ -102,7 +102,7 @@ After translation:
   url: /ru/people
 ```
 
-## Translate the website contents
+## Translating the website contents
 
 > This part is kind of difficult to translate. If you are having issues following the instructions below, please ask us in the Telegram channel.
 {.is-info}
