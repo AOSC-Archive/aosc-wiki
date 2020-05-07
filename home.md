@@ -2,7 +2,7 @@
 title: Wiki Home
 description: AOSC Wiki - Where People Go To Know... Oh wait, sorry MSFN! :D
 published: true
-date: 2020-05-07T03:46:11.085Z
+date: 2020-05-07T03:46:50.414Z
 tags: 
 ---
 
@@ -88,7 +88,7 @@ Other topics on AOSC OS automation could be found under the [dev-automation](/t/
 
 This section contains information for the community and students participating in the plan hold by [ISRC ISCAS](https://isrc.iscas.ac.cn).
 
-- [Document for Community Enrollment](/ospp-2020-community-enroll)
+- [Document for Community Enrollment (in Simplified Chinese)](/zh/ospp-2020-community-enroll)
 {.links-list}
 
 # Events and Meetings
