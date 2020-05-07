@@ -2,7 +2,7 @@
 title: Wiki Home
 description: AOSC Wiki - Where People Go To Know... Oh wait, sorry MSFN! :D
 published: true
-date: 2020-05-07T06:12:11.283Z
+date: 2020-05-07T06:13:06.115Z
 tags: 
 ---
 
@@ -91,6 +91,8 @@ This section contains information for the community and students participating i
 - [Document for Community Enrollment (in Simplified Chinese)](/zh/ospp-2020-community-enroll)
 - [List of Projects (in Simplified Chinese)](/zh/ospp-2020-projects)
 {.links-list}
+
+Other topics on AOSC OS automation could be found under the [ospp](/t/ospp) category.
 
 # Events and Meetings
 
