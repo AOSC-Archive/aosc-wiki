@@ -2,7 +2,7 @@
 title: 开源软件供应链点亮计划暑期 2020 项目
 description: 
 published: true
-date: 2020-05-08T08:43:43.775Z
+date: 2020-05-08T08:47:06.372Z
 tags: ospp
 ---
 
@@ -20,7 +20,7 @@ _（请补充更多描述）_
 - 项目产出要求：
   - _（请补充）_
 - 项目技术要求：
-  - 了解 Linux 发行版的从头构建，例如 [Linux From Scratch](lfs)
+  - 了解 Linux 发行版的从头构建，例如 [Linux From Scratch][lfs]
   - 熟悉至少一门编程语言，Python 3 更佳（这是开发主要语言）
   - _（请补充）_
 - 相关的仓库：
