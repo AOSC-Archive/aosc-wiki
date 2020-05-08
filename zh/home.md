@@ -1,120 +1,135 @@
 ---
 title: 维基主页
-description: 安同开源社区维基
+description: 安同开源社区维基——欲知者速达 :D
 published: true
-date: 2020-05-05T15:02:35.835Z
+date: 2020-05-08T10:09:06.124Z
 tags: 
 ---
 
 # 欢迎
-欢迎来到AOSC社区 *(安同开源社区)* 维基!
 
-这里是面向用户与开发者的所有文档、信息和指南的汇总。
-请根据以下的章节和链接访问最常用的信息，并善用搜索功能。
+欢迎来到安同开源社区 (AOSC) 维基!
+
+这里是面向用户与开发者的所有文档、信息和指南的汇总。请根据以下的章节和链接访问最常用的信息，并善用搜索功能。
 
 # 社区
 
-关于AOSC的历史与文化：
+这里你能找到关于我们的介绍、历史，社区的文化、日常管理话题，以及社区活动事项。
 
-- [AOSC：历史 *自2011年11月*](/community-history)
+- [AOSC：我们的历史*我们从 2011 年 11 月以来的历史*](/community-history)
+- [AOSC 人际关系准测（长期征求意见稿）](/community-guidelines)
 {.links-list}
 
-关于AOSC的行政程序和社区事件：
-- [AOSC人际关系准则 (长期征求意见稿)](/community-guidelines)
-{.links-list}
-
-其余社区相关内容可以在 [社区](/t/社区) 目录中访问。
+其余社区相关的内容可以在 [社区](/t/community) 类别中找到。
 
 # AOSC OS
 
-AOSC OS是AOSC的核心项目。它是一个遵从简单、本土化、软/硬件兼容性的设计准则的通用Linux发行版。
+AOSC OS 是社区的主要项目。它是一个遵循简约、本地化、包容、可持续及精制的设计原则的通用 Linux 发行版。
 
-- [AOSC OS 是否适合你](/sys-is-aosc-os-right-for-me)
-- [安装指南 *在你的设备上安装 AOSC OS*](/t/安装指南)
+- [AOSC OS 适合我吗？*找到最适合你的（或者反之）*](/sys-is-aosc-os-right-for-me)
+- [安装指引*在你的机器上安装 AOSC OS*](/t/sys-installation)
 {.links-list}
 
-其余 AOSC OS 系统设计与规格相关内容可以在 [系统信息](/t/系统信息) 目录中访问。
+其余 AOSC OS 系统设计与规格相关的内容可以在 [系统信息](/t/sys-info) 类别中找到。
 
 ## 知识库与勘误
 
-关于 AOSC OS 的知识库与勘误报告：
+这里你能找到由 AOSC 开发者编撰的知识库文章和勘误报告。
 
-- [知识库 *特定主题的指南和贴士*](/t/系统知识库)
-- [勘误 *已知问题,调查报告与绕过方法*](/t/系统勘误)
+- [知识库*特定主题的指引和技巧提示*](/t/sys-kb)
+- [勘误*已知问题、调查报告，以及绕过方法*](/t/sys-errata)
 {.links-list}
 
 ## 安全公告
 
-AOSC OS 的安全公告通常称为 AOSA (AOSC OS Security Advisory)。AOSA 按年份统计并编号。
+AOSC OS 的安全公告通常称为 AOSA (AOSC OS Security Advisory)，并按年份顺序编号。这里你能找到我们对安全和漏洞的响应办法，以及按年份存档的已经发布的安全公告。
 
-关于安全/漏洞响应程序的概述：
-- [AOSA是什么? *AOSC OS 安全公告*](/aosa-info)
-{.links-list}
-
-AOSA的逐年存档：
-- [AOSA的逐年存档](/t/aosa)
+- [AOSC 是什么？*AOSC OS 安全公告*](/aosa-info)
+- [AOSA 逐年存档](/t/aosa)
 {.links-list}
 
 ## AOSC OS/Retro
 
-AOSC OS/Retro 是一个致力于旧式设备和低性能设备的特殊的主线发行版派生分支。
+AOSC OS/Retro 是一个以旧式和低性能设备为运行目标的，从发行版主线派生而来的一个特殊分支。
 
-- [AOSC OS/Retro: 面向用户与维护者的介绍 (征求意见稿)](/sys-retro-intro)
-- [AOSC OS/Retro: 基本理念 (征求意见稿) *“现代科技都是纸老虎?”*](/sys-retro-rationale)
+- [AOSC OS/Retro：面向用户与维护者的介绍（征求意见稿）](/sys-retro-intro)
+- [AOSC OS/Retro：基本理念（征求意见稿）*“现代科技都是纸老虎？”*](/sys-retro-rationale)
 {.links-list}
 
-其余 AOSC OS/Retro 相关内容可以在 [考古系列](/t/考古系列) 目录访问。
+其余 AOSC OS/Retro 系统设计与规格相关的内容可以在 [考古系列](/t/sys-retro) 类别中找到。
 
 # 开发者
 
-本章节包括了面向开发者的资源、指南和其他信息。
+本章节包括了面向 AOSC 开发者的资源、指南和其他一般信息。
 
 ## AOSC OS
 
-本章节包括面向 AOSC OS 维护者的信息。
-- [软件包维护的介绍 *AOSC OS 维护者入门指南*](/dev-sys-packaging-intro)
-- [AOSC OS 维护指南 (征求意见稿) *Live Well, Package Good*](/dev-sys-maintenance-guidelines)
-- [AOSC OS 软件包风格手册 *Live Well, Package Beautiful*](/dev-sys-package-styling-manual)
+本章节包含面向 AOSC OS 维护者的信息。
+
+- [软件包维护入门*AOSC OS 维护者培训*](/dev-sys-packaging-intro)
+- [AOSC OS 维护指南（征求意见稿）*过好生活，打好包包*](/dev-sys-maintenance-guidelines)
+- [AOSC OS 软件包样式指南*过好生活，打美包儿包儿*](/dev-sys-package-styling-manual)
 {.links-list}
 
 ## 自动化
 
-本章节概述了我们正在推进的AOSC OS自动化维护工作和质量保证。
+本章节概述了我们正在推进的 AOSC OS 自动化维护和质量保证的工作。
 
-- [AOSC OS 自动化维护: 设计意见征求稿和进度](/dev-automation-design-rfcs-and-progression)
+- [AOSC OS 自动化维护：设计征求意见稿及进度](/dev-automation-design-rfcs-and-progression)
 - [软件包元数据句法](/dev-automation-packaging-metadata-syntax)
 {.links-list}
 
-其余 AOSC OS 自动化相关内容可以在 [自动化流程](/t/自动化流程) 目录访问，
+其余 AOSC OS 自动化相关的内容可以在 [自动化流程](/t/dev-automation) 类别中找到。
 
-# AOSC 事件与会议
+## ISRC ISCAS Open Source Promotion Plan
 
-AOSC 成员每年会在 AOSCC 聚首。
-AOSCC 通常是一次线下会议，一般持续3天。在这三天里，社区成员讨论社区计划，分享技术爱好以及面基。
+This section contains information for the community and students participating in the plan hold by [ISRC ISCAS](https://isrc.iscas.ac.cn).
+
+- [Document for Community Enrollment (in Simplified Chinese)](/zh/ospp-2020-community-enroll)
+- [List of Projects (in Simplified Chinese)](/zh/ospp-2020-projects)
+{.links-list}
+
+Other topics on AOSC OS automation could be found under the [ospp](/t/ospp) category.
+
+## 中科院软研所智能软件研究中心开源软件供应链点亮计划
+
+本章节包含面向社区和参与本由[中科院软研所智能软件研究中心](https://isrc.iscas.ac.cn)主办的计划的学生的信息。
+
+- [社区报名文档](/zh/ospp-2020-community-enroll)
+- [社区项目文档](/zh/ospp-2020-projects)
+{.links-list}
+
+其余我们参与本计划相关的内容可以在 [开源点亮计划](/t/ospp) 类别中找到。
+
+# 活动事件与会议
+
+社区成员每年会在 AOSCC 聚首。AOSCC 通常是一次持续三天的线下会议；在这三天里，社区成员讨论社区项目，分享各自的技术爱好，以及面基。
 
 - [AOSCC 2019](/aoscc-2019)
 {.links-list}
 
-其余 AOSC 事件的相关内容可以在 [事件](/t/事件) 目录访问。
+其余活动事件相关的内容可以在 [事件](/t/events) 类别中找到。
 
 ## 例会
 
-AOSC 成员召开例行工作组会议，会议记录可以在 [议事录](/t/议事录) 目录访问。
+AOSC 开发者召开例行工作组会议。会议记录可以在 [议事录](/t/议事录) 类别中找到。
 
 # 基础设施
 
-本章节包括 AOSC 基础设施 (网站、软件包仓库等) 的资源、指南和其他信息 以及公开资源。
+本章节包括了关于 AOSC 基础设施 (网站、软件包仓库等) 和公开服务的资源、指南和其他一般信息。
 
-- [打包机 *面向 AOSC OS 维护者公用打包服务器*](/infra-buildbots)
-- [如何镜像 AOSC OS 软件包仓库](/infra-kb-00002-how-to-mirror)
+- [构建机*AOSC OS 维护者使用的公用打包服务器*](/infra-buildbots)
+- [如何镜像社区软件包仓库](/infra-kb-00002-how-to-mirror)
 - [AOSC 门户网站的维护说明](/infra-community-portal)
 - [AOSC OS 软件包站](/infra-packages-site)
 {.links-list}
 
-其余 AOSC 基础设施的相关内容可以在 [基础设施](/t/基础设施) 目录访问。
+其余基础设施相关的内容可以在 [基础设施](/t/infra) 类别中找到。
 
-## 关于 AOSC OS 的知识库与勘误报告：
+## 知识库与勘误
 
-- [知识库 *特定主题的指南和贴士*](/t/基础设施知识库)
-- [勘误 *已知问题,调查报告与绕过方法*](/t/基础设施勘误)
+这里你能找到由基础设施工作小组 (infra-wg) 编撰的知识库文章和勘误报告。
+
+- [知识库*特定主题的指引和技巧提示*](/t/infra-kb)
+- [勘误*已知问题、调查报告，以及绕过方法*](/t/infra-errata)
 {.links-list}
