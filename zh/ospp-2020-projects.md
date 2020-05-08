@@ -2,7 +2,7 @@
 title: 开源软件供应链点亮计划暑期 2020 项目
 description: 
 published: true
-date: 2020-05-08T08:42:47.641Z
+date: 2020-05-08T08:43:43.775Z
 tags: ospp
 ---
 
@@ -48,8 +48,8 @@ _（请补充更多描述）_
   - 实现安装过程在图形用户界面上的可视化（进度展示）
 - 项目技术要求：
   - 了解基本的 Linux 命令
-  - 了解 GObject、GLib 和 GTK 编程
   - 了解 Vala 或其类似编程语言，如 C# 和 Java
+  - 了解 GObject、GLib 和 GTK 编程
 - 相关的仓库：
   - https://github.com/AOSC-Dev/DeployKit
 
