@@ -2,7 +2,7 @@
 title: 维基主页
 description: 安同开源社区维基——欲知者速达 :D
 published: true
-date: 2020-05-08T10:09:16.548Z
+date: 2020-05-08T10:10:16.032Z
 tags: 
 ---
 
@@ -112,7 +112,7 @@ Other topics on AOSC OS automation could be found under the [ospp](/t/ospp) cate
 
 ## 例会
 
-AOSC 开发者召开例行工作组会议。会议记录可以在 [议事录](/t/议事录) 类别中找到。
+AOSC 开发者召开例行工作组会议。会议记录可以在 [议事录](/t/minutes) 类别中找到。
 
 # 基础设施
 
