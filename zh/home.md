@@ -2,7 +2,7 @@
 title: 维基主页
 description: 安同开源社区维基——欲知者速达 :D
 published: true
-date: 2020-05-08T10:10:40.187Z
+date: 2020-05-08T10:11:19.349Z
 tags: 
 ---
 
@@ -17,7 +17,7 @@ tags:
 这里你能找到关于我们的介绍、历史，社区的文化、日常管理话题，以及社区活动事项。
 
 - [AOSC：我们的历史*我们从 2011 年 11 月以来的历史*](/community-history)
-- [AOSC 人际关系准测（长期征求意见稿）](/community-guidelines)
+- [AOSC 人际关系准则（长期征求意见稿）](/community-guidelines)
 {.links-list}
 
 其余社区相关的内容可以在 [社区](/t/community) 类别中找到。
