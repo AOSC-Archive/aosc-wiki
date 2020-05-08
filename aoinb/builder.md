@@ -2,7 +2,7 @@
 title: aoinb-builder
 description: The WIP builder component of AOINB.
 published: true
-date: 2020-05-07T11:56:47.050Z
+date: 2020-05-08T08:36:59.021Z
 tags: dev-automation
 ---
 
@@ -34,7 +34,7 @@ aoinb-builder
 
 ``` toml
 # workDir: where all the work happens.
-workDir = "/var/cache/aoinb/work" 
+work_dir = "/var/cache/aoinb/work" 
 # arch: the architecture of the build machine. only used to determine BuildKit download url for now.
 arch = "amd64"
 ```
