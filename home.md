@@ -2,7 +2,7 @@
 title: Wiki Home
 description: AOSC Wiki - Where People Go To Know... Oh wait, sorry MSFN! :D
 published: true
-date: 2020-05-07T06:13:06.115Z
+date: 2020-05-08T10:21:11.380Z
 tags: 
 ---
 
@@ -21,7 +21,6 @@ Here you will find an introduction to our history and culture as a community, to
 {.links-list}
 
 Other community-related topics could be found under the [community](/t/community) category.
-
 
 # AOSC OS
 
@@ -57,7 +56,7 @@ AOSC OS/Retro is a special branch derived from the mainline distribution that ta
 - [AOSC OS/Retro: A Rationale (RFC) *Modernity Could Suck*](/sys-retro-rationale)
 {.links-list}
 
-Other topics on AOSC OS/Retro's sytem design and specifications could be found under the [sys-retro](/t/sys-retro) category.
+Other topics on AOSC OS/Retro's system design and specifications could be found under the [sys-retro](/t/sys-retro) category.
 
 # Developers
 
@@ -92,7 +91,7 @@ This section contains information for the community and students participating i
 - [List of Projects (in Simplified Chinese)](/zh/ospp-2020-projects)
 {.links-list}
 
-Other topics on AOSC OS automation could be found under the [ospp](/t/ospp) category.
+Other topics on our participation of the plan could be found under the [ospp](/t/ospp) category.
 
 # Events and Meetings
 
