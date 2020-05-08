@@ -2,7 +2,7 @@
 title: 维基主页
 description: 安同开源社区维基——欲知者速达 :D
 published: true
-date: 2020-05-08T10:11:19.349Z
+date: 2020-05-08T10:12:41.820Z
 tags: 
 ---
 
@@ -20,7 +20,7 @@ tags:
 - [AOSC 人际关系准则（长期征求意见稿）](/community-guidelines)
 {.links-list}
 
-其余社区相关的内容可以在 [社区](/t/community) 类别中找到。
+其余社区相关的内容可以在 [community](/t/community) 类别中找到。
 
 # AOSC OS
 
@@ -30,7 +30,7 @@ AOSC OS 是社区的主要项目。它是一个遵循简约、本地化、包容
 - [安装指引*在你的机器上安装 AOSC OS*](/t/sys-installation)
 {.links-list}
 
-其余 AOSC OS 系统设计与规格相关的内容可以在 [系统信息](/t/sys-info) 类别中找到。
+其余 AOSC OS 系统设计与规格相关的内容可以在 [sys-info](/t/sys-info) 类别中找到。
 
 ## 知识库与勘误
 
@@ -56,7 +56,7 @@ AOSC OS/Retro 是一个以旧式和低性能设备为运行目标的，从发行
 - [AOSC OS/Retro：基本理念（征求意见稿）*“现代科技都是纸老虎？”*](/sys-retro-rationale)
 {.links-list}
 
-其余 AOSC OS/Retro 系统设计与规格相关的内容可以在 [考古系列](/t/sys-retro) 类别中找到。
+其余 AOSC OS/Retro 系统设计与规格相关的内容可以在 [sys-retro](/t/sys-retro) 类别中找到。
 
 # 开发者
 
@@ -79,7 +79,7 @@ AOSC OS/Retro 是一个以旧式和低性能设备为运行目标的，从发行
 - [软件包元数据句法](/dev-automation-packaging-metadata-syntax)
 {.links-list}
 
-其余 AOSC OS 自动化相关的内容可以在 [自动化流程](/t/dev-automation) 类别中找到。
+其余 AOSC OS 自动化相关的内容可以在 [dev-automation](/t/dev-automation) 类别中找到。
 
 ## 中科院软研所智能软件研究中心开源软件供应链点亮计划
 
@@ -89,7 +89,7 @@ AOSC OS/Retro 是一个以旧式和低性能设备为运行目标的，从发行
 - [社区项目文档](/zh/ospp-2020-projects)
 {.links-list}
 
-其余我们参与本计划相关的内容可以在 [开源点亮计划](/t/ospp) 类别中找到。
+其余我们参与本计划相关的内容可以在 [ospp](/t/ospp) 类别中找到。
 
 # 活动事件与会议
 
@@ -98,11 +98,11 @@ AOSC OS/Retro 是一个以旧式和低性能设备为运行目标的，从发行
 - [AOSCC 2019](/aoscc-2019)
 {.links-list}
 
-其余活动事件相关的内容可以在 [事件](/t/events) 类别中找到。
+其余活动事件相关的内容可以在 [events](/t/events) 类别中找到。
 
 ## 例会
 
-AOSC 开发者召开例行工作组会议。会议记录可以在 [议事录](/t/minutes) 类别中找到。
+AOSC 开发者召开例行工作组会议。会议记录可以在 [minutes](/t/minutes) 类别中找到。
 
 # 基础设施
 
@@ -114,7 +114,7 @@ AOSC 开发者召开例行工作组会议。会议记录可以在 [议事录](/t
 - [AOSC OS 软件包站](/infra-packages-site)
 {.links-list}
 
-其余基础设施相关的内容可以在 [基础设施](/t/infra) 类别中找到。
+其余基础设施相关的内容可以在 [infra](/t/infra) 类别中找到。
 
 ## 知识库与勘误
 
