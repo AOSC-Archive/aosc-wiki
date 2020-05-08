@@ -2,9 +2,10 @@
 title: aoinb-builder
 description: The WIP builder component of AOINB.
 published: true
-date: 2020-05-08T08:36:59.021Z
+date: 2020-05-08T15:57:19.963Z
 tags: dev-automation
 ---
+
 
 # Requirements
 
@@ -33,41 +34,41 @@ aoinb-builder
 `config.toml` is the main configuration file. Here is an example.
 
 ``` toml
-# workDir: where all the work happens.
+# work_dir: where all the work happens.
 work_dir = "/var/cache/aoinb/work" 
 # arch: the architecture of the build machine. only used to determine BuildKit download url for now.
 arch = "amd64"
 ```
 
-The `source_lists` folder contains the `sources.list` file used inside the container. You can change branch and use preferred mirror by editing the corresponding file inside this folder.
+The `source_lists` folder contains the `sources.list` file used inside the instance overlay. You can change branch and use preferred mirror by editing the corresponding file inside this folder.
 
 ## Executable
 `aoinb-builder` will automatically populate all the directory it need, so be careful when choosing the working directory in the config file as mentioned before.
 
-Notice that since AOSC OS\'s building process involves mounting OverlayFS and using `systemd-nspawn`, root permission is required.
+Notice that since AOSC OS's building process involves mounting OverlayFS and using `systemd-nspawn`, root permission is required.
 
 By default `/var/cache/aoinb/conf` is used to search for configs, but you can manually specify the path by offering `-c $PATH`.
 
-There are three possible sub-commands: `build`, `load-buildkit` and `cleanup`. The general workflow is to first load buildkit, then just build packages you want.
+Here are all the sub-commands:
 
 ### build
 This is the main command we will be using. To use it, simply run:
 
 ``` bash
-python3 aoinb-builder.py $PATH_TO_BUILD_BUNDLE $BRANCH
+python3 aoinb-builder.py build $PATH_TO_BUILD_BUNDLE $BRANCH
 ```
 
-The so-called \"build bundle\" is the folder that contains `spec` file and `autobuild/` folder.
+The so-called "build bundle" is the folder that contains `spec` file and `autobuild/` folder.
 
-The BRANCH used in the command is the destination branch to build upon. A corresponding `$BRANCH.list` must exists in the `source_lists` folder in the configuration folder, otherwise the build will fail.
+The BRANCH used in the command is the destination branch to build upon. A corresponding `$BRANCH.list` must exists in the `source_lists` folder in the configuration folder, otherwise the program will give an error.
 
 ### load-baseos
 This command installs the base OS (typically BuildKit) to the working directory for future operations.
 
-By default, this command will automatically download the latest BuildKit from [](repo.aosc.io). But if that's too slow, or you already have a copy of BuildKit, you can just place it in `$workDir/buildkit_amd64.tar.xz` and the builder will use that directly.
+By default, this command will automatically download the latest BuildKit from repo.aosc.io. But if that's too slow, or you already have a copy of BuildKit, you can just place it in `$work_dir/buildkit_amd64.tar.xz` and the builder will use that directly.
 
 ### update-baseos
-This command updates the base OS. Note that by now it can only use [](repo.aosc.io) as its repository site.
+This command updates the base OS. Note that by now it can only use repo.aosc.io as its repository site.
 
 ### cleanup
 This command can destroy the specific instance or base OS. This can be useful when thing does not feel right. Options are:
@@ -86,13 +87,15 @@ instance-dir
 buildkit-dir
 ```
 
-Workspace layer is the temporary place for each build. It will be cleaned up every time the build is finished (weather successful or not).
+Workspace layer is the temporary place for each build. It will be cleaned up every time the build is finished (whether successful or not).
 
 Instance layer is the layer for different branched. An `apt update && apt upgrade` will be made to this layer each time a build begins.
 
-BuildKit layer is the base layer. It will never be changed unless a manual update command is used (TODO).
+Base OS layer is, as the name implies, the base layer. It will never be changed unless a manual update command is used (`update-baseos`).
 
 Before every build, the "build bundle" and the `toolbox` is copied to `/buildroot` inside the container. `build.sh` is called by `systemd-nspawn` for the build process. The script will call `download_source.sh` (and eventually call `downloader.tcl`) to download source code as `$VER.bin` and extract it to `/buildroot/build` (For packages that use SRCTBL). Finally, `build.sh` will execute `autobuild` to actually build the package.
+
+After the build finishes successfully, `build.sh` will copy the output deb file to `/buildroot/output` and hand back control to Python. Then the builder will copy the result to `$work_dir/output/$branch/`. Eventually, the builder will delete everything in the workspace overlay (effectively rollback to the inital state of the instance) and exit.
 
 # Goals
 * ✓ Improve `build.sh` (Finished: 2020-05-07)
@@ -106,3 +109,6 @@ Plan: Use Python's [https://docs.python.org/3/library/resource.html#resource.get
 
 # Discussions
 * Move config folder to `/etc/aoinb-builder/`?
+* Should we implement a way to change the sources.list of the base OS?
+* How to implement monitoring system?
+  * Take rusage data every 3 seconds?
