@@ -2,7 +2,7 @@
 title: 维基主页
 description: 安同开源社区维基——欲知者速达 :D
 published: true
-date: 2020-05-08T10:10:16.032Z
+date: 2020-05-08T10:10:40.187Z
 tags: 
 ---
 
@@ -80,16 +80,6 @@ AOSC OS/Retro 是一个以旧式和低性能设备为运行目标的，从发行
 {.links-list}
 
 其余 AOSC OS 自动化相关的内容可以在 [自动化流程](/t/dev-automation) 类别中找到。
-
-## ISRC ISCAS Open Source Promotion Plan
-
-This section contains information for the community and students participating in the plan hold by [ISRC ISCAS](https://isrc.iscas.ac.cn).
-
-- [Document for Community Enrollment (in Simplified Chinese)](/zh/ospp-2020-community-enroll)
-- [List of Projects (in Simplified Chinese)](/zh/ospp-2020-projects)
-{.links-list}
-
-Other topics on AOSC OS automation could be found under the [ospp](/t/ospp) category.
 
 ## 中科院软研所智能软件研究中心开源软件供应链点亮计划
 
