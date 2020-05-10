@@ -2,7 +2,7 @@
 title: Buildbots
 description: Buildbots that can be used by AOSC developers
 published: true
-date: 2020-05-05T01:40:47.808Z
+date: 2020-05-10T06:15:34.917Z
 tags: infra
 ---
 
@@ -58,7 +58,7 @@ NOTE:
 
 | Name | Port | CPU | Memory | Speed |Maintainer | Note |
 |-----------|-----------|-----------|-----------|-----------|-----------|-----------|
-| **ice-pineh64** | 24064 | Quad Core ARM Cortex-A53 @ 1.488GHz (Allwinner H6, Pine H64 Model B) | 3GiB | 981s (`-j5`, 2.27) | _Icenowy Zheng_ | On demand |
+| **ice-rockpro64** | 24064 | Quad Core ARM Cortex-A53 @ 1.5GHz + Dual Core ARM Cortex-A72 @ 2GHz (Rockchip RK3399, RockPro64) | 4GiB | TODO (`-j7`, 2.31) | _Icenowy Zheng_ | Scratch disk at `/mnt/sda3` |
 | **Tegra** | ~~24096~~ | Quad Core ARM Cortex-A57 @ 1.73GHz (NVIDIA Jetson TX1 Developer Kit) | 4GiB | 446s (`-j5`, 2.27) |  _Mingcong Bai_ | Device dead, RIP |
 | **Pine64** | ~~24399~~ | Quad Core ARM Cortex-A53 @ 1.2GHz (Allwinner A64, Pine64 Plus) | 2GiB | 1351s (`-j5`, 2.27) |  _Mingcong Bai_ | Retired |
 | **kp920** | 24426 | 2 * 48-Core Huawei Kunpeng 920 @ 2.6GHz (Huawei Taishan 2280 v2; 94 cores allocated) | 192GiB (145GiB allocated) | 71s (`-j95`) | _Undisclosed_ | Scratch disk at `/buildroots`, create own Ciel worksapce; direct access with `ssh -p 2223 root@kp920.ip4.run` |
