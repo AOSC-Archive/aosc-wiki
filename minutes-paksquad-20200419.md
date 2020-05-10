@@ -2,8 +2,8 @@
 title: Contributor Minutes on 2020-04-19
 description: 
 published: true
-date: 2020-05-10T04:16:35.997Z
-tags: minutes
+date: 2020-05-10T04:18:22.705Z
+tags: dev-automation, dev-sys, minutes
 ---
 
 ## Gumblex
