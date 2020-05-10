@@ -1,8 +1,8 @@
 ---
-title: Pak Squad Minutes on 2020-05-03
+title: Contributor Minutes on 2020-05-03
 description: 
 published: true
-date: 2020-05-05T04:17:53.369Z
+date: 2020-05-10T04:17:03.892Z
 tags: minutes
 ---
 
