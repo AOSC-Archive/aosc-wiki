@@ -2,8 +2,8 @@
 title: Contributor Minutes on 2020-05-03
 description: 
 published: true
-date: 2020-05-10T04:17:03.892Z
-tags: minutes
+date: 2020-05-10T04:17:46.142Z
+tags: dev-automation, dev-sys, minutes
 ---
 
 ## Goals for Spring 2020
