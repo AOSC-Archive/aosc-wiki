@@ -2,7 +2,7 @@
 title: 开源软件供应链点亮计划暑期 2020 社区报名
 description: 
 published: true
-date: 2020-05-10T02:41:04.536Z
+date: 2020-05-10T02:41:53.400Z
 tags: ospp
 ---
 
@@ -23,7 +23,7 @@ tags: ospp
 6. 社区邮件列表（用于帮助学生了解社区，一般为开发者邮箱列表）： discussions@lists.aosc.io
 7. 社区官方公共联系邮箱： discussions@lists.aosc.io
 8. 社区 “暑期2020” 项目列表页面链接（可选，可在页面准备好后再告知）： https://wiki.aosc.io/zh/ospp-2020-projects
-9. 技术标签：Linux、dpkg、L10n、Continuous Deployment
+9. 技术标签：Linux、dpkg、L10n、Container、CI/CD
 10. 专注领域：Linux 发行版、中文本地化
 
 ---
