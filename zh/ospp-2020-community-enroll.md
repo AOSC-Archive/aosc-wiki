@@ -2,7 +2,7 @@
 title: 开源软件供应链点亮计划暑期 2020 社区报名
 description: 
 published: true
-date: 2020-05-10T02:38:01.281Z
+date: 2020-05-10T02:38:13.869Z
 tags: ospp
 ---
 
@@ -19,7 +19,7 @@ tags: ospp
 2. 社区官方网址： https://aosc.io
 3. 社区Logo文件： https://raw.githubusercontent.com/AOSC-Dev/LOGO/master/SVG/Logo%20of%20Anthon%20Open%20Source%20Community.svg
 4. 社区简短描述（30 字以内）：AOSC 是围绕 Linux 发行版 AOSC OS 形成的开源社区
-5. 社区成段描述：安同开源社区 (AOSC) 是围绕社区项目 AOSC OS 形成的开源社区。AOSC OS 是基于 LFS 的通用 Linux 发行版，遵循简约、本地化、包容、可持续及精制的设计原则，致力于改善开源软件使用体验。
+5. 社区成段描述：安同开源社区 (AOSC) 是围绕社区项目 AOSC OS 形成的开源社区。AOSC OS 是基于 LFS 的通用 Linux 发行版，遵循简约、本地化、包容、可持续及精制的设计原则，致力于改善开源软件的使用体验。
 6. 社区邮件列表（用于帮助学生了解社区，一般为开发者邮箱列表）： discussions@lists.aosc.io
 7. 社区官方公共联系邮箱： discussions@lists.aosc.io
 8. 社区 “暑期2020” 项目列表页面链接（可选，可在页面准备好后再告知）： https://wiki.aosc.io/zh/ospp-2020-projects
