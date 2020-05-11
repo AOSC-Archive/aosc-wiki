@@ -2,7 +2,7 @@
 title: 维基主页
 description: 安同开源社区维基——欲知者速达 :D
 published: true
-date: 2020-05-11T06:33:02.261Z
+date: 2020-05-11T06:37:27.116Z
 tags: 
 ---
 
@@ -50,7 +50,7 @@ AOSC OS 是社区的主要项目。它是一个遵循简约、本地化、包容
 
 AOSC OS 的安全公告通常称为 AOSA (AOSC OS Security Advisory)，并按年份顺序编号。这里你能找到我们对安全和漏洞的响应办法，以及按年份存档的已经发布的安全公告。
 
-- [AOSC 是什么？*AOSC OS 安全公告*](/aosa-info)
+- [什么是 AOSA？*AOSC OS 安全公告*](/aosa-info)
 - [AOSA 逐年存档](/t/aosa)
 {.links-list}
 
