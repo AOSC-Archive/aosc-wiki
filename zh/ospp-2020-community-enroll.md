@@ -2,7 +2,7 @@
 title: 开源软件供应链点亮计划暑期 2020 社区报名
 description: 
 published: true
-date: 2020-05-11T02:31:02.330Z
+date: 2020-05-11T02:31:27.460Z
 tags: ospp
 ---
 
@@ -10,7 +10,7 @@ tags: ospp
 
 - 社区或开源项目名称：安同开源社区（Anthon Open Source Community，简称 AOSC）
 - 社区官网网址：https://aosc.io
-- 联系人：黎民雍
+- 联系人：_(Junde Yhi)_
 - 联系方式：
   - 邮箱：lmy441900@aosc.xyz
   - 电话：_(redacted)_
