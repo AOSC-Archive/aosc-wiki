@@ -2,7 +2,7 @@
 title: 开源软件供应链点亮计划暑期 2020 项目
 description: 
 published: true
-date: 2020-05-11T06:56:22.415Z
+date: 2020-05-11T07:18:41.452Z
 tags: ospp
 ---
 
@@ -58,6 +58,8 @@ _（请补充更多描述）_
 [vala]: https://wiki.gnome.org/Projects/Vala
 [inst-guide]: /sys-installation-amd64
 
+<!--
+
 # AOSC OS MIPS 架构移植
 
 除 x86_64 外，AOSC OS 还支持多种处理器架构，包括 ARM 和 PowerPC。MIPS 支持曾在 2015 年到 2017 年间活跃维护，之后由于主要维护者（咳）的时间关系，这一移植没有继续下去。AOSC 希望重新启动 MIPS 这一处理器架构的移植和维护，并针对 MIPS 阵营中个人计算机设备市场保有量较大的[龙芯处理器][ls]进行一定程度上的优化。
@@ -74,6 +76,8 @@ _（请补充更多描述）_
   - https://github.com/AOSC-Dev/aosc-os-abbs （AOSC OS 软件包定义和构建脚本仓库）
 
 [ls]: http://loongson.cn/
+
+-->
 
 # 自由及开源软件中文本地化工作
 
