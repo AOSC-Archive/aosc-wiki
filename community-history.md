@@ -2,7 +2,7 @@
 title: AOSC: Our History
 description: A Brief History of the Anthon Open Source Community
 published: true
-date: 2020-05-12T14:15:54.174Z
+date: 2020-05-12T14:16:19.803Z
 tags: community
 ---
 
