@@ -2,15 +2,15 @@
 title: Installation/AMD64 (简体中文)
 description: 在 AMD64/x86_64 设备安装 AOSC OS
 published: true
-date: 2020-05-05T13:54:08.518Z
+date: 2020-05-12T14:04:22.398Z
 tags: sys-installation, 安装指南
 ---
 
 本针对于 x86_64 架构或系统的安装指南可以应用于大部分通用环境。但针对部分特殊平台，这里有一些附加提示：
 
-- [针对 KVM 的注释](/sys-installation-amd64-notes-kvm)
-- [针对 Bay Trail/Cherry Trail 的注释](/sys-installation-amd64-notes-trails)
-- [针对 software RAID 的注释](/sys-installation-amd64-notes-softraid)
+- [针对 KVM 的额外说明](/sys-installation-amd64-notes-kvm)
+- [针对 Bay Trail/Cherry Trail 的额外说明](/sys-installation-amd64-notes-trails)
+- [针对 software RAID 的额外说明](/sys-installation-amd64-notes-softraid)
 
 # 注意
 
@@ -83,7 +83,7 @@ GParted Live 环境里的 GParted 使用起来非常简单。如果对如何使�
 # mount -v /dev/sda2 /mnt
 ```
 
-如果你需要把把 `/dev/sda3` 作为 `/home`：
+如果你需要把 `/dev/sda3` 作为 `/home`：
 
 ```
 # mkdir -v /mnt/home
@@ -91,13 +91,6 @@ GParted Live 环境里的 GParted 使用起来非常简单。如果对如何使�
 ```
 
 现在是时候解压 Tarball 了：
-
-```
-# cd /mnt
-# tar --numeric-owner -pxf /path/to/tarball/tarball.tar.xz
-```
-
-如果要让解压的过程看起来更加刺激点，可以加上 `v` 选项：
 
 ```
 # cd /mnt
@@ -172,14 +165,14 @@ Tarball 的更新周期比较长，所以我们建议在启动之前更新你的
 然后安装 GRUB 到该分区并生成配置文件：
 
 ```
-# grub-install --target=x86_64-efi --bootloader-id=AOSC-GRUB --efi-directory=/efi
+# grub-install --target=x86_64-efi --bootloader-id=“AOSC OS" --efi-directory=/efi
 # grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
 对于 Bay Trail 设备，可能需要使用 `i386-efi` 作为 `target`。在不确定的情况下请不要使用下面的命令：
 
 ```
-# grub-install --target=i386-efi --bootloader-id=AOSC-GRUB --efi-directory=/efi
+# grub-install --target=i386-efi --bootloader-id="AOSC OS" --efi-directory=/efi
 # grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
@@ -198,10 +191,26 @@ Tarball 的更新周期比较长，所以我们建议在启动之前更新你的
 
 ## 创建用户
 
-使用 `useradd` 命令添加用户 `aosc`： 
+使用 `useradd` 命令添加用户（以 `aosc` 为例）： 
+
+请确保此处设置的用户名只包含小写字母和数字。
 
 ```
-# useradd -m -G wheel -s /bin/bash aosc
+# useradd -m -s /bin/bash aosc
+```
+
+接下来为 `aosc` 设置一些额外用户组以提供必要特性支持，如 `wheel` 组可提供 `sudo` 权限：
+
+```
+# usermod -a -G audio,cdrom,video,wheel aosc
+```
+
+## 设置用户全名
+
+接下来（继续以 `aosc` 用户为例）设置用户全名：
+
+```
+# chfn -f "AOSC User" aosc
 ```
 
 ## 设置密码
@@ -227,7 +236,7 @@ Tarball 的更新周期比较长，所以我们建议在启动之前更新你的
 时区信息储存在 `/usr/share/zoneinfo/<region>/<city>`，在这里以 `Asia/Shanghai` 作为例子：
 
 ```
-# ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+# ln -sv /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 ```
 
 ## 设置系统语言
