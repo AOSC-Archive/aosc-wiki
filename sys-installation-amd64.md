@@ -2,7 +2,7 @@
 title: Installation/AMD64
 description: Installing AOSC OS on AMD64/x86-64 Devices
 published: true
-date: 2020-05-05T06:43:08.555Z
+date: 2020-05-12T13:59:34.745Z
 tags: sys-installation
 ---
 
@@ -88,13 +88,6 @@ And now, un-tar the tarball:
 
 ```
 # cd /mnt
-# tar --numeric-owner -pxf /path/to/tarball/tarball.tar.xz
-```
-
-For a more exciting experience, add verbosity:
-
-```
-# cd /mnt
 # tar --numeric-owner -pxvf /path/to/tarball/tarball.tar.xz
 ```
 
@@ -167,14 +160,14 @@ To install GRUB for EFI systems, mount your ESP partition, generally `/dev/sda1`
 Then, install GRUB to the partition, and generate a GRUB configuration:
 
 ```
-# grub-install --target=x86_64-efi --bootloader-id=AOSC-GRUB --efi-directory=/efi
+# grub-install --target=x86_64-efi --bootloader-id="AOSC OS" --efi-directory=/efi
 # grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
 For some Bay Trail devices, you might need to install for `i386-efi` target instead - do not use the following command unless you are sure about what you are doing:
 
 ```
-# grub-install --target=i386-efi --bootloader-id=AOSC-GRUB --efi-directory=/efi
+# grub-install --target=i386-efi --bootloader-id="AOSC OS" --efi-directory=/efi
 # grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
@@ -193,10 +186,26 @@ All tarballs do not come with a default user and `root` user is disabled, you wo
 
 ## Add a user
 
-To add a new user `aosc`, use the `useradd` command: 
+To add a new user, (`aosc` as an example), use the `useradd` command: 
 
 ```
-# useradd -m -G wheel -s /bin/bash aosc
+# useradd -m -s /bin/bash aosc
+```
+
+Make sure that your username contains only lower-cased letters and numbers.
+
+And add additional groups to the user (audio, cdrom, video, wheel should get you started just fine):
+
+```
+# usermod -a -G audio,cdrom,video,wheel aosc
+```
+
+## Setting full name for your user
+
+To set a full name for your user (also using `aosc` as an example, replace "AOSC User" with your desired name:
+
+```
+# chfn -f "AOSC User" aosc
 ```
 
 ## Setting password
@@ -215,14 +224,14 @@ Although strongly discouraged, you can enable the `root` user by setting a passw
 # passwd root
 ```
 
-> Notes: Decent Linux users need not the root user.
+> Note: Decent Linux users need not the root user.
 
 ## Setting System Timezone
 
 Timezone info are stored in `/usr/share/zoneinfo/<region>/<city>`.
 
 ```
-# ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+# ln -sv /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 ```
 
 ## Setting System Language
