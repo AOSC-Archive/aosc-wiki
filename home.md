@@ -2,7 +2,7 @@
 title: Wiki Home
 description: AOSC Wiki - Where People Go To Know... Oh wait, sorry MSFN! :D
 published: true
-date: 2020-05-08T10:21:11.380Z
+date: 2020-05-12T19:33:13.841Z
 tags: 
 ---
 
@@ -11,6 +11,9 @@ tags:
 Welcome to the AOSC Community Wiki!
 
 This is where all documentations, information, and guides will gather for users and developers alike. Please refer to the sections and links below for frequently accessed information, and use the search function to locate your specific topics.
+
+> We are currently reorganising Wiki pages, there may be dead links in various pages. You are welcome to help us fix the dead links or, otherwise, please use the search function to locate missing pages. We apologise for the inconvenience.
+{.is-warning}
 
 # Community
 
