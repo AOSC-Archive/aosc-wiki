@@ -2,8 +2,8 @@
 title: AOSC：我们的历史
 description: 安同开源社区简史
 published: true
-date: 2020-05-12T14:14:18.991Z
-tags: 
+date: 2020-05-12T14:17:01.104Z
+tags: community
 ---
 
 安同开源社区 (AOSC) 的最初形态是由白铭骢与他的两位同学 于 2011 年末创立的安同开发团队 (Anthon.Dev)。开发团队因组织管理不善于一年内夭折，而后于 2012 年末重组为开源社区并延续至今。
