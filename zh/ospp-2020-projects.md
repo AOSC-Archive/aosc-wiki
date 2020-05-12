@@ -2,7 +2,7 @@
 title: 开源软件供应链点亮计划暑期 2020 项目
 description: 
 published: true
-date: 2020-05-12T14:04:21.655Z
+date: 2020-05-12T19:28:53.157Z
 tags: ospp
 ---
 
@@ -137,6 +137,7 @@ _（请补充更多描述）_
 - 项目难度：低
 - 项目社区导师：白铭骢
 - 导师联系方式：jeffbai@aosc.io
+- 合作导师联系方式：刘子兴 <<liushuyu@aosc.io>>
 - 项目产出要求：
   - 完善（或改善，如时间不足）现有开源软件的简中翻译，包括但不限于 CUPS、GNOME、Plasma、MATE Desktop 及 NetSurf（其余项目根据考察决定）。
   - 审阅并修改现行[大陆简中自由软件本地化工作指南（1.5.4 版）][l10n-guide]，修改后通知各大陆简中 (zh_CN) 翻译小组及社区。
@@ -160,6 +161,7 @@ _（请补充更多描述）_
 - 项目难度：中
 - 项目社区导师：白铭骢
 - 导师联系方式：jeffbai@aosc.io
+- 合作导师联系方式：刘子兴 <<liushuyu@aosc.io>>
 - 项目产出要求：
 	- 基于先前 [xf86-input-synaptics][synaptics] 的代码移植 `circular-scrolling` 特性至 [libinput][libinput] 上游。
 - 项目技术要求：
