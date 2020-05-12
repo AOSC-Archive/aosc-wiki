@@ -2,7 +2,7 @@
 title: 开源软件供应链点亮计划暑期 2020 项目
 description: 
 published: true
-date: 2020-05-11T15:48:04.647Z
+date: 2020-05-12T02:54:20.457Z
 tags: ospp
 ---
 
@@ -15,7 +15,7 @@ tags: ospp
 ## 自动化打包的调度器
 
 - 项目难度：高
-- 项目社区导师：@gumblex (?)
+- 项目社区导师：Dingyuan Wang
 - 导师联系方式：gumblex@aosc.io
 - 项目产出要求：
   - 主要目标：实现打包任务的分配和回收
@@ -89,7 +89,7 @@ _（请补充更多描述）_
 
 - 项目难度：低
 - 项目社区导师：黎民雍（以俊德）
-- 导师联系方式：lmy441900@aosc.xyz
+- 导师联系方式：lmy441900@aosc.io
 - 项目产出要求：
   - 实现 DeployKit 的系统安装部分
   - 实现安装过程在图形用户界面上的可视化（进度展示）
@@ -126,23 +126,48 @@ _（请补充更多描述）_
 
 -->
 
-# 自由及开源软件中文本地化工作
+# 自由及开源软件简中本地化工作
 
-_（请补充更多描述）_
+当前我国国内有相当数量的 Linux 及各大开源或自由软件 (F/OSS) 使用者，但在使用过程中，用户们不难发现，各种软件的简中翻译及本地化质量参差不齐，错漏繁多。尤其主流桌面环境如 GNOME 及 KDE 简中翻译率并不理想；而又有一些如 NetSurf 的知名开源项目则完全没有翻译。该项目的主要目的是改善当前本地化质量及覆盖率。
 
 - 项目难度：低
-- 项目社区导师：
-- 导师联系方式：
+- 项目社区导师：白铭骢
+- 导师联系方式：jeffbai@aosc.io
 - 项目产出要求：
-  - _（请补充）_
+  - 完善（或改善，如时间不足）现有开源软件的简中翻译，包括但不限于 CUPS、GNOME、Plasma、MATE Desktop 及 NetSurf（其余项目根据考察决定）。
+  - 审阅并修改现行[大陆简中自由软件本地化工作指南（1.5.4 版）][l10n-guide]，修改后通知各大陆简中 (zh_CN) 翻译小组及社区。
 - 项目技术要求：
-  - 从事过软件“汉化”工作，或有科技文本翻译经验
-  - 了解一般自由及开源软件进行国际化的方法，如 [GNU Gettext][gettext]
-  - _（请补充）_
+  - 通读[大陆简中自由软件本地化工作指南（1.5.4 版）][l10n-guide]，熟知大陆简中标点、句式及选词规范及技巧。
+  - 了解主要本地化软件框架（如 [GNU Gettext][gettext]）及工具（如 [Poedit][poedit] 及 [Lokalize][lokalize]。
+  - 其余工作流程及技巧将于项目期间沟通及培训。
 - 相关的仓库：
   - https://github.com/AOSC-Dev/translations
 
+[l10n-guide]: https://repo.aosc.io/aosc-l10n/zh_CN_l10n_1.5.4.pdf
 [gettext]: http://www.gnu.org/software/gettext/
+[poedit]: https://poedit.net/
+[lokalize]: https://kde.org/applications/office/org.kde.lokalize
+
+
+# 为 libinput 框架实现“划圈滚动 (Circular Srolling)”
+
+在 Wayland 及如 GNOME 等现代桌面的推动作用下，libinput 即将取代当前诸多碎片化的 X11 输入驱动（如 `evdev` 及 `synaptics`，甚至是更老的 `mouse` 及 `keyboard`），为用户及开发者带来一定便利。但在 libinput 的实现过程中，上游开发者由于人力有限，选择抛弃了一些他们主观认为不常见的硬件特性的支持。而被抛弃的特性之一是“划圈滚动”，即在触摸板上用手指划圈滚动（类似 iPod 的操作），这一特性在滚动长页面时可有效提高操作精度并降低疲劳。
+
+- 项目难度：中
+- 项目社区导师：白铭骢
+- 导师联系方式：jeffbai@aosc.io
+- 项目产出要求：
+	- 基于先前 [xf86-input-synaptics][synaptics] 的代码移植 `circular-scrolling` 特性至 [libinput][libinput] 上游。
+- 项目技术要求：
+	- 具有一定上游参与经验，可流畅与其他上游开发者用英文进行交流。
+  - 分析项目 API 并编写及移植 C 代码。
+  - 编写特性测试模组。
+- 相关的仓库：
+	- https://github.com/freedesktop/xorg-xf86-input-synaptics
+  - https://gitlab.freedesktop.org/libinput/libinput
+
+[synaptics]: https://github.com/freedesktop/xorg-xf86-input-synaptics
+[libinput]: https://gitlab.freedesktop.org/libinput/libinput
 
 ---
 
