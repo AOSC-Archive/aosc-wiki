@@ -2,7 +2,7 @@
 title: 开源软件供应链点亮计划暑期 2020 项目
 description: 
 published: true
-date: 2020-05-12T02:54:20.457Z
+date: 2020-05-12T02:55:32.548Z
 tags: ospp
 ---
 
@@ -146,7 +146,7 @@ _（请补充更多描述）_
 [l10n-guide]: https://repo.aosc.io/aosc-l10n/zh_CN_l10n_1.5.4.pdf
 [gettext]: http://www.gnu.org/software/gettext/
 [poedit]: https://poedit.net/
-[lokalize]: https://kde.org/applications/office/org.kde.lokalize
+[lokalize]: https://kde.org/applications/office/org.kde.lokalize/
 
 
 # 为 libinput 框架实现“划圈滚动 (Circular Srolling)”
