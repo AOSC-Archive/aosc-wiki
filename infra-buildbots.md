@@ -2,7 +2,7 @@
 title: Buildbots
 description: Buildbots that can be used by AOSC developers
 published: true
-date: 2020-05-13T04:19:28.032Z
+date: 2020-05-13T04:22:27.600Z
 tags: infra
 ---
 
@@ -36,6 +36,7 @@ NOTE:
 
 - `port_number - 10000` is occupied by that machine. See information above.
 - The parameter speed is defined as the total execution time for `make`, after `mkdir build && cd build && ../configure --prefix=/usr` within the unzipped source tree of GNU C Library (version 2.31)  - this will be the command `time make`, collect the `Real` time, and round up to a second. This test is to be conducted on the main storage/scratch disk/build partition/...
+- A **Port** with a strikethrough means that the buildbot is not online recently.
 
 ---
 
