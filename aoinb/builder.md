@@ -2,7 +2,7 @@
 title: aoinb-builder
 description: The WIP builder component of AOINB.
 published: true
-date: 2020-05-08T15:57:19.963Z
+date: 2020-05-14T02:54:45.928Z
 tags: dev-automation
 ---
 
@@ -96,6 +96,22 @@ Base OS layer is, as the name implies, the base layer. It will never be changed 
 Before every build, the "build bundle" and the `toolbox` is copied to `/buildroot` inside the container. `build.sh` is called by `systemd-nspawn` for the build process. The script will call `download_source.sh` (and eventually call `downloader.tcl`) to download source code as `$VER.bin` and extract it to `/buildroot/build` (For packages that use SRCTBL). Finally, `build.sh` will execute `autobuild` to actually build the package.
 
 After the build finishes successfully, `build.sh` will copy the output deb file to `/buildroot/output` and hand back control to Python. Then the builder will copy the result to `$work_dir/output/$branch/`. Eventually, the builder will delete everything in the workspace overlay (effectively rollback to the inital state of the instance) and exit.
+
+# Proposed RESTful API
+* GET /task
+Get a JSON-formatted task list.
+* POST /task
+Create new task. Return task ID.
+* PUT /task/$TASKID/build_bundle
+Upload build bundle.
+* PUT /task/$TASKID/branch
+Define build branch.
+* PUT /task/$TASKID/build
+Initiate build
+* GET /task/$TASKID/status
+Get JSON-formatted status.
+* GET /builder/status
+Get JSON-formatted builder status.
 
 # Goals
 * ✓ Improve `build.sh` (Finished: 2020-05-07)
