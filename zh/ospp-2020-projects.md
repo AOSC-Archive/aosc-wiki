@@ -2,13 +2,16 @@
 title: 开源软件供应链点亮计划暑期 2020 项目
 description: 
 published: true
-date: 2020-05-15T07:43:39.856Z
+date: 2020-05-15T07:54:09.532Z
 tags: ospp
 ---
 
 欢迎！以下是 AOSC 提供的可供参与的项目主题。你可以从中挑选并联系项目导师，也可以在社区 IRC、[Telegram 群组][tg]或邮件列表（随意）中和我们讨论你感兴趣的话题。
 
 [tg]: https://t.me/joinchat/BMnG9zvfjCgZUTIAoycKkg
+
+> 请先仔细阅读[学生指南](https://isrc.iscas.ac.cn/summer2020/help/student.html)。
+{.is-info}
 
 > 本页面尚在施工。
 {.is-warning}
