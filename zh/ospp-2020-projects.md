@@ -2,7 +2,7 @@
 title: 开源软件供应链点亮计划暑期 2020 项目
 description: 
 published: true
-date: 2020-05-15T07:42:38.211Z
+date: 2020-05-15T07:43:39.856Z
 tags: ospp
 ---
 
@@ -208,6 +208,8 @@ _（请补充更多描述）_
 - 相关的开源软件仓库列表：
   - https://github.com/AOSC-Dev/aosc-archive
 
+<!--
+
 ---
 
 以下内容由主办方提供
@@ -261,3 +263,5 @@ _（请补充更多描述）_
 9. 相关的开源软件仓库列表：
    - https://gitee.com/openeuler/raspberrypi
    - https://gitee.com/openeuler/raspberrypi-kernel
+
+-->
