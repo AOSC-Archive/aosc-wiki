@@ -2,7 +2,7 @@
 title: 开源软件供应链点亮计划暑期 2020 项目
 description: 
 published: true
-date: 2020-05-16T01:44:29.676Z
+date: 2020-05-16T01:51:20.405Z
 tags: ospp
 ---
 
@@ -54,15 +54,18 @@ tags: ospp
 
 # 自动化测试框架
 
+目前 AOSC 的软件包存在一定的质量问题，且已经有了初步的[排查方案](https://packages.aosc.io/qa/)。我们希望在编译时或编译后主动地将质量问题检测出来，停止编译和发布。本项目需要在当前的打包流程中增加测试环节来确保软件包的质量。
+
 - 项目难度：中
 - 项目社区导师：Dingyuan Wang
 - 导师联系方式：gumblex@aosc.io
+- 合作导师联系方式：白铭骢 <<jeffbai@aosc.io>>
 - 项目产出要求：实现自动测试并汇报软件包质量问题
   - 实现在编译的各个环节对[已定义问题](https://wiki.aosc.io/en/dev-sys-qa-issue-codes)的检测
   - 输出人和机器可读的测试报告（可以分开）
   - 实现软件包的安装测试（检查依赖）
   - 实现对命令行程序的冒烟测试
-  - 实现对图形界面程序的冒烟测试
+  - 实现对图形界面程序的冒烟测试（主要难点）
   - 在已有软件包的打包元数据中添加测试方法的描述
     - 尽量能半自动地添加，至少100个
 - 项目技术要求：
@@ -70,7 +73,9 @@ tags: ospp
   - 会使用 Bash、Python、Tcl 等脚本编程语言
   - 了解软件测试方法
 - 相关的仓库：
+  - https://github.com/AOSC-Dev/p-vector (软件包仓库管理，包括质量问题扫描)
   - https://github.com/AOSC-Dev/autobuild3 （使用单个软件包构建定义的构建设施，有些功能需要在此添加）
+  - https://github.com/AOSC-Dev/packages-site （软件包网站）
 
 # 安装程序 DeployKit 的实现
 
