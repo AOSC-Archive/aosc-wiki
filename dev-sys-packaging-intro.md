@@ -2,7 +2,7 @@
 title: Intro To Package Maintenance
 description: Introductory Guide to AOSC OS Packaging
 published: true
-date: 2020-05-16T02:21:48.103Z
+date: 2020-05-16T02:22:53.197Z
 tags: dev-sys
 ---
 
@@ -29,5 +29,5 @@ Welcome! If you are reading this, you are probably interested in contributing to
 
 ## Appendix
 Here are some useful documentations about the tools we use.
-- [Autobuild3 Manual](/developers/intro-to-package-maintenance/autobuild3-manual)
-- [Ciel Manual](/developers/intro-to-package-maintenance/ciel-manual)
+- [Autobuild3 Manual](/en/dev-sys-autobuild3-manual)
+- [Ciel Manual](/en/dev-sys-ciel-manual)
