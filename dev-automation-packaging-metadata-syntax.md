@@ -2,8 +2,8 @@
 title: Packaging Metadata Syntax
 description: Reduced Bash syntax for describing packages
 published: true
-date: 2020-05-04T04:55:16.225Z
-tags: 
+date: 2020-05-24T04:50:27.350Z
+tags: dev-automation
 ---
 
 # RFC: Packaging Metadata Syntax
@@ -74,6 +74,7 @@ All recursion is not allowed.
       * `${parameter,,pattern}`: lower all
       * `${parameter@operator}`: special operations
       * `${parameter/#pattern/string}`: replace, only match prefix
+      * `${parameter/%pattern/string}`: replace, only match suffix
 
 
 ### Patterns
