@@ -2,7 +2,7 @@
 title: Packaging Metadata Syntax
 description: Reduced Bash syntax for describing packages
 published: true
-date: 2020-05-24T04:50:27.350Z
+date: 2020-05-24T05:10:35.404Z
 tags: dev-automation
 ---
 
@@ -36,10 +36,10 @@ MESON_AFTER__AMD64=" \
   * Shell Parameter Expansion:
   	* `${parameter:offset}`: substring
     * `${parameter:offset:length}`: substring
-    * `${parameter#word}`: match shortest prefix and use
-    * `${parameter##word}`: match longest prefix and use
-    * `${parameter%word}`: match shortest suffix and use
-    * `${parameter%%word}`: match longest suffix and use
+    * `${parameter#word}`: match shortest prefix and delete
+    * `${parameter##word}`: match longest prefix and delete
+    * `${parameter%word}`: match shortest suffix and delete
+    * `${parameter%%word}`: match longest suffix and delete
     * `${parameter/pattern/string}`: replace, once
     * `${parameter//pattern/string}`: replace, all
 
