@@ -2,11 +2,9 @@
 title: AOSC Membership Enrollment Checklist
 description: Way to become AOSC Member
 published: true
-date: 2020-05-05T05:04:55.821Z
+date: 2020-05-25T15:49:11.759Z
 tags: community
 ---
-
-# AOSC Contributor Enrollment 
 
 Every person, animal, AI, and other lifeforms are welcomed to contribute to our community. You will be considered an AOSC contributor once you made some form of contribution, including but not limited to - AOSC OS packaging, Git commits to AOSC projects, and providing server resources.
 
