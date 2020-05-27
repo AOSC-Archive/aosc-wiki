@@ -2,7 +2,7 @@
 title: Autobuild3: Dependency Scan
 description: 
 published: true
-date: 2020-05-27T04:57:52.956Z
+date: 2020-05-27T05:01:20.539Z
 tags: 
 ---
 
@@ -115,3 +115,13 @@ In this case, an automated tool might be able to fix the problem for you.
 >1. Make a copy of the `Cargo.lock` file and run `cargo audit fix`
 >1. Then use `diff` to generate a patch.
 {.is-info}
+
+#### Sympton: Vulnerabilities Found: Manual Review Required
+
+If not all the vulnerabilites are automatically fixable, or compilation errors encountered after the automated fix, then too bad for you.
+
+>Possible solutions:
+>- Contact the upstream about it
+>- Have someone with decent understanding of the project or the programming language (at least) to come up with a patch
+{.is-info}
+  
