@@ -2,7 +2,7 @@
 title: Autobuild3: Dependency Scan
 description: 
 published: true
-date: 2020-05-27T04:53:16.660Z
+date: 2020-05-27T04:57:00.396Z
 tags: 
 ---
 
@@ -91,4 +91,26 @@ This message indicates that:
 >Possible solutions:
 >- Contact the upstream about it
 >- Have someone with decent understanding of the project or the programming language (at least) to come up with a patch
+{.is-info}
+
+### Rust Specific Solutions
+
+#### Sympton: Error Message `No lock file found -- Dependency information unreliable. Unable to conduct audit.`
+
+This error message is shown if the source tree does not contain a lock file for the dependencies. This is very bad since the package management tools are free to pick any version they want within the acceptable range specified in the `Cargo.toml` file.
+
+>Possible solutions:
+>
+>- Contact the upstream to include a lock file in the source tree
+>- Include `cargo update` in the `autobuild/prepare` (create one if not exist)
+{.is-info}
+
+#### Sympton: Vulnerabilities Found: No Additional Descriptions
+
+In this case, an automated tool might be able to fix the problem for you.
+
+>Possible solution:
+>
+>1. Make a copy of the `Cargo.lock` file and run `cargo audit fix`
+>1. Then use `diff` to generate a patch.
 {.is-info}
