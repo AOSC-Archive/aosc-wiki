@@ -2,7 +2,7 @@
 title: Autobuild3: Dependency Scan
 description: 
 published: true
-date: 2020-05-27T05:05:56.701Z
+date: 2020-05-27T05:07:38.516Z
 tags: 
 ---
 
@@ -44,7 +44,7 @@ If it's not possible or very difficult to follow the suggestions provided in the
 
 ### Node.js Specific Solutions
 
-#### Sympton: Error Message `The project does not contain any lock files. Unable to conduct the audit.`
+#### Symptom: Error Message `The project does not contain any lock files. Unable to conduct the audit.`
 
 This error message is shown if the source tree does not contain a lock file for the dependencies. This is very bad since the package management tools are free to pick any version they want within the acceptable range specified in the `package.json` file.
 
@@ -54,7 +54,7 @@ This error message is shown if the source tree does not contain a lock file for 
 >- Include `npm install --package-lock-only` in the `autobuild/prepare` (create one if not exist)
 {.is-info}
 
-#### Sympton: Vulnerabilities Found: No Additional Descriptions
+#### Symptom: Vulnerabilities Found: No Additional Descriptions
 
 In this case, an automated tool might be able to fix the problem for you.
 
@@ -69,7 +69,7 @@ In this case, an automated tool might be able to fix the problem for you.
 >Then use `diff` to generate a patch.
 {.is-info}
 
-#### Sympton: Vulnerabilities Found: Manual Review Required
+#### Symptom: Vulnerabilities Found: Manual Review Required
 
 The message similar to the following is shown:
 
@@ -95,7 +95,7 @@ This message indicates that:
 
 ### Rust Specific Solutions
 
-#### Sympton: Error Message `No lock file found -- Dependency information unreliable. Unable to conduct audit.`
+#### Symptom: Error Message `No lock file found -- Dependency information unreliable. Unable to conduct audit.`
 
 This error message is shown if the source tree does not contain a lock file for the dependencies. This is very bad since the package management tools are free to pick any version they want within the acceptable range specified in the `Cargo.toml` file.
 
@@ -105,7 +105,7 @@ This error message is shown if the source tree does not contain a lock file for 
 >- Include `cargo update` in the `autobuild/prepare` (create one if not exist)
 {.is-info}
 
-#### Sympton: Vulnerabilities Found: No Additional Descriptions
+#### Symptom: Vulnerabilities Found: No Additional Descriptions
 
 In this case, an automated tool might be able to fix the problem for you.
 
@@ -116,7 +116,7 @@ In this case, an automated tool might be able to fix the problem for you.
 >1. Then use `diff` to generate a patch.
 {.is-info}
 
-#### Sympton: Vulnerabilities Found: Manual Review Required
+#### Symptom: Vulnerabilities Found: Manual Review Required
 
 If not all the vulnerabilites are automatically fixable, or compilation errors encountered after the automated fix, then...
 
