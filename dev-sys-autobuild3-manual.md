@@ -2,7 +2,7 @@
 title: Autobuild3 User and Developer Manual
 description: Everything you need to know about Autobuild3
 published: true
-date: 2020-05-27T03:55:23.542Z
+date: 2020-05-27T03:56:51.313Z
 tags: dev-sys
 ---
 
@@ -218,7 +218,7 @@ Here below is a list of variables available when using the `qtproj` build type.
 
 ### gomod
 
-Here below is a list of variables available when using the `qtproj` build type.
+Here below is a list of variables available when using the `gomod` build type.
 
 **GO_BUILD_AFTER=** expects a string value containing all extra arguments to be passed to `go build`, you can specify extra flags for the go compiler using this variable. 
 >**Hint:** you might want to use this variable to define version numbers or other constants through linker flags.
@@ -226,7 +226,7 @@ Here below is a list of variables available when using the `qtproj` build type.
 
 ### rust
 
-Here below is a list of variables available when using the `qtproj` build type.
+Here below is a list of variables available when using the `rust` build type.
 
 **CARGO_AFTER=** expects a string value containing all extra arguments to be passed to `cargo build`, you can enable extra features for the project using this variable.
 
