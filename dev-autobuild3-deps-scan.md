@@ -2,7 +2,7 @@
 title: Autobuild3: Dependency Scan
 description: 
 published: true
-date: 2020-05-27T04:51:39.922Z
+date: 2020-05-27T04:53:16.660Z
 tags: 
 ---
 
@@ -88,7 +88,7 @@ This message indicates that:
 - The fix is unavailble for some reason (e.g. not released, current fix not valid ...)
 - The version included the fix is too far away from the version specified by the current project
 
-Possible solutions:
-- Contact the upstream about it
-- Have someone with decent understanding of the project or the programming language (at least) to come up with a patch
-
+>Possible solutions:
+>- Contact the upstream about it
+>- Have someone with decent understanding of the project or the programming language (at least) to come up with a patch
+{.is-info}
