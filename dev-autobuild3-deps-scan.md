@@ -2,13 +2,13 @@
 title: Autobuild3: Dependency Scan
 description: 
 published: true
-date: 2020-05-27T05:05:01.920Z
+date: 2020-05-27T05:05:56.701Z
 tags: 
 ---
 
 # Autobuild3 Automated Dependency Audit
 
-Autobuild3 with version newer than <undefined /> contains a security feature where it will scan the dependency tree of the project (if supported) for known vulnerabilities.
+Autobuild3 with version newer than `undefined` contains a security feature where it will scan the dependency tree of the project (if supported) for known vulnerabilities.
 
 ## Programming Language Specific Support
 
