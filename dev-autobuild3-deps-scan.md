@@ -2,7 +2,7 @@
 title: Autobuild3: Dependency Scan
 description: 
 published: true
-date: 2020-05-27T05:02:38.486Z
+date: 2020-05-27T05:03:14.630Z
 tags: 
 ---
 
@@ -121,6 +121,7 @@ In this case, an automated tool might be able to fix the problem for you.
 If not all the vulnerabilites are automatically fixable, or compilation errors encountered after the automated fix, then...
 
 >Possible solutions:
+>- Run `cargo update` and see if that solves the issue
 >- Contact the upstream about it
 >- Have someone with decent understanding of the project or the programming language (at least) to come up with a patch
 {.is-info}
