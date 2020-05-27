@@ -2,7 +2,7 @@
 title: Autobuild3: Dependency Scan
 description: 
 published: true
-date: 2020-05-27T04:57:00.396Z
+date: 2020-05-27T04:57:52.956Z
 tags: 
 ---
 
@@ -111,6 +111,7 @@ In this case, an automated tool might be able to fix the problem for you.
 
 >Possible solution:
 >
+>- Use the `cargo-audit` to fix the issue
 >1. Make a copy of the `Cargo.lock` file and run `cargo audit fix`
 >1. Then use `diff` to generate a patch.
 {.is-info}
