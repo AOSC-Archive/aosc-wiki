@@ -2,7 +2,7 @@
 title: Autobuild3 User and Developer Manual
 description: Everything you need to know about Autobuild3
 published: true
-date: 2020-05-05T05:47:22.729Z
+date: 2020-05-27T03:46:29.678Z
 tags: dev-sys
 ---
 
@@ -149,13 +149,15 @@ Autobuild has a set of pre-defined build routine called Build Types, or `$ABTYPE
 - **self:** when a `autobuild/build` file is provided, uses user created `autobuild/build` as build script.
 - **autotools:** generally used for GNU autotools-based source trees, with an available `configure` script in source root, or defined `$configure` script.
 - **cmake:** used for CMake-based source tree, Autobuild3 detects for `CMakeList.txt` in the source trees.
-- waf: used for waf-based source tree, Autobuild3 detects for `waf` file/script in the source trees.
+- **waf**: used for waf-based source tree, Autobuild3 detects for `waf` file/script in the source trees.
 - **plainmake:** used for source trees with a written `Makefile`, and therefore is able to be built with `make` command.
 - **haskell:** used for standard Haskell Cabal/Hackage source trees, comes with a set of scripts that provides Haskell package management functions like registering and unregistering.
 - **perl:** used for standard CPAN source trees.
 - **python:** used for standard PyPI source trees.
 - **qtproj:** used for Qt projects with `.pro` files in the source trees.
 - **ruby:** used for RubyGems source trees.
+- **rust:** used for Rust projects using Cargo build system.
+- **npm:** used for Node.js source trees with dependencies from [NPM](https://www.npmjs.com/).
 
 Pre-defined scripts of these build types may be found [here](https://github.com/AOSC-Dev/autobuild3/tree/master/build). You may find that they are all prefixed with numbers - prefixes with smaller numbers are of higher priority when detecting for build types. More explained in the example below.
 
