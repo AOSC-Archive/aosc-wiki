@@ -2,7 +2,7 @@
 title: Autobuild3 User and Developer Manual
 description: Everything you need to know about Autobuild3
 published: true
-date: 2020-05-27T03:46:29.678Z
+date: 2020-05-27T03:48:36.628Z
 tags: dev-sys
 ---
 
@@ -156,8 +156,9 @@ Autobuild has a set of pre-defined build routine called Build Types, or `$ABTYPE
 - **python:** used for standard PyPI source trees.
 - **qtproj:** used for Qt projects with `.pro` files in the source trees.
 - **ruby:** used for RubyGems source trees.
-- **rust:** used for Rust projects using Cargo build system.
-- **npm:** used for Node.js source trees with dependencies from [NPM](https://www.npmjs.com/).
+- **gomod:** used for Golang projects using `go mod` as the only module management system. Autobuild3 detects for `go.mod` in the source trees.
+- **rust:** used for Rust projects using Cargo build system. Autobuild3 detects for `Cargo.toml` in the source trees.
+- **npm:** used for Node.js source trees with dependencies from [NPM](https://www.npmjs.com/). Autobuild3 detects for `package.json` in the source trees.
 
 Pre-defined scripts of these build types may be found [here](https://github.com/AOSC-Dev/autobuild3/tree/master/build). You may find that they are all prefixed with numbers - prefixes with smaller numbers are of higher priority when detecting for build types. More explained in the example below.
 
