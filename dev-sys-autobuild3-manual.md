@@ -2,7 +2,7 @@
 title: Autobuild3 User and Developer Manual
 description: Everything you need to know about Autobuild3
 published: true
-date: 2020-05-27T03:48:36.628Z
+date: 2020-05-27T03:55:23.542Z
 tags: dev-sys
 ---
 
@@ -215,6 +215,20 @@ Here below is a list of variables available when using the `qtproj` build type.
 **QTPROJ\_DEF=** expects a string value containing default arguments to be passed to `qmake`, default is defined in `"$AB"/etc/autobuild/ab3_defcfg.sh`.
 
 **QTPROJ\_AFTER=** expects a string value containing all extra arguments to be passed to `qmake`, you may override any arguments defined in `$QTPROJ_DEF` using this variable.
+
+### gomod
+
+Here below is a list of variables available when using the `qtproj` build type.
+
+**GO_BUILD_AFTER=** expects a string value containing all extra arguments to be passed to `go build`, you can specify extra flags for the go compiler using this variable. 
+>**Hint:** you might want to use this variable to define version numbers or other constants through linker flags.
+{{.is-info}}
+
+### rust
+
+Here below is a list of variables available when using the `qtproj` build type.
+
+**CARGO_AFTER=** expects a string value containing all extra arguments to be passed to `cargo build`, you can enable extra features for the project using this variable.
 
 ## The “prepare” file
 
