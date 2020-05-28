@@ -2,8 +2,8 @@
 title: List Of Package Issue Codes
 description: Reference List of Package Issue Codes
 published: true
-date: 2020-05-04T04:55:43.539Z
-tags: 
+date: 2020-05-28T21:46:39.739Z
+tags: dev-sys
 ---
 
 # The Codes
@@ -19,6 +19,7 @@ To help identifying various kind of package issues, listed below are four classe
 | E101 | Syntax error(s) in `spec` |
 | E102 | Syntax error(s) in `defines` |
 | E103 | Package name is not valid |
+| E104 | Package section is not valid |
 | W111 | Package may be out-dated |
 | W112 | `SRCTBL` uses HTTP |
 | W113 | `SRCTBL` does not have `CHKSUM` |
