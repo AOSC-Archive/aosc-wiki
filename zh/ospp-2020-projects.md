@@ -2,7 +2,7 @@
 title: 开源软件供应链点亮计划暑期 2020 项目
 description: 
 published: true
-date: 2020-05-17T04:24:04.611Z
+date: 2020-05-30T15:28:19.323Z
 tags: ospp
 ---
 
@@ -145,7 +145,7 @@ tags: ospp
 [lokalize]: https://kde.org/applications/office/org.kde.lokalize/
 
 
-# 为 libinput 框架实现“划圈滚动 (Circular Srolling)”
+# 为 libinput 框架实现“划圈滚动 (Circular Scrolling)”
 
 在 Wayland 及如 GNOME 等现代桌面的推动作用下，libinput 即将取代当前诸多碎片化的 X11 输入驱动（如 `evdev` 及 `synaptics`，甚至是更老的 `mouse` 及 `keyboard`），为用户及开发者带来一定便利。但在 libinput 的实现过程中，上游开发者由于人力有限，选择抛弃了一些他们主观认为不常见的硬件特性的支持。而被抛弃的特性之一是“划圈滚动”，即在触摸板上用手指划圈滚动（类似 iPod 的操作），这一特性在滚动长页面时可有效提高操作精度并降低疲劳。
 
