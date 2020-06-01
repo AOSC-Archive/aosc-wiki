@@ -2,7 +2,7 @@
 title: Buildbots
 description: Buildbots that can be used by AOSC developers
 published: true
-date: 2020-06-01T10:55:44.086Z
+date: 2020-06-01T10:58:12.337Z
 tags: infra
 ---
 
@@ -73,7 +73,7 @@ NOTE:
 |-----------|-----------|-----------|-----------|-----------|-----------|-----------|
 | **G5-PPC64BE** | 25120 | IBM PowerPC 970MP @ 2.5GHz (PowerMac G5, Quad, 2005) | 8GiB | 566s (`-j5`, 2.27) | _Mingcong Bai_ | Scratch disk at `/buildroots`, create own Ciel workspace |
 | **G5-PPC32BE** | ~~25121~~ | IBM PowerPC 970MP @ 2.5GHz (PowerMac G5, Quad, 2005) | 16GiB | 553s (`-j5`, 2.27) | _Mingcong Bai_ | Temporarily down to conserve energy |
-| **powernv** | 25202 | IBM POWER9 CPU (4-Core) CP9M01 (3 cores, 12 threads allocated) | 24GiB | 178s (`-j13`) | _Mingcong Bai_ | WIP |
+| **powernv** | 25202 | IBM POWER9 CPU (4-Core) CP9M01 (3 cores, 12 threads allocated) | 24GiB | 178s (`-j13`) | _Mingcong Bai_ | IBM® PowerKVM™ based |
 
 ## **RISC-V** (26001-27000)
 
