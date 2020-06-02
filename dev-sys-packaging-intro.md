@@ -1,8 +1,8 @@
 ---
-title: Intro To Package Maintenance
+title: Intro to Package Maintenance
 description: Introductory Guide to AOSC OS Packaging
 published: true
-date: 2020-05-16T02:22:53.197Z
+date: 2020-06-02T20:53:14.472Z
 tags: dev-sys
 ---
 
