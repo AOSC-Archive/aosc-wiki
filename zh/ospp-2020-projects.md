@@ -2,7 +2,7 @@
 title: 开源软件供应链点亮计划暑期 2020 项目
 description: 
 published: true
-date: 2020-05-30T15:28:19.323Z
+date: 2020-06-02T15:04:59.267Z
 tags: ospp
 ---
 
@@ -12,9 +12,6 @@ tags: ospp
 
 > 请先仔细阅读[学生指南](https://isrc.iscas.ac.cn/summer2020/help/student.html)。
 {.is-info}
-
-> 本页面尚在施工。
-{.is-warning}
 
 # 发行版构建自动化：打包调度器
 
