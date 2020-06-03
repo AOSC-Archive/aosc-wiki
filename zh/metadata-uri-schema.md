@@ -2,7 +2,7 @@
 title: 元数据 URI 规范
 description: 
 published: true
-date: 2020-06-03T16:47:25.973Z
+date: 2020-06-03T16:50:57.526Z
 tags: 
 ---
 
@@ -10,6 +10,13 @@ GitHub
 ======
 下载文件阶段需求分析
 ------
+
+### 例子
+https://github.com/jgraph/drawio/archive/master.zip
+https://github.com/liberationfonts/liberation-fonts/files/4178407/liberation-fonts-ttf-2.1.0.tar.gz
+https://github.com/jgraph/drawio/releases/download/v13.1.14/draw.war
+https://github.com/jgraph/drawio/archive/v13.1.14.zip
+https://github.com/jgraph/drawio/archive/v13.1.14.tar.gz
 
 ### 场景分类
 不支持：
