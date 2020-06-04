@@ -2,7 +2,7 @@
 title: 开源软件供应链点亮计划暑期 2020 项目
 description: 
 published: true
-date: 2020-06-02T15:04:59.267Z
+date: 2020-06-04T17:02:44.011Z
 tags: ospp
 ---
 
@@ -44,6 +44,7 @@ tags: ospp
   - https://github.com/AOSC-Dev/ciel （基于 Systemd 容器和 Overlayfs 的容器化构建设施）
   - https://github.com/AOSC-Dev/acbs （使用构建定义树的构建设施）
   - https://github.com/AOSC-Dev/autobuild3 （使用单个软件包构建定义的构建设施）
+- 开源协议：[GPL 2.0](https://github.com/AOSC-Dev/aoinb/blob/master/LICENSE)
 
 # 发行版构建自动化：自动化测试框架
 
@@ -69,6 +70,7 @@ tags: ospp
   - https://github.com/AOSC-Dev/p-vector (软件包仓库管理，包括质量问题扫描)
   - https://github.com/AOSC-Dev/autobuild3 （使用单个软件包构建定义的构建设施，有些功能需要在此添加）
   - https://github.com/AOSC-Dev/packages-site （软件包网站）
+- 开源协议：[GPL 2.0](https://github.com/AOSC-Dev/aoinb/blob/master/LICENSE)
 
 # 安装程序 DeployKit 的实现
 
@@ -91,6 +93,7 @@ tags: ospp
   - 了解 GObject、GLib 和 GTK 编程
 - 相关的仓库：
   - https://github.com/AOSC-Dev/DeployKit
+- 开源协议：[MIT](https://github.com/AOSC-Dev/DeployKit/blob/master/COPYING)
 
 [dk]: https://github.com/AOSC-Dev/DeployKit
 [gtk]: https://www.gtk.org/
@@ -135,6 +138,7 @@ tags: ospp
   - 其余工作流程及技巧将于项目期间沟通及培训。
 - 相关的仓库：
   - https://github.com/AOSC-Dev/translations
+- 开源协议：视上游项目而定
 
 [l10n-guide]: https://repo.aosc.io/aosc-l10n/zh_CN_l10n_1.5.4.pdf
 [gettext]: http://www.gnu.org/software/gettext/
@@ -159,6 +163,7 @@ tags: ospp
 - 相关的仓库：
 	- https://github.com/freedesktop/xorg-xf86-input-synaptics
   - https://gitlab.freedesktop.org/libinput/libinput
+- 开源协议：[MIT](https://gitlab.freedesktop.org/libinput/libinput/-/blob/master/COPYING)
 
 [synaptics]: https://github.com/freedesktop/xorg-xf86-input-synaptics
 [libinput]: https://gitlab.freedesktop.org/libinput/libinput
@@ -194,6 +199,7 @@ tags: ospp
 	* 这个系统应当可以较容易的应用于其他发行版的软件仓库
 - 相关的开源软件仓库列表：
   - https://github.com/AOSC-Dev/aosc-archive
+- 开源协议：未定
 
 <!--
 
