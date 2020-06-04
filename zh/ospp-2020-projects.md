@@ -2,7 +2,7 @@
 title: 开源软件供应链点亮计划暑期 2020 项目
 description: 
 published: true
-date: 2020-06-04T17:02:44.011Z
+date: 2020-06-04T17:53:44.336Z
 tags: ospp
 ---
 
@@ -199,7 +199,7 @@ tags: ospp
 	* 这个系统应当可以较容易的应用于其他发行版的软件仓库
 - 相关的开源软件仓库列表：
   - https://github.com/AOSC-Dev/aosc-archive
-- 开源协议：未定
+- 开源协议：GPL v3 或更高版本
 
 <!--
 
