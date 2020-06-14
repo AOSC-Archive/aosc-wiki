@@ -2,7 +2,7 @@
 title: Exceptions to the Update Cycles
 description: A Suggested List of Packages to be Updated Immediately and Made Available in Stable Repositories
 published: true
-date: 2020-05-06T22:19:03.414Z
+date: 2020-06-14T21:56:54.316Z
 tags: dev-sys
 ---
 
@@ -32,6 +32,7 @@ The list below is a **comprehensive** list of packages which could be considered
 | Intel Processor Microcode Data File | `intel-ucode` | 1 |
 | Mozilla Firefox  | `firefox` | 1 |
 | Min Browser | `min` | 1 |
+| NetSurf | `netsurf` | 1 |
 | OpenJDK | `openjdk` | 1 |
 | Opera | `opera` | 1 |
 | Pale Moon | `palemoon` | 1 |
