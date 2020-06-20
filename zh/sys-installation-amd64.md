@@ -2,8 +2,9 @@
 title: Installation/AMD64 (简体中文)
 description: 在 AMD64/x86_64 设备安装 AOSC OS
 published: true
-date: 2020-05-12T14:04:22.398Z
+date: 2020-06-20T03:38:29.111Z
 tags: sys-installation, 安装指南
+editor: markdown
 ---
 
 本针对于 x86_64 架构或系统的安装指南可以应用于大部分通用环境。但针对部分特殊平台，这里有一些附加提示：
@@ -87,7 +88,7 @@ GParted Live 环境里的 GParted 使用起来非常简单。如果对如何使�
 
 ```
 # mkdir -v /mnt/home
-# mount -b /dev/sda3 /mnt/home
+# mount -v /dev/sda3 /mnt/home
 ```
 
 现在是时候解压 Tarball 了：
