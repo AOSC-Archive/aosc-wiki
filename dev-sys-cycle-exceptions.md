@@ -2,8 +2,9 @@
 title: Exceptions to the Update Cycles
 description: A Suggested List of Packages to be Updated Immediately and Made Available in Stable Repositories
 published: true
-date: 2020-06-14T21:56:54.316Z
+date: 2020-06-24T14:09:43.290Z
 tags: dev-sys
+editor: markdown
 ---
 
 # Rationale and Definition
@@ -75,3 +76,5 @@ The list below is a **comprehensive** list of packages which could be considered
 | ACBS | `acbs` | 4 |
 | Ciel | `ciel` | 4 |
 | XMRig | `xmrig` | 2 |
+| Monero Wallet | `monero` | 2 |
+| TurtleCoin | `turtlecoin` | 2 |
