@@ -2,8 +2,9 @@
 title: Intro to Package Maintenance: Basics
 description: Introductory Guide to AOSC OS Packaging
 published: true
-date: 2020-05-04T03:35:33.093Z
+date: 2020-07-05T08:45:24.610Z
 tags: 
+editor: markdown
 ---
 
 **NOTICE**: This guide assumes you have moderate knowledge about Linux and its CLI (command line interface). Also, you need to have access to a Linux computer with `root` access.
@@ -251,7 +252,7 @@ Although we didn't write anything about how to build this program, `Autobuild3` 
 
 ## Git conventions
 
-AOSC OS has strict conventions about git logs. We will only mention the most used ones here. For the full list of package styling and development guidelines, please refer to the *<https://wiki.aosc.io/developers/aosc-os-package-styling-manual>*.
+AOSC OS has strict conventions about git logs. We will only mention the most used ones here. For the full list of package styling and development guidelines, please refer to the *<https://wiki.aosc.io/en/dev-sys-package-styling-manual>*.
 
 For example, we are adding a new package to the tree. Then the log should be something like this:
 
@@ -281,4 +282,4 @@ The second task can be done using [pushpkg](https://github.com/AOSC-Dev/scriptle
 
 That's it\! You have learned the basics about creating new packages for AOSC OS from scratch, as well as how to update, build, and uploading them\!
 
-However, as you may see, this article only covers the basics of what you need to know as you continue to prime for further involement in AOSC OS maintenance. When dealing with more complicated build systems, or updating a batch of packages, there's still many skills to learn. Please refer to the [Way to AOSC OS Maintainence: Advanced Techniques](/developers/intro-to-package-maintenance/advanced-techniques)
+However, as you may see, this article only covers the basics of what you need to know as you continue to prime for further involement in AOSC OS maintenance. When dealing with more complicated build systems, or updating a batch of packages, there's still many skills to learn. Please refer to the [Way to AOSC OS Maintainence: Advanced Techniques](/en/dev-sys-advanced-techniques)
