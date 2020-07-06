@@ -2,7 +2,7 @@
 title: Intro to Package Maintenance: Basics
 description: Introductory Guide to AOSC OS Packaging
 published: true
-date: 2020-07-05T08:45:24.610Z
+date: 2020-07-06T03:34:09.008Z
 tags: 
 editor: markdown
 ---
@@ -43,7 +43,7 @@ The first thing is to install `ciel` on the computer. On AOSC OS, just install c
 
 Since Ciel manages standardised AOSC OS build environment (or the [BuildKit](https://aosc.io/downloads/#buildkit)), the build process does not have to happen on an AOSC OS machine. If you are using Arch Linux, you can install Ciel from AUR.
 
-Next, we will initialise a Ciel workspace. `~/ciel` is used as a sample path for demonstration. Notice that Ciel will need to be run as `root`.
+Next, we will initialise a Ciel workspace. `~/ciel` is used as a sample path for demonstration. Notice that Ciel will need to be run as `root` and Ciel cannot be used in a Docker instance.
 
 ``` bash
 mkdir ~/ciel
