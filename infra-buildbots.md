@@ -2,8 +2,9 @@
 title: Buildbots
 description: Buildbots that can be used by AOSC developers
 published: true
-date: 2020-06-05T13:17:41.344Z
+date: 2020-07-06T08:40:33.528Z
 tags: infra
+editor: markdown
 ---
 
 # General Information
@@ -46,6 +47,7 @@ NOTE:
 |-----------|-----------|-----------|-----------|-----------|---------|-----------|
 | **Ry3950X** | 22333 | AMD Ryzen 7 3950X @ 3.50 - 4.70GHz | 64GiB | 40s (`-j33`) | _Mingcong Bai_ | Scratch disk at `/buildroots`, create own Ciel workspace |
 | **EPSON-PC** | 22718 | VM on i7-3770, 2vCPU | 4GiB | 502s (`-j2`) | _Zamir Sun_ | Available time: 8:00 - 21:30 UTC+8, use zirouter.tpddns.cn:22718  for direct connection  |
+| **vmaoscagent001** | ~~22658~~ | 2 * Intel Xeon Processor E5-2660 v2 @ 2.20 - 3.00GHz | 64GiB | 82s (`-j41`) | _Kexy Biscuit_ | WIP |
 
 ## **MIPS** (23001-24000)
 
