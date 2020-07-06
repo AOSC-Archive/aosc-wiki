@@ -2,8 +2,9 @@
 title: Installation/AMD64
 description: Installing AOSC OS on AMD64/x86-64 Devices
 published: true
-date: 2020-05-12T13:59:34.745Z
+date: 2020-07-06T03:42:22.041Z
 tags: sys-installation
+editor: markdown
 ---
 
 Installation of AOSC OS on x86-64 systems/environments are generally universal for all systems of this architectures. But for some specific device configurations and virtualized environments, here below are some extra notes:
@@ -91,7 +92,9 @@ And now, un-tar the tarball:
 # tar --numeric-owner -pxvf /path/to/tarball/tarball.tar.xz
 ```
 
-**Notes: When executing un-tar, be sure to use the root user to execute**
+**Notes:** 
+- When executing un-tar, be sure to use the root user to execute.
+- If you want to have full-disk encryption with `dm-crypt` under `LUKS` before installation, configure it here. Refer to [this article](https://wiki.archlinux.org/index.php/Dm-crypt/Encrypting_an_entire_system) for details. Mount the mapped `luks-*` virtual partition instead of bare `sda2`.
 
 # Initial Configuration
 
