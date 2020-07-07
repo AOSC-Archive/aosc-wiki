@@ -2,7 +2,7 @@
 title: Buildbots
 description: Buildbots that can be used by AOSC developers
 published: true
-date: 2020-07-07T07:03:45.503Z
+date: 2020-07-07T08:43:28.285Z
 tags: infra
 editor: markdown
 ---
@@ -47,7 +47,7 @@ NOTE:
 |-----------|-----------|-----------|-----------|-----------|---------|-----------|
 | **Ry3950X** | 22333 | AMD Ryzen 7 3950X @ 3.50 - 4.70GHz | 64GiB | 40s (`-j33`) | _Mingcong Bai_ | Scratch disk at `/buildroots`, create own Ciel workspace |
 | **EPSON-PC** | 22718 | VM on i7-3770, 2vCPU | 4GiB | 502s (`-j2`) | _Zamir Sun_ | Available time: 8:00 - 21:30 UTC+8, use zirouter.tpddns.cn:22718  for direct connection  |
-| **vmaoscagent001** | ~~22658~~ | 2 * Intel Xeon Processor E5-2660 v2 @ 2.20 - 3.00GHz | 64GiB | 82s (`-j41`) | _Kexy Biscuit_ | `/buildroots/` available on SSD, repo mirror: `http://localhost/debs/`, BuildKit mirror: `http://localhost/aosc-os/os-amd64/buildkit/` |
+| **vmaoscagent001** | 22658 | 2 * Intel Xeon Processor E5-2660 v2 @ 2.20 - 3.00GHz | 64GiB | 82s (`-j41`) | _Kexy Biscuit_ | `/buildroots/` available on SSD, repo mirror: `http://localhost/debs/`, BuildKit mirror: `http://localhost/aosc-os/os-amd64/buildkit/`, users in Asia-Pacific should connect with `vmaoscagent001.biscuit.moe` |
 
 ## **MIPS** (23001-24000)
 
