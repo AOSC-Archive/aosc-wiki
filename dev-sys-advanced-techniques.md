@@ -2,8 +2,9 @@
 title: Intro to Package Maintenance: Advanced Techniques
 description: This article is sponsered by Commit-O-Matic™
 published: true
-date: 2020-05-04T03:35:24.200Z
+date: 2020-07-08T13:11:50.280Z
 tags: 
+editor: markdown
 ---
 
 > So you want to make a package, you've got the urge to make a package, you've got the nerve to make a package, so go ahead, so go ahead, so go ahead and make a package we can use\!
@@ -83,7 +84,7 @@ For example, if we are building a package called `foo` and it does not contain t
 
 We've already learned in the *Basics* that we can patch the source code by simply placing patches inside the `autobuild/patches` directory. But sometimes the patches has to be applied in a specific order in order to work.
 
-To mitigate this issue, we introduced the `autobuild/patches/series~file. This file contains an ordred list of the names of the patches (one filename per line). If this file is present, ~Autobuild3` will apply patches as specified in the list.
+To mitigate this issue, we introduced the `autobuild/patches/series` file. This file contains an ordred list of the names of the patches (one filename per line). If this file is present, `Autobuild3` will apply patches as specified in the list.
 
 In some other cases, the patches will not apply if they are not on a strip level of 1 (one). Here below is an example header from a strip level 1 patch:
 
