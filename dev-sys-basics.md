@@ -2,7 +2,7 @@
 title: Intro to Package Maintenance: Basics
 description: Introductory Guide to AOSC OS Packaging
 published: true
-date: 2020-07-06T03:34:09.008Z
+date: 2020-07-08T05:34:21.005Z
 tags: 
 editor: markdown
 ---
@@ -87,6 +87,7 @@ And make sure we are actually on the stable branch.
 ``` bash
 cd TREE
 git checkout stable
+cd ..
 ```
 
 Then, we need to configure Ciel to use the correct repositories. In order to prevent incorrect dependencies, the build environment should use packages that matches the branch (with the exception of `stable-proposed`, which will only use dependencies from `stable`). For example, we need `stable` repository to build `stable` tree, and `testing`, `stable-proposed`, and `stable` to build `testing` packages.
