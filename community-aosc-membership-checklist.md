@@ -2,8 +2,9 @@
 title: AOSC Membership Enrollment Checklist
 description: Way to become AOSC Member
 published: true
-date: 2020-05-25T15:49:11.759Z
+date: 2020-07-15T03:53:48.746Z
 tags: community
+editor: markdown
 ---
 
 Every person, animal, AI, and other lifeforms are welcomed to contribute to our community. You will be considered an AOSC contributor once you made some form of contribution, including but not limited to - AOSC OS packaging, Git commits to AOSC projects, and providing server resources.
@@ -17,3 +18,4 @@ Here we provide a checklist describing the procedures to contributor enrollment:
 - Create a new people page in GitHub, consult [this guide](/infra-community-portal#add-new-personal-pages) for procedures.
 - [Enroll the public key in the GitHub repository](https://github.com/AOSC-Dev/dev-pubkeys) as needed.
 - Enroll the public key on the repository server as needed (Xiaoxing ye <<xiaoxing@aosc.io>>).
+- (Optional) Obtain a freenode [project cloak](https://freenode.net/kb/answer/cloaks) in the form of `aosc/member/<ldap_username>`. Please also provide your freenode username (Howard Xiao <hx@aosc.io>).
