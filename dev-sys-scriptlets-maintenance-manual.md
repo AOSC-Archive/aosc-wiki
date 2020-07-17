@@ -2,7 +2,7 @@
 title: [RFC] Scriptlets Maintenance Manual
 description: 
 published: true
-date: 2020-07-17T02:41:06.700Z
+date: 2020-07-17T02:43:10.450Z
 tags: dev-sys
 editor: markdown
 ---
@@ -13,7 +13,7 @@ Our [scriptlets](https://github.com/AOSC-Dev/scriptlets) repository, as it stand
 
 This manual intends to define such procedures, and also describe rules intentionally omitted (and the reasoning for such omissions).
 
-# What is a "Scriptlet"?
+# What is a "Scriptlet"
 
 A scriptlet is a script that provides a (very) specific functionality, which works with a larger project. For instance, our `pushpkg` script works with our packaging toolset (Autobuild3, ACBS, and Ciel) and repository infrastructure (LDAP account authentication, uploading, etc).
 
