@@ -2,7 +2,7 @@
 title: [RFC] Scriptlets Maintenance Manual
 description: 
 published: true
-date: 2020-07-17T02:43:10.450Z
+date: 2020-07-17T04:12:27.168Z
 tags: dev-sys
 editor: markdown
 ---
@@ -30,6 +30,6 @@ Individual scriptlet, or a group of (tightly) related scriptlets...
 - Must at least have a README document to describe its functionality and usage.
 - If derived from another project, must specify its origin(s) (citation).
 
-# Maintaining Scriptlerts
+# Maintaining Scriptlets
 
 Maintainers may take their liberty in how their own scriptlet(s) should be maintained. However, such maintenance procedures *must be documentated* in a README or CONTRIBUTING document. This is to prevent an orphaned (but possibly useful) scriptlet from being left unmaintainable.
