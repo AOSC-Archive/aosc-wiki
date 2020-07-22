@@ -2,8 +2,9 @@
 title: AOSC Inter-Personal Guidelines [Long Term RFC]
 description: A Guide of References for Your Happy Stay
 published: true
-date: 2020-05-05T05:02:53.562Z
+date: 2020-07-22T05:11:17.503Z
 tags: community
+editor: markdown
 ---
 
 # Welcome to AOSC!
@@ -34,7 +35,7 @@ This section describes *unquestionable* foundational principles on which our com
 
 # The Guidelines
 
-As most of our community activities are organised and communicated across multiple Telegram groups, the guidelines below will be organised into "community-wide" and "scenario-specific" chapters. *We do not, and have no right to limit, regulate, or manage individual member's behaviour outside of the community scope: all AOSC Telegram Groups, the [GitHub Organisation](https://github.com/AOSC-Dev/), the [AOSC Wiki](https://wiki.aosc.io/), and the [Community Portal](https://aosc.io/).*
+As most of our community activities are organised and communicated across multiple Telegram groups, the guidelines below will be organised into "community-wide" and "scenario-specific" chapters. *We do not, and have no right to limit, regulate, or manage individual member's behaviour outside of the community scope: all AOSC Telegram Groups, the [GitHub Organisation](https://github.com/AOSC-Dev/), the [AOSC Wiki](/), and the [Community Portal](https://aosc.io/).*
 
 The guidelines are further grouped into "Hard Rules" and "Soft Rules":
 
@@ -44,7 +45,7 @@ The guidelines are further grouped into "Hard Rules" and "Soft Rules":
 
 ## Community Wide
 
-The rules specified below applies to all AOSC Telegram Groups, the [GitHub Organisation](https://github.com/AOSC-Dev/), the [AOSC Wiki](https://wiki.aosc.io/), and the [Community Portal](https://aosc.io/).
+The rules specified below applies to all AOSC Telegram Groups, the [GitHub Organisation](https://github.com/AOSC-Dev/), the [AOSC Wiki](/), and the [Community Portal](https://aosc.io/).
 
 ### Hard Rules
 
@@ -67,7 +68,7 @@ The rules specified below applies to all AOSC Telegram Groups, the [GitHub Organ
 1. Respect freedom of expression.
 	- Arguments happen, don't hope for channel admins to break it up - just use your intelligence to help work it out (and some who are really good at working out arguments are admins in the first place). Mutual respect is the only effective mean to prevent personal attack.
 	- Call people whatever you like, as long as they are happy with that and it doesn't confuse the people involved.
-	- Not one can avoid disagreements over their opinions, resorting to verbal abuse can only harm your argument.
+	- No one can avoid disagreements over their opinions, resorting to verbal abuse can only harm your argument.
 	- Profanities are by no means banned, but do ponder if it helps with expressing your argument - and be aware that it *really fucking* annoys people if used excessively.
 	- Use whatever language you may like, but be aware of others' language proficiency. Quick tip: most members speak and write Chinese and English, so translations may help when needed (and they are generally grateful).
 2. Be humourous, as we love memes.
