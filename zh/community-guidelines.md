@@ -2,7 +2,7 @@
 title: AOSC人际关系准则（长期征求意见稿）
 description: 一份让你维持良好的社区人际关系的指导
 published: true
-date: 2020-07-29T11:12:29.160Z
+date: 2020-07-29T11:55:09.728Z
 tags: 社区
 editor: markdown
 ---
@@ -19,7 +19,7 @@ editor: markdown
 
 # 为什么需要一个准则？
 
-没有多年的人与人的交流与碰撞，是不会有安同开源社区的。无论这些互动最后成功与否，它们都影响到了我们的社群意识。有鉴于此，有必要对我们社区的价值观做出一个解释。在我们列出所有具体的指导方针之前，这个准则列出了所有适用于所有社区成员的没任何争议的准则。
+没有多年的交流与碰撞，是不会有安同开源社区的。无论这些交流和碰撞结果如何，它们都影响到了我们的社群意识。有鉴于此，有必要对我们社区的价值观做出一个解释。在我们列出所有具体的指导方针之前，这个准则列出了所有适用于所有社区成员的没任何争议的准则。
 
 *但总的来说，我们并不想对任何不符合这些价值观的行为做出限制或处罚。* 
 
@@ -49,18 +49,17 @@ editor: markdown
 
 1. 禁止在 [托腮频道](https://t.me/joinchat/BMnG9zvfjCgZUTIAoycKkg) 之外进行任何形式的政治、暴力、宗教、性和犯罪的讨论。
     - 违规者（包括所有参与该主题的人）将被要求停止。多次违规者会被移出群聊（您可以立即重新进入，但必须停止继续违规）。
-2. 禁止在社区任何地方发布自杀相关的话题，讨论其方法，甚至直播自杀行为（无论未遂还是既遂）。
+2. 禁止在社区*任何地方*发布自杀相关的话题，讨论其方法，甚至直播自杀行为（无论未遂还是既遂）。
     - 违规者（包括所有参与该主题的人）将*立即*被移出群聊（您可以立即重新进入，但必须停止继续违规）。
-
-3. Aggravated verbal abuse and humiliation of the members or their implied relatives are banned community-wide *with no exception*.
-	- This does not include occasionally used profanities, or those used jokingly or to strengthen the tone - however, if anyone were to be annoyed, stop.
-	- Offenders (including those participating in the topic) will be asked to stop. Repeated offenses will result in a one-time community-wide ban (you may re-enter immediately, but take the hint and stop).
-4. Humiliation and discrimination of any person, religion, ideology, location, ... are banned community-wide *with no exception*.
-	- Offenders (including those participating in the topic) will be asked to stop. Repeated offenses will result in a one-time community-wide ban (you may re-enter immediately, but take the hint and stop).
-5. Overly long messages that should have been posted to the [AOSC Pastebin](https://pastebin.aosc.io/) or alternatives are banned community-wide *with no exception*.
-	- Offenders will be asked to stop. Repeated offenses will result in a one-time community-wide ban (you may re-enter immediately, but take the hint and stop).
-6. Bot spamming are banned community-wide *with no exception*.
-	- Offenders will be *immediately* subjected to a one-time community-wide ban (you may re-enter immediately, but take the hint and stop).
+3. 禁止在社区*任何地方*对社区成员和与社区成员有关系的人进行辱骂和侮辱。
+    - 这不包括偶尔的、明显带有开玩笑语气的的亵渎，但如果如果因此导致任何人产生不满情绪，请立刻停止。
+    - 违规者（包括所有参与该主题的人）将被要求停止。多次违规者会被移出群聊（您可以立即重新进入，但必须停止继续违规）。
+4. 禁止在社区*任何地方*羞辱与歧视任何人、宗教、意识形态或者地域。
+    - 违规者（包括所有参与该主题的人）将被要求停止。多次违规者会被移出群聊（您可以立即重新进入，但必须停止继续违规）。
+5. 禁止在社区*任何地方*发布过长的消息，你应该使用 [AOSC Pastebin]（https://pastebin.aosc.io/）或其他工具。
+    - 违规者（包括所有参与该主题的人）将被要求停止。多次违规者会被移出群聊（您可以立即重新进入，但必须停止继续违规）。
+6. 禁止在社区*任何地方*发布垃圾信息。
+    - 违规者（包括所有参与该主题的人）将*立即*被移出群聊（您可以立即重新进入，但必须停止继续违规）。
 
 ### 软性规定
 
