@@ -2,7 +2,7 @@
 title: AOSC人际关系准则（长期征求意见稿）
 description: 一份让你维持良好的社区人际关系的指导
 published: true
-date: 2020-07-29T12:47:56.041Z
+date: 2020-07-29T12:48:11.139Z
 tags: 社区
 editor: markdown
 ---
@@ -116,7 +116,7 @@ editor: markdown
 
 # 贡献者公约呢？
 
-我们的社区在给定的社区意识基础之上建立，通过成员对计算机技术的兴趣得以成形，并根据成员的意愿进行维护和管理。尽管 [贡献者公约](https://www.contributor-covenant.org/version/1/4/code-of-conduct) 的出发点不错，但它不适用于我们社区，下面给出了一些原因：
+我们的社区在给定的社区意识基础之上建立，通过成员对计算机技术的兴趣得以成形，并根据成员的意愿进行维护和管理。尽管 [贡献者公约](https://www.contributor-covenant.org/version/1/4/code-of-conduct) 的出发点不错，但它不适用于我们社区，下面给出了具体的原因：
 
 We believe that our community members should grow from years of their own work and contribution, and find their recognition through technical understandings and their own characters. The static set of so-called personal "standards," as defined in C.C.C.o.C., diminishes the emphasis on human understanding and attempts to codify them as though they are already found to be universal.
 
