@@ -2,7 +2,7 @@
 title: AOSC人际关系准则（长期征求意见稿）
 description: 一份让你维持良好的社区人际关系的指导
 published: true
-date: 2020-07-29T10:43:35.984Z
+date: 2020-07-29T10:55:08.947Z
 tags: 社区
 editor: markdown
 ---
@@ -27,27 +27,25 @@ editor: markdown
 
 这一部分包含了一些我们社区*没有争议*的准则。
 
-This section describes *unquestionable* foundational principles on which our community is built.
+- 安同开源社区永远会是一个*独立的为爱好者和发烧友准备的社区*。
+- 安同开源社区*不会*为贡献者提供金钱和物质上的回报。
+- 安同开源社区*不会*容忍任何形式的剽窃行为。
 
-- AOSC will remain as an *independent community of hobbists and enthusiasts*.
-- AOSC will *not* reward any contributors with *monetary or material goods*.
-- AOSC will *not* tolerate any form of plagarism.
+# 指导方针
 
-# The Guidelines
+我们社区大部分的活动和交流在 Telegram 群组上开展，以下的方针会被分为“适用与全社区”和“适用于特定场景”两部分。*我们不会，也没有这个权利，去约束、限制社区成员在社区（包含所有安同开源社区 Telegram 群组、[AOSC 维基](/)、[GitHub 组织](https://github.com/AOSC-Dev/) 和 [社区门户](https://aosc.io/)）外的任何行为。*
 
-As most of our community activities are organised and communicated across multiple Telegram groups, the guidelines below will be organised into "community-wide" and "scenario-specific" chapters. *We do not, and have no right to limit, regulate, or manage individual member's behaviour outside of the community scope: all AOSC Telegram Groups, the [GitHub Organisation](https://github.com/AOSC-Dev/), the [AOSC Wiki](/), and the [Community Portal](https://aosc.io/).*
-
-The guidelines are further grouped into "Hard Rules" and "Soft Rules":
+对于每一个部分，我们的指导方针又被进一步分为硬规则和软规则：
 
 - Hard Rules are specified that *all* members of the community must comply, and failure to comply will result in penalties (specified under each categories).
 	- Admins who fails to comply will be stripped of their title immediately, and (at the same time) penalised with the same severity.
 - Soft Rules are specified as guidelines, and are only *suggestions* with the hope to maintain civilised, productive, and fun conversations. Failure to adhere to these Soft Rules will only make you increasingly unwelcomed, so keep that in mind.
 
-## Community Wide
+## 适用与全社区
 
 The rules specified below applies to all AOSC Telegram Groups, the [GitHub Organisation](https://github.com/AOSC-Dev/), the [AOSC Wiki](/), and the [Community Portal](https://aosc.io/).
 
-### Hard Rules
+### 硬规则
 
 1. Discussions of politics, violence, religion, sex, and crime are banned community-wide with one exception - the [Tuosai (托腮)](https://t.me/joinchat/BMnG9zvfjCgZUTIAoycKkg) channel.
 	- Offenders (including those participating in the topic) will be asked to stop. Repeated offenses will result in a one-time community-wide ban (you may re-enter immediately, but take the hint and stop).
@@ -63,7 +61,7 @@ The rules specified below applies to all AOSC Telegram Groups, the [GitHub Organ
 6. Bot spamming are banned community-wide *with no exception*.
 	- Offenders will be *immediately* subjected to a one-time community-wide ban (you may re-enter immediately, but take the hint and stop).
 
-### Soft Rules
+### 软规则
 
 1. Respect freedom of expression.
 	- Arguments happen, don't hope for channel admins to break it up - just use your intelligence to help work it out (and some who are really good at working out arguments are admins in the first place). Mutual respect is the only effective mean to prevent personal attack.
