@@ -2,7 +2,7 @@
 title: AOSC人际关系准则（长期征求意见稿）
 description: 一份让你维持良好的社区人际关系的指导
 published: true
-date: 2020-07-29T11:57:42.950Z
+date: 2020-07-29T12:20:06.625Z
 tags: 社区
 editor: markdown
 ---
@@ -63,21 +63,21 @@ editor: markdown
 
 ### 软性规定
 
-1. Respect freedom of expression.
-	- Arguments happen, don't hope for channel admins to break it up - just use your intelligence to help work it out (and some who are really good at working out arguments are admins in the first place). Mutual respect is the only effective mean to prevent personal attack.
-	- Call people whatever you like, as long as they are happy with that and it doesn't confuse the people involved.
-	- No one can avoid disagreements over their opinions, resorting to verbal abuse can only harm your argument.
-	- Profanities are by no means banned, but do ponder if it helps with expressing your argument - and be aware that it *really fucking* annoys people if used excessively.
-	- Use whatever language you may like, but be aware of others' language proficiency. Quick tip: most members speak and write Chinese and English, so translations may help when needed (and they are generally grateful).
-2. Be humourous, as we love memes.
-	- Our [AOSCC Sticker Packs](https://github.com/AOSC-Dev/aoscc/tree/master/2019/stickers) are made from our own jokes - all from our conversations!
-3. Understand that you are unique, but not special.
-	- People listen to you because they are interested, and they do not have to do as you say.
-4. Coordinate topic changes, and avoid concurrent discussion.
-	- Concurrent discussions in a single channel are confusing and unproductive.
-	- Control the length of your discussion, even if your discussion have a huge following, do not last it for a whole day - it's just not nice.
-5. Stick to the topic - if you are in the Retro Computing channel, don't discuss your brand new MacBook there.
-
+1. 尊重他人的言论自由。
+   - 争执时常发生，不要总是指望管理员出手，尝试发挥自己的聪明才智化解它。只有相互尊重才能根治人身攻击。
+   - 可以提及别人，但是要在被提及者不会产生不满情绪或对你的提及感到困惑这一前提下。
+   - 意见的分歧是很难避免的，言论攻击对你持有的观点只会是不利的。
+   - 在亵渎前请考虑清楚它对您表达您的观点是否有利。并请注意：过多的亵渎真的会使人烦恼。
+   - 您可以使用您喜欢的任何语言，但要顾及到他人的语言能力。大多数成员会中文和英文，必要时考虑使用翻译。
+2. 保持幽默。
+   - 我们的 [AOSCC 贴纸包](https://github.com/AOSC-Dev/aoscc/tree/master/2019/stickers) 就是根据我们自己的笑话制作的，全部来自我们的对话！
+3. 意识到自己都是独有的，但不是特别的。
+   - 人们之所以愿意倾听是因为他们有兴趣，他们没有义务按您说的那样去做。
+4. 避免同时讨论多个话题。
+   - 在单个频道中同时进行多个讨论只会造成混乱。
+   - 控制每个话题占用的时间，即使有热度，也不要持续个一整天，这太不好了。
+5. 不要随意脱离主题。
+   - 如果您位于 Retro Computing 频道，请不要在那里讨论您的全新 MacBook。
 
 ## 主群组和工作群组
 
