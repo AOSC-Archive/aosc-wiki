@@ -2,7 +2,7 @@
 title: AOSC人际关系准则（长期征求意见稿）
 description: 一份让你维持良好的社区人际关系的指导
 published: true
-date: 2020-07-29T12:35:30.025Z
+date: 2020-07-29T12:45:22.030Z
 tags: 社区
 editor: markdown
 ---
@@ -114,15 +114,22 @@ editor: markdown
 
 请注意上面提到的所有“适用于全社区”的规则同样适用于兴趣小组。
 
-# 贡献者公约
+# 贡献者公约呢？
 
-Our community is built upon the given sense of community, and fulfilled by our said interests in computing - maintained (or discontinued) and managed upon the will of its members. While good in its intention, the *[Contributor Covenant Code of Conduct](https://www.contributor-covenant.org/version/1/4/code-of-conduct)* is unsuitable and unproductive for our community functions.
+我们的社区在给定的社区意识基础之上建立，通过成员对计算机技术的兴趣得以成形，并根据成员的意愿进行维护和管理。尽管 [贡献者公约](https://www.contributor-covenant.org/version/1/4/code-of-conduct) 的出发点不错，但它不适用于我们社区。
+
+我们认为，我们的成员应该在自己多年的工作和贡献中成长了不少，并通过自己对技术的理解和自己的性格得到了他人的认可。贡献者公约并没有考虑到这一部分，它的“我们的责任”一节是这样写的：
+
+*"Project maintainers have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned to this Code of Conduct, or to ban temporarily or permanently any contributor for other behaviors that they deem inappropriate, threatening, offensive, or harmful."*
+
+
+
 
 We believe that our community members should grow from years of their own work and contribution, and find their recognition through technical understandings and their own characters. The static set of so-called personal "standards," as defined in C.C.C.o.C., diminishes the emphasis on human understanding and attempts to codify them as though they are already found to be universal.
 
 In its "Our Responsibilities" chapter:
 
-*"Project maintainers have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned to this Code of Conduct, or to ban temporarily or permanently any contributor for other behaviors that they deem inappropriate, threatening, offensive, or harmful."*
+
 
 It is a simple condition that our development infrastructures are used as tools for development (as it obviously suggests). Understanding this, *any* non-development activities should have been banned in the first place, and *any* forms of abuse should be condemned upon our common understanding. The C.C.C.o.C. uses four overly vague (and not to mention, overlapping) adjectives to describe the so-called unacceptable behaviours, and does not stand in interest of those who could have been wrongly accused. Upholding the exclusivity of development infrastructures for development purposes is an effective method to prevent such abuse (or any form of unnecessary accusations) during our development processes.
 
