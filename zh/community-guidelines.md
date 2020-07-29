@@ -2,7 +2,7 @@
 title: AOSC人际关系准则（长期征求意见稿）
 description: 一份让你维持良好的社区人际关系的指导
 published: true
-date: 2020-07-29T12:45:33.095Z
+date: 2020-07-29T12:47:56.041Z
 tags: 社区
 editor: markdown
 ---
@@ -116,9 +116,11 @@ editor: markdown
 
 # 贡献者公约呢？
 
-我们的社区在给定的社区意识基础之上建立，通过成员对计算机技术的兴趣得以成形，并根据成员的意愿进行维护和管理。尽管 [贡献者公约](https://www.contributor-covenant.org/version/1/4/code-of-conduct) 的出发点不错，但它不适用于我们社区。
+我们的社区在给定的社区意识基础之上建立，通过成员对计算机技术的兴趣得以成形，并根据成员的意愿进行维护和管理。尽管 [贡献者公约](https://www.contributor-covenant.org/version/1/4/code-of-conduct) 的出发点不错，但它不适用于我们社区，下面给出了一些原因：
 
-我们认为，我们的成员应该在自己多年的工作和贡献中成长了不少，并通过自己对技术的理解和自己的性格得到了他人的认可。贡献者公约并没有考虑到这一部分，它的“我们的责任”一节是这样写的：
+We believe that our community members should grow from years of their own work and contribution, and find their recognition through technical understandings and their own characters. The static set of so-called personal "standards," as defined in C.C.C.o.C., diminishes the emphasis on human understanding and attempts to codify them as though they are already found to be universal.
+
+In its "Our Responsibilities" chapter:
 
 *"Project maintainers have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned to this Code of Conduct, or to ban temporarily or permanently any contributor for other behaviors that they deem inappropriate, threatening, offensive, or harmful."*
 
@@ -131,3 +133,4 @@ Furthermore, the C.C.C.o.C.'s description of the "enforcement" process stands ag
 Our community is managed by its contributors, while a founder (and therefore a *de facto* leader) exists, he (Mingcong Bai) recognises that his power is only shared with the contributors. There is no clear administrative divide from contributors/maintainers/... from the founder - this process stands invalid in the scope of our community.
 
 In conclusion, the C.C.C.o.C. does not recognise the possibility of a non-hierarchical community and assumes much in the meaning of words - it is unsuitable, unproductive, and possibly dangerous to adopt this Code in our community.
+
