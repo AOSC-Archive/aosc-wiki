@@ -2,7 +2,7 @@
 title: AOSC人际关系准则（长期征求意见稿）
 description: 一份让你维持良好的社区人际关系的指导
 published: true
-date: 2020-07-29T12:20:06.625Z
+date: 2020-07-29T12:24:18.552Z
 tags: 社区
 editor: markdown
 ---
@@ -81,12 +81,12 @@ editor: markdown
 
 ## 主群组和工作群组
 
-The "Main Group (AOSC 社区频道; or referred to as 主群组)" is dedicated for AOSC project-related, and other relevant technological topics - this is the main location for development discussion. There are also other channels strictly used for AOSC-related work, as listed below:
+主群组为 AOSC 项目相关的技术主题而生，这是围绕社区开发展开讨论的主要地点。于此同时，也有一些工作群组专门用于 AOSC 相关工作，如下所示：
 
 - AOSC Pak Squad
 - AOSC infra-wg
 
-Please adhere to all Community Wide rules specified above, and all additional rules specified below:
+在这些场合，请遵守上面提到的所有社区规则，以及下面指定的所有附加规则：
 
 ### 硬性规定
 
@@ -114,7 +114,7 @@ AOSC's "Interest Groups" include:
 
 Please note all "Community Wide" rules specified above.
 
-# 贡献者公约？
+# 贡献者公约
 
 Our community is built upon the given sense of community, and fulfilled by our said interests in computing - maintained (or discontinued) and managed upon the will of its members. While good in its intention, the *[Contributor Covenant Code of Conduct](https://www.contributor-covenant.org/version/1/4/code-of-conduct)* is unsuitable and unproductive for our community functions.
 
