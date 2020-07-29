@@ -2,7 +2,7 @@
 title: AOSC人际关系准则（长期征求意见稿）
 description: 一份让你维持良好的社区人际关系的指导
 published: true
-date: 2020-07-29T11:55:09.725Z
+date: 2020-07-29T11:57:42.950Z
 tags: 社区
 editor: markdown
 ---
@@ -79,7 +79,7 @@ editor: markdown
 5. Stick to the topic - if you are in the Retro Computing channel, don't discuss your brand new MacBook there.
 
 
-## Main Group, and AOSC Workgroups
+## 主群组和工作群组
 
 The "Main Group (AOSC 社区频道; or referred to as 主群组)" is dedicated for AOSC project-related, and other relevant technological topics - this is the main location for development discussion. There are also other channels strictly used for AOSC-related work, as listed below:
 
@@ -88,22 +88,22 @@ The "Main Group (AOSC 社区频道; or referred to as 主群组)" is dedicated f
 
 Please adhere to all Community Wide rules specified above, and all additional rules specified below:
 
-### Hard Rules
+### 硬性规定
 
 1. The use of Telegram Stickers and GIFs are banned.
 	- You may use emoji, emoticon (kaomoji), and character-based expressions instead.
 	- Pictures and videos relevant to technical discussions are allowed.
 	- Offenders (including those participating in the topic) will be asked to stop. Repeated offenses will result in a one-time community-wide ban (you may re-enter immediately, but take the hint and stop).
 
-### Soft Rules
+### 软性规定
 
 1. Limit meme-ing and jokes - have fun, but not party.
 
-## The Tuosai (托腮) Channel
+## 托腮频道
 
 Name in Chinese "AOSC 托腮群及招待点". Please note all "Community Wide" rules specified above, and the exception(s) given to this particular channel.
 
-## Interest Groups
+## 兴趣小组
 
 AOSC's "Interest Groups" include:
 
@@ -114,7 +114,7 @@ AOSC's "Interest Groups" include:
 
 Please note all "Community Wide" rules specified above.
 
-# Contributor Covenant Code of Conduct?
+# 贡献者公约？
 
 Our community is built upon the given sense of community, and fulfilled by our said interests in computing - maintained (or discontinued) and managed upon the will of its members. While good in its intention, the *[Contributor Covenant Code of Conduct](https://www.contributor-covenant.org/version/1/4/code-of-conduct)* is unsuitable and unproductive for our community functions.
 
