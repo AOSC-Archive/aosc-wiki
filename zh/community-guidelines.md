@@ -2,7 +2,7 @@
 title: AOSC人际关系准则（长期征求意见稿）
 description: 一份让你维持良好的社区人际关系的指导
 published: true
-date: 2020-07-29T12:24:18.552Z
+date: 2020-07-29T12:35:30.025Z
 tags: 社区
 editor: markdown
 ---
@@ -41,7 +41,7 @@ editor: markdown
   - 不遵守规定的管理员将被立即被撤职，同时也会受到同样严厉的处罚。
 - 软性规定只是为了保持文明、高效且有趣的对话而提出的一些*建议*。不遵守这些软规则只会使你越来越不受欢迎，所以也请你记住这这些规定。
 
-## 适用与全社区
+## 适用于全社区
 
 下面的规定适用于所有安同开源社区 Telegram 群组、[AOSC 维基](/)、[GitHub 组织](https://github.com/AOSC-Dev/) 和 [社区门户](https://aosc.io/)。
 
@@ -81,7 +81,7 @@ editor: markdown
 
 ## 主群组和工作群组
 
-主群组为 AOSC 项目相关的技术主题而生，这是围绕社区开发展开讨论的主要地点。于此同时，也有一些工作群组专门用于 AOSC 相关工作，如下所示：
+主群组为安同开源社区项目相关的技术主题而生，这是围绕社区开发展开讨论的主要地点。于此同时，也有一些工作群组专门用于安同开源社区相关工作，如下所示：
 
 - AOSC Pak Squad
 - AOSC infra-wg
@@ -90,29 +90,29 @@ editor: markdown
 
 ### 硬性规定
 
-1. The use of Telegram Stickers and GIFs are banned.
-	- You may use emoji, emoticon (kaomoji), and character-based expressions instead.
-	- Pictures and videos relevant to technical discussions are allowed.
-	- Offenders (including those participating in the topic) will be asked to stop. Repeated offenses will result in a one-time community-wide ban (you may re-enter immediately, but take the hint and stop).
+1. 禁止使用 Telegram 贴纸或是 GIF 动图。
+	- 你可以使用 emoji 或颜文字作为替代。
+  - 出于技术讨论的目的发布图片和视频是允许的。
+  - 违规者（包括所有参与该主题的人）将被要求停止。多次违规者会被移出群聊（您可以立即重新进入，但必须停止继续违规）。
 
 ### 软性规定
 
-1. Limit meme-ing and jokes - have fun, but not party.
+1. 少灌水 - 学会张弛有度，不要给点雨水就泛滥。
 
 ## 托腮频道
 
-Name in Chinese "AOSC 托腮群及招待点". Please note all "Community Wide" rules specified above, and the exception(s) given to this particular channel.
+即安同开源社区托腮群及招待点。在该频道请注意上面提到的所有“适用于全社区”的规则，以及针对特定频道的例外情况。
 
 ## 兴趣小组
 
-AOSC's "Interest Groups" include:
+安同开源社区的兴趣小组包括：
 
 - AOSC Memes (AOSC 梗)
 - AOSC Moe-ification
 - AOSC Retro Computing
 - AOSCC Sticker Squad
 
-Please note all "Community Wide" rules specified above.
+请注意上面提到的所有“适用于全社区”的规则同样适用于兴趣小组。
 
 # 贡献者公约
 
