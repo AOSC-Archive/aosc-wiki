@@ -2,7 +2,7 @@
 title: AOSC人际关系准则（长期征求意见稿）
 description: 一份让你维持良好的社区人际关系的指导
 published: true
-date: 2020-07-29T10:59:19.788Z
+date: 2020-07-29T11:11:35.767Z
 tags: 社区
 editor: markdown
 ---
@@ -47,10 +47,11 @@ editor: markdown
 
 ### 硬性规定
 
-1. Discussions of politics, violence, religion, sex, and crime are banned community-wide with one exception - the [Tuosai (托腮)](https://t.me/joinchat/BMnG9zvfjCgZUTIAoycKkg) channel.
-	- Offenders (including those participating in the topic) will be asked to stop. Repeated offenses will result in a one-time community-wide ban (you may re-enter immediately, but take the hint and stop).
-2. Suicidal topics, discussion of its methods, "live coverage" of your own or others suicide attempts are banned community-wide *with no exception*.
-	- Offenders (including those participating in the topic) will be *immediately* subjected to a one-time community-wide ban (you may re-enter immediately, but take the hint and stop).
+1. 禁止在 [托腮频道](https://t.me/joinchat/BMnG9zvfjCgZUTIAoycKkg) 之外进行任何形式的政治、暴力、宗教、性和犯罪的讨论。
+    - 违规者（包括所有参与该主题的人）将被要求停止。多次违规者会被移出群聊（您可以立即重新进入，但必须停止继续违规）。
+2. 禁止在社区任何地方发布自杀相关的话题，讨论其方法，甚至直播自杀行为（无论未遂还是既遂）。
+    - 违规者（包括所有参与该主题的人）将*立即*被移出群聊（您可以立即重新进入，但必须停止继续违规）。
+
 3. Aggravated verbal abuse and humiliation of the members or their implied relatives are banned community-wide *with no exception*.
 	- This does not include occasionally used profanities, or those used jokingly or to strengthen the tone - however, if anyone were to be annoyed, stop.
 	- Offenders (including those participating in the topic) will be asked to stop. Repeated offenses will result in a one-time community-wide ban (you may re-enter immediately, but take the hint and stop).
