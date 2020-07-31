@@ -2,7 +2,7 @@
 title: AOSC人际关系准则（长期征求意见稿）
 description: 一份让你维持良好的社区人际关系的指导
 published: true
-date: 2020-07-29T12:48:11.139Z
+date: 2020-07-31T02:20:53.598Z
 tags: 社区
 editor: markdown
 ---
@@ -116,21 +116,20 @@ editor: markdown
 
 # 贡献者公约呢？
 
-我们的社区在给定的社区意识基础之上建立，通过成员对计算机技术的兴趣得以成形，并根据成员的意愿进行维护和管理。尽管 [贡献者公约](https://www.contributor-covenant.org/version/1/4/code-of-conduct) 的出发点不错，但它不适用于我们社区，下面给出了具体的原因：
+我们的社区在给定的社区意识基础之上建立，通过成员对计算机技术的兴趣得以成形，并根据成员的意愿进行维护和管理。尽管 [贡献者公约](https://www.contributor-covenant.org/version/1/4/code-of-conduct) 的出发点不错，但它不适用于我们社区。
 
-We believe that our community members should grow from years of their own work and contribution, and find their recognition through technical understandings and their own characters. The static set of so-called personal "standards," as defined in C.C.C.o.C., diminishes the emphasis on human understanding and attempts to codify them as though they are already found to be universal.
+我们相信我们社区的成员应该都会在持续的实践中不断成长，并通过他们对技术的理解和他们独特的性格特点找到了自己的位置。贡献者公约中并没有重视这一点，而且在试图将他们视作一样的。
 
-In its "Our Responsibilities" chapter:
+这是公约中 "Our Responsibilities" 一章的原话：
 
 *"Project maintainers have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned to this Code of Conduct, or to ban temporarily or permanently any contributor for other behaviors that they deem inappropriate, threatening, offensive, or harmful."*
 
-It is a simple condition that our development infrastructures are used as tools for development (as it obviously suggests). Understanding this, *any* non-development activities should have been banned in the first place, and *any* forms of abuse should be condemned upon our common understanding. The C.C.C.o.C. uses four overly vague (and not to mention, overlapping) adjectives to describe the so-called unacceptable behaviours, and does not stand in interest of those who could have been wrongly accused. Upholding the exclusivity of development infrastructures for development purposes is an effective method to prevent such abuse (or any form of unnecessary accusations) during our development processes.
+非常显然地，我们社区的各种基础设施都是当作开发工具使用的。基于这一点，*任何*和开发无关的活动都应该首先被禁止，而且*任何*形式的不可接受的行为都会被谴责。贡献者公约用了四个过于模糊形容词来描述所谓的不可接受的行为，对被误判的人来说就不怎么友好了。基础设施声明它们的唯一用途是在我们的发展过程中防止不可接受行为的有效方法。
 
-Furthermore, the C.C.C.o.C.'s description of the "enforcement" process stands against this understanding and the actual nature of our community:
+除此之外，贡献者公约提及的一些强制性约束和我们社区性质背道而驰：
 
 *"Project maintainers who do not follow or enforce the Code of Conduct in good faith may face temporary or permanent repercussions as determined by other members of the project’s leadership."*
 
-Our community is managed by its contributors, while a founder (and therefore a *de facto* leader) exists, he (Mingcong Bai) recognises that his power is only shared with the contributors. There is no clear administrative divide from contributors/maintainers/... from the founder - this process stands invalid in the scope of our community.
+我们社区是由贡献者维护的。虽然创始人（算是一个领导者）是有的，但他（白铭骢）意识到他的位置是离不开众多贡献者们。创始人和贡献者、维护者等其它角色事实上也没有明显的上下级关系。所以上面的约束对我们社区是无效的。
 
-In conclusion, the C.C.C.o.C. does not recognise the possibility of a non-hierarchical community and assumes much in the meaning of words - it is unsuitable, unproductive, and possibly dangerous to adopt this Code in our community.
-
+总的来说，贡献者公约认为无等级社区是不存在的，并基于此做了很多的设定。在我们的社区采用这一公约是不合适的，无用的。
