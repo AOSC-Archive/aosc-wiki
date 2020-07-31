@@ -2,7 +2,7 @@
 title: AOSC OS 适合我吗？
 description: 一些重要的和一些没那么重要的信息...
 published: true
-date: 2020-07-30T05:42:37.511Z
+date: 2020-07-31T03:27:05.318Z
 tags: sys-info
 editor: markdown
 ---
@@ -35,19 +35,18 @@ AOSC OS 基本上就是按照上面提到的这些理念来构建的。为了避
 
 ## 优点
 
-- AOSC OS installs quickly, works out of the box, and comes with most tools necessary to begin working from the 0th minute, including utilities necessary for Internet connection in restrictive countries and regions.
-- It's relatively simple, when it comes to software installation and removal.
-- All "language packs" along with appropriate fonts are pre-installed, and a simple command or GUI (GNOME and Plasma Desktop) allows for quick language switching.
-	- Some AOSC developers have been participating in L10n (localisation, or simply translation) work upstream, mainly for zh_CN (Simplified Chinese). Upstreams like WineHQ, FreeDesktop.org, GNOME, MATE, and LMMS, etc. benefit from our contribution, and these improvements benefit users of other Linux distributions or these specific applications on other operating systems.
-- Adequate support for 32-bit x86 applications (natively on AMD64, and via Qemu user emulation on other architectures) and Windows applications via Wine, with adequate testing and adaptation for CJK languages.
-- Apart from the installation process, you should feel no difference in appearance and usage with AOSC OS across our [supported architectures](/users/information/arch-specs) - of course, depending on the performance of your devices, your mileage may vary.
-- Proprietary software, like the closed-source NVIDIA Unix driver packages, Google Chrome, Opera, and device firmwares (`firmware-nonfree` necessary for many wireless cards and graphics cards) can be easily obtained via our main repository.
-- A relatively strong software collection built upon user suggestions and active work of our developers.
-	- Software addition and updates could be easily requested on our community IRC and Telegram groups via the `/pakreq` and `/updreq` bot commands; additionally, any optimisation suggestions could be similarly made via the `/optreq` command. Developers can be easily reached most of the time.
-- According to user feedback, AOSC OS has satisfactory out-of-the-box energy conservation policies, and it runs relatively cool on laptop computers.
-- AOSC OS optimises its binary according to a "maximised set" of instructions and SIMDs available to particular architectures.
-- You'd barely feel the existence of AOSC OS, no logo, no branding, no in-your-face banners.
-
+- 安装 AOSC OS 耗时非常短，而且一旦安装完成几乎可以直接开箱即用，甚至连访问国际互联网的工具也已经为你准备好了。
+- 软件的安装和移除操作起来非常简单。
+- 所有的“语言包”和相应的字体都被预装了，只需要一个简单的命令就可以切换语言，在 GNOME 和 Plasma 下甚至点鼠标就行。
+- 部分 AOSC 成员在上游参与着本地化（可以理解为翻译）的工作，目标语言通常是简体中文。包括 WineHQ、FreeDesktop.org、GNOME、MATE 和 LMMS 等项目受益其中，也为其它发行版或这些应用的使用者提供了便利。
+- 为 32-bit x86 应用程序和 Windows 应用（使用 Wine）提供足够的支持，包括测试和本地化工作。
+- 除了安装流程，在 [支持的架构](/users/information/arch-specs) 上使用 AOSC OS 在体验上应该是没有区别的。
+- 闭源软件和非自由软件在我们的软件源中可用，包括 NVIDIA 驱动、Google Chrome、Opera 和闭源固件 `firmware-nonfree`。
+- AOSC OS 提供了一个基于用户反馈和开发者辛勤工作得来的强大的软件包集合。
+  - 你可以在 IRC 或 Telegram 频道上使用 `/pakreq` 或 `/updreq` 命令请求新的软件包或软件包更新。另外任何技术上的建议都可以通过 `/optreq` 发送，这样开发者就可以迅速处理这些请求。
+- 根据用户的反馈，AOSC OS 有着开箱即用的电源管理配置，而且在笔记本电脑上也能良好地工作。
+- AOSC OS 根据每个架构可用的 SIMD 和指令集优化其二进制包。
+- 你会觉得 AOSC OS 的存在感相当之低，因为系统的 Logo 和 Branding 并不会轻易出镜。
 
 ## 缺点
 
