@@ -2,7 +2,7 @@
 title: AOSC OS 适合我吗？
 description: 一些重要的和一些没那么重要的信息...
 published: true
-date: 2020-07-31T03:27:05.318Z
+date: 2020-07-31T08:12:02.863Z
 tags: sys-info
 editor: markdown
 ---
@@ -50,17 +50,17 @@ AOSC OS 基本上就是按照上面提到的这些理念来构建的。为了避
 
 ## 缺点
 
-- As it currently stands, AOSC OS does not provide an automatic (or even better, graphical) installation wizard, and requires manual input to install - which would most likely be daunting for first-timers. It also lacks a Live medium for user try-outs.
-- It's **heavy**, as packages and software are installed on a larger unit, it requires more available storage than most Linux distributions with similar amount of applications installed.
-	- This issue is further exacerbated with pre-installed language data and fonts, especially CJK fonts, which could take up to a gigabyte of space in most default configurations.
-	- AOSC OS's modularity is noticeably hampered by this feature.
-- No `multilib` or `multiarch`, making cross-architecture development more difficult than "universal" distributions like Fedora and Debian - heavy reliance on Qemu user emulation.
-- AOSC OS will not make it into the Free Software Foundation's [List of Free GNU/Linux Distributions](https://www.gnu.org/distros/free-distros.en.html) in the foreseeable future, for it provides non-free software, and is (probably?) illegal to re-distribute in countries like the United States.
-- Compared to more mature Linux distributions, AOSC OS should still grow its software repository.
-- Limited human resource, which means package updates and additions (actively or requested) could be delayed.
-	- Bugs may exist and come unnoticed, and they can also take time to be fixed.
-- You'd barely feel the existence of AOSC OS, or for others to realise what you are running - no show-off for you, by default.
-	- Also, let's face it, we are not particularly well-known.
+- 目前 AOSC OS 缺少一个友好的、自动化的、甚至是图形化的安装向导，意味着你在安装的时候需要做不少的输入工作。同时也缺少 Live 介质供用户进行体验。
+- AOSC OS 过于重量级，提供的单个软件包包含的东西多，占用空间大。这意味着这个系统会比其他系统占用更多的空间。
+  - 这个问题在默认提供所有语言支持后进一步加重了，特别是中日韩字体几乎使用了近 1 GiB 的空间。
+  - AOSC OS 的模块化进程很大程度上受到这一点的阻碍。
+- 没有 `multilib` 也没有 `multiarch`，这使跨架构的开发比 Fedora 和 Debian 这样的通用发行版更加困难，很大程度要依赖 Qemu。
+- AOSC OS 会提供闭源软件和非自由软件，在可见的未来也不会试图让自己跻身 FSF 的 [完全自由的 Linux 发行版目录](https://www.gnu.org/distros/free-distros.en.html) 中。
+- 相比绝大多数的发行版，AOSC OS 软件仓库的规模还不够大需要进一步扩大。
+- 人手有限，意味着软件增补和更新推送可能会被推迟。
+  - 存在的漏洞也有可能没被发现，修复也需要一定的时间。
+- 你会感受不到这个发行版的存在，也无法让其他人意识到你在运行什么，这个发行版从不会炫耀自己。
+  - 直面现实，我们也确实和知名不沾边。
 
 # 我应该尝试 AOSC OS 吗？
 
