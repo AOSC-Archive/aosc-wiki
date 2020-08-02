@@ -2,7 +2,7 @@
 title: What is an AOSA?
 description: A Quick Pre-face on AOSC OS Security Advisories
 published: true
-date: 2020-08-02T13:38:41.572Z
+date: 2020-08-02T14:19:27.703Z
 tags: aosa
 editor: markdown
 ---
@@ -38,4 +38,4 @@ The publication/announcement of a security advisory indicates the end of a secur
 - Updated packages are uploaded to the applicable repositories for user updates.
 - Issues are closed with a reference to the fix commit (see the example [here](https://github.com/AOSC-Dev/aosc-os-abbs/issues/1299)).
 - Security contributors may now assign a incremented AOSA number along with the suggested action, as shown in the formatting example above.
-- Regularly, these advisories are then posted in our [security list](mailto:security@lists.aosc.io), and archived here on the Wiki site (see the [2018 Archive](https://wiki.aosc.io/aosa/archive/2018)).
+- Regularly, these advisories are then posted in our [security list](mailto:security@lists.aosc.io), and archived here on the Wiki site (see the [2019 Archive](https://wiki.aosc.io/en/aosa-archive-2019)).
