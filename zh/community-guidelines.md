@@ -2,7 +2,7 @@
 title: AOSC 人际关系准则（长期征求意见稿）
 description: 一份让你维持良好的社区人际关系的指导
 published: true
-date: 2020-08-02T04:28:02.022Z
+date: 2020-08-02T04:29:54.896Z
 tags: 社区
 editor: markdown
 ---
@@ -31,9 +31,9 @@ editor: markdown
 - 安同开源社区**不会**为贡献者提供金钱和物质上的回报。
 - 安同开源社区**决不会**容忍任何形式的剽窃行为。
 
-# 指导方针
+# 准则条例
 
-我们社区大部分的活动和交流在 Telegram 群组上开展，以下的方针会被分为“适用与全社区”和“适用于特定场景”两部分。**我们不会，也没有这个权利，去约束、限制社区成员在社区（包含所有安同开源社区 Telegram 群组、[AOSC 维基](https://wiki.aosc.io/zh/home)、[GitHub 组织](https://github.com/AOSC-Dev/) 和 [社区门户](https://aosc.io/)）外的任何行为。**
+鉴于我们社区大部分的活动和交流在 Telegram 频道/群组（及相应的 Discord 及 IRC 频道/群组）上开展，以下条例将分为“适用与全社区”和“适用于特定场景”两类。**我们不会也无权约束或限制社区成员在社区（包含所有安同开源社区 Telegram 频道/群组（及相应的 Discord 及 IRC 频道/群组）、[AOSC 维基](https://wiki.aosc.io/zh/home)、[GitHub 组织](https://github.com/AOSC-Dev/) 和 [社区门户](https://aosc.io/)）外的任何行为。**
 
 对于每一个部分，我们的指导方针又被进一步分为硬性规定和软性规定：
 
