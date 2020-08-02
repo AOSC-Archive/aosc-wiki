@@ -1,8 +1,8 @@
 ---
-title: AOSC 人际关系准则（长期征求意见稿）
+title: 安同开源社区人际关系准则（长期征求意见稿）
 description: 一份让你维持良好社区人际关系的指导
 published: true
-date: 2020-08-02T05:10:34.137Z
+date: 2020-08-02T05:14:44.126Z
 tags: 社区
 editor: markdown
 ---
