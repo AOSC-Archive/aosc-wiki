@@ -2,7 +2,7 @@
 title: AOSC人际关系准则（长期征求意见稿）
 description: 一份让你维持良好的社区人际关系的指导
 published: true
-date: 2020-08-02T04:05:13.794Z
+date: 2020-08-02T04:06:10.538Z
 tags: 社区
 editor: markdown
 ---
@@ -33,7 +33,7 @@ editor: markdown
 
 # 指导方针
 
-我们社区大部分的活动和交流在 Telegram 群组上开展，以下的方针会被分为“适用与全社区”和“适用于特定场景”两部分。**我们不会，也没有这个权利，去约束、限制社区成员在社区（包含所有安同开源社区 Telegram 群组、[AOSC 维基](/zh/home)、[GitHub 组织](https://github.com/AOSC-Dev/) 和 [社区门户](https://aosc.io/)）外的任何行为。**
+我们社区大部分的活动和交流在 Telegram 群组上开展，以下的方针会被分为“适用与全社区”和“适用于特定场景”两部分。**我们不会，也没有这个权利，去约束、限制社区成员在社区（包含所有安同开源社区 Telegram 群组、[AOSC 维基](https://wiki.aosc.io/zh/home)、[GitHub 组织](https://github.com/AOSC-Dev/) 和 [社区门户](https://aosc.io/)）外的任何行为。**
 
 对于每一个部分，我们的指导方针又被进一步分为硬性规定和软性规定：
 
