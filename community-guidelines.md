@@ -2,7 +2,7 @@
 title: AOSC Inter-Personal Guidelines [Long Term RFC]
 description: A Guide of References for Your Happy Stay
 published: true
-date: 2020-07-22T05:11:17.503Z
+date: 2020-08-02T04:10:15.726Z
 tags: community
 editor: markdown
 ---
@@ -35,7 +35,7 @@ This section describes *unquestionable* foundational principles on which our com
 
 # The Guidelines
 
-As most of our community activities are organised and communicated across multiple Telegram groups, the guidelines below will be organised into "community-wide" and "scenario-specific" chapters. *We do not, and have no right to limit, regulate, or manage individual member's behaviour outside of the community scope: all AOSC Telegram Groups, the [GitHub Organisation](https://github.com/AOSC-Dev/), the [AOSC Wiki](/), and the [Community Portal](https://aosc.io/).*
+As most of our community activities are organised and communicated across multiple Telegram groups, the guidelines below will be organised into "community-wide" and "scenario-specific" chapters. *We do not, and have no right to limit, regulate, or manage individual member's behaviour outside of the community scope: all AOSC Telegram Groups, the [GitHub Organisation](https://github.com/AOSC-Dev/), the [AOSC Wiki](https://wiki.aosc.io/), and the [Community Portal](https://aosc.io/).*
 
 The guidelines are further grouped into "Hard Rules" and "Soft Rules":
 
@@ -45,7 +45,7 @@ The guidelines are further grouped into "Hard Rules" and "Soft Rules":
 
 ## Community Wide
 
-The rules specified below applies to all AOSC Telegram Groups, the [GitHub Organisation](https://github.com/AOSC-Dev/), the [AOSC Wiki](/), and the [Community Portal](https://aosc.io/).
+The rules specified below applies to all AOSC Telegram Groups, the [GitHub Organisation](https://github.com/AOSC-Dev/), the [AOSC Wiki](https://wiki.aosc.io/), and the [Community Portal](https://aosc.io/).
 
 ### Hard Rules
 
