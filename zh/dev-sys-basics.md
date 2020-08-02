@@ -1,8 +1,8 @@
 ---
-title: 软件包维护：入门
+title: 软件包维护入门：基础
 description: 了解 AOSC OS 打包流程
 published: true
-date: 2020-08-02T15:31:33.313Z
+date: 2020-08-02T15:33:30.135Z
 tags: 
 editor: markdown
 ---
