@@ -2,7 +2,7 @@
 title: AOSC人际关系准则（长期征求意见稿）
 description: 一份让你维持良好的社区人际关系的指导
 published: true
-date: 2020-07-31T02:20:53.598Z
+date: 2020-08-02T03:55:41.215Z
 tags: 社区
 editor: markdown
 ---
@@ -15,7 +15,7 @@ editor: markdown
 
 — Community (n.), definition from the *[Cambridge English Dictionary](https://dictionary.cambridge.org/dictionary/english/community)*
 
-作为安同开源社区的一分子，我们共同的爱好就是探索计算机技术，特别是开源软件的发展和本地化。数年来，安同开源社区将大部分的精力放在了 [AOSC OS](/sys-is-aosc-os-right-for-me) 项目，以及多个社区感兴趣的项目。例如在 2019 年我们就创建了 AOSC Retro Computing Group，为古董电脑爱好者提供了一个购买、折腾、玩耍古董电脑、甚至为这些电脑移植 AOSC OS 的平台。
+作为安同开源社区的一分子，我们共同的爱好就是探索计算机技术，特别是开源软件的发展和本地化。数年来，安同开源社区将大部分的精力放在了 [AOSC OS](/sys-is-aosc-os-right-for-me) 项目，以及多个社区感兴趣的项目。例如在 2019 年我们就创建了 AOSC Retro Computing Group，为古董电脑爱好者提供了一个购买、折腾、把玩古董电脑、甚至为这些电脑移植 AOSC OS 的平台。
 
 # 为什么需要一个准则？
 
