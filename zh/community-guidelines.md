@@ -2,26 +2,26 @@
 title: AOSC 人际关系准则（长期征求意见稿）
 description: 一份让你维持良好的社区人际关系的指导
 published: true
-date: 2020-08-02T04:19:40.903Z
+date: 2020-08-02T04:25:00.166Z
 tags: 社区
 editor: markdown
 ---
 
 # 欢迎来到 AOSC 社区！
 
-欢迎来到创建于 2011 年的安同开源社区 (AOSC) ！
+欢迎来到创立于 2011 年的安同开源社区 (AOSC) ！
 
 *"All the people who live in a particular area, or a group of people who are considered as a unit because of their shared interests or background."*
 
 — Community (n.), definition from the *[Cambridge English Dictionary](https://dictionary.cambridge.org/dictionary/english/community)*
 
-作为安同开源社区的一分子，我们共同的爱好就是探索计算机技术，特别是开源软件的发展和本地化。数年来，安同开源社区将大部分的精力放在了 [AOSC OS](/sys-is-aosc-os-right-for-me) 项目，以及多个社区感兴趣的项目。例如在 2019 年我们就创建了 AOSC 古董计算机兴趣小组 (Retro Computing Group)，为古董电脑爱好者提供了一个购买、折腾、把玩古董电脑、甚至为这些电脑移植和适配 AOSC OS。
+作为安同开源社区的一分子，我们共同的爱好就是探索计算机技术，特别是开源软件的发展和本地化。数年来，安同开源社区将大部分的精力放在了 [AOSC OS](/sys-is-aosc-os-right-for-me) 这一发行版及多个社区成员们的兴趣项目。例如在 2019 年我们创建了 AOSC 古董计算机兴趣小组 (AOSC Retro Computing Group)，为古董电脑爱好者提供了一个购买、折腾、把玩古董电脑的交流平台，我们甚至为这些电脑移植和适配了 AOSC OS。
 
-# 为什么需要一个准则？
+# 我们为什么需要社区准则？
 
-没有多年的交流与碰撞，是不会有安同开源社区的。无论这些交流和碰撞结果如何，它们都影响到了我们的社群意识。有鉴于此，有必要对我们社区的价值观做出一个解释。在我们列出所有具体的指导方针之前，这个准则列出了所有适用于所有社区成员的没任何争议的准则。
+没有多年的交流与碰撞，是不会有安同开源社区的 —— 这些交流和碰撞直接影响到了我们的社群意识。有鉴于此，有必要对我们社区的价值观作出集中解释。在我们列出所有具体的指导方针之前，特此说明：这个准则列出的是社区成员公认的，适用于所有社区成员的准则。
 
-**但总的来说，我们并不想对任何不符合这些价值观的行为做出限制或处罚。**
+**但总的来说，我们目的并不是限制或处罚不符合这些价值观的行为。**
 
 # 准则
 
