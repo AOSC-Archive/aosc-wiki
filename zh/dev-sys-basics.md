@@ -2,7 +2,7 @@
 title: 软件包维护入门：基础
 description: 了解 AOSC OS 打包流程
 published: true
-date: 2020-08-03T03:41:37.119Z
+date: 2020-08-03T08:52:16.013Z
 tags: 
 editor: markdown
 ---
@@ -17,23 +17,23 @@ editor: markdown
       - 用于管理 systemd-nspawn(1) 容器。
   - [ACBS](https://github.com/AOSC-Dev/acbs/)
       - 用于管理软件包树（例如我们的 [aosc-os-abbs](https://github.com/AOSC-Dev/aosc-os-abbs)）。
-      - 可以调用 Autobuild3 以读取 PKGBUILD 并构建指定的软件包。
+      - 可以调用 Autobuild3 以读取打包脚本（AOSC 使用由我们自行开发的 Autobuild3 打包系统，有一套特殊的打包脚本格式）并构建指定的软件包。
   - [Autobuild3](https://github.com/AOSC-Dev/autobuild3/)
-      - 用于读取软件包的 PKGBUILD 并运行构建脚本。
+      - 用于运行构建脚本。
   - [pushpkg](https://github.com/AOSC-Dev/scriptlets/tree/master/pushpkg)
       - 将构建好的软件包推送到官方软件仓库。 
 
-# 版本发布模式
+# 发行周期
 
 AOSC OS 采用的是半滚动更新模型，通常每个发布周期都为时三个月。这意味着 AOSC OS 和 Arch Linux 等滚动发行版一样是没有版本号的。但是，在 [aosc-os-abbs](https://github.com/AOSC-Dev/aosc-os-abbs) 树中，[AOSC OS Core](https://github.com/AOSC-Dev/AOSC-os-abbs/blob/testing-proposed/README.CORE.md) 是由一组软件包构建而成的，这组软件包由运行时库（例如 GNU C Library）和工具链（例如 GCC）组成。这组包以版本化的方式更新（Core 7.0.1、7.0.2、7.1.1 等）。此外，AOSC OS 软件仓库中所有更新都需要在一个 `*-proposed` 软件仓库中作经过一段时间的测试。 
 
 我们有两个主要分支，分别是 `stable` 和 `testing`，还有三个开发分支 `stable-proposed`、`testing-proposed` 和 `explosive`。
 
-`stable-proposed` 始终接受新的更新，但只限于补丁版本（也就是说版本号 `x.y.z` 中只有 `z` 变动了）、安全更新、漏洞修复，还有 [一些例外](https://wiki.aosc.io/developers/aosc-os/cycle-exceptions)，这个分支的更新每周都会被合并到 `stable` 分支。
+`stable-proposed` 没有冻结期，但这个分支只接受小版本更新（也就是说版本号 `x.y.z` 中只有 `z` 变动了）、安全更新、漏洞修复，还有 [一些例外](https://wiki.aosc.io/developers/aosc-os/cycle-exceptions)，这个分支的更新每周都会被合并到 `stable` 分支。
 
-`testing-proposed` 通常是新软件包和主要版本更新最先上传的地方，我们的工作主要在这里开展。开发工作遵循三个月一周期的迭代计划（可以参考 [Winter 2020 的迭代计划](https://github.com/AOSC-Dev/AOSC-os-abbs/issues/2073))。在前两个月，开发人员会构建新软件包或主要版本更新，随后在 `testing-proposed` 进行测试。 
+`testing-proposed` 是主要的工作分支。引入新软件包和已有软件包的大版本更新（例如 Firefox 78 -> 79）通常都在此分支进行。开发工作遵循三个月一周期的迭代计划（可以参考 [Winter 2020 的迭代计划](https://github.com/AOSC-Dev/AOSC-os-abbs/issues/2073))。在前两个月，开发人员会构建新软件包或主要版本更新，随后在 `testing-proposed` 进行测试。 
 
-在最后一个月的开头，`testing-proposed` 会被合并到 `testing`。在这个月，启用 `testing` 软件仓库的用户将收到更新，并帮助测试它们。如果一切顺利，到月底，`testing` 就会被合并到 `stable`，从而完成整个周期。在这段时间内，`testing-proposed` 分支则被冻结了。
+在最后一个月的开头，`testing-proposed` 会被合并到 `testing`。在这个月，启用 `testing` 软件仓库的用户将收到更新，并帮助测试它们。如果一切顺利，到月底，`testing` 就会被合并到 `stable`，从而完成整个周期。在这段时间内，`testing-proposed` 分支则会被冻结，不再接受新更改。
 
 `explosive` 则像一个实验田，通常用于放置不适合当前周期的软件包和更新。在 `testing-proposed` 冻结期间，开发人员可能会提前向这一分支推送更新，因为 `explosive` 会在新周期开始时被合并到 `testing-proposed`。
 
@@ -41,7 +41,7 @@ AOSC OS 采用的是半滚动更新模型，通常每个发布周期都为时三
 
 首先我们要在电脑上安装 `ciel`。在 AOSC OS，直接在官方软件仓库获取并安装即可。Ciel 管理的是标准化的 AOSC OS 构建环境（或者说 [BuildKit](https://aosc.io/downloads/#buildkit)），而构建的流程不一定要在 AOSC OS 上进行，如果你在使用 Arch Linux，你也可以在 AUR 获取 Ciel。
 
-接下来，我们会初始化一个 Ciel 的工作区，这里我们会使用 `~/ciel` 作为演示。请注意你需要使用 `root` 运行 Ciel 而且你不能在 Docker 容器里运行 Ciel。
+接下来，我们会初始化一个 Ciel 的工作区，这里我们会使用 `~/ciel` 作为演示。请注意你需要使用 `root` 运行 Ciel。而且，你不能在 Docker 容器里运行 Ciel。
 
 ``` bash
 mkdir ~/ciel
@@ -49,38 +49,38 @@ cd ~/ciel
 ciel init
 ```
 
-接下来我们部署 BuildKit。BuildKit 是一个最小化的 AOSC OS 变体，专门用于打包或容器化开发。它包含了 ACBS 和 Autobuild3，因此我们不需要做额外的配置。 
+接下来我们部署 `BuildKit`。`BuildKit` 是一个最小化的 AOSC OS 变体，专门用于打包或容器化开发。它包含了 ACBS 和 Autobuild3，因此我们不需要做额外的配置。 
 
 ``` bash
 ciel load-os
-# Or if you have already downloaded BuildKit
+# 或者如果你已经下好了一份 BuildKit 的话
 ciel load-os PATH_TO_BUILDKIT
 ```
 
-接下来我们强烈推荐你将 BuildKit 更新到最新状态（AOSC OS 打包者则必须这样做）。
+接下来我们强烈推荐你将 BuildKit 更新到最新状态（如果你想把你的工作发布到 AOSC OS 的官方软件源里面的话，这一步是必须的）。
 
 ``` bash
 ciel update-os
 ```
 
-下一步，我们加载 ACBS 树。这里我们加载的是我们的 `aosc-os-acbs` 树。
+下一步，我们加载 ACBS 树。这里我们加载的是我们默认的的 `aosc-os-acbs` 树。
 
 ``` bash
-ciel load-tree # By default, ciel will load the official tree.
-# Or, you can just clone the desired repository to ciel/TREE
+ciel load-tree # 默认情况下，ciel 会加载官方的树
+# 或者，你也可以将你想使用的树 git clone 到 ciel/TREE
 ```
 
 # 构建我们的第一个软件包！
 
-好了现在我们已经把打包环境配置好，我们可以尝试构建一个已有的包。让我们从一个相对简单的例子开始，`extra-multimedia/flac`。
+好了，现在我们已经把打包环境配置好，可以尝试构建一个已有的包了。让我们从一个相对简单的例子开始，`extra-multimedia/flac`。
 
 在此之前，我们需要创建一个 Ciel 实例。建议对不同的分支使用不同的实例： 
 
 ``` bash
-ciel add stable # Since we are going to build on stable
+ciel add stable # 因为我们准备为 stable 分支构建这个包
 ```
 
-确保我们在 `stable` 分支上。 
+确保我们的树在 `stable` 分支上。 
 
 ``` bash
 cd TREE
@@ -88,7 +88,9 @@ git checkout stable
 cd ..
 ```
 
-然后，我们需要配置 Ciel 以使用正确的软件仓库。为了避免产生错误的依赖关系，打包环境应该使用与分支匹配的包（`stable-proposed` 只使用来自 `stable` 的依赖项，是一个例外）。比方说，我们需要 `stable` 软件仓库来构建 `stable` 软件包，需要`testing`、`stable-proposed` 和 `stable` 来构建 `testing` 软件包。 
+然后，我们需要配置 Ciel 以使用正确的软件仓库。为了避免产生错误的依赖关系，打包环境应该使用与分支匹配的包（`stable-proposed` 只使用来自 `stable` 的依赖项，是一个例外）。比如：
++ 当构建 `stable` 仓库的软件包时，我们需要 `stable` 仓库
++ 当构建 `testing` 仓库的软件包时，需要`testing`、`stable-proposed` 和 `stable` 仓库
 
 ``` bash
 ciel config -i stable
@@ -96,10 +98,10 @@ ciel config -i stable
 首先输入你的信息，选择是否启用 DNSSEC，然后 Ciel 会询问你是否编辑 `source.list`，选择是并编辑。
 
 ``` INI
-# For building stable packages
+# 为 stable 仓库构建软件包时:
 deb https://repo.aosc.io/debs stable main
 
-# For building testing packages
+# 为 testing 仓库构建软件包时:
 deb https://repo.aosc.io/debs testing main
 deb https://repo.aosc.io/debs stable-proposed main
 deb https://repo.aosc.io/debs stable main
@@ -111,16 +113,16 @@ deb https://repo.aosc.io/debs stable main
 
 ``` bash
 ciel build -i stable flac
-# -i is used to select the instance used to build
+# 使用 -i 参数是来指定要使用的 ciel 实例
 ```
 
-如果没有报错出现，并能见到 `Build Summary`，那么祝贺你成功构建了你的第一个软件包！现在你应该能在 `OUTPUT/debs` 看到构建好的 DEB 包。
+如果没有报错出现，并能见到 `Build Summary`，那么祝贺你，你成功构建了你的第一个软件包！现在你应该能在 `OUTPUT/debs` 看到构建好的 DEB 包。
 
 # 添加一个新的软件包
 
 已经掌握了如何构建一个已有的软件包？接下来我们再进一步，尝试从零开始构建一个软件包。
 
-进入 `TREE` 文件夹，你会看到很多文件夹，包括一些以 `base-` 和 `core-` 开头的文件夹，还有一些以 `extra-` 开头的文件夹，我们使用这些文件夹给软件包分类。在文件夹里面，你会发现各种包及其 PKGBUILD 文件。 
+进入 `TREE` 文件夹，你会看到很多文件夹，包括一些以 `base-` 和 `core-` 开头的文件夹，还有一些以 `extra-` 开头的文件夹，我们使用这些文件夹给软件包分类。在文件夹里面，你会发现各种软件包的构建脚本。
 
 例如说 `i3`，这个包很显然能在 `TREE/extra-wm/i3` 被找到。进入这个目录之后，应该能见到以下的目录树：
 
@@ -150,13 +152,13 @@ ciel build -i stable flac
 这个文件会告诉 `acbs` 在什么地方下载源码文件，并声明软件包的版本号和发布号。一个 `spec` 文件看起来应该是这样子的：
 
 ``` bash
-VER=4.17.1  # Version of the software.
-# REL=0 The package revision. If not specified, it's 0.
-SRCTBL="https://i3wm.org/downloads/i3-$VER.tar.bz2" # Download address for the source code.
-CHKSUM="sha256::1e8fe133a195c29a8e2aa3b1c56e5bc77e7f5534f2dd92e09faabe2ca2d85f45" # Checksum of the source tarball.
+VER=4.17.1  # 软件包版本
+# REL=0 修订号. 如果这一项不存在的话, 那这个包的修订号就是 0.
+SRCTBL="https://i3wm.org/downloads/i3-$VER.tar.bz2" # 源代码的下载地址
+CHKSUM="sha256::1e8fe133a195c29a8e2aa3b1c56e5bc77e7f5534f2dd92e09faabe2ca2d85f45" # 源代码压缩包的校验和, 可以用 sha256, sha512等等
 ```
 
-有一点值得注意的是发布号。如果你在创建一个新的包，你可以忽略这一行，但在某些情形下（例如应用一个安全补丁），版本号不会更改，但我们仍然需要通知用户电脑上的包管理器有可用的更新。在这种情况下，只需将 `$REL` 变量增加 1。
+有一点值得注意的是修订号。如果你在创建一个新的包，你可以忽略这一行，但在某些情形下（例如应用一个安全补丁），版本号不会更改，但我们仍然需要通知用户电脑上的包管理器有可用的更新。在这种情况下，只需将 `$REL` 变量增加 1。
 
 ## `autobuild/`
 
@@ -174,7 +176,7 @@ CHKSUM="sha256::1e8fe133a195c29a8e2aa3b1c56e5bc77e7f5534f2dd92e09faabe2ca2d85f45
   - `BUILDDEP` : 仅在软件生成时需要的软件包列表。
   - `PKGRECOM` : 软件的生成和运行时推荐先行安装的软件列表。
 
-这些只是最常见的配置项。有更多的配置项，但对于大部分软件这些配置就足够了。`Autobuild3` 可以自动填充其他信息，比如使用哪个 C 编译器标志，使用哪个构建系统。
+这些只是最常见的配置项。有更多的配置项，但对于大部分软件这些配置就足够了。`Autobuild3` 可以自动检查源代码并检测出相应的打包参数，比如使用哪个 C 编译器标志，使用哪个构建系统。
 
 这是 `TREE/extra-multimedia/i3` 的配置：
 
