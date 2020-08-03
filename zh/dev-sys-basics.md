@@ -2,7 +2,7 @@
 title: 软件包维护入门：基础
 description: 了解 AOSC OS 打包流程
 published: true
-date: 2020-08-03T08:59:58.530Z
+date: 2020-08-03T12:30:19.130Z
 tags: 
 editor: markdown
 ---
@@ -207,13 +207,13 @@ PKGCONFL="i3-gaps"
 
 # 一个完整的例子：`light`
 
-That's all the basic knowledge you need to build a simple package\! Now, we will try to build a really simple program: [light](https://github.com/haikarainen/light).
+现在你已经掌握了构建一个软件包所需要的基本技能，现在让我们将所学的东西应用到实践中吧，现在我们来构建 [light](https://github.com/haikarainen/light)。
 
-This program is used to provide a easy command to control the backlight of laptop. Since it only uses file API to interact with the backlight subsystem, this program is very simple and does not require and dependency other than `glibc`.
+这个程序提供了一个简单的命令以控制笔记本电脑的背光。因为它只使用文件 API 与背光子系统交互，所以这个程序非常简单，不需要依赖除了 `glibc` 之外的其它东西。
 
-Return to the `TREE` directory (assuming you have Ciel set-up). First, make sure that you are on the right branch. As mentioned above, during the first two months of the cycle, use `testing-proposed`. For the last month, use `explosive`.
+我们假定你已经配置好了 Ciel，让我们返回到 `TREE` 目录。首先，确保你位于正确的分支。如上所述，在每个周期的前两个月，你应该使用 `testing-proposed`，而最后一个月，你应该使用 `explosive`。 
 
-Since this program is obviously a utility, we create a directory called `light` under the directory `TREE/extra-utils`.
+由于这个软件很显然是一个实用工具，我们在 `TREE/extra-utils` 下创建目录 `light`。
 
 ``` bash
 cd TREE/extra-utils
@@ -221,7 +221,7 @@ mkdir light
 cd light
 ```
 
-Then, we create the `spec` file. Look up the project website and find out the download URL for the latest version. After manually checking the `sha256` checksum of the latest tarball, we can fill in the file.
+接下来，我们创建 `spec` 文件。前往项目网站并找到最新版本源码的下载链接，下载一个源码包并校验它的 `sha256`，然后我们就可以完善这个文件了。
 
 ``` bash
 VER=1.2.1
@@ -229,11 +229,11 @@ SRCTBL="https://github.com/haikarainen/light/archive/v$VER.tar.gz"
 CHKSUM="sha256::53d1e74f38813de2068e26a28dc7054aab66d1adfedb8d9200f73a57c73e7293"
 ```
 
-Notice here that we replaced the version number inside the tarball URL with an environment variable `$VAR`. This is considered as a good practice (since it reduces the modification required when updating the package), and should be used when possible.
+这个我们将源码包下载链接中的版本号替换为了变量 `$VAR`，这是一个很好的做法，在更新这个软件包的时候减少了编辑量。
 
-Then, we create the `autobuild` folder, and create the `defines` file.
+接下来我们创建 `autobuild` 目录，然后创建 `defines` 文件。
 
-Since this is an application used in the GUI environment, we give it the section of `x11`. The complete `defines` file looks like the following:
+由于这是一个在 GUI 视图下使用到的应用，我们将其类别设定为 `x11`，完整的 `defines` 文件看起来是这样子的：
 
 ``` bash
 PKGNAME=light
@@ -241,29 +241,29 @@ PKGSEC=x11
 PKGDES="Program to easily change brightness on backlight-controllers."
 ```
 
-And we are done\! We can now head back to the base directory of the Ciel environment (`~/ciel`, and run the following command:
+一切准备就绪！让我们回到 Ciel 工作目录（`~/ciel`），然后执行以下命令：
 
 ``` bash
 ciel build -i stable light
 ```
 
-Although we didn't write anything about how to build this program, `Autobuild3` automatically figured out that this should be built with `autotools` (i.e., the classic `./configure && make && make install` logic), and should build the program successfully. If you want to double check, use `dpkg-deb -c DEB_FILE` to check the files inside the deb file.
+尽管我们没有声明如何构建这个包，但是 `Autobuild3` 会自动使用 `autotools` 构建这个包（也就是经典的 `./configure && make && make install` 逻辑）。如果你希望再做检查，可以使用 `dpkg-deb -c DEB_FILE` 查看 DEB 包里的文件。
 
-## Git conventions
+## Git 提交记录格式规范
 
-AOSC OS has strict conventions about git logs. We will only mention the most used ones here. For the full list of package styling and development guidelines, please refer to the *<https://wiki.aosc.io/en/dev-sys-package-styling-manual>*.
+AOSC OS 对提交记录有着非常严格的格式要求。这里我们会提及我们最常用的一些格式。要想查看完整的打包与开发指导意见，请前往 *<https://wiki.aosc.io/en/dev-sys-package-styling-manual>*。
 
-For example, we are adding a new package to the tree. Then the log should be something like this:
+例如，我们现在要往软件包树里面添加一个新的软件包，那么提交记录应该长这样子：
 
     light: new, 1.2.1
     $PKG_NAME: new, $VER
 
-If you are updating the version of an exisiting package, it should be like this:
+如果你在更新一个已有的软件包，那么提交记录应该长这样子：
 
     bash: update to 5.2
     $PKG_NAME: update to $NEW_VER
 
-And please mention all the specific changes made to the package (i.e., dependency changes, feature enablement, etc.) in the long log, for instance:
+这里我们建议你额外提及你对软件包做了哪些修改（例如依赖项的修改、标志的选择等等），例如：
 
     bash: update to 5.2
     
@@ -271,13 +271,18 @@ And please mention all the specific changes made to the package (i.e., dependenc
     - Install HTML documentations.
     - Build with -O3 optimisation.
 
-## Pushing packages to the repository
+## 将软件包推送到软件仓库
 
-After a successful build, maintainers will push local Git changes to the tree, and the respective packages to the official repository.
+在成功构建软件包之后，软件包维护者会将把本地 Git 更改推送到树中，并将相应的包推送到官方软件仓库。 
 
-The second task can be done using [pushpkg](https://github.com/AOSC-Dev/scriptlets/tree/master/pushpkg). Grab the script, add the script to PATH, make sure it is executable (0755). Then, invoke `pushpkg` inside the `OUTPUT` directory. You will need to provide your LDAP credentials and the destination repository (`stable`, `testing`, etc.).
+将软件包推送到官方软件仓库可以用 [pushpkg](https://github.com/AOSC-Dev/scriptlets/tree/master/pushpkg) 完成。操作起来也很简单，只需下载脚本，将脚本添加到 PATH 并确保它是可执行的（`0755`）。然后，在 `OUTPUT` 目录中调用 `pushpkg`。在这个过程中，你需要提供 LDAP 凭据，并指定目标软件仓库（`stable`、`testing` 等）。
 
 # 后记
+
+就这么简单！你已经初步了解如何为 AOSC OS 构建软件包，并知道如何更新、构建和上传它们！
+
+当然，本文也只是一些皮毛，当你真正参与到 AOSC OS 的维护中，面对更复杂的构建系统或大量需要更新的软件包时，你就会意识到，还有许多技能有待你去探索和挖掘。请参考 [Way to AOSC OS Maintainence: Advanced Techniques](/en/dev-sys-advanced-techniques) 这篇文。
+
 
 That's it\! You have learned the basics about creating new packages for AOSC OS from scratch, as well as how to update, build, and uploading them\!
 
