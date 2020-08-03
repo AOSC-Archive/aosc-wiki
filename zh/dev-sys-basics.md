@@ -2,7 +2,7 @@
 title: 软件包维护入门：基础
 description: 了解 AOSC OS 打包流程
 published: true
-date: 2020-08-03T12:30:29.018Z
+date: 2020-08-03T12:37:30.475Z
 tags: 
 editor: markdown
 ---
@@ -281,4 +281,4 @@ AOSC OS 对提交记录有着非常严格的格式要求。这里我们会提及
 
 就这么简单！你已经初步了解如何为 AOSC OS 构建软件包，并知道如何更新、构建和上传它们！
 
-当然，本文也只是一些皮毛，当你真正参与到 AOSC OS 的维护中，面对更复杂的构建系统或大量需要更新的软件包时，你就会意识到，还有许多技能有待你去探索和挖掘。请参考 [Way to AOSC OS Maintainence: Advanced Techniques](/en/dev-sys-advanced-techniques) 这篇文。
+当然，本文也只是一些皮毛，当你真正参与到 AOSC OS 的维护中，面对更复杂的构建系统或大量需要更新的软件包时，你就会意识到，还有许多技能有待你去探索和挖掘。请参考 [软件包维护入门：进阶](/en/dev-sys-advanced-techniques) 这篇文。
