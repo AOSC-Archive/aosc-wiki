@@ -2,7 +2,7 @@
 title: 软件包维护入门：基础
 description: 了解 AOSC OS 打包流程
 published: true
-date: 2020-08-02T15:33:30.135Z
+date: 2020-08-03T01:40:15.143Z
 tags: 
 editor: markdown
 ---
@@ -37,7 +37,7 @@ AOSC OS 采用的是半滚动更新模型，通常每个发布周期都为时三
 
 `explosive` 则像一个实验田，通常用于放置不适合当前周期的软件包和更新。在 `testing-proposed` 冻结期间，开发人员可能会提前向这一分支推送更新，因为 `explosive` 会在新周期开始时被合并到 `testing-proposed`。
 
-# 配置开发环境
+# 配置打包环境
 
 首先我们要在电脑上安装 `ciel`。在 AOSC OS，直接在官方软件仓库获取并安装即可。Ciel 管理的是标准化的 AOSC OS 构建环境（或者说 [BuildKit](https://aosc.io/downloads/#buildkit)），而构建的流程不一定要在 AOSC OS 上进行，如果你在使用 Arch Linux，你也可以在 AUR 获取 Ciel。
 
@@ -72,15 +72,15 @@ ciel load-tree # By default, ciel will load the official tree.
 
 # 构建我们的第一个软件包！
 
-Now that we have a build environment set-up, we can try to build a package that is already in the tree. Let's start with a relatively trivial one, `extra-multimedia/flac`.
+好了现在我们已经把打包环境配置好，我们可以尝试构建一个已经在树中的包。让我们从一个相对简单的例子开始，`extra-multimedia/flac`。
 
-Before that, we need to create a Ciel instance. It is recommended to use separate instances for different branches. Run:
+在此之前，我们需要创建一个 Ciel 实例。建议对不同的分支使用不同的实例： 
 
 ``` bash
 ciel add stable # Since we are going to build on stable
 ```
 
-And make sure we are actually on the stable branch.
+确保我们在 `stable` 分支上。 
 
 ``` bash
 cd TREE
@@ -88,13 +88,12 @@ git checkout stable
 cd ..
 ```
 
-Then, we need to configure Ciel to use the correct repositories. In order to prevent incorrect dependencies, the build environment should use packages that matches the branch (with the exception of `stable-proposed`, which will only use dependencies from `stable`). For example, we need `stable` repository to build `stable` tree, and `testing`, `stable-proposed`, and `stable` to build `testing` packages.
+然后，我们需要配置 Ciel 以使用正确的软件仓库。为了避免产生错误的依赖关系，打包环境应该使用与分支匹配的包（`stable-proposed` 只使用来自 `stable` 的依赖项，是一个例外）。比方说，我们需要 `stable` 软件仓库来构建 `stable` 软件包，需要`testing`、`stable-proposed` 和 `stable` 来构建 `testing` 软件包。 
 
 ``` bash
 ciel config -i stable
 ```
-
-First enter your info, whether to enable DNSSEC. And when ciel ask if you want to edit `source.list`, say yes, and modify.
+首先输入你的信息，选择是否启用 DNSSEC，然后 Ciel 会询问你是否编辑 `source.list`，选择是并编辑。
 
 ``` INI
 # For building stable packages
@@ -108,14 +107,14 @@ deb https://repo.aosc.io/debs stable main
 # And you get the idea.
 ```
 
-Now we can actually build the package\! Simply type:
+现在我们可以正式开始构建我们的软件包啦！只需要执行：
 
 ``` bash
 ciel build -i stable flac
 # -i is used to select the instance used to build
 ```
 
-If the build completes without error, and a `Build Summary` is present, congratulations on your first successful build\! You should be able to find the generated deb inside `OUTPUT/debs`.
+如果没有报错出现，并能见到 `Build Summary`，那么祝贺你成功构建了你的第一个软件包！现在你应该能在 `OUTPUT/debs` 看到构建好的 DEB 包。
 
 # 添加一个新的软件包
 
