@@ -2,7 +2,7 @@
 title: 软件包维护入门：基础
 description: 了解 AOSC OS 打包流程
 published: true
-date: 2020-08-03T01:40:15.143Z
+date: 2020-08-03T03:41:37.119Z
 tags: 
 editor: markdown
 ---
@@ -17,9 +17,9 @@ editor: markdown
       - 用于管理 systemd-nspawn(1) 容器。
   - [ACBS](https://github.com/AOSC-Dev/acbs/)
       - 用于管理软件包树（例如我们的 [aosc-os-abbs](https://github.com/AOSC-Dev/aosc-os-abbs)）。
-      - 可以调用 Autobuild3 以读取并构建指定的软件包。
+      - 可以调用 Autobuild3 以读取 PKGBUILD 并构建指定的软件包。
   - [Autobuild3](https://github.com/AOSC-Dev/autobuild3/)
-      - 用于读取软件信息并运行构建脚本。
+      - 用于读取软件包的 PKGBUILD 并运行构建脚本。
   - [pushpkg](https://github.com/AOSC-Dev/scriptlets/tree/master/pushpkg)
       - 将构建好的软件包推送到官方软件仓库。 
 
@@ -72,7 +72,7 @@ ciel load-tree # By default, ciel will load the official tree.
 
 # 构建我们的第一个软件包！
 
-好了现在我们已经把打包环境配置好，我们可以尝试构建一个已经在树中的包。让我们从一个相对简单的例子开始，`extra-multimedia/flac`。
+好了现在我们已经把打包环境配置好，我们可以尝试构建一个已有的包。让我们从一个相对简单的例子开始，`extra-multimedia/flac`。
 
 在此之前，我们需要创建一个 Ciel 实例。建议对不同的分支使用不同的实例： 
 
@@ -118,11 +118,12 @@ ciel build -i stable flac
 
 # 添加一个新的软件包
 
-But surely you won't be satisfied by simply building existing packages, right? Here we will discover how to construct a new package from scratch.
+已经掌握了如何构建一个已有的软件包？接下来我们再进一步，尝试从零开始构建一个软件包。
 
-Dive into the `TREE` folder, you will find a lot of categories of folders, including some beginning with `base-` and `core-` prefixes, as well as some with `extra-`. These folders are for organizing purposes, and inside them you will find the various packages (and their build specifications) organised in each of their own directory.
+进入 `TREE` 文件夹，你会看到很多文件夹，包括一些以 `base-` 和 `core-` 开头的文件夹，还有一些以 `extra-` 开头的文件夹，我们使用这些文件夹给软件包分类。在文件夹里面，你会发现各种包及其 PKGBUILD 文件。 
 
-We will use `i3` as an example. This package can be found at `TREE/extra-wm/i3` for obvious reasons. Upon entering the directory, you should see a file structure as follows:
+例如说 `i3`，这个包很显然能在 `TREE/extra-wm/i3` 被找到。进入这个目录之后，应该能见到以下的目录树：
+
 ``` bash
     .
     ├── autobuild
@@ -142,11 +143,11 @@ We will use `i3` as an example. This package can be found at `TREE/extra-wm/i3` 
     └── spec
 ```
 
-We will go through which each file is for.
+我们会进一步探索这些目录。
 
 ## `spec`
 
-This file is responsible for telling `acbs` where to download the source file, and the package's version and revision. A basic `spec` file should look like this:
+这个文件会告诉 `acbs` 在什么地方下载源码文件，并声明软件包的版本号和发布号。一个 `spec` 文件看起来应该是这样子的：
 
 ``` bash
 VER=4.17.1  # Version of the software.
@@ -155,27 +156,27 @@ SRCTBL="https://i3wm.org/downloads/i3-$VER.tar.bz2" # Download address for the s
 CHKSUM="sha256::1e8fe133a195c29a8e2aa3b1c56e5bc77e7f5534f2dd92e09faabe2ca2d85f45" # Checksum of the source tarball.
 ```
 
-One thing worth noting is the revision number. You can ignore this line if you are creating a new package, but sometimes (like applying an emergency security patch), the version number is not changed, but we still need to inform the package manager on users computer that there is an update available. In these circumstances, just increase the `$REL` variable by 1.
+有一点值得注意的是发布号。如果你在创建一个新的包，你可以忽略这一行，但在某些情形下（例如应用一个安全补丁），版本号不会更改，但我们仍然需要通知用户电脑上的包管理器有可用的更新。在这种情况下，只需将 `$REL` 变量增加 1。
 
 ## `autobuild/`
 
-This is the directory where all the `Autobuild3` scripts and definitions live. `Autobuild3` is a sophisticated build system that can automatically determine a series of build-time processes, like which build system to use, which build parameter to use, and so on.
+这是所有 `Autobuild3` 脚本和声明文件所在的目录。`Autobuild3` 是一个复杂的构建系统，它可以自动规划构建的流程，比如使用哪个构建系统，使用哪个构建参数等等。 
 
 ## `autobuild/defines`
 
-This file contains the core configuration like:
+这个文件包含了一些核心的配置项，例如：
 
-  - `PKGNAME` : Package name.
-  - `PKGDES` : Package description.
-  - `PKGSEC` : Section (or category) where the package belongs to.
-  - `PKGDEP` : Package dependencies.
-  - `PKGCONFL` : Package conflicts.
-  - `BUILDDEP` : Build dependencies (packages which are required during build-time, but not for run-time).
-  - `PKGRECOM` : Recommended dependencies, installed automatically, but could be removed by user discretion.
+  - `PKGNAME` : 软件的名称。
+  - `PKGDES` : 软件的描述。
+  - `PKGSEC` : 软件的类别。
+  - `PKGDEP` : 软件的生成和运行时必须先行安装的软件列表。
+  - `PKGCONFL` : 与软件有冲突关系的软件列表。
+  - `BUILDDEP` : 仅在软件生成时需要的软件包列表。
+  - `PKGRECOM` : 软件的生成和运行时推荐先行安装的软件列表。
 
-These are only the most common configuration entries. There are much more configurations, but if the software is fairly standard, these configuration should be enough. Other information like which C compiler flags to use, which build system to use, can be filled automatically by `Autobuild3`.
+这些只是最常见的配置项。有更多的配置项，但对于大部分软件这些配置就足够了。`Autobuild3` 可以自动填充其他信息，比如使用哪个 C 编译器标志，使用哪个构建系统。
 
-Here is a basic example taken from `TREE/extra-multimedia/i3`:
+这是 `TREE/extra-multimedia/i3` 的配置：
 
 ``` bash
 PKGNAME=i3
@@ -190,19 +191,17 @@ PKGDES="Improved tiling WM (window manager)"
 PKGCONFL="i3-gaps"
 ```
 
-Notice here that you can actually write bash logic inside `defines`. This is useful when adding platform-specific flags or dependencies, but this is **NO LONGER** recommended, and will be prohibited in the future. For adding platform specific info, use `$VAR__$ARCH`.
+实际上，你可以在 `defines` 中写 Bash 逻辑。这在为特定平台添加标志或依赖项时很有用，但我们**不建议**你这样做，将来也可能直接禁止这样做。要为特定平台添加信息，请使用 `$VAR__$ARCH`。 
 
-For a complete list of available parameters, visit [Wiki for Autobuild3](https://github.com/AOSC-Dev/aosc-os-abbs/wiki/Autobuild3).
+要查看完整的可用配置项，请查看 [Autobuild3 维基](https://github.com/AOSC-Dev/aosc-os-abbs/wiki/Autobuild3)。
 
 ## `autobuild/prepare`
 
-This file is the script that will be executed before the build process begins. Usually it is used to prepare files or set environment variables used in the build process.
+此文件是将在构建过程开始之前执行的脚本。通常用于文件准备或设置构建过程中需要到的环境变量。
 
 ## `autobuild/patches/`
 
-This is a directory containing all the patches that will be applied to the source codes before the build.
-
-Simple as dropping it in. :)
+这个目录用于放置所有需要在构建开始前添加到源码的补丁。只需要将补丁丢进这个目录就行了。:)
 
 # 一个完整的例子：`light`
 
