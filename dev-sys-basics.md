@@ -2,7 +2,7 @@
 title: Intro to Package Maintenance: Basics
 description: Introductory Guide to AOSC OS Packaging
 published: true
-date: 2020-07-08T05:34:21.005Z
+date: 2020-08-03T12:01:46.691Z
 tags: 
 editor: markdown
 ---
@@ -243,7 +243,7 @@ PKGSEC=x11
 PKGDES="Program to easily change brightness on backlight-controllers."
 ```
 
-And we are done\! We can now head back to the base directory of the Ciel environment (`~/ciel`, and run the following command:
+And we are done\! We can now head back to the base directory of the Ciel environment (`~/ciel`), and run the following command:
 
 ``` bash
 ciel build -i stable light
