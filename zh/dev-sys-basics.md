@@ -2,7 +2,7 @@
 title: 软件包维护入门：基础
 description: 了解 AOSC OS 打包流程
 published: true
-date: 2020-08-03T12:37:30.475Z
+date: 2020-08-04T02:13:57.919Z
 tags: 
 editor: markdown
 ---
@@ -57,7 +57,7 @@ ciel load-os
 ciel load-os PATH_TO_BUILDKIT
 ```
 
-接下来我们强烈推荐你将 BuildKit 更新到最新状态（如果你想把你的工作发布到 AOSC OS 的官方软件源里面的话，这一步是必须的）。
+接下来我们强烈推荐你将 `BuildKit` 更新到最新状态（如果你想把你的工作发布到 AOSC OS 的官方软件源里面的话，这一步是必须的）。
 
 ``` bash
 ciel update-os
