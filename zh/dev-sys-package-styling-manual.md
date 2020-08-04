@@ -2,7 +2,7 @@
 title: AOSC OS 软件包样式指南
 description: 过好生活，打美包儿包儿
 published: true
-date: 2020-08-04T03:13:17.895Z
+date: 2020-08-04T03:14:32.424Z
 tags: dev-sys
 editor: markdown
 ---
@@ -246,7 +246,7 @@ Where:
 
 Likewise, when including patch(es) from other distributions, they should also be renamed in accordance to the guidelines above.
 
-# File Placements
+# 文件放置
 
 AOSC OS, like many other Linux Distributions, expect packaged files to be located in appropriate directories. Please reference the *non-comprehensive* table below for our standard of file placements.
 
