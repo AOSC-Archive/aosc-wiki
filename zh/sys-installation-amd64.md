@@ -2,7 +2,7 @@
 title: Installation/AMD64 (简体中文)
 description: 在 AMD64/x86_64 设备安装 AOSC OS
 published: true
-date: 2020-06-20T03:38:29.111Z
+date: 2020-08-04T15:39:12.481Z
 tags: sys-installation, 安装指南
 editor: markdown
 ---
@@ -237,7 +237,7 @@ Tarball 的更新周期比较长，所以我们建议在启动之前更新你的
 时区信息储存在 `/usr/share/zoneinfo/<region>/<city>`，在这里以 `Asia/Shanghai` 作为例子：
 
 ```
-# ln -sv /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+# ln -svf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 ```
 
 ## 设置系统语言
