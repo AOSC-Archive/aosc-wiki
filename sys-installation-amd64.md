@@ -2,7 +2,7 @@
 title: Installation/AMD64
 description: Installing AOSC OS on AMD64/x86-64 Devices
 published: true
-date: 2020-07-06T03:42:22.041Z
+date: 2020-08-04T15:38:26.588Z
 tags: sys-installation
 editor: markdown
 ---
@@ -234,7 +234,7 @@ Although strongly discouraged, you can enable the `root` user by setting a passw
 Timezone info are stored in `/usr/share/zoneinfo/<region>/<city>`.
 
 ```
-# ln -sv /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+# ln -svf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 ```
 
 ## Setting System Language
