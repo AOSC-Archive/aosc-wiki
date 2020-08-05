@@ -2,7 +2,7 @@
 title: AOSC OS 软件包样式指南
 description: 过好生活，打美包儿包儿
 published: true
-date: 2020-08-05T12:48:44.384Z
+date: 2020-08-05T14:27:31.320Z
 tags: dev-sys
 editor: markdown
 ---
@@ -147,7 +147,7 @@ SUBDIR=.
 
 ## 运行时依赖
 
-运行时依赖的填写不应只考虑软件能否运行，只要是软件链接到的包都应该写进去。例如填写 `extra-multimedia/ario` 的 `$PKGDEP` 除了填写：
+运行时依赖的选择不应只考虑软件能否运行，只要是软件链接到的包都应该写进去。例如填写 `extra-multimedia/ario` 的 `$PKGDEP` 除了填写：
 
 `avahi, curl, dbus-glib, gnutls, hicolor-icon-theme, libglade, libmpdclient, libnotify, libsoup, libunique, taglib, xdg-utils`
 
@@ -163,26 +163,25 @@ SUBDIR=.
 
 ## 构建时依赖
 
-Build-time dependencies should written in such a way that the package will compile, install, and package successfully in the BuildKit build environment. Given this, any packages included in the BuildKit environment will not need to be included in `$BUILDDEP`. For example...
+构建时依赖的选择应该要保证软件包在 BuildKit 构建环境中正常编译、安装和打包。BuildKit 环境中已经包含的任何包都不需要再包含在 `$BUILDDEP` 中，例如：
 
-- CMake (`cmake`) is required for building `extra-devel/extra-cmake-modules`, however, `cmake` is an integral part of BuildKit. Therefore, packagers are not required to include `cmake` in `$BUILDDEP`.
-- Bazel (`bazel`) is required fo building `extra-scientific/tensorflow`. In this case, `bazel` must be included in `$BUILDDEP`, as `bazel` is not installed in BuildKit as standard.
+- 构建 `extra-devel/extra-cmake-modules` 需要 CMake（`CMake`）。但是，`cmake` 已经是 BuildKit 包含的一部分。因此，打包程序不需要在 `$BUILDDEP` 中包含 `cmake`。
+- 构建 `extra-scientific/tensorflow` 需要 Bazel（`bazel`）。因为 `bazel` 不被包含在 BuildKit 中，所以 `$BUILDDEP` 必须填写 `bazel`。
 
-# 软件包特性
+# 软件包功能
 
-When packaging for AOSC OS, please work in accordance to our [distribution feature guide](/sys-is-aosc-os-right-for-me). The table below digests some of the common considerations when building packages for AOSC OS.
+在为 AOSC OS 打包时，请遵循我们的 [发行版特性清单](/sys-is-aosc-os-right-for-me)。下表列出了打包者需要注意的一些事项。 
 
-| Considerations | Appropriate Actions |
+| 项目 | 应当采取的措施 |
 |-------------------------|---------------------------------|
-| Features | Enable all features, unless a feature is unmaintained, or violates any of the other considerations in this table. |
-| Language packs (dictionaries, locale data, etc.) | Language packs must be included in the same package as the main executables, etc. | 
-| Splitting packages | Packages are to be remained intact, unless package comes in multiple flavours, or otherwise agreed upon by the developer majority. |
-| Telemetry | All telemetry functionalities must be stripped or disabled by default (opt-in), packages that do not function without such feature should only be accepted on a case-by-case basis (rejected by default). |
-| Update checking | All update checking (notification, downloading, etc.) functionalities must be stripped, packages that do not function without such feature should only be accepted on a case-by-case basis (rejected by default). |
+| 功能与特性 | 启用所有功能，除非某个功能未被维护，或违反了此表中的任何其他注意事项 |
+| 语言包 | 语言包必须与主要的可执行文件放置在同一个软件包中 | 
+| 分包 | 除非某个软件有多个派生，或者得到大多数开发者的同意，否则不能拆分软件包 |
+| 遥测 | 默认情况下，必须删除或禁用所有遥测功能，非特殊情况不接受无法删除或禁用遥测功能的软件包 
 
 # 脚本编写
 
-While most packages could be built with one of the pre-defined [Autobuild Types](https://github.com/AOSC-Dev/autobuild3/tree/master/build) (`$ABTYPES`), and that patches could be applied automatically from the `autobuild/patches` directory (or via a pre-defined `series` file to specify patch order), some packages require manual preparation, patching, and build. This section is dedicated to `prepare`, `patch`, `build`, and `beyond` under the `autobuild/` directory.
+大多数软件包可以使用 [Autobuild 内置的类型](https://github.com/AOSC-Dev/autobuild3/tree/master/build)（`$ABTYPES`）进行构建，通常补丁也只需要放在 `autobuild/patches` 目录就能被自动添加（还可以通过定义 `series` 指定打补丁的顺序），但是有些程序包依然需要手工的准备、打补丁和构建。本节专门介绍 `autobuild/` 目录下的 `prepare`、`patch`、`build` 和 `beyond`。
 
 A general rule of thumb is to write such scripts secure (quoted) variables, sufficient comments, error control, architectural considerations, progression report, ... Writing easy-to-read and reliable build scripts is not easy, and the table below aims to aid you with making good scripting decisions.
 
