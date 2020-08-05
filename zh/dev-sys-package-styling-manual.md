@@ -2,7 +2,7 @@
 title: AOSC OS 软件包样式指南
 description: 过好生活，打美包儿包儿
 published: true
-date: 2020-08-05T12:46:08.859Z
+date: 2020-08-05T12:48:44.384Z
 tags: dev-sys
 editor: markdown
 ---
@@ -153,7 +153,7 @@ SUBDIR=.
 
 以通过显式和隐式依赖关系，允许系统环境满足运行 `/usr/bin/ario` 的条件。
 
-根据 [E432](/dev-sys-qa-issue-codes#class-4-dependencies) 的规定，所有 ELF 级别的直接依赖项都应该被写进 `$PKGDEP`，这意味着你还需要为 `$PKGDEP` 补上一个 `dbus`。
+根据 [E432](/en/dev-sys-qa-issue-codes#class-4-dependencies) 的规定，所有 ELF 级别的直接依赖项都应该被写进 `$PKGDEP`，这意味着你还需要为 `$PKGDEP` 补上一个 `dbus`。
 
 截至 2019 年 3 月 16 日，位于稳定仓库 `amd64` 结构的软件包中 42.4%（1592/3705）有着依赖项不完整的问题。
 
