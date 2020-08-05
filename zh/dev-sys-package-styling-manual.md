@@ -2,7 +2,7 @@
 title: AOSC OS 软件包样式指南
 description: 过好生活，打美包儿包儿
 published: true
-date: 2020-08-04T03:14:32.424Z
+date: 2020-08-05T10:21:01.909Z
 tags: dev-sys
 editor: markdown
 ---
@@ -84,35 +84,35 @@ Executed Packager <suffering@pakreq.work>
 
 ## 源码文件
 
-Source variables define the package's source(s), and in the case of a VCS (version control system) based source, define in addition a specific source snapshot.
+源码文件变量定义了软件源码的下载地址，对于使用了版本控制系统的软件，还额外定义了选取的快照。
 
 ### SRCTBL=
 
-The `SRCTBL=`, or `$SRCTBL` variable is used when a package's source is released in the form of a single compressed archive. Requirements and recommendations are presented in the table below.
+`SRCTBL=` 或 `$SRCTBL` 变量适用于以单个压缩包的形式发布的软件包，要求（或建议）遵守的规则如下：
 
-| Criteria | Required/Recommended | Appropriate Actions |
+| 项目 | 级别 | 应当采取的措施 |
 |-------------|----------------------------------------|---------------------------------|
-| URI schemes | Recommended | Use Hypertext Transfer Protocol Secure (HTTPS, https://) where possible. Avoid non-secure connections (http://) and plain FTP (File Transfer Protocol, ftp://). |
-| Source format | Recommended | Use XZ-compressed Tar-Archives (.tar.xz) where possible, other formats are considered appropriate. Avoid the inefficient BZip2-compressed Tar-Archives (.tar.bz2) where possible. |
-| Version substitutions | Required | Source links must replace all versions with substitutions from the `$VER` variable (see above). `SRCTBL=` must not be defined with hard-coded version(s). |
-| Versioned tarballs | Required | Source archives (tarballs) must be versioned in order to ensure consistency. |
+| 统一资源标识符 | 建议 | 尽可能使用 HTTPS（`https://`），避免使用 HTTP（`http://`）和 FTP（`ftp://`）。 |
+| 源码包格式 | 建议 | 尽可能使用基于 XZ 压缩方案的压缩包（`.tar.xz`），其它格式也可接受，但尽量避免基于 BZip2 压缩方案的压缩包（`.tar.bz2`）。 |
+| 版本替换 | 要求 | 源码包地址中的所有软件包版本号必须替换为 `$VER` 变量。`SRCTBL=` 中不应该有硬编码的版本号。 |
+| 源码包版本号 | 要求 | 为了保证可持续性，源码包文件必须要有版本号。  |
 
 ### CHKSUM=
 
-The `CHKSUM=`, or `$CHKSUM` variable is used in conjunction with `$SRCTBL`, to define the proper checksum for specific source archive(s). The format is as follows.
+`CHKSUM=` 或 `$CHKSUM` 变量和 `$SRCTBL` 变量一起使用，以定义源码包应有的校验和，格式如下：
 
 ```
 CHKSUM="$ALGORITHM::$CHECKSUM"
 ```
 
-Where...
+其中...
 
-- `$ALGORITHM` is to be replaced with specific hashing algorithms, written in lower-case. For instance, `sha256`.
-- `$CHECKSUM` is to be replaced with the corresponding hash checksum of the aforementioned algorithm.
+- `$ALGORITHM` 应该被替换成计算校验和所使用的哈希算法，例如 `sha256`（必须小写所有字母）。
+- `$CHECKSUM` 应该被替换为使用上述哈希算法得到的源码包的校验和。
 
-For descriptions of different cryptographic hash algorithms, and for identification of insecure (and therefore unacceptable) algorithms, refer to this [Wikipedia chapter](https://en.wikipedia.org/wiki/Cryptographic_hash_function#Cryptographic_hash_algorithms) under "Cryptographic Hash Function".
+想要进一步了解哈希算法，请参阅 [Wikipedia 的相关页面](https://en.wikipedia.org/wiki/Cryptographic_hash_function#Cryptographic_hash_algorithms)。
 
-`$CHKSUM` will become a required value in the near future.
+`$CHKSUM` 会在不久的将来变为必须填写的变量。
 
 ### 版本控制系统变量
 
