@@ -2,7 +2,7 @@
 title: AOSC OS 软件包样式指南
 description: 过好生活，打美包儿包儿
 published: true
-date: 2020-08-05T10:21:01.909Z
+date: 2020-08-05T12:46:08.859Z
 tags: dev-sys
 editor: markdown
 ---
@@ -65,9 +65,9 @@ Executed Packager <suffering@pakreq.work>
 
 软件包版本变量定义了软件包的版本号和修订号。
 
-### VER=
+### VER
 
-`VER=` 或 `$VER` 变量定义软件包的主版本号。在为 AOSC OS 打包时，打包者应遵守下列规则。
+`$VER` 变量定义软件包的主版本号。在为 AOSC OS 打包时，打包者应遵守下列规则。
 
 | 情形 | 应当采取的措施 | 举例 |
 |-------------------|-------------------------------------|-------------------|
@@ -78,28 +78,28 @@ Executed Packager <suffering@pakreq.work>
 | 版本号带有发布阶段标记（`alpha`、`beta`、`rc`） | 将字母转为小写，除 `rc` 外只保留第一个字母。将字母相邻的标点移除，并加一个波浪号（`~`）。 | Golden Dict 1.5.0-RC2 -> `VER=1.5.0~rc2` |
 | 版本号基于日期或版本控制系统的提交哈希值 | 直接写日期（不要包含 `git` 或 `svn` 等），但要确保源码包始终能被获取，参考 `GITCO`| Shadowsocks 5ff694b2c2978b432918dea6ac104706b25cbf48 -> `VER=20181219` |
 
-### REL=
+### REL
 
-`REL=` 或 `$REL` 变量定义软件包的修订号。此变量只应使用一个正整数作为其值。 
+`$REL` 变量定义软件包的修订号。此变量只应使用一个正整数作为其值。 
 
 ## 源码文件
 
-源码文件变量定义了软件源码的下载地址，对于使用了版本控制系统的软件，还额外定义了选取的快照。
+源码文件变量定义了软件源码的下载地址。对于使用了版本控制系统的软件，还额外定义了选取的快照。
 
-### SRCTBL=
+### SRCTBL
 
-`SRCTBL=` 或 `$SRCTBL` 变量适用于以单个压缩包的形式发布的软件包，要求（或建议）遵守的规则如下：
+`$SRCTBL` 变量适用于以单个压缩包的形式发布的软件包，要求（或建议）遵守的规则如下：
 
 | 项目 | 级别 | 应当采取的措施 |
 |-------------|----------------------------------------|---------------------------------|
-| 统一资源标识符 | 建议 | 尽可能使用 HTTPS（`https://`），避免使用 HTTP（`http://`）和 FTP（`ftp://`）。 |
-| 源码包格式 | 建议 | 尽可能使用基于 XZ 压缩方案的压缩包（`.tar.xz`），其它格式也可接受，但尽量避免基于 BZip2 压缩方案的压缩包（`.tar.bz2`）。 |
-| 版本替换 | 要求 | 源码包地址中的所有软件包版本号必须替换为 `$VER` 变量。`SRCTBL=` 中不应该有硬编码的版本号。 |
-| 源码包版本号 | 要求 | 为了保证可持续性，源码包文件必须要有版本号。  |
+| 统一资源标识符 | 建议 | 尽可能使用 HTTPS（`https://`），避免使用 HTTP（`http://`）和 FTP（`ftp://`） |
+| 源码包格式 | 建议 | 尽可能使用基于 XZ 压缩方案的压缩包（`.tar.xz`），其它格式也可接受，但尽量避免基于 BZip2 压缩方案的压缩包（`.tar.bz2`） |
+| 版本替换 | 要求 | 源码包地址中的所有软件包版本号必须替换为 `$VER` 变量。`$SRCTBL` 不应该有硬编码的版本号 |
+| 源码包版本号 | 要求 | 为了保证可持续性，源码包文件必须要有版本号 |
 
-### CHKSUM=
+### CHKSUM
 
-`CHKSUM=` 或 `$CHKSUM` 变量和 `$SRCTBL` 变量一起使用，以定义源码包应有的校验和，格式如下：
+`$CHKSUM` 变量和 `$SRCTBL` 变量一起使用，以定义源码包应有的校验和，格式如下：
 
 ```
 CHKSUM="$ALGORITHM::$CHECKSUM"
@@ -116,22 +116,22 @@ CHKSUM="$ALGORITHM::$CHECKSUM"
 
 ### 版本控制系统变量
 
-VCS (Version Control System) based sources may use any one of the each combinations.
+对于使用版本控制系统的软件，如果不对各个版本提供单个压缩包，可以根据实际情况，使用下面这些变量组合中的任何一种。
 
-| VCS | Required Variables | Additional Notes |
+| 版本控制系统 | 需要的变量 | 备注 |
 |--------|-------------------------------|---------------------------|
-| Bazaar (BZR) | `BZRSRC=`, or `$BZRSRC`, which defines the Bazaar repository; `BZRCO=`, or `$BZRCO`, which defines the specific Bazaar revision. | |
-| Git | `GITSRC=`, or `$GITSRC`, which defines the Git repository; `GITCO=`, or `$GITCO`, which defines the specific Git "checkout(s)" (a commit, or a tag) | Use Git over Hypertext Transfer Protocol Secure (HTTPS, https://) where possible. |
-| Mercurial (HG) | `HGSRC=`, or `$HGSRC`, which defines the Meruciral repository. | Avoid using Mecurial source(s) where possible, as support for checking out a specific revision is not yet implemented. |
-| Subversion (SVN) | `SVNSRC=`, or `$SVNSRC`, which defines the SVN repository; `SVNCO=`,  or `$SVNCO`, which defines the specific SVN checkout(s) (revision). | |
+| Bazaar（BZR） | `$BZRSRC`（用于指定 Bazaar 仓库）以及 `$BZRCO`（用于指定版本） | |
+| Git | `$GITSRC`（用于指定 Git 仓库）以及 `$GITCO`（用于指定检出，如提交或标签）| 尽可能使用 HTTPS 协议（`https://`） |
+| Mercurial（HG） | `$HGSRC`（用于指定 Mercurial 仓库） | 尽可能避免选用 Mecurial 仓库作为软件包源码来源，因为我们还不支持检出到特定提交 |
+| Subversion（SVN） | `$SVNSRC`（用于指定 SVN 仓库）以及 `$SVNCO`（用于指定检出，如版本） | |
 
 ### DUMMYSRC=
 
-The `DUMMYSRC=`, or `$DUMMYSRC` variable is used when a package is empty (meta package), or uses custom-generated sources. This variable takes a bolean value.
+当一个软件包是虚包或元包，或者你希望自定义其源码来源时使用 `$DUMMYSRC` 变量。该变量接受一个布尔值。
 
 ### 其它变量
 
-Other variables may be used, so long as they are not any of the variables listed above. These variables are often used to aid with manipulating `$SRCDIR`, here's the `spec` file of `extra-devel/netbeans`, for instance.
+你还可以定义其它上面没有提到的变量，这些变量通常用于辅佐 `$SRCDIR` 变量，可以参考 `extra-devel/netbeans` 的 `spec` 文件。
 
 ```
 VER=8.2
@@ -143,25 +143,25 @@ SUBDIR=.
 
 # 依赖项
 
-In the context of AOSC OS packaging, dependencies are arranged in two categories: run-time depedencies, and build-time dependencies. These dependencies are defined by `PKGDEP=` (`$PKGDEP`), and `BUILDDEP=` (`$BUILDDEP`), respectively.
+在 AOSC OS，软件包的依赖项通常被分为两类，一类是运行时依赖，一类是构建时依赖。前者使用 `$PKGDEP` 变量，后者使用 `$BUILDDEP` 变量。
 
-## Run-time Dependencies
+## 运行时依赖
 
-Run-time dependencies should be written in such a way that, not only does the package function (programs run, libraries link, etc.), all linkages to the package should also be included. In the case of `extra-multimedia/ario`, for instance, not only should `$PKGDEP` contain the following dependencies:
+运行时依赖的填写不应只考虑软件能否运行，只要是软件链接到的包都应该写进去。例如填写 `extra-multimedia/ario` 的 `$PKGDEP` 除了填写：
 
 `avahi, curl, dbus-glib, gnutls, hicolor-icon-theme, libglade, libmpdclient, libnotify, libsoup, libunique, taglib, xdg-utils`
 
-Which, through explicit and implicit dependencies, allows for a system environment that contains sufficient runtime for the program `/usr/bin/ario` to function.
+以通过显式和隐式依赖关系，允许系统环境满足运行 `/usr/bin/ario` 的条件。
 
-By the quality assurance standard, defined in code [E432](/dev-sys-qa-issue-codes#class-4-dependencies), all direct dependencies on the ELF level should also be included in `$PKGDEP`, and thus the addition of `dbus` to `$PKGDEP` is necessary.
+根据 [E432](/dev-sys-qa-issue-codes#class-4-dependencies) 的规定，所有 ELF 级别的直接依赖项都应该被写进 `$PKGDEP`，这意味着你还需要为 `$PKGDEP` 补上一个 `dbus`。
 
-As of March 16th, 2019, 42.4% (1592/3705) of all packages provided in the Stable channel for `amd64` has the issue of insufficient ELF dependencies.
+截至 2019 年 3 月 16 日，位于稳定仓库 `amd64` 结构的软件包中 42.4%（1592/3705）有着依赖项不完整的问题。
 
-### Additional Notes
+### 备注
 
-- When a package has a sole dependency on the GCC Runtime (`gcc-runtime`) or the GNU C Library (`glibc`), these dependencies should be included in `$PKGDEP`.
+- 当一个软件包仅仅直接依赖 GCC Runtime（`gcc-runtime`）或 GNU C Library（`glibc`），这些依赖也应该写入 `$PKGDEP`。
 
-## Build-time Dependencies
+## 构建时依赖
 
 Build-time dependencies should written in such a way that the package will compile, install, and package successfully in the BuildKit build environment. Given this, any packages included in the BuildKit environment will not need to be included in `$BUILDDEP`. For example...
 
