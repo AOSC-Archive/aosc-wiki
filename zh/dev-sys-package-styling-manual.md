@@ -2,7 +2,7 @@
 title: AOSC OS 软件包样式指南
 description: 过好生活，打美包儿包儿
 published: true
-date: 2020-08-05T14:27:31.320Z
+date: 2020-08-06T05:52:36.675Z
 tags: dev-sys
 editor: markdown
 ---
@@ -183,43 +183,44 @@ SUBDIR=.
 
 大多数软件包可以使用 [Autobuild 内置的类型](https://github.com/AOSC-Dev/autobuild3/tree/master/build)（`$ABTYPES`）进行构建，通常补丁也只需要放在 `autobuild/patches` 目录就能被自动添加（还可以通过定义 `series` 指定打补丁的顺序），但是有些程序包依然需要手工的准备、打补丁和构建。本节专门介绍 `autobuild/` 目录下的 `prepare`、`patch`、`build` 和 `beyond`。
 
-A general rule of thumb is to write such scripts secure (quoted) variables, sufficient comments, error control, architectural considerations, progression report, ... Writing easy-to-read and reliable build scripts is not easy, and the table below aims to aid you with making good scripting decisions.
+编写这样的脚本的最佳实践通常包括给变量加引号、在合适的地方加注释、有周全的异常处理、考虑各个架构的差异、提供进展报告等等。编写既易于阅读又可靠的构建脚本并不容易，下表旨在帮助你写出这样的脚本。
 
-| Criteria | Required/Recommended | Explanations |
+| 项目 | 级别 | 应当采取的措施 |
 |-------------|----------------------------------------|----------------------|
-| Autobuild3 Build Templates (`ABTYPE`) | Required | Packager should utilise [Autobuild Types](https://github.com/AOSC-Dev/autobuild3/tree/master/build) where possible, without using `autobuild/build` or `ABTYPE=self`. |
-| Error Handling | Required | Build errors should be captured and handled appropriately. By default, errors are handled automatically by Autobuild3 and will result in aborted build, however, `autobuild/build` is not yet covered due to a bug in Autobuild3. |
-| Progression report | Requried | Progress should be reported by appropriately employing `abinfo` and `abwarn` wrappers, this is required for packages utilising the `autobuild/build`, or `ABTYPE=self`. |
-| Citations and References | Required | When adapting/copying build scripts from other distributions, packager must include a comment indicating the source(s) of the build script(s) |
-| Secure Variables | Required | Variables should be quoted, for example, all `"$SRCDIR"` and `"$PKGDIR"`. |
-| File Directories | Required | All files manually installed from the source tree must be referenced with absolute paths, for instance, `"$SRCDIR"/desktop/foo.desktop`. |
-| Architectural Considerations | Recommended | While it is convenient to write build scripts adapted to the `amd64` port, it is important to note that AOSC OS builds packages for more than five other architectures using the same scripts. |
-| Comments | Recommended | Good scripts tend to be well commented. However, comments can be replaced with progression report clauses, see "Progression report". |
+| Autobuild3 构建模板（`ABTYPE`） | 要求 | 打包应尽可能使用 [Autobuild Types](https://github.com/AOSC-Dev/autobuild3/tree/master/build)，而不使用 `autobuild/build` 或 `ABTYPE=self` |
+| 异常处理 | 要求 | 异常应被及时捕获并处理。默认情况下，Autobuild3 可以自动处理异常并中止构建，但是由于 Autobuild3 的一处漏洞，这一机制并不支持 `autobuild/build` |
+| 进展报告 | 要求 | 应该通过适当地使用 `abinfo` 和 `abwarn` 来报告进度，这对于使用 `autobuild/build` 或 `ABTYPE=self` 的软件包是必需的 |
+| 引用与参考 | 要求 | 如果你的构建脚本从其他发行版改编而来，则需要提供一段注释表明构建脚本的来源 |
+| 变量 | 要求 | 变量需要用引号括起来，例如 `"$SRCDIR"` 和 `"$PKGDIR"` |
+| 文件目录 | 要求 | 从源码树手动安装的所有文件都必须引用绝对路径，例如 `"$SRCDIR"/desktop/foo.desktop` |
+| 架构 | 建议 | 虽然编写适合于 `amd64` 的构建脚本很容易，但要注意的是 AOSC OS 要使用相同的脚本为五个以上的其他架构构建软件包 |
+| 注释 | 建议 | 好的脚本都会有好的注释，当然注释可以用进度报告语句代替，详见“进度报告” |
 
+<!--
 As many packagers tend to reference or copy build scripts from Arch Linux, please reference the [TODO: AOSC OS-Arch Rosetta Stone](#) for a comprehensive guide on translating PKGBUILD (Arch Linux) into Autobuild3 manifests (AOSC OS).
+-->
 
 # 补丁命名
 
-Patches should follow a (mostly) uniform file naming for clear arrangement and sorting, before they are included in `autobuild/patches/`.
+在将补丁添加到 `autobuild/patches/` 之前，请为你的补丁按照一定的规则命名。
 
-## Git-based Sources
+## 基于 Git 的源码仓库
 
-When dealing with Git-based sources, it is possible to create numbered patches from the following command:
+对于基于 Git 的源码仓库，可以通过以下命令创建带有编号的补丁：
 
 ```
 git format-patch -n $HASH
 ```
 
-
-Where `n` defines the amount of commits from the specific commit `$HASH`, including the specified commit. Alternatively, you can omit the `$HASH`...
+`n` 定义了自 `$HASH` 这个提交前选取多少个提交（含）。你还可以省略 `$HASH`：
 
 ```
 git format-patch -n
 ```
 
-To create a series of patches from `n` commits to the branch `HEAD`.
+以从 `HEAD` 往前选取 `n` 个提交（含）制作补丁。
 
-These commands generate a series patches like the following...
+生成的补丁的名字大致是这样子的：
 
 ```
 0001-contrib-autobuild-aoscarchive-one-more-syntax-fix.patch
@@ -229,21 +230,21 @@ These commands generate a series patches like the following...
 0005-autobuild-aoscarchive-adapt-to-new-workflow.patch
 ```
 
-## Other Sources
+## 其它情形
 
-Without an automatic mean to generate patches, patches should be named in the following format.
+如果上面自动生成补丁的方式不适用，那么应以下面的格式为你的补丁命名：
 
 ```
 NNNN-$CATEGORY-$CONTENT.patch
 ```
 
-Where:
+其中：
 
-- `NNNN`, like the sample patch file names, is a "serial" number for sorting patches. 
-- `$CATEGORY` defines the category of a patch, for instance, `bugfix`, `feature`, etc.
-- `$CONTENT` defines "what is to be done" when a patch is applied, for instance, `fix-build-with-openssl-1.1`.
+- `NNNN` 与前面的示例补丁名称一样，是用于为补丁排序的“序列号”。
+- `$CATEGORY` 定义了补丁的类别，例如 `bugfix`、`feature` 等。
+- `$CONTENT` 定义了补丁的作用，例如 `fix-build-with-openssl-1.1`。
 
-Likewise, when including patch(es) from other distributions, they should also be renamed in accordance to the guidelines above.
+同样，当添加来自其它发行版的补丁时，也应根据上述规则对补丁重命名。
 
 # 文件放置
 
