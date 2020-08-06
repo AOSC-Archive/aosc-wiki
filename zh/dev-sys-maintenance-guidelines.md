@@ -2,7 +2,7 @@
 title: AOSC OS 维护指南（征求意见稿）
 description: 过好生活，打好包包
 published: true
-date: 2020-08-06T12:50:03.911Z
+date: 2020-08-06T14:51:32.905Z
 tags: dev-sys
 editor: markdown
 ---
@@ -11,51 +11,52 @@ editor: markdown
 
 AOSC OS 是一个有着多分支的半滚动更新 Linux 发行版，具有 5000 个以上的软件包，支持多种电脑处理器架构，因此维护 AOSC OS 并不是一件容易的事。为了确保 AOSC OS 的发布质量，我们编写了下面的指南，希望所有维护者都能遵循。
 
-# The Branches, Cycles, and Ports
+# 分支、发行周期与架构
 
-The concepts of branches, cycles, and ports are three main aspects that maintenance work revolves around. In this section, we will defines these concepts in the scope of AOSC OS.
+分支、发行周期与架构在 AOSC OS 维护过程中是三个非常重要的概念。在本节中，我们将在发行版的范围内提供这些概念的定义。
 
-## The Branches
+## 分支
 
-AOSC OS is maintained *concurrently* across four branches:
+AOSC OS 在同时维护下面的四个分支：
 
-- Stable (`stable`): Main maintenance branch which most users should be using, updates include security updates, bug fixes, [exceptional updates](/dev-sys-cycle-exceptions) and [patch-level updates](/dev-sys-known-patch-release-rules).
-	- Stable, Proposed Updates (`stable-proposed`): Feeds said updates into `stable`, unless the current `stable` already requires bug fixes (for instance, a currently available `stable` package has broken dependency). 
-- Testing (`testing`): Main feature branch which users with particular interest in following the latest development and changes should be using, security updates, feature/major updates, and new packages are introduced from the `explosive` branch and tested *minimally* before shipping. Updates made available through this branch will be available for `stable` by the end of each update cycle.
-	- Testing, Proposed Updates (`testing-proposed`): Feeds said updates into `testing`, packages are introduced and *build-time tested*.
-- Explosive (`explosive`): Accepts *any* new packages and updates *outside of the release cycles*. No one should be using this branch, no matter what.
-  - This branch is also used for major updates that requires a large amount of rebuilds and/or fixes (e.g. Python 3.7 => 3.8). This is done so that if said update won't fit within the timeframe of a single cycle, and since Explosive is never frozen, it will not affect cycle merging.
-- Release Candidate Kernels and Tools (`rckernel`): Complements `stable-proposed` to ship Linux Kernels currently in RC stage, and feeds into `stable-proposed` as the new mainline kernel branch as the final release is made on the upstream.
+- **稳定分支**（`stable`）：一般用户应使用的分支，我们通常向这个分支推送安全更新、漏洞修复、[异常更新](/dev-sys-cycle-exceptions) 和 [补丁级更新](/dev-sys-known-patch-release-rules)。
+  - 通常使用 `stable-proposed` 向 `stable` 输送上述更新（紧急情况除外，如稳定分支出现了严重的依赖破坏）。
+- **测试分支**（`testing`）：发烧友可以在这里获取经过**少量测试**的最新的功能性更新、安全性更新以及新软件包。在每个发行周期结束之前，此分支提供的更新会合并入稳定分支。
+  - 通常使用 `testing-proposed` 向 `testing` 输送上述更新（前者也是多数软件包最初上传的地方）。
+- **不稳定分支**（`explosive`）：在发行周期外接受**任何**新软件包和更新。所有人都不应该使用此分支。
+  - 此分支还用于上传需要大规模重建的更新（例如 Python 3.7 ➙ 3.8）。这样做的目的是：由于 `explosive` 从未冻结，如果这些更新无法在当前发行周期发布或推送，则不会影响到其它更新。
+- **RC 版内核测试分支**（`rckernel`）：作为 `stable-proposed` 的一个补充，用于测试候选版本的 Linux 内核及其工具链。
 
-## The Cycles
+## 发行周期
 
-AOSC OS is maintained on an seasonal cycle, and thus revolves around a three-month schedule:
+AOSC OS 采用的是半滚动更新模型，通常每个发布周期都为时三个月。
 
-- The first two months - or the development period:
-	- Iteration Plans (e.g. the *[Iteration Plan for Summer 2019](https://github.com/AOSC-Dev/aosc-os-abbs/issues/1896)*)are drafted and published on GitHub as a milestone issue, and updated frequently by maintainers as new updates are made available and built.
-	- Updates are built on all branches and for all ports when applicable.
-- The last month - or the freezing period:
-	- The `stable`, `stable-proposed`, `explosive`, and `rckernel` branches continues to receive updates as usual.
-	- The `testing` branch will no longer accept updates unless they are intended for security or bug fixes.
-	- `testing` branch updates will be tested in preparation to become the new basis of `stable`.
+- 前两个月为开发期：
+  - 我们会在 GitHub 上发布迭代计划（例如 [2019 年夏季迭代计划](https://github.com/AOSC-Dev/aosc-os-abbs/issues/1896)），并由维护者实时更新迭代进展。
+  - 维护者可随时为合适的分支和架构上传更新。
+- 第三个月为冻结期：
+  - `stable`、`stable-proposed`、`explosive` 和 `rckernel` 照常接收更新。
+  - `testing` 将不再接受除了安全更新和漏洞修复之外的其它更新。
+  - `testing` 将作充分的测试以准备合并入 `stable`。
 
-## The Ports
+## 架构
 
-AOSC OS is available for many different microprocessor architectures (and thus many different kinds of devices). While some ports will received full-feature packages, there are distinctions based on the nature of the ports. Here below is a brief description:
+AOSC OS 支持多种电脑处理器架构，适配多种设备。然而，AOSC OS 对不同架构提供的支持不一定完全相同：
 
-- AMD64, or x86_64 (`amd64`), the *de facto* main port.
-	- All packages will be build-time tested for this architecture.
-	- This is the only architecture to build `explosive` updates as a preliminary procedure.
-- AArch64 (`arm64`), ARMv7 (`armel`), Little Endian POWER (`ppc64el`), and RISC-V (`riscv64`).
-	- All packages should be built for these architectures unless non-applicable or unbuildable.
-	- These architectures do not track the `explosive` branch.
-- Big Endian PowerPC 32/64-bit (`powerpc` and `ppc64`, respectively), and i586 (`i586`).
-	- These architectures are considered part of the "AOSC OS/Retro" project, and do not follow all the rules specified so far.
-	- These architectures only track the `stable` branch, with a limited selection of packages deemed usable on older hardware.
+- AMD64（`amd64`，也被称为 x86_64)
+  - 此架构是我们最为关心的架构。
+  - 所有软件包在构建时都将针对此架构进行测试。
+  - 当我们为 `explosive` 分支构建更新时只考虑此架构。
+- AArch64（`arm64`）、ARMv7（`armel`）、Little Endian POWER（`ppc64el`）以及 RISC-V（`riscv64`）
+	- 所有软件包在打包时都应该提供适用于这些架构的版本，除非确实无法构建。
+  - `explosive` 分支不适用于上述架构。
+- Big Endian PowerPC 32/64-bit（分别为 `powerpc` 和 `ppc64`）以及 i586（`i586`）
+	- 这些架构属于 AOSC OS/Retro 项目的一部分，不适用到目前为止指定的所有规则。
+  - 我们只为这些架构提供 `stable` 分支，并提供在旧硬件上可用的有限的软件包。
 
-# In Practice
+# 实践与行动
 
-This section describes the detailed procedures, which AOSC OS maintainers should adhere to.
+本节列出了 AOSC OS 维护者应遵循的事项。
 
 ## The Tools
 
