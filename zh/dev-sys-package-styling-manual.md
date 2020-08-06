@@ -2,7 +2,7 @@
 title: AOSC OS 软件包样式指南
 description: 过好生活，打美包儿包儿
 published: true
-date: 2020-08-06T05:56:04.696Z
+date: 2020-08-06T09:45:55.047Z
 tags: dev-sys
 editor: markdown
 ---
@@ -252,56 +252,57 @@ NNNN-$CATEGORY-$CONTENT.patch
 
 | 文件类型 | 合适的放置位置 |
 |-----------------------|---------------------------------------|
-| Binary or script executables | `/usr/bin` |
-| Binaries run by other programs | `/usr/libexec`, unless hard-coded by other packages/components (GNOME, \*ahem\*) |
-| Data files (no ELF, or architecturally-dependent scripts) | `/usr/share` |
-| Daemon user home | `/var/lib/$COMPONENTNAME`, where an appropriate`$COMPONENTNAME` is decided in practice, for instance, `/var/lib/lightdm` |
-| Go components and shared data | `/usr/share/gocode` |
-| Headers (includes) | `/usr/include` |
-| Java components (commons, etc.) | `/usr/share/java` |
-| Libraries (shared and static) | `/usr/lib` |
-| Licences | `/usr/share/doc/$PKGNAME` |
-| Manpages | `/usr/share/man` |
-| Non-manpage documentations | `/usr/share/doc/$PKGNAME` |
-| Private libraries | `/usr/lib/$COMPONENTNAME`, where an appropriate`$COMPONENTNAME` is decided in practice, for instance, `/usr/lib/R` |
+| 可执行文件 | `/usr/bin` |
+| 被其它程序调用的二进制文件 | `/usr/libexec`（除非文件位置被硬编码） |
+| 数据文件 | `/usr/share` |
+| 守护进程 | `/var/lib/$COMPONENTNAME`（`$COMPONENTNAME` 根据实际情况指定，例如 `/var/lib/lightdm`） |
+| Go 组件和共享数据 | `/usr/share/gocode` |
+| 头文件 | `/usr/include` |
+| Java 组件 | `/usr/share/java` |
+| 共享库文件 | `/usr/lib` |
+| 许可证 | `/usr/share/doc/$PKGNAME` |
+| Manpage | `/usr/share/man` |
+| 文档 | `/usr/share/doc/$PKGNAME` |
+| 私有库文件 | `/usr/lib/$COMPONENTNAME`（`$COMPONENTNAME` 根据实际情况指定，例如 `/usr/lib/R`） |
 
-## Electron and Chromium-based Packages
+## 基于 Electron 或 Chromium 的软件包
 
-Electron, Chromium, and other Chromium-based packages should be packaged with the following structure.
+Electron、Chromium 和基于它们的软件包应该按照下面的要求放置文件。
 
-| Components | Appropriate Placements |
+| 文件类型 | 合适的放置位置 |
 |---------------------|----------------------------------------|
-| Binary executables | `/usr/bin`, where the executable is a symbolic link to its target in `/usr/lib/$PKGNAME` |
-| Desktop, AppStream, and other data files | `/usr/share` |
-| Main program data | `/usr/lib/$PKGNAME` |
+| 可执行文件 | `/usr/bin` 放置指向 `/usr/lib/$PKGNAME` 目标文件的符号链接 |
+| 数据文件 | `/usr/share` |
+| 主程序 | `/usr/lib/$PKGNAME` |
 
-## Binary Packaging (Binpack)
+## Binpack
 
-Binary packages should not be installed to `/opt`, unless the package's licence prohibits such file movement. With adjustments and other modifications, these packages should be installed to the `/usr` prefix - if packager find it impossible, they should consider rejecting such packages.
+二进制软件应该安装到 `/usr` 而不是 `/opt`。如果软件许可证禁止这样做或者在打包时发现无法做到，则应考虑拒绝此类软件包。
 
 # Git 提交信息
 
-When committing (or contributing, if you like) to the [AOSC OS ABBS Tree](https://github.com/AOSC-Dev/aosc-os-abbs/), please observe the commit message standards, shown in the table below.
 
-| Action | Message Formatting | Sample Commit Message |
+在为 [AOSC OS ABBS Tree](https://github.com/AOSC-Dev/aosc-os-abbs/) 提交（或贡献）更改时，请按照下面的要求填写提交信息：
+
+| 情形 | 格式要求 | 举例 |
 |-----------|-----------------------------------|-----------------------------------------|
-| Introducing a new package | `$PKGNAME: new, $PKGVER` | `windowsnt-kernel: new, 5.1.2600` |
-| Security fixes with version update | `$PKGNAME: update to $PKGVER; #NNN` | `bash: update to 5.2; #114514`, where `#114514` is a reference to the original security report (GitHub issue) |
-| Security fixes without version update, utilising distribution patch(es) | `$PKGNAME: ($DISTNAME patch[es], $CHANNEL) #NNN` | `gnome-shell: (Ubuntu patches, 18.10) #2333`, where `#2333` is a reference to the original security report (GitHub issue) |
-| Security fixes without version update, utilising upstream patch(es) | `$PKGNAME: (upstream patch[es]) #NNN` | `audacious: (upstream patches) #1919`, where `#1919` is a reference to the original security report (GitHub issue) |
-| Updating a package | `$PKGNAME: update to $PKGVER` | `mate-desktop: update to 1.22.0` |
-| Work-in-progress with a fail-to-build package | `$PKGNAME: ... (FTBFS)` | `chromeos-desktop: update to 99.0.9999 (FTBFS)`, note that "FTBFS" stands for "Failed To Build From Source", this term is used loosely |
-| Working with a package | `$PKGNAME: ...` | `kde-workspace: add qt-5 dependency`, just say what you did in present tense |
-| Working with a package, multiple actions | `$PKGNAME: ...; ...` | `gnome-shell: add at-spi2-core dependency; update to 3.32.0` |
-| Working with a package, utilising distribution patch(es) | `$PKGNAME: ($DISTNAME patch[es], $CHANNEL) ...` | `qt-4: (Arch Linux patches) rebuild for openssl` |
-| Working with a package, utilising upstream patch(es) | `$PKGNAME: (upstream patch[es]) ...` | `kodi: (upstream patch) fix lock-up on start-up` |
-| Working with a QA issue | `$PKGNAME: ... ($ISSUECODE)` | `psiconv: rebuild for imagemagick (E431)`, for a list of QA issue codes, refer to this [list](/developers/list-of-package-issue-codes) |
-| Working with an architecturally-exclusive package | `$PKGNAME: ... ($ARCH)` | `google-chrome: new, 100.0.9999.999 (amd64)` |
-| Working with an architecturally-independent package | `$PKGNAME: ... (noarch)` | `mate-common: update to 1.22.0 (noarch)` |
+| 引入新的软件包 | `$PKGNAME: new, $PKGVER` | `windowsnt-kernel: new, 5.1.2600` |
+| 版本更新（安全更新） | `$PKGNAME: update to $PKGVER; #NNN` | `bash: update to 5.2; #114514`，其中 `#114514` 指向对应的 GitHub issue |
+| 非版本更新（安全更新，使用发行版补丁） | `$PKGNAME: ($DISTNAME patch[es], $CHANNEL) #NNN` | `gnome-shell: (Ubuntu patches, 18.10) #2333`，其中 `#2333` 指向对应的 GitHub issue  |
+| 非版本更新（安全更新，使用上游补丁） | `$PKGNAME: (upstream patch[es]) #NNN` | `audacious: (upstream patches) #1919`，其中 `#1919` 指向对应的 GitHub issue |
+| 版本更新 | `$PKGNAME: update to $PKGVER` | `mate-desktop: update to 1.22.0` |
+| 软件构建失败 | `$PKGNAME: ... (FTBFS)` | `chromeos-desktop: update to 99.0.9999 (FTBFS)`，FTBFS 是 Failed To Build From Source 的简写 |
+| 软件包改动（单处） | `$PKGNAME: ...` | `kde-workspace: add qt-5 dependency`，使用一般现在时即可 |
+| 软件包改动（多处） | `$PKGNAME: ...; ...` | `gnome-shell: add at-spi2-core dependency; update to 3.32.0` |
+| 软件包改动（使用发行版补丁） | `$PKGNAME: ($DISTNAME patch[es], $CHANNEL) ...` | `qt-4: (Arch Linux patches) rebuild for openssl` |
+| 软件包改动（使用上游补丁） | `$PKGNAME: (upstream patch[es]) ...` | `kodi: (upstream patch) fix lock-up on start-up` |
+| QA 问题 | `$PKGNAME: ... ($ISSUECODE)` | `psiconv: rebuild for imagemagick (E431)`，请阅读 [这个清单](/developers/list-of-package-issue-codes) 了解各个 `$ISSUECODE` 对应的含义 |
+| 软件包改动（针对某个架构） | `$PKGNAME: ... ($ARCH)` | `google-chrome: new, 100.0.9999.999 (amd64)` |
+| 软件包改动（不针对任何架构） | `$PKGNAME: ... (noarch)` | `mate-common: update to 1.22.0 (noarch)` |
 
-## Long Messages
+## 长消息
 
-When more than one of the actions were committed, and that the short message goes beyond 50 characters (including space and punctuation marks), you should utilise a "long Git commit message", for example:
+如果你的提交信息超过 50 个字符（包括空格和标点符号），则应该使用下面的格式撰写长消息：
 
 ```
 firefox: update to 64.0.2; #1536
