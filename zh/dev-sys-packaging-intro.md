@@ -2,7 +2,7 @@
 title: 软件包维护入门
 description: AOSC OS 维护者培训
 published: true
-date: 2020-08-06T10:14:05.246Z
+date: 2020-08-06T10:19:48.207Z
 tags: dev-sys
 editor: markdown
 ---
@@ -24,7 +24,7 @@ editor: markdown
 	- [自定义构建系统参数及编译器参数](/en/dev-sys-advanced-techniques#custom-build-system-compiler-parameters)
 	- [自定义构建脚本](/en/dev-sys-advanced-techniques#custom-build-scripts)
 	- [构建后的收尾工作](/en/dev-sys-advanced-techniques#post-build-tweaks)
-	- [autobuild 与 override 目录](/en/dev-sys-advanced-techniques#the-autobuild-override-directory)
+	- [autobuild/override 目录](/en/dev-sys-advanced-techniques#the-autobuild-override-directory)
 	- [补丁管理进阶](https://wiki.aosc.io/en/dev-sys-advanced-techniques#advanced-patch-management)
 - [软件包组](/en/dev-sys-advanced-techniques#dealing-with-package-groups)
 
