@@ -2,7 +2,7 @@
 title: AOSC OS 软件包样式指南
 description: 过好生活，打美包儿包儿
 published: true
-date: 2020-08-06T05:52:36.675Z
+date: 2020-08-06T05:56:04.696Z
 tags: dev-sys
 editor: markdown
 ---
@@ -248,9 +248,9 @@ NNNN-$CATEGORY-$CONTENT.patch
 
 # 文件放置
 
-AOSC OS, like many other Linux Distributions, expect packaged files to be located in appropriate directories. Please reference the *non-comprehensive* table below for our standard of file placements.
+和其它 Linux 发行版类似，AOSC OS 希望打包好的文件能被解压到合适的目录中。请参考下面的表格，了解我们的文件放置标准。
 
-| Types of Files | Appropriate Placements |
+| 文件类型 | 合适的放置位置 |
 |-----------------------|---------------------------------------|
 | Binary or script executables | `/usr/bin` |
 | Binaries run by other programs | `/usr/libexec`, unless hard-coded by other packages/components (GNOME, \*ahem\*) |
