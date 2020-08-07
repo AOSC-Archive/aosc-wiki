@@ -2,7 +2,7 @@
 title: AOSC OS 维护指南（征求意见稿）
 description: 过好生活，打好包包
 published: true
-date: 2020-08-07T11:54:01.771Z
+date: 2020-08-07T12:15:02.283Z
 tags: dev-sys
 editor: markdown
 ---
@@ -20,7 +20,7 @@ AOSC OS 是一个有着多分支的半滚动更新 Linux 发行版，具有 5000
 AOSC OS 在同时维护下面的四个分支：
 
 - **稳定分支**（`stable`）：一般用户应使用的分支，我们通常向这个分支推送安全更新、漏洞修复、[异常更新](/dev-sys-cycle-exceptions) 和 [补丁级更新](/dev-sys-known-patch-release-rules)。
-  - 通常使用 `stable-proposed` 向 `stable` 输送上述更新（紧急情况除外，如稳定分支出现了严重的依赖破坏）。
+  - 通常使用 `stable-proposed` 向 `stable` 输送上述更新（紧急情况除外，如稳定分支出现了严重的可用性问题）。
 - **测试分支**（`testing`）：发烧友可以在这里获取经过**少量测试**的最新的功能性更新、安全性更新以及新软件包。在每个发行周期结束之前，此分支提供的更新会合并入稳定分支。
   - 通常使用 `testing-proposed` 向 `testing` 输送上述更新（前者也是多数软件包最初上传的地方）。
 - **不稳定分支**（`explosive`）：在发行周期外接受**任何**新软件包和更新。所有人都不应该使用此分支。
@@ -109,16 +109,18 @@ AOSC OS 支持多种电脑处理器架构，适配多种设备。然而，AOSC O
 
 `rckernel` 分支应该按照以下规则定期反向合并：`stable` → `stable-proposed` → `rckernel`。
 
-## Stable Update Testing
+## 稳定分支更新
 
-Updates for the `stable` branch, unless known to be involved with one or more 0-day security vulnerability(ies) or already broken in `stable`, are committed, built, and tested through the `stable-proposed` branches. `stable-proposed` updates are merged in the following procedure/schedule:
+`stable` 分支的更新都应该通过 `stable-proposed` 分支提交、构建和测试，除非 `stable` 中的软件包已经出现了严重的可用性问题或被发现有零日安全漏洞。
 
-- Every Saturday at midnight, UTC: An issue is generated with a *comprehensive* list of updates committed and bulit on the `stable-proposed` branch.
-	- Package names, version deltas (e.g. 1.0.2 → 1.0.3), and changelogs (linked to specific [AOSC OS Packages](https://packages.aosc.io) pages).
-	- Checkboxes by each entry.
-- Testing procedures are defined case-by-case.
-	- TODO: Autobuild3/ACBS automatic quality assurance and reports.
-	- Basic functionalities (Launches? Comes with necessary files? Documentation readable and complete?).
-	- Styling checked against the [Styling Manual](/dev-sys-package-styling-manual).
-- Packages, when tested, will have their respective entry(s) ticked, and packages moved on the repository from the `stable-proposed` pool to the `stable` pool on the package unit (one package "ticked", one moved).
-- The weekly issues will remain open for tracking testing work, and closed upon *full completion* (all checkboxes ticked).
+稳定分支更新按照以下的流程从 `stable-proposed` 合并入 `stable`：
+
+- 协调世界时每周六凌晨，生成一个包含所有已经在 `stable-proposed` 提交并构建的软件包的清单，并利用 GitHub Issue 发布出来。
+  - 软件包名称，版本增量（例如 1.0.2 → 1.0.3）和变更日志（一个指向至 [AOSC OS 软件包页](https://packages.aosc.io) 的链接）。
+  - 每个条目均设置一个复选框。
+- 对每一个软件包分别进行测试。
+  - Autobuild3/ACBS 自动测试（TODO）。
+  - 可用性检查（确认该软件可以运行，文件无缺失，文档完备）。
+  - 根据  [软件包样式指南](/dev-sys-package-styling-manual) 检查样式。
+- 对于通过测试的软件包，勾选相应条目复选框，然后将其移动到 `stable` 仓库（通过一个移动一个）。
+- GitHub Issue 将保持打开状态以供维护者跟踪测试工作，直到所有软件包移动完成（所有复选框均被打勾）。
