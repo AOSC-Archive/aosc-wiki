@@ -2,7 +2,7 @@
 title: AOSC OS 维护指南（征求意见稿）
 description: 过好生活，打好包包
 published: true
-date: 2020-08-06T14:51:32.905Z
+date: 2020-08-07T11:36:00.632Z
 tags: dev-sys
 editor: markdown
 ---
@@ -58,33 +58,31 @@ AOSC OS 支持多种电脑处理器架构，适配多种设备。然而，AOSC O
 
 本节列出了 AOSC OS 维护者应遵循的事项。
 
-## The Tools
+## 工具集
 
-The standard set of tools should be used by all maintainers. While we are unable to track the tools you've used (yet), these set of tools are known to generate the cleanest and most reproducible packages so far.
+所有软件包维护者都应该使用下面的标准工具集以保证软件包的可用性和构建流程的可重现性。
 
-- [Autobuild3](https://github.com/AOSC-Dev/autobuild3), the package generation tool which abstracts building procedures and package metadata into Autobuild3 manifests.
-- [ACBS](https://github.com/AOSC-Dev/acbs), organises and manages multiple Autobuild3 manifests in a tree-like fashion, see [aosc-os-abbs](https://github.com/AOSC-Dev/aosc-os-abbs).
-- [Ciel](https://github.com/AOSC-Dev/ciel), manages `systemd-nspawn` containers where packaging work are done, with tools for Autobuild3/ACBS configuration, basic containerised environment management (updates and some configuration), and environment rollbacks.
-- [pushpkg](https://github.com/AOSC-Dev/scriptlets/tree/master/pushpkg), a simple wrapper script for uploading packages to the [Community Repository](https://repo.aosc.io).
+- [Autobuild3](https://github.com/AOSC-Dev/autobuild3)：软件包构建工具，它将复杂的构建过程和软件包元数据抽象成了 Autobuild3 清单。
+- [ACBS](https://github.com/AOSC-Dev/acbs)：以树状方式组织和管理 Autobuild3 清单，详情请查看 [aosc-os-abbs](https://github.com/AOSC-Dev/aosc-os-abbs)。
+- [Ciel](https://github.com/AOSC-Dev/ciel)：管理用于打包工作的 `systemd-nspawn` 容器。支持 Autobuild3/ACBS 配置以及容器系统升级、配置和回滚。
+- [pushpkg](https://github.com/AOSC-Dev/scriptlets/tree/master/pushpkg)：一组用于将软件包上传到 [软件仓库](https://repo.aosc.io) 的脚本。
 
-You will also need a LDAP identity to upload packages and to gain access to our relay servers, or [Buildbots](/infra-buildbots).
+你可能需要一个 LDAP 凭证来上传软件包或访问我们的中继服务器（[Buildbots](/en/infra-buildbots)）。
 
-For the detailed packaging procedures, please refer to the [AOSC OS Cadet Training (Work In Progress)](#) and the [AOSC OS Package Styling Manual](/dev-sys-package-styling-manual).
+## Buildbots
 
-## The Buildbots
+尽管你可以使用上面提到的工具在自己的设备上打包，社区也提供了一些高性能机器供维护者使用。
 
-While you are welcome to use your own devices for packaging (given that you are using the tools above), there are fast machines provided by community members, and made available for maintainers.
+要了解更多，请参阅社区维基 [Buildbots](/en/infra-buildbots) 一文。
 
-For more details on gaining access and the various protocols, please refer to the [AOSC Buildbot Information](/infra-buildbots).
+## 软件包接收
 
-## Package Introduction and Maintenance
+原则上，AOSC OS 允许任何类型的软件包进入其软件仓库，但以下情况除外：
 
-In principle, AOSC OS accepts and maintains all packages, unless one of the following applies:
-
-- The vendor or upstream does not permit redistribution, or file manipulation (if required or mandated by the [Styling Manual](/dev-sys-package-styling-manual)).
-- The vendor or upstream refuses or failed to provide fixes for security vulnerability(ies).
-- The package is deprecated by the vendor or upstream.
-- The maintainers have voted against the introduction or continued maintenance of a specific (set of) package(s).
+- 供应商或上游不允许我们分发该软件或在 [软件包样式指南](/dev-sys-package-styling-manual) 要求的情形下不允许我们修改文件路径。
+- 供应商或上游拒绝或没有提供安全漏洞修复。
+- 该包已被供应商或上游弃用。
+- 维护者投票反对引入（或维护）该软件包。
 
 ## The Builds
 
