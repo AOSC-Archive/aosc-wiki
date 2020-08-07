@@ -2,7 +2,7 @@
 title: AOSC OS 维护指南（征求意见稿）
 description: 过好生活，打好包包
 published: true
-date: 2020-08-07T11:36:00.632Z
+date: 2020-08-07T11:54:01.771Z
 tags: dev-sys
 editor: markdown
 ---
@@ -84,30 +84,30 @@ AOSC OS 支持多种电脑处理器架构，适配多种设备。然而，AOSC O
 - 该包已被供应商或上游弃用。
 - 维护者投票反对引入（或维护）该软件包。
 
-## The Builds
+## 构建环境
 
-While building packages, the build environments *must* be controlled, updated, and minimal, where packages are only installed as required by the build-and-run-time dependencies.
+在构建软件包时，构建环境**必须**是可控的、最新的且最小化的，只有待构建软件包的构建时依赖和运行时依赖应该被安装。
 
-- For instance, when building for `stable`, make sure that *only* the `stable` branch is enabled in your repository configuration; `explosive`, `testing-proposed`, `testing`, `stable-proposed`, and `stable` are enabled when building for `explosive`; ...
-- There is an exception when building for `stable-proposed` and `rckernel`, *only* the `stable` branch should be enabled.
+- 在为 `stable` 构建软件包时，请确保在你只启用了 `stable` 而没有启用其它分支；为 `explosive` 构建软件包时，则请确保你启用了 `explosive`、`testing-proposed`、`testing`、`stable-proposed` 和 `stable`；为其它分支构建软件包同理。
+- 作为例外，为 `stable-proposed` 和 `rckernel` 构建软件包时只应该启用 `stable` 分支。
 
-## Branch Merging
+## 分支合并
 
-In the AOSC OS maintenance procedures, branch mergings are bi-directional.
+在 AOSC OS 的维护中，分支合并是双向的。
 
-### Merging
+### 正向合并
 
-With the branch and cycle descriptions specified above - as branch merging serves as the main mean of update introduction for the non-Proposal branches, there are certain limitations applied to the merging procedures.
+正如上面所述，正向分支合并是为各个分支引入更新的主要手段，具体的合并规则如下：
 
-- During the active phase of an interation cycle, the branch merging follows the direction of: `explosive`; `testing-proposed` → `testing`; `rckernel` → `stable-proposed` → `stable`.
-- At the end of each iteration cycle, a full merge would be made: `explosive` → `testing-proposed` → `testing` → `stable-proposed` → `stable`.
-- During the one-month freezing periods: the `rckernel` → `stable-proposed` → `stable` merges are permitted, while all other mergings are *not permitted*.
+- 在发行周期的开发期，分支合并的方向是 `testing-proposed` → `testing`；`rckernel` → `stable-proposed` → `stable`。
+- 在发行周期的冻结期：允许 `rckernel` → `stable-proposed` → `stable` 分支合并，而其它的合并都不允许。
+- 在每个发行周期结束时，会进行一次完整的合并 `explosive` → `testing-proposed` → `testing` → `stable-proposed` → `stable`。
 
-### Reversed Merging
+### 反向合并
 
-Reversed merges, or `stable` → `stable-proposed` → `testing` → `explosive` merges should be done periodically regardless of the cycle periods. However, during major merges, notifications will be made to prevent inconsistent merging.
+反向合并，也就是 `stable` → `stable-proposed` → `testing` → `explosive` 这样的合并应当定期进行。反向合并无需考虑循环周期，但是在合并期间需要发布公告以避免合并过程出现问题。
 
-The `rckernel` branch should also receive periodic reverse merging: `stable` → `stable-proposed` → `rckernel`.
+`rckernel` 分支应该按照以下规则定期反向合并：`stable` → `stable-proposed` → `rckernel`。
 
 ## Stable Update Testing
 
