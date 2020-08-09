@@ -1,8 +1,8 @@
 ---
 title: 什么是 AOSA？
-description: 
+description: 简单介绍 AOSC OS 安全公告系统
 published: true
-date: 2020-08-02T14:19:03.824Z
+date: 2020-08-09T08:25:11.806Z
 tags: aosa
 editor: markdown
 ---
