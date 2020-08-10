@@ -2,7 +2,7 @@
 title: AOSC OS/Retro：面向用户与维护者的介绍（征求意见稿）
 description: 在古董设备上使用 AOSC OS
 published: true
-date: 2020-08-10T13:11:31.085Z
+date: 2020-08-10T14:15:03.998Z
 tags: sys-retro
 editor: markdown
 ---
@@ -11,25 +11,26 @@ editor: markdown
 
 # 设计规范
 
-In terms of end-user experience and management characteristics, AOSC OS/Retro is a standard AOSC OS distribution. However, changes are made in terms of dependencies, features, and maintenance schedules. In brief, AOSC OS/Retro will...
+无论是从用户体验的角度，还是从维护的角度出发，AOSC OS/Retro 都是标准的 AOSC OS 发行版。但是依赖关系、特性和维护计划会和主线版本有所不同。简而言之，AOSC OS/Retro 将：
 
-- Come with limited architectural support - only those specified as Retro will be maintained in accordance to the Retro specifications.
-- *Share* the same [package tree](https://github.com/AOSC-Dev/aosc-os-abbs/) as the mainline distribution, as well as the [Core](https://github.com/AOSC-Dev/aosc-os-abbs/blob/stable/README.CORE.md).
-- *Share* the same set of maintenance tools as the mainline distribution.
-- Strip down package features in interest of *conserving storage and memory.*
-- Ship in *different* flavours as otherwise would with the mainline distributions.
-- Update on a slower schedule, *with a few exceptions.*
 
-Now, we will present the commonalities and differences in detail.
+- 只为有限的古董架构提供支持。
+- 和主线版本共享同一 [软件包树](https://github.com/AOSC-Dev/AOSC-os-abbs/) 和 [核心](https://github.com/AOSC-Dev/AOSC-os-abbs/blob/stable/README.CORE.md)。
+- 和主线版本共享同一维护工具集。
+- 为了节省存储空间和内存，对软件包特性进行精简。
+- 和主线版本相比，提供不同的变种版本。
+- 在多数情况下，更新速度会慢于主线版本。
 
-## Target Architectures
+下面，我们将展开介绍 AOSC/Retro 和主线版本的共同点和不同点。
 
-AOSC OS/Retro currently targets the following architectures...
+## 目标架构
 
-- 32-Bit Intel 80486 and compatible (IBM) Personal Computers (Floating Point Unit not required) and Personal System/2 (PS/2).
-- 32-Bit Big Endian PowerPC-based Apple Macintosh computers, with [New World ROM](https://en.wikipedia.org/wiki/New_World_ROM) support.
+AOSC OS/Retro 目前为下面的架构提供支持：
 
-## Common Components and Tools
+- 32 位的 Intel 80486 和与其兼容的（IBM）Personal Computers（不需要浮点运算单元）以及 Personal System/2（PS/2）。
+- 32 位的基于 Big Endian PowerPC 的 Apple Macintosh 电脑（需要有 [New World ROM](https://en.wikipedia.org/wiki/New_World_ROM) 支持）。
+
+## 维护工具集
 
 As AOSC OS/Retro is *not* a fork but a *branch* of the mainline AOSC OS distribution, it will share not only the package tree, but also the Core and the maintenance tools as the mainline...
 
