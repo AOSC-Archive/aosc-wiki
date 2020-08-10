@@ -2,8 +2,9 @@
 title: AOSCBootstrap
 description: 
 published: true
-date: 2020-05-27T03:41:24.838Z
+date: 2020-08-10T11:24:36.887Z
 tags: 
+editor: markdown
 ---
 
 # AOSCBootstrap
@@ -18,7 +19,7 @@ AOSCBootstrap requires the following Perl modules:
 On AOSC OS, you may install these dependencies using the following command:
 
 ```bash
-# apt install perl-try-tiny libwww-perl
+apt install perl-try-tiny libwww-perl
 ```
 
 ## Usage
