@@ -1,8 +1,8 @@
 ---
-title: SYS-KB-00002: 输入法配置
+title: SYS-KB-00002：输入法配置
 description: 在 AOSC OS 桌面环境下配置输入法
 published: true
-date: 2020-08-09T08:23:11.946Z
+date: 2020-08-10T13:03:21.895Z
 tags: sys-kb
 editor: markdown
 ---
