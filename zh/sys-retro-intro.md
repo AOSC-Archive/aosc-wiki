@@ -2,7 +2,7 @@
 title: AOSC OS/Retro：面向用户与维护者的介绍（征求意见稿）
 description: 在古董设备上使用 AOSC OS
 published: true
-date: 2020-08-10T14:16:01.148Z
+date: 2020-08-10T14:32:40.687Z
 tags: sys-retro
 editor: markdown
 ---
@@ -15,7 +15,7 @@ editor: markdown
 
 
 - 只为有限的古董架构提供支持。
-- 和主线版本共享同一 [软件包树](https://github.com/AOSC-Dev/AOSC-os-abbs/) 和 [核心](https://github.com/AOSC-Dev/AOSC-os-abbs/blob/stable/README.CORE.md)。
+- 和主线版本共享同一 [软件包树](https://github.com/AOSC-Dev/AOSC-os-abbs/) 和 [系统核心组件](https://github.com/AOSC-Dev/AOSC-os-abbs/blob/stable/README.CORE.md)。
 - 和主线版本共享同一维护工具集。
 - 为了节省存储空间和内存，对软件包特性进行精简。
 - 和主线版本相比，提供不同的变种版本。
@@ -32,18 +32,18 @@ AOSC OS/Retro 目前为下面的架构与设备提供支持：
 
 ## 维护工具集
 
-As AOSC OS/Retro is *not* a fork but a *branch* of the mainline AOSC OS distribution, it will share not only the package tree, but also the Core and the maintenance tools as the mainline...
+AOSC OS/Retro 是 AOSC OS 的一个分支，而不是 AOSC OS 的派生版本，它将和主线版本共享软件包树、系统核心组件以及维护工具集：
 
-- Package Tree: [aosc-os-abbs](https://github.com/AOSC-Dev/aosc-os-abbs), on the [`retro`](https://github.com/AOSC-Dev/aosc-os-abbs/tree/retro) branch.
-    - This means that AOSC OS/Retro will also use systemd as the default init system. *Now before you start yelling, systemd runs fine on a Toshiba T4900CT with an Intel Pentium 75MHz processor, 16MiB of RAM, and a 810MiB HDD. We've tested it to be sure.*
-- AOSC OS Core will be shared, but only updates based on what are synced to the `retro` branch. See [Maintenance Schedule](#maintenance-schedules).
-- Packaging/Maintenance Tools...
-    - [Autobuild3](https://github.com/AOSC-Dev/autobuild3), for automatic packaging from Autobuild3 manifests.
-    - [ACBS](https://github.com/AOSC-Dev/acbs), for tree-based Autobuild3 manifest management and packaging.
-    - [Ciel](https://github.com/AOSC-Dev/ciel), for containerised packaging.
-    - Various [scriptlets](https://github.com/AOSC-Dev/scriptlets), shared with AOSC OS.
+- 软件包树：[aosc-os-abbs](https://github.com/AOSC-Dev/aosc-os-abbs) 的 [`retro`](https://github.com/AOSC-Dev/aosc-os-abbs/tree/retro) 分支。
+    - 这意味着 AOSC/Retro 会使用 systemd 作为初始化系统。事实上我们曾在一台搭载 Intel Pentium 75MHz 处理器，有着 16MiB RAM 和 810MiB HDD 的 Toshiba T4900CT 上做过测试，systemd 确实能良好地工作。
+- AOSC OS Core 是被共享的，但只有适用于 AOSC OS/Retro 的更新会被同步到 `retro` 分支。详见 [维护计划](#维护计划).
+- 打包工具和维护工具：
+    - [Autobuild3](https://github.com/AOSC-Dev/autobuild3)，用于运行构建脚本。
+    - [ACBS](https://github.com/AOSC-Dev/acbs)，用于软件包树管理和打包。
+    - [Ciel](https://github.com/AOSC-Dev/ciel)，用于容器管理。
+    - [一些实用脚本](https://github.com/AOSC-Dev/scriptlets)。
 
-## Dependencies
+## 依赖项
 
 As AOSC OS/Retro targets storage and performance constraint devices, unlike its mainline counterpart, AOSC OS/Retro will ship packages with minimal optional feature enabled. Listed below are a few general rules to be followed...
 
@@ -82,7 +82,9 @@ The Base/X11 variant will come with the following additional components (the lis
 
 Extra packages, such as Firefox and more feature-complete desktop environments will be available from the [community repository](https://packages.aosc.io/), however, hardware requirement checks will be enforced based on processor and memory installed on your AOSC OS/Retro device (i.e., package installation will be aborted when attempting to install Firefox on a computer without SSE2 SIMD support).
 
-## Maintenance Schedules
+## 维护计划
+
+<!-- Note from bobby285271: If you want to edit the heading of this chapter, please update the links in the "维护工具集" chapter accordingly. -->
 
 AOSC OS/Retro will be maintained on the [`retro`](https://github.com/AOSC-Dev/aosc-os-abbs/tree/retro/) branch, sharing the same [package tree](https://github.com/AOSC-Dev/aosc-os-abbs/) with the mainline distribution. However, in interest of both the maintainer's reasonable maintenance effort, as well as the longevity and usability of the target devices, AOSC OS/Retro will update on an *annual schedule*.
 
