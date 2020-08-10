@@ -2,7 +2,7 @@
 title: AOSC OS/Retro：面向用户与维护者的介绍（征求意见稿）
 description: 在古董设备上使用 AOSC OS
 published: true
-date: 2020-08-10T14:15:03.998Z
+date: 2020-08-10T14:16:01.148Z
 tags: sys-retro
 editor: markdown
 ---
@@ -23,9 +23,9 @@ editor: markdown
 
 下面，我们将展开介绍 AOSC/Retro 和主线版本的共同点和不同点。
 
-## 目标架构
+## 目标架构与设备
 
-AOSC OS/Retro 目前为下面的架构提供支持：
+AOSC OS/Retro 目前为下面的架构与设备提供支持：
 
 - 32 位的 Intel 80486 和与其兼容的（IBM）Personal Computers（不需要浮点运算单元）以及 Personal System/2（PS/2）。
 - 32 位的基于 Big Endian PowerPC 的 Apple Macintosh 电脑（需要有 [New World ROM](https://en.wikipedia.org/wiki/New_World_ROM) 支持）。
