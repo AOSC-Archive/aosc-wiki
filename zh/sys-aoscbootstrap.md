@@ -2,7 +2,7 @@
 title: AOSCBootstrap
 description: 
 published: true
-date: 2020-08-10T11:33:43.423Z
+date: 2020-08-10T12:35:49.183Z
 tags: 
 editor: markdown
 ---
@@ -62,25 +62,24 @@ aoscbootstrap.pl --arch=amd64 --include-file=base.lst stable /root/aosc http://l
 
 要配合 [Ceil](https://github.com/AOSC-Dev/ciel) 及其插件使用 AOSCBootstrap：
 
-1. Create your work directory and `cd` into it.
-1. Run `ciel init`.
-1. Run `aoscbootstrap.pl --arch=<architecture> <branch> $(pwd)/.ciel/container/dist/ [mirror URL]`.
-1. When finished, you may proceed to other tasks you may want to perform such as `ciel generate` and `ciel release`.
+1. 创建一个工作目录并使用 `cd` 进入该目录。
+1. 执行 `ciel init`。
+1. 执行 `aoscbootstrap.pl --arch=<architecture> <branch> $(pwd)/.ciel/container/dist/ [mirror URL]`。
+1. 在完成之后，你就可以执行其它任务了，例如 `ciel generate` 和 `ciel release`。
 
-## Full Bootstrap to a Larger Base System
+## 引导系统
 
-You can use AOSCBootstrap to bootstrap a larger base system or even a base system with a graphic user interface based desktop environment like GNOME or KDE.
+您可以使用 AOSCBootstrap 来引导一个稍大一些的基本系统，或是带有桌面环境（如 GNOME 或 KDE Plasma）的系统。
 
-To do this, you need a list of required packages. Fortunately, you can find the recipe [inside CIEL!'s source tree](https://github.com/AOSC-Dev/ciel/raw/master/plugin/ciel-generate).
+要这样做，你需要准备一个列有所需软件的清单，你可以在 [Ciel 的源码树](https://github.com/AOSC-Dev/ciel/raw/master/plugin/ciel-generate) 找到一个用于生成预设方案的 Bash 脚本。
 
-To help you convert this bash script to a plaintext file containing the required packages, there is a conversion script resides in the `recipes` folder.
+要想将 Bash 脚本变为列有所需软件包的纯文本，`recipes` 目录里有方便你做这事的脚本。你只需要执行 `perl recipes/convert.pl ./ciel-generate ./recipes`，`ciel generate` 命令支持的所有基本变种都将转储到 `recipes` 文件夹中。
 
-Simply do `perl recipes/convert.pl ./ciel-generate ./recipes` and all the base variants currently supported by `ciel generate` command will be dumped into the `recipes` folder.
-
-Now, to use those recipes, for instance, bootstrapping a `kde` variant of the system, you can execute AOSCBootstrap like this:
+现在，要想使用这些预设方案，例如生成一个 KDE Plamsa 的变种版本，你可以执行：
 
 ```
 aoscbootstrap.pl --arch=amd64 --include-file=./recipes/kde.lst stable /root/aosc http://localhost/debs/
 ```
 
-AOSCBootstrap will prepare a ready-to-use KDE flavored AOSC OS located at `/root/aosc`.
+
+AOSCBootstrap 就会在 `/root/aosc` 为你准备一个附有 KDE Plamsa 的 AOSC OS 系统。
