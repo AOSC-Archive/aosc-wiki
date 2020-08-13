@@ -2,7 +2,7 @@
 title: AOSC OS/Retro：面向用户与维护者的介绍（征求意见稿）
 description: 在古董设备上使用 AOSC OS
 published: true
-date: 2020-08-12T13:42:22.865Z
+date: 2020-08-13T06:08:32.667Z
 tags: sys-retro
 editor: markdown
 ---
@@ -57,6 +57,20 @@ AOSC OS/Retro 是 AOSC OS 的一个分支，而不是 AOSC OS 的派生版本，
 - 在没有 Dracut 的情况下也应当可以正常引导 Linux 内核（除非启用了 RAID），系统不预装 Dracut。 
 
 ## 发行版特性
+
+AOSC OS/Retro 将提供两个版本，Base 和 Base/X11。
+
+
+
+- Base 版本包含一个最小的可引导的命令行系统，包含系统管理、文本编辑、网络连接、电源管理、文档查看等所必需的工具。
+- Base/X11 版本包含一个最小的可引导的图形化系统，除了 Base 版本提供的软件外，还提供一个基于 X11 的桌面环境和一些实用的图形化工具。
+- 两个版本均提供本地化支持（只需启用了相应的 Locale）以及通用、原生的 Linux 内核，并使用 NetworkManager 作为网络管理工具。
+
+
+
+-Base/X11 Flavore包含一个最小的可引导和图形化系统，上面列出了Base Flavore的所有组件，并添加了基于X11的桌面环境和其他图形实用程序。
+
+-NetworkManager将提供两种风格的网络管理。
 
 AOSC OS/Retro will ship in two flavours, "Base" and "Base/X11." Both flavours will come fully localised (once locale is enabled by the end-user) as well as a generic, non-optimised Linux Kernel for their respective
 
