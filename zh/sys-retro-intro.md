@@ -2,7 +2,7 @@
 title: AOSC OS/Retro：面向用户与维护者的介绍（征求意见稿）
 description: 在古董设备上使用 AOSC OS
 published: true
-date: 2020-08-13T06:08:50.661Z
+date: 2020-08-15T12:38:20.659Z
 tags: sys-retro
 editor: markdown
 ---
@@ -64,23 +64,23 @@ AOSC OS/Retro 将提供两个版本，Base 和 Base/X11。
 - Base/X11 版本包含一个最小的可引导的图形化系统，除了 Base 版本提供的软件外，还提供一个基于 X11 的桌面环境和一些实用的图形化工具。
 - 两个版本均提供本地化支持（只需启用了相应的 Locale）以及通用、原生的 Linux 内核，并使用 NetworkManager 作为网络管理工具。
 
-The Base/X11 variant will come with the following additional components (the list below is subject-to-change)...
+具体而言，Base/X11 将额外提供以下的附加组件（仅供参考）：
 
-- Desktop Environment: IceWM with Panel.
-    - IceWM is chosen for its familiar (Windows-like) interface, (partial) FD.o compliance, as well as CJK (Chinese, Japanese, and Korean) support.
-- Fonts: Standard X11 fonts (bitmap) and Unifont (bitmap and vectorised).
-    - Unifont supplied to provide complete Unicode text displaying support.
-- Audio and Video: MPV and Cmus; FFmpeg; PulseAudio.
-    - MPV is chosen for its lightweight SDL2-based interface, as well as FFmpeg support.
-    - Cmus is chosen for its curses-based terminal UI, minimalising graphical hardware requirement.
-    - PulseAudio will come standard for proper multi-device and multi-application audio support.
-- Image Viewer: Feh.
-    - Feh is chosen for its minimal interface based on standard X widgets.
-- Web Browser: Dillo, w3m, and Lynx.
-    - Dillo is chosen for its lightweight FLTK interface, as well as partial HTML5 compliance.
-    - w3m and Lynx are shipped as standard under the `web-base` metapackage.
+- 桌面环境：带有面板的 IceWM。
+    - 选择 IceWM 是因为它轻量、界面美观、对中日韩语言支持良好。
+- 字体：标准 X11 字体（点阵）和 Unifont（点阵和矢量）。
+    - Unifont 为 Unicode 文本显示提供了良好的支持。
+- 音频和视频：MPV 和 Cmus；FFmpeg；PulseAudio。
+    - 选择 MPV 是因为它采用基于 SDL2 的轻量级界面，且支持 FFmpeg。
+    - 选择 Cmus 是因为它采用基于 curses 的 UI，将对图形硬件的需求最小化。
+    - PulseAudio 则是跨设备和跨应用程序音频支持的标准。
+- 图像查看器：Feh。
+    - 选择 Feh 是因为它采用基于标准 X11 部件的轻量级界面。
+- 网络浏览器：Dillo、w3m 和 Lynx。
+    - 选择 Dillo 是因为它采用 FLTK 轻量级界面，并支持 HTML5。
+    - w3m 和 Lynx 则是作为 `web-base` 元软件包的一部分提供的。
 
-Extra packages, such as Firefox and more feature-complete desktop environments will be available from the [community repository](https://packages.aosc.io/), however, hardware requirement checks will be enforced based on processor and memory installed on your AOSC OS/Retro device (i.e., package installation will be aborted when attempting to install Firefox on a computer without SSE2 SIMD support).
+你还可以从 [软件仓库](https://packages.aosc.io/) 获取其它的软件包，如 Firefox 和其它可选的桌面环境。但是，在安装的时候我们可能需要对你的 AOSC OS/Retro 设备进行一些硬件环境的检测（举个例子，如果我们检测到你的电脑不支持 SSE2 SIMD 而你在试图安装 Firefox，我们将中止你的安装）。
 
 ## 维护计划
 
