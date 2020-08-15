@@ -2,7 +2,7 @@
 title: AOSC OS/Retro：面向用户与维护者的介绍（征求意见稿）
 description: 在古董设备上使用 AOSC OS
 published: true
-date: 2020-08-15T12:50:50.975Z
+date: 2020-08-15T12:54:47.680Z
 tags: sys-retro
 editor: markdown
 ---
@@ -93,7 +93,7 @@ AOSC OS/Retro 将与主线版本共享一颗 [软件包树](https://github.com/A
 - [补丁级别更新](/en/dev-sys-known-patch-release-rules) 可用。
 - 带有重大安全修复的版本更新可用。这种情况下可以从 `stable` 分支进行 [Cherry Pick](https://git-scm.com/docs/git-cherry-pick) 操作以选择性合并。
 
-At the end of each annual cycle, a new distribution tarball will be made available on the [downloads page](https://aosc.io/downloads/), as well as an update CD image containing a local repository containing all system updates. A full AOSC OS/Retro repository will also be provided in forms of a tarball or a set of CD/DVD image.
+在每个年度周期结束时，我们会在 [下载页面](https://aosc.io/downloads/) 提供新的 Tarball，以及一份包含了所有系统更新的本地软件仓库 CD 镜像文件。完整的 AOSC OS/Retro 软件仓库也将以 Tarball 或 CD/DVD 镜像的形式提供。 
 
 # 维护目标
 
