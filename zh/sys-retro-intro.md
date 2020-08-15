@@ -2,7 +2,7 @@
 title: AOSC OS/Retro：面向用户与维护者的介绍（征求意见稿）
 description: 在古董设备上使用 AOSC OS
 published: true
-date: 2020-08-15T12:54:47.680Z
+date: 2020-08-15T14:01:35.987Z
 tags: sys-retro
 editor: markdown
 ---
@@ -97,24 +97,20 @@ AOSC OS/Retro 将与主线版本共享一颗 [软件包树](https://github.com/A
 
 # 维护目标
 
-AOSC OS/Retro will be maintained with a few goals in mind, relating to system performance, storage requirements, and peripheral support. This chapter will also serve to outline AOSC OS/Retro's system requirements.
+我们基于一定的性能、储存和网络条件维护 AOSC OS/Retro，因此本章还将提及 AOSC OS/Retro 的系统需求。
 
-This chapter will then be split into sections, containing requirements and metrics shared and specific to each of our target architectures.
+## 通用指标
 
-## Common Metrics
+- AOSC OS/Retro 的 Base 版本应该可以安装在 540MB 硬盘上，Base/X11 版本应该可以安装在 1.2GB 的硬盘上。
+    - 安装系统后，应该有足够的空间用于内存交换和系统更新。
+- 假设用户已经取得了软件仓库的拷贝，正常使用 AOSC OS/Retro 的时候应该不需要任何形式的网络访问。
+- AOSC OS/Retro 应支持常见的 ISA/EISA（PCMCIA）、PCI（CardBus）、PCI Express（ExpressCard）、SCSI 以及USB（1.1/2.0）、PS/2、串行和并行外围设备。
+- AOSC OS/Retro 应支持拨号、10/100/1000Mbps 以太网以及 802.11a/b/g/n/ac 无线连接。
+- AOSC OS/Retro 应可以从基于 IDE/EIDE/CE-ATA/SATA/SCSI 的硬盘启动（并支持 SCSI 配置）。AOSC OS/Retro 也应可以从 USB、光学媒体或其他形式的外部/可移动存储启动（但这将不会得到官方支持）。 
 
-- AOSC OS/Retro's "Base" flavour should install onto a 540MB hard disk drive (largest capacity available for non-LBA systems, such as earlier 486-class systems), while the "Base/X11" flavour should install onto a 1.2GB drive (commonly found on Intel x86 computers from ~1996).
-    - After the system is installed, there should be enough space for a 64MiB swap area and future system updates (assuming one package is cached onto the hard disk at a time, using the update CD).
-    - Users should expect to conserve ~100MiB of hard disk space for network- or internet-based system updates.
-- AOSC OS/Retro should not require any form of network access for normal usage, assuming the user has obtained a copy of local repository.
-- AOSC OS/Retro should support common ISA/EISA (or PCMCIA), PCI (or CardBus), PCI Express (or ExpressCard), SCSI, as well as USB (1.1/2.0), PS/2, Serial and Parallel peripherals.
-- AOSC OS/Retro should support dial-up, 10/100/1000Mbps Ethernet, as well as 802.11a/b/g/n/ac wireless connections.
-- AOSC OS/Retro should boot from IDE/EIDE/CE-ATA/SATA/SCSI-based hard disk drives, SCSI configuration should be supported but will require extra components. AOSC OS/Retro may boot from USB, optical media, or other forms of external/removable storage, but this will not officially supported.
+## 系统要求（x86）
 
-## System Performance (x86)
-
-On the 32-bit x86 architecture, AOSC OS/Retro "Base" requires the following
-system components...
+在 32 位 x86 架构，AOSC OS/Retro 的 Base 版本有以下的系统要求：
 
 - Processor: Intel 80486 or compatible, FPU (Floating Point Unit) not required.
 - System Bus: ISA, EISA, PCI, or PCI Express based system devices. MCA (Micro Channel Architecture) not supported.
@@ -124,7 +120,7 @@ system components...
 - Input Device: PS/2 or Serial Port Keyboard. Mouse not required.
 - Display: VGA or compatible, or serial terminal.
 
-AOSC OS/Retro "Base/X11" requires the following system components...
+AOSC OS/Retro 的 Base/X11 版本有以下的额外的系统要求：
 
 - Processor: Intel 80486 or compatible, FPU (Floating Point Unit) not required.
     - Intel Pentium II 233MHz, AMD K6, Cyrix MediaGX, Via C7 or above will significantly improve graphical experience.
@@ -141,9 +137,9 @@ AOSC OS/Retro "Base/X11" requires the following system components...
     - ISA/EISA video cards *not recommended*, VESA Local Bus will significantly improve video performance.
     - PCI and PCI Express video cards recommended, especially those with OpenGL 2.1 support (often found after ~2002), as this will allow for GPU-based video playback acceleration.
 
-## System Performance (PowerPC 32-bit, Big Endian)
+## 系统要求（PowerPC 32-bit，Big Endian）
 
-AOSC OS/Retro "Base" or "Base/X11" should run on all supported devices on this architecture - that is, PowerPC-based Apple Macintosh computers with New World ROM support.
+AOSC OS/Retro 的 Base 版本和 Base/X11 版本应该都能在使用这个架构的任一设备上使用，即支持所有基于 PowerPC 架构带有 New World ROM 支持的 Apple Macintosh 计算机。
 
 - Portables...
    - PowerBook G3 "Lombard" and "Pismo" models.
