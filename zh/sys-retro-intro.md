@@ -2,7 +2,7 @@
 title: AOSC OS/Retro：面向用户与维护者的介绍（征求意见稿）
 description: 在古董设备上使用 AOSC OS
 published: true
-date: 2020-08-15T12:38:20.659Z
+date: 2020-08-15T12:50:50.975Z
 tags: sys-retro
 editor: markdown
 ---
@@ -86,12 +86,12 @@ AOSC OS/Retro 将提供两个版本，Base 和 Base/X11。
 
 <!-- Note from bobby285271: If you want to edit the heading of this chapter, please update the links in the "维护工具集" chapter accordingly. -->
 
-AOSC OS/Retro will be maintained on the [`retro`](https://github.com/AOSC-Dev/aosc-os-abbs/tree/retro/) branch, sharing the same [package tree](https://github.com/AOSC-Dev/aosc-os-abbs/) with the mainline distribution. However, in interest of both the maintainer's reasonable maintenance effort, as well as the longevity and usability of the target devices, AOSC OS/Retro will update on an *annual schedule*.
+AOSC OS/Retro 将与主线版本共享一颗 [软件包树](https://github.com/AOSC-Dev/aosc-os-abbs/)，在 [`retro`](https://github.com/AOSC-Dev/aosc-os-abbs/tree/retro/) 分支上进行维护。然而，考虑到维护者的精力有限，以及目标设备的寿命长短和可用性，AOSC OS/Retro 会遵循长达一年的更新周期。
 
-After the first update cycle of a year, the `retro` branch will *merge from* the `stable` branch from the mainline distribution (`stable` => `retro`). After which, *no further merge or reverse merge* will be allowed. Package versions in the `retro` branch will remain constant unless...
+每个更新周期开始的时候，`retro` 分支将合并自来自主线发行版的 `stable` 分支的更新（`stable`=>`retro`）。在下一个更新周期开始前，不再进行合并。`retro` 分支中的软件包版本将维持不变，除非：
 
-- An [patch-level update](/dev-sys-known-patch-release-rules) is made available.
-- A security update is made available that *requires* a version update. If necessary, changes could be [cherry-picked](https://git-scm.com/docs/git-cherry-pick) from the `stable` branch.
+- [补丁级别更新](/en/dev-sys-known-patch-release-rules) 可用。
+- 带有重大安全修复的版本更新可用。这种情况下可以从 `stable` 分支进行 [Cherry Pick](https://git-scm.com/docs/git-cherry-pick) 操作以选择性合并。
 
 At the end of each annual cycle, a new distribution tarball will be made available on the [downloads page](https://aosc.io/downloads/), as well as an update CD image containing a local repository containing all system updates. A full AOSC OS/Retro repository will also be provided in forms of a tarball or a set of CD/DVD image.
 
