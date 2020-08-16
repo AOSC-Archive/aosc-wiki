@@ -1,8 +1,8 @@
 ---
-title: Installation/AMD64/SysReq
+title: Installation/AMD64/SysReq (简体中文)
 description: AOSC OS 系统要求（适用于 AMD64/x86-64 设备）
 published: true
-date: 2020-08-16T13:00:16.769Z
+date: 2020-08-16T13:02:20.049Z
 tags: sys-installation
 editor: markdown
 ---
