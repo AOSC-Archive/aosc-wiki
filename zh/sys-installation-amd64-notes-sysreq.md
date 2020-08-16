@@ -2,23 +2,16 @@
 title: Installation/AMD64/SysReq
 description: AOSC OS System Requirements for AMD64/x86-64 Devices
 published: true
-date: 2020-08-16T11:21:32.123Z
+date: 2020-08-16T11:32:05.224Z
 tags: sys-installation
 editor: markdown
 ---
 
-This page provides some general information and suggestions, in hope that it may aid in your choice from various AOSC OS variants provided for x86-64-based systems. Only processor, memory, display, GPU, and storage requirements are provided below.
+这个页面将为你提供 AOSC OS 各个 x86_64 变种版本对处理器、内存、显示设备、GPU 和储存空间的具体要求，旨在帮助您选择合适的变种版本。因为 Container 版本和 BuildKit 版本并非可引导可安装变种，在这里不做讨论。
 
-Moreover, development, and container variants not intended for installation are not discussed here.
+# 变种版本
 
-# Variants
-
-AOSC OS is provided with the following installable and bootable variants, each with their own features and implications on their system requirements. System requirements may vary greatly between different variants, but processor requirements are known for each architecture (although suggestions will be provided for each variant for ideal experience): 
-
-- Any EMT64/AMD64 compatible x86-64 processors.
-- SSE3 support required (will not work on some early AMD Opteron/Athlon64 processors).
-
-And provided with the following variants:
+AOSC OS 提供了以下可安装可引导的变种版本：
 
 - [Base](#base)
 - [KDE/Plasma Desktop](#kde-plasma-desktop)
@@ -27,6 +20,12 @@ And provided with the following variants:
 - [XFCE](#xfce)
 - [LXDE](#lxde)
 - [i3 Window Manager](#i3-window-manager)
+
+
+每个变种版本都有各自的特性和系统要求，但是它们对处理器的最低要求都是一样的：
+
+- 所有兼容 EMT64/AMD64 的 x86-64 处理器。
+- 必须要有 SSE3 支持。
 
 ## Base
 
