@@ -2,7 +2,7 @@
 title: Installation/AMD64/SysReq
 description: AOSC OS System Requirements for AMD64/x86-64 Devices
 published: true
-date: 2020-08-16T11:32:05.224Z
+date: 2020-08-16T12:02:01.607Z
 tags: sys-installation
 editor: markdown
 ---
@@ -24,7 +24,7 @@ AOSC OS 提供了以下可安装可引导的变种版本：
 
 每个变种版本都有各自的特性和系统要求，但是它们对处理器的最低要求都是一样的：
 
-- 所有兼容 EMT64/AMD64 的 x86-64 处理器。
+- 必须是兼容 EMT64/AMD64 的 x86-64 处理器。
 - 必须要有 SSE3 支持。
 
 ## Base
@@ -97,8 +97,8 @@ i3 Window Manager variant of AOSC OS comes with Conky and i3block for system inf
 - Display: SVGA, XGA or higher recommended.
 - GPU: Recommended, but framebuffer device support will do.
 
-# Extra Notes
+# 备注
 
-- Web Browsers, especially mainstream choices like Chromium (Google Chrome), and Firefox may require significantly more memeory capacity and processing power. It will be very difficult to browse any webpage smoothly with an older processor like Intel Pentium 4/D's or AMD Athlon64's with less than 2GB (arguably 4GB) of RAM. As of this note, this Wiki page is edited on a Lenovo ThinkPad T61, with an Intel Core 2 T9300 processor and 8GB of RAM, running Chromium 62.
-- If you would like to use DKMS-based Linux Kernel addons, it is required for your system to compile these addon modules, which could require a significant amount of processing power - but not necessarily RAM.
-- Installing system updates on a 5400 RPM or slower HDD (mechanical hard disk drives) will require significantly greater amount of time, even on older systems.
+- 部分网络浏览器（例如 Chromium 和 Firefox）可能需要更好的处理器和内存。如果你使用 Intel Pentium 4/D 或 AMD Athlon64 这样的老处理器或者不足 2GB 的内存，很难流畅地使用这些浏览器浏览网页。这个页面的英文版初稿是在联想 ThinkPad T61（Intel Core 2 T9300 处理器，8GB RAM）上完成的，使用的是 Chromium 62；中文版初稿是在戴尔 Inspiron 7591（Intel Core i5 9300H 处理器，8GB RAM）上完成的，使用的是 Firefox 78。
+- 如果您想使用基于 DKMS 的 Linux 内核插件，由于你的系统需要编译这些插件模块，同样也需要更好的处理器和内存。
+- 在转速低于 5400 RPM 机械硬盘上安装系统更新将需要消耗较多的时间。
