@@ -2,7 +2,7 @@
 title: AOSC 贡献者注册流程
 description: 
 published: true
-date: 2020-08-16T13:23:24.889Z
+date: 2020-08-16T13:30:22.913Z
 tags: community
 editor: markdown
 ---
@@ -17,6 +17,6 @@ editor: markdown
 - 创建一个邮箱帐号（Mingcong Bai <<jeffbai@aosc.io>>）。
 - 在 GitHub 提交你的个人页面，详见 [这个页面](/en/infra-community-portal#add-new-personal-pages)。
 - 必要时，[将公共密钥添加到 GitHub 仓库](https://github.com/AOSC-Dev/dev-pubkeys)。
-- 必要时，将公共密钥添加到软件仓库服务器（Xiaoxing ye <<xiaoxing@aosc.io>>）。
+- 必要时，将公共密钥添加到软件仓库服务器（Xiaoxing Ye <<xiaoxing@aosc.io>>）。
 - 可选：在 Freenode 上获取一个 `aosc/member/<ldap_username>` 格式的 [马甲](https://freenode.net/kb/answer/cloaks)。你可能需要提供你的 Freenode 用户名（Howard Xiao <hx@aosc.io>）。
 
