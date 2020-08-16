@@ -2,13 +2,14 @@
 title: Installation/AMD64/KVM
 description: Notes for AOSC OS Installation on KVM
 published: true
-date: 2020-05-04T04:56:08.776Z
-tags: 
+date: 2020-08-16T10:24:45.248Z
+tags: sys-installation
+editor: markdown
 ---
 
 AOSC OS installation on Qemu/KVM is the same as installing on a regular AMD64/x86_64 system, this section is intended to aid you with configuring the virtual machine, and un-tar-ing the tarballs from outside of the virtual machine.
 
-These two steps below replaces the "Preparing an Installation Environment", "Preparing partitions", and "Un-tar!" sections in the [regular installation guide](/users/installation/amd64).
+These two steps below replaces the "Preparing an Installation Environment", "Preparing partitions", and "Un-tar!" sections in the [regular installation guide](/en/sys-installation-amd64).
 
 # Forenotes
 
