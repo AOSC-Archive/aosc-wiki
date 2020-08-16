@@ -2,7 +2,7 @@
 title: AOSC Membership Enrollment Checklist
 description: Way to become AOSC Member
 published: true
-date: 2020-07-15T03:53:48.746Z
+date: 2020-08-16T13:29:55.597Z
 tags: community
 editor: markdown
 ---
@@ -17,5 +17,5 @@ Here we provide a checklist describing the procedures to contributor enrollment:
 - Create a Mail account (Mingcong Bai <<jeffbai@aosc.io>>).
 - Create a new people page in GitHub, consult [this guide](/infra-community-portal#add-new-personal-pages) for procedures.
 - [Enroll the public key in the GitHub repository](https://github.com/AOSC-Dev/dev-pubkeys) as needed.
-- Enroll the public key on the repository server as needed (Xiaoxing ye <<xiaoxing@aosc.io>>).
+- Enroll the public key on the repository server as needed (Xiaoxing Ye <<xiaoxing@aosc.io>>).
 - (Optional) Obtain a freenode [project cloak](https://freenode.net/kb/answer/cloaks) in the form of `aosc/member/<ldap_username>`. Please also provide your freenode username (Howard Xiao <hx@aosc.io>).
