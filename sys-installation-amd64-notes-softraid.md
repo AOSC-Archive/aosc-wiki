@@ -2,11 +2,12 @@
 title: Installation/AMD64/SoftRAID
 description: Notes for AOSC OS Installation on Devices with Software RAID Set Up(s).
 published: true
-date: 2020-05-04T04:56:10.389Z
-tags: 
+date: 2020-08-16T10:26:10.422Z
+tags: sys-installation
+editor: markdown
 ---
 
-Installing AOSC OS on software-RAID configuration may require extra steps after installing using the [regular installation guide](/users/installation/amd64).
+Installing AOSC OS on software-RAID configuration may require extra steps after installing using the [regular installation guide](/en/sys-installation-amd64).
 
 # Forenotes
 
