@@ -1,8 +1,8 @@
 ---
 title: Installation/AMD64/SysReq
-description: AOSC OS System Requirements for AMD64/x86-64 Devices
+description: AOSC OS 系统要求（适用于 AMD64/x86-64 设备）
 published: true
-date: 2020-08-16T12:02:01.607Z
+date: 2020-08-16T13:00:16.769Z
 tags: sys-installation
 editor: markdown
 ---
@@ -29,7 +29,7 @@ AOSC OS 提供了以下可安装可引导的变种版本：
 
 ## Base
 
-This variant of AOSC OS is intended for non-graphical and minimal installation, users are provided with basic tools for system management, text editing, network connection, and Internet connectivity support. This variant is suitable for server configuration with additional software packages installed.
+Base 变种版本提供了一个不带有桌面环境的最小化系统，它为用户提供了用于系统管理、文本编辑、网络连接的基本工具。只需稍作配置，即可将此变种版本用于小型服务器。
 
 - Processor: Any processor supported.
 - Memory: 128MB, 512MB recommended for heavier workload (Node.js).
@@ -39,7 +39,7 @@ This variant of AOSC OS is intended for non-graphical and minimal installation, 
 
 ## KDE/Plasma Desktop
 
-KDE, or Plasma Desktop is a complete desktop interface and application suite. This is the heaviest variant of AOSC OS, highly taxing on processor, memory, and GPU. Not recommended for older laptops and desktops with integrated graphics (Intel i965 will do, but anything older will struggle).
+KDE 由一个桌面环境（Plasma Desktop）和一个庞大的应用程序集组成。Plasma Desktop 是重量级桌面环境，对处理器、内存和 GPU 要求苛刻，因此不推荐在旧设备上使用这个变种版本，特别是没有独显的老式笔记本。
 
 - Processor: Any processor supported, Intel Sandy Bridge recommended.
 - Memory: 2GB, 4GB or more recommended.
@@ -49,7 +49,7 @@ KDE, or Plasma Desktop is a complete desktop interface and application suite. Th
 
 ## GNOME
 
-GNOME, with its GNOME Shell interface, is a fully featured desktop environment with relatively high demand on processor, memory, and GPU. Many x86-64 laptop, desktop of ~8 years of age should run GNOME just fine. A faster GPU may help with desktop performance.
+GNOME 是一个基于 GNOME Shell 界面的功能齐全的桌面环境。GNOME 也是重量级桌面环境，对处理器、内存和 GPU 也有着高要求，最近八年出厂的计算机应该能较好地运行 GNOME，更快的 GPU 可能有助于提高桌面性能。
 
 - Processor: Any processor supported, Intel Sandy Bridge recommended.
 - Memory: 2GB, 4GB or more recommended.
@@ -59,7 +59,7 @@ GNOME, with its GNOME Shell interface, is a fully featured desktop environment w
 
 ## MATE
 
-A fork of GNOME 2, therefore less taxing on graphic card (GPU), this is *not* a lightweight desktop environment, however. Any x86-64-based system should be able to run MATE just fine. MATE Desktop is built against GTK+ 3, a working GPU with 2D acceleration may boost desktop performance dramatically.
+MATE 是 GNOME 2 的一个分支版本，对显卡的要求较低，但这也不是一个轻量级桌面环境。任何基于 x86_64 的系统都应该可以运行 MATE。MATE 是基于 GTK 3 构建的，一个支持 2D 加速的 GPU 可以显著提高桌面性能。
 
 - Processor: Any processor supported, Core 2 Duo recommended.
 - Memory: 512MB, 1GB or more recommended for multitasking.
@@ -69,7 +69,7 @@ A fork of GNOME 2, therefore less taxing on graphic card (GPU), this is *not* a 
 
 ## XFCE
 
-XFCE is a relatively lightweight, and fully modular desktop environment. XFCE has a smaller memory footprint, and takes less storage space. XFCE is based on GTK+ 2, therefore not exactly taxing on GPU (though it is expected that XFCE will switch to GTK+ 3, then system requirements will be expected to be on-par with that of [MATE Desktop](#mate)).
+XFCE 是一个相对轻量级、模块化的桌面环境，基于 GTK 3。XFCE 的内存占用更小，占用的存储空间更少。
 
 - Processor: Any processor supported.
 - Memory: 256MB, 512MB or more recommended for multitasking.
@@ -79,7 +79,7 @@ XFCE is a relatively lightweight, and fully modular desktop environment. XFCE ha
 
 ## LXDE
 
-LXDE is lighter (yet) than XFCE, also fully modular, and based on GTK+ 3. Recommended for older x86-64-based systems, say, those equipped with a Pentium 4 Prescott (EMT64 supported).
+LXDE 比 XFCE 更加轻量，也是完全模块化的，基于 GTK 3。推荐在旧式设备上使用这一变种（如配备 Pentium 4 Prescott 的设备）。
 
 - Processor: Any processor supported.
 - Memory: 256MB, 512MB or more recommended for multitasking.
@@ -89,7 +89,7 @@ LXDE is lighter (yet) than XFCE, also fully modular, and based on GTK+ 3. Recomm
 
 ## i3 Window Manager
 
-i3 Window Manager variant of AOSC OS comes with Conky and i3block for system information monitor, and Compton for desktop composition support (disabled on framebuffer devices). This is the lightest variant that comes with a graphical interface, but also comes with a steeper learning curve.
+这是带有图形界面的最轻量的变种版本，但你可能需要花费一定的时间熟悉 i3 窗口管理器的使用。
 
 - Processor: Any processor supported.
 - Memory: 128MB, 512MB or more recommended for multitasking.
