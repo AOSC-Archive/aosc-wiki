@@ -2,8 +2,9 @@
 title: Installation/AMD64/SysReq
 description: AOSC OS System Requirements for AMD64/x86-64 Devices
 published: true
-date: 2020-05-04T04:56:12.118Z
-tags: 
+date: 2020-08-16T12:49:30.157Z
+tags: sys-installation
+editor: markdown
 ---
 
 This page provides some general information and suggestions, in hope that it may aid in your choice from various AOSC OS variants provided for x86-64-based systems. Only processor, memory, display, GPU, and storage requirements are provided below.
@@ -69,7 +70,7 @@ A fork of GNOME 2, therefore less taxing on graphic card (GPU), this is *not* a 
 
 ## XFCE
 
-XFCE is a relatively lightweight, and fully modular desktop environment. XFCE has a smaller memory footprint, and takes less storage space. XFCE is based on GTK+ 2, therefore not exactly taxing on GPU (though it is expected that XFCE will switch to GTK+ 3, then system requirements will be expected to be on-par with that of [MATE Desktop](#mate)).
+XFCE is a relatively lightweight, and fully modular desktop environment. XFCE has a smaller memory footprint, and takes less storage space. XFCE is based on GTK+ 3, thus its system requirements are similar to those of [MATE Desktop](#mate).
 
 - Processor: Any processor supported.
 - Memory: 256MB, 512MB or more recommended for multitasking.
