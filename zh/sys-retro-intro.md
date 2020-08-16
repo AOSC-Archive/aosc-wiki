@@ -2,7 +2,7 @@
 title: AOSC OS/Retro：面向用户与维护者的介绍（征求意见稿）
 description: 在古董设备上使用 AOSC OS
 published: true
-date: 2020-08-15T14:01:35.987Z
+date: 2020-08-16T10:23:21.738Z
 tags: sys-retro
 editor: markdown
 ---
@@ -112,42 +112,42 @@ AOSC OS/Retro 将与主线版本共享一颗 [软件包树](https://github.com/A
 
 在 32 位 x86 架构，AOSC OS/Retro 的 Base 版本有以下的系统要求：
 
-- Processor: Intel 80486 or compatible, FPU (Floating Point Unit) not required.
-- System Bus: ISA, EISA, PCI, or PCI Express based system devices. MCA (Micro Channel Architecture) not supported.
-- RAM: 16MiB (32MiB swap).
-- Storage: 540MB (~514MiB).
-    - (Ultra) DMA via PCI Bus Mastering will significantly improve system performance.
-- Input Device: PS/2 or Serial Port Keyboard. Mouse not required.
-- Display: VGA or compatible, or serial terminal.
+- 处理器：Intel 80486（或与此兼容的处理器），不对浮点运算单元作要求。
+- 系统总线：ISA、EISA、PCI 或者基于 PCI Express 的系统设备。我们不支持 MCA（Micro Channel Architecture）。
+- RAM：16MiB（32MiB 交换空间）。
+- 储存空间：540MB（~514MiB）。
+    - PCI 总线主控 DMA 可以显著提高系统性能。
+- 输入设备：PS/2 或 Serial Port 键鼠。不对鼠标作要求。
+- 显示设备：VGA（或与其兼容的设备），或串行终端。
 
 AOSC OS/Retro 的 Base/X11 版本有以下的额外的系统要求：
 
-- Processor: Intel 80486 or compatible, FPU (Floating Point Unit) not required.
-    - Intel Pentium II 233MHz, AMD K6, Cyrix MediaGX, Via C7 or above will significantly improve graphical experience.
-    - Intel Pentium III 500MHz, AMD K6-II/III or above recommended for video playback using MPV.
-- System Bus: ISA, EISA, PCI, or PCI Express based system devices. MCA (Micro Channel Architecture) not supported.
-- RAM: 32MiB (32MiB swap).
-    - 128MiB or above recommended for Internet browsing.
-- Storage: 1.2GB (~1141MiB).
-    - 4.0GB (~3814MiB) recommended for local multimedia storage.
-    - (Ultra) DMA via PCI Bus Mastering will significantly improve system performance.
-- Input Device: PS/2 or Serial Port Keyboard and Mouse.
-    - Touchscreen will be supported via I2C or Serial Port.
-- Display: VGA or compatible.
-    - ISA/EISA video cards *not recommended*, VESA Local Bus will significantly improve video performance.
-    - PCI and PCI Express video cards recommended, especially those with OpenGL 2.1 support (often found after ~2002), as this will allow for GPU-based video playback acceleration.
+- 处理器：Intel 80486（或与此兼容的处理器），不对浮点运算单元作要求。
+    - Intel Pentium II 233MHz、AMD K6、Cyrix MediaGX、Via C7 或以上将显著改善图形体验。
+    - 如果你有使用 MPV 播放视频的需要，那么推荐 Intel Pentium III 500MHz, AMD K6-II/III 或以上。
+- 系统总线：ISA、EISA、PCI 或者基于 PCI Express 的系统设备。我们不支持 MCA（Micro Channel Architecture）。
+- RAM：32MiB（32MiB 交换空间）。
+    - 如果你有浏览互联网的需要，那么推荐 128MiB 或以上。
+- 储存空间：1.2GB（~1141MiB）。
+    - 如果你有储存多媒体文件的需要，那么推荐 4.0GB（~3814MiB）或以上。
+    - PCI 总线主控 DMA 可以显著提高系统性能。
+- 输入设备：PS/2 或 Serial Port 键鼠。
+    - I2C 和 Serial Port 可为触摸屏提供支持。
+- 显示设备：VGA（或与其兼容的设备）。
+    - 不推荐使用 ISA/EISA 显卡，VESA Local Bus 将显著改善图形体验。
+    - 推荐使用 PCI 和 PCI Express 显卡，特别是带有 OpenGL 2.1 支持的显卡（通常在 2002 年后生产）。
 
 ## 系统要求（PowerPC 32-bit，Big Endian）
 
 AOSC OS/Retro 的 Base 版本和 Base/X11 版本应该都能在使用这个架构的任一设备上使用，即支持所有基于 PowerPC 架构带有 New World ROM 支持的 Apple Macintosh 计算机。
 
-- Portables...
-   - PowerBook G3 "Lombard" and "Pismo" models.
-   - All iBook G3, iBook G4, PowerBook G4 models.
-- Desktops...
-   - Power Macintosh G3 "Blue and White" models.
-   - All Power Macintosh G4 and G5 models.
-   - All iMac G3 and G4 models.
-   - All eMac models.
-   - All G4-based Mac Mini models.
-   - All G4- and G5-based Xserve models.
+- 便携式计算机：
+   - PowerBook G3 "Lombard" 和 "Pismo" 系列。
+   - iBook G3, iBook G4, PowerBook G4 系列。
+- 台式计算机：
+   - Power Macintosh G3 "Blue 和 White" 系列。
+   - Power Macintosh G4 和 G5 系列。
+   - iMac G3 和 G4 系列。
+   - eMac 系列。
+   - G4-based Mac Mini 系列。
+   - G4- 和 G5-based Xserve 系列。
