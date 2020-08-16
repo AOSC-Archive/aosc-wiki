@@ -2,7 +2,7 @@
 title: Installation/AMD64/SysReq
 description: AOSC OS System Requirements for AMD64/x86-64 Devices
 published: true
-date: 2020-08-16T12:49:30.157Z
+date: 2020-08-16T12:51:00.696Z
 tags: sys-installation
 editor: markdown
 ---
@@ -60,7 +60,7 @@ GNOME, with its GNOME Shell interface, is a fully featured desktop environment w
 
 ## MATE
 
-A fork of GNOME 2, therefore less taxing on graphic card (GPU), this is *not* a lightweight desktop environment, however. Any x86-64-based system should be able to run MATE just fine. MATE Desktop is built against GTK+ 3, a working GPU with 2D acceleration may boost desktop performance dramatically.
+A fork of GNOME 2, therefore less taxing on graphic card (GPU), this is *not* a lightweight desktop environment, however. Any x86-64-based system should be able to run MATE just fine. MATE Desktop is built against GTK 3, a working GPU with 2D acceleration may boost desktop performance dramatically.
 
 - Processor: Any processor supported, Core 2 Duo recommended.
 - Memory: 512MB, 1GB or more recommended for multitasking.
@@ -70,7 +70,7 @@ A fork of GNOME 2, therefore less taxing on graphic card (GPU), this is *not* a 
 
 ## XFCE
 
-XFCE is a relatively lightweight, and fully modular desktop environment. XFCE has a smaller memory footprint, and takes less storage space. XFCE is based on GTK+ 3, thus its system requirements are similar to those of [MATE Desktop](#mate).
+XFCE is a relatively lightweight, and fully modular desktop environment. XFCE has a smaller memory footprint, and takes less storage space. XFCE is based on GTK 3, thus its system requirements are similar to those of [MATE Desktop](#mate).
 
 - Processor: Any processor supported.
 - Memory: 256MB, 512MB or more recommended for multitasking.
@@ -80,7 +80,7 @@ XFCE is a relatively lightweight, and fully modular desktop environment. XFCE ha
 
 ## LXDE
 
-LXDE is lighter (yet) than XFCE, also fully modular, and based on GTK+ 3. Recommended for older x86-64-based systems, say, those equipped with a Pentium 4 Prescott (EMT64 supported).
+LXDE is lighter (yet) than XFCE, also fully modular, and based on GTK 3. Recommended for older x86-64-based systems, say, those equipped with a Pentium 4 Prescott (EMT64 supported).
 
 - Processor: Any processor supported.
 - Memory: 256MB, 512MB or more recommended for multitasking.
