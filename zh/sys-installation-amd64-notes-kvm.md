@@ -2,7 +2,7 @@
 title: Installation/AMD64/KVM (简体中文)
 description: 在 KVM 安装 AOSC OS
 published: true
-date: 2020-08-18T14:42:41.684Z
+date: 2020-08-18T15:11:46.745Z
 tags: sys-installation
 editor: markdown
 ---
@@ -11,11 +11,11 @@ AOSC OS installation on Qemu/KVM is the same as installing on a regular AMD64/x8
 
 These two steps below replaces the "Preparing an Installation Environment", "Preparing partitions", and "Un-tar!" sections in the [regular installation guide](/en/sys-installation-amd64).
 
-# Forenotes
+# 注意
 
-- Any commands listed below starting with a `# ` means that the commands are run as the `root` user.
+- 所有以 `# ` 开头的命令都需要你使用 `root` 来运行。
 
-# Prepare the VM hard disk image
+# 准备 VM 硬盘映像
 
 Create an empty hard disk image called `aosc.img` with the size of `20GiB`, you will need at least 8GB to use AOSC OS for any practical functions.
 
@@ -23,7 +23,7 @@ Create an empty hard disk image called `aosc.img` with the size of `20GiB`, you 
 # qemu-img create -f raw aosc.img 20G
 ```
 
-Partition the `aosc.img` file.
+为 `aosc.img` 建立分区：
 
 ```
 # fdisk aosc.img
@@ -51,7 +51,7 @@ The partition table has been altered.
 Syncing disks.
 ```
 
-Show the partition table.
+打印目前的分区表：
 
 ```
 $ fdisk -l aosc.img
@@ -66,41 +66,41 @@ Device     Boot Start      End  Sectors Size Id Type
 aosc.img1        2048 41943039 41940992  20G 83 Linux
 ```
 
-Create a loop device. In this example, /dev/loop0. Offset is `start * sectorsize`. And sizelimit is `sectors * sectorsize`:
+创建一个回环设备，例如 /dev/loop0。请注意下面参数中 offset 是 `start * sectorsize`，而 sizelimit 是 `sectors * sectorsize`：
 
 ```
 # losetup --offset $((2048*512)) --sizelimit $((512*41940992)) --show --find aosc.img /dev/loop0
 ```
 
-Format it:
+将其格式化：
 
 ```
 # mkfs.ext4 /dev/loop0
 ```
 
-Mount the loop device. For example, under `/mnt`:
+挂载你的回环设备，不妨将其挂载到 `/mnt`：
 
 ```
 # mount /dev/loop0 /mnt
 ```
 
-# Un-tar!
+# 解压 Tarball
 
-The shell code below shows how it is been done:
+是时候解压你已经下载好的 AOSC OS 系统 Tarball 了！
 
 ```
 $ cd /mnt
 # tar pxvf /path/to/tarball.tar.xz
 ```
 
-Now you can umount your image:
+现在你可以卸载你的映像文件了：
 
 ```
 # umount ${MOUNT}
 # losetup -d /dev/loop0
 ```
 
-# Bootloader!
+# 配置引导器
 
 Here comes the most interesting part. Boot configuration is needed for the un-tar-ed system to boot and initialize.
 
