@@ -2,14 +2,14 @@
 title: Installation/AMD64/KVM (简体中文)
 description: 在 KVM 安装 AOSC OS
 published: true
-date: 2020-08-18T15:11:46.745Z
+date: 2020-08-18T15:19:01.120Z
 tags: sys-installation
 editor: markdown
 ---
 
-AOSC OS installation on Qemu/KVM is the same as installing on a regular AMD64/x86_64 system, this section is intended to aid you with configuring the virtual machine, and un-tar-ing the tarballs from outside of the virtual machine.
+事实上，在 Qemu/KVM 上安装 AOSC OS 和在一台常规的 AMD64/x86_64 设备上安装 AOSC OS 是差不多的。本文旨在帮助您配置虚拟机，并从虚拟机外部解压 Tarball。
 
-These two steps below replaces the "Preparing an Installation Environment", "Preparing partitions", and "Un-tar!" sections in the [regular installation guide](/en/sys-installation-amd64).
+下面部分将覆盖 [常规安装指南](/en/sys-installation-amd64) 的 “准备安装环境”、“准备分区”、“解压 Tarball” 三部分。
 
 # 注意
 
@@ -17,7 +17,7 @@ These two steps below replaces the "Preparing an Installation Environment", "Pre
 
 # 准备 VM 硬盘映像
 
-Create an empty hard disk image called `aosc.img` with the size of `20GiB`, you will need at least 8GB to use AOSC OS for any practical functions.
+下面我们建立一个 `20GiB` 大小的硬盘映像文件 `aosc.img`。要想正常使用 AOSC OS，文件大小最好在 8G 以上。
 
 ```
 # qemu-img create -f raw aosc.img 20G
