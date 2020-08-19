@@ -2,7 +2,7 @@
 title: Installation/AMD64/SysReq (简体中文)
 description: AOSC OS 系统要求（适用于 AMD64/x86-64 设备）
 published: true
-date: 2020-08-18T14:34:24.679Z
+date: 2020-08-19T15:29:48.728Z
 tags: sys-installation
 editor: markdown
 ---
@@ -11,7 +11,7 @@ editor: markdown
 
 # 变种版本
 
-AOSC OS 提供了以下可安装可引导的变种版本：
+AOSC OS 为 x86_64 架构提供了以下可安装可引导的变种版本：
 
 - [Base](#base)
 - [KDE/Plasma Desktop](#kde-plasma-desktop)
