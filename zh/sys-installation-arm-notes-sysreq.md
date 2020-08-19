@@ -2,23 +2,16 @@
 title: Installation/ARM*/SysReq (简体中文)
 description: 
 published: true
-date: 2020-08-19T15:22:51.457Z
+date: 2020-08-19T15:29:49.814Z
 tags: sys-installation
 editor: markdown
 ---
 
-This page provides some general information and suggestions, in hope that it may aid in your choice from various AOSC OS variants provided for ARMv7 and AArch64 systems. Device-specific support will *not* be discussed here, only processor, memory, display, GPU, and storage requirements are provided below.
+这个页面将为你提供 AOSC OS 各个 ARMv7 变种版本和 AArch64 变种版本对处理器、内存、显示设备、GPU 和储存空间的具体要求，旨在帮助您选择合适的变种版本。请注意我们只会提供通用的指标，并不会针对某个具体的设备展开讨论。除此之外，因为 Container 版本和 BuildKit 版本并非可引导可安装变种，在这里不会做讨论。
 
-Moreover, development, and container variants not intended for installation are not discussed here.
+# 变种版本
 
-# Variants
-
-AOSC OS is provided with the following installable and bootable variants, each with their own features and implications on their system requirements. System requirements may vary greatly between different variants, but processor requirements are known for each architecture (although suggestions will be provided for each variant for ideal experience):
-
-- ARMv7: Any processor with ARMv7-A+, and NEON FPU support.
-- AArch64: Any AArch64, 64-bit ARMv8 processor.
-
-And provided with the following variants:
+AOSC OS 为 ARMv7 架构和 AArch64 架构提供了以下可安装可引导的变种版本：
 
 - [Base](#base)
 - [GNOME](#gnome)
@@ -26,6 +19,12 @@ And provided with the following variants:
 - [XFCE](#xfce)
 - [LXDE](#lxde)
 - [i3 Window Manager](#i3-window-manager)
+
+每个变种版本都有各自的特性和系统要求，但是它们对处理器的最低要求都是一样的：
+
+- ARMv7: Any processor with ARMv7-A+, and NEON FPU support.
+- AArch64: Any AArch64, 64-bit ARMv8 processor.
+
 
 ## Base
 
