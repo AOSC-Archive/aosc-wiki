@@ -2,7 +2,7 @@
 title: Installation/ARM*/SysReq (简体中文)
 description: 
 published: true
-date: 2020-08-19T15:37:19.752Z
+date: 2020-08-19T15:47:36.302Z
 tags: sys-installation
 editor: markdown
 ---
@@ -29,59 +29,59 @@ AOSC OS 为 ARMv7 架构和 AArch64 架构提供了以下可安装可引导的�
 
 Base 变种版本提供了一个不带有桌面环境的最小化系统，它为用户提供了用于系统管理、文本编辑、网络连接的基本工具。只需稍作配置，即可将此变种版本用于小型服务器。
 
-- Processor: Any processor supported.
-- Memory: 128MB, 512MB recommended for heavier workload (Node.js).
-- Storage: 2GB, 4GB recommended.
-- Display: Not necessary (SSH, Serial).
-- GPU: Not necessary.
+- 处理器：无附加要求。
+- 内存：128MB 或以上，高负载场景下建议 512MB 或以上。
+- 储存空间：2GB 或以上，建议 4GB 或以上。
+- 显示：非必需项（SSH、Serial）。
+- GPU: 非必需项。
 
 ## GNOME
 
 GNOME 是一个基于 GNOME Shell 界面的功能齐全的桌面环境。GNOME 是重量级桌面环境，对处理器、内存和 GPU 有着高要求。能流畅运行 GNOME 桌面的 ARM 设备不多。
 
-- Processor: Any processor supported, quad core recommended.
-- Memory: 512MB, 2GB or more recommended for multitasking.
-- Storage: 8GB, 16GB recommended.
-- Display: XGA, 1080p or higher recommended.
-- GPU: Recommended, with OpenGL 2.1+ or GLES2 support.
+- 处理器：无附加要求，建议使用四核（或更高）处理器。
+- 内存：512MB 或以上，建议 2GB 或以上。
+- 储存空间：8GB 或以上，建议 16GB 或以上。
+- 显示：XGA、1080p 更优配置。
+- GPU: 建议，最好有 OpenGL 2.1+ 支持。
 
 ## MATE
 
 
 MATE 是 GNOME 2 的一个分支版本，对显卡的要求较低。这并不是一个轻量级桌面环境，但是 ARMv7 开发板（如 Raspberry Pi 2）基本可以流畅运行 MATE 桌面。MATE 是基于 GTK 3 构建的，一个支持 2D 加速的 GPU 可以显著提高桌面性能。 
 
-- Processor: Any processor supported, dual core recommended.
-- Memory: 512MB, 1GB or more recommended for multitasking.
-- Storage: 8GB, 16GB recommended.
-- Display: SVGA, XGA or higher recommended.
-- GPU: Recommended, but framebuffer device support will do.
+- 处理器：无附加要求，建议使用双核（或更高）处理器。
+- 内存：512MB 或以上，建议 1GB 或以上。
+- 储存空间：8GB 或以上，建议 16GB 或以上。
+- 显示：SVGA、XGA 或更优配置。
+- GPU: 建议。
 
 ## XFCE
 
 XFCE 是一个相对轻量级、模块化的桌面环境，基于 GTK 3。XFCE 的内存占用更小，占用的存储空间更少。
 
-- Processor: Any processor supported, dual core recommended.
-- Memory: 256MB, 512MB or more recommended for multitasking.
-- Storage: 6GB, 12GB recommended.
-- Display: SVGA, XGA or higher recommended.
-- GPU: Recommended, but framebuffer device support will do.
+- 处理器：无附加要求，建议使用双核（或更高）处理器。
+- 内存：256MB 或以上，建议 512MB 或以上。
+- 储存空间：6GB 或以上，建议 12GB 或以上。
+- 显示：SVGA、XGA 或更优配置。
+- GPU: 建议。
 
 ## LXDE
 
 LXDE 比 XFCE 更加轻量，也是完全模块化的，基于 GTK 3。在 ARM 设备和系统上运行 LXDE 基本无压力。如果有节电或高负载的需要，推荐使用这一变种。
 
-- Processor: Any processor supported.
-- Memory: 256MB, 512MB or more recommended for multitasking.
-- Storage: 6GB, 12GB recommended.
-- Display: SVGA, XGA or higher recommended.
-- GPU: Recommended, but framebuffer device support will do.
+- 处理器：无附加要求。
+- 内存：256MB 或以上，建议 512MB 或以上。
+- 储存空间：6GB 或以上，建议 12GB 或以上。
+- 显示：SVGA、XGA 或更优配置。
+- GPU: 建议。
 
 ## i3 Window Manager
 
 这是带有图形界面的最轻量的变种版本，但你可能需要花费一定的时间熟悉 i3 窗口管理器的使用。
 
-- Processor: Any processor supported.
-- Memory: 128MB, 512MB or more recommended for multitasking.
-- Storage: 6GB, 12GB recommended.
-- Display: SVGA, XGA or higher recommended.
-- GPU: Recommended, but framebuffer device support will do.
+- 处理器：无附加要求。
+- 内存：128MB 或以上，建议 512MB 或以上。
+- 储存空间：6GB 或以上，建议 12GB 或以上。
+- 显示：SVGA、XGA 或更优配置。
+- GPU: 建议。
