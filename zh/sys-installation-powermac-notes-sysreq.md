@@ -2,7 +2,7 @@
 title: Installation/PowerMac/SysReq (简体中文)
 description: AOSC OS 系统要求（适用于 PowerPC/PPC64 设备）
 published: true
-date: 2020-08-20T06:55:11.808Z
+date: 2020-08-20T06:57:28.812Z
 tags: sys-installation
 editor: markdown
 ---
@@ -33,7 +33,7 @@ Base 变种版本提供了一个不带有桌面环境的最小化系统，它为
 - 内存：128MB 或以上，高负载场景下建议 512MB 或以上。
 - 储存空间：2GB 或以上，建议 4GB 或以上。
 - 显示：非必需项（SSH、Serial）。
-- GPU: 非必需项。
+- GPU：非必需项。
 
 ## MATE
 
@@ -53,7 +53,7 @@ XFCE 是一个相对轻量级、模块化的桌面环境，基于 GTK 3。XFCE �
 - 内存：256MB 或以上，建议 512MB 或以上。
 - 储存空间：6GB 或以上，建议 12GB 或以上。
 - 显示：SVGA、XGA 或更优配置。
-- GPU: 建议。
+- GPU：建议。
 
 ## LXDE
 
@@ -63,7 +63,7 @@ LXDE 比 XFCE 更加轻量，也是完全模块化的，基于 GTK 3。在 Power
 - 内存：256MB 或以上，建议 512MB 或以上。
 - 储存空间：6GB 或以上，建议 12GB 或以上。
 - 显示：SVGA、XGA 或更优配置。
-- GPU: 建议。
+- GPU：建议。
 
 ## i3 Window Manager
 
@@ -73,10 +73,10 @@ LXDE 比 XFCE 更加轻量，也是完全模块化的，基于 GTK 3。在 Power
 - 内存：128MB 或以上，建议 512MB 或以上。
 - 储存空间：6GB 或以上，建议 12GB 或以上。
 - 显示：SVGA、XGA 或更优配置。
-- GPU: 建议。
+- GPU：建议。
 
 # 备注
 
-- 部分网络浏览器（例如 Pale Moon 和 Firefox）可能需要更好的处理器和内存。如果你使用 Intel Pentium 4/D 或 AMD Athlon64 这样的老处理器或者不足 2GB 的内存，很难流畅地使用这些浏览器浏览网页。。
+- 部分网络浏览器（例如 Pale Moon 和 Firefox）可能需要更好的处理器和内存。如果你使用低端的处理器或者不足 2GB 的内存，很难流畅地使用这些浏览器浏览网页。
 - 如果您想使用基于 DKMS 的 Linux 内核插件，由于你的系统需要编译这些插件模块，同样也需要更好的处理器和内存。
 - 在转速低于 5400 RPM 机械硬盘上安装系统更新将需要消耗较多的时间。
