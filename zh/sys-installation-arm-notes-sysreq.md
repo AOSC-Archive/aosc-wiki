@@ -1,8 +1,8 @@
 ---
 title: Installation/ARM*/SysReq (简体中文)
-description: 
+description: AOSC OS 系统要求（适用于 ARMv7/AArch64 设备）
 published: true
-date: 2020-08-19T15:47:36.302Z
+date: 2020-08-20T06:42:35.528Z
 tags: sys-installation
 editor: markdown
 ---
