@@ -1,0 +1,82 @@
+---
+title: Installation/PowerMac/SysReq (简体中文)
+description: AOSC OS 系统要求（适用于 PowerPC/PPC64 设备）
+published: true
+date: 2020-08-20T06:41:37.588Z
+tags: sys-installation
+editor: markdown
+---
+
+这个页面将为你提供 AOSC OS 各个 PowerPC（含 32 位和 64 位）变种版本对处理器、内存、显示设备、GPU 和储存空间的具体要求，旨在帮助您选择合适的变种版本。因为 Container 版本和 BuildKit 版本并非可引导可安装变种，在这里不做讨论。
+
+# 变种版本
+
+AOSC OS 为 PowerPC 架构提供了以下可安装可引导的变种版本：
+
+- [Base](#base)
+- [MATE](#mate)
+- [XFCE](#xfce)
+- [LXDE](#lxde)
+- [i3 Window Manager](#i3-window-manager)
+
+
+每个变种版本都有各自的特性和系统要求，但是它们对处理器的最低要求都是一样的：
+
+- PowerPC 32-bit: Any processor of this architecture.
+- PowerPC 64-bit: Big Endian processors with AltiVec SIMD support.
+
+## Base
+
+Base 变种版本提供了一个不带有桌面环境的最小化系统，它为用户提供了用于系统管理、文本编辑、网络连接的基本工具。只需稍作配置，即可将此变种版本用于小型服务器。
+
+- 处理器：无附加要求。
+- 内存：128MB 或以上，高负载场景下建议 512MB 或以上。
+- 储存空间：2GB 或以上，建议 4GB 或以上。
+- 显示：非必需项（SSH、Serial）。
+- GPU: 非必需项。
+
+## MATE
+
+MATE 是 GNOME 2 的一个分支版本，对显卡的要求较低，但这不是一个轻量级桌面环境。MATE 是基于 GTK 3 构建的，一个支持 2D 加速的 GPU 可以显著提高桌面性能。
+
+- 处理器：无附加要求，建议使用 Core 2 Duo 或更高级别的处理器。
+- 内存：512MB 或以上，建议 1GB 或以上。
+- 储存空间：8GB 或以上，建议 16GB 或以上。
+- 显示：SVGA、XGA 或更优配置。
+- GPU: 建议。
+
+## XFCE
+
+XFCE 是一个相对轻量级、模块化的桌面环境，基于 GTK 3。XFCE 的内存占用更小，占用的存储空间更少。
+
+- 处理器：无附加要求。
+- 内存：256MB 或以上，建议 512MB 或以上。
+- 储存空间：6GB 或以上，建议 12GB 或以上。
+- 显示：SVGA、XGA 或更优配置。
+- GPU: 建议。
+
+## LXDE
+
+LXDE 比 XFCE 更加轻量，也是完全模块化的，基于 GTK 3。
+
+- 处理器：无附加要求。
+- 内存：256MB 或以上，建议 512MB 或以上。
+- 储存空间：6GB 或以上，建议 12GB 或以上。
+- 显示：SVGA、XGA 或更优配置。
+- GPU: 建议。
+
+## i3 Window Manager
+
+这是带有图形界面的最轻量的变种版本，但你可能需要花费一定的时间熟悉 i3 窗口管理器的使用。
+
+- 处理器：无附加要求。
+- 内存：128MB 或以上，建议 512MB 或以上。
+- 储存空间：6GB 或以上，建议 12GB 或以上。
+- 显示：SVGA、XGA 或更优配置。
+- GPU: 建议。
+
+# 备注
+
+- 部分网络浏览器（例如 Chromium 和 Firefox）可能需要更好的处理器和内存。如果你使用 Intel Pentium 4/D 或 AMD Athlon64 这样的老处理器或者不足 2GB 的内存，很难流畅地使用这些浏览器浏览网页。。
+- 如果您想使用基于 DKMS 的 Linux 内核插件，由于你的系统需要编译这些插件模块，同样也需要更好的处理器和内存。
+- 在转速低于 5400 RPM 机械硬盘上安装系统更新将需要消耗较多的时间。
