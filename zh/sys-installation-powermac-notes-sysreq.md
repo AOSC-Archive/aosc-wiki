@@ -2,7 +2,7 @@
 title: Installation/PowerMac/SysReq (简体中文)
 description: AOSC OS 系统要求（适用于 PowerPC/PPC64 设备）
 published: true
-date: 2020-08-20T06:57:28.812Z
+date: 2020-08-20T07:02:00.845Z
 tags: sys-installation
 editor: markdown
 ---
@@ -43,7 +43,7 @@ MATE 是 GNOME 2 的一个分支版本，对显卡的要求较低。这不是一
 - 内存：512MB 或以上，建议 1GB 或以上。
 - 储存空间：8GB 或以上，建议 16GB 或以上。
 - 显示：SVGA、XGA 或更优配置。
-- GPU: 建议。
+- GPU：建议。
 
 ## XFCE
 
