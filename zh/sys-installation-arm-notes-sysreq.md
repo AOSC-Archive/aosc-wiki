@@ -2,7 +2,7 @@
 title: Installation/ARM*/SysReq (简体中文)
 description: AOSC OS 系统要求（适用于 ARMv7/AArch64 设备）
 published: true
-date: 2020-08-20T06:42:35.528Z
+date: 2020-08-20T07:02:56.096Z
 tags: sys-installation
 editor: markdown
 ---
@@ -33,7 +33,7 @@ Base 变种版本提供了一个不带有桌面环境的最小化系统，它为
 - 内存：128MB 或以上，高负载场景下建议 512MB 或以上。
 - 储存空间：2GB 或以上，建议 4GB 或以上。
 - 显示：非必需项（SSH、Serial）。
-- GPU: 非必需项。
+- GPU：非必需项。
 
 ## GNOME
 
@@ -43,7 +43,7 @@ GNOME 是一个基于 GNOME Shell 界面的功能齐全的桌面环境。GNOME �
 - 内存：512MB 或以上，建议 2GB 或以上。
 - 储存空间：8GB 或以上，建议 16GB 或以上。
 - 显示：XGA、1080p 更优配置。
-- GPU: 建议，最好有 OpenGL 2.1+ 支持。
+- GPU：建议，最好有 OpenGL 2.1+ 支持。
 
 ## MATE
 
@@ -54,7 +54,7 @@ MATE 是 GNOME 2 的一个分支版本，对显卡的要求较低。这并不是
 - 内存：512MB 或以上，建议 1GB 或以上。
 - 储存空间：8GB 或以上，建议 16GB 或以上。
 - 显示：SVGA、XGA 或更优配置。
-- GPU: 建议。
+- GPU：建议。
 
 ## XFCE
 
@@ -64,7 +64,7 @@ XFCE 是一个相对轻量级、模块化的桌面环境，基于 GTK 3。XFCE �
 - 内存：256MB 或以上，建议 512MB 或以上。
 - 储存空间：6GB 或以上，建议 12GB 或以上。
 - 显示：SVGA、XGA 或更优配置。
-- GPU: 建议。
+- GPU：建议。
 
 ## LXDE
 
@@ -74,7 +74,7 @@ LXDE 比 XFCE 更加轻量，也是完全模块化的，基于 GTK 3。在 ARM �
 - 内存：256MB 或以上，建议 512MB 或以上。
 - 储存空间：6GB 或以上，建议 12GB 或以上。
 - 显示：SVGA、XGA 或更优配置。
-- GPU: 建议。
+- GPU：建议。
 
 ## i3 Window Manager
 
@@ -84,4 +84,4 @@ LXDE 比 XFCE 更加轻量，也是完全模块化的，基于 GTK 3。在 ARM �
 - 内存：128MB 或以上，建议 512MB 或以上。
 - 储存空间：6GB 或以上，建议 12GB 或以上。
 - 显示：SVGA、XGA 或更优配置。
-- GPU: 建议。
+- GPU：建议。
