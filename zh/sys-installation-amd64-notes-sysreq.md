@@ -2,7 +2,7 @@
 title: Installation/AMD64/SysReq (简体中文)
 description: AOSC OS 系统要求（适用于 AMD64/x86-64 设备）
 published: true
-date: 2020-08-20T07:03:43.723Z
+date: 2020-08-20T07:04:19.478Z
 tags: sys-installation
 editor: markdown
 ---
@@ -35,7 +35,7 @@ Base 变种版本提供了一个不带有桌面环境的最小化系统，它为
 - 内存：128MB 或以上，高负载场景下建议 512MB 或以上。
 - 储存空间：2GB 或以上，建议 4GB 或以上。
 - 显示：非必需项（SSH、Serial）。
-- GPU: 非必需项。
+- GPU：非必需项。
 
 ## KDE/Plasma Desktop
 
