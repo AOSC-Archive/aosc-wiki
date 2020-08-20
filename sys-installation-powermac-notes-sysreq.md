@@ -2,8 +2,9 @@
 title: Installation/PowerMac/SysReq
 description: AOSC OS System Requirements for PowerPC/PPC64-based Macintosh Computers
 published: true
-date: 2020-05-04T04:56:20.525Z
-tags: 
+date: 2020-08-20T07:00:39.900Z
+tags: sys-installation
+editor: markdown
 ---
 
 This page provides some general information and suggestions, in hope that it may aid in your choice from various AOSC OS variants provided for PowerPC 32/64-bit systems. Only processor, memory, display, GPU, and storage requirements are provided below.
@@ -49,7 +50,7 @@ G3-class PowerPC systems will not be able to run MATE smoothly - anything older 
 
 ## XFCE
 
-XFCE is a relatively lightweight, and fully modular desktop environment. XFCE has a smaller memory footprint, and takes less storage space. XFCE is based on GTK+ 2, therefore not exactly taxing on GPU (though it is expected that XFCE will switch to GTK+ 3, then system requirements will be expected to be on-par with that of [MATE Desktop](#mate)). XFCE will run fine on G3 processors with higher frequency.
+XFCE is a relatively lightweight, and fully modular desktop environment. XFCE has a smaller memory footprint, and takes less storage space. XFCE is based on GTK 3, thus its system requirements are similar to those of [MATE Desktop](#mate)). XFCE will run fine on G3 processors with higher frequency.
 
 - Processor: Any processor supported, G4-class recommended.
 - Memory: 256MB, 512MB or more recommended for multitasking.
