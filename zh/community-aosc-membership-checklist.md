@@ -1,8 +1,8 @@
 ---
 title: AOSC 贡献者注册流程
-description: 
+description: 成为 AOSC 的一分子！
 published: true
-date: 2020-08-16T13:30:22.913Z
+date: 2020-08-20T10:06:11.352Z
 tags: community
 editor: markdown
 ---
