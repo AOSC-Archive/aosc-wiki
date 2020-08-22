@@ -2,44 +2,43 @@
 title: 门户网站
 description: 门户网站维护说明
 published: true
-date: 2020-08-20T10:16:19.775Z
+date: 2020-08-22T08:36:00.525Z
 tags: infra
 editor: markdown
 ---
 
-# Basic Directory Structures
+# 目录结构
 
-- Basic files
-    - `layouts/index.html` Landing page
-    - `layouts/404.html` Not found placeholder
-    - `build.sh` Build script
-    - `config.yml` Configuration for Hugo
+- 基本文件
+    - `layouts/index.html` 站点首页
+    - `layouts/404.html` 404 页面
+    - `build.sh` 构建脚本
+    - `config.yml` Hugo 配置文件
 
-- Directories containing HTML pages
+- 放置有 HTML 的目录
     - `contents/about`
     - `contents/downloads`
     - `contents/mail`
     - `contents/news`
-    - `contents/people` People pages
+    - `contents/people` 贡献者页面
     - `contents/repo`
 
-- Utility directories for Hugo
-    - `data` Datasets for different pages
-    - `assets/css` SCSS stylesheets
-    - `layouts` Page templates
-    - `contents/news/post` News posts
+- Hugo 数据文件目录
+    - `data` 数据集
+    - `assets/css` SCSS 样式文件
+    - `layouts` 页面模板
+    - `contents/news/post` 新闻文章
 
-- Utility directory
+- 实用工具目录
+    - `tools` 放置站点迁移使用的工具
+    - `daemon` 镜像站信息生成器，提供了查询镜像站信息的 API
 
-    - `tools` Contains tools for converting or migrating from old website
-    - `daemon` Mirror information aggregator, provides API for querying mirror status(-es)
+- 自动生成的目录
+    - `public` 最终生成的目录
+    - `assets/img/de-preview` 最终生成的略缩图
+    - `resources/_gen` Hugo Pipe 生成的文件
 
-- Automatically generated directories
-    - `public` The final result
-    - `assets/img/de-preview` Generated (downscaled) thumbnails
-    - `resources/_gen` Hugo Pipe generated content
-
-# Build the Pages Locally
+# 在本地构建页面
 
 - Required software packages
     1. `hugo`
