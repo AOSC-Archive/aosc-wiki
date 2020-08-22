@@ -2,7 +2,7 @@
 title: 门户网站
 description: 门户网站维护说明
 published: true
-date: 2020-08-22T08:36:00.525Z
+date: 2020-08-22T09:19:40.437Z
 tags: infra
 editor: markdown
 ---
@@ -40,21 +40,18 @@ editor: markdown
 
 # 在本地构建页面
 
-- Required software packages
-    1. `hugo`
+安装 Hugo（如已安装可跳过此步）：
 
-- Install Hugo (You can skip this step if you already got Hugo installed)
+  - 如果你在使用 AOSC OS，你可以直接从软件仓库安装 Hugo：`sudo apt install hugo`。
+  - 你也可以从 https://github.com/gohugoio/hugo/releases 获取编译好的版本。请务必下载增强版 `hugo_extended`。
 
-    - AOSC OS has Hugo in the repository, if you are using AOSC OS, just do `sudo apt install hugo`
-    - You can also download their precompiled version from https://github.com/gohugoio/hugo/releases. Please download the **extended version** as the normal version **WILL NOT WORK**!
+站点构建与预览：
 
-- Generate/Live Preview
+  - 执行 `build.sh` 生成站点。如果你对一些页面做了修改并希望预览效果，你可以执行 `hugo server` 并根据屏幕指示操作。
+  
+镜像站信息生成：
 
-To generate pages, run `build.sh`. If you want to design or modify the pages and see the modifications in realtime, you can run `hugo server` and follow the on-screen instructions.
-
-- Mirror Information Aggregator
-
-To use this, you need `Python 3` and after switching to the directory `daemon/` run `pip install -r requirements.txt` in a `venv`. Then execute it: `python3 watcher.py`.
+  - 首先确保你已经安装了 Python 3，接下来进入 `daemon/` 并在 `venv` 执行 `pip install -r requirements.txt`，然后执行 `python3 watcher.py`。
 
 # Adding New Posts
 
