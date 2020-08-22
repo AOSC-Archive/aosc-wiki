@@ -1,8 +1,8 @@
 ---
 title: 门户网站
-description: 门户网站维护说明
+description: 门户网站维护指南
 published: true
-date: 2020-08-22T09:26:40.507Z
+date: 2020-08-22T13:22:16.433Z
 tags: infra
 editor: markdown
 ---
@@ -53,21 +53,23 @@ editor: markdown
 
   - 首先确保你已经安装了 Python 3，接下来进入 `daemon/` 并在 `venv` 执行 `pip install -r requirements.txt`，然后执行 `python3 watcher.py`。
 
-# 添加新闻页
+# 新建文章
 
 ## 使用 `hugo new`（推荐）
 
 执行：
 
-```hugo new -k posts content/news/posts/YYYY-mm-dd-title.md```
+```
+hugo new -k posts content/news/posts/YYYY-mm-dd-title.md
+```
 
-接下来使用你偏好的编辑器打开 `content/news/posts/YYYY-mm-dd-title.md` 并填入新闻内容。
+接下来使用你偏好的编辑器打开 `content/news/posts/YYYY-mm-dd-title.md` 并填入文章内容。
 
 ## 手动添加
 
 只需在 `content/news/posts` 目录下创建 `YYYY-mm-dd-title.md` 文件。
 
-在填入新闻内容前，你需要参照下面的示例添加一个文件头：
+在填入文章内容前，你需要参照下面的示例添加一个文件头：
 
 ```
 ---
@@ -81,23 +83,30 @@ important: false
 
 请注意 `categories` 应该填写 `news` 和（或） `community`。
 
-# 添加个人页
+# 新建个人页面
 
 ## 使用 `hugo new`（推荐）
 
 如果你希望使用 Markdown 写作（请注意这种情况下在文件中添加的 HTML 行将不会生效）：
 
-```hugo new -k people content/people/<preferred_name>.md```
+```
+hugo new -k people content/people/<preferred_name>.md
+```
 
 如果你希望使用 HTML 写作：
 
-```hugo new -k people content/people/<preferred_name>.html```
+```
+hugo new -k people content/people/<preferred_name>.html
+```
 
-# Caveats for Hugo
+# 注意事项
 
-1. The posts/personal pages cannot contain raw HTML code, the raw HTML code will be stripped away by Hugo's Markdown renderer as a security precaution. If you want to embed something, check out [Hugo's builtin shortcode explainer](https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes).
-1. The posts/personal pages cannot contain templating syntax like `{{ $something }}`, they will be escaped automatically. If you want to use templating syntax, you probably need to use shortcodes, see the documentation above.
 
-# Publishing Your Changes
+1. 无论是文章还是个人页面都不应该包含原始的 HTML 代码。即使你这样做，Hugo 在渲染 Markdown 的时候也会自动删除相应的代码。如果你确实想嵌入一些东西，可以考虑使用 [Hugo 内置的短代码解释器](https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes)。
+
+1. 无论是文章还是个人页面都不应该包含类似 `{{ $something }}` 这样的模板语法，否着它们将被自动转义。如果你想使用模板化语法，你可能需要使用短代码，请参阅上面的文档。 
+
+
+# 应用变更
 
 Simply push your commits to `master` branch. The deployment of the website is automated, you can see [the process here](https://dev.azure.com/AOSC-Dev/aosc-portal-kiss.github.io/_build?definitionId=1&_a=summary). If you don't have the permission to do so, you may open a new PR instead.
