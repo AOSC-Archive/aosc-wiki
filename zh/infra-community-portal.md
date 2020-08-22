@@ -2,7 +2,7 @@
 title: 门户网站
 description: 门户网站维护说明
 published: true
-date: 2020-08-22T09:19:40.437Z
+date: 2020-08-22T09:26:40.507Z
 tags: infra
 editor: markdown
 ---
@@ -53,21 +53,21 @@ editor: markdown
 
   - 首先确保你已经安装了 Python 3，接下来进入 `daemon/` 并在 `venv` 执行 `pip install -r requirements.txt`，然后执行 `python3 watcher.py`。
 
-# Adding New Posts
+# 添加新闻页
 
-## Using `hugo new` (recommended)
+## 使用 `hugo new`（推荐）
 
-Run this:
+执行：
 
 ```hugo new -k posts content/news/posts/YYYY-mm-dd-title.md```
 
-Open the file `content/news/posts/YYYY-mm-dd-title.md` in your favorite text editor and edit away.
+接下来使用你偏好的编辑器打开 `content/news/posts/YYYY-mm-dd-title.md` 并填入新闻内容。
 
-## Manually add new posts
+## 手动添加
 
-Simply add a new file with the file name `YYYY-mm-dd-title.md` in the `content/news/posts` directory.
+只需在 `content/news/posts` 目录下创建 `YYYY-mm-dd-title.md` 文件。
 
-For "front-matter" (the metadata at the top), here is an example which you may want to copy:
+在填入新闻内容前，你需要参照下面的示例添加一个文件头：
 
 ```
 ---
@@ -79,17 +79,17 @@ important: false
 ---
 ```
 
-Note that the `categories` could be `news` and/or `community`.
+请注意 `categories` 应该填写 `news` 和（或） `community`。
 
-# Add New Personal Pages
+# 添加个人页
 
-## Using `hugo new` (recommended)
+## 使用 `hugo new`（推荐）
 
-Run this if writing in Markdown format (note, in this case, inline HTML code will be removed from your page):
+如果你希望使用 Markdown 写作（请注意这种情况下在文件中添加的 HTML 行将不会生效）：
 
 ```hugo new -k people content/people/<preferred_name>.md```
 
-Run this if writing in HTML format:
+如果你希望使用 HTML 写作：
 
 ```hugo new -k people content/people/<preferred_name>.html```
 
