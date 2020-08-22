@@ -2,7 +2,7 @@
 title: 软件包站点
 description: 关于软件包站点的一切
 published: true
-date: 2020-08-22T15:35:00.135Z
+date: 2020-08-22T15:35:46.530Z
 tags: infra
 editor: markdown
 ---
@@ -75,7 +75,9 @@ The website is served in `main.py`. We use [Bottle](https://bottlepy.org/) frame
 
 ## 某个软件包不是最新的
 
-如果你确认软件包站点同步功能工作正常（见上文），你的更新包可能在 `bugfix` 分支中。虽然目前软件包站点不显示任何关于 `bugfix` 分支的信息，但这些信息在我们的数据库中会有很好的记录。相关工作仍在咕咕咕，但是你可以随时在 Telegram 群或邮件列表中为我们提供关于「如何在软件包站点展示不同分支的内容」的建议。
+如果你确认软件包站点同步功能工作正常（见上文），你的更新包可能在 `bugfix` 分支中。虽然目前软件包站点不显示任何关于 `bugfix` 分支的信息，但这些信息在我们的数据库中会有很好的记录。
+
+The related work is halted now until the new workflow introduced AOSCC 2018 is in effect. Please send suggestions on how to show multiple branches on the UI, in the Telegram group or on the mailing list.
 
 ## 上游版本是错的
 
