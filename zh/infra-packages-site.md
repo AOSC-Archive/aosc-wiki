@@ -2,7 +2,7 @@
 title: 软件包站点
 description: 关于软件包站点的一切
 published: true
-date: 2020-08-22T14:25:49.450Z
+date: 2020-08-22T14:35:31.565Z
 tags: infra
 editor: markdown
 ---
@@ -22,11 +22,11 @@ editor: markdown
 
 ### 面向机器
 
-- Add `?type=json` to (almost) every endpoints, or send the `X-Requested-With: XMLHttpRequest` HTTP header, then you will get an json response. Use `page=?` for each page (see the "page" object), or `page=all` to avoid paging.
-- API version: https://packages.aosc.io/api_version
-- All package list: https://packages.aosc.io/list.json
-- SQLite3 database download: https://packages.aosc.io/data/abbs.db, and `piss.db`.
-- List of deb packages that can be removed: https://packages.aosc.io/cleanmirror/(repo), where (repo) is such as "amd64", "amd64/testing".
+- 将请求参数设置为 `?type=json`或者使用 `X-Requested-With: XMLHttpRequest` 请求头即可得到一个 JSON 响应。你可以使用 `page=?` 来分页，或者使用 `page=all` 来禁用分页。
+- 获取 API 版本：https://packages.aosc.io/api_version
+- 获取软件包列表：https://packages.aosc.io/list.json
+- 获取 SQLite3 数据库拷贝：https://packages.aosc.io/data/abbs.db 以及 `piss.db`。
+- 获取可以被清理的 DEB 包列表：https://packages.aosc.io/cleanmirror/(repo)，其中 `(repo)` 可以被替换为 `amd64` 或 `amd64/testing` 等仓库。
 
 ## Project framework
 
