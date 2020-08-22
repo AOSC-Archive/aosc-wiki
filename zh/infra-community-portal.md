@@ -2,7 +2,7 @@
 title: 门户网站
 description: 门户网站维护指南
 published: true
-date: 2020-08-22T13:22:16.433Z
+date: 2020-08-22T13:25:16.893Z
 tags: infra
 editor: markdown
 ---
@@ -109,4 +109,4 @@ hugo new -k people content/people/<preferred_name>.html
 
 # 应用变更
 
-Simply push your commits to `master` branch. The deployment of the website is automated, you can see [the process here](https://dev.azure.com/AOSC-Dev/aosc-portal-kiss.github.io/_build?definitionId=1&_a=summary). If you don't have the permission to do so, you may open a new PR instead.
+直接将你的变更提交到 `master` 分支即可。站点的部署流程是自动的，详情可以看 [这里](https://dev.azure.com/AOSC-Dev/aosc-portal-kiss.github.io/_build?definitionId=1&_a=summary)。如果你没有相应的权限，你可以转而新建一个合并请求。
