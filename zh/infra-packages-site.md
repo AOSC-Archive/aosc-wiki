@@ -2,20 +2,26 @@
 title: 软件包站点
 description: 关于软件包站点的一切
 published: true
-date: 2020-08-22T13:33:04.733Z
+date: 2020-08-22T14:24:03.131Z
 tags: infra
 editor: markdown
 ---
 
-# The Packages Site
-The [packages site](https://packages.aosc.io/) is introduced in 2017, to show various information about packages in AOSC OS. It's based on previous work in [paklist](https://github.com/AOSC-Dev/paklist).
-## Usage
-### Human
-- "Latest Source Updates" are most recent updates in git.
-- In "Repositories and Trees", "repositories" are DPKG sources and "trees" are abbs repos. "Ghost" means the packages exist in the DPKG source but not in the abbs repo. "Lagging" means there is no binary package of the updated version in abbs repo. "Missing" means the packages exist in the abbs repo but not in the DPKG source. The links in "Source Tree" column point to GitHub pages. "Outdated" means the packages have updated upstream versions. Click on the numbers and you will get the respective list.
-- The Changelog in the package page is generated with git commits.
-- Enter your raw SQL query here: https://packages.aosc.io/query/. This is read-only and have some limits. Useful for generating custom reports.
-### Machine
+# 软件包站点
+
+基于 [paklist](https://github.com/AOSC-Dev/paklist) 的 AOSC OS [软件包站点](https://packages.aosc.io/) 在 2017 首次推出，旨在展示软件仓库及软件包信息。
+
+## 用法
+
+### 面向用户
+
+- "Latest Source Updates" 板块：展示了 Git 仓库中最新的提交。
+- "Repositories and Trees" 板块："repositories" 指代的是 DPKG 仓库而 "trees" 指代的是 ABBS 仓库。"Ghost" 指代一个软件在 DPKG 仓库而不在 ABBS 仓库中。"Lagging" 指代的是 ABBS 仓库中某个软件的最新版本缺失对应的二进制包。"Missing" 指代的是一个软件在 ABBS 仓库而不在 DPKG 仓库中。"Source Tree" 中的链接指向相应的 GitHub 页面。"Outdated" 指代的是一个软件在上游有新版本可用。点击表格上的数字，你会得到相应的软件清单。
+- 软件包详情页中的 Changelog 由 Git 提交记录自动生成。
+- 可以在 https://packages.aosc.io/query/ 使用受限的 SQL 语句进行查询。如果你有生成自定义报告的需要，这个页面将会在很大程度上帮到你。
+
+### 面向机器
+
 - Add `?type=json` to (almost) every endpoints, or send the `X-Requested-With: XMLHttpRequest` HTTP header, then you will get an json response. Use `page=?` for each page (see the "page" object), or `page=all` to avoid paging.
 - API version: https://packages.aosc.io/api_version
 - All package list: https://packages.aosc.io/list.json
