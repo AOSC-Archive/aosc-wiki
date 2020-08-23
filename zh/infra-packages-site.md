@@ -2,7 +2,7 @@
 title: 软件包站点
 description: 关于软件包站点的一切
 published: true
-date: 2020-08-22T15:35:46.530Z
+date: 2020-08-23T02:50:30.240Z
 tags: infra
 editor: markdown
 ---
@@ -55,7 +55,7 @@ The website is served in `main.py`. We use [Bottle](https://bottlepy.org/) frame
 
 我们建议你预留至少 1GiB 的可用空间（当前使用量是 450 MiB）及至少 512MiB 的 RAM（实际使用不会超过 100M）。另外你需要安装 Python 3.5+ 或 PyPy3.5、带有 FTS5 支持的 SQLite3、Fossil 2.6+、bash 和 Git。
 
-我们目前使用 uWSGI 和 NGINX 来托管网站，请前往 https://github.com/AOSC-Dev/packages-site#deploy 了解部署流程。接下来你还要为 update.sh 和 piss 设置 Systemd Timers。
+我们目前使用 uWSGI 和 NGINX 来托管网站，请前往 https://github.com/AOSC-Dev/packages-site#deploy 了解部署流程。接下来你还要为 `update.sh` 和 PISS 设置 Systemd Timers。
 
 ## 计划
 
@@ -75,14 +75,12 @@ The website is served in `main.py`. We use [Bottle](https://bottlepy.org/) frame
 
 ## 某个软件包不是最新的
 
-如果你确认软件包站点同步功能工作正常（见上文），你的更新包可能在 `bugfix` 分支中。虽然目前软件包站点不显示任何关于 `bugfix` 分支的信息，但这些信息在我们的数据库中会有很好的记录。
-
-The related work is halted now until the new workflow introduced AOSCC 2018 is in effect. Please send suggestions on how to show multiple branches on the UI, in the Telegram group or on the mailing list.
+如果你确认软件包站点同步功能工作正常（见上文），你的更新包可能在 `bugfix` 分支中。虽然目前软件包站点不显示任何关于 `bugfix` 分支的信息，但这些信息在我们的数据库中会有很好的记录。我们也欢迎你在 Telegram 群或邮件列表中向我们提供有关「如何重新设计软件包站点以支持此类分支的展示」的建议。
 
 ## 上游版本是错的
 
-A: PISS uses a lot of heuristics, and resorts to Anitya if we can't figure out. Therefore, there are two sources of errors. If the error is on our side, we can improve the heuristics, or give it more information. Currently the only information we can use is package name, current version, url, source type (tarball/git/hg).
+PISS 大量使用到了启发式搜索，主要依赖 Anitya 库，因为问题不一定是我们造成的。我们已经在尽可能地改进搜索模型并为该模型提供尽可能多的信息（目前我们提供软件包名称、当前版本、URL、源码包类型等）。
 
 ## 为什么没有依赖关系图
 
-A: Too big to draw. There are also many cyclic dependencies.
+因为依赖关系实在过于庞杂。
