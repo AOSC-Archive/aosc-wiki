@@ -2,7 +2,7 @@
 title: 软件包站点
 description: 关于软件包站点的一切
 published: true
-date: 2020-08-23T03:35:02.752Z
+date: 2020-08-23T03:44:31.605Z
 tags: infra
 editor: markdown
 ---
@@ -34,12 +34,11 @@ editor: markdown
 
 ### abbs-meta
 
-[abbs-meta](https://github.com/AOSC-Dev/abbs-meta) 通常用于从 ABBS 树及其 Git 仓库中提取信息。首先，它使用 `reposync.py` 把 Git 仓库转换成 Fossil 仓库。我们使用 Fossil 是因为 Git API 难以使用且外部调用和文件写入效果都不尽人意，而且 Fossil 的数据库也很容易直接使用。然后，我们根据各个提交更新 `abbs.db`，以保存历史记录。这个操作将修改 `package_*` 数据表。从头开始同步可能需要十个小时。`bashvar.py` 可以解析大多数配置文件。当有复杂的字符串操作时，它会自动调用 BASH。还有一些工具可以添加校验和（`addchksum.{py，sh}`）和修改 REL 信息（`increaserel.py`）。
+[abbs-meta](https://github.com/AOSC-Dev/abbs-meta) 通常用于从 ABBS 树及其 Git 仓库中提取信息。首先，它使用 `reposync.py` 把 Git 仓库转换成 Fossil 仓库。我们使用 Fossil 是因为 Git API 难以使用且外部调用和文件写入效果都不尽人意，而且 Fossil 的数据库也很容易直接使用。然后，我们根据各个提交更新 `abbs.db`，以保存历史记录。这个操作将修改 `package_*` 数据表。从头开始同步可能需要十个小时。`bashvar.py` 可以解析大多数配置文件。当有复杂的字符串操作时，它会自动调用 BASH。还有一些工具可以添加校验和（`addchksum.{py，sh}`）和修改修订号信息（`increaserel.py`）。
 
 ### packages-site
 
-[packages-site](https://github.com/AOSC-Dev/packages-site) is the website backend. `dpkgrepo.py` is used to record the DPKG packages information. This operation modifies `dpkg_*` tables. The package source definition is in `dpkgrepo.py`. The update process is shown in `update.sh`. The website updates once an hour. There is one hour of proxy/CDN/browser cache, so the delay may be 2 hours.
-The website is served in `main.py`. We use [Bottle](https://bottlepy.org/) framework and Jinja2 template system. A lot of scary SQL is used to generate the reports. Version comparison is done using an extension for SQLite, which must be built first using `make`.
+[packages-site](https://github.com/AOSC-Dev/packages-site) 是站点的后端部分。`dpkgrepo.py` 用于记录 DPKG 软件包信息。这个操作将修改 `dpkg_*` 数据表。软件包来源定义位于 `dpkgrepo.py`。`update.sh` 用于数据更新。网站每小时更新一次。因为代理、CDN、浏览器缓存的原因，因此延迟可能长达两小时。`main.py` 是站点的入口文件，我们用 [Bottle](https://bottlepy.org/) 框架和 Jinja2 模板系统。我们使用大量 SQL 语句生成各种报告，并使用 SQLite 的拓展实现版本比较，你可能需要首先使用 `make` 来构建这些拓展。
 
 ### piss
 
