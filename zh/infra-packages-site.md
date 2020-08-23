@@ -2,7 +2,7 @@
 title: 软件包站点
 description: 关于软件包站点的一切
 published: true
-date: 2020-08-23T02:50:30.240Z
+date: 2020-08-23T03:35:02.752Z
 tags: infra
 editor: markdown
 ---
@@ -34,7 +34,7 @@ editor: markdown
 
 ### abbs-meta
 
-[abbs-meta](https://github.com/AOSC-Dev/abbs-meta) is used to extract information from abbs tree and its Git repo. First, it use `reposync.py` to convert Git to Fossil repo. We use Fossil because the Git API is hard to use, calling external programs and writing temp files are slow, and Fossil repo database is easy to use directly. Then, we updated the `abbs.db` database for each commit, to preserve history. This operation modifies `package_*` tables. Syncing this from scratch may cost 10 hours. `bashvar.py` can parse most spec files. It calls bash when there are complex string operations. There are tools to add checksums (`addchksum.{py,sh}`) and to increase REL (`increaserel.py`).
+[abbs-meta](https://github.com/AOSC-Dev/abbs-meta) 通常用于从 ABBS 树及其 Git 仓库中提取信息。首先，它使用 `reposync.py` 把 Git 仓库转换成 Fossil 仓库。我们使用 Fossil 是因为 Git API 难以使用且外部调用和文件写入效果都不尽人意，而且 Fossil 的数据库也很容易直接使用。然后，我们根据各个提交更新 `abbs.db`，以保存历史记录。这个操作将修改 `package_*` 数据表。从头开始同步可能需要十个小时。`bashvar.py` 可以解析大多数配置文件。当有复杂的字符串操作时，它会自动调用 BASH。还有一些工具可以添加校验和（`addchksum.{py，sh}`）和修改 REL 信息（`increaserel.py`）。
 
 ### packages-site
 
