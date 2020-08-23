@@ -2,9 +2,9 @@
 title: [RFC] Scriptlets Maintenance Manual
 description: 
 published: true
-date: 2020-07-17T04:12:27.168Z
-tags: dev-sys
-editor: markdown
+date: 2020-07-17T04:12:29.417Z
+tags: 
+editor: undefined
 ---
 
 # Rationale

@@ -2,9 +2,9 @@
 title: 软件包站点
 description: 关于软件包站点的一切
 published: true
-date: 2020-08-23T03:56:00.585Z
-tags: infra
-editor: markdown
+date: 2020-08-23T03:56:03.194Z
+tags: 
+editor: undefined
 ---
 
 # 软件包站点

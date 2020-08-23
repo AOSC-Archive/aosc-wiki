@@ -2,8 +2,9 @@
 title: Known Patch Release Rules
 description: Useful list of release rules that defines packages that could be updated in the Stable channel
 published: true
-date: 2020-05-04T04:55:32.477Z
+date: 2020-05-04T05:03:27.057Z
 tags: 
+editor: undefined
 ---
 
 # Description

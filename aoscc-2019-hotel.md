@@ -2,8 +2,9 @@
 title: AOSCC 2019: Hotel
 description: 
 published: true
-date: 2020-05-04T04:55:05.459Z
+date: 2020-05-04T05:02:50.413Z
 tags: 
+editor: undefined
 ---
 
 # 如何提名

@@ -2,9 +2,9 @@
 title: AOSC OS/Retro：面向用户与维护者的介绍（征求意见稿）
 description: 在古董设备上使用 AOSC OS
 published: true
-date: 2020-08-16T10:23:21.738Z
-tags: sys-retro
-editor: markdown
+date: 2020-08-16T10:23:24.533Z
+tags: 
+editor: undefined
 ---
 
 这个页面的主要用途是介绍 AOSC/Retro 的设计规范和维护目标。想要了解这个分支的基本理念，请阅读 [这个页面](/en/sys-retro-rationale)。

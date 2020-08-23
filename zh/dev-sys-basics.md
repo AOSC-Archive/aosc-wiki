@@ -2,9 +2,9 @@
 title: 软件包维护入门：基础
 description: 了解 AOSC OS 打包流程
 published: true
-date: 2020-08-04T02:13:57.919Z
+date: 2020-08-04T02:14:01.746Z
 tags: 
-editor: markdown
+editor: undefined
 ---
 
 **注意**：这篇指南假定你对 Linux 和它的命令行界面有一定的认识。此外，你还需要有一台你本人拥有 `root` 访问权限的装有 Linux 的电脑。

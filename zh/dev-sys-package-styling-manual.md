@@ -2,9 +2,9 @@
 title: AOSC OS 软件包样式指南
 description: 过好生活，打美包儿包儿
 published: true
-date: 2020-08-06T09:45:55.047Z
-tags: dev-sys
-editor: markdown
+date: 2020-08-06T09:45:58.948Z
+tags: 
+editor: undefined
 ---
 
 # 概述

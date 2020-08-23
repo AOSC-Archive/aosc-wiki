@@ -2,9 +2,9 @@
 title: AOSC 贡献者注册流程
 description: 成为 AOSC 的一分子！
 published: true
-date: 2020-08-20T10:06:11.352Z
-tags: community
-editor: markdown
+date: 2020-08-20T10:06:13.823Z
+tags: 
+editor: undefined
 ---
 
 我们欢迎任何人为安同开源社区做贡献，一旦做出了某种形式的贡献（包括但不限于为 AOSC OS 打包、在 AOSC 项目的 Git 仓库提创建提交、提供服务器资源等），你您将被视为社区的贡献者。

@@ -2,9 +2,9 @@
 title: SYS-KB-00002：输入法配置
 description: 在 AOSC OS 桌面环境下配置输入法
 published: true
-date: 2020-08-10T13:03:21.895Z
-tags: sys-kb
-editor: markdown
+date: 2020-08-10T13:03:24.142Z
+tags: 
+editor: undefined
 ---
 
 在 AOSC OS，你可以选用下面的三种输入法框架的任意一种：

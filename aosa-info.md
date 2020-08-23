@@ -2,9 +2,9 @@
 title: What is an AOSA?
 description: A Quick Pre-face on AOSC OS Security Advisories
 published: true
-date: 2020-08-02T14:19:27.703Z
-tags: aosa
-editor: markdown
+date: 2020-08-02T14:19:29.988Z
+tags: 
+editor: undefined
 ---
 
 # AOSA?

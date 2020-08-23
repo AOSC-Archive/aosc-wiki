@@ -2,8 +2,9 @@
 title: AOSC OS Architecture Specifications
 description: AOSC OS Architecture Naming Schemes and Specifications
 published: true
-date: 2020-05-05T06:10:34.510Z
-tags: sys-info
+date: 2020-05-05T06:10:36.054Z
+tags: 
+editor: undefined
 ---
 
 This page contains information of all architectures supported by AOSC OS, and their architecture-specific requirements, notes, and toolchain triplets. The architectures listed below are in AOSC-style short names.

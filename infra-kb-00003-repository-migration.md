@@ -2,8 +2,9 @@
 title: INFRA-KB-00003: Community Repository Migration Guide
 description: A quick summary of repo migration
 published: true
-date: 2020-05-04T05:29:58.109Z
-tags: infra-kb
+date: 2020-05-04T05:29:59.705Z
+tags: 
+editor: undefined
 ---
 
 ## TL;DR

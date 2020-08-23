@@ -2,8 +2,9 @@
 title: SYS-KB-00002: Configuration of Input Methods
 description: Configuring Input Methods in AOSC OS Desktop Environments
 published: true
-date: 2020-05-04T05:22:15.884Z
-tags: sys-kb
+date: 2020-05-04T05:22:17.272Z
+tags: 
+editor: undefined
 ---
 
 Several input method engines are available for use with AOSC OS:

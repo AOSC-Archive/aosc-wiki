@@ -2,9 +2,9 @@
 title: Installation/ARM*/SysReq (简体中文)
 description: AOSC OS 系统要求（适用于 ARMv7/AArch64 设备）
 published: true
-date: 2020-08-20T07:02:56.096Z
-tags: sys-installation
-editor: markdown
+date: 2020-08-20T07:02:58.453Z
+tags: 
+editor: undefined
 ---
 
 这个页面将为你提供 AOSC OS 各个 ARMv7 变种版本和 AArch64 变种版本对处理器、内存、显示设备、GPU 和储存空间的具体要求，旨在帮助您选择合适的变种版本。请注意我们只会提供通用的指标，并不会针对某个具体的设备展开讨论。除此之外，因为 Container 版本和 BuildKit 版本并非可引导可安装变种，在这里不会做讨论。

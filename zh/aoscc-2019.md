@@ -2,8 +2,9 @@
 title: AOSCC 2019
 description: AOSCC 2019的地点、
 published: true
-date: 2020-05-05T14:44:16.388Z
-tags: 事件
+date: 2020-05-05T14:44:18.328Z
+tags: 
+editor: undefined
 ---
 
 # 参会信息

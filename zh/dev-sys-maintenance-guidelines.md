@@ -2,9 +2,9 @@
 title: AOSC OS 维护指南（征求意见稿）
 description: 过好生活，打好包包
 published: true
-date: 2020-08-07T12:15:02.283Z
-tags: dev-sys
-editor: markdown
+date: 2020-08-07T12:15:05.182Z
+tags: 
+editor: undefined
 ---
 
 # 概述

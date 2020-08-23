@@ -2,8 +2,9 @@
 title: AOSC OS/Retro: An Introduction to Users and Maintainers (RFC)
 description: Your Guide to Enjoying AOSC OS with Your Retro Devices
 published: true
-date: 2020-05-05T05:32:25.890Z
-tags: sys-retro
+date: 2020-05-05T05:32:27.493Z
+tags: 
+editor: undefined
 ---
 
 Now that we have introduced our [rationale](/sys-retro-rationale) to maintaining a Retro branch for AOSC OS (we will now refer to this as AOSC OS/Retro), this page will serve as an introduction to our design specifications and goals in maintaining this branch.

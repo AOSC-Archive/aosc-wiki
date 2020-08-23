@@ -2,9 +2,9 @@
 title: Installation/AMD64/KVM (简体中文)
 description: 在 KVM 安装 AOSC OS
 published: true
-date: 2020-08-18T15:26:08.792Z
-tags: sys-installation
-editor: markdown
+date: 2020-08-18T15:26:11.298Z
+tags: 
+editor: undefined
 ---
 
 事实上，在 Qemu/KVM 上安装 AOSC OS 和在一台常规的 AMD64/x86_64 设备上安装 AOSC OS 是差不多的。本文旨在帮助您配置虚拟机，并从虚拟机外部解压 Tarball。

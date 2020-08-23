@@ -2,9 +2,9 @@
 title: Intro to Package Maintenance: Advanced Techniques
 description: This article is sponsered by Commit-O-Matic™
 published: true
-date: 2020-07-08T13:11:50.280Z
+date: 2020-07-08T13:11:53.941Z
 tags: 
-editor: markdown
+editor: undefined
 ---
 
 > So you want to make a package, you've got the urge to make a package, you've got the nerve to make a package, so go ahead, so go ahead, so go ahead and make a package we can use\!

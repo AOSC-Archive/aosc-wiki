@@ -2,8 +2,9 @@
 title: 开源软件供应链点亮计划暑期 2020 项目
 description: 
 published: true
-date: 2020-06-04T17:53:44.336Z
-tags: ospp
+date: 2020-06-04T17:53:46.155Z
+tags: 
+editor: undefined
 ---
 
 欢迎！以下是 AOSC 提供的可供参与的项目主题。你可以从中挑选并联系项目导师，也可以在社区 IRC、[Telegram 群组][tg]或邮件列表（随意）中和我们讨论你感兴趣的话题。

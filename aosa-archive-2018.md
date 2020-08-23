@@ -2,8 +2,9 @@
 title: List of Announced AOSAs (2018)
 description: An Archive of Announced AOSC OS Security Advisories (2018)
 published: true
-date: 2020-05-04T04:55:00.413Z
+date: 2020-05-04T05:02:44.340Z
 tags: 
+editor: undefined
 ---
 
 | AOSA | Suggestion(s) | Fixed CVE(s) |

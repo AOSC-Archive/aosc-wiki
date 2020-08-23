@@ -2,8 +2,9 @@
 title: .NET Lifecycle Policy
 description: 
 published: true
-date: 2020-05-04T04:55:30.603Z
+date: 2020-05-04T05:03:25.138Z
 tags: 
+editor: undefined
 ---
 
 This policy covers .NET packages in AOSC OS, like `dotnet-*` and `mono`, which are maintained by Microsoft and the .NET community<sup>[1][1],[2][2]</sup>.

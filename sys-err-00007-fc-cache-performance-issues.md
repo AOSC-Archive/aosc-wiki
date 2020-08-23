@@ -2,8 +2,9 @@
 title: SYS-ERR-00007: Performance Issues with Fontconfig <= 2.12.92
 description: Fc-Cache Algorithm Issues, Long Font Installation Times, and Unresponsive Desktop
 published: true
-date: 2020-05-04T05:13:13.214Z
-tags: sys-errata
+date: 2020-05-04T05:13:15.209Z
+tags: 
+editor: undefined
 ---
 
 # Summary

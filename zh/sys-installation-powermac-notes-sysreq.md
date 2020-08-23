@@ -2,9 +2,9 @@
 title: Installation/PowerMac/SysReq (简体中文)
 description: AOSC OS 系统要求（适用于 PowerPC/PPC64 设备）
 published: true
-date: 2020-08-20T07:02:00.845Z
-tags: sys-installation
-editor: markdown
+date: 2020-08-20T07:02:03.235Z
+tags: 
+editor: undefined
 ---
 
 这个页面将为你提供 AOSC OS 各个 PowerPC（含 32 位和 64 位）变种版本对处理器、内存、显示设备、GPU 和储存空间的具体要求，旨在帮助您选择合适的变种版本。因为 Container 版本和 BuildKit 版本并非可引导可安装变种，在这里不做讨论。

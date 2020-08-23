@@ -2,8 +2,9 @@
 title: List of announced AOSAs (2019)
 description: Security updates for 2019
 published: true
-date: 2020-05-04T04:55:02.182Z
+date: 2020-05-04T05:02:46.449Z
 tags: 
+editor: undefined
 ---
 
 # Security updates

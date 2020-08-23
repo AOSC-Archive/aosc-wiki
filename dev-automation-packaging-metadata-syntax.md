@@ -2,8 +2,9 @@
 title: Packaging Metadata Syntax
 description: Reduced Bash syntax for describing packages
 published: true
-date: 2020-05-24T05:10:35.404Z
-tags: dev-automation
+date: 2020-05-24T05:10:36.945Z
+tags: 
+editor: undefined
 ---
 
 # RFC: Packaging Metadata Syntax

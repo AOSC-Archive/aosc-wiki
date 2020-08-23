@@ -2,8 +2,9 @@
 title: Intro to Package Maintenance
 description: Introductory Guide to AOSC OS Packaging
 published: true
-date: 2020-06-02T20:53:14.472Z
-tags: dev-sys
+date: 2020-06-02T20:53:16.121Z
+tags: 
+editor: undefined
 ---
 
 Welcome! If you are reading this, you are probably interested in contributing to the AOSC OS project. This guide will guide you through all the tools and techniques you need to create, update, and maintain AOSC OS packages.

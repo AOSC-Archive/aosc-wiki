@@ -2,8 +2,9 @@
 title: SYS-ERR-00006: VLC 3.0 and Above May Fail to Start in GNOME
 description: Error when Trying to Start VLC in a GNOME Desktop Session
 published: true
-date: 2020-05-04T05:12:25.862Z
-tags: sys-errata
+date: 2020-05-04T05:12:27.476Z
+tags: 
+editor: undefined
 ---
 
 # Summary

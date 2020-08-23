@@ -2,9 +2,9 @@
 title: Exceptions to the Update Cycles
 description: A Suggested List of Packages to be Updated Immediately and Made Available in Stable Repositories
 published: true
-date: 2020-06-24T14:09:43.290Z
-tags: dev-sys
-editor: markdown
+date: 2020-06-24T14:09:45.908Z
+tags: 
+editor: undefined
 ---
 
 # Rationale and Definition

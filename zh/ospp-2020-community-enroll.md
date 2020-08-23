@@ -2,8 +2,9 @@
 title: 开源软件供应链点亮计划暑期 2020 社区报名
 description: 
 published: true
-date: 2020-05-15T07:45:44.384Z
-tags: ospp
+date: 2020-05-15T07:45:45.965Z
+tags: 
+editor: undefined
 ---
 
 # 社区报名

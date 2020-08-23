@@ -2,8 +2,9 @@
 title: Is AOSC OS Right for Me?
 description: Some important and not so important notes...
 published: true
-date: 2020-05-04T04:56:25.832Z
+date: 2020-05-04T05:04:38.803Z
 tags: 
+editor: undefined
 ---
 
 # What Is AOSC OS, Anyways?

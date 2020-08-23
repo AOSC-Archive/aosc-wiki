@@ -2,8 +2,9 @@
 title: INFRA-KB-00002: How To Mirror the Community Repository
 description: A Quick Summary of How to Create a Mirror of AOSC's Repo
 published: true
-date: 2020-05-04T05:28:08.561Z
-tags: infra-kb
+date: 2020-05-04T05:28:10.143Z
+tags: 
+editor: undefined
 ---
 
 Thank you for your interest in mirroring AOSC's Repo.

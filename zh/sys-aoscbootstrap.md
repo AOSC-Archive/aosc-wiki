@@ -2,9 +2,9 @@
 title: AOSCBootstrap
 description: 
 published: true
-date: 2020-08-10T12:35:49.183Z
+date: 2020-08-10T12:35:51.595Z
 tags: 
-editor: markdown
+editor: undefined
 ---
 
 # AOSCBootstrap

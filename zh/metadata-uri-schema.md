@@ -2,8 +2,9 @@
 title: 元数据 URI 规范
 description: 
 published: true
-date: 2020-06-03T16:50:57.526Z
+date: 2020-06-03T16:50:59.089Z
 tags: 
+editor: undefined
 ---
 
 GitHub

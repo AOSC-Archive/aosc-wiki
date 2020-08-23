@@ -2,9 +2,9 @@
 title: 软件包维护入门
 description: AOSC OS 维护者培训
 published: true
-date: 2020-08-06T10:19:48.207Z
-tags: dev-sys
-editor: markdown
+date: 2020-08-06T10:19:50.552Z
+tags: 
+editor: undefined
 ---
 
 您好呀！如果您正在阅读这篇文章，您可能希望参与到 AOSC OS 开发当中。本系列指南将指导您如何创建、更新和维护 AOSC OS 软件包。 

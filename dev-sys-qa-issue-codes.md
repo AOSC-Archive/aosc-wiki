@@ -2,8 +2,9 @@
 title: List Of Package Issue Codes
 description: Reference List of Package Issue Codes
 published: true
-date: 2020-05-28T22:02:07.923Z
-tags: dev-sys
+date: 2020-05-28T22:02:09.456Z
+tags: 
+editor: undefined
 ---
 
 # The Codes

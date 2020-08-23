@@ -2,8 +2,9 @@
 title: AOSC OS Maintenance Guidelines
 description: General Procedural Guidlelines for AOSC OS Package Maintenance
 published: true
-date: 2020-05-05T05:13:40.866Z
-tags: dev-sys
+date: 2020-05-05T05:13:42.446Z
+tags: 
+editor: undefined
 ---
 
 # Introduction

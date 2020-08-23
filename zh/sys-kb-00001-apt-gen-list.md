@@ -2,9 +2,9 @@
 title: SYS-KB-00001：APT 软件源配置
 description: 在 AOSC OS 启用或禁用一个软件源
 published: true
-date: 2020-08-10T13:02:57.237Z
-tags: sys-kb
-editor: markdown
+date: 2020-08-10T13:02:59.641Z
+tags: 
+editor: undefined
 ---
 
 # APT 配置

@@ -2,8 +2,9 @@
 title: Autobuild3
 description: A Multi-Backend Packaging Toolkit
 published: true
-date: 2020-05-05T05:45:28.136Z
-tags: dev-sys
+date: 2020-05-05T05:45:29.579Z
+tags: 
+editor: undefined
 ---
 
 # What is Autobuild3?

@@ -2,8 +2,9 @@
 title: AOSC OS Filesystem Hierarchy
 description: AOSC OS Filesystem Hierarchy Specifications
 published: true
-date: 2020-05-05T06:11:14.901Z
-tags: sys-info
+date: 2020-05-05T06:11:16.646Z
+tags: 
+editor: undefined
 ---
 
 The filesystem hierarchy used by AOSC OS is based on FHS (Filesystem Hierarchy Standard), version 2.3 - with extra changes made or suggested by Systemd and AOSC OS developers. Only those differentiated from the standard FHS 2.3 specifications will be discussed below.

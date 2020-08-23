@@ -2,8 +2,9 @@
 title: Autobuild3: Dependency Scan
 description: 
 published: true
-date: 2020-05-27T05:07:38.516Z
+date: 2020-05-27T05:31:55.463Z
 tags: 
+editor: undefined
 ---
 
 # Autobuild3 Automated Dependency Audit

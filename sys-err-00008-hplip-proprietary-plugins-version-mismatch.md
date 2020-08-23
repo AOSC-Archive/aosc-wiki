@@ -2,8 +2,9 @@
 title: SYS-ERR-00008: CUPS "Filter Failed" with Printers Using the HPLIP Driver
 description: HPLIP Proprietary Plugin Version Mismatch and Its Consequence
 published: true
-date: 2020-05-04T05:19:00.496Z
-tags: sys-errata
+date: 2020-05-04T05:19:02.115Z
+tags: 
+editor: undefined
 ---
 
 # Summary

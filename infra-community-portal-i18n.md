@@ -2,8 +2,9 @@
 title: Community Portal Translation Guide
 description: 
 published: true
-date: 2020-05-07T04:01:10.092Z
+date: 2020-05-07T04:01:11.701Z
 tags: 
+editor: undefined
 ---
 
 # Welcome

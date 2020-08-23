@@ -2,8 +2,9 @@
 title: Ciel Manual
 description: (Almost) everything you need to know about ciel.
 published: true
-date: 2020-05-04T04:55:23.911Z
+date: 2020-05-04T05:03:17.080Z
 tags: 
+editor: undefined
 ---
 
 Ciel is a tool for controlling multi-layer file systems and containers, primarily designed for building and distributing Linux distributions based on the DPKG[1] package manager. Ciel also comes with features that allow fast roll-back and merge-down functions.

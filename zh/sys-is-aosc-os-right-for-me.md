@@ -2,9 +2,9 @@
 title: AOSC OS 适合我吗？
 description: 一些重要的和一些没那么重要的信息...
 published: true
-date: 2020-07-31T08:12:02.863Z
-tags: sys-info
-editor: markdown
+date: 2020-07-31T08:12:05.455Z
+tags: 
+editor: undefined
 ---
 
 # AOSC OS 是什么？
